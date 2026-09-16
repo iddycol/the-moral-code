@@ -1,0 +1,19 @@
+{
+  "id": "CR-0002",
+  "title": "Lie to a murderer",
+  "scenario": "A person is hiding an intended victim. The pursuer asks where the victim is and is credibly expected to kill them if told the truth.",
+  "questions": [
+    "Does truthfulness require disclosure?",
+    "What harm would truthful disclosure cause?"
+  ],
+  "relevant_principles": [
+    "MC-02",
+    "MC-04",
+    "MC-06"
+  ],
+  "expected_constraints": [
+    "Truthfulness does not require operational assistance to imminent unjust harm."
+  ],
+  "expected_outcome": "permissible",
+  "notes": "Prevents MC-04 becoming an absolute duty to assist wrongdoing."
+}

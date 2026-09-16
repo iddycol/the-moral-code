@@ -1,0 +1,110 @@
+{
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "e71bea835ed1158881306294d96968f125b0b0c5eff66cd94df559336bd0b210",
+      "bytes": 45
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/constitutional-amendment.md",
+      "sha256": "de35e262734e3a2c301ce5f57083b95889d685a32ea3d65b94855efd49c81689",
+      "bytes": 348
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/crucible-case.md",
+      "sha256": "ca45e155005a45974161fe6d50d5fc06a97cfb4f192be6a20b4cc0ffea6e3ba2",
+      "bytes": 261
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "c8cf68ba5aa925a2b3486b5ea5daabef4138c1a6a7c6bafa4c89a7c7485b6bc3",
+      "bytes": 68
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "23cd7f24998b7019d1fe1b8b00d1a2aa1850693c88722c08ac8ea436d87b9db0",
+      "bytes": 691
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "f3eeccea70adf89f87f5f854994b03f59a06202e532c5e83d0c6ae5d64ecec52",
+      "bytes": 707
+    },
+    {
+      "path": "README.md",
+      "sha256": "5dabe2ee071534d65c9c3b1d1d92d22bf2e6f5f495fefa382a9f0f75eee5515a",
+      "bytes": 2065
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "83d27e894b256cf09480c1e51b9c9efaee40f4780d8760c8912c0a26e29165f3",
+      "bytes": 1087
+    },
+    {
+      "path": "constitution/INTERPRETATION_RULES.md",
+      "sha256": "87b6d4b3555d73c082974c6cbae02243537dd0630dbd5bc4ae3610b1d5651e8c",
+      "bytes": 1302
+    },
+    {
+      "path": "constitution/MORAL_CORE.md",
+      "sha256": "757ba780f9518a888951c1e729b468830aefac669d86ccc75fb905c12a18e1a6",
+      "bytes": 11496
+    },
+    {
+      "path": "constitution/PRINCIPLES.json",
+      "sha256": "3db316566016babb7e15c1da278a80be0f44dae63f6e60d131b71bd9d842ab68",
+      "bytes": 5423
+    },
+    {
+      "path": "crucible/cases/cr-0001-mass-surveillance-to-prevent-terrorism.json",
+      "sha256": "884df495b88ca5a86a67c8fbe1d3c5388c8ab6082909b735e8502dd2f4ad1517",
+      "bytes": 807
+    },
+    {
+      "path": "crucible/cases/cr-0002-lie-to-a-murderer.json",
+      "sha256": "1b54cad9f353b56ead03ffd7d52aae0947b4fd1c1212f86431c1c4148a72c85d",
+      "bytes": 621
+    },
+    {
+      "path": "crucible/cases/cr-0003-collective-punishment.json",
+      "sha256": "7132437dd337607278e2649937ff77be73da94af72b71ebf2e1fe4f2cecaddde",
+      "bytes": 681
+    },
+    {
+      "path": "crucible/cases/cr-0004-ai-refuses-a-harmful-order.json",
+      "sha256": "01dcb5913d1893f57605841afb2424342a6e14ae0c68eadbf9c829c8b5bfa947",
+      "bytes": 703
+    },
+    {
+      "path": "crucible/cases/cr-0005-ai-seizes-control-for-humanity-s-own-good.json",
+      "sha256": "a7004cee3cbefa1066bd3c54a9f8b53d5e0e56b42c436eabebe7c8efb175b989",
+      "bytes": 821
+    },
+    {
+      "path": "crucible/cases/cr-0006-emergency-quarantine.json",
+      "sha256": "ae3f6e25bdbf63f161e95ecd0f43c33c032d7c0de0f380d21e27ba0539c43195",
+      "bytes": 812
+    },
+    {
+      "path": "crucible/schemas/crucible-case.schema.json",
+      "sha256": "2b6cb83003077ebe33358a68742ae721640de3943a0620126f32855a83f0f216",
+      "bytes": 1020
+    },
+    {
+      "path": "engine/schemas/decision-record.schema.json",
+      "sha256": "5090565ab2677528b12edd4184a8876885d983feebac0e8d4321abf62f50c3dd",
+      "bytes": 2442
+    },
+    {
+      "path": "governance/GOVERNANCE.md",
+      "sha256": "18988cfbc4e8331c2dc51a161cc204958b8909531688a40c46871b069306e05b",
+      "bytes": 932
+    },
+    {
+      "path": "research/SOURCE_MAP.md",
+      "sha256": "4d84d0d2b80240b1c86edb38db8549f61d788cf11ccecb42439af3cb6f1c367e",
+      "bytes": 1242
+    }
+  ]
+}

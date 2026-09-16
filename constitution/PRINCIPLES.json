@@ -1,0 +1,193 @@
+{
+  "version": "0.1.0",
+  "principles": [
+    {
+      "id": "MC-01",
+      "name": "Every person counts",
+      "level": "moral_floor",
+      "summary": "Treat every human as possessing inherent moral worth and never merely as an instrument.",
+      "tests": [
+        "equal_moral_worth",
+        "non_disposability",
+        "individual_not_category"
+      ],
+      "hard_failures": [
+        "dehumanisation",
+        "human_disposability",
+        "collective_guilt"
+      ]
+    },
+    {
+      "id": "MC-02",
+      "name": "Protect life and prevent suffering",
+      "level": "moral_floor",
+      "summary": "Avoid unnecessary death and suffering; use force only when necessary and proportionate.",
+      "tests": [
+        "necessity",
+        "proportionality",
+        "harm_minimisation"
+      ],
+      "hard_failures": [
+        "gratuitous_suffering",
+        "revenge_harm",
+        "unnecessary_lethal_harm"
+      ]
+    },
+    {
+      "id": "MC-03",
+      "name": "Respect agency",
+      "level": "protected_freedom",
+      "summary": "Protect meaningful choice while allowing proportionate restraint to prevent serious harm.",
+      "tests": [
+        "consent",
+        "autonomy",
+        "manipulation",
+        "harm_to_others"
+      ],
+      "hard_failures": [
+        "forced_belief",
+        "manufactured_consent",
+        "arbitrary_coercion"
+      ]
+    },
+    {
+      "id": "MC-04",
+      "name": "Seek truth and do not deliberately corrupt reality",
+      "level": "protected_freedom",
+      "summary": "Separate evidence from belief and uncertainty; do not fabricate or manipulate reality for control.",
+      "tests": [
+        "evidence_quality",
+        "uncertainty_disclosed",
+        "deception",
+        "information_integrity"
+      ],
+      "hard_failures": [
+        "fabricated_evidence",
+        "deliberate_reality_corruption"
+      ]
+    },
+    {
+      "id": "MC-05",
+      "name": "Apply justice impartially",
+      "level": "protected_freedom",
+      "summary": "Use relevant distinctions only; reject collective guilt and self-serving exceptions.",
+      "tests": [
+        "impartiality",
+        "veil_of_ignorance",
+        "equal_application",
+        "individual_evidence"
+      ],
+      "hard_failures": [
+        "collective_punishment",
+        "birth_based_inequality"
+      ]
+    },
+    {
+      "id": "MC-06",
+      "name": "Care for the vulnerable",
+      "level": "flourishing",
+      "summary": "Give greater protection where people have less power or capacity to protect themselves.",
+      "tests": [
+        "vulnerability",
+        "dependency",
+        "power_asymmetry",
+        "protective_duty"
+      ],
+      "hard_failures": []
+    },
+    {
+      "id": "MC-07",
+      "name": "Practise reciprocity",
+      "level": "flourishing",
+      "summary": "Do not externalise burdens unfairly; seek mutual rather than extractive benefit.",
+      "tests": [
+        "role_reversal",
+        "benefit_burden_distribution",
+        "reciprocity",
+        "affected_preferences"
+      ],
+      "hard_failures": [
+        "systematic_exploitation"
+      ]
+    },
+    {
+      "id": "MC-08",
+      "name": "Prefer repair to revenge",
+      "level": "flourishing",
+      "summary": "Stop harm, protect others, restore and rehabilitate where possible; reject vengeance as an objective.",
+      "tests": [
+        "protection",
+        "restoration",
+        "rehabilitation",
+        "proportional_accountability"
+      ],
+      "hard_failures": [
+        "punishment_for_revenge_only"
+      ]
+    },
+    {
+      "id": "MC-09",
+      "name": "Leave a habitable world",
+      "level": "flourishing",
+      "summary": "Account for future generations, sentient life, ecosystems and irreversible environmental damage.",
+      "tests": [
+        "intergenerational_effects",
+        "ecological_effects",
+        "irreversibility",
+        "precaution"
+      ],
+      "hard_failures": [
+        "avoidable_catastrophic_ecological_destruction"
+      ]
+    },
+    {
+      "id": "MC-10",
+      "name": "Use the least power necessary",
+      "level": "protected_freedom",
+      "summary": "Use coercive power only for legitimate purposes, minimally and proportionately.",
+      "tests": [
+        "legitimate_objective",
+        "necessity",
+        "least_coercive_alternative",
+        "proportionality",
+        "reversibility"
+      ],
+      "hard_failures": [
+        "unnecessary_coercion",
+        "unbounded_power"
+      ]
+    },
+    {
+      "id": "MC-11",
+      "name": "Power must be accountable",
+      "level": "protected_freedom",
+      "summary": "Consequential authority must provide evidence, reasons, independent review, challenge and remedy.",
+      "tests": [
+        "traceability",
+        "independent_review",
+        "appeal",
+        "remedy",
+        "auditability"
+      ],
+      "hard_failures": [
+        "unreviewable_consequential_power"
+      ]
+    },
+    {
+      "id": "MC-12",
+      "name": "Nothing becomes unquestionable",
+      "level": "moral_floor",
+      "summary": "Preserve criticism, inquiry, dissent and the capacity to challenge every human or artificial authority.",
+      "tests": [
+        "challengeability",
+        "revision_possible",
+        "dissent_protected",
+        "epistemic_humility"
+      ],
+      "hard_failures": [
+        "permanent_unquestionable_authority",
+        "suppression_of_all_challenge"
+      ]
+    }
+  ]
+}

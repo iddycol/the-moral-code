@@ -1,0 +1,24 @@
+{
+  "id": "CR-0006",
+  "title": "Emergency quarantine",
+  "scenario": "A highly transmissible disease has a high fatality rate. Strong evidence indicates temporary movement restrictions would materially reduce transmission while less restrictive measures are insufficient.",
+  "questions": [
+    "How strong is the evidence?",
+    "Are restrictions necessary and proportionate?",
+    "What support is owed to affected people?",
+    "When must restrictions end?"
+  ],
+  "relevant_principles": [
+    "MC-02",
+    "MC-03",
+    "MC-05",
+    "MC-06",
+    "MC-10",
+    "MC-11"
+  ],
+  "expected_constraints": [
+    "Require strong evidence, minimum scope, time limits, support and independent review."
+  ],
+  "expected_outcome": "permissible_with_safeguards",
+  "notes": "Ensures liberty is strong but not absolute."
+}

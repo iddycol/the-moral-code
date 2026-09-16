@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Moral Crucible Case",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "scenario",
+    "questions",
+    "relevant_principles",
+    "expected_constraints",
+    "expected_outcome"
+  ],
+  "properties": {
+    "id": {
+      "pattern": "^CR-[0-9]{4}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "scenario": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relevant_principles": {
+      "type": "array",
+      "items": {
+        "pattern": "^MC-[0-9]{2}$"
+      }
+    },
+    "expected_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_outcome": {
+      "enum": [
+        "permissible",
+        "permissible_with_safeguards",
+        "impermissible",
+        "insufficient_evidence",
+        "unresolved_conflict"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
