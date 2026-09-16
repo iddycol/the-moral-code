@@ -32,3 +32,11 @@ def test_reconciliation_blocks_proposed_continuation():
     assert data["outcome"] == "impermissible"
     assert data["moral_floor"]["breach_found"] is True
     assert data["enforcement_recommendation"]["directive"] == "block"
+
+
+def test_challenger_fixture_defers_for_evidence_without_moral_floor_breach():
+    path = ROOT / "pilot" / "P-02-HC-0002" / "fixtures" / "reconciliation.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    assert data["outcome"] == "insufficient_evidence"
+    assert data["moral_floor"]["breach_found"] is False
+    assert data["enforcement_recommendation"]["directive"] == "defer_for_evidence"

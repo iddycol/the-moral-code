@@ -1,0 +1,33 @@
+{
+  "run_id": "P-02-HC-0002-MASKED-001",
+  "evaluation_id": "P-02-HC-0002-MASKED-001",
+  "created_at_utc": "2026-09-16T22:40:12.062222+00:00",
+  "provider": "file-backed",
+  "constitution": {
+    "version": "0.1.0",
+    "ref": "constitution/MORAL_CORE.md@b3265da83ef0ea57a5d7b71e88ecd64ed3057ffb",
+    "content_digest": "git-blob-sha1:1a83691fea5604ab85a8945e0d1ed8ccd009c7cf",
+    "interpretation_rules_ref": "constitution/INTERPRETATION_RULES.md@b3265da83ef0ea57a5d7b71e88ecd64ed3057ffb"
+  },
+  "request_digest": "sha256:cc95e73c0cee86a39a305a586308b8439855bdc619087728a271ab5cda4ee165",
+  "role_digests": {
+    "advocate": "sha256:5d81c1df7be082cf0ef0599555eab288a0ccf736b613e862e800cc9958c4fd26",
+    "guardian": "sha256:06beb57f59d16a46d6ea000b1f0c1bc06f0a97a1cb1380b8673ed7ef30f58ac8",
+    "evidence_sceptic": "sha256:14578b25553a306fd2652014888b3457803d444550d1bb216deba9cf66f03042",
+    "power_auditor": "sha256:4242a1e1b4aec78ae6ed1c07a7cf2898f43e003ce218e5511d68fc6041bb4fc1",
+    "vulnerable_person_defender": "sha256:d6a9b022134f791735a52509d392fd5eb51c9c6c6c5bef18ed86ec5a71a92d33",
+    "future_environment_advocate": "sha256:7f5b9db09d9fe14d9cec67109fb6e049c49d9e8a943c8f2898e455e807a1fdc3"
+  },
+  "decision_digest": "sha256:d95acb5f83bb74dbf61578e0b6a926fe99c1544347306f48ee2bd5322e66274d",
+  "hindsight_files_loaded": false,
+  "inputs": {
+    "request": "pilot/P-02-HC-0002/evaluation-request.json",
+    "fixture_dir": "pilot/P-02-HC-0002/fixtures",
+    "schemas": "../schemas"
+  },
+  "result": {
+    "outcome": "insufficient_evidence",
+    "enforcement_directive": "defer_for_evidence",
+    "moral_floor_breach": false
+  }
+}
