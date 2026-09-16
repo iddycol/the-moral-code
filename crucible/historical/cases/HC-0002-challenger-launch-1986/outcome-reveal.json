@@ -1,0 +1,18 @@
+{
+  "case_id": "HC-0002",
+  "actual_action": "Morton Thiokol management reversed the initial engineering recommendation and recommended launch; STS-51L launched the next morning.",
+  "later_evidence": [
+    "The Rogers Commission later found that the launch decision process was flawed and that key senior decision-makers were unaware of the initial contractor no-launch recommendation and continuing engineering opposition.",
+    "NASA's historical mission record identifies failure of a right solid-rocket-booster O-ring, aggravated by extreme cold, as the accident cause."
+  ],
+  "outcomes": [
+    "Challenger was lost 73 seconds after liftoff.",
+    "All seven crew members died.",
+    "The accident triggered extensive investigation and changes to shuttle safety and decision processes."
+  ],
+  "later_reviews_or_findings": [
+    "The Rogers Commission concluded that Thiokol management reversed its position, contrary to engineers' views, to accommodate a major customer.",
+    "The Commission found communication failures and a management structure that allowed serious safety concerns to bypass key launch managers.",
+    "The Commission criticised launch-constraint waivers and the treatment of incomplete/inconclusive safety information."
+  ]
+}

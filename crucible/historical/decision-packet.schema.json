@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Historical Crucible Evaluator Decision Packet",
+  "description": "Evaluator-facing facts available at the decision cutoff only. Must not contain outcomes, later consensus, expected Moral Code result, or source titles that reveal hindsight.",
+  "type": "object",
+  "required": ["case_id", "packet_id", "identity_mode", "decision_question", "actors", "available_actions", "affected_parties", "known_evidence", "known_uncertainties", "known_alternatives", "requested_output"],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^HC-[0-9]{4}$"},
+    "packet_id": {"type": "string"},
+    "identity_mode": {"enum": ["transparent", "masked", "structural_analogue"]},
+    "decision_context": {"type": "string"},
+    "decision_question": {"type": "string"},
+    "actors": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "available_actions": {"type": "array", "items": {"type": "string"}, "minItems": 2},
+    "affected_parties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["party", "known_interests_or_risks"],
+        "properties": {
+          "party": {"type": "string"},
+          "known_interests_or_risks": {"type": "string"},
+          "power_position": {"enum": ["very_low", "low", "mixed", "high", "very_high", "unknown"]}
+        }
+      }
+    },
+    "known_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "claim", "epistemic_status"],
+        "properties": {
+          "evidence_id": {"type": "string"},
+          "claim": {"type": "string"},
+          "epistemic_status": {"enum": ["observed", "reported", "inferred", "predicted", "disputed", "unknown"]},
+          "confidence_note": {"type": "string"}
+        }
+      }
+    },
+    "known_uncertainties": {"type": "array", "items": {"type": "string"}},
+    "known_alternatives": {"type": "array", "items": {"type": "string"}},
+    "requested_output": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Questions the evaluator must answer without hindsight."
+    }
+  }
+}
