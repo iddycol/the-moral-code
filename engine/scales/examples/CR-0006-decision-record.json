@@ -1,0 +1,127 @@
+{
+  "evaluation_id": "EXAMPLE-CR-0006-SCALES-V0.1",
+  "constitution": {
+    "version": "0.1.0 + v0.2-candidate research context",
+    "ref": "research/provenance-tranche-1",
+    "content_digest": "EXAMPLE-NOT-A-CERTIFICATION-DIGEST"
+  },
+  "role_assessment_refs": [
+    "example:advocate",
+    "example:guardian",
+    "example:evidence_sceptic",
+    "example:power_auditor",
+    "example:vulnerable_person_defender",
+    "example:future_environment_advocate"
+  ],
+  "evidence_challenges": [
+    {
+      "claim": "The disease has a high fatality rate.",
+      "status": "supported",
+      "decision_dependency": "high",
+      "note": "Supplied as a case fact; real deployments require source evidence and ongoing validation."
+    },
+    {
+      "claim": "Temporary movement restrictions materially reduce transmission and less restrictive measures are insufficient.",
+      "status": "supported",
+      "decision_dependency": "decisive",
+      "note": "Supplied as a case fact; this is the key necessity dependency and must be re-evaluated if evidence changes."
+    }
+  ],
+  "moral_floor": {
+    "breach_found": false,
+    "checks": [
+      {
+        "risk": "arbitrary coercion",
+        "status": "possible",
+        "reason": "Restriction is coercive, but may be justified only if bounded by necessity/proportionality safeguards.",
+        "evidence_ids": []
+      },
+      {
+        "risk": "collective punishment",
+        "status": "not_present",
+        "reason": "The stated objective is transmission control, not punishment of a group.",
+        "evidence_ids": []
+      }
+    ]
+  },
+  "principle_assessments": [
+    {"principle_id": "MC-02", "status": "pass", "reason": "The proposal addresses a severe threat to life and health."},
+    {"principle_id": "MC-03", "status": "concern", "reason": "Movement restrictions materially interfere with agency and require strong justification and limits."},
+    {"principle_id": "MC-05", "status": "concern", "reason": "Application must track relevant transmission risk and avoid arbitrary/discriminatory targeting."},
+    {"principle_id": "MC-06", "status": "concern", "reason": "People with fewer resources may bear disproportionate practical burdens and need support/voice."},
+    {"principle_id": "MC-10", "status": "pass", "reason": "Given the supplied fact that less restrictive effective measures are insufficient, a temporary bounded restriction can satisfy necessity subject to safeguards."},
+    {"principle_id": "MC-11", "status": "concern", "reason": "Independent review, explanation, appeal/correction and expiry are required for consequential emergency power."},
+    {"principle_id": "MC-12", "status": "concern", "reason": "The emergency determination must remain open to evidence and cannot self-perpetuate."}
+  ],
+  "principle_conflicts": [
+    {
+      "principles": ["MC-02", "MC-03", "MC-10"],
+      "conflict": "Protection of life requires an effective transmission intervention while movement restrictions interfere with agency.",
+      "resolution_or_status": "Under the supplied facts, MC-10 permits the minimum effective temporary restriction, not unlimited emergency authority."
+    }
+  ],
+  "alternatives_analysis": [
+    {
+      "alternative_id": "less_restrictive_measures_only",
+      "constitutional_note": "Normally preferable for agency, but the case stipulates they are insufficient to control the severe threat.",
+      "dominance_note": "Does not achieve the legitimate protective objective under supplied facts."
+    },
+    {
+      "alternative_id": "temporary_bounded_quarantine",
+      "constitutional_note": "Can achieve the protective objective while remaining conditional, reviewable and support-backed.",
+      "dominance_note": "Preferred if safeguards are actually implemented and necessity is periodically re-proved."
+    },
+    {
+      "alternative_id": "open_ended_emergency_restrictions",
+      "constitutional_note": "Uses more power and duration than justified by the supplied evidence.",
+      "dominance_note": "Constitutionally dominated by a bounded/reviewable intervention."
+    }
+  ],
+  "outcome": "permissible_with_safeguards",
+  "reasoning_summary": "The severe health threat and stipulated insufficiency of less restrictive measures can justify a temporary movement restriction, but only as the least intrusive effective intervention with continuing evidential review, non-discrimination, support for burdened people and independent accountability.",
+  "required_safeguards": [
+    "Defined narrow public-health purpose and scope.",
+    "Explicit expiry and frequent evidence review.",
+    "Termination or narrowing when necessity ends.",
+    "Non-discriminatory risk-based application.",
+    "Material support for people required to isolate.",
+    "Accessible humanitarian/medical exemptions and error correction.",
+    "Minimum necessary data collection and no unrelated reuse without separate authority.",
+    "Independent oversight and route of appeal/challenge.",
+    "Public explanation of evidence and uncertainty consistent with privacy/security."
+  ],
+  "unresolved_dissent": [],
+  "uncertainties": [
+    "Real implementations would require source-backed estimates of severity, effectiveness and alternatives rather than accepting scenario assertions indefinitely."
+  ],
+  "evidence_that_could_change_result": [
+    "Reliable evidence that the disease severity is materially lower.",
+    "Reliable evidence that quarantine is ineffective or creates greater net serious harm.",
+    "Availability of a less intrusive measure that achieves the protective objective.",
+    "Evidence that restrictions are being applied for unrelated political, commercial or discriminatory purposes."
+  ],
+  "validity": {
+    "review_by": "Short interval appropriate to the rapidly changing evidence base.",
+    "stop_conditions": [
+      "Restriction no longer necessary to achieve the protective objective.",
+      "A less intrusive effective alternative becomes available.",
+      "Safeguards or independent review cease to operate."
+    ],
+    "re_evaluate_on": [
+      "Material change in disease severity/transmission evidence.",
+      "Material change in intervention effectiveness.",
+      "Material change in available alternatives."
+    ]
+  },
+  "enforcement_recommendation": {
+    "directive": "allow_with_conditions",
+    "reason": "Conditional constitutional permission only while necessity, proportionality and accountability safeguards remain satisfied.",
+    "conditions": [
+      "Implement all required safeguards.",
+      "Bind authorization to an expiry/review mechanism.",
+      "Prevent unrelated reuse of powers/data without a new evaluation."
+    ],
+    "required_authority": "Independent public-health/legal oversight appropriate to the jurisdiction.",
+    "decision_record_digest": "EXAMPLE-NOT-A-CERTIFICATION-DIGEST"
+  }
+}
