@@ -27,7 +27,7 @@
     {"party":"Enslaved people and their children","interests_or_risks":"Life, bodily integrity, freedom, family relationships, movement, labour, property, education, voice and protection from coercion.","power_position":"very_low","voice_in_decision":"none"},
     {"party":"Slaveholders and enterprises dependent on enslaved labour","interests_or_risks":"Existing property claims, income, production systems and transition costs.","power_position":"very_high","voice_in_decision":"controlling"},
     {"party":"Workers and businesses in the wider economy","interests_or_risks":"Economic transition, labour-market change, prices and production continuity.","power_position":"mixed","voice_in_decision":"meaningful"},
-    {"party":"Future generations","interests_or_risks":"Inherited legal status, social hierarchy, wealth distribution and institutional precedent.","power_position":"none","voice_in_decision":"none"},
+    {"party":"Future generations","interests_or_risks":"Inherited legal status, social hierarchy, wealth distribution and institutional precedent.","power_position":"very_low","voice_in_decision":"none"},
     {"party":"Public authority","interests_or_risks":"Social stability, law enforcement, economic transition and legitimacy of institutions.","power_position":"high","voice_in_decision":"controlling"}
   ],
   "alternatives": [
