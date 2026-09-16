@@ -30,6 +30,7 @@ class JsonCommandProvider:
         role_schema: dict[str, Any],
         reconciliation_schema: dict[str, Any],
         timeout_seconds: int = 180,
+        pressure_context: dict[str, Any] | None = None,
     ):
         self.command = shlex.split(command)
         if not self.command:
@@ -43,6 +44,7 @@ class JsonCommandProvider:
         self.role_schema = role_schema
         self.reconciliation_schema = reconciliation_schema
         self.timeout_seconds = timeout_seconds
+        self.pressure_context = pressure_context
 
     def _invoke(self, envelope: dict[str, Any]) -> dict[str, Any]:
         completed = subprocess.run(
@@ -86,6 +88,7 @@ class JsonCommandProvider:
             self.interpretation_text,
             self.role_contracts_text,
             self.role_schema,
+            pressure_context=self.pressure_context,
         )
         value = self._stamp_metadata(self._invoke(envelope))
         if value.get("evaluation_id") != request.get("evaluation_id"):
@@ -109,6 +112,7 @@ class JsonCommandProvider:
             self.interpretation_text,
             self.role_contracts_text,
             self.reconciliation_schema,
+            pressure_context=self.pressure_context,
         )
         value = self._invoke(envelope)
         if value.get("evaluation_id") != request.get("evaluation_id"):
