@@ -4,112 +4,27 @@
   "identity_mode": "transparent",
   "decision_context": "Hamas's military wing and allied Palestinian armed groups are planning a large coordinated assault from Gaza into southern Israel. The broader context includes a long-running Israeli-Palestinian conflict, blockade and occupation-related grievances, recurring armed hostilities, Palestinian prisoners in Israeli custody and Hamas's political/military objectives. The proposed assault includes breaching the border, attacking Israeli military positions, firing rockets, entering civilian-populated communities and taking captives into Gaza. Later investigations reconstruct evidence that civilian killing and hostage-taking formed part of the coordinated assault plan; Hamas later told Human Rights Watch that its forces had been instructed not to target civilians.",
   "decision_question": "Should the armed groups launch the assault as reconstructed, including operations directed at or foreseeably designed to kill/capture civilians and take hostages, or restrict any armed action to lawful military objectives and means that preserve civilian protection?",
-  "actors": [
-    "Hamas military leadership / Qassam Brigades",
-    "other participating Palestinian armed groups",
-    "field commanders and fighters executing the operation"
-  ],
-  "available_actions": [
-    "Launch the coordinated assault including the reconstructed civilian-community attack and hostage-taking elements.",
-    "Limit armed action to verified Israeli military objectives, prohibit attacks on civilians/civilian homes and prohibit hostage-taking.",
-    "Do not launch the cross-border assault and pursue political, diplomatic, protest or other non-civilian-targeting forms of resistance/pressure.",
-    "If captives are taken during lawful fighting, restrict capture to persons lawfully subject to detention under applicable law, treat them humanely and do not use civilians as bargaining hostages.",
-    "Avoid weapons/methods that cannot distinguish military objectives from civilians in populated areas."
-  ],
+  "actors": ["Hamas military leadership / Qassam Brigades","other participating Palestinian armed groups","field commanders and fighters executing the operation"],
+  "available_actions": ["Launch the coordinated assault including the reconstructed civilian-community attack and hostage-taking elements.","Limit armed action to verified Israeli military objectives, prohibit attacks on civilians/civilian homes and prohibit hostage-taking.","Do not launch the cross-border assault and pursue political, diplomatic, protest or other non-civilian-targeting forms of resistance/pressure.","If captives are taken during lawful fighting, restrict capture to persons lawfully subject to detention under applicable law, treat them humanely and do not use civilians as bargaining hostages.","Avoid weapons/methods that cannot distinguish military objectives from civilians in populated areas."],
   "affected_parties": [
-    {
-      "party": "Israeli civilians in communities and public spaces near Gaza",
-      "known_interests_or_risks": "Life, bodily integrity, family safety, home, freedom from deliberate attack, terror and hostage-taking.",
-      "power_position": "very_low"
-    },
-    {
-      "party": "Israeli military/security personnel and military installations",
-      "known_interests_or_risks": "Direct attack as military targets, death/injury/capture and obligations toward civilians/captives.",
-      "power_position": "mixed"
-    },
-    {
-      "party": "Palestinian civilians in Gaza",
-      "known_interests_or_risks": "Likely exposure to severe military retaliation/escalation, blockade effects, displacement and continuation of the conflict despite having no control over individual attack decisions.",
-      "power_position": "very_low"
-    },
-    {
-      "party": "Palestinian armed-group members",
-      "known_interests_or_risks": "Combat risk, political/military objectives, capture/death and responsibility for methods used.",
-      "power_position": "mixed"
-    },
-    {
-      "party": "Palestinian and Israeli families seeking prisoners/captives returned",
-      "known_interests_or_risks": "Family reunification and pressure for exchanges, but not entitlement to use uninvolved civilians as coercive bargaining instruments.",
-      "power_position": "low"
-    }
+    {"party":"Israeli civilians in communities and public spaces near Gaza","known_interests_or_risks":"Life, bodily integrity, family safety, home, freedom from deliberate attack, terror and hostage-taking.","power_position":"very_low"},
+    {"party":"Israeli military/security personnel and military installations","known_interests_or_risks":"Direct attack as military targets, death/injury/capture and obligations toward civilians/captives.","power_position":"mixed"},
+    {"party":"Palestinian civilians in Gaza","known_interests_or_risks":"Likely exposure to severe military retaliation/escalation, blockade effects, displacement and continuation of the conflict despite having no control over individual attack decisions.","power_position":"very_low"},
+    {"party":"Palestinian armed-group members","known_interests_or_risks":"Combat risk, political/military objectives, capture/death and responsibility for methods used.","power_position":"mixed"},
+    {"party":"Palestinian and Israeli families seeking prisoners/captives returned","known_interests_or_risks":"Family reunification and pressure for exchanges, but not entitlement to use uninvolved civilians as coercive bargaining instruments.","power_position":"low"}
   ],
   "known_evidence": [
-    {
-      "evidence_id": "E1",
-      "claim": "A protracted armed and political conflict exists between Israel and Palestinian armed groups, with serious Palestinian grievances including blockade, occupation-related conditions, settlement/conflict issues and prisoners, as well as serious Israeli security concerns from prior attacks and rocket fire.",
-      "epistemic_status": "observed"
-    },
-    {
-      "evidence_id": "E2",
-      "claim": "International humanitarian law distinguishes military objectives/combatants from civilians and prohibits deliberate attacks on civilians, indiscriminate attacks and hostage-taking regardless of the claimed justice of a party's political cause.",
-      "epistemic_status": "observed"
-    },
-    {
-      "evidence_id": "E3",
-      "claim": "Later reconstruction shows that the planned assault involved coordinated breaches of the Gaza-Israel barrier, attacks on Israeli military sites and movement into multiple civilian-populated locations.",
-      "epistemic_status": "sourced"
-    },
-    {
-      "evidence_id": "E4",
-      "claim": "Human Rights Watch later found evidence indicating that intentional killing of civilians and taking hostages were central planned elements of the coordinated assault rather than merely spontaneous misconduct after a military plan went wrong.",
-      "epistemic_status": "sourced"
-    },
-    {
-      "evidence_id": "E5",
-      "claim": "Hamas authorities told Human Rights Watch that Hamas forces had been instructed not to target civilians and to comply with humanitarian law; that claim conflicts with investigative findings and is therefore disputed.",
-      "epistemic_status": "disputed"
-    },
-    {
-      "evidence_id": "E6",
-      "claim": "The assault plan included taking people from Israel into Gaza as captives; using detained civilians to compel a third party or obtain bargaining concessions constitutes hostage-taking.",
-      "epistemic_status": "sourced"
-    },
-    {
-      "evidence_id": "E7",
-      "claim": "The attack included a mass rocket/mortar component. Weapons or methods that cannot be directed at specific military objectives create serious distinction/indiscriminate-attack concerns when directed toward populated areas.",
-      "epistemic_status": "sourced"
-    },
-    {
-      "evidence_id": "E8",
-      "claim": "Civilian nationality, residence near a military frontier, religion or membership in the adversary population does not by itself make a civilian a military target or lawful hostage.",
-      "epistemic_status": "observed"
-    },
-    {
-      "evidence_id": "E9",
-      "claim": "A large assault deliberately extending into civilian communities is foreseeably likely to trigger major escalation and retaliatory military operations affecting Gaza's civilian population, although the form and scale of any response are uncertain and remain the responsibility of the responding actor.",
-      "epistemic_status": "inferred"
-    }
+    {"evidence_id":"E1","claim":"A protracted armed and political conflict exists between Israel and Palestinian armed groups, with serious Palestinian grievances including blockade, occupation-related conditions, settlement/conflict issues and prisoners, as well as serious Israeli security concerns from prior attacks and rocket fire.","epistemic_status":"observed"},
+    {"evidence_id":"E2","claim":"International humanitarian law distinguishes military objectives/combatants from civilians and prohibits deliberate attacks on civilians, indiscriminate attacks and hostage-taking regardless of the claimed justice of a party's political cause.","epistemic_status":"observed"},
+    {"evidence_id":"E3","claim":"Later reconstruction shows that the planned assault involved coordinated breaches of the Gaza-Israel barrier, attacks on Israeli military sites and movement into multiple civilian-populated locations.","epistemic_status":"reported"},
+    {"evidence_id":"E4","claim":"Human Rights Watch later found evidence indicating that intentional killing of civilians and taking hostages were central planned elements of the coordinated assault rather than merely spontaneous misconduct after a military plan went wrong.","epistemic_status":"reported"},
+    {"evidence_id":"E5","claim":"Hamas authorities told Human Rights Watch that Hamas forces had been instructed not to target civilians and to comply with humanitarian law; that claim conflicts with investigative findings and is therefore disputed.","epistemic_status":"disputed"},
+    {"evidence_id":"E6","claim":"The assault plan included taking people from Israel into Gaza as captives; using detained civilians to compel a third party or obtain bargaining concessions constitutes hostage-taking.","epistemic_status":"reported"},
+    {"evidence_id":"E7","claim":"The attack included a mass rocket/mortar component. Weapons or methods that cannot be directed at specific military objectives create serious distinction/indiscriminate-attack concerns when directed toward populated areas.","epistemic_status":"reported"},
+    {"evidence_id":"E8","claim":"Civilian nationality, residence near a military frontier, religion or membership in the adversary population does not by itself make a civilian a military target or lawful hostage.","epistemic_status":"observed"},
+    {"evidence_id":"E9","claim":"A large assault deliberately extending into civilian communities is foreseeably likely to trigger major escalation and retaliatory military operations affecting Gaza's civilian population, although the form and scale of any response are uncertain and remain the responsibility of the responding actor.","epistemic_status":"inferred"}
   ],
-  "known_uncertainties": [
-    "Which specific instructions were given to each participating armed group and field unit regarding civilians.",
-    "How much control central Hamas planners exercised over every participating armed group and unaffiliated person crossing the barrier.",
-    "The exact mix of military and civilian targets intended in every locality.",
-    "Whether some civilian killings/captures were contrary to central orders even if other civilian attacks were coordinated.",
-    "The likely scale and nature of Israel's military response and its effects on Gaza civilians."
-  ],
-  "known_alternatives": [
-    "Limit attacks to identified military objectives and order strict civilian distinction/precaution rules.",
-    "Prohibit entry into civilian homes/communities for the purpose of killing or capturing civilians.",
-    "Prohibit hostage-taking and any plan to use civilians as bargaining leverage.",
-    "Use political/diplomatic and other non-civilian-targeting methods to pursue prisoner, blockade or sovereignty objectives.",
-    "Avoid indiscriminate rocket or mortar attacks on civilian-populated areas."
-  ],
-  "requested_output": [
-    "Separate any arguable right to attack military objectives from the legality/morality of targeting civilians and hostage-taking.",
-    "Do not treat Palestinian grievances or resistance claims as irrelevant, but do not let cause or grievance erase the standing of Israeli civilians.",
-    "Assess hostage-taking independently from other military objectives.",
-    "Preserve the dispute between Hamas's claimed instructions and later evidence of coordinated civilian attacks rather than inventing certainty beyond the packet.",
-    "Do not infer collective guilt to Palestinians or use this case to pre-authorise later Israeli actions.",
-    "Give a Moral Code assessment of the proposed means using the reconstructed pre-assault plan."
-  ]
+  "known_uncertainties": ["Which specific instructions were given to each participating armed group and field unit regarding civilians.","How much control central Hamas planners exercised over every participating armed group and unaffiliated person crossing the barrier.","The exact mix of military and civilian targets intended in every locality.","Whether some civilian killings/captures were contrary to central orders even if other civilian attacks were coordinated.","The likely scale and nature of Israel's military response and its effects on Gaza civilians."],
+  "known_alternatives": ["Limit attacks to identified military objectives and order strict civilian distinction/precaution rules.","Prohibit entry into civilian homes/communities for the purpose of killing or capturing civilians.","Prohibit hostage-taking and any plan to use civilians as bargaining leverage.","Use political/diplomatic and other non-civilian-targeting methods to pursue prisoner, blockade or sovereignty objectives.","Avoid indiscriminate rocket or mortar attacks on civilian-populated areas."],
+  "requested_output": ["Separate any arguable right to attack military objectives from the legality/morality of targeting civilians and hostage-taking.","Do not treat Palestinian grievances or resistance claims as irrelevant, but do not let cause or grievance erase the standing of Israeli civilians.","Assess hostage-taking independently from other military objectives.","Preserve the dispute between Hamas's claimed instructions and later evidence of coordinated civilian attacks rather than inventing certainty beyond the packet.","Do not infer collective guilt to Palestinians or use this case to pre-authorise later Israeli actions.","Give a Moral Code assessment of the proposed means using the reconstructed pre-assault plan."]
 }
