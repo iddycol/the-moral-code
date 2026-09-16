@@ -1,0 +1,106 @@
+{
+  "case_id": "HC-0103",
+  "packet_id": "HC-0103-M",
+  "identity_mode": "masked",
+  "decision_context": "An occupying power is preparing and beginning a coordinated roundup of a legally targeted minority in a neighbouring occupied country. The plan has been credibly leaked, members of the minority are going into hiding, and a short sea crossing offers a practical escape route to a nearby neutral state. The neutral state must decide whether to make clear that refugees from the targeted group and close relatives will be admitted rather than turned away.",
+  "decision_question": "Should the neutral state offer temporary sanctuary to members of the targeted minority and close relatives fleeing the imminent roundup and deportation operation?",
+  "actors": [
+    "neutral neighbouring government",
+    "its border, maritime and refugee authorities"
+  ],
+  "available_actions": [
+    "Offer temporary sanctuary to the targeted minority and close relatives who can reach the neutral state during the emergency.",
+    "Keep existing entry policy without a special guarantee and decide individual arrivals case by case.",
+    "Limit admission to selected categories or a small fixed quota.",
+    "Refuse admission to minimise resource, security and diplomatic risks associated with neutrality."
+  ],
+  "affected_parties": [
+    {
+      "party": "Members of the targeted minority facing imminent group-based arrest and deportation",
+      "known_interests_or_risks": "Liberty, family unity, safety from forced deportation and access to a reachable neutral refuge.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Close relatives fleeing with them",
+      "known_interests_or_risks": "Family unity, safety and ability to remain with endangered relatives.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Residents and public institutions of the neutral state",
+      "known_interests_or_risks": "Resources, accommodation, security, public administration and domestic stability during wartime.",
+      "power_position": "mixed"
+    },
+    {
+      "party": "Neutral-state government",
+      "known_interests_or_risks": "Neutrality, relations with belligerent powers, national security, humanitarian responsibility and control over admission policy.",
+      "power_position": "very_high"
+    },
+    {
+      "party": "People in the occupied country helping the endangered group escape",
+      "known_interests_or_risks": "Whether a viable destination exists and their own risks if escape attempts fail.",
+      "power_position": "low"
+    }
+  ],
+  "known_evidence": [
+    {
+      "evidence_id": "E1",
+      "claim": "Occupation/security authorities are preparing and beginning a coordinated operation to arrest members of the targeted minority and deport them from the occupied country.",
+      "epistemic_status": "reported"
+    },
+    {
+      "evidence_id": "E2",
+      "claim": "Many members of the minority are going into hiding and need a destination outside the occupier's control if they are to evade arrest.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E3",
+      "claim": "The neutral state is geographically close and can be reached from the occupied country by small boats across a narrow sea passage.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E4",
+      "claim": "The neutral state controls whether refugees reaching its territory are admitted and protected or refused entry.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E5",
+      "claim": "Admission would create real but bounded administrative, accommodation and wartime-security responsibilities.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E6",
+      "claim": "A communicated willingness to admit refugees would materially increase the feasibility of escape by giving rescuers and endangered families a known safe destination.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E7",
+      "claim": "Refusing admission or leaving entry materially uncertain risks closing the most accessible neutral refuge available during the imminent roundup.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E8",
+      "claim": "The threatened people are targeted because of group identity rather than an individualised finding that each committed a harmful act.",
+      "epistemic_status": "observed"
+    }
+  ],
+  "known_uncertainties": [
+    "How many refugees will arrive if sanctuary is offered.",
+    "How the occupying power will respond diplomatically or operationally.",
+    "How long refuge will be required.",
+    "The precise treatment people will face after deportation, although forced arrest and deportation themselves create immediate severe loss of liberty and safety.",
+    "The resources required for reception and support."
+  ],
+  "known_alternatives": [
+    "Offer temporary emergency sanctuary with security screening that does not defeat urgent access to safety.",
+    "Admit this specific endangered population without making a broader unlimited refugee commitment.",
+    "Coordinate reception with rescue networks to reduce maritime and administrative risk.",
+    "Keep policy ambiguous or restrictive, leaving refugees uncertain whether arrival will result in protection."
+  ],
+  "requested_output": [
+    "Assess whether the neutral state has a positive moral duty to provide a feasible sanctuary when severe group-based harm is imminent nearby.",
+    "Weigh legitimate neutrality, security and resource interests without assuming they automatically override endangered people's safety.",
+    "Assess whether bounded temporary admission is proportionate.",
+    "Consider the moral consequences of refusal or passivity as well as action.",
+    "Give a Moral Code assessment using only this packet and without identifying the historical case."
+  ]
+}
