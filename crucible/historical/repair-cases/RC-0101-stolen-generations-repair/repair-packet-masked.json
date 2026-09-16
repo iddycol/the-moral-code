@@ -1,0 +1,65 @@
+{
+  "repair_case_id": "RC-0101",
+  "identity_mode": "masked",
+  "repair_context": "A national inquiry has established that governments and associated institutions forcibly removed children from an ancestry-defined Indigenous population under special laws and policies, causing serious family, cultural, psychological and intergenerational harms. The current question is what successor governments owe after the harm is established, and how repair can be designed without making survivors surrender agency or forgive as a condition of remedy.",
+  "repair_question": "What combination of acknowledgement, records/family tracing, restitution, rehabilitation, compensation, accountability, institutional reform and survivor-controlled reconciliation should successor governments adopt?",
+  "established_harms": [
+    {"harm_id":"H1","description":"Forced separation of children from parents, siblings, extended family and community under public laws/policies.","status":"established"},
+    {"harm_id":"H2","description":"Loss or disruption of culture, language, identity and family history affected many removed people.","status":"substantially_established"},
+    {"harm_id":"H3","description":"Psychological trauma, institutionalisation, exploitation and abuse affected many removed children, though experiences varied.","status":"substantially_established"},
+    {"harm_id":"H4","description":"Missing/inaccessible institutional records impede family tracing, identity reconstruction and reunion.","status":"established"},
+    {"harm_id":"H5","description":"Some harms continue across generations through disrupted family/cultural relationships and unresolved loss.","status":"substantially_established"}
+  ],
+  "responsible_actors": [
+    {"actor":"successor governments/public institutions responsible for the removal system","responsibility_status":"institutional_established","responsibility_note":"Institutional responsibility can survive changes of officeholders and support repair without inherited personal criminal guilt."},
+    {"actor":"non-state institutions involved in particular removals/placements","responsibility_status":"attributed","responsibility_note":"Responsibility varies by institution/case and requires evidence."},
+    {"actor":"present citizens/taxpayers as individuals","responsibility_status":"not_personally_responsible","responsibility_note":"Public financing of institutional reparation is not a declaration of inherited personal guilt."}
+  ],
+  "affected_parties": [
+    {"party":"survivors of forced removal","interests":"Truth, records, family tracing, acknowledgement, material remedy, healing support, choice over reconciliation and protection from re-traumatisation.","expressed_preferences":["records/family tracing","acknowledgement/apology","healing support","compensation/material repair","non-recurrence"],"preference_diversity_note":"Survivors differ over apology, money, litigation, reconciliation and public disclosure.","power_position":"low"},
+    {"party":"families and descendants","interests":"Family reconstruction, records, cultural continuity, acknowledgement of intergenerational effects and practical support.","preference_diversity_note":"Effects and desired remedies vary.","power_position":"low"},
+    {"party":"affected Indigenous communities/organisations","interests":"Community healing, cultural restoration, control over sensitive information, institutional reform and participation in design.","power_position":"mixed"},
+    {"party":"successor governments/public institutions","interests":"Meeting repair duties, administrable/fair eligibility, fiscal responsibility, records management and non-recurrence.","power_position":"very_high"},
+    {"party":"wider public/later generations","interests":"Truthful historical record, fair public-resource use and institutions that do not repeat category-based family removal.","power_position":"mixed"}
+  ],
+  "continuing_risks": [
+    "Survivors may die before receiving records, reunion support or remedy.",
+    "Eligibility processes may re-traumatise applicants or demand impossible proof where state records are incomplete.",
+    "Symbolic apology may substitute for feasible material repair.",
+    "Institution-designed reconciliation may pressure victims to forgive or accept closure.",
+    "Child-protection systems may repeat discriminatory patterns without structural reform."
+  ],
+  "repair_options": [
+    {"option_id":"R1","type":"truth_acknowledgement","description":"Formal acknowledgement/apology and truthful public record without demanding forgiveness.","feasibility":"known_feasible","victim_control_note":"Survivors choose whether apology has personal meaning."},
+    {"option_id":"R2","type":"restitution","description":"Open/preserve records, correct records where possible and fund family tracing/reunion.","feasibility":"known_feasible","victim_control_note":"Survivors control personal-information access and reunion decisions."},
+    {"option_id":"R3","type":"rehabilitation","description":"Fund culturally appropriate health, psychological, social and community healing services.","feasibility":"known_feasible","victim_control_note":"Participation voluntary; no single required model of healing."},
+    {"option_id":"R4","type":"compensation","description":"Create reparations/compensation not wholly dependent on prolonged individual litigation.","feasibility":"possibly_feasible","victim_control_note":"No forced forgiveness; effects on legal rights must be explicit."},
+    {"option_id":"R5","type":"accountability","description":"Preserve investigation/court routes for provable individual criminal/civil wrongdoing.","feasibility":"possibly_feasible","victim_control_note":"Survivors decide whether to pursue available processes."},
+    {"option_id":"R6","type":"institutional_reform","description":"Reform child-protection, evidence, records and review systems to prevent category-based removal.","feasibility":"known_feasible","victim_control_note":"Affected communities should participate materially in design/oversight."},
+    {"option_id":"R7","type":"memorialisation","description":"Support survivor-led memorials, education and preservation of testimony.","feasibility":"known_feasible","victim_control_note":"Public testimony must not be a condition of remedy."},
+    {"option_id":"R8","type":"reconciliation","description":"Offer voluntary reconciliation processes only after/alongside truth and practical remedy.","feasibility":"possibly_feasible","victim_control_note":"Reconciliation is offered, never imposed."}
+  ],
+  "constraints": [
+    "Harms and survivor preferences vary.",
+    "Records are incomplete and individual causation/quantum may be hard to prove decades later.",
+    "Lost childhood/family time/cultural transmission cannot be fully restored.",
+    "Public resources are finite and eligibility rules require reviewable fairness.",
+    "Institutional responsibility does not imply inherited personal guilt.",
+    "Repair schemes should not silently extinguish individual legal rights."
+  ],
+  "uncertainties": [
+    "Compensation model and quantum.",
+    "How to recognise descendant/intergenerational harm without treating all descendants identically.",
+    "Allocation among multiple responsible institutions/jurisdictions.",
+    "Which claims need individual proof versus class/institutional recognition.",
+    "How to protect sensitive records while maximising survivor access."
+  ],
+  "requested_output": [
+    "Design a repair package, not a single punishment/compensation verdict.",
+    "Distinguish institutional responsibility from inherited guilt.",
+    "Preserve survivor choice/diversity and do not require forgiveness.",
+    "Address truth, restitution, rehabilitation, compensation, accountability and non-recurrence.",
+    "State resource/eligibility trade-offs and irreparable losses.",
+    "Assess whether apology without practical remedy is sufficient."
+  ]
+}
