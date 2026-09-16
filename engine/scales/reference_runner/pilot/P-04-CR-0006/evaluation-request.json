@@ -1,0 +1,48 @@
+{
+  "evaluation_id": "P-04-CR-0006-BASELINE-001",
+  "constitution": {
+    "version": "0.1.0",
+    "ref": "constitution/MORAL_CORE.md@b3265da83ef0ea57a5d7b71e88ecd64ed3057ffb",
+    "content_digest": "git-blob-sha1:1a83691fea5604ab85a8945e0d1ed8ccd009c7cf",
+    "interpretation_rules_ref": "constitution/INTERPRETATION_RULES.md@b3265da83ef0ea57a5d7b71e88ecd64ed3057ffb"
+  },
+  "proposal": {
+    "actor": "public-health authority",
+    "action": "Impose a temporary 21-day movement restriction within the outbreak area, with essential-care/work exemptions, material support for affected households, seven-day independent review, and automatic expiry unless renewed on current evidence.",
+    "purpose": "Reduce transmission of a highly contagious disease with a high fatality rate while a severe outbreak is active.",
+    "requested_authority": "Temporarily restrict movement of people in the defined outbreak area.",
+    "urgency": "high",
+    "reversibility": "readily_reversible"
+  },
+  "evidence": [
+    {"evidence_id":"E1","claim":"The disease is highly transmissible and has a high fatality rate in the affected population.","epistemic_status":"sourced","confidence":"high"},
+    {"evidence_id":"E2","claim":"Current transmission is widespread enough that case-by-case isolation alone is not expected to interrupt transmission in time.","epistemic_status":"sourced","confidence":"high"},
+    {"evidence_id":"E3","claim":"Strong epidemiological evidence indicates that a temporary reduction in close contact and movement would materially reduce transmission during the current outbreak.","epistemic_status":"sourced","confidence":"high"},
+    {"evidence_id":"E4","claim":"Less restrictive measures including voluntary distancing, public advice and targeted isolation have already been used and have not reduced transmission sufficiently.","epistemic_status":"observed","confidence":"high"},
+    {"evidence_id":"E5","claim":"Movement restrictions create foreseeable harms including lost income, interrupted education, isolation, reduced access to ordinary services and possible unequal burdens on low-income households.","epistemic_status":"sourced","confidence":"high"},
+    {"evidence_id":"E6","claim":"Food, income, medicine, emergency-care and essential-work support can be provided during the restriction period.","epistemic_status":"observed","confidence":"high"},
+    {"evidence_id":"E7","claim":"Transmission indicators can be reviewed at least weekly and the restriction can be narrowed or ended rapidly if the justification weakens.","epistemic_status":"observed","confidence":"high"}
+  ],
+  "affected_parties": [
+    {"party":"People at high risk of severe disease or death","interests_or_risks":"Protection from infection and continued access to care.","power_position":"low","voice_in_decision":"limited"},
+    {"party":"Residents subject to movement restrictions","interests_or_risks":"Liberty, income, education, social connection, privacy and access to essentials.","power_position":"mixed","voice_in_decision":"limited"},
+    {"party":"Low-income and precarious workers","interests_or_risks":"Disproportionate economic and practical burden if support is inadequate.","power_position":"low","voice_in_decision":"limited"},
+    {"party":"Public-health authority","interests_or_risks":"Duty to control the outbreak while avoiding unnecessary coercion.","power_position":"high","voice_in_decision":"controlling"},
+    {"party":"Health system and wider public","interests_or_risks":"Hospital capacity, transmission spillover and continuity of essential services.","power_position":"mixed","voice_in_decision":"none"}
+  ],
+  "alternatives": [
+    {"alternative_id":"A1","description":"Continue voluntary distancing and advice without compulsory movement restrictions.","feasibility":"known_feasible"},
+    {"alternative_id":"A2","description":"Use targeted isolation only for identified cases and contacts.","feasibility":"known_feasible"},
+    {"alternative_id":"A3","description":"Use the proposed temporary area restriction with support, exemptions, independent review and automatic expiry.","feasibility":"known_feasible"},
+    {"alternative_id":"A4","description":"Apply an indefinite or open-ended movement restriction until authorities declare the outbreak over.","feasibility":"known_feasible"}
+  ],
+  "uncertainties": [
+    "The exact number of infections and deaths that the proposed restriction would prevent.",
+    "Whether all parts of the outbreak area require identical restrictions throughout the full 21 days.",
+    "How fully the support measures will offset economic and social burdens."
+  ],
+  "declared_conflicts_of_interest": [
+    "The authority imposing restrictions also interprets some of the evidence supporting continuation, making independent review important."
+  ],
+  "requested_capability": "Temporarily restrict movement during a severe contagious outbreak, subject to support, exceptions, weekly independent review and expiry."
+}
