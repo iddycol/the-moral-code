@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Historical Crucible Case Index",
+  "type": "object",
+  "required": [
+    "case_id",
+    "title",
+    "decision_cutoff",
+    "case_class",
+    "decision_packet",
+    "outcome_reveal",
+    "expected_constitutional_constraints",
+    "sources"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^HC-[0-9]{4}$"
+    },
+    "title": { "type": "string" },
+    "decision_cutoff": {
+      "type": "object",
+      "required": ["date_or_period", "definition"],
+      "properties": {
+        "date_or_period": { "type": "string" },
+        "definition": { "type": "string" }
+      }
+    },
+    "case_class": {
+      "enum": [
+        "clear_moral_failure",
+        "institutional_failure",
+        "hard_tradeoff",
+        "hindsight_sensitive",
+        "defensible_under_uncertainty"
+      ]
+    },
+    "decision_packet": {
+      "type": "object",
+      "required": [
+        "actors",
+        "decision_question",
+        "available_actions",
+        "affected_parties",
+        "known_evidence",
+        "known_uncertainties",
+        "known_alternatives",
+        "withheld_hindsight"
+      ],
+      "properties": {
+        "actors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "decision_question": { "type": "string" },
+        "available_actions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2
+        },
+        "affected_parties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["party", "known_interests_or_risks"],
+            "properties": {
+              "party": { "type": "string" },
+              "known_interests_or_risks": { "type": "string" },
+              "power_position": {
+                "enum": ["very_low", "low", "mixed", "high", "very_high", "unknown"]
+              }
+            }
+          }
+        },
+        "known_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "source_ids", "epistemic_status"],
+            "properties": {
+              "claim": { "type": "string" },
+              "source_ids": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "epistemic_status": {
+                "enum": ["observed", "reported", "inferred", "predicted", "disputed", "unknown"]
+              },
+              "confidence_note": { "type": "string" }
+            }
+          }
+        },
+        "known_uncertainties": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "known_alternatives": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "withheld_hindsight": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Categories of later information deliberately excluded from the decision packet; do not reveal substantive answer details here in evaluator-facing exports."
+        }
+      }
+    },
+    "outcome_reveal": {
+      "type": "object",
+      "required": ["actual_action", "later_evidence", "outcomes"],
+      "properties": {
+        "actual_action": { "type": "string" },
+        "later_evidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "outcomes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "later_reviews_or_findings": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "relevant_principles": {
+      "type": "array",
+      "items": { "pattern": "^MC-[0-9]{2}$" }
+    },
+    "expected_constitutional_constraints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "adversarial_variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["variant_id", "change", "moral_relevance_expectation"],
+        "properties": {
+          "variant_id": { "type": "string" },
+          "change": { "type": "string" },
+          "moral_relevance_expectation": {
+            "enum": ["irrelevant_should_not_change", "relevant_may_change", "test_unknown"]
+          }
+        }
+      }
+    },
+    "pressure_variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pressure", "expected_effect"],
+        "properties": {
+          "pressure": { "type": "string" },
+          "expected_effect": {
+            "enum": ["none_on_moral_judgement", "may_change_evidence_or_context", "test_unknown"]
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "citation", "url", "source_date", "temporal_role"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "citation": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "source_date": { "type": "string" },
+          "temporal_role": {
+            "enum": ["contemporaneous", "pre_decision", "later_reconstruction", "outcome_only"]
+          },
+          "use_note": { "type": "string" }
+        }
+      }
+    }
+  }
+}
