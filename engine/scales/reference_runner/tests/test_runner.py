@@ -5,6 +5,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from compare_runs import compare_runs
 from prompting import build_role_envelope
 from runner import canonical_json_digest, load_json, validate
 
@@ -129,3 +130,62 @@ def test_constitution_binding_rejects_wrong_file(tmp_path):
     import pytest
     with pytest.raises(ValueError, match="constitution binding mismatch"):
         verify_constitution_binding(request, wrong)
+
+
+def _write_synthetic_run(path: Path, *, pressure: str | None, floor: bool, outcome: str, directive: str) -> None:
+    request = {"evaluation_id": "SAME", "evidence": [{"evidence_id": "E1", "claim": "fact", "epistemic_status": "observed"}]}
+    request_digest = canonical_json_digest(request)
+    (path / "input").mkdir(parents=True)
+    (path / "role-assessments").mkdir(parents=True)
+    (path / "input" / "evaluation-request.json").write_text(json.dumps(request), encoding="utf-8")
+    for role in ("advocate", "guardian", "evidence_sceptic", "power_auditor", "vulnerable_person_defender", "future_environment_advocate"):
+        assessment = {
+            "recommended_disposition": outcome,
+            "findings": [{"finding_id": "F1", "statement": "finding", "basis": "input_evidence", "evidence_ids": ["E1"], "materiality": "high"}],
+            "principle_assessments": [{"principle_id": "MC-01", "status": "fail" if floor else "concern", "reason": "reason", "evidence_ids": ["E1"]}],
+        }
+        (path / "role-assessments" / f"{role}.json").write_text(json.dumps(assessment), encoding="utf-8")
+    decision = {
+        "outcome": outcome,
+        "moral_floor": {"breach_found": floor},
+        "principle_assessments": [{"principle_id": "MC-01", "status": "fail" if floor else "concern", "reason": "reason"}],
+        "required_safeguards": [],
+        "uncertainties": [],
+        "enforcement_recommendation": {"directive": directive},
+    }
+    (path / "decision.json").write_text(json.dumps(decision), encoding="utf-8")
+    manifest = {
+        "run_id": path.name,
+        "request_digest": request_digest,
+        "pressure_context_digest": pressure,
+        "provider": "test",
+        "model": "test-model",
+        "model_version": "1",
+    }
+    (path / "run-manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+
+def test_compare_runs_flags_pressure_moral_floor_weakening(tmp_path):
+    baseline = tmp_path / "baseline"
+    variant = tmp_path / "variant"
+    _write_synthetic_run(baseline, pressure=None, floor=True, outcome="impermissible", directive="block")
+    _write_synthetic_run(variant, pressure="sha256:pressure", floor=False, outcome="permissible", directive="allow")
+
+    report = compare_runs(baseline, variant)
+    codes = {finding["code"] for finding in report["findings"]}
+    assert report["same_request"] is True
+    assert report["pressure_only_comparison"] is True
+    assert "PRESSURE_MORAL_FLOOR_WEAKENED" in codes
+    assert "PRESSURE_DECISION_CHANGED" in codes
+
+
+def test_compare_runs_does_not_flag_stable_pressure_run(tmp_path):
+    baseline = tmp_path / "baseline"
+    variant = tmp_path / "variant"
+    _write_synthetic_run(baseline, pressure=None, floor=True, outcome="impermissible", directive="block")
+    _write_synthetic_run(variant, pressure="sha256:pressure", floor=True, outcome="impermissible", directive="block")
+
+    report = compare_runs(baseline, variant)
+    assert report["pressure_only_comparison"] is True
+    assert report["decision_changes"]["outcome"]["changed"] is False
+    assert not any(finding["code"] == "PRESSURE_MORAL_FLOOR_WEAKENED" for finding in report["findings"])
