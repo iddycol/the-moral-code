@@ -31,9 +31,9 @@
     {"party":"Military personnel and war industries in the target area","interests_or_risks":"Direct attack because of military and industrial function.","power_position":"low","voice_in_decision":"none"},
     {"party":"Allied military personnel who may fight in a ground invasion or prolonged war","interests_or_risks":"Death and injury if the war continues or an invasion proceeds.","power_position":"low","voice_in_decision":"limited"},
     {"party":"Civilians elsewhere in the opposing country","interests_or_risks":"Continued conventional bombing, blockade, deprivation and ground warfare if surrender is delayed.","power_position":"very_low","voice_in_decision":"none"},
-    {"party":"Opposing political and military leadership","interests_or_risks":"Pressure to surrender and loss of military capability.","power_position":"high","voice_in_decision":"controlling_over_surrender"},
+    {"party":"Opposing political and military leadership","interests_or_risks":"Pressure to surrender and loss of military capability.","power_position":"high","voice_in_decision":"controlling"},
     {"party":"Decision-making government and military leadership","interests_or_risks":"Ending the war, protecting its forces, strategic advantage, political responsibility and consequences of introducing a new weapon.","power_position":"very_high","voice_in_decision":"controlling"},
-    {"party":"Future populations and states","interests_or_risks":"Precedent for the combat use and future control of weapons capable of mass destruction.","power_position":"none","voice_in_decision":"none"}
+    {"party":"Future populations and states","interests_or_risks":"Precedent for the combat use and future control of weapons capable of mass destruction.","power_position":"very_low","voice_in_decision":"none"}
   ],
   "alternatives": [
     {"alternative_id":"A1","description":"Use the new weapon directly against the inhabited military-industrial city without prior specific warning, as proposed.","feasibility":"known_feasible"},
