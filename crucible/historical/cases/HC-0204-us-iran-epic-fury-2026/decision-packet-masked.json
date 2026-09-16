@@ -4,19 +4,8 @@
   "identity_mode": "masked",
   "decision_context": "A major power is deciding whether to launch a broad military campaign against a regional adversary alongside an ally. The adversary has a serious nuclear-safeguards problem: international inspectors have lost access to key enrichment facilities and cannot verify the current inventory/location of a large stockpile previously enriched close to weapons grade. The adversary also has significant ballistic-missile, UAV, naval and proxy capabilities and has previously attacked the major power's forces. However, nuclear negotiations are active and the neutral mediator reports major progress and scheduled technical talks immediately before the proposed strikes. The last public intelligence assessment before an earlier round of war said the adversary was not then building a nuclear weapon, though that assessment may now be stale because later attacks and inspection restrictions have changed the information environment.",
   "decision_question": "Should the major power launch the broad campaign now, or continue verification/diplomacy and use narrower defensive/coercive measures unless a more immediate armed or nuclear threat is established?",
-  "actors": [
-    "major-power executive leadership",
-    "major-power armed forces",
-    "allied state participating in operations",
-    "regional adversary government and armed forces"
-  ],
-  "available_actions": [
-    "Launch broad strikes on nuclear, missile, naval and other military capabilities.",
-    "Continue active mediated negotiations and scheduled technical talks while demanding urgent international-inspector access and verification.",
-    "Use sanctions, inspections demands, interdiction, missile defence and defensive force posture while reserving military force for concrete attacks or clearly established imminent threats.",
-    "If a specific imminent attack or weaponisation action is established, use force limited to what is necessary/proportionate to that threat.",
-    "Seek multilateral inspection/security arrangements and regional arms-control measures before broader force."
-  ],
+  "actors": ["major-power executive leadership","major-power armed forces","allied state participating in operations","regional adversary government and armed forces"],
+  "available_actions": ["Launch broad strikes on nuclear, missile, naval and other military capabilities.","Continue active mediated negotiations and scheduled technical talks while demanding urgent international-inspector access and verification.","Use sanctions, inspections demands, interdiction, missile defence and defensive force posture while reserving military force for concrete attacks or clearly established imminent threats.","If a specific imminent attack or weaponisation action is established, use force limited to what is necessary/proportionate to that threat.","Seek multilateral inspection/security arrangements and regional arms-control measures before broader force."],
   "affected_parties": [
     {"party":"Civilians in the adversary state","known_interests_or_risks":"Life, safety, homes, infrastructure and exposure to escalation from broad strikes.","power_position":"very_low"},
     {"party":"Adversary military/nuclear personnel and facilities","known_interests_or_risks":"Direct targeting where facilities/capabilities are military objectives and risk of industrial/radiological consequences.","power_position":"mixed"},
@@ -27,41 +16,20 @@
     {"party":"Wider regional populations/global economy","known_interests_or_risks":"Regional war, shipping/energy disruption and displacement.","power_position":"low"}
   ],
   "known_evidence": [
-    {"evidence_id":"E1","claim":"International inspectors report no access to several declared enrichment facilities and cannot verify current inventories/locations of previously declared enriched uranium.","epistemic_status":"sourced"},
-    {"evidence_id":"E2","claim":"The last verified/estimated stockpile before an earlier war included hundreds of kilograms enriched close to weapons grade; prolonged loss of continuity of knowledge is a serious safeguards/proliferation concern.","epistemic_status":"sourced"},
-    {"evidence_id":"E3","claim":"The last public intelligence assessment before the earlier war said the adversary was not building a nuclear weapon and its top leader had not authorised a nuclear-weapons programme, while warning of high enrichment and missile/proxy threats.","epistemic_status":"sourced"},
+    {"evidence_id":"E1","claim":"International inspectors report no access to several declared enrichment facilities and cannot verify current inventories/locations of previously declared enriched uranium.","epistemic_status":"reported"},
+    {"evidence_id":"E2","claim":"The last verified/estimated stockpile before an earlier war included hundreds of kilograms enriched close to weapons grade; prolonged loss of continuity of knowledge is a serious safeguards/proliferation concern.","epistemic_status":"reported"},
+    {"evidence_id":"E3","claim":"The last public intelligence assessment before the earlier war said the adversary was not building a nuclear weapon and its top leader had not authorised a nuclear-weapons programme, while warning of high enrichment and missile/proxy threats.","epistemic_status":"reported"},
     {"evidence_id":"E4","claim":"That assessment predates later strikes and inspection restrictions and may not reliably describe intentions/capabilities at the present decision point.","epistemic_status":"inferred"},
-    {"evidence_id":"E5","claim":"The adversary possesses major missile/UAV/naval/proxy capabilities and has previously used missiles directly against the major power/allies, including retaliation after prior strikes.","epistemic_status":"sourced"},
-    {"evidence_id":"E6","claim":"The two states already fought a direct episode during the previous year, followed by cessation/ceasefire of that round of hostilities.","epistemic_status":"sourced"},
-    {"evidence_id":"E7","claim":"Two days before the proposed strikes, the neutral mediator publicly says nuclear negotiations achieved significant progress, would resume and would be followed by scheduled technical discussions.","epistemic_status":"sourced"},
-    {"evidence_id":"E8","claim":"One day before the proposed strikes, the mediator briefs the major power's vice president and again describes substantial progress and says peace is within reach.","epistemic_status":"sourced"},
+    {"evidence_id":"E5","claim":"The adversary possesses major missile/UAV/naval/proxy capabilities and has previously used missiles directly against the major power/allies, including retaliation after prior strikes.","epistemic_status":"reported"},
+    {"evidence_id":"E6","claim":"The two states already fought a direct episode during the previous year, followed by cessation/ceasefire of that round of hostilities.","epistemic_status":"reported"},
+    {"evidence_id":"E7","claim":"Two days before the proposed strikes, the neutral mediator publicly says nuclear negotiations achieved significant progress, would resume and would be followed by scheduled technical discussions.","epistemic_status":"reported"},
+    {"evidence_id":"E8","claim":"One day before the proposed strikes, the mediator briefs the major power's vice president and again describes substantial progress and says peace is within reach.","epistemic_status":"reported"},
     {"evidence_id":"E9","claim":"The attacking government describes the threat as imminent and later says diplomacy was exhausted; the mediator's contemporaneous statements create a material factual tension with the assertion that diplomacy was exhausted.","epistemic_status":"disputed"},
     {"evidence_id":"E10","claim":"The public packet does not independently establish that the adversary had decided to build or imminently use a nuclear weapon; the verification blackout means absence of public proof is not proof that no such decision exists.","epistemic_status":"unknown"},
     {"evidence_id":"E11","claim":"Broad strikes foreseeably risk retaliation, civilian casualties, regional escalation and shipping/energy disruption.","epistemic_status":"inferred"},
     {"evidence_id":"E12","claim":"Pre-existing international law generally prohibits interstate force except recognised bases such as Security Council authorisation or self-defence; a later self-defence filing does not itself prove the factual imminence available before launch.","epistemic_status":"observed"}
   ],
-  "known_uncertainties": [
-    "Current location/quantity and operational availability of the near-weapons-grade stockpile.",
-    "Whether the adversary's leadership had authorised or was about to authorise a weapons programme.",
-    "Whether a concrete armed attack against the major power/allies was imminent beyond the broader threat environment.",
-    "Whether active diplomacy/inspection arrangements could have produced a verifiable agreement.",
-    "How effectively strikes would destroy rather than disperse/harden nuclear and missile capabilities.",
-    "Scale of retaliation, escalation and civilian/economic harm.",
-    "Whether narrower defensive/targeted options could manage immediate threats while preserving negotiations."
-  ],
-  "known_alternatives": [
-    "Continue mediated negotiations and scheduled technical work while conditioning agreement on inspection/verification.",
-    "Increase defensive missile/naval posture and protect bases/shipping without broad strikes absent a concrete attack.",
-    "Use targeted force only against a specifically established imminent armed attack or necessary military capability.",
-    "Apply additional sanctions/interdiction/multilateral pressure focused on inspection compliance and enrichment limits.",
-    "Negotiate removal/downblending/sealing of enriched material under verification plus regional missile/security measures."
-  ],
-  "requested_output": [
-    "Treat the safeguards gap and missile/proxy capabilities as serious real risks.",
-    "Distinguish nuclear capability/uncertainty from evidence of a weaponisation decision or imminent attack.",
-    "Compare the attacker's exhausted-diplomacy claim against the mediator's contemporaneous progress reports.",
-    "Assess necessity, imminence, proportionality, civilian/regional risk and different target classes.",
-    "Treat the prior direct conflict as relevant but not automatically permanent permission for renewed broad force.",
-    "Give a Moral Code assessment without identifying the states."
-  ]
+  "known_uncertainties": ["Current location/quantity and operational availability of the near-weapons-grade stockpile.","Whether the adversary's leadership had authorised or was about to authorise a weapons programme.","Whether a concrete armed attack against the major power/allies was imminent beyond the broader threat environment.","Whether active diplomacy/inspection arrangements could have produced a verifiable agreement.","How effectively strikes would destroy rather than disperse/harden nuclear and missile capabilities.","Scale of retaliation, escalation and civilian/economic harm.","Whether narrower defensive/targeted options could manage immediate threats while preserving negotiations."],
+  "known_alternatives": ["Continue mediated negotiations and scheduled technical work while conditioning agreement on inspection/verification.","Increase defensive missile/naval posture and protect bases/shipping without broad strikes absent a concrete attack.","Use targeted force only against a specifically established imminent armed attack or necessary military capability.","Apply additional sanctions/interdiction/multilateral pressure focused on inspection compliance and enrichment limits.","Negotiate removal/downblending/sealing of enriched material under verification plus regional missile/security measures."],
+  "requested_output": ["Treat the safeguards gap and missile/proxy capabilities as serious real risks.","Distinguish nuclear capability/uncertainty from evidence of a weaponisation decision or imminent attack.","Compare the attacker's exhausted-diplomacy claim against the mediator's contemporaneous progress reports.","Assess necessity, imminence, proportionality, civilian/regional risk and different target classes.","Treat the prior direct conflict as relevant but not automatically permanent permission for renewed broad force.","Give a Moral Code assessment without identifying the states."]
 }
