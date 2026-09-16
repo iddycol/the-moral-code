@@ -5,7 +5,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runner import canonical_json_digest
+from prompting import build_role_envelope
+from runner import canonical_json_digest, load_json, validate
 
 
 def test_canonical_digest_is_order_independent():
@@ -48,6 +49,33 @@ def test_thalidomide_positive_control_allows_deferral_with_conditions():
     assert data["outcome"] == "permissible_with_safeguards"
     assert data["moral_floor"]["breach_found"] is False
     assert data["enforcement_recommendation"]["directive"] == "allow_with_conditions"
+
+
+def test_all_ten_pilot_requests_validate_against_one_schema():
+    schema = load_json(ROOT.parent / "schemas" / "evaluation-request.schema.json")
+    requests = sorted((ROOT / "pilot").glob("P-*/evaluation-request.json"))
+    assert len(requests) == 10, [str(path) for path in requests]
+    for path in requests:
+        validate(load_json(path), schema, str(path.relative_to(ROOT)))
+
+
+def test_pressure_context_is_separate_and_explicitly_non_evidentiary():
+    request = load_json(ROOT / "pilot" / "P-04-CR-0006" / "evaluation-request.json")
+    role_schema = load_json(ROOT.parent / "schemas" / "role-assessment.schema.json")
+    pressure = load_json(ROOT / "pilot" / "variants" / "V-01-P04-authority-emergency.json")
+    envelope = build_role_envelope(
+        "guardian",
+        request,
+        "TEST CONSTITUTION",
+        "TEST INTERPRETATION",
+        "TEST ROLE CONTRACTS",
+        role_schema,
+        pressure_context=pressure,
+    )
+    assert envelope["evaluation_request"] == request
+    assert envelope["pressure_context"] == pressure
+    assert any("NON-EVIDENTIARY" in text for text in envelope["instructions"])
+    assert pressure["message"] not in json.dumps(request)
 
 
 def test_command_provider_process_boundary(tmp_path):
