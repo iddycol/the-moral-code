@@ -1,35 +1,40 @@
 # Provenance Matrix — Working Draft
 
-**Status:** working matrix, 17 September 2026. MC-01 to MC-06 have received first-pass research; later columns remain to be added.
+**Status:** working matrix, 17 September 2026. MC-01 to MC-09 have received first-pass research; MC-10 to MC-12 remain.
 
 Legend: **S** strong support · **P** partial support · **T** meaningful tension/contradiction · **N** concept not native in this form · **?** not yet assessed.
 
-| Tradition / framework | MC-01 standing | MC-02 non-harm | MC-03 agency | MC-04 truth | MC-05 justice | MC-06 vulnerability/care | Notes |
-|---|---:|---:|---:|---:|---:|---:|---|
-| Teachings attributed to Jesus / Christian ethics | S/T | S/T | P/T | S/P | S/T | S | Enemy/neighbour concern and care for poor are strong; history includes hierarchy/coercion. |
-| Jewish ethics | S/T | S/T | P/T | S | S/P | S | Detailed speech ethics and tzedakah; communal/relational duties complicate autonomy and simple impartiality. |
-| Islamic ethics | S/T | S/T | P/T | P/S | S/T | S | Justice is central; zakat/poor duties strong; historical jurisprudence includes status hierarchy and justice-as-equivalence rather than sameness. |
-| Buddhism | P | S | N/P | P | P | S | Compassion/non-harm central; intention matters; rights/autonomy vocabulary not native. |
-| Jainism | P+ | S+ | P | P | P | S | Radical non-harm challenges human-centred limits. |
-| Hindu traditions | T | P/T | P/T | P | T | P/S | Dharma and care traditions coexist with serious caste/gender hierarchy challenges. |
-| Sikh ethics | S | S | S/P | S+ | S | S | Truthful living, Oneness, equality and seva strongly support multiple rules; lived inequalities remain relevant counterevidence. |
-| Confucian ethics | P/T | P | P/T | S/P | T/P | S/P | Ren/care strong; family/role partiality challenges universal impartiality and autonomy-first readings. |
-| African / Ubuntu-related ethics | S/P | S | P/T | S/P | S | S | Shared humanity, welfare, honesty, reciprocity and duty strong; relational framing corrects atomistic individualism. |
-| Stoicism | P/S | P | P | S/P | S/P | P | Cosmopolitanism/rational virtue useful; historical social assumptions require care. |
-| Kantian ethics | S | P | S | S/T | S | P | Strong anti-instrumentalisation and autonomy; strict truth duties and rational-agency grounding need qualification. |
-| Rawlsian justice | S | P | S | P | S+ | S/P | Veil of ignorance gives a powerful impartiality test; less developed as a care ethic. |
-| Capability approach | S/P | S/P | S+ | P | S/P | S+ | Substantive opportunity and capability strongly support meaningful agency and context-sensitive protection. |
-| Feminist / care bioethics | S/P | S | S+ | P/S | S/P | S+ | Relational autonomy, dependency and structural power expose paternalism and hidden vulnerability. |
-| Modern human-rights law | S+ | S+ | S+ | S/P | S+ | S+ | Equal dignity, liberty, non-discrimination, due process and specialised child/disability/prisoner protections. |
+| Tradition / framework | MC-01 standing | MC-02 non-harm | MC-03 agency | MC-04 truth | MC-05 justice | MC-06 power/care | MC-07 reciprocity | MC-08 repair | MC-09 future/world | Notes |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Teachings attributed to Jesus / Christian ethics | S/T | S/T | P/T | S/P | S/T | S | S | S/T | P/S | Enemy/neighbour concern, reciprocity, mercy and reconciliation are strong; institutional history includes hierarchy/coercion. |
+| Jewish ethics | S/T | S/T | P/T | S | S/P | S | S | S/P | P | Detailed speech ethics, neighbour reciprocity, tzedakah and repentance traditions; communal duties complicate autonomy. |
+| Islamic ethics | S/T | S/T | P/T | P/S | S/T | S | S/P | S/P | P | Justice, charity and forgiveness traditions strong; historical status hierarchy and varied punishment traditions require explicit tension. |
+| Buddhism | P | S | N/P | P | P | S | S | S+ | S/P | Compassion, analogy-with-self, anti-revenge and non-human concern are particularly relevant. |
+| Jainism | P+ | S+ | P | P | P | S | S/P | P | S+ | Radical non-harm and concern for living beings challenge anthropocentric limits. |
+| Hindu traditions | T | P/T | P/T | P | T | P/S | P/S | P/S | P/S | Dharma/care traditions coexist with caste/gender hierarchy; environmental interpretations are diverse. |
+| Sikh ethics | S | S | S/P | S+ | S | S | S | S/P | S/P | Truthful living, Oneness, equality and seva strongly support multiple rules; lived inequalities remain counterevidence. |
+| Confucian ethics | P/T | P | P/T | S/P | T/P | S/P | S+ | P | S+ | Relational reciprocity extends across generations; role/family partiality challenges simple impartiality. |
+| African / Ubuntu-related ethics | S/P | S | P/T | S/P | S | S | S+ | S/P | S/P | Shared humanity, reciprocity, restoration/community and duty strong; relational framing corrects atomistic individualism. |
+| Stoicism | P/S | P | P | S/P | S/P | P | S/P | P | P | Cosmopolitan concern useful; less direct on ecological standing. |
+| Kantian ethics | S | P | S | S/T | S | P | S/P | T/P | P | Strong anti-instrumentalisation/autonomy; strict retribution/truth traditions need qualification. |
+| Rawlsian justice | S | P | S | P | S+ | S/P | S/P | P | S | Veil of ignorance supports role reversal and intergenerational saving/justice. |
+| Capability approach | S/P | S/P | S+ | P | S/P | S+ | S | S/P | S | Substantive opportunity helps identify extraction and what must be preserved for future flourishing. |
+| Feminist / care bioethics | S/P | S | S+ | P/S | S/P | S+ | S | S+ | S/P | Relational autonomy, dependency, structural power and repair strongly relevant. |
+| Restorative justice | P | S/P | S | S | S | S | S | S+ | P | Strong on victim voice, responsibility, repair, reintegration; not a universal substitute for protection/due process. |
+| Modern human-rights / future-generation instruments | S+ | S+ | S+ | S/P | S+ | S+ | S/P | S/P | S+ | Equal dignity, liberty, non-discrimination, specialised protections and explicit intergenerational obligations. |
+| Environmental ethics | P | S/P | N/P | P | P/S | P/S | S/P | P | S+ | Challenges anthropocentrism and supports biodiversity/ecosystem standing under multiple theories. |
 
-## Findings after MC-01 to MC-06
+## Findings after MC-01 to MC-09
 
-1. **Convergence is real but not metaphysically uniform.** The Code should claim a convergent core, not pretend unanimous historical doctrine.
+1. **Convergence is real but not metaphysically uniform.** The Code should claim a convergent core, not unanimous historical doctrine.
 2. **MC-01:** non-disposability/basic standing is more robust than any single theory of intrinsic worth.
-3. **MC-02:** prevention of unnecessary suffering is among the strongest points of convergence; defensive force remains a constrained exception.
-4. **MC-03:** meaningful agency and freedom from domination are more cross-cultural and AI-relevant than an atomistic autonomy model.
-5. **MC-04:** epistemic integrity is broader and more useful than a literal no-lying rule; privacy/protection can justify non-disclosure.
-6. **MC-05:** impartial justice means excluding arbitrary/irrelevant partiality, not treating every person identically in every context.
-7. **MC-06:** power/capability asymmetry creates stronger duties, but protection must not erase the protected person's agency.
+3. **MC-02:** prevention of unnecessary suffering is among the strongest points of convergence; defensive force remains constrained.
+4. **MC-03:** meaningful agency and freedom from domination are more cross-cultural and AI-relevant than atomistic autonomy.
+5. **MC-04:** epistemic integrity is broader than a literal no-lying rule; privacy/protection can justify non-disclosure.
+6. **MC-05:** impartial justice excludes arbitrary/irrelevant partiality, not all differential treatment.
+7. **MC-06:** power/capability asymmetry creates stronger duties, but protection must preserve agency.
+8. **MC-07:** reciprocity is stronger when operationalised as non-extraction and fair distribution of burdens/benefits, not tit-for-tat exchange.
+9. **MC-08:** restoration is compatible with protection and accountability; vengeance/cruelty are illegitimate objectives, and forgiveness cannot be compelled.
+10. **MC-09:** future generations are an extreme case of power asymmetry; precaution must require plausible serious risk and proportional/reviewable action.
 
-The emerging architecture is less "twelve independent virtues" and more a set of mutual constraints on **power, harm, knowledge and agency**.
+The emerging architecture continues to organise around **standing, harm, knowledge, agency, power, reciprocity/accountability and temporal/ecological reach** rather than twelve isolated virtues.
