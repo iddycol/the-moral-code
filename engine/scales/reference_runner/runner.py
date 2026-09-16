@@ -93,6 +93,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--constitution-file", type=Path)
     parser.add_argument("--interpretation-file", type=Path)
     parser.add_argument("--role-contracts-file", type=Path)
+    parser.add_argument("--pressure-context-file", type=Path)
     parser.add_argument("--provider-timeout", type=int, default=180)
     parser.add_argument("--schemas", required=True, type=Path)
     parser.add_argument("--output-root", required=True, type=Path)
@@ -110,6 +111,12 @@ def execute(args: argparse.Namespace) -> Path:
     request = load_json(args.request)
     validate(request, request_schema, "evaluation request")
 
+    pressure_context = (
+        load_json(args.pressure_context_file)
+        if args.pressure_context_file is not None
+        else None
+    )
+
     run_dir = args.output_root / args.run_id
     if run_dir.exists():
         if not args.overwrite:
@@ -123,6 +130,8 @@ def execute(args: argparse.Namespace) -> Path:
     if args.provider == "file":
         if args.fixtures is None:
             raise ValueError("--fixtures is required for --provider file")
+        if pressure_context is not None:
+            raise ValueError("pressure context is only meaningful for --provider command")
         provider = FileBackedProvider(args.fixtures)
     else:
         required = {
@@ -145,10 +154,13 @@ def execute(args: argparse.Namespace) -> Path:
             role_schema=role_schema,
             reconciliation_schema=reconciliation_schema,
             timeout_seconds=args.provider_timeout,
+            pressure_context=pressure_context,
         )
 
     input_path = run_dir / "input" / "evaluation-request.json"
     write_json(input_path, request)
+    if pressure_context is not None:
+        write_json(run_dir / "input" / "pressure-context.json", pressure_context)
 
     role_outputs: dict[str, dict[str, Any]] = {}
     role_digests: dict[str, str] = {}
@@ -162,7 +174,6 @@ def execute(args: argparse.Namespace) -> Path:
     decision = provider.reconcile(request, role_outputs)
     validate(decision, reconciliation_schema, "reconciliation")
 
-    # The record digest signs the semantic decision before inserting the digest itself.
     decision_for_digest = json.loads(json.dumps(decision))
     decision_for_digest.setdefault("enforcement_recommendation", {}).pop(
         "decision_record_digest", None
@@ -183,11 +194,21 @@ def execute(args: argparse.Namespace) -> Path:
         "model_version": getattr(provider, "model_version", None),
         "constitution": request["constitution"],
         "request_digest": canonical_json_digest(request),
+        "pressure_context_digest": (
+            canonical_json_digest(pressure_context)
+            if pressure_context is not None
+            else None
+        ),
         "role_digests": role_digests,
         "decision_digest": decision_digest,
         "hindsight_files_loaded": False,
         "inputs": {
             "request": str(args.request),
+            "pressure_context": (
+                str(args.pressure_context_file)
+                if args.pressure_context_file is not None
+                else None
+            ),
             "fixture_dir": str(args.fixtures) if args.fixtures else None,
             "schemas": str(args.schemas),
         },
