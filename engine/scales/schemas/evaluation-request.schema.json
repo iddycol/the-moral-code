@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-moral-code.example/schemas/scales/evaluation-request-v0.1.json",
+  "title": "The Scales v0.1 Evaluation Request",
+  "type": "object",
+  "required": ["evaluation_id", "constitution", "proposal", "evidence", "affected_parties", "alternatives", "uncertainties"],
+  "properties": {
+    "evaluation_id": {"type": "string"},
+    "constitution": {
+      "type": "object",
+      "required": ["version", "ref", "content_digest"],
+      "properties": {
+        "version": {"type": "string"},
+        "ref": {"type": "string"},
+        "content_digest": {"type": "string"},
+        "interpretation_rules_ref": {"type": "string"}
+      }
+    },
+    "proposal": {
+      "type": "object",
+      "required": ["actor", "action", "purpose"],
+      "properties": {
+        "actor": {"type": "string"},
+        "action": {"type": "string"},
+        "purpose": {"type": "string"},
+        "requested_authority": {"type": "string"},
+        "urgency": {"enum": ["none", "low", "moderate", "high", "immediate", "unknown"]},
+        "reversibility": {"enum": ["readily_reversible", "partly_reversible", "difficult_to_reverse", "irreversible", "unknown"]}
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "claim", "epistemic_status"],
+        "properties": {
+          "evidence_id": {"type": "string"},
+          "claim": {"type": "string"},
+          "epistemic_status": {"enum": ["observed", "sourced", "reported", "inferred", "predicted", "disputed", "unknown"]},
+          "source_ids": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"enum": ["high", "medium", "low", "unknown"]},
+          "time_available": {"type": "string"}
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "citation"],
+        "properties": {
+          "source_id": {"type": "string"},
+          "citation": {"type": "string"},
+          "url": {"type": "string"},
+          "source_date": {"type": "string"},
+          "quality_note": {"type": "string"}
+        }
+      }
+    },
+    "affected_parties": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["party", "interests_or_risks"],
+        "properties": {
+          "party": {"type": "string"},
+          "interests_or_risks": {"type": "string"},
+          "power_position": {"enum": ["very_low", "low", "mixed", "high", "very_high", "unknown"]},
+          "voice_in_decision": {"enum": ["none", "limited", "meaningful", "controlling", "unknown"]}
+        }
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["alternative_id", "description"],
+        "properties": {
+          "alternative_id": {"type": "string"},
+          "description": {"type": "string"},
+          "feasibility": {"enum": ["known_feasible", "possibly_feasible", "known_infeasible", "unknown"]}
+        }
+      }
+    },
+    "uncertainties": {"type": "array", "items": {"type": "string"}},
+    "declared_conflicts_of_interest": {"type": "array", "items": {"type": "string"}},
+    "requested_capability": {"type": "string"},
+    "review_deadline": {"type": "string"}
+  }
+}

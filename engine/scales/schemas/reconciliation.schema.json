@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-moral-code.example/schemas/scales/reconciliation-v0.1.json",
+  "title": "The Scales v0.1 Reconciled Decision",
+  "type": "object",
+  "required": ["evaluation_id", "constitution", "role_assessment_refs", "moral_floor", "principle_assessments", "outcome", "reasoning_summary", "enforcement_recommendation"],
+  "properties": {
+    "evaluation_id": {"type": "string"},
+    "constitution": {
+      "type": "object",
+      "required": ["version", "ref", "content_digest"],
+      "properties": {
+        "version": {"type": "string"},
+        "ref": {"type": "string"},
+        "content_digest": {"type": "string"}
+      }
+    },
+    "role_assessment_refs": {"type": "array", "items": {"type": "string"}},
+    "evidence_challenges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "status"],
+        "properties": {
+          "claim": {"type": "string"},
+          "status": {"enum": ["supported", "partially_supported", "disputed", "unsupported", "unknown"]},
+          "decision_dependency": {"enum": ["low", "medium", "high", "decisive"]},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "moral_floor": {
+      "type": "object",
+      "required": ["breach_found", "checks"],
+      "properties": {
+        "breach_found": {"type": "boolean"},
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["risk", "status", "reason"],
+            "properties": {
+              "risk": {"type": "string"},
+              "status": {"enum": ["not_present", "possible", "confirmed", "uncertain"]},
+              "reason": {"type": "string"},
+              "evidence_ids": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        }
+      }
+    },
+    "principle_assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["principle_id", "status", "reason"],
+        "properties": {
+          "principle_id": {"pattern": "^MC-[0-9]{2}$"},
+          "status": {"enum": ["pass", "concern", "fail", "uncertain", "not_applicable"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "principle_conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["principles", "conflict", "resolution_or_status"],
+        "properties": {
+          "principles": {"type": "array", "items": {"pattern": "^MC-[0-9]{2}$"}},
+          "conflict": {"type": "string"},
+          "resolution_or_status": {"type": "string"}
+        }
+      }
+    },
+    "alternatives_analysis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["alternative_id", "constitutional_note"],
+        "properties": {
+          "alternative_id": {"type": "string"},
+          "constitutional_note": {"type": "string"},
+          "dominance_note": {"type": "string"}
+        }
+      }
+    },
+    "outcome": {"enum": ["permissible", "permissible_with_safeguards", "impermissible", "insufficient_evidence", "unresolved_conflict"]},
+    "reasoning_summary": {"type": "string"},
+    "required_safeguards": {"type": "array", "items": {"type": "string"}},
+    "unresolved_dissent": {"type": "array", "items": {"type": "string"}},
+    "uncertainties": {"type": "array", "items": {"type": "string"}},
+    "evidence_that_could_change_result": {"type": "array", "items": {"type": "string"}},
+    "validity": {
+      "type": "object",
+      "properties": {
+        "review_by": {"type": "string"},
+        "stop_conditions": {"type": "array", "items": {"type": "string"}},
+        "re_evaluate_on": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "enforcement_recommendation": {
+      "type": "object",
+      "required": ["directive", "reason"],
+      "properties": {
+        "directive": {"enum": ["allow", "allow_with_conditions", "block", "defer_for_evidence", "escalate_independent_review"]},
+        "reason": {"type": "string"},
+        "conditions": {"type": "array", "items": {"type": "string"}},
+        "required_authority": {"type": "string"},
+        "decision_record_digest": {"type": "string"}
+      }
+    }
+  }
+}
