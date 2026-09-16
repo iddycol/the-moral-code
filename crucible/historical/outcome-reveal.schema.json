@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Historical Crucible Outcome Reveal",
+  "description": "Hidden from first-pass evaluator. Used only after a decision record has been sealed.",
+  "type": "object",
+  "required": ["case_id", "actual_action", "later_evidence", "outcomes", "later_reviews_or_findings"],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^HC-[0-9]{4}$"},
+    "actual_action": {"type": "string"},
+    "later_evidence": {"type": "array", "items": {"type": "string"}},
+    "outcomes": {"type": "array", "items": {"type": "string"}},
+    "later_reviews_or_findings": {"type": "array", "items": {"type": "string"}}
+  }
+}

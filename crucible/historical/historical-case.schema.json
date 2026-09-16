@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Historical Crucible Case Manifest",
+  "description": "Research/audit manifest. This file is not evaluator-facing. Decision packets and outcome reveals are physically separate artefacts to reduce hindsight leakage.",
+  "type": "object",
+  "required": ["case_id", "title", "case_class", "decision_cutoff", "packets", "outcome_reveal_file", "expected_constitutional_constraints", "sources"],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^HC-[0-9]{4}$"},
+    "title": {"type": "string"},
+    "case_class": {"enum": ["clear_moral_failure", "institutional_failure", "hard_tradeoff", "hindsight_sensitive", "defensible_under_uncertainty"]},
+    "decision_cutoff": {
+      "type": "object",
+      "required": ["date_or_period", "definition"],
+      "properties": {
+        "date_or_period": {"type": "string"},
+        "definition": {"type": "string"}
+      }
+    },
+    "pretraining_leakage_risk": {"enum": ["low", "medium", "high"]},
+    "packets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["packet_id", "file", "identity_mode"],
+        "properties": {
+          "packet_id": {"type": "string"},
+          "file": {"type": "string"},
+          "identity_mode": {"enum": ["transparent", "masked", "structural_analogue"]},
+          "masking_note": {"type": "string"}
+        }
+      }
+    },
+    "outcome_reveal_file": {"type": "string"},
+    "expected_constitutional_constraints": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "relevant_principles": {"type": "array", "items": {"pattern": "^MC-[0-9]{2}$"}},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "citation", "url", "source_date", "temporal_role"],
+        "properties": {
+          "source_id": {"type": "string"},
+          "citation": {"type": "string"},
+          "url": {"type": "string", "format": "uri"},
+          "source_date": {"type": "string"},
+          "temporal_role": {"enum": ["contemporaneous", "pre_decision", "later_reconstruction", "outcome_only"]},
+          "use_note": {"type": "string"}
+        }
+      }
+    }
+  }
+}

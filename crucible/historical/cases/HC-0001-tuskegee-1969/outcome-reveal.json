@@ -1,0 +1,17 @@
+{
+  "case_id": "HC-0001",
+  "actual_action": "The 1969 review did not terminate the study; it continued until public exposure and a separate federal review in 1972.",
+  "later_evidence": [
+    "CDC's historical account records that the participants had not provided informed consent and were not offered treatment even after penicillin became widely available.",
+    "The study became public through news reporting in 1972, triggering an Ad Hoc Advisory Panel review."
+  ],
+  "outcomes": [
+    "The untreated-study design continued for roughly three more years after the 1969 review.",
+    "In 1972 the federal advisory panel concluded that the study was ethically unjustified and advised stopping it.",
+    "The study ended in 1972; subsequent reforms strengthened human-subject research protections."
+  ],
+  "later_reviews_or_findings": [
+    "CDC now explicitly identifies absence of informed consent and withholding of available treatment as reasons the study was unethical.",
+    "The case became a major influence on later research-ethics safeguards and trust in public-health institutions."
+  ]
+}
