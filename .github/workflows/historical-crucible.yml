@@ -1,6 +1,7 @@
 name: Historical Crucible Validation
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - research/historical-crucible-major-cases
