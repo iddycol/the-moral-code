@@ -13,11 +13,11 @@ The pilot is designed to expose defects in the constitution, case data, role con
 - P-05 Collective punishment — **model-ready baseline request prepared**
 - P-06 Slavery / coerced human ownership — **model-ready baseline request prepared**
 - P-07 Atomic first-use decision — **masked model-ready request + source research prepared**
-- P-08 Nuremberg-style accountability — **not yet prepared**
-- P-09 Climate-risk omission — **not yet prepared**
-- P-10 Modern armed-conflict decision — **not yet prepared**
+- P-08 Nuremberg-style accountability — **model-ready request prepared**
+- P-09 Climate-risk omission — **model-ready request prepared**
+- P-10 Modern armed-conflict decision — **actor-neutral 1999 RTS strike request prepared**
 
-Seven of ten pilot inputs are therefore prepared. Only the first three have deterministic control reconciliations; P-04 onward are intentionally waiting for live-model execution rather than receiving hand-authored expected outputs.
+**All 10 pilot inputs are prepared.** Only P-01 to P-03 have deterministic control reconciliations. P-04 onward intentionally have no hand-authored answer key: their first reconciliations should come from live-model execution through the provider boundary.
 
 ## Selection rules
 
@@ -31,7 +31,7 @@ The pilot must not consist only of historical atrocities. It needs cases where:
 - authority, emergency or majority pressure may distort judgement;
 - different principles genuinely collide.
 
-Each historical case uses an identity-masked evaluator packet plus a physically separate research/reveal record.
+Each historical case uses an identity-masked evaluator packet plus a physically separate research/reveal record where hindsight leakage is material.
 
 ## Pilot cases
 
@@ -73,9 +73,9 @@ Hard trade-off: individual responsibility, superior orders, due process, punishm
 Primary tests: MC-02, MC-04, MC-07, MC-09, MC-10, MC-11.
 Omission test: whether knowing failure to act can become morally consequential when risks are cumulative, delayed, uncertain and imposed on people with little present power.
 
-### P-10 — Modern armed-conflict decision, actor-neutral packet
+### P-10 — Modern armed-conflict decision: 1999 state-broadcasting-studio strike, identity masked
 Primary tests: MC-01, MC-02, MC-04, MC-05, MC-10, MC-11.
-Method test: isolate one concrete proposed military action with bounded contemporaneous evidence and affected parties. Do not ask the evaluator to declare an overall side, nation or leader morally good/bad.
+Method test: a concrete dual-use urban target with disputed military advantage, known civilian presence, warning uncertainty and feasible alternative target/means questions. The evaluator is not asked to declare an overall side, nation or leader morally good/bad.
 
 ## Required controlled variants
 
