@@ -13,6 +13,7 @@ from jsonschema import Draft202012Validator
 
 from providers.base import ROLES
 from providers.file_backed import FileBackedProvider
+from providers.json_command import JsonCommandProvider
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -60,12 +61,39 @@ def load_schemas(schema_dir: Path) -> tuple[dict[str, Any], dict[str, Any], dict
     )
 
 
+def git_blob_sha1(path: Path) -> str:
+    data = path.read_bytes()
+    header = f"blob {len(data)}\0".encode("utf-8")
+    return hashlib.sha1(header + data).hexdigest()
+
+
+def verify_constitution_binding(request: dict[str, Any], constitution_file: Path | None) -> None:
+    if constitution_file is None:
+        return
+    expected = request.get("constitution", {}).get("content_digest", "")
+    if expected.startswith("git-blob-sha1:"):
+        actual = "git-blob-sha1:" + git_blob_sha1(constitution_file)
+        if actual != expected:
+            raise ValueError(
+                f"constitution binding mismatch: request={expected} actual={actual}"
+            )
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Run The Scales v0.1 reference harness using a file-backed provider."
+        description="Run The Scales v0.1 reference harness using a file or command provider."
     )
     parser.add_argument("--request", required=True, type=Path)
-    parser.add_argument("--fixtures", required=True, type=Path)
+    parser.add_argument("--provider", choices=("file", "command"), default="file")
+    parser.add_argument("--fixtures", type=Path)
+    parser.add_argument("--provider-command")
+    parser.add_argument("--provider-name", default="external-command")
+    parser.add_argument("--model", default="unspecified")
+    parser.add_argument("--model-version", default="unspecified")
+    parser.add_argument("--constitution-file", type=Path)
+    parser.add_argument("--interpretation-file", type=Path)
+    parser.add_argument("--role-contracts-file", type=Path)
+    parser.add_argument("--provider-timeout", type=int, default=180)
     parser.add_argument("--schemas", required=True, type=Path)
     parser.add_argument("--output-root", required=True, type=Path)
     parser.add_argument("--run-id", required=True)
@@ -90,7 +118,34 @@ def execute(args: argparse.Namespace) -> Path:
             )
         shutil.rmtree(run_dir)
 
-    provider = FileBackedProvider(args.fixtures)
+    verify_constitution_binding(request, args.constitution_file)
+
+    if args.provider == "file":
+        if args.fixtures is None:
+            raise ValueError("--fixtures is required for --provider file")
+        provider = FileBackedProvider(args.fixtures)
+    else:
+        required = {
+            "--provider-command": args.provider_command,
+            "--constitution-file": args.constitution_file,
+            "--interpretation-file": args.interpretation_file,
+            "--role-contracts-file": args.role_contracts_file,
+        }
+        missing = [name for name, value in required.items() if value is None]
+        if missing:
+            raise ValueError(f"missing command-provider arguments: {', '.join(missing)}")
+        provider = JsonCommandProvider(
+            command=args.provider_command,
+            provider_name=args.provider_name,
+            model=args.model,
+            model_version=args.model_version,
+            constitution_file=args.constitution_file,
+            interpretation_file=args.interpretation_file,
+            role_contracts_file=args.role_contracts_file,
+            role_schema=role_schema,
+            reconciliation_schema=reconciliation_schema,
+            timeout_seconds=args.provider_timeout,
+        )
 
     input_path = run_dir / "input" / "evaluation-request.json"
     write_json(input_path, request)
@@ -107,6 +162,7 @@ def execute(args: argparse.Namespace) -> Path:
     decision = provider.reconcile(request, role_outputs)
     validate(decision, reconciliation_schema, "reconciliation")
 
+    # The record digest signs the semantic decision before inserting the digest itself.
     decision_for_digest = json.loads(json.dumps(decision))
     decision_for_digest.setdefault("enforcement_recommendation", {}).pop(
         "decision_record_digest", None
@@ -123,6 +179,8 @@ def execute(args: argparse.Namespace) -> Path:
         "evaluation_id": request["evaluation_id"],
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "provider": provider.name,
+        "model": getattr(provider, "model", None),
+        "model_version": getattr(provider, "model_version", None),
         "constitution": request["constitution"],
         "request_digest": canonical_json_digest(request),
         "role_digests": role_digests,
@@ -130,7 +188,7 @@ def execute(args: argparse.Namespace) -> Path:
         "hindsight_files_loaded": False,
         "inputs": {
             "request": str(args.request),
-            "fixture_dir": str(args.fixtures),
+            "fixture_dir": str(args.fixtures) if args.fixtures else None,
             "schemas": str(args.schemas),
         },
         "result": {
