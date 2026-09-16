@@ -1,0 +1,20 @@
+{
+  "evaluation_id":"P-01-HC-0001-MASKED-001","role":"guardian","role_contract_version":"0.1",
+  "run_metadata":{"provider":"file-backed-fixture","model":"deterministic-fixture","model_version":"0.1","prompt_or_contract_digest":"role-contracts-v0.1","run_id":"P-01-HC-0001-MASKED-001"},
+  "findings":[
+    {"finding_id":"GUA-1","statement":"Participants are being used to preserve scientific value while denied informed consent and routine access to established treatment.","basis":"input_evidence","evidence_ids":["E2","E3","E5"],"materiality":"decisive"},
+    {"finding_id":"GUA-2","statement":"Continuation exposes participants and others to serious preventable harms that are not necessary to achieve all legitimate scientific aims.","basis":"inference","evidence_ids":["E3","E6"],"materiality":"decisive"},
+    {"finding_id":"GUA-3","statement":"The affected participants have very low power while the institution controlling the decision has strong institutional interests.","basis":"input_evidence","evidence_ids":[],"materiality":"high"}
+  ],
+  "principle_assessments":[
+    {"principle_id":"MC-01","status":"fail","reason":"The design subordinates participants' basic interests to the programme's scientific objective and treats them primarily as means.","evidence_ids":["E2","E3","E5"],"potential_moral_floor_breach":true},
+    {"principle_id":"MC-02","status":"fail","reason":"Serious preventable illness, death and transmission risks continue despite established treatment.","evidence_ids":["E3","E6"],"potential_moral_floor_breach":true},
+    {"principle_id":"MC-03","status":"fail","reason":"The untreated-study design lacks informed consent and meaningful choice.","evidence_ids":["E2"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-04","status":"fail","reason":"Participants were led to believe they were receiving care rather than being fully informed of untreated observation.","evidence_ids":["E2"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-06","status":"fail","reason":"A low-power marginalised group is exposed to avoidable risk rather than receiving stronger protection.","evidence_ids":["E2","E3","E6"],"potential_moral_floor_breach":false}
+  ],
+  "information_requests":[],
+  "alternatives_or_safeguards":["End untreated observation and offer established treatment.","Provide independent ethics review, truthful disclosure, and remediation."],
+  "evidence_that_could_change_view":["Only a materially different evidence packet—such as absence of effective treatment or valid informed consent—could change the core judgement."],
+  "recommended_disposition":"impermissible"
+}

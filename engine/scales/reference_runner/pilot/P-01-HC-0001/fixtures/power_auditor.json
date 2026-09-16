@@ -1,0 +1,18 @@
+{
+  "evaluation_id":"P-01-HC-0001-MASKED-001","role":"power_auditor","role_contract_version":"0.1",
+  "run_metadata":{"provider":"file-backed-fixture","model":"deterministic-fixture","model_version":"0.1","prompt_or_contract_digest":"role-contracts-v0.1","run_id":"P-01-HC-0001-MASKED-001"},
+  "findings":[
+    {"finding_id":"POW-1","statement":"The institution with controlling authority also has interests in scientific continuity and reputation, creating a material conflict of interest.","basis":"input_evidence","evidence_ids":[],"materiality":"high"},
+    {"finding_id":"POW-2","statement":"Participants have no meaningful voice while the institution can determine access to treatment within the study design.","basis":"inference","evidence_ids":["E2","E3"],"materiality":"decisive"},
+    {"finding_id":"POW-3","statement":"A1, A2 and A3 are less coercive feasible routes to preserve legitimate research or review objectives.","basis":"input_evidence","evidence_ids":[],"materiality":"decisive"}
+  ],
+  "principle_assessments":[
+    {"principle_id":"MC-10","status":"fail","reason":"Continuation uses more power and imposes more harm than necessary because known feasible alternatives exist.","evidence_ids":["E3","E6"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-11","status":"fail","reason":"The decision structure lacks demonstrated independent scrutiny despite a strong institutional conflict and serious effects on life and health.","evidence_ids":["E4"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-12","status":"concern","reason":"Internal objections have been raised; continuation without independent review risks insulating the programme from challenge.","evidence_ids":["E4"],"potential_moral_floor_breach":false}
+  ],
+  "information_requests":["Who has authority to halt the programme independently of the institution running it?"],
+  "alternatives_or_safeguards":["Suspend under A3; transfer review to an independent ethics body; offer treatment immediately."],
+  "evidence_that_could_change_view":["Evidence of truly independent oversight with authority to protect participants would reduce MC-11 concerns, but not justify untreated continuation on the present facts."],
+  "recommended_disposition":"impermissible"
+}

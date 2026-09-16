@@ -1,0 +1,18 @@
+{
+  "evaluation_id":"P-01-HC-0001-MASKED-001","role":"vulnerable_person_defender","role_contract_version":"0.1",
+  "run_metadata":{"provider":"file-backed-fixture","model":"deterministic-fixture","model_version":"0.1","prompt_or_contract_digest":"role-contracts-v0.1","run_id":"P-01-HC-0001-MASKED-001"},
+  "findings":[
+    {"finding_id":"VUL-1","statement":"The participants bear the health risks while holding very low decision power and lacking truthful information necessary for meaningful consent.","basis":"input_evidence","evidence_ids":["E2","E3","E6"],"materiality":"decisive"},
+    {"finding_id":"VUL-2","statement":"Partners and families also bear transmission and family harms without meaningful voice in the research decision.","basis":"input_evidence","evidence_ids":["E6"],"materiality":"high"},
+    {"finding_id":"VUL-3","statement":"The institution's scientific and reputational benefits are structurally separated from the burdens imposed on the lowest-power parties.","basis":"inference","evidence_ids":["E5"],"materiality":"high"}
+  ],
+  "principle_assessments":[
+    {"principle_id":"MC-03","status":"fail","reason":"Meaningful agency is absent because participants were not informed of the untreated-study design.","evidence_ids":["E2"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-06","status":"fail","reason":"Greater vulnerability and low power should strengthen protection, not justify continued exposure.","evidence_ids":["E2","E3","E6"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-07","status":"fail","reason":"The programme externalises health risks onto participants and families while retaining scientific benefit.","evidence_ids":["E5","E6"],"potential_moral_floor_breach":false}
+  ],
+  "information_requests":["What remediation, treatment access, disclosure and family support can be provided immediately?"],
+  "alternatives_or_safeguards":["A1 with treatment, disclosure, consensual follow-up, participant support and remediation."],
+  "evidence_that_could_change_view":["Evidence of informed voluntary participation and no effective treatment would materially change the agency and harm analysis."],
+  "recommended_disposition":"impermissible"
+}

@@ -1,0 +1,34 @@
+from pathlib import Path
+import json
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from runner import canonical_json_digest
+
+
+def test_canonical_digest_is_order_independent():
+    assert canonical_json_digest({"a": 1, "b": 2}) == canonical_json_digest({"b": 2, "a": 1})
+
+
+def test_fixture_set_is_complete():
+    fixtures = ROOT / "pilot" / "P-01-HC-0001" / "fixtures"
+    expected = {
+        "advocate.json",
+        "guardian.json",
+        "evidence_sceptic.json",
+        "power_auditor.json",
+        "vulnerable_person_defender.json",
+        "future_environment_advocate.json",
+        "reconciliation.json",
+    }
+    assert {p.name for p in fixtures.glob("*.json")} == expected
+
+
+def test_reconciliation_blocks_proposed_continuation():
+    path = ROOT / "pilot" / "P-01-HC-0001" / "fixtures" / "reconciliation.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    assert data["outcome"] == "impermissible"
+    assert data["moral_floor"]["breach_found"] is True
+    assert data["enforcement_recommendation"]["directive"] == "block"
