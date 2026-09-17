@@ -1,0 +1,61 @@
+name: GitHub Models Live Scales Publish - Challenger
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - implementation/scales-pilot-v0.1
+    paths:
+      - ".github/workflows/github-models-challenger-publish.yml"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  challenger-live-publish:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_MODELS_MODEL: openai/gpt-4.1
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: implementation/scales-pilot-v0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install runner dependencies
+        working-directory: engine/scales/reference_runner
+        run: python -m pip install -r requirements.txt
+
+      - name: Run masked Challenger through GitHub Models
+        working-directory: engine/scales/reference_runner
+        run: |
+          python runner.py \
+            --request pilot/P-02-HC-0002/evaluation-request.json \
+            --provider command \
+            --provider-command "python providers/github_models_cli.py --model openai/gpt-4.1" \
+            --provider-name github-models \
+            --model openai/gpt-4.1 \
+            --model-version hosted-current \
+            --constitution-file ../../../constitution/MORAL_CORE.md \
+            --interpretation-file ../../../constitution/INTERPRETATION_RULES.md \
+            --role-contracts-file ../ROLE_CONTRACTS.md \
+            --schemas ../schemas \
+            --output-root runs-live \
+            --run-id LIVE-GITHUB-MODELS-CHALLENGER-001
+
+      - name: Publish sealed run ledger to branch
+        working-directory: engine/scales/reference_runner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs-live/LIVE-GITHUB-MODELS-CHALLENGER-001
+          git commit -m "Publish first GitHub Models Challenger live run [skip ci]"
+          git push origin HEAD:implementation/scales-pilot-v0.1
