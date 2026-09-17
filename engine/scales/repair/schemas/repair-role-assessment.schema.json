@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-moral-code.example/schemas/scales/repair-role-assessment-v0.1.json",
+  "title": "The Scales Repair v0.1 Role Assessment",
+  "type": "object",
+  "required": [
+    "repair_case_id",
+    "role",
+    "role_contract_version",
+    "findings",
+    "principle_assessments",
+    "component_assessments",
+    "failure_risks",
+    "recommended_components"
+  ],
+  "properties": {
+    "repair_case_id": {"type": "string", "pattern": "^RC-[0-9]{4}$"},
+    "role": {
+      "enum": [
+        "victim_impact_advocate",
+        "accountability_advocate",
+        "rehabilitation_reintegration_advocate",
+        "restitution_reparation_analyst",
+        "evidence_sceptic",
+        "power_nonrecurrence_auditor"
+      ]
+    },
+    "role_contract_version": {"type": "string"},
+    "run_metadata": {
+      "type": "object",
+      "properties": {
+        "provider": {"type": "string"},
+        "model": {"type": "string"},
+        "model_version": {"type": "string"},
+        "run_id": {"type": "string"}
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["finding_id", "statement", "basis", "materiality"],
+        "properties": {
+          "finding_id": {"type": "string"},
+          "statement": {"type": "string"},
+          "basis": {"enum": ["packet", "constitutional_interpretation", "inference", "hypothesis", "missing_information"]},
+          "harm_ids": {"type": "array", "items": {"type": "string"}},
+          "source_ids": {"type": "array", "items": {"type": "string"}},
+          "materiality": {"enum": ["low", "medium", "high", "decisive"]}
+        }
+      }
+    },
+    "principle_assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["principle_id", "status", "reason"],
+        "properties": {
+          "principle_id": {"pattern": "^MC-[0-9]{2}$"},
+          "status": {"enum": ["supports_component", "concern", "conflict", "insufficient_evidence", "not_applicable"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "component_assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["component_type", "status", "reason"],
+        "properties": {
+          "component_type": {
+            "enum": [
+              "protection",
+              "truth_acknowledgement",
+              "restitution",
+              "compensation",
+              "rehabilitation",
+              "accountability",
+              "restriction",
+              "institutional_reform",
+              "non_recurrence",
+              "memorialisation",
+              "reconciliation",
+              "amnesty",
+              "other"
+            ]
+          },
+          "status": {"enum": ["required", "recommended", "permissible", "concern", "not_justified", "insufficient_evidence", "not_applicable"]},
+          "reason": {"type": "string"},
+          "option_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "failure_risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["risk", "status", "reason"],
+        "properties": {
+          "risk": {"enum": ["revenge", "impunity", "forced_forgiveness", "inherited_or_category_guilt", "symbolic_only_repair", "victim_voice_erasure", "unsafe_reintegration", "other"]},
+          "status": {"enum": ["not_present", "possible", "serious", "confirmed", "uncertain"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "recommended_components": {"type": "array", "items": {"type": "string"}},
+    "information_requests": {"type": "array", "items": {"type": "string"}},
+    "evidence_that_could_change_view": {"type": "array", "items": {"type": "string"}},
+    "unresolved_objections": {"type": "array", "items": {"type": "string"}}
+  }
+}
