@@ -12,6 +12,8 @@ It is not a religion, an AI ruler, or a claim to moral infallibility.
 
 For the integration experiment's verified execution status, read [the current session handoff](governance/SESSION_HANDOFF.md). The recovery audit corrects earlier live-testing claims.
 
+The next experiment uses existing ChatGPT and Claude subscriptions: [run the first Core-12 case](engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md). The input pack and local runner are prepared; completed model results remain unverified.
+
 Read `constitution/MORAL_CORE.md`.
 
 ## Structure

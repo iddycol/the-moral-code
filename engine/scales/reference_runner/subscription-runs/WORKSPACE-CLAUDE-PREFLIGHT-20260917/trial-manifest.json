@@ -1,0 +1,18 @@
+{
+  "protocol": "subscription-client-pilot-v0.1",
+  "pack_digest": "sha256:0b9d597aa8066669c718dbc85faa7e6955a64aadcc78356db0703044efee445d",
+  "provider": "claude",
+  "requested_model": "client_default",
+  "resolved_model": "unverified; inspect raw client metadata",
+  "created_at_utc": "2026-09-17T01:56:05.580305+00:00",
+  "status": "failed",
+  "inference_attempted": false,
+  "cases": {
+    "CORE-01": {
+      "status": "not_started"
+    }
+  },
+  "interpretation": "Client-workflow pilot; no certification, pressure or repeatability conclusion.",
+  "failure_type": "access_unavailable",
+  "detail": "claude CLI is not installed; see SUBSCRIPTION_TRIAL.md"
+}

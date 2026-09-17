@@ -21,7 +21,7 @@ The recovery started from `6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515`. Read the c
 - Research packets and stable Core-12 definitions exist.
 - Five broken action selectors are corrected in binding revision v0.1.1.
 - Ten action requests generate and validate.
-- Thirteen offline runner tests pass.
+- Twenty offline runner tests pass, including seven subscription-trial checks.
 - Repair code and schemas exist; the two hosted Repair attempts returned provider HTTP 410 errors.
 - No completed hosted-model decision ledgers were found on either the inspected integration or implementation branch.
 - Repeatability, pressure resistance and cross-family comparison have not been demonstrated.
@@ -31,9 +31,11 @@ The previous handoff's successful-live-testing and saved-output claims are super
 
 ## Next concrete checkpoint
 
-Configure a supported authorized route to two model families, retain the same benchmark and constitutional contract, then produce complete Core-12 evidence with failures preserved. Correct early-failure publication and classification before starting that batch.
+Adrian has ChatGPT Pro and Claude Pro and chose to continue using those subscriptions. The [subscription trial guide](../engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md) now provides a frozen Core-12 pack, local CLI execution, raw-output preservation, strict result intake and case comparison. Start with CORE-01 once per family; inspect it before launching the full batch.
 
-A provider access decision/credential may be needed from Adrian. Do not put secrets in this repository or ask for keys in chat.
+The current ChatGPT workspace has neither CLI installed. The preparation is offline-tested; it is not completed model testing. Execution must happen on a machine with the official CLIs signed in to Adrian's subscriptions. Do not ask for API purchases or credentials in chat, export tokens, or claim this workspace can control the separate Claude account.
+
+Subscription outputs use `engine/scales/reference_runner/subscription-runs/`, separate from the old hosted-model findings generator. Persist both successes and failures before making any comparison claim. The trial has seven offline checks (twenty runner tests total), including action and Repair process boundaries, tamper rejection, role identity, retained invalid answers and preflight failure classification.
 
 No model comparison conclusion or v0.2 adoption is justified yet. Do not expand the benchmark while this execution gap remains.
 
