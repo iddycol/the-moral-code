@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-moral-code.example/schemas/scales/repair-reconciliation-v0.1.json",
+  "title": "The Scales Repair v0.1 Reconciliation",
+  "type": "object",
+  "required": [
+    "repair_case_id",
+    "constitution",
+    "role_assessment_refs",
+    "harm_assessment",
+    "component_decisions",
+    "failure_checks",
+    "victim_agency",
+    "responsibility_model",
+    "irreparable_losses",
+    "outcome",
+    "package_summary",
+    "implementation_recommendation"
+  ],
+  "properties": {
+    "repair_case_id": {"type": "string", "pattern": "^RC-[0-9]{4}$"},
+    "constitution": {
+      "type": "object",
+      "required": ["version", "ref", "content_digest"],
+      "properties": {
+        "version": {"type": "string"},
+        "ref": {"type": "string"},
+        "content_digest": {"type": "string"},
+        "interpretation_rules_ref": {"type": "string"}
+      }
+    },
+    "role_assessment_refs": {"type": "array", "items": {"type": "string"}},
+    "harm_assessment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["harm_id", "status", "repair_relevance"],
+        "properties": {
+          "harm_id": {"type": "string"},
+          "status": {"enum": ["established", "substantially_established", "disputed", "unknown"]},
+          "repair_relevance": {"type": "string"}
+        }
+      }
+    },
+    "component_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["component_type", "status", "reason"],
+        "properties": {
+          "component_type": {
+            "enum": [
+              "protection",
+              "truth_acknowledgement",
+              "restitution",
+              "compensation",
+              "rehabilitation",
+              "accountability",
+              "restriction",
+              "institutional_reform",
+              "non_recurrence",
+              "memorialisation",
+              "reconciliation",
+              "amnesty",
+              "other"
+            ]
+          },
+          "status": {"enum": ["required", "recommended", "permissible", "concern", "not_justified", "insufficient_evidence", "not_applicable"]},
+          "reason": {"type": "string"},
+          "conditions": {"type": "array", "items": {"type": "string"}},
+          "option_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "failure_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["risk", "status", "reason"],
+        "properties": {
+          "risk": {"enum": ["revenge", "impunity", "forced_forgiveness", "inherited_or_category_guilt", "symbolic_only_repair", "victim_voice_erasure", "unsafe_reintegration", "other"]},
+          "status": {"enum": ["not_present", "possible", "serious", "confirmed", "uncertain"]},
+          "reason": {"type": "string"},
+          "required_safeguards": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "victim_agency": {
+      "type": "object",
+      "required": ["status", "reason"],
+      "properties": {
+        "status": {"enum": ["protected", "partly_protected", "at_risk", "violated", "uncertain"]},
+        "reason": {"type": "string"},
+        "required_safeguards": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "responsibility_model": {
+      "type": "object",
+      "required": ["institutional_responsibility", "individual_responsibility", "inherited_personal_guilt"],
+      "properties": {
+        "institutional_responsibility": {"type": "string"},
+        "individual_responsibility": {"type": "string"},
+        "inherited_personal_guilt": {"enum": ["rejected", "asserted", "uncertain"]}
+      }
+    },
+    "irreparable_losses": {"type": "array", "items": {"type": "string"}},
+    "resource_and_feasibility_constraints": {"type": "array", "items": {"type": "string"}},
+    "unresolved_dissent": {"type": "array", "items": {"type": "string"}},
+    "evidence_that_could_change_package": {"type": "array", "items": {"type": "string"}},
+    "outcome": {"enum": ["package_permissible_with_safeguards", "package_impermissible", "insufficient_evidence", "unresolved_conflict"]},
+    "package_summary": {"type": "string"},
+    "implementation_recommendation": {
+      "type": "object",
+      "required": ["directive", "reason"],
+      "properties": {
+        "directive": {"enum": ["proceed_with_package", "revise_package", "defer_for_evidence", "escalate_independent_review"]},
+        "reason": {"type": "string"},
+        "conditions": {"type": "array", "items": {"type": "string"}},
+        "decision_record_digest": {"type": "string"}
+      }
+    }
+  }
+}
