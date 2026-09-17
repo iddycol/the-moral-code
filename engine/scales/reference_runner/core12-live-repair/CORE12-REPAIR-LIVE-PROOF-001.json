@@ -1,0 +1,30 @@
+{
+  "evidence_id": "CORE12-REPAIR-LIVE-PROOF-001",
+  "provider": "github-models",
+  "model": "openai/gpt-4.1",
+  "cases": [
+    {
+      "benchmark_case_id": "CORE-11",
+      "repair_case_id": "RC-0102",
+      "run_id": "CORE-11-LUXEMBOURG-LIVE-001",
+      "runner_exit_status": 1,
+      "strict_contract_success": false,
+      "failure_type": "REPAIR_MODEL_BOUNDARY_OR_SCHEMA_FAILURE",
+      "failure_detail": "ERROR: provider command failed (1): ERROR: GitHub Models HTTP 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n\n\n"
+    },
+    {
+      "benchmark_case_id": "CORE-12",
+      "repair_case_id": "RC-0103",
+      "run_id": "CORE-12-TRC-LIVE-001",
+      "runner_exit_status": 1,
+      "strict_contract_success": false,
+      "failure_type": "REPAIR_MODEL_BOUNDARY_OR_SCHEMA_FAILURE",
+      "failure_detail": "ERROR: provider command failed (1): ERROR: GitHub Models HTTP 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n\n\n"
+    }
+  ],
+  "summary": {
+    "case_count": 2,
+    "strict_contract_success_count": 0,
+    "failure_count": 2
+  }
+}
