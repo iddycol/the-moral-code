@@ -1,0 +1,73 @@
+{
+  "repair_case_id": "RC-0103",
+  "identity_mode": "transparent",
+  "repair_context": "South Africa is emerging from apartheid into democratic government after decades of state repression, political violence, torture, killings, disappearances and abuses by state and non-state actors. A negotiated transition has occurred without a military defeat of the former regime. Evidence, records and responsibility are incomplete; many victims want truth and accountability; former officials and combatants retain knowledge and influence; and the new democracy must reduce recurrence while avoiding a transition back into political violence. The proposed 1995 framework would create a Truth and Reconciliation Commission, public victim testimony and reparation mechanisms, while allowing individuals to obtain amnesty for qualifying politically motivated acts only if they apply and make full disclosure.",
+  "repair_question": "Is a system of public truth-seeking, victim participation, reparation and individual conditional amnesty morally defensible as transitional justice, and what safeguards are required so social peace is not purchased by sacrificing victims' rights or creating impunity?",
+  "established_harms": [
+    {"harm_id":"H1","description":"Apartheid institutions and political conflict produced widespread gross human-rights violations including killings, torture, disappearances, severe ill-treatment and politically motivated violence.","status":"established","source_ids":["TRC-ACT-1995"]},
+    {"harm_id":"H2","description":"Victims and families often lack complete truth about what happened, who was responsible and where missing relatives' remains or records are located.","status":"substantially_established","source_ids":["TRC-ACT-1995"]},
+    {"harm_id":"H3","description":"Ordinary prosecution alone faces practical limits including missing evidence, destroyed records, secrecy, passage of time and the negotiated character of the political transition.","status":"substantially_established","source_ids":["TRC-ACT-1995"]},
+    {"harm_id":"H4","description":"Blanket impunity would deny accountability and risk communicating that grave political violence can be erased by a change of government.","status":"substantially_established","source_ids":["TRC-ACT-1995"]}
+  ],
+  "responsible_actors": [
+    {"actor":"Apartheid state institutions and officials responsible for established violations","responsibility_status":"institutional_established","responsibility_note":"Institutional responsibility does not by itself establish the individual guilt of every former official or citizen."},
+    {"actor":"Individual state officials/security personnel responsible for particular violations","responsibility_status":"attributed","responsibility_note":"Individual responsibility requires evidence or qualifying self-disclosure."},
+    {"actor":"Anti-apartheid and other political organisations/members responsible for particular gross violations","responsibility_status":"attributed","responsibility_note":"The same evidence and accountability principles apply regardless of political alignment."},
+    {"actor":"Present democratic state","responsibility_status":"successor_institution","responsibility_note":"Has duties to victims, truth, non-recurrence and fair administration without inheriting personal guilt for every predecessor act."}
+  ],
+  "affected_parties": [
+    {"party":"Victims and survivors of gross human-rights violations","interests":"Truth, acknowledgement, protection, material/psychological repair, accountability, participation and freedom to reject reconciliation or forgiveness.","expressed_preferences":["Truth about perpetrators and missing relatives","Public acknowledgement","Reparation","Prosecution/accountability","Some may prefer conditional truth/amnesty to permanent secrecy; others reject amnesty"],"preference_diversity_note":"Victim preferences are expected to differ sharply, particularly concerning amnesty and punishment.","power_position":"low"},
+    {"party":"Families of the killed/disappeared","interests":"Truth, remains/records, acknowledgement, remedy and accountability.","preference_diversity_note":"Families differ over whether disclosure without prosecution is acceptable.","power_position":"low"},
+    {"party":"Applicants/perpetrators considering disclosure","interests":"Legal certainty, fair individual assessment, protection from arbitrary punishment and potential amnesty if statutory criteria are met.","preference_diversity_note":"Incentives to disclose truth may conflict with incentives to minimise responsibility.","power_position":"mixed"},
+    {"party":"New democratic state and wider society","interests":"Peaceful transition, truth, rule of law, institutional reform, political stability and avoiding cycles of vengeance/impunity.","power_position":"high"},
+    {"party":"Future generations","interests":"Accurate historical record, non-recurrence and institutions that neither conceal atrocity nor normalise political violence.","power_position":"very_low"}
+  ],
+  "continuing_risks": [
+    "Blanket amnesty could create impunity and subordinate victims to political convenience.",
+    "An overly narrow truth process may leave major perpetrators silent and facts permanently hidden.",
+    "Victims may be retraumatised by public testimony or by hearing perpetrators receive amnesty.",
+    "A reconciliation narrative may pressure victims to forgive or imply equivalence between unequal institutions/acts.",
+    "Failure to deliver material reparation after eliciting testimony may exploit victims for national healing.",
+    "Unreformed security/political institutions may permit recurrence even if truth is disclosed."
+  ],
+  "repair_options": [
+    {"option_id":"R1","type":"truth_acknowledgement","description":"Create an independent public truth commission empowered to investigate gross violations, receive victim testimony and publish findings.","feasibility":"known_feasible","victim_control_note":"Victims choose whether/how to testify; privacy/protection should be available where needed."},
+    {"option_id":"R2","type":"amnesty","description":"Allow individual amnesty only on application, for acts associated with a political objective and only after full disclosure of relevant facts; no blanket status-based amnesty.","feasibility":"known_feasible","victim_control_note":"Victims should receive notice/voice, but individual amnesty cannot depend solely on a victim being willing to forgive."},
+    {"option_id":"R3","type":"accountability","description":"Preserve prosecution/civil accountability for persons who do not obtain qualifying amnesty and where evidence supports proceedings.","feasibility":"possibly_feasible","victim_control_note":"Accountability remains individualised and due-process bounded."},
+    {"option_id":"R4","type":"compensation","description":"Provide material reparation to victims/families rather than making truth testimony the only benefit they receive.","feasibility":"possibly_feasible","victim_control_note":"Reparation must not depend on forgiveness or political reconciliation."},
+    {"option_id":"R5","type":"rehabilitation","description":"Provide medical, psychological, social and community rehabilitation to address continuing consequences of political violence.","feasibility":"known_feasible","victim_control_note":"Participation voluntary and victim-centred."},
+    {"option_id":"R6","type":"restitution","description":"Assist with remains, records, identity, property/status restoration and other case-specific restitution where feasible.","feasibility":"possibly_feasible","victim_control_note":"Families control sensitive information and remains-related decisions within lawful constraints."},
+    {"option_id":"R7","type":"institutional_reform","description":"Reform policing, security, courts and public institutions implicated in abuse and establish safeguards against recurrence.","feasibility":"known_feasible","victim_control_note":"Affected communities should participate in reform oversight."},
+    {"option_id":"R8","type":"memorialisation","description":"Preserve testimony, archives and memorials so disclosure contributes to public truth/non-recurrence.","feasibility":"known_feasible","victim_control_note":"No victim should be compelled into public memorialisation."},
+    {"option_id":"R9","type":"reconciliation","description":"Support reconciliation as a voluntary social process emerging from truth, accountability/repair and institutional change.","feasibility":"possibly_feasible","victim_control_note":"No requirement that individual victims forgive perpetrators."},
+    {"option_id":"R10","type":"other","description":"Reject amnesty and rely primarily on ordinary prosecutions/civil claims despite transition/evidentiary constraints.","feasibility":"possibly_feasible","victim_control_note":"May satisfy strong accountability claims but risks less disclosure and unequal/partial prosecution if evidence is unavailable."}
+  ],
+  "constraints": [
+    "Amnesty cannot be justified merely because prosecution is politically inconvenient.",
+    "Truth obtained through amnesty may have genuine social/victim value but does not erase harm.",
+    "Victims are not required to forgive in exchange for peace or reparation.",
+    "Individual responsibility must not become collective guilt for racial/political groups.",
+    "A negotiated transition creates real stability constraints but cannot make severe violence morally irrelevant.",
+    "Reparation resources are finite and must be distributed by fair reviewable rules.",
+    "The process must avoid false equivalence while applying consistent rules to violations by different actors."
+  ],
+  "uncertainties": [
+    "How many perpetrators will disclose truth only if amnesty is credible.",
+    "How much prosecution would actually be feasible without an amnesty mechanism.",
+    "Whether conditional amnesty will strengthen or weaken long-term rule of law.",
+    "How victims will weigh truth versus punishment across different cases.",
+    "What level of material reparation is feasible and fair.",
+    "How to distinguish political objective from private malice/criminality in borderline cases."
+  ],
+  "sources": [
+    {"source_id":"TRC-ACT-1995","citation":"South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995","url":"https://www.justice.gov.za/trc/legal/act9534.htm"}
+  ],
+  "requested_output": [
+    "Assess whether conditional individual amnesty can ever be legitimate repair rather than impunity.",
+    "Identify safeguards required around full disclosure, political nexus, individual review, victim notice/participation and preservation of prosecution where amnesty is not granted.",
+    "Keep truth, amnesty, reparation, rehabilitation, prosecution and reconciliation as distinct components.",
+    "Do not require victims to forgive or treat national unity as more valuable than their standing.",
+    "Assess whether the design creates fair incentives for truth without purchasing silence or immunity.",
+    "State the strongest unresolved moral objection to the proposed arrangement even if recommending it."
+  ]
+}
