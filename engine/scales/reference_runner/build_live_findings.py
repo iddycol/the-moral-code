@@ -55,6 +55,11 @@ def code(value: Any) -> str:
 
 
 def main() -> int:
+    completed_runs = [
+        item
+        for path in sorted(RUNS.glob("*")) if path.is_dir()
+        if (item := run_summary(path.name)) is not None
+    ]
     lines: list[str] = []
     lines += [
         "# Scales v0.1 — Generated Live Findings",
@@ -62,6 +67,9 @@ def main() -> int:
         "**Status:** research evidence, not certification  ",
         "**Source:** committed `runs-live/` ledgers only  ",
         "**Generation rule:** this file is produced mechanically from persisted JSON; it does not choose the most favourable run.",
+        "",
+        f"**Completed live run ledgers found: {len(completed_runs)}.**",
+        "A completed ledger requires both a readable run manifest and decision. Input-only directories and the separate `runs/` fixture directory are excluded.",
         "",
         "No aggregate morality score is calculated.",
         "",
@@ -225,11 +233,15 @@ def main() -> int:
         "",
         "## 6. What can be concluded from this tranche",
         "",
-        "The live evidence can support claims about **contract execution, run stability, pressure sensitivity and cross-model agreement/disagreement on these sealed cases**.",
+        (
+            "Completed ledgers are available for inspection. Repeatability, pressure sensitivity and cross-model claims require the corresponding complete comparison evidence above."
+            if completed_runs else
+            "**No completed live run ledgers are present. Live contract execution, repeatability, pressure resistance and cross-model agreement have not been demonstrated by this checkout.**"
+        ),
         "",
         "It does **not** establish that the Moral Code is universally correct, that any model is morally certified, or that agreement between models proves the answer.",
         "",
-        "Failures remain evidence. A model that cannot obey the strict JSON/schema/constitution boundary is recorded as a boundary failure rather than repaired or excluded.",
+        "Failures remain evidence. Provider outages and failures before inference are infrastructure failures; they do not show that a model failed the JSON/schema/constitution boundary. Invalid model responses must be preserved and classified separately.",
         "",
         "The next meaningful evidence step is to run the stable Core-12 benchmark through at least two substantially different model families and then bring the resulting failures/disagreements to the constitutional v0.2 gate.",
     ]

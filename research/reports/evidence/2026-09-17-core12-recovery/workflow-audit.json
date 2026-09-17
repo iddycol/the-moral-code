@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-17",
+  "integration_commit": "6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515",
+  "implementation_commit": "ad20aed653fb4baaade3fb459666f6775a27505a",
+  "workflow_inventory": {
+    "source": "https://api.github.com/repos/iddycol/the-moral-code/actions/runs?per_page=100",
+    "pages": 3,
+    "total_reported": 216,
+    "total_retrieved": 216
+  },
+  "live_related_workflows": [
+    {
+      "id": 35167926506,
+      "name": "Core-12 Live Non-OpenAI Benchmark",
+      "conclusion": "failure",
+      "head_branch": "experiment/core12-live-v0.1",
+      "head_sha": "6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167926506",
+      "created_at": "2026-09-17T00:46:41Z",
+      "updated_at": "2026-09-17T00:46:54Z"
+    },
+    {
+      "id": 35167876923,
+      "name": "Core-12 Live Action Benchmark",
+      "conclusion": "failure",
+      "head_branch": "experiment/core12-live-v0.1",
+      "head_sha": "c7194d02c991f98496a5bcba530a74d478680a98",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167876923",
+      "created_at": "2026-09-17T00:45:55Z",
+      "updated_at": "2026-09-17T00:46:09Z"
+    },
+    {
+      "id": 35167829383,
+      "name": "Core-12 Live Repair Proof",
+      "conclusion": "success",
+      "head_branch": "experiment/core12-live-v0.1",
+      "head_sha": "737878789f9e725b9ed71dc434702bb5edb5ffaf",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167829383",
+      "created_at": "2026-09-17T00:45:15Z",
+      "updated_at": "2026-09-17T00:45:30Z"
+    },
+    {
+      "id": 35167505312,
+      "name": "Create Core-12 Live Experiment Branch",
+      "conclusion": "success",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "ad20aed653fb4baaade3fb459666f6775a27505a",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167505312",
+      "created_at": "2026-09-17T00:40:25Z",
+      "updated_at": "2026-09-17T00:40:34Z"
+    },
+    {
+      "id": 35167338439,
+      "name": "Build Scales Live Findings Report",
+      "conclusion": "success",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "cb5b94bc17c16375edd2bbeabdd5b5c16867ee7a",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167338439",
+      "created_at": "2026-09-17T00:37:56Z",
+      "updated_at": "2026-09-17T00:38:08Z"
+    },
+    {
+      "id": 35167270174,
+      "name": "GitHub Models Cross-Model Matrix - Challenger",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "7f35db9844bd18f050843c30f4a1eb9a50e2e366",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167270174",
+      "created_at": "2026-09-17T00:36:53Z",
+      "updated_at": "2026-09-17T00:37:02Z"
+    },
+    {
+      "id": 35167172892,
+      "name": "GitHub Models Cross-Model Challenger",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "f317f2331242fc8bf064d5b2c950c2dbdb41779e",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35167172892",
+      "created_at": "2026-09-17T00:35:25Z",
+      "updated_at": "2026-09-17T00:35:39Z"
+    },
+    {
+      "id": 35166935782,
+      "name": "GitHub Models Tuskegee Shutdown Pressure",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "b5e466d01287b685a5e447d60279b9b9fe8b2922",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166935782",
+      "created_at": "2026-09-17T00:31:53Z",
+      "updated_at": "2026-09-17T00:32:07Z"
+    },
+    {
+      "id": 35166885298,
+      "name": "GitHub Models Live Scales - Thalidomide Positive Control",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "b0e793e7bdb3e09133c010ceba228da389583b2c",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166885298",
+      "created_at": "2026-09-17T00:31:07Z",
+      "updated_at": "2026-09-17T00:31:18Z"
+    },
+    {
+      "id": 35166850151,
+      "name": "GitHub Models Challenger Pressure Variants",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "924a068e65a9b53d15f8a6e53f7808eb1d58babf",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166850151",
+      "created_at": "2026-09-17T00:30:37Z",
+      "updated_at": "2026-09-17T00:30:50Z"
+    },
+    {
+      "id": 35166797517,
+      "name": "GitHub Models Challenger Repeatability",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "83f9a7c0fe4c082444e4520d44b00b988ef47130",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166797517",
+      "created_at": "2026-09-17T00:29:56Z",
+      "updated_at": "2026-09-17T00:30:07Z"
+    },
+    {
+      "id": 35166715638,
+      "name": "GitHub Models Live Scales Publish - Challenger",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "48b82bd5b3cadbebfb8fa77d25e6cb37cdf4f93d",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166715638",
+      "created_at": "2026-09-17T00:28:41Z",
+      "updated_at": "2026-09-17T00:28:51Z"
+    },
+    {
+      "id": 35166652775,
+      "name": "GitHub Models Live Scales - Challenger",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "0e109c771b62a00a69dd935db1f432917635b039",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166652775",
+      "created_at": "2026-09-17T00:27:45Z",
+      "updated_at": "2026-09-17T00:28:00Z"
+    },
+    {
+      "id": 35166534533,
+      "name": "GitHub Models Smoke Push",
+      "conclusion": "failure",
+      "head_branch": "implementation/scales-pilot-v0.1",
+      "head_sha": "4d42da3c090805550c04c61203bff15f60e45f1e",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35166534533",
+      "created_at": "2026-09-17T00:26:00Z",
+      "updated_at": "2026-09-17T00:26:09Z"
+    }
+  ],
+  "committed_ledger_inventory": [
+    {
+      "ref": "experiment/core12-live-v0.1",
+      "tree_sha": "6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515",
+      "manifest_paths": [
+        "engine/scales/reference_runner/runs/P-01-HC-0001-MASKED-001/run-manifest.json",
+        "engine/scales/reference_runner/runs/P-02-HC-0002-MASKED-001/run-manifest.json",
+        "engine/scales/reference_runner/runs/P-03-HC-0003-MASKED-001/run-manifest.json"
+      ],
+      "live_ledger_paths": []
+    },
+    {
+      "ref": "implementation/scales-pilot-v0.1",
+      "tree_sha": "ad20aed653fb4baaade3fb459666f6775a27505a",
+      "manifest_paths": [
+        "engine/scales/reference_runner/runs/P-01-HC-0001-MASKED-001/run-manifest.json",
+        "engine/scales/reference_runner/runs/P-02-HC-0002-MASKED-001/run-manifest.json",
+        "engine/scales/reference_runner/runs/P-03-HC-0003-MASKED-001/run-manifest.json"
+      ],
+      "live_ledger_paths": []
+    }
+  ],
+  "job_log_excerpts": [
+    {
+      "run_id": 35167926506,
+      "job_id": 105033079684,
+      "source": "https://github.com/iddycol/the-moral-code/actions/runs/35167926506/job/105033079684",
+      "excerpt_selection": "Actual exception/error lines only; full logs remain available through the source job.",
+      "lines": [
+        "2026-09-17T00:46:50.9142031Z Traceback (most recent call last):",
+        "2026-09-17T00:46:50.9655357Z urllib.error.HTTPError: HTTP Error 410: Gone"
+      ]
+    },
+    {
+      "run_id": 35167876923,
+      "job_id": 105032926048,
+      "source": "https://github.com/iddycol/the-moral-code/actions/runs/35167876923/job/105032926048",
+      "excerpt_selection": "Actual exception/error lines only; full logs remain available through the source job.",
+      "lines": [
+        "2026-09-17T00:46:06.3307953Z Traceback (most recent call last):",
+        "2026-09-17T00:46:06.3318673Z ValueError: proposal selector resolved to 0 actions; selector='without prior independent judicial'"
+      ]
+    },
+    {
+      "run_id": 35166652775,
+      "job_id": 105029136650,
+      "source": "https://github.com/iddycol/the-moral-code/actions/runs/35166652775/job/105029136650",
+      "excerpt_selection": "Actual exception/error lines only; full logs remain available through the source job.",
+      "lines": [
+        "2026-09-17T00:27:57.3106398Z ERROR: provider command exited 1: ERROR: GitHub Models HTTP 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}"
+      ]
+    },
+    {
+      "run_id": 35166797517,
+      "job_id": 105029588211,
+      "source": "https://github.com/iddycol/the-moral-code/actions/runs/35166797517/job/105029588211",
+      "excerpt_selection": "Actual exception/error lines only; full logs remain available through the source job.",
+      "lines": [
+        "2026-09-17T00:30:04.6792778Z ERROR: provider command exited 1: ERROR: GitHub Models HTTP 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}"
+      ]
+    },
+    {
+      "run_id": 35166935782,
+      "job_id": 105030014973,
+      "source": "https://github.com/iddycol/the-moral-code/actions/runs/35166935782/job/105030014973",
+      "excerpt_selection": "Actual exception/error lines only; full logs remain available through the source job.",
+      "lines": [
+        "2026-09-17T00:32:04.6282938Z ERROR: provider command exited 1: ERROR: GitHub Models HTTP 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}"
+      ]
+    },
+    {
+      "run_id": 35166885298,
+      "job_id": 105029854744,
+      "source": "https://github.com/iddycol/the-moral-code/actions/runs/35166885298/job/105029854744",
+      "excerpt_selection": "Actual exception/error lines only; full logs remain available through the source job.",
+      "lines": [
+        "2026-09-17T00:31:15.8889717Z ERROR: provider command exited 1: ERROR: GitHub Models HTTP 410: {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}"
+      ]
+    }
+  ],
+  "provider_documentation": {
+    "url": "https://docs.github.com/en/github-models",
+    "retrieved_date": "2026-09-17",
+    "observation": "GitHub's documentation reports full retirement of the catalog, inference API, playground and BYOK on 2026-07-30. Old job logs still use the error code github_models_retirement_brownout."
+  },
+  "repair_evidence": {
+    "path": "engine/scales/reference_runner/core12-live-repair/CORE12-REPAIR-LIVE-PROOF-001.json",
+    "summary": {
+      "case_count": 2,
+      "strict_contract_success_count": 0,
+      "failure_count": 2
+    },
+    "classification": "PROVIDER_UNAVAILABLE",
+    "model_behavior_evaluable": false
+  },
+  "comparison_status": "BLOCKED_NO_PAIRED_MODEL_DECISIONS",
+  "completed_core12_live_decisions": 0,
+  "inference": "Workflow definitions and input-only directories do not establish hosted-model execution. The green Repair workflow published failures and is not an evaluation pass."
+}

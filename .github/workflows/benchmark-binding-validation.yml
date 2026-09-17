@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - research/historical-crucible-major-cases
+      - experiment/core12-live-v0.1
     paths:
       - "crucible/benchmark/**"
       - "crucible/historical/cases/**"

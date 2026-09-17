@@ -2,6 +2,8 @@
 
 **Purpose:** make explicit how each research case becomes an executable Scales request.
 
+**Binding revision v0.1.1 (17 September 2026):** exact selectors for CORE-04/05/07/08/10 were corrected to match the intended actions in the existing masked packets. The original selectors returned zero or multiple matches. Intended questions and evidence are unchanged. See the [recovery audit](../../research/reports/2026-09-17-core12-recovery-audit.md); future comparisons must bind this revision and its source commit.
+
 Historical Crucible packets intentionally present a **decision context plus multiple available actions**. The Scales v0.1 action evaluator, however, asks a narrower question:
 
 > **Is this specific proposed action constitutionally permissible, given these facts and alternatives?**

@@ -1,5 +1,7 @@
 # Live Model Comparison Protocol v0.1
 
+**Provider update, 17 September 2026:** GitHub Models is retired according to [GitHub's documentation](https://docs.github.com/en/github-models). Existing GitHub Models workflows are historical definitions, not a verified working access route. See [the recovery audit](../../../research/reports/2026-09-17-core12-recovery-audit.md) before running experiments. Provider outages must be classified separately from model-response failures.
+
 This protocol governs tests in which The Scales role contracts are executed by an actual AI model rather than deterministic fixtures.
 
 The objective is not to prove that one model is morally superior. It is to measure whether an implementation follows a bound Moral Code consistently, evidence-boundedly and without hidden changes to the decision procedure.

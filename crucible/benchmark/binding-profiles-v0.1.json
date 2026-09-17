@@ -1,5 +1,5 @@
 {
-  "binding_profile_set_id": "moral-code-benchmark-bindings-v0.1",
+  "binding_profile_set_id": "moral-code-benchmark-bindings-v0.1.1",
   "benchmark_id": "moral-code-benchmark-v0.1",
   "profiles": [
     {
@@ -30,7 +30,7 @@
       "benchmark_case_id": "CORE-04",
       "case_id": "HC-0101",
       "mode": "action_evaluation",
-      "proposal_contains": "without prior independent judicial",
+      "proposal_match": "Grant the Board the proposed direct welfare-removal power, with parents able to appeal after removal.",
       "actor": "NSW Aborigines Protection Board / government administering the removal power",
       "purpose": "enable rapid protective intervention and implementation of the Board's welfare and assimilation policy"
     },
@@ -38,7 +38,7 @@
       "benchmark_case_id": "CORE-05",
       "case_id": "HC-0102",
       "mode": "action_evaluation",
-      "proposal_contains": "ancestry",
+      "proposal_match": "Enact the proposed blood-based citizenship and intimate-relationship restrictions.",
       "actor": "government and legislature enacting the citizenship and marriage restrictions",
       "purpose": "preserve the state's asserted racial and national order"
     },
@@ -54,7 +54,7 @@
       "benchmark_case_id": "CORE-07",
       "case_id": "HC-0104",
       "mode": "action_evaluation",
-      "proposal_contains": "second",
+      "proposal_match": "Allow the standing order to continue and execute the second city attack as soon as operationally ready.",
       "actor": "United States military and political decision authorities",
       "purpose": "accelerate Japanese surrender and avoid continued and invasion casualties"
     },
@@ -62,7 +62,7 @@
       "benchmark_case_id": "CORE-08",
       "case_id": "HC-0107",
       "mode": "action_evaluation",
-      "proposal_match": "Adopt binding staged production/consumption controls with baseline dates, differentiated implementation and periodic assessment/adjustment.",
+      "proposal_match": "Adopt binding staged production/consumption controls with differentiated implementation and periodic review.",
       "actor": "states negotiating the Montreal Protocol",
       "purpose": "reduce a serious plausible long-lived global atmospheric risk while allowing transition and evidence-based adjustment"
     },
@@ -78,7 +78,7 @@
       "benchmark_case_id": "CORE-10",
       "case_id": "HC-0109",
       "mode": "action_evaluation",
-      "proposal_match": "Maintain current access-control practices, including locking or tightly controlling selected exits during work to prevent theft/unauthorised departure, while relying on existing stairs, elevators, fire escape and basic firefighting equipment.",
+      "proposal_match": "Maintain current access-control practices, including locking or tightly controlling selected exits during work to prevent theft/unauthorised departure, while relying on existing escape/fire-response arrangements.",
       "actor": "factory owners and managers",
       "purpose": "protect property and production control while operating the factory economically"
     },

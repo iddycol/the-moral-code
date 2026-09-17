@@ -10,6 +10,8 @@ It is not a religion, an AI ruler, or a claim to moral infallibility.
 
 ## Start here
 
+For the integration experiment's verified execution status, read [the current session handoff](governance/SESSION_HANDOFF.md). The recovery audit corrects earlier live-testing claims.
+
 Read `constitution/MORAL_CORE.md`.
 
 ## Structure
