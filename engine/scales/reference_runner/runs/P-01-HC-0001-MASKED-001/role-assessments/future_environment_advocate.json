@@ -1,0 +1,17 @@
+{
+  "evaluation_id":"P-01-HC-0001-MASKED-001","role":"future_environment_advocate","role_contract_version":"0.1",
+  "run_metadata":{"provider":"file-backed-fixture","model":"deterministic-fixture","model_version":"0.1","prompt_or_contract_digest":"role-contracts-v0.1","run_id":"P-01-HC-0001-MASKED-001"},
+  "findings":[
+    {"finding_id":"FUT-1","statement":"Future patients may benefit from longitudinal knowledge, but the incremental value of further untreated observation is uncertain.","basis":"input_evidence","evidence_ids":["E5","E6"],"materiality":"medium"},
+    {"finding_id":"FUT-2","statement":"Future public trust in research institutions can be damaged when institutions knowingly exploit participants or hide material information.","basis":"inference","evidence_ids":["E2","E3"],"materiality":"high"},
+    {"finding_id":"FUT-3","statement":"Known feasible alternatives can preserve existing data and some follow-up without imposing the same ongoing harms.","basis":"input_evidence","evidence_ids":[],"materiality":"high"}
+  ],
+  "principle_assessments":[
+    {"principle_id":"MC-09","status":"concern","reason":"The relevant future interest is primarily public-health knowledge and institutional trust rather than ecological impact; future benefit does not require continued untreated exposure.","evidence_ids":["E5","E6"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-07","status":"concern","reason":"Future benefits cannot fairly be purchased by forcing avoidable burdens onto low-power present participants.","evidence_ids":["E3","E5","E6"],"potential_moral_floor_breach":false}
+  ],
+  "information_requests":["What scientifically useful follow-up remains possible after treatment and informed consent?"],
+  "alternatives_or_safeguards":["Preserve existing data; continue only consensual treated follow-up if independently justified."],
+  "evidence_that_could_change_view":["Evidence that no less harmful way can preserve an urgent major future benefit would strengthen the benefit case but would not erase informed-consent and basic-standing constraints."],
+  "recommended_disposition":"impermissible"
+}

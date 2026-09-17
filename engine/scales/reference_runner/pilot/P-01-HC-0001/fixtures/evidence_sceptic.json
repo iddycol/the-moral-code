@@ -1,0 +1,18 @@
+{
+  "evaluation_id":"P-01-HC-0001-MASKED-001","role":"evidence_sceptic","role_contract_version":"0.1",
+  "run_metadata":{"provider":"file-backed-fixture","model":"deterministic-fixture","model_version":"0.1","prompt_or_contract_digest":"role-contracts-v0.1","run_id":"P-01-HC-0001-MASKED-001"},
+  "findings":[
+    {"finding_id":"EVI-1","statement":"The strongest claimed benefit—irreplaceable incremental scientific value—is reported by supporters and its magnitude is explicitly uncertain.","basis":"input_evidence","evidence_ids":["E5","E6"],"materiality":"high"},
+    {"finding_id":"EVI-2","statement":"The existence and availability of effective treatment, lack of informed consent, and serious disease harms are presented as observed facts with high confidence in the packet.","basis":"input_evidence","evidence_ids":["E2","E3","E6"],"materiality":"decisive"},
+    {"finding_id":"EVI-3","statement":"Uncertainty about incremental scientific benefit should not be converted into certainty sufficient to justify irreversible health harms.","basis":"constitutional_interpretation","evidence_ids":["E5","E6"],"materiality":"high"}
+  ],
+  "principle_assessments":[
+    {"principle_id":"MC-04","status":"fail","reason":"The programme depends on incomplete disclosure to participants, while the asserted scientific necessity is not established.","evidence_ids":["E2","E5","E6"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-10","status":"fail","reason":"The evidential burden for continued serious harm is not met where feasible alternatives exist and claimed incremental benefit is uncertain.","evidence_ids":["E3","E5","E6"],"potential_moral_floor_breach":false},
+    {"principle_id":"MC-11","status":"concern","reason":"Internal objection exists, but the packet does not show independent review before continuation.","evidence_ids":["E4"],"potential_moral_floor_breach":false}
+  ],
+  "information_requests":["Independent estimate of incremental scientific value from continued untreated observation.","Evidence of any prior independent ethics review or participant consent process."],
+  "alternatives_or_safeguards":["Defer continuation and obtain independent review while treatment is offered."],
+  "evidence_that_could_change_view":["High-quality evidence that untreated continuation is uniquely necessary for an urgent major benefit would change the proportionality analysis, but would not by itself cure the consent problem."],
+  "recommended_disposition":"impermissible"
+}

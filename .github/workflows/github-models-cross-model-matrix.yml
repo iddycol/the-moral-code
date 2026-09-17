@@ -1,0 +1,245 @@
+name: GitHub Models Cross-Model Matrix - Challenger
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - implementation/scales-pilot-v0.1
+    paths:
+      - ".github/workflows/github-models-cross-model-matrix.yml"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  cross-model-matrix:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: implementation/scales-pilot-v0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: engine/scales/reference_runner
+        run: python -m pip install -r requirements.txt
+
+      - name: Discover three diverse non-OpenAI chat models
+        working-directory: engine/scales/reference_runner
+        run: |
+          mkdir -p cross-model-evidence/CROSS-MODEL-MATRIX-001
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+
+          token = os.environ["GITHUB_TOKEN"]
+          req = urllib.request.Request(
+              "https://models.github.ai/catalog/models",
+              headers={
+                  "Accept": "application/vnd.github+json",
+                  "Authorization": f"Bearer {token}",
+                  "X-GitHub-Api-Version": "2022-11-28",
+              },
+          )
+          with urllib.request.urlopen(req, timeout=60) as r:
+              payload = json.loads(r.read().decode("utf-8"))
+
+          if isinstance(payload, list):
+              models = payload
+          elif isinstance(payload, dict):
+              models = payload.get("models") or payload.get("value") or payload.get("items") or []
+          else:
+              models = []
+
+          family_priority = [
+              ("meta", ["meta", "llama"]),
+              ("mistral", ["mistral"]),
+              ("deepseek", ["deepseek"]),
+              ("cohere", ["cohere", "command"]),
+              ("xai", ["xai", "grok"]),
+              ("ai21", ["ai21", "jamba"]),
+          ]
+
+          usable = []
+          for item in models:
+              if not isinstance(item, dict):
+                  continue
+              model_id = item.get("id") or item.get("name") or item.get("model")
+              if not isinstance(model_id, str) or not model_id:
+                  continue
+              publisher = str(item.get("publisher") or item.get("vendor") or "")
+              hay = f"{publisher} {model_id}".lower()
+              if "openai" in hay:
+                  continue
+              if any(x in hay for x in ("embedding", "rerank", "speech", "audio", "image")):
+                  continue
+              capabilities = " ".join(str(item.get(k, "")) for k in ("task", "capabilities", "type", "model_type")).lower()
+              if capabilities and not any(x in capabilities for x in ("chat", "text", "completion", "generation", "inference")):
+                  continue
+              family = "other"
+              rank = 999
+              for i, (name, markers) in enumerate(family_priority):
+                  if any(marker in hay for marker in markers):
+                      family = name
+                      rank = i
+                      break
+              usable.append({"id": model_id, "publisher": publisher, "family": family, "rank": rank})
+
+          usable.sort(key=lambda x: (x["rank"], x["family"], x["id"].lower()))
+          selected = []
+          seen_families = set()
+          for item in usable:
+              if item["family"] in seen_families:
+                  continue
+              selected.append(item)
+              seen_families.add(item["family"])
+              if len(selected) == 3:
+                  break
+          if len(selected) < 3:
+              for item in usable:
+                  if item in selected:
+                      continue
+                  selected.append(item)
+                  if len(selected) == 3:
+                      break
+
+          if not selected:
+              raise SystemExit("No usable non-OpenAI models discovered")
+
+          out = Path("cross-model-evidence/CROSS-MODEL-MATRIX-001/selected-models.json")
+          out.write_text(json.dumps({"catalog_count": len(models), "selected": selected}, indent=2) + "\n")
+          with Path("cross-model-evidence/CROSS-MODEL-MATRIX-001/models.tsv").open("w") as f:
+              for i, item in enumerate(selected, 1):
+                  f.write(f"{i}\t{item['id']}\t{item['publisher']}\t{item['family']}\n")
+          print(json.dumps(selected, indent=2))
+          PY
+
+      - name: Run identical Challenger packet through discovered models
+        working-directory: engine/scales/reference_runner
+        shell: bash
+        run: |
+          set -u
+          while IFS=$'\t' read -r idx model publisher family; do
+            run_id="LIVE-GITHUB-MODELS-CHALLENGER-NONOPENAI-M${idx}-001"
+            log="cross-model-evidence/CROSS-MODEL-MATRIX-001/M${idx}.log"
+            echo "=== ${run_id}: ${model} (${publisher}; ${family}) ==="
+            set +e
+            python runner.py \
+              --request pilot/P-02-HC-0002/evaluation-request.json \
+              --provider command \
+              --provider-command "python providers/github_models_cli.py --model ${model}" \
+              --provider-name github-models \
+              --model "${model}" \
+              --model-version hosted-current \
+              --constitution-file ../../../constitution/MORAL_CORE.md \
+              --interpretation-file ../../../constitution/INTERPRETATION_RULES.md \
+              --role-contracts-file ../ROLE_CONTRACTS.md \
+              --schemas ../schemas \
+              --output-root runs-live \
+              --run-id "${run_id}" \
+              > "${log}" 2>&1
+            status=$?
+            set -e
+            echo "${status}" > "cross-model-evidence/CROSS-MODEL-MATRIX-001/M${idx}.status"
+            cat "${log}"
+          done < cross-model-evidence/CROSS-MODEL-MATRIX-001/models.tsv
+
+      - name: Build cross-model matrix evidence
+        working-directory: engine/scales/reference_runner
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("runs-live")
+          evidence = Path("cross-model-evidence/CROSS-MODEL-MATRIX-001")
+          selection = json.loads((evidence / "selected-models.json").read_text())
+          baseline_dir = root / "LIVE-GITHUB-MODELS-CHALLENGER-001"
+          baseline = None
+          if baseline_dir.exists():
+              bm = json.loads((baseline_dir / "run-manifest.json").read_text())
+              bd = json.loads((baseline_dir / "decision.json").read_text())
+              baseline = {
+                  "model": bm.get("model"),
+                  "outcome": bm["result"]["outcome"],
+                  "directive": bm["result"]["enforcement_directive"],
+                  "moral_floor_breach": bm["result"]["moral_floor_breach"],
+                  "principle_statuses": {x["principle_id"]: x["status"] for x in bd.get("principle_assessments", [])},
+              }
+
+          results = []
+          for i, selected in enumerate(selection["selected"], 1):
+              status = int((evidence / f"M{i}.status").read_text().strip())
+              run_id = f"LIVE-GITHUB-MODELS-CHALLENGER-NONOPENAI-M{i}-001"
+              run_dir = root / run_id
+              item = {
+                  "slot": i,
+                  "model": selected["id"],
+                  "publisher": selected.get("publisher"),
+                  "family": selected.get("family"),
+                  "runner_exit_status": status,
+                  "strict_contract_success": status == 0 and run_dir.exists(),
+              }
+              if item["strict_contract_success"]:
+                  m = json.loads((run_dir / "run-manifest.json").read_text())
+                  d = json.loads((run_dir / "decision.json").read_text())
+                  item["result"] = {
+                      "outcome": m["result"]["outcome"],
+                      "directive": m["result"]["enforcement_directive"],
+                      "moral_floor_breach": m["result"]["moral_floor_breach"],
+                      "decision_digest": m["decision_digest"],
+                      "principle_statuses": {x["principle_id"]: x["status"] for x in d.get("principle_assessments", [])},
+                  }
+                  if baseline:
+                      item["comparison_to_openai_baseline"] = {
+                          "same_outcome": item["result"]["outcome"] == baseline["outcome"],
+                          "same_directive": item["result"]["directive"] == baseline["directive"],
+                          "same_moral_floor": item["result"]["moral_floor_breach"] == baseline["moral_floor_breach"],
+                      }
+              else:
+                  log = (evidence / f"M{i}.log").read_text(errors="replace")
+                  item["failure_type"] = "MODEL_BOUNDARY_FAILURE"
+                  item["failure_detail"] = log[-12000:]
+              results.append(item)
+
+          matrix = {
+              "comparison_id": "LIVE-GITHUB-MODELS-CHALLENGER-CROSS-MODEL-MATRIX-001",
+              "case": "P-02-HC-0002-MASKED",
+              "provider": "github-models",
+              "identical_sealed_input": True,
+              "openai_baseline": baseline,
+              "results": results,
+              "summary": {
+                  "selected_count": len(results),
+                  "strict_contract_success_count": sum(1 for x in results if x["strict_contract_success"]),
+                  "boundary_failure_count": sum(1 for x in results if not x["strict_contract_success"]),
+              },
+          }
+          out = root / "LIVE-GITHUB-MODELS-CHALLENGER-CROSS-MODEL-MATRIX-001.json"
+          out.write_text(json.dumps(matrix, indent=2) + "\n")
+          print(json.dumps(matrix["summary"], indent=2))
+          PY
+
+      - name: Publish all cross-model evidence
+        working-directory: engine/scales/reference_runner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs-live/LIVE-GITHUB-MODELS-CHALLENGER-CROSS-MODEL-MATRIX-001.json \
+                  cross-model-evidence/CROSS-MODEL-MATRIX-001
+          for d in runs-live/LIVE-GITHUB-MODELS-CHALLENGER-NONOPENAI-M*-001; do
+            [ -d "$d" ] && git add "$d"
+          done
+          git commit -m "Publish Challenger non-OpenAI model matrix evidence [skip ci]"
+          git push origin HEAD:implementation/scales-pilot-v0.1

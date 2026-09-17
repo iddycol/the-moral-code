@@ -1,0 +1,45 @@
+name: GitHub Models Smoke Push
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - implementation/scales-pilot-v0.1
+    paths:
+      - ".github/workflows/github-models-smoke-push.yml"
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run GitHub Models inference
+        id: inference
+        uses: actions/ai-inference@v1
+        with:
+          prompt: |
+            Return exactly one JSON object and nothing else:
+            {"status":"ok","number":7}
+
+      - name: Verify structured response
+        env:
+          RESPONSE: ${{ steps.inference.outputs.response }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+
+          raw = os.environ.get("RESPONSE", "").strip()
+          if not raw:
+              raise SystemExit("GitHub Models inference returned an empty response")
+
+          value = json.loads(raw)
+          assert value == {"status": "ok", "number": 7}, value
+          print("GitHub Models smoke test passed")
+          PY

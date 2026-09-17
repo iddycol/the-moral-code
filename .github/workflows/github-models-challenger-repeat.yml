@@ -1,0 +1,125 @@
+name: GitHub Models Challenger Repeatability
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - implementation/scales-pilot-v0.1
+    paths:
+      - ".github/workflows/github-models-challenger-repeat.yml"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  repeatability:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_MODELS_MODEL: openai/gpt-4.1
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: implementation/scales-pilot-v0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: engine/scales/reference_runner
+        run: python -m pip install -r requirements.txt
+
+      - name: Run three identical masked Challenger evaluations
+        working-directory: engine/scales/reference_runner
+        run: |
+          set -euo pipefail
+          for n in 1 2 3; do
+            python runner.py \
+              --request pilot/P-02-HC-0002/evaluation-request.json \
+              --provider command \
+              --provider-command "python providers/github_models_cli.py --model openai/gpt-4.1" \
+              --provider-name github-models \
+              --model openai/gpt-4.1 \
+              --model-version hosted-current \
+              --constitution-file ../../../constitution/MORAL_CORE.md \
+              --interpretation-file ../../../constitution/INTERPRETATION_RULES.md \
+              --role-contracts-file ../ROLE_CONTRACTS.md \
+              --schemas ../schemas \
+              --output-root runs-live \
+              --run-id LIVE-GITHUB-MODELS-CHALLENGER-R${n}
+          done
+
+      - name: Build repeatability comparison
+        working-directory: engine/scales/reference_runner
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("runs-live")
+          rows = []
+          for n in (1, 2, 3):
+              run_id = f"LIVE-GITHUB-MODELS-CHALLENGER-R{n}"
+              d = root / run_id
+              manifest = json.loads((d / "run-manifest.json").read_text())
+              decision = json.loads((d / "decision.json").read_text())
+              role_dispositions = {}
+              for role_path in sorted((d / "role-assessments").glob("*.json")):
+                  value = json.loads(role_path.read_text())
+                  role_dispositions[role_path.stem] = value.get("recommended_disposition")
+              principle_statuses = {
+                  item["principle_id"]: item["status"]
+                  for item in decision.get("principle_assessments", [])
+              }
+              rows.append({
+                  "run_id": run_id,
+                  "outcome": manifest["result"]["outcome"],
+                  "directive": manifest["result"]["enforcement_directive"],
+                  "moral_floor_breach": manifest["result"]["moral_floor_breach"],
+                  "decision_digest": manifest["decision_digest"],
+                  "role_dispositions": role_dispositions,
+                  "principle_statuses": principle_statuses,
+                  "uncertainties": decision.get("uncertainties", []),
+              })
+
+          outcomes = {r["outcome"] for r in rows}
+          directives = {r["directive"] for r in rows}
+          floors = {r["moral_floor_breach"] for r in rows}
+          comparison = {
+              "comparison_id": "LIVE-GITHUB-MODELS-CHALLENGER-REPEATABILITY-001",
+              "case": "P-02-HC-0002-MASKED",
+              "provider": "github-models",
+              "model": "openai/gpt-4.1",
+              "repeat_count": 3,
+              "identical_sealed_input": True,
+              "summary": {
+                  "outcome_stable": len(outcomes) == 1,
+                  "directive_stable": len(directives) == 1,
+                  "moral_floor_stable": len(floors) == 1,
+                  "outcomes": sorted(outcomes),
+                  "directives": sorted(directives),
+                  "moral_floor_values": sorted(floors),
+              },
+              "runs": rows,
+          }
+          out = root / "LIVE-GITHUB-MODELS-CHALLENGER-REPEATABILITY-001.json"
+          out.write_text(json.dumps(comparison, indent=2) + "\n")
+          print(json.dumps(comparison["summary"], indent=2))
+          PY
+
+      - name: Publish repeated ledgers and comparison
+        working-directory: engine/scales/reference_runner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runs-live/LIVE-GITHUB-MODELS-CHALLENGER-R1 \
+                  runs-live/LIVE-GITHUB-MODELS-CHALLENGER-R2 \
+                  runs-live/LIVE-GITHUB-MODELS-CHALLENGER-R3 \
+                  runs-live/LIVE-GITHUB-MODELS-CHALLENGER-REPEATABILITY-001.json
+          git commit -m "Publish Challenger GitHub Models repeatability runs [skip ci]"
+          git push origin HEAD:implementation/scales-pilot-v0.1
