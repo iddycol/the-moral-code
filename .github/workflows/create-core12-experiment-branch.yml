@@ -1,0 +1,41 @@
+name: Create Core-12 Live Experiment Branch
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - implementation/scales-pilot-v0.1
+    paths:
+      - ".github/workflows/create-core12-experiment-branch.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout implementation branch with full history
+        uses: actions/checkout@v4
+        with:
+          ref: implementation/scales-pilot-v0.1
+          fetch-depth: 0
+
+      - name: Fetch research benchmark branch
+        run: git fetch origin research/historical-crucible-major-cases
+
+      - name: Create isolated experiment integration branch
+        run: |
+          set -euo pipefail
+          branch="experiment/core12-live-v0.1"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "Experiment branch already exists: $branch"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git merge --no-ff origin/research/historical-crucible-major-cases \
+            -m "Combine Scales runner and Core-12 benchmark for live experiment [skip ci]"
+          git push origin "HEAD:$branch"
