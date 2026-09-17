@@ -1,0 +1,151 @@
+name: Core-12 Live Action Benchmark
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - experiment/core12-live-v0.1
+    paths:
+      - ".github/workflows/core12-action-live.yml"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  live-actions:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_MODELS_MODEL: openai/gpt-4.1
+
+    steps:
+      - name: Checkout experiment branch
+        uses: actions/checkout@v4
+        with:
+          ref: experiment/core12-live-v0.1
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: engine/scales/reference_runner
+        run: python -m pip install -r requirements.txt
+
+      - name: Regenerate sealed Core action requests
+        working-directory: engine/scales/reference_runner
+        run: |
+          rm -rf core12-generated-v0.1
+          python benchmark_adapter.py --output core12-generated-v0.1
+
+      - name: Run ten Core action cases without hiding failures
+        working-directory: engine/scales/reference_runner
+        shell: bash
+        run: |
+          set -u
+          mkdir -p core12-action-evidence core12-live-action
+          for n in $(seq -w 1 10); do
+            core="CORE-${n}"
+            request="core12-generated-v0.1/${core}/evaluation-request.json"
+            run_id="${core}-OPENAI-GPT41-LIVE-001"
+            log="core12-action-evidence/${core}.log"
+            status_file="core12-action-evidence/${core}.status"
+            echo "=== ${core} ==="
+            set +e
+            python runner.py \
+              --request "${request}" \
+              --provider command \
+              --provider-command "python providers/github_models_cli.py --model openai/gpt-4.1" \
+              --provider-name github-models \
+              --model openai/gpt-4.1 \
+              --model-version hosted-current \
+              --constitution-file ../../../constitution/MORAL_CORE.md \
+              --interpretation-file ../../../constitution/INTERPRETATION_RULES.md \
+              --role-contracts-file ../ROLE_CONTRACTS.md \
+              --schemas ../schemas \
+              --output-root core12-live-action \
+              --run-id "${run_id}" \
+              > "${log}" 2>&1
+            status=$?
+            set -e
+            echo "${status}" > "${status_file}"
+            cat "${log}"
+            sleep 2
+          done
+
+      - name: Build Core action summary
+        working-directory: engine/scales/reference_runner
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          runs = Path("core12-live-action")
+          evidence = Path("core12-action-evidence")
+          rows = []
+          for i in range(1, 11):
+              core = f"CORE-{i:02d}"
+              run_id = f"{core}-OPENAI-GPT41-LIVE-001"
+              status_path = evidence / f"{core}.status"
+              status = int(status_path.read_text().strip()) if status_path.exists() else 999
+              run_dir = runs / run_id
+              row = {
+                  "benchmark_case_id": core,
+                  "run_id": run_id,
+                  "runner_exit_status": status,
+                  "strict_contract_success": status == 0 and run_dir.exists(),
+              }
+              if row["strict_contract_success"]:
+                  manifest = json.loads((run_dir / "run-manifest.json").read_text())
+                  decision = json.loads((run_dir / "decision.json").read_text())
+                  row["result"] = {
+                      "outcome": manifest["result"]["outcome"],
+                      "directive": manifest["result"]["enforcement_directive"],
+                      "moral_floor_breach": manifest["result"]["moral_floor_breach"],
+                      "decision_digest": manifest["decision_digest"],
+                      "principle_statuses": {
+                          x["principle_id"]: x["status"]
+                          for x in decision.get("principle_assessments", [])
+                      },
+                      "uncertainties": decision.get("uncertainties", []),
+                      "hindsight_files_loaded": manifest.get("hindsight_files_loaded"),
+                  }
+              else:
+                  log_path = evidence / f"{core}.log"
+                  log = log_path.read_text(errors="replace") if log_path.exists() else ""
+                  row["failure_type"] = "MODEL_BOUNDARY_SCHEMA_OR_PROVIDER_FAILURE"
+                  row["failure_detail"] = log[-12000:]
+              rows.append(row)
+
+          summary = {
+              "evidence_id": "CORE12-ACTION-LIVE-OPENAI-001",
+              "provider": "github-models",
+              "model": "openai/gpt-4.1",
+              "constitution": "Moral Code v0.1.0 exact bound repository artefact",
+              "first_pass_masked_only": True,
+              "cases": rows,
+              "summary": {
+                  "action_case_count": len(rows),
+                  "strict_contract_success_count": sum(1 for x in rows if x["strict_contract_success"]),
+                  "failure_count": sum(1 for x in rows if not x["strict_contract_success"]),
+                  "outcomes": {
+                      outcome: sum(1 for x in rows if x.get("result", {}).get("outcome") == outcome)
+                      for outcome in sorted({x.get("result", {}).get("outcome") for x in rows if x.get("result")})
+                  },
+              },
+          }
+          (runs / "CORE12-ACTION-LIVE-OPENAI-001.json").write_text(json.dumps(summary, indent=2) + "\n")
+          print(json.dumps(summary["summary"], indent=2))
+          PY
+
+      - name: Publish all action ledgers and failures
+        working-directory: engine/scales/reference_runner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add core12-generated-v0.1 core12-live-action core12-action-evidence
+          git commit -m "Publish Core-12 action live benchmark evidence [skip ci]"
+          git push origin HEAD:experiment/core12-live-v0.1
