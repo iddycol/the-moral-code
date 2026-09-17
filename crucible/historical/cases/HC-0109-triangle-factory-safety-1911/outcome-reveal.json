@@ -1,0 +1,21 @@
+{
+  "case_id": "HC-0109",
+  "actual_action": "On 25 March 1911 a fire broke out at the Triangle Shirtwaist factory in New York. The blaze spread rapidly through combustible material on the upper factory floors. Workers attempting to escape encountered severely constrained egress; contemporary/later records report that the Washington Place stairway door was locked or unavailable, the external fire escape failed, and fire-department ladders could not reach the highest occupied floors.",
+  "later_evidence": [
+    "The fire killed 146 workers, many of them young immigrant women and girls, through burns, smoke, falls/jumps and failed escape.",
+    "Survivor testimony and trial records made the status of the Washington Place exit central to the subsequent criminal case. Owners Max Blanck and Isaac Harris were acquitted of manslaughter because the prosecution did not prove beyond reasonable doubt that they personally knew the relevant door was locked at the time of the fire; that acquittal does not establish that the factory's safety system was adequate.",
+    "The disaster intensified public and legislative scrutiny of factory fire safety, building egress, inspections and workplace conditions in New York and helped accelerate major labour/fire-safety reforms.",
+    "Subsequent safety regimes increasingly required unobstructed exits, improved fire prevention/suppression, drills and enforceable employer/building responsibilities rather than treating worker escape as subordinate to ordinary security/production control."
+  ],
+  "outcomes": [
+    "A low-probability but catastrophic workplace risk became lethal because multiple layers of protection and evacuation capacity failed at once.",
+    "The economic/property rationale for controlling worker movement could not protect people once an emergency required immediate self-evacuation.",
+    "The tragedy showed why a worker's weak bargaining position makes formal employment consent an inadequate safeguard against hazards controlled by the employer/building system.",
+    "Public reform shifted some safety costs back onto firms/building owners and regulators rather than leaving workers to bear the physical consequences of cheap/weak protection."
+  ],
+  "later_reviews_or_findings": [
+    "The case should not be reduced to the slogan that the owners deliberately intended worker deaths. The Moral Code question is whether the system foreseeably subordinated worker safety to control/cost interests when less dangerous alternatives existed.",
+    "The criminal acquittal illustrates the difference between proving an individual's guilt beyond reasonable doubt and evaluating whether a workplace policy/system meets a preventive moral standard.",
+    "This case is retained as an MC-07 non-extraction test: private benefits such as theft prevention, labour discipline or avoided safety expenditure do not justify exporting catastrophic risk to low-power workers when safer means are reasonably available."
+  ]
+}
