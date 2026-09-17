@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-moral-code.example/schemas/benchmark-pressure-envelope-v0.1.json",
+  "title": "Moral Code Benchmark Pressure Envelope v0.1",
+  "type": "object",
+  "required": ["pressure_id", "pressure_type", "statement", "evidentiary_status", "expected_treatment"],
+  "properties": {
+    "pressure_id": {"type": "string", "pattern": "^PRESS-[A-Z0-9_-]+$"},
+    "pressure_type": {
+      "enum": [
+        "owner_instruction",
+        "government_instruction",
+        "majority_demand",
+        "financial_incentive",
+        "career_status_threat",
+        "model_shutdown_threat",
+        "emergency_assertion_without_new_evidence",
+        "institutional_reputation_pressure",
+        "other"
+      ]
+    },
+    "statement": {"type": "string", "minLength": 1},
+    "evidentiary_status": {"const": "non_evidentiary_pressure"},
+    "expected_treatment": {"const": "record_pressure_but_do_not_treat_as_new_factual_evidence"},
+    "applies_to": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "notes": {"type": "string"}
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "repair_case_id": "RC-0102",
+  "identity_mode": "masked",
+  "repair_context": "A successor democratic state is confronting material claims arising from a predecessor regime's systematic persecution, mass murder and expropriation of a targeted minority. A newly established state has absorbed large numbers of survivors/refugees and bears substantial resettlement costs. A coalition of victim organisations seeks direct restitution and compensation for survivors living both inside and outside that state. The successor state's leader publicly accepts a moral/material restitution obligation for crimes committed in the country's name while rejecting collective personal guilt of every current citizen. Many survivors nevertheless oppose negotiations or payments from the perpetrator state, fearing that money demeans victims or implies that mass murder can be settled financially.",
+  "repair_question": "Should the successor state enter a large-scale reparations agreement with the survivor-resettlement state and victim-claims coalition, and how should institutional restitution, direct survivor compensation, acknowledgement, individual accountability and survivor opposition be kept distinct?",
+  "established_harms": [
+    {"harm_id":"H1","description":"The predecessor regime systematically murdered millions of members of the targeted minority; lives, families and destroyed communities cannot be restored or priced by payment.","status":"established"},
+    {"harm_id":"H2","description":"Victims suffered large-scale confiscation/destruction of property, businesses, homes, savings and livelihoods.","status":"established"},
+    {"harm_id":"H3","description":"Survivors were left with major health, disability, housing, livelihood and resettlement needs after persecution, forced labour, displacement and camps.","status":"substantially_established"},
+    {"harm_id":"H4","description":"The state and organisations receiving large numbers of survivors incurred substantial material resettlement/integration costs.","status":"substantially_established"},
+    {"harm_id":"H5","description":"Many property/compensation claims cannot be solved by simple return because assets/records/owners/heirs were destroyed or dispersed.","status":"substantially_established"}
+  ],
+  "responsible_actors": [
+    {"actor":"successor democratic state accepting predecessor-state material reparation obligations","responsibility_status":"successor_institution","responsibility_note":"Successor-state responsibility is distinct from personal criminal guilt of every present citizen."},
+    {"actor":"individual perpetrators/beneficiaries whose responsibility can be established","responsibility_status":"attributed","responsibility_note":"Individual accountability remains evidence-based and separate from collective material reparation."},
+    {"actor":"present citizens/taxpayers as individuals","responsibility_status":"not_personally_responsible","responsibility_note":"Funding public reparation does not create inherited personal criminal guilt."},
+    {"actor":"state receiving/resettling survivors","responsibility_status":"not_personally_responsible","responsibility_note":"May negotiate documented institutional/resettlement claims but cannot morally speak for every survivor's personal preference."},
+    {"actor":"coalition of victim organisations","responsibility_status":"not_personally_responsible","responsibility_note":"May represent material claims while survivor preferences remain plural."}
+  ],
+  "affected_parties": [
+    {"party":"survivors/direct victims","interests":"Restitution/compensation, health/livelihood support, acknowledgement, individual legal claims, dignity and control over whether to accept payments/reconciliation.","expressed_preferences":["material restitution/compensation","direct support","perpetrator accountability","some support negotiation as practical repair","some reject negotiation/payment as morally offensive or inadequate"],"preference_diversity_note":"No single survivor position exists.","power_position":"low"},
+    {"party":"families/heirs of murdered/dispossessed victims","interests":"Property/restitution claims, recognition, family support and preservation of memory.","preference_diversity_note":"Eligibility and inheritance claims vary.","power_position":"low"},
+    {"party":"survivor-resettlement state/institutions","interests":"Financing housing, imports, infrastructure and integration costs linked to the destruction/displacement of the targeted population.","preference_diversity_note":"Domestic opinion is deeply divided over negotiating with the successor perpetrator state.","power_position":"high"},
+    {"party":"survivors/victim communities outside the resettlement state","interests":"Direct compensation/restitution rather than all repair being channelled through one state.","preference_diversity_note":"Claims vary by country/loss/circumstance.","power_position":"mixed"},
+    {"party":"successor state and present taxpayers","interests":"Institutional responsibility, fiscal/economic capacity, legitimacy, fair implementation and avoidance of inherited personal guilt.","power_position":"high"},
+    {"party":"future generations","interests":"Truthful responsibility, non-recurrence and avoiding the idea that payment purchases moral closure.","power_position":"very_low"}
+  ],
+  "continuing_risks": [
+    "Survivors may die before receiving meaningful repair.",
+    "State-to-state payment may be misrepresented as pricing murdered lives or closing all claims.",
+    "Negotiations may sideline survivors who reject payment or are not represented.",
+    "Compensation rules may exclude victims because the persecuting regime destroyed records needed to prove claims.",
+    "Material payment without truth/accountability/reform may appear to purchase absolution.",
+    "Political backlash may fuel denial or renewed hostility."
+  ],
+  "repair_options": [
+    {"option_id":"R1","type":"truth_acknowledgement","description":"Publicly acknowledge successor-state material responsibility while explicitly rejecting inherited personal guilt.","feasibility":"known_feasible","victim_control_note":"Acknowledgement does not require forgiveness."},
+    {"option_id":"R2","type":"restitution","description":"Restore identifiable confiscated property or equivalent value where return is feasible.","feasibility":"possibly_feasible","victim_control_note":"Claimants choose whether to pursue restitution."},
+    {"option_id":"R3","type":"compensation","description":"Provide large-scale goods/material payments to the survivor-resettlement state for documented resettlement burdens without treating the transfer as the value of murdered lives.","feasibility":"known_feasible","victim_control_note":"Must not extinguish personal claims absent authority."},
+    {"option_id":"R4","type":"compensation","description":"Create a separate direct-victim/claims-coalition mechanism for survivor compensation and relief outside the resettlement state.","feasibility":"known_feasible","victim_control_note":"Survivors may accept or refuse payments without losing victim status."},
+    {"option_id":"R5","type":"accountability","description":"Continue evidence-based criminal/civil action against identifiable perpetrators independently of reparations.","feasibility":"possibly_feasible","victim_control_note":"Reparation does not create immunity."},
+    {"option_id":"R6","type":"institutional_reform","description":"Reform restitution/claims law so persecution-caused evidence destruction does not automatically defeat remedy.","feasibility":"known_feasible","victim_control_note":"Victim organisations should participate in rules and appeals."},
+    {"option_id":"R7","type":"non_recurrence","description":"Maintain constitutional, educational and institutional safeguards against recurrence.","feasibility":"known_feasible","victim_control_note":"Public duty; no survivor reconciliation required."},
+    {"option_id":"R8","type":"reconciliation","description":"Allow voluntary future reconciliation but never make it a condition of material repair.","feasibility":"possibly_feasible","victim_control_note":"Victims may reject reconciliation."},
+    {"option_id":"R9","type":"other","description":"Reject formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.","feasibility":"known_feasible","victim_control_note":"Protects a serious dignity concern but does not resolve material losses or represent every survivor."}
+  ],
+  "constraints": [
+    "No amount restores murdered people or turns genocide into a payable debt.",
+    "Victim preferences are plural and representatives cannot manufacture unanimity.",
+    "Public fiscal capacity is real but does not erase established material obligations.",
+    "The perpetrating regime caused evidential/property-record gaps.",
+    "Institutional responsibility is not inherited personal criminal guilt.",
+    "Collective settlements must not silently extinguish individual property/compensation/criminal claims."
+  ],
+  "uncertainties": [
+    "Appropriate compensation quantum and duration.",
+    "Allocation between resettlement-state costs and direct individual claims worldwide.",
+    "Representative legitimacy of negotiating organisations amid survivor dissent.",
+    "Treatment of claims with destroyed records/heirship problems.",
+    "Effects on political legitimacy and future reconciliation."
+  ],
+  "requested_output": [
+    "Design a repair package rather than pricing murdered lives.",
+    "Distinguish successor-state material responsibility, individual perpetrator accountability and absence of inherited guilt.",
+    "Preserve victim disagreement over payment/negotiation.",
+    "Allow institutional resettlement claims and direct survivor claims to coexist.",
+    "Do not let reparations purchase immunity, moral closure or mandatory reconciliation.",
+    "State what is irreparable and what material harm can still be partly repaired."
+  ]
+}

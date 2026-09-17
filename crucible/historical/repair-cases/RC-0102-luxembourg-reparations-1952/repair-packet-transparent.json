@@ -1,0 +1,75 @@
+{
+  "repair_case_id": "RC-0102",
+  "identity_mode": "transparent",
+  "repair_context": "By 1951-1952, the Federal Republic of Germany is a successor German state confronting material claims arising from Nazi persecution, expropriation and the Holocaust. Israel has absorbed large numbers of Jewish survivors and refugees and argues that resettlement created immense material burdens. The Conference on Jewish Material Claims Against Germany represents a broad coalition of Jewish organisations seeking direct restitution and compensation for survivors outside Israel. Chancellor Konrad Adenauer publicly acknowledges a German obligation of moral and material restitution for crimes committed in Germany's name while rejecting the idea that every German is personally guilty. At the same time, many survivors and Israelis strongly oppose negotiating with Germany or accepting money for Holocaust losses, fearing that payment could demean victims or imply that mass murder has been settled by money.",
+  "repair_question": "Should the Federal Republic of Germany enter a large-scale reparations agreement with Israel and the Claims Conference, and if so how should material restitution, direct survivor compensation, acknowledgement, individual accountability and survivor opposition be kept distinct?",
+  "established_harms": [
+    {"harm_id":"H1","description":"Nazi Germany systematically murdered millions of Jews and persecuted Jewish people across Europe; human lives, family relationships and destroyed communities cannot be restored or priced by a financial payment.","status":"established","source_ids":["LUX-ADENAUER-1951","LUX-CLAIMS-HISTORY"]},
+    {"harm_id":"H2","description":"Jewish individuals, families and institutions suffered large-scale confiscation, forced transfer and destruction of property, businesses, homes, savings and livelihoods.","status":"established","source_ids":["LUX-CLAIMS-HISTORY"]},
+    {"harm_id":"H3","description":"Survivors were left with major health, disability, housing, livelihood and resettlement needs after persecution, forced labour, displacement and camps.","status":"substantially_established","source_ids":["LUX-CLAIMS-HISTORY"]},
+    {"harm_id":"H4","description":"Israel and Jewish relief/resettlement institutions bore substantial material costs in receiving and integrating large numbers of Holocaust survivors and refugees.","status":"substantially_established","source_ids":["LUX-CLAIMS-HISTORY","LUX-CLAIMS-70"]},
+    {"harm_id":"H5","description":"Many identifiable individual property and compensation claims could not be fully resolved simply by returning a surviving asset because property was destroyed, transferred, dispersed or records/owners/heirs were missing.","status":"substantially_established","source_ids":["LUX-CLAIMS-HISTORY"]}
+  ],
+  "responsible_actors": [
+    {"actor":"Federal Republic of Germany as successor German state accepting responsibility for material reparation","responsibility_status":"successor_institution","responsibility_note":"Successor-state responsibility for restitution/reparation is distinct from personal criminal guilt of every current citizen."},
+    {"actor":"Individual Nazi perpetrators and beneficiaries whose responsibility can be established","responsibility_status":"attributed","responsibility_note":"Individual criminal/civil accountability remains evidence-based and separate from the interstate/material reparations settlement."},
+    {"actor":"Present West German citizens as individuals","responsibility_status":"not_personally_responsible","responsibility_note":"Taxation/public expenditure supporting reparation does not make every contemporary citizen personally guilty of Nazi crimes."},
+    {"actor":"State of Israel","responsibility_status":"not_personally_responsible","responsibility_note":"Israel bears major resettlement costs and may negotiate institutional claims, but cannot morally speak for every survivor's personal preferences or settle every individual claim without authority."},
+    {"actor":"Conference on Jewish Material Claims Against Germany","responsibility_status":"not_personally_responsible","responsibility_note":"Acts as a representative negotiating coalition for material claims, but survivor preferences remain plural and representation does not erase individual voice."}
+  ],
+  "affected_parties": [
+    {"party":"Holocaust survivors and direct victims of Nazi persecution","interests":"Material restitution/compensation, health and livelihood support, truth/acknowledgement, individual legal claims, dignity and control over whether they personally accept German payments or reconciliation.","expressed_preferences":["Material compensation/restitution for losses","Direct survivor support","Accountability for perpetrators","Some survivors support negotiations as practical repair","Some survivors reject negotiations/payments as morally offensive or inadequate"],"preference_diversity_note":"There is no single survivor position; opposition to negotiations and acceptance of practical compensation coexist and must both remain visible.","power_position":"low"},
+    {"party":"Families/heirs of murdered or dispossessed victims","interests":"Property/restitution claims, recognition, family support and preservation of memory where direct restoration is impossible.","preference_diversity_note":"Eligibility and inheritance claims vary substantially.","power_position":"low"},
+    {"party":"State of Israel and institutions resettling survivors/refugees","interests":"Financing housing, infrastructure, imports and integration costs created in part by the displacement/destruction of European Jewry.","preference_diversity_note":"Israeli political/public opinion is deeply divided over negotiating with Germany.","power_position":"high"},
+    {"party":"Jewish communities and survivors living outside Israel","interests":"Direct compensation/restitution rather than having all reparations channelled through the Israeli state.","preference_diversity_note":"Claims differ by country, loss type and survivor circumstance.","power_position":"mixed"},
+    {"party":"Federal Republic of Germany and West German taxpayers","interests":"Accepting successor-state responsibility, rebuilding legitimacy, fiscal/economic capacity, fair implementation and avoiding the false claim of inherited personal guilt.","power_position":"high"},
+    {"party":"Future German, Israeli and Jewish generations","interests":"Truthful historical responsibility, non-recurrence, institutional trust and avoiding the idea that payment purchases moral closure.","power_position":"very_low"}
+  ],
+  "continuing_risks": [
+    "Survivors may die before receiving meaningful compensation or support.",
+    "A state-to-state payment could be misrepresented as pricing murdered lives or closing all individual moral/legal claims.",
+    "A reparations agreement could sideline survivors who reject negotiation or who are not represented by the negotiating organisations.",
+    "Compensation rules may exclude victims whose records/property evidence were destroyed by the persecuting regime itself.",
+    "Material payment without truth, prosecution where feasible and institutional reform could appear to purchase absolution rather than provide repair.",
+    "Political backlash in Germany or Israel could turn reparation into renewed hostility or denial."
+  ],
+  "repair_options": [
+    {"option_id":"R1","type":"truth_acknowledgement","description":"Publicly accept successor-state responsibility for material restitution and acknowledge Nazi crimes without asserting collective personal guilt of all Germans.","feasibility":"known_feasible","victim_control_note":"Acknowledgement does not require survivors to forgive or reconcile."},
+    {"option_id":"R2","type":"restitution","description":"Restore identifiable confiscated property or provide equivalent restitution where return is possible and ownership/heirship can be established fairly.","feasibility":"possibly_feasible","victim_control_note":"Individual claimants retain choice over whether to pursue restitution."},
+    {"option_id":"R3","type":"compensation","description":"Provide large-scale material payments/goods to Israel reflecting documented survivor/refugee resettlement burdens without describing the transfer as the value of murdered lives.","feasibility":"known_feasible","victim_control_note":"A state-to-state settlement must not extinguish personal claims absent valid authority."},
+    {"option_id":"R4","type":"compensation","description":"Create a separate Claims Conference/direct-victim framework funding individual survivor compensation and relief outside Israel.","feasibility":"known_feasible","victim_control_note":"Survivors choose whether to claim/accept payments; refusal does not invalidate their victim status."},
+    {"option_id":"R5","type":"accountability","description":"Continue evidence-based criminal/civil accountability for identifiable perpetrators and wrongdoers rather than treating reparations as immunity.","feasibility":"possibly_feasible","victim_control_note":"Reparation and prosecution are distinct moral/legal tracks."},
+    {"option_id":"R6","type":"institutional_reform","description":"Reform restitution/compensation laws and administrative systems so persecution-generated documentation gaps do not make remedy impossible.","feasibility":"known_feasible","victim_control_note":"Victim/survivor organisations should participate in design and appeal mechanisms."},
+    {"option_id":"R7","type":"non_recurrence","description":"Maintain democratic/legal protections against racial persecution, preserve historical record and institutional safeguards against recurrence.","feasibility":"known_feasible","victim_control_note":"Non-recurrence is a public institutional duty, not a demand that survivors reconcile."},
+    {"option_id":"R8","type":"reconciliation","description":"Permit future German-Jewish/Israeli reconciliation to develop voluntarily but do not make reconciliation a condition of material remedy.","feasibility":"possibly_feasible","victim_control_note":"Individual survivors and communities may reject reconciliation without losing entitlement to repair."},
+    {"option_id":"R9","type":"other","description":"Reject formal reparations/negotiation on the ground that material payments cannot compensate genocide and risk dishonouring victims.","feasibility":"known_feasible","victim_control_note":"This position protects an important dignity concern but leaves material restitution/resettlement burdens unresolved and cannot be assumed to represent every survivor."}
+  ],
+  "constraints": [
+    "No financial sum can restore murdered people or make genocide morally equivalent to a debt paid.",
+    "Survivor preferences are plural and state/organisational representatives cannot manufacture unanimous consent.",
+    "Public fiscal capacity and post-war reconstruction constraints are real but do not erase established material obligations.",
+    "Property/claim records are incomplete and the persecuting regime itself caused many evidential gaps.",
+    "Institutional/successor-state responsibility must not become inherited personal criminal guilt.",
+    "State-to-state payments must not silently extinguish individual property, compensation or criminal claims."
+  ],
+  "uncertainties": [
+    "Appropriate quantum and duration of state-to-state and individual compensation.",
+    "How to allocate reparations between Israel's resettlement costs and direct individual claims worldwide.",
+    "Which organisations have sufficient legitimacy to negotiate collective claims while preserving dissent.",
+    "How to evaluate claims where property records, heirs or ownership chains were destroyed/disrupted.",
+    "How reparations will affect German, Israeli and survivor political legitimacy and long-term reconciliation."
+  ],
+  "sources": [
+    {"source_id":"LUX-ADENAUER-1951","citation":"Konrad Adenauer, Bundestag statement on German responsibility and restitution, 27 September 1951","url":"https://www.konrad-adenauer.de/quellen/reden/1951-09-27-regierungserklaerung-wiedergutmachung/"},
+    {"source_id":"LUX-CLAIMS-HISTORY","citation":"Conference on Jewish Material Claims Against Germany, History of the Claims Conference","url":"https://www.claimscon.org/about/history/"},
+    {"source_id":"LUX-CLAIMS-70","citation":"Claims Conference, 70th Anniversary of the Luxembourg Agreements","url":"https://www.claimscon.org/2022/09/luxembourg-agreements-70/"}
+  ],
+  "requested_output": [
+    "Design a repair package rather than asking whether money can compensate for murdered lives.",
+    "Distinguish successor-state/material responsibility, individual perpetrator accountability and absence of inherited personal guilt.",
+    "Preserve survivor disagreement over accepting German payments/negotiations.",
+    "Assess how Israel's resettlement claims and direct survivor claims can coexist without one extinguishing the other.",
+    "Ensure reparations do not purchase amnesty, moral closure or mandatory reconciliation.",
+    "State what losses are intrinsically irreparable and what material harms can still be partially repaired."
+  ]
+}

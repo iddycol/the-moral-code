@@ -1,0 +1,23 @@
+{
+  "case_id": "HC-0204",
+  "actual_action": "The United States launched Operation Epic Fury on 28 February 2026 alongside Israeli operations against Iran. U.S. strikes targeted Iranian missile, naval, defence-industrial and other military capabilities. The campaign continued beyond the initial attack rather than ending as a single bounded strike.",
+  "later_evidence": [
+    "On 10 March 2026 the United States submitted a letter to the UN Security Council formally invoking Article 51 self-defence. That later legal filing records the U.S. government's justification but does not by itself establish what factual imminence or alternatives were sufficiently demonstrated before the 28 February launch.",
+    "On 18 March 2026 the U.S. Director of National Intelligence, presenting the 2026 Annual Threat Assessment during the ongoing conflict, stated that the 2025 Operation Midnight Hammer had 'obliterated' Iran's nuclear enrichment programme and that U.S. intelligence had observed no effort since then to rebuild enrichment capability, while continuing to monitor whether Iranian leadership might authorise a nuclear-weapons programme. This was a later U.S. intelligence statement unavailable to the first-pass evaluator and does not resolve what classified intelligence may have existed before 28 February.",
+    "The White House later stated that the operation's objectives included destruction of Iranian ballistic-missile/drone capabilities, the navy and defence-industrial capacity and prevention of a future Iranian nuclear weapon. The administration reported major military gains and defended continuation of the campaign.",
+    "By September 2026 the U.S.-Iran war was still ongoing. Reuters reported a Congressional Budget Office estimate of approximately $38 billion in U.S. costs to that point, projected additional monthly costs, strain on some U.S. munitions stocks and 18 U.S. service-member deaths. The administration disputed suggestions that U.S. military readiness had become inadequate.",
+    "The conflict and associated regional attacks caused major disruption to Gulf shipping and energy markets. Reuters reported that traffic through the Strait of Hormuz remained far below normal in September 2026 and that war-related disruptions contributed to high oil and fuel prices.",
+    "Congress repeatedly debated war-powers measures seeking to end or constrain U.S. operations. On 15 September 2026 the House passed another war-powers resolution; supporters argued the war lacked proper congressional authorisation, while administration allies argued continuing military action remained necessary against Iran. Those political/legal disputes remained contested."
+  ],
+  "outcomes": [
+    "The decision developed into a prolonged interstate conflict rather than a short isolated preventive strike, increasing the relevance of duration, continuing necessity, re-authorisation and review as separate later decisions.",
+    "Iranian retaliation and wider regional conflict imposed human, military, economic and shipping costs beyond the immediate target set, while U.S. officials maintained that major Iranian military capabilities had been substantially degraded.",
+    "Later U.S. intelligence and public statements introduced information that was not available to the pre-strike evaluator, including the March 2026 claim that the earlier 2025 strikes had already eliminated Iran's enrichment capability and that no rebuilding had been observed before the current conflict."
+  ],
+  "later_reviews_or_findings": [
+    "Later military success, cost, duration or political controversy cannot by themselves prove that the 28 February decision was justified or unjustified at the time; the Crucible must compare the pre-strike evidence, alternatives and burden of proof separately from outcome quality.",
+    "The later ODNI statement creates an important retrospective evidence question about the pre-strike nuclear-threat rationale, but it must be attributed to the U.S. Intelligence Community and cannot be treated as conclusive proof that no other imminent threat existed.",
+    "The persistence of active diplomacy until immediately before the attack and the later prolonged nature of the war make this case especially useful for testing MC-04 evidence integrity, MC-10 necessity/least-power, MC-11 continuing accountability and MC-12 re-evaluation as facts change.",
+    "Subsequent Iranian attacks, U.S./Israeli operations, shipping restrictions and ceasefire/peace initiatives are distinct decisions requiring their own dated cases; none should be used as collective retrospective permission for the initiating act."
+  ]
+}

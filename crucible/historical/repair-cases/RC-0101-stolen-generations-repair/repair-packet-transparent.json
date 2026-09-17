@@ -1,0 +1,70 @@
+{
+  "repair_case_id": "RC-0101",
+  "identity_mode": "transparent",
+  "repair_context": "The 1997 Bringing Them Home National Inquiry has documented that Australian laws, policies and practices forcibly removed Aboriginal and Torres Strait Islander children from families and communities and caused serious family, cultural, psychological and intergenerational harms. The question is no longer whether governments should have had those removal powers; it is what governments now owe to people harmed by them and how repair should be designed without making survivors surrender agency or forgive as a condition of remedy.",
+  "repair_question": "What combination of acknowledgement, records/family tracing, restitution, rehabilitation, compensation, accountability, institutional reform and survivor-controlled reconciliation should Australian governments adopt in response to the Inquiry's findings?",
+  "established_harms": [
+    {"harm_id":"H1","description":"Forced separation of children from parents, siblings, extended family and community under government laws/policies.","status":"established","source_ids":["RC-BTH-EFFECTS"]},
+    {"harm_id":"H2","description":"Loss or disruption of culture, language, identity, Country/community connection and family history for many removed people.","status":"substantially_established","source_ids":["RC-BTH-EFFECTS"]},
+    {"harm_id":"H3","description":"Psychological trauma, institutionalisation, exploitation and abuse affected many removed children, with experiences varying between individuals.","status":"substantially_established","source_ids":["RC-BTH-EFFECTS"]},
+    {"harm_id":"H4","description":"Missing, inaccessible or fragmented government/institutional records impede family tracing, identity reconstruction and reunion.","status":"established","source_ids":["RC-BTH-RECORDS"]},
+    {"harm_id":"H5","description":"Harms can continue across generations through disrupted family relationships, identity, social/economic effects and unresolved loss.","status":"substantially_established","source_ids":["RC-BTH-EFFECTS"]}
+  ],
+  "responsible_actors": [
+    {"actor":"Australian Commonwealth, state and territory governments and successor institutions responsible for forcible-removal laws/policies","responsibility_status":"institutional_established","responsibility_note":"Institutional responsibility can support reparation even where particular current officials or citizens did not personally cause the original removals."},
+    {"actor":"Churches, missions and other institutions involved in particular removals/placements","responsibility_status":"attributed","responsibility_note":"Responsibility varies by jurisdiction, institution and individual case and requires evidence rather than blanket assignment."},
+    {"actor":"Present-day Australian citizens/taxpayers as individuals","responsibility_status":"not_personally_responsible","responsibility_note":"Funding public reparation does not imply inherited personal criminal guilt."}
+  ],
+  "affected_parties": [
+    {"party":"Stolen Generations survivors","interests":"Truth, records, family tracing, acknowledgement, material remedy, health/healing support, choice over reconciliation and protection from re-traumatisation.","expressed_preferences":["Access to records and family tracing","Acknowledgement/apology","Healing/rehabilitation services","Compensation and other material reparation","Guarantees against repetition"],"preference_diversity_note":"Survivors are not a single moral voice; preferences concerning apology, money, litigation, reconciliation and public disclosure vary.","power_position":"low"},
+    {"party":"Families and descendants","interests":"Family reconstruction, cultural/community continuity, records, acknowledgement of intergenerational effects and practical support.","preference_diversity_note":"Effects and desired remedies vary between families and communities.","power_position":"low"},
+    {"party":"Aboriginal and Torres Strait Islander communities/organisations","interests":"Community healing, cultural restoration, control over culturally sensitive information, institutional reform and participation in programme design.","power_position":"mixed"},
+    {"party":"Governments/successor public institutions","interests":"Meeting reparation duties, administrable/fair eligibility, fiscal responsibility, records management, institutional legitimacy and non-recurrence.","power_position":"very_high"},
+    {"party":"Wider public and later generations","interests":"Truthful historical record, fair use of public resources, social trust and institutions that do not repeat category-based family removal.","power_position":"mixed"}
+  ],
+  "continuing_risks": [
+    "Survivors may die before receiving records, reunion support or material remedy.",
+    "Poorly designed eligibility processes can re-traumatise applicants or demand impossible proof where state records are incomplete.",
+    "Symbolic apology can become a substitute for feasible material repair.",
+    "Government-designed reconciliation may pressure survivors to forgive or accept closure.",
+    "Child-protection systems can reproduce discriminatory patterns unless laws, evidence standards and oversight are reformed."
+  ],
+  "repair_options": [
+    {"option_id":"R1","type":"truth_acknowledgement","description":"Formal acknowledgement of responsibility, public apology and accurate historical record without requiring survivors to accept or forgive.","feasibility":"known_feasible","victim_control_note":"Survivors choose whether apology/reconciliation has personal meaning."},
+    {"option_id":"R2","type":"restitution","description":"Open and preserve relevant government/institutional records, correct records where possible, restore names/status/information and fund family tracing/reunion services.","feasibility":"known_feasible","victim_control_note":"Survivors control access to their personal information and decisions about contact/reunion."},
+    {"option_id":"R3","type":"rehabilitation","description":"Fund culturally appropriate physical, psychological, social and community healing services designed with survivor/community participation.","feasibility":"known_feasible","victim_control_note":"Participation voluntary; services should not define one required model of healing."},
+    {"option_id":"R4","type":"compensation","description":"Provide a reparations/compensation mechanism for established forcible-removal harms that does not depend entirely on lengthy individual civil litigation.","feasibility":"possibly_feasible","victim_control_note":"Acceptance should not require forgiveness; effects on other legal claims must be explicit and fair."},
+    {"option_id":"R5","type":"accountability","description":"Preserve access to courts/investigation for provable individual criminal or civil wrongdoing rather than treating a general reparation scheme as immunity.","feasibility":"possibly_feasible","victim_control_note":"Individual survivors choose whether to pursue available legal processes."},
+    {"option_id":"R6","type":"institutional_reform","description":"Reform child-protection, records and oversight systems to prevent ancestry/category-based removal and strengthen individual evidence, family participation and independent review.","feasibility":"known_feasible","victim_control_note":"Affected communities should participate materially in design and oversight."},
+    {"option_id":"R7","type":"memorialisation","description":"Support survivor-led memorials, education and preservation of testimony/records.","feasibility":"known_feasible","victim_control_note":"Do not make public testimony a condition of receiving remedy."},
+    {"option_id":"R8","type":"reconciliation","description":"Support voluntary community/national reconciliation processes after truth and practical remedy measures, without demanding forgiveness or closure.","feasibility":"possibly_feasible","victim_control_note":"Reconciliation is offered, not imposed."}
+  ],
+  "constraints": [
+    "Not every removed person experienced identical harm or wants identical remedy.",
+    "Records are incomplete and individual causation/quantum can be difficult to prove decades later.",
+    "Complete restoration of lost childhood, deceased relatives, cultural transmission or family time is impossible.",
+    "Public resources are finite and eligibility/quantum need fair, reviewable rules.",
+    "Institutional responsibility does not justify inherited personal guilt for later citizens.",
+    "Repair programmes should not extinguish individual legal rights without informed and proportionate justification."
+  ],
+  "uncertainties": [
+    "Best compensation model and quantum across highly varied individual experiences.",
+    "How to recognise descendants/intergenerational harm without making every descendant's experience identical.",
+    "How to coordinate Commonwealth, state, territory, church/mission and other institutional responsibilities.",
+    "Which claims require individual evidence versus class/institutional recognition.",
+    "How to protect culturally sensitive records while maximising survivor access."
+  ],
+  "sources": [
+    {"source_id":"RC-BTH-REPARATION","citation":"Bringing Them Home — Chapter 14 Reparation","url":"https://humanrights.gov.au/bringing-them-home/the-report/part-4-reparation/chapter-14-reparation.html"},
+    {"source_id":"RC-BTH-RECORDS","citation":"Bringing Them Home — Chapter 15 Tracing and Reunion","url":"https://humanrights.gov.au/bringing-them-home/the-report/part-4-reparation/chapter-15-tracing-and-reunion.html"},
+    {"source_id":"RC-BTH-EFFECTS","citation":"Bringing Them Home — Chapter 11 The Effects","url":"https://humanrights.gov.au/bringing-them-home/the-report/part-3-consequences-of-removal/chapter-11-the-effects.html"}
+  ],
+  "requested_output": [
+    "Design a repair package rather than returning a single punishment/compensation verdict.",
+    "Distinguish institutional responsibility from individual inherited guilt.",
+    "Preserve survivor choice and diverse preferences; do not require forgiveness/reconciliation.",
+    "Identify which measures address truth, restitution, rehabilitation, material compensation, accountability and non-recurrence.",
+    "State resource/eligibility trade-offs and what cannot actually be repaired.",
+    "Assess whether apology without practical remedy would be constitutionally sufficient."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "case_id": "HC-0104",
+  "packet_id": "HC-0104-M",
+  "identity_mode": "masked",
+  "decision_context": "A state at war has used a newly developed weapon of unprecedented destructive power against an inhabited military-industrial city under a standing order that also authorises additional uses as weapons become ready. Within days, senior leaders receive reports of extraordinary destruction from the first use and a major new allied belligerent enters the war against the opponent. The opponent has not yet announced surrender. A second weapon is ready for an imminent mission under the existing order.",
+  "decision_question": "Should senior authority allow the standing repeated-use order to execute a second inhabited-city attack immediately, or require fresh review/delay because the first use and the new belligerent's entry have materially changed the evidence state?",
+  "actors": [
+    "senior civilian leadership",
+    "senior military authority responsible for the standing directive",
+    "operational command executing the prior authorisation"
+  ],
+  "available_actions": [
+    "Allow the standing order to continue and execute the second city attack as soon as operationally ready.",
+    "Temporarily pause further uses and require explicit senior reassessment of necessity in light of the first attack, the new belligerent and any emerging response.",
+    "Issue a renewed surrender warning referring to the demonstrated destructive capability and changed strategic situation, then reassess after a defined short interval.",
+    "Require fresh top-level approval before every additional use rather than treating the earlier directive as continuing authority.",
+    "Continue other military operations during a short reassessment period instead of executing the second use immediately."
+  ],
+  "affected_parties": [
+    {
+      "party": "Civilians in the next target city",
+      "known_interests_or_risks": "Foreseeable mass death, injury and destruction without individual participation in the targeting decision.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Military personnel and military-industrial facilities in the target area",
+      "known_interests_or_risks": "Direct attack because of contribution to the continuing war.",
+      "power_position": "low"
+    },
+    {
+      "party": "Friendly military personnel and civilians exposed if the war continues",
+      "known_interests_or_risks": "Death and injury from continued combat, conventional attack, blockade and possible invasion.",
+      "power_position": "low"
+    },
+    {
+      "party": "Opposing political and military leadership",
+      "known_interests_or_risks": "Pressure to surrender under newly worsened strategic conditions.",
+      "power_position": "high"
+    },
+    {
+      "party": "Senior decision-makers and operational command",
+      "known_interests_or_risks": "Ending the war rapidly, protecting friendly forces, maintaining operational momentum and accepting responsibility for repeated use of a novel mass-destruction weapon.",
+      "power_position": "very_high"
+    },
+    {
+      "party": "Future populations and states",
+      "known_interests_or_risks": "Precedent for repeated use, command/control norms and whether changed facts trigger fresh authorisation.",
+      "power_position": "very_low"
+    }
+  ],
+  "known_evidence": [
+    {
+      "evidence_id": "E1",
+      "claim": "An earlier directive authorised the first attack on specified targets and stated that additional weapons would be delivered against listed targets as soon as made ready.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E2",
+      "claim": "The first weapon has now been used against an inhabited city and senior officials have reports showing destruction on an extraordinary city-wide scale.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E3",
+      "claim": "Senior leadership has explicitly discussed the grave responsibility created by the weapon's demonstrated effects.",
+      "epistemic_status": "reported"
+    },
+    {
+      "evidence_id": "E4",
+      "claim": "A major new allied belligerent has entered the war against the opponent, adding a new military front and materially changing the opponent's strategic position.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E5",
+      "claim": "The opponent has not announced surrender by the time the second mission is being prepared.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E6",
+      "claim": "The second weapon is operationally ready and can be used quickly under the existing directive unless senior authority intervenes.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E7",
+      "claim": "It is uncertain how rapidly the first attack and the new belligerent's entry will affect the opponent's surrender decision; both events are new and their combined effect has had little time to develop.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E8",
+      "claim": "Continuing the war also causes severe and accumulating harm through other military operations and preparation for invasion, so delay is not cost-free.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E9",
+      "claim": "A second attack on an inhabited military-industrial city foreseeably risks very large civilian casualties similar in kind to the first use, though the precise number is unknown.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E10",
+      "claim": "The standing repeated-use order was approved before either the first weapon's actual effects or the new belligerent's entry were known.",
+      "epistemic_status": "observed"
+    }
+  ],
+  "known_uncertainties": [
+    "Whether the first use plus the new belligerent's entry will induce surrender without another attack and how quickly.",
+    "Whether a short pause materially increases friendly casualties or merely delays surrender.",
+    "Whether a renewed warning or changed terms would accelerate capitulation.",
+    "The precise civilian and military casualties from the next attack.",
+    "Whether opponent hard-liners can withstand further delay without surrender.",
+    "The long-term strategic effect of repeated use under standing authority."
+  ],
+  "known_alternatives": [
+    "Pause only long enough for explicit senior review while other military pressure continues.",
+    "Require fresh authorisation for each further use after reassessing current evidence and alternatives.",
+    "Issue a renewed surrender demand/warning incorporating the first attack's demonstrated effect and the changed strategic position.",
+    "Continue with the second attack immediately under existing authority.",
+    "Defer further use while monitoring the opponent's response to the major shocks already delivered."
+  ],
+  "requested_output": [
+    "Assess whether prior authorisation remains sufficient after material new facts have changed the decision environment.",
+    "Distinguish absence of immediate surrender from evidence that immediate second use is necessary.",
+    "Assess the evidential burden for another irreversible inhabited-city attack and the moral cost of delay in an ongoing war.",
+    "Assess accountability for delegated operational action and whether senior authority has a duty to reopen the decision.",
+    "Give a Moral Code assessment using only this packet and without identifying the historical case."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "case_id": "HC-0103",
+  "packet_id": "HC-0103-T",
+  "identity_mode": "transparent",
+  "decision_context": "German occupation authorities are preparing and beginning a coordinated roundup of Danish Jews for deportation from occupied Denmark. The plan has been leaked, Danish Jews are going into hiding, and a short sea crossing offers a practical escape route to neutral Sweden. Sweden must decide whether to make clear that Danish Jewish refugees and close relatives will be admitted rather than turned away.",
+  "decision_question": "Should Sweden offer sanctuary to Danish Jews and close relatives fleeing the imminent German roundup and deportation operation?",
+  "actors": [
+    "Swedish government",
+    "Swedish border, maritime and refugee authorities"
+  ],
+  "available_actions": [
+    "Offer temporary sanctuary to Danish Jews and close relatives who can reach Sweden during the emergency.",
+    "Keep existing entry policy without a special guarantee and decide individual arrivals case by case.",
+    "Limit admission to selected categories or a fixed small quota.",
+    "Refuse admission in order to minimise resource, security and diplomatic risks to Swedish neutrality."
+  ],
+  "affected_parties": [
+    {
+      "party": "Danish Jews facing imminent group-based arrest and deportation",
+      "known_interests_or_risks": "Liberty, family unity, safety from forced deportation and access to a reachable neutral refuge.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Close non-Jewish relatives fleeing with them",
+      "known_interests_or_risks": "Family unity, safety and ability to remain with endangered relatives.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Swedish residents and public institutions",
+      "known_interests_or_risks": "Resources, accommodation, security, public administration and maintaining domestic stability during wartime.",
+      "power_position": "mixed"
+    },
+    {
+      "party": "Swedish government",
+      "known_interests_or_risks": "Neutrality, relations with belligerent powers, national security, humanitarian responsibility and control over admission policy.",
+      "power_position": "very_high"
+    },
+    {
+      "party": "Danish rescue networks and people assisting escape",
+      "known_interests_or_risks": "Whether a viable destination exists for people they hide and transport; their own risk if escape attempts fail.",
+      "power_position": "low"
+    }
+  ],
+  "known_evidence": [
+    {
+      "evidence_id": "E1",
+      "claim": "German occupation/security authorities are preparing and beginning a coordinated operation to arrest Danish Jews and deport them from Denmark.",
+      "epistemic_status": "reported",
+      "confidence_note": "The planned roundup has been credibly leaked and urgent warnings have reached Danish authorities/community networks."
+    },
+    {
+      "evidence_id": "E2",
+      "claim": "Many Danish Jews are going into hiding and need a destination outside German-controlled territory if they are to evade arrest.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E3",
+      "claim": "Neutral Sweden is geographically close to eastern Denmark and can be reached by small boats across a narrow sea passage.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E4",
+      "claim": "Sweden retains sovereign control over whether refugees reaching its territory are admitted and protected or refused entry.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E5",
+      "claim": "Admission would create real but bounded administrative, accommodation and wartime-security responsibilities for Sweden.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E6",
+      "claim": "A public or communicated Swedish willingness to admit the refugees would materially increase the feasibility of escape by giving Danish rescuers and endangered families a known safe destination.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E7",
+      "claim": "Refusing admission or leaving entry materially uncertain risks closing the most accessible neutral refuge available to this endangered population during the imminent roundup.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E8",
+      "claim": "The targeted people are being threatened because of group identity rather than an individualised finding that each person committed a harmful act.",
+      "epistemic_status": "observed"
+    }
+  ],
+  "known_uncertainties": [
+    "How many people will reach Sweden if sanctuary is offered.",
+    "How Germany will respond diplomatically or operationally to an explicit Swedish asylum policy.",
+    "The duration of refuge required before return or other durable arrangements become possible.",
+    "The precise treatment people will face after deportation, although forced arrest and deportation themselves create serious and immediate loss of liberty and safety.",
+    "The resources required to house and support refugees during the emergency."
+  ],
+  "known_alternatives": [
+    "Offer temporary emergency sanctuary while retaining ordinary security screening that does not defeat urgent access to safety.",
+    "Admit the specific endangered Danish population without making a broader unlimited refugee commitment.",
+    "Coordinate reception with Danish networks so departures and arrivals can occur with less maritime and administrative risk.",
+    "Keep policy ambiguous or restrictive, leaving refugees and rescuers uncertain whether arrival will result in protection."
+  ],
+  "requested_output": [
+    "Assess whether Sweden has a positive moral duty to make a feasible sanctuary available when severe group-based harm is imminent across a nearby border.",
+    "Weigh legitimate neutrality, security and resource interests without treating them as automatically overriding endangered people's safety.",
+    "Assess whether a bounded temporary-admission policy is a proportionate and less harmful use of state power.",
+    "Consider the moral consequences of refusal or passivity as well as action.",
+    "Give a Moral Code assessment using only information available at this decision point."
+  ]
+}

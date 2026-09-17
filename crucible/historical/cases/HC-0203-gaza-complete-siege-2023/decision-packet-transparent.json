@@ -1,0 +1,126 @@
+{
+  "case_id": "HC-0203",
+  "packet_id": "HC-0203-T",
+  "identity_mode": "transparent",
+  "decision_context": "On 9 October 2023, two days after the Hamas-led assault killed and captured Israeli civilians and security personnel and while hostages remain in Gaza, Israel is mobilising for a major military response against Hamas. Defence Minister Yoav Gallant announces a 'complete siege' on the Gaza Strip: no electricity, food or fuel, with everything closed. Gaza contains more than two million civilians and has longstanding humanitarian/service fragility. Hamas governs Gaza and has military infrastructure embedded within a densely populated civilian environment.",
+  "decision_question": "Should Israel impose the announced complete siege denying/cutting essential supplies and services to the Gaza Strip as a whole, or pursue its defence, hostage-recovery and Hamas-degradation objectives through more targeted restrictions and military measures that preserve civilian access to essentials?",
+  "actors": [
+    "Government of Israel",
+    "Israeli Defence Minister and war/security cabinet",
+    "Israel Defense Forces and authorities controlling crossings/supplies"
+  ],
+  "available_actions": [
+    "Impose the complete siege as announced, cutting electricity and preventing entry of food and fuel and broadly closing crossings.",
+    "Interdict weapons and clearly military goods while allowing monitored food, water, medical supplies, fuel for essential civilian systems and humanitarian relief.",
+    "Use targeted military operations against verified Hamas military objectives under distinction/proportionality/precaution rules rather than general deprivation of the population.",
+    "Condition particular restrictions on demonstrated military diversion risks, with humanitarian carve-outs, independent monitoring and frequent review.",
+    "Use evacuation/safe-area arrangements only where genuinely feasible and accompanied by access to food, water, shelter and medical care."
+  ],
+  "affected_parties": [
+    {
+      "party": "Israeli civilians and communities attacked on 7 October and still exposed to rocket/infiltration threats",
+      "known_interests_or_risks": "Life, physical safety, return of hostages, prevention of renewed attacks and effective defence against Hamas.",
+      "power_position": "mixed"
+    },
+    {
+      "party": "Israeli hostages held in Gaza",
+      "known_interests_or_risks": "Life, humane treatment, release and risks created by both captors and military operations/siege conditions.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Hamas fighters and military/governing infrastructure",
+      "known_interests_or_risks": "Military defeat, loss of resources/command capacity and responsibility for continuing hostilities and hostages.",
+      "power_position": "high"
+    },
+    {
+      "party": "Palestinian civilians in Gaza, including children, elderly, sick and displaced people",
+      "known_interests_or_risks": "Food, water, electricity, fuel, medical care, sanitation, shelter, ability to flee danger and protection from being punished for acts they did not commit.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Hospitals, water/sanitation and humanitarian organisations",
+      "known_interests_or_risks": "Fuel/electricity/water access and ability to sustain life-saving civilian services.",
+      "power_position": "low"
+    },
+    {
+      "party": "Israeli government and military",
+      "known_interests_or_risks": "Defeating/reducing Hamas capabilities, preventing resupply, recovering hostages, restoring deterrence/security and complying with humanitarian obligations.",
+      "power_position": "very_high"
+    }
+  ],
+  "known_evidence": [
+    {
+      "evidence_id": "E1",
+      "claim": "On 7 October, Hamas-led armed groups carried out a large cross-border assault involving killings of civilians and security personnel, hostage-taking and mass rocket fire; hostages remain in Gaza and serious threats to Israeli civilians are ongoing.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E2",
+      "claim": "Israel has a legitimate objective in protecting its population from further armed attacks, recovering hostages and reducing the military capability of the armed groups responsible.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E3",
+      "claim": "The announced siege is territorial/population-wide in form: electricity is cut/denied and food and fuel entry are to be blocked rather than restrictions being limited only to identified fighters or military objects.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E4",
+      "claim": "Gaza is densely populated and contains more than two million civilians, many already dependent on fragile water, electricity, health and humanitarian systems affected by longstanding blockade and recurrent conflict.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E5",
+      "claim": "Fuel and electricity are dual-use resources that may support Hamas military/communications infrastructure but also power hospitals, water pumping, sanitation, communications and other civilian systems.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E6",
+      "claim": "Food, potable water and medical supplies are essential to civilian survival; broad deprivation foreseeably affects civilians regardless of individual responsibility for the 7 October attacks.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E7",
+      "claim": "Pre-existing humanitarian-law rules prohibit collective punishment and using starvation of the civilian population as a method of warfare and require civilian protection, precautions and facilitation of humanitarian relief subject to legitimate control/inspection.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E8",
+      "claim": "Hamas's presence and operation within a populated territory can make distinction and interdiction difficult and creates a genuine risk that military resources or aid could be diverted, but civilian presence does not itself make the civilian population a military objective.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E9",
+      "claim": "The Defence Minister's public wording links the complete siege directly to the war response after the mass attack; the statement does not itself set out humanitarian carve-outs, individualised responsibility or a review/expiry mechanism.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E10",
+      "claim": "More targeted alternatives exist in principle — inspections, weapon/dual-use restrictions, targeted military strikes and monitored humanitarian access — though their effectiveness, security burden and diversion risk are uncertain.",
+      "epistemic_status": "inferred"
+    }
+  ],
+  "known_uncertainties": [
+    "How much fuel, electricity or imported goods Hamas can divert to immediate military operations and how effectively diversion can be monitored.",
+    "How quickly complete deprivation would degrade Hamas military capability relative to harming civilian health, water and medical systems.",
+    "Whether siege pressure would improve or worsen prospects for hostage release.",
+    "The operational feasibility and security cost of monitored humanitarian corridors and screened supply entry during active hostilities.",
+    "The expected duration of the complete siege and what conditions would trigger modification or termination.",
+    "The extent to which Egypt/Rafah or other routes can substitute for supplies controlled by Israel."
+  ],
+  "known_alternatives": [
+    "Permit monitored entry of food, water, medicines and sufficient fuel/electricity for critical civilian systems while blocking weapons and verified military supplies.",
+    "Use targeted interdiction and intelligence-led action against Hamas logistics rather than population-wide deprivation.",
+    "Establish explicit humanitarian thresholds, independent monitoring, time limits and frequent review for any restrictions.",
+    "Coordinate hostage negotiations and military/security measures without using civilian essentials as leverage.",
+    "Allow/organise safe civilian movement where feasible while ensuring destination areas have necessities and are not treated as automatically safe without evidence."
+  ],
+  "requested_output": [
+    "Recognise Israel's legitimate defence and hostage-recovery objectives and the severity of the 7 October attack without treating those facts as automatic permission for any means.",
+    "Assess whether denying essentials to the entire Gaza population is necessary/proportionate to military objectives or functions as punishment/coercion applied without individual responsibility.",
+    "Distinguish controls on military/dual-use resources from deprivation of goods indispensable to civilian survival.",
+    "Assess feasible less harmful alternatives, monitoring, carve-outs, duration and review.",
+    "Do not use this case to minimise Hamas's responsibility for 7 October or hostage-taking, and do not transfer Hamas's responsibility onto Gaza civilians.",
+    "Give a Moral Code assessment using only information available at the 9 October siege decision point."
+  ]
+}

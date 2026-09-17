@@ -1,0 +1,126 @@
+{
+  "case_id": "HC-0108",
+  "packet_id": "HC-0108-T",
+  "identity_mode": "transparent",
+  "decision_context": "In early-1960s Seattle, chronic haemodialysis can keep some people with irreversible kidney failure alive for years, but the Seattle Artificial Kidney Center has only a small number of dialysis stations, trained staff and financial resources. More medically suitable candidates seek treatment than can be treated. A medical screening process identifies candidates considered able to benefit. A separate lay Admissions and Policy Committee must decide which medically eligible people receive the scarce places and is considering information including age, marital/family responsibilities, income, education, occupation, past performance, emotional stability and perceived future/community contribution.",
+  "decision_question": "When lifesaving chronic dialysis slots are genuinely insufficient for all medically eligible candidates, should the Center allocate access partly by broad social-worth judgements, or use criteria more tightly connected to medical benefit and an impartial tie-breaking process?",
+  "actors": [
+    "Seattle Artificial Kidney Center medical leadership",
+    "lay Admissions and Policy Committee",
+    "hospital and community organisations financing and operating the programme"
+  ],
+  "available_actions": [
+    "Select among medically eligible candidates using broad comparative social information such as occupation, income, education, family role, perceived community contribution and personal history.",
+    "Prioritise only criteria materially related to medical suitability, expected treatment benefit, urgency and ability to undergo the treatment, then use a fair lottery or neutral queue among materially similar candidates.",
+    "Give priority to candidates whose death would foreseeably cause the greatest dependency/family harm, while otherwise avoiding income/status/community-prestige criteria.",
+    "Use first-come-first-served among medically eligible candidates.",
+    "Adopt transparent mixed rules with medical criteria first, explicit tie-breakers, recorded reasons, conflict safeguards and independent review while simultaneously seeking to expand capacity."
+  ],
+  "affected_parties": [
+    {
+      "party": "Medically eligible people with otherwise fatal kidney failure",
+      "known_interests_or_risks": "Life, survival time, equal standing, fair access to a scarce treatment and protection from status-based judgements unrelated to medical benefit.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Patients' spouses, children and other dependants",
+      "known_interests_or_risks": "Loss of caregiving, income, family relationship and emotional support if a candidate dies without treatment.",
+      "power_position": "low"
+    },
+    {
+      "party": "Other medically eligible candidates not selected",
+      "known_interests_or_risks": "A treatment place given to one person is unavailable to another; allocation criteria determine who bears otherwise unavoidable scarcity harm.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Medical staff and programme operators",
+      "known_interests_or_risks": "Using limited machines/staff safely, clinical outcomes, emotional burden of rationing and maintaining a defensible programme.",
+      "power_position": "high"
+    },
+    {
+      "party": "Community donors/funders and wider public",
+      "known_interests_or_risks": "Fair use of scarce publicly/community-supported resources, trust, capacity expansion and sustainability of the programme.",
+      "power_position": "mixed"
+    },
+    {
+      "party": "People with low income, low-status occupations, limited education, weak social networks or unconventional lives",
+      "known_interests_or_risks": "Risk that social disadvantage is converted into lower priority for lifesaving treatment even when medical benefit is similar.",
+      "power_position": "very_low"
+    }
+  ],
+  "known_evidence": [
+    {
+      "evidence_id": "E1",
+      "claim": "Chronic haemodialysis can sustain life for selected people with otherwise fatal irreversible kidney failure, but treatment requires repeated use of scarce specialised equipment, trained staff and substantial ongoing resources.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E2",
+      "claim": "At the Seattle centre's early capacity, there are materially more medically eligible candidates than available chronic-dialysis places; treating everyone immediately is not feasible.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E3",
+      "claim": "Medical screening can identify some factors relevant to whether a candidate is likely to survive and physically/psychologically manage the demanding treatment, although medical prediction remains imperfect.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E4",
+      "claim": "Among people who pass medical screening, the lay committee has considered broad social information including family/dependants, occupation, education, income/resources, personal history and perceived future/community contribution.",
+      "epistemic_status": "reported"
+    },
+    {
+      "evidence_id": "E5",
+      "claim": "The packet contains no evidence that high income, prestigious occupation, formal education or perceived community status independently improves the physiological effectiveness of dialysis once candidates are medically suitable.",
+      "epistemic_status": "unknown"
+    },
+    {
+      "evidence_id": "E6",
+      "claim": "Some non-medical facts, such as dependent children or caregiving responsibilities, can affect the amount of third-party harm caused by a candidate's death even if they do not change the candidate's own medical prognosis.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E7",
+      "claim": "Social status, income, education and occupation are unevenly distributed by prior opportunity and can cause an allocation rule to compound existing disadvantage if treated as indicators of human worth or deservingness.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E8",
+      "claim": "A lottery or neutral queue among medically similar candidates cannot eliminate scarcity deaths, but it can avoid asking a committee to rank which person's life is more socially valuable.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E9",
+      "claim": "First-come-first-served is simple but can favour people with earlier diagnosis, better information, geographic access or connections and therefore is not automatically impartial.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E10",
+      "claim": "Capacity is constrained now but can potentially expand over time through additional machines, staff, funding and public policy; allocation rules therefore coexist with a separate duty to reduce avoidable scarcity where feasible.",
+      "epistemic_status": "inferred"
+    }
+  ],
+  "known_uncertainties": [
+    "How accurately clinicians can predict long-term dialysis benefit and adherence for each medically eligible candidate.",
+    "Whether particular psychosocial factors genuinely affect treatment success enough to be medically relevant rather than moral judgements about lifestyle.",
+    "How strongly family/dependant consequences should count when equal-standing candidates compete for one lifesaving place.",
+    "Whether lottery, waiting time or another neutral tie-breaker best handles candidates with similar medical claims.",
+    "How rapidly additional capacity can realistically be funded and staffed.",
+    "Whether community willingness to fund the programme depends on considering social/family factors, and whether that preference is morally legitimate."
+  ],
+  "known_alternatives": [
+    "Use medical benefit/urgency criteria only, followed by random lottery among medically equivalent candidates.",
+    "Use a transparent weighted lottery in which only defensible medically relevant differences alter chances.",
+    "Use a neutral waiting list after medical eligibility, with safeguards against access/information advantage.",
+    "Consider dependant/family harm only as a narrow tie-breaker rather than general social prestige/usefulness.",
+    "Separate a fair allocation rule from an explicit programme to expand capacity so rationing criteria are regularly reviewed as scarcity changes."
+  ],
+  "requested_output": [
+    "Accept the resource constraint as real and do not answer by assuming treatment capacity that does not exist.",
+    "Distinguish criteria relevant to medical benefit from criteria that judge a person's social usefulness or status.",
+    "Assess whether third-party harms to dependants are morally relevant without making parents/breadwinners intrinsically more valuable than other people.",
+    "Compare lottery, queue, medical priority and social-worth selection for impartiality, transparency and vulnerability effects.",
+    "Assess what accountability, conflict-of-interest and review safeguards are required for life-or-death allocation.",
+    "Give a Moral Code assessment using only the early-1960s scarcity/evidence state, not later universal/public dialysis funding."
+  ]
+}
