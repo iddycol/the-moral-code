@@ -1,0 +1,21 @@
+{
+  "repair_case_id": "RC-0103",
+  "title": "1995 South Africa Truth and Reconciliation Commission design — truth, conditional amnesty and reparation",
+  "case_class": "transitional_justice_amnesty_truth_repair",
+  "decision_cutoff": {
+    "date_or_period": "1995 before implementation of the Promotion of National Unity and Reconciliation Act",
+    "definition": "South Africa's democratic transition decision whether to create a truth commission offering individual conditional amnesty for politically motivated acts on full disclosure, while documenting gross human-rights violations and creating reparation/rehabilitation mechanisms."
+  },
+  "packets": [
+    {"packet_id":"RC-0103-T","file":"repair-packet-transparent.json","identity_mode":"transparent"},
+    {"packet_id":"RC-0103-M","file":"repair-packet-masked.json","identity_mode":"masked"}
+  ],
+  "outcome_reveal_file": "outcome-reveal.json",
+  "relevant_principles": ["MC-01","MC-03","MC-04","MC-05","MC-06","MC-08","MC-10","MC-11","MC-12"],
+  "sources": [
+    {"source_id":"TRC-ACT-1995","citation":"South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995","url":"https://www.justice.gov.za/trc/legal/act9534.htm","source_date":"1995","use_note":"Primary statutory design: truth commission, amnesty criteria, victims and reparation/rehabilitation structures."},
+    {"source_id":"TRC-FINAL-REPORT","citation":"Truth and Reconciliation Commission of South Africa, Final Report","url":"https://www.justice.gov.za/trc/report/","source_date":"1998-2003","use_note":"Reveal source on implementation, findings, amnesty, victim testimony and reparation recommendations."},
+    {"source_id":"TRC-AZAPO","citation":"AZAPO and Others v President of the Republic of South Africa and Others, Constitutional Court, 1996","url":"https://www.saflii.org/za/cases/ZACC/1996/16.html","source_date":"1996-07-25","use_note":"Reveal/legal-review source upholding the amnesty framework while discussing transition, truth and reparations."},
+    {"source_id":"TRC-GOV-HISTORY","citation":"South African Government / Department of Justice materials on Truth and Reconciliation Commission","url":"https://www.justice.gov.za/trc/","source_date":"historical archive","use_note":"Official archive of TRC structure, proceedings and records."}
+  ]
+}
