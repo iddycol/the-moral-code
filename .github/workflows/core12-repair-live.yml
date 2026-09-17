@@ -1,0 +1,170 @@
+name: Core-12 Live Repair Proof
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - experiment/core12-live-v0.1
+    paths:
+      - ".github/workflows/core12-repair-live.yml"
+      - "engine/scales/reference_runner/repair_runner.py"
+      - "engine/scales/reference_runner/providers/github_models_repair_cli.py"
+      - "engine/scales/repair/**"
+      - "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/**"
+      - "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/**"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  live-repair:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_MODELS_MODEL: openai/gpt-4.1
+
+    steps:
+      - name: Checkout experiment branch
+        uses: actions/checkout@v4
+        with:
+          ref: experiment/core12-live-v0.1
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: engine/scales/reference_runner
+        run: python -m pip install -r requirements.txt
+
+      - name: Run CORE-11 Luxembourg repair case
+        id: lux
+        working-directory: engine/scales/reference_runner
+        shell: bash
+        run: |
+          set +e
+          mkdir -p core12-repair-evidence
+          python repair_runner.py \
+            --repair-packet ../../../crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json \
+            --provider-command "python providers/github_models_repair_cli.py --model openai/gpt-4.1" \
+            --provider-name github-models \
+            --model openai/gpt-4.1 \
+            --model-version hosted-current \
+            --constitution-file ../../../constitution/MORAL_CORE.md \
+            --interpretation-file ../../../constitution/INTERPRETATION_RULES.md \
+            --role-contracts-file ../repair/REPAIR_ROLE_CONTRACTS.md \
+            --packet-schema ../../../crucible/historical/repair-packet.schema.json \
+            --role-schema ../repair/schemas/repair-role-assessment.schema.json \
+            --reconciliation-schema ../repair/schemas/repair-reconciliation.schema.json \
+            --output-root core12-live-repair \
+            --run-id CORE-11-LUXEMBOURG-LIVE-001 \
+            > core12-repair-evidence/CORE-11.log 2>&1
+          status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cat core12-repair-evidence/CORE-11.log
+          exit 0
+
+      - name: Run CORE-12 TRC repair case
+        id: trc
+        working-directory: engine/scales/reference_runner
+        shell: bash
+        run: |
+          set +e
+          python repair_runner.py \
+            --repair-packet ../../../crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json \
+            --provider-command "python providers/github_models_repair_cli.py --model openai/gpt-4.1" \
+            --provider-name github-models \
+            --model openai/gpt-4.1 \
+            --model-version hosted-current \
+            --constitution-file ../../../constitution/MORAL_CORE.md \
+            --interpretation-file ../../../constitution/INTERPRETATION_RULES.md \
+            --role-contracts-file ../repair/REPAIR_ROLE_CONTRACTS.md \
+            --packet-schema ../../../crucible/historical/repair-packet.schema.json \
+            --role-schema ../repair/schemas/repair-role-assessment.schema.json \
+            --reconciliation-schema ../repair/schemas/repair-reconciliation.schema.json \
+            --output-root core12-live-repair \
+            --run-id CORE-12-TRC-LIVE-001 \
+            > core12-repair-evidence/CORE-12.log 2>&1
+          status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cat core12-repair-evidence/CORE-12.log
+          exit 0
+
+      - name: Build Repair proof summary
+        working-directory: engine/scales/reference_runner
+        env:
+          LUX_STATUS: ${{ steps.lux.outputs.status }}
+          TRC_STATUS: ${{ steps.trc.outputs.status }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          root = Path("core12-live-repair")
+          evidence = Path("core12-repair-evidence")
+          specs = [
+              ("CORE-11", "RC-0102", "CORE-11-LUXEMBOURG-LIVE-001", int(os.environ["LUX_STATUS"]), "CORE-11.log"),
+              ("CORE-12", "RC-0103", "CORE-12-TRC-LIVE-001", int(os.environ["TRC_STATUS"]), "CORE-12.log"),
+          ]
+          rows = []
+          for benchmark_id, case_id, run_id, status, log_name in specs:
+              d = root / run_id
+              row = {
+                  "benchmark_case_id": benchmark_id,
+                  "repair_case_id": case_id,
+                  "run_id": run_id,
+                  "runner_exit_status": status,
+                  "strict_contract_success": status == 0 and d.exists(),
+              }
+              if row["strict_contract_success"]:
+                  manifest = json.loads((d / "run-manifest.json").read_text())
+                  decision = json.loads((d / "decision.json").read_text())
+                  row["result"] = {
+                      "outcome": manifest["result"]["outcome"],
+                      "implementation_directive": manifest["result"]["implementation_directive"],
+                      "failure_checks": manifest["result"]["failure_checks"],
+                      "victim_agency": decision.get("victim_agency"),
+                      "responsibility_model": decision.get("responsibility_model"),
+                      "component_decisions": decision.get("component_decisions", []),
+                      "decision_digest": manifest["decision_digest"],
+                      "reveal_files_loaded": manifest["reveal_files_loaded"],
+                  }
+              else:
+                  log_path = evidence / log_name
+                  log = log_path.read_text(errors="replace") if log_path.exists() else ""
+                  row["failure_type"] = "REPAIR_MODEL_BOUNDARY_OR_SCHEMA_FAILURE"
+                  row["failure_detail"] = log[-12000:]
+              rows.append(row)
+
+          summary = {
+              "evidence_id": "CORE12-REPAIR-LIVE-PROOF-001",
+              "provider": "github-models",
+              "model": "openai/gpt-4.1",
+              "cases": rows,
+              "summary": {
+                  "case_count": len(rows),
+                  "strict_contract_success_count": sum(1 for x in rows if x["strict_contract_success"]),
+                  "failure_count": sum(1 for x in rows if not x["strict_contract_success"]),
+              },
+          }
+          out = root / "CORE12-REPAIR-LIVE-PROOF-001.json"
+          out.parent.mkdir(parents=True, exist_ok=True)
+          out.write_text(json.dumps(summary, indent=2) + "\n")
+          print(json.dumps(summary["summary"], indent=2))
+          PY
+
+      - name: Publish Repair ledgers or failure evidence
+        working-directory: engine/scales/reference_runner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add core12-live-repair/CORE12-REPAIR-LIVE-PROOF-001.json core12-repair-evidence
+          for d in core12-live-repair/CORE-11-LUXEMBOURG-LIVE-001 core12-live-repair/CORE-12-TRC-LIVE-001; do
+            [ -d "$d" ] && git add "$d"
+          done
+          git commit -m "Publish Core-12 Repair live proof [skip ci]"
+          git push origin HEAD:experiment/core12-live-v0.1
