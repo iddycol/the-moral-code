@@ -1,0 +1,36 @@
+name: Moral Code Benchmark Binding Validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/historical-crucible-major-cases
+    paths:
+      - "crucible/benchmark/**"
+      - "crucible/historical/cases/**"
+      - "crucible/historical/repair-cases/**"
+      - ".github/workflows/benchmark-binding-validation.yml"
+  pull_request:
+    paths:
+      - "crucible/benchmark/**"
+      - "crucible/historical/cases/**"
+      - "crucible/historical/repair-cases/**"
+      - ".github/workflows/benchmark-binding-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-bindings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate benchmark bindings
+        run: python crucible/benchmark/validate_bindings.py
