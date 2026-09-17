@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-17",
+  "scope": "Offline Core-12 binding and evidence-report recovery; no hosted-model result is claimed.",
+  "fix_commit": "b02a44b02a4d14a50a2f0fc3e92bfde5b499cfbd",
+  "generated_input_commit": "450b209eafff16b36cde6d06a8be5eb97bfc1808",
+  "original_inspected_commit": "6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515",
+  "binding_profile_set_id": "moral-code-benchmark-bindings-v0.1.1",
+  "local_checks": {
+    "runner_tests_passed": 13,
+    "generated_action_requests": 10,
+    "binding_profiles": 12,
+    "historical_cases": 16,
+    "historical_packets": 32,
+    "historical_reveals": 16,
+    "benchmark_core": 12,
+    "benchmark_extension": 7
+  },
+  "github_checks": [
+    {
+      "run_id": 35171559752,
+      "name": "Scales Reference Runner",
+      "source_commit": "b02a44b02a4d14a50a2f0fc3e92bfde5b499cfbd",
+      "conclusion": "success",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35171559752",
+      "updated_at": "2026-09-17T01:42:12Z"
+    },
+    {
+      "run_id": 35171559701,
+      "name": "Core-12 Generate Scales Action Requests",
+      "source_commit": "b02a44b02a4d14a50a2f0fc3e92bfde5b499cfbd",
+      "conclusion": "success",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35171559701",
+      "updated_at": "2026-09-17T01:42:13Z"
+    },
+    {
+      "run_id": 35171559726,
+      "name": "Moral Code Benchmark Binding Validation",
+      "source_commit": "b02a44b02a4d14a50a2f0fc3e92bfde5b499cfbd",
+      "conclusion": "success",
+      "url": "https://github.com/iddycol/the-moral-code/actions/runs/35171559726",
+      "updated_at": "2026-09-17T01:42:05Z"
+    }
+  ],
+  "generated_input_manifest": "engine/scales/reference_runner/core12-generated-v0.1/generation-manifest.json",
+  "live_evaluation": {
+    "completed_model_decisions": 0,
+    "comparable_model_pairs": 0,
+    "status": "BLOCKED_PROVIDER_MIGRATION_REQUIRED"
+  },
+  "constitutional_adoption": "NOT_ADOPTED"
+}
