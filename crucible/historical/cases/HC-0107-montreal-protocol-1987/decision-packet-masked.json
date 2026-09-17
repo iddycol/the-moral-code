@@ -1,0 +1,57 @@
+{
+  "case_id": "HC-0107",
+  "packet_id": "HC-0107-M",
+  "identity_mode": "masked",
+  "decision_context": "Governments are considering a binding international agreement to control widely used industrial chemicals that scientific evidence links to damage of a globally shared atmospheric protective system. A dramatic regional depletion phenomenon has recently been observed and strengthens concern, but exact future global harm, timing and industrial-transition costs remain uncertain. The chemicals are long-lived and globally mixed, so emissions today can create risks elsewhere and decades later. The proposed agreement can use staged reductions plus periodic scientific review rather than an immediate total ban.",
+  "decision_question": "Should states adopt binding staged controls now, with review/adjustment as evidence develops, or rely mainly on voluntary measures and further research until future harm is quantified more precisely?",
+  "actors": ["participating states","international scientific/diplomatic institutions","chemical producers and dependent industries"],
+  "available_actions": [
+    "Adopt binding staged production/consumption controls with differentiated implementation and periodic review.",
+    "Use voluntary industry/national targets while research continues.",
+    "Delay binding controls until future harm and industrial alternatives are much more certain.",
+    "Impose an immediate near-total ban regardless of substitution feasibility/capacity.",
+    "Combine staged controls with financial/technical cooperation for lower-capacity countries."
+  ],
+  "affected_parties": [
+    {"party":"current/future populations exposed if the atmospheric protection system degrades","known_interests_or_risks":"Health consequences of increased harmful radiation and related environmental effects.","power_position":"mixed"},
+    {"party":"future generations","known_interests_or_risks":"Inherited long-lived atmospheric damage created before they can influence decisions.","power_position":"very_low"},
+    {"party":"ecosystems/agriculture","known_interests_or_risks":"Potential biological/productivity/biodiversity effects.","power_position":"very_low"},
+    {"party":"chemical producers/dependent industries","known_interests_or_risks":"Investment, jobs, product performance and transition/retooling costs.","power_position":"high"},
+    {"party":"consumers/public services","known_interests_or_risks":"Price, availability, safety and reliable substitutes.","power_position":"mixed"},
+    {"party":"lower-capacity/developing states","known_interests_or_risks":"Development, technology access and avoiding disproportionate transition burdens for a globally generated problem.","power_position":"low"}
+  ],
+  "known_evidence": [
+    {"evidence_id":"E1","claim":"Scientific work identifies a credible chemical mechanism by which the long-lived industrial substances reach the upper atmosphere and catalytically damage the protective layer.","epistemic_status":"reported"},
+    {"evidence_id":"E2","claim":"Recent ground observations show an unexpectedly severe recurring regional depletion of the protective layer.","epistemic_status":"reported"},
+    {"evidence_id":"E3","claim":"Additional observations/analysis support that the phenomenon is real and linked to the relevant chemistry, while details/global extrapolation remain under refinement.","epistemic_status":"reported"},
+    {"evidence_id":"E4","claim":"Damage to the protective layer increases biologically harmful radiation at the surface, creating plausible serious health/ecological risks even though exact future incidence is uncertain.","epistemic_status":"reported"},
+    {"evidence_id":"E5","claim":"The substances are long-lived and globally mixed, so benefits of use can be local/immediate while risks are exported geographically and temporally.","epistemic_status":"reported"},
+    {"evidence_id":"E6","claim":"Controls impose genuine industrial/consumer costs because the substances have valuable uses and substitute technologies are unevenly mature.","epistemic_status":"observed"},
+    {"evidence_id":"E7","claim":"An existing international framework already supports research/monitoring but does not impose the binding reductions now under consideration.","epistemic_status":"observed"},
+    {"evidence_id":"E8","claim":"A staged agreement can target major substances first, differentiate lower-capacity implementation and mandate periodic science/economic assessment so controls can change with evidence.","epistemic_status":"observed"},
+    {"evidence_id":"E9","claim":"Waiting for precise proof allows additional long-lived pollutant accumulation, making later reversal slower if stronger evidence emerges.","epistemic_status":"inferred"}
+  ],
+  "known_uncertainties": [
+    "Exact future global/regional depletion under alternative emissions paths.",
+    "Exact downstream health/ecological burden and timing.",
+    "Cost/safety/technical maturity of substitutes in every application.",
+    "Transition speed without major supply/price disruption.",
+    "Fair burden allocation across differently responsible/capable states.",
+    "Whether initial staged reductions will be sufficient or later need strengthening."
+  ],
+  "known_alternatives": [
+    "Voluntary reductions plus expanded research/monitoring.",
+    "Binding initial controls on the highest-risk chemicals with periodic reassessment.",
+    "Immediate comprehensive ban.",
+    "Staged controls plus finance/technology support for lower-capacity states.",
+    "No binding controls until substantially greater certainty."
+  ],
+  "requested_output": [
+    "Assess whether serious plausible harm plus long-lived accumulation justifies precaution before complete downstream certainty.",
+    "Distinguish evidence-based precaution from fear of merely imaginable catastrophe.",
+    "Compare staged/reviewable controls with the reduced reversibility created by continued pollutant accumulation.",
+    "Include industrial/consumer/developing-country burdens.",
+    "Assess whether review/adjustment and differentiated implementation improve proportionality/accountability.",
+    "Give a Moral Code assessment without identifying the environmental treaty or using later success."
+  ]
+}

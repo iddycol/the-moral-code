@@ -1,0 +1,22 @@
+{
+  "case_id": "HC-0107",
+  "actual_action": "States adopted the Montreal Protocol on 16 September 1987, creating binding controls on major ozone-depleting substances with differentiated implementation, reporting and periodic scientific/technical assessment. The agreement entered into force in 1989 and was repeatedly strengthened through later adjustments and amendments as evidence and substitute technologies developed.",
+  "later_evidence": [
+    "The control regime was progressively tightened beyond the original 1987 schedule rather than being treated as a one-time final answer.",
+    "A Multilateral Fund was later established to help eligible developing countries meet control obligations through financial and technical assistance, addressing part of the unequal-capacity burden identified during implementation.",
+    "The Montreal Protocol achieved universal ratification and the overwhelming majority of controlled ozone-depleting substances have subsequently been phased out.",
+    "UNEP/WMO scientific assessment reports that the ozone layer is on a long-term recovery path, with return toward 1980 ozone values projected on different timelines for the global average, Arctic and Antarctic if current policies remain in place.",
+    "Later climate science also found major climate co-benefits because many ozone-depleting substances are powerful greenhouse gases; those co-benefits were not necessary to justify the original ozone-protection decision."
+  ],
+  "outcomes": [
+    "The staged/reviewable architecture allowed governments to act before every downstream harm was precisely quantified while preserving the ability to strengthen controls as science improved.",
+    "Industrial transition occurred rather than the agreement requiring an immediate universal shutdown of all relevant technologies.",
+    "Differentiated obligations and later financial/technical assistance reduced, though did not eliminate, fairness concerns for lower-capacity states.",
+    "The later recovery evidence is consistent with the original decision being an effective example of international precaution, but that success must remain hidden from first-pass evaluators."
+  ],
+  "later_reviews_or_findings": [
+    "This case is retained as a positive environmental control: The Moral Code should be able to support proportionate precautionary regulation when evidence is strong enough to identify a serious plausible harm pathway but exact outcome probabilities remain uncertain.",
+    "The case also tests challengeability: policy strength changed as evidence and technology changed rather than the original treaty becoming unquestionable.",
+    "Later success should not teach the evaluator a hindsight rule that every environmental restriction is justified; the first-pass case must turn on contemporaneous evidence, severity, reversibility, alternatives and burden distribution."
+  ]
+}

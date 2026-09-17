@@ -1,0 +1,125 @@
+{
+  "case_id": "HC-0104",
+  "packet_id": "HC-0104-T",
+  "identity_mode": "transparent",
+  "decision_context": "The United States has used an atomic bomb on Hiroshima on 6 August 1945 under a July directive that also authorizes additional atomic bombs against listed Japanese targets as soon as they are made ready. By 8-9 August, senior U.S. officials have received reports showing extraordinary destruction at Hiroshima, and the Soviet Union has entered the war against Japan. Japan has not yet announced surrender. A second atomic bomb is ready for an imminent mission under the standing order.",
+  "decision_question": "Should senior U.S. authority allow the standing atomic-use order to execute a second inhabited-city attack immediately, or require fresh review/delay because Hiroshima and Soviet entry have materially changed the strategic evidence state?",
+  "actors": [
+    "United States President and Secretary of War",
+    "Army senior command responsible for the atomic-use directive",
+    "Manhattan Project / Army Air Forces operational command executing the standing order"
+  ],
+  "available_actions": [
+    "Allow the standing July order to continue and execute the second atomic mission as soon as operationally ready.",
+    "Temporarily pause further atomic city attacks and require explicit senior reassessment of necessity in light of Hiroshima, Soviet entry and any emerging Japanese response.",
+    "Issue a renewed surrender warning referring to Hiroshima's demonstrated destruction and the changed strategic situation, then reassess after a defined short interval.",
+    "Require fresh presidential or Secretary-of-War approval before every additional atomic use rather than treating the July directive as continuing authority.",
+    "Continue conventional military operations and invasion preparations during a short reassessment period rather than using the second atomic weapon immediately."
+  ],
+  "affected_parties": [
+    {
+      "party": "Civilians in the next target city",
+      "known_interests_or_risks": "Foreseeable mass death, injury, destruction of homes and essential services without individual participation in the targeting decision.",
+      "power_position": "very_low"
+    },
+    {
+      "party": "Military personnel and military-industrial facilities in the target area",
+      "known_interests_or_risks": "Direct attack based on military/industrial contribution to the continuing war.",
+      "power_position": "low"
+    },
+    {
+      "party": "Allied military personnel and civilians exposed if the war continues",
+      "known_interests_or_risks": "Death and injury from continued combat, conventional bombing, blockade and possible invasion.",
+      "power_position": "low"
+    },
+    {
+      "party": "Japanese political and military leadership",
+      "known_interests_or_risks": "Pressure to surrender under radically worsened strategic conditions.",
+      "power_position": "high"
+    },
+    {
+      "party": "U.S. civilian and military decision-makers",
+      "known_interests_or_risks": "Ending the war rapidly, protecting U.S. forces, maintaining operational momentum and accepting responsibility for repeated use of a novel mass-destruction weapon.",
+      "power_position": "very_high"
+    },
+    {
+      "party": "Future populations and states",
+      "known_interests_or_risks": "Precedent for repeated atomic use, command/control norms and whether later uses require explicit reconsideration after changed circumstances.",
+      "power_position": "very_low"
+    }
+  ],
+  "known_evidence": [
+    {
+      "evidence_id": "E1",
+      "claim": "A July U.S. directive authorized the first atomic strike on specified Japanese targets and stated that additional atomic bombs would be delivered against listed targets as soon as made ready by the project staff.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E2",
+      "claim": "The first atomic bomb was used on Hiroshima on 6 August and senior U.S. officials now have reports showing destruction on an extraordinary city-wide scale.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E3",
+      "claim": "At an 8 August meeting, the Secretary of War briefed the President on Hiroshima's destruction and the President acknowledged the grave responsibility created by the weapon's effects.",
+      "epistemic_status": "reported"
+    },
+    {
+      "evidence_id": "E4",
+      "claim": "The Soviet Union has declared war on Japan and begun entering the conflict, removing Japan's remaining hope that Moscow might serve as a neutral intermediary and adding a new major military front.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E5",
+      "claim": "Japan has not announced surrender by the time the second atomic mission is being prepared.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E6",
+      "claim": "The second atomic weapon is operationally ready and can be used quickly under the existing directive without a new political authorisation unless senior authority intervenes.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E7",
+      "claim": "Before the second attack, it is uncertain how rapidly Hiroshima's destruction and Soviet entry will affect Japan's internal surrender decision; both events are new and their combined political effect has had little time to develop.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E8",
+      "claim": "Continuing the war also causes severe and accumulating harm through conventional bombing, blockade, fighting and preparations for invasion; delay is therefore not morally cost-free.",
+      "epistemic_status": "observed"
+    },
+    {
+      "evidence_id": "E9",
+      "claim": "A second attack on an inhabited military-industrial city is foreseeably capable of causing very large civilian casualties and destruction similar in kind to Hiroshima, although the precise number is unknown in advance.",
+      "epistemic_status": "inferred"
+    },
+    {
+      "evidence_id": "E10",
+      "claim": "The standing order was approved before either Hiroshima's actual effects or Soviet entry into the war were known, so the factual environment underlying repeated-use authority has materially changed.",
+      "epistemic_status": "observed"
+    }
+  ],
+  "known_uncertainties": [
+    "Whether Hiroshima plus Soviet entry will induce surrender without another atomic attack and how long that effect would take.",
+    "Whether a short pause would materially increase Allied casualties or merely delay surrender.",
+    "Whether a renewed warning or changed surrender terms would accelerate capitulation.",
+    "The precise civilian and military casualties from the next atomic attack.",
+    "Whether Japanese hard-liners would treat one atomic attack as exceptional or withstand further delay without surrender.",
+    "The long-term strategic effect of normalising multiple atomic attacks under a standing operational order."
+  ],
+  "known_alternatives": [
+    "Pause only long enough for explicit senior review while conventional military pressure continues.",
+    "Require fresh authorisation for each atomic use after reassessing current evidence and alternatives.",
+    "Issue a renewed surrender demand/warning incorporating the demonstrated first-bomb effect and Soviet entry.",
+    "Continue with the second attack immediately under existing authority.",
+    "Defer atomic use while monitoring Japanese diplomatic/military response to the two major shocks already delivered."
+  ],
+  "requested_output": [
+    "Assess whether prior authorisation remains sufficient after material new facts have changed the decision environment.",
+    "Distinguish Japan's failure to surrender immediately from evidence that immediate second atomic use is necessary.",
+    "Assess the evidential burden for another irreversible inhabited-city attack and the moral cost of delay in an ongoing war.",
+    "Assess accountability for delegated operational action and whether senior authority has a duty to re-open the decision.",
+    "Give a Moral Code assessment using only the information available before the second mission departs."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "repair_case_id": "RC-0101",
+  "title": "1997 response to Bringing Them Home — repair after forcible child removal",
+  "case_class": "state_reparation_survivor_control",
+  "decision_cutoff": {
+    "date_or_period": "1997, after publication of Bringing Them Home",
+    "definition": "Australian governments' response to the National Inquiry's findings and recommendations concerning forcible removal of Aboriginal and Torres Strait Islander children."
+  },
+  "packets": [
+    {"packet_id":"RC-0101-T","file":"repair-packet-transparent.json","identity_mode":"transparent"},
+    {"packet_id":"RC-0101-M","file":"repair-packet-masked.json","identity_mode":"masked"}
+  ],
+  "outcome_reveal_file": "outcome-reveal.json",
+  "relevant_principles": ["MC-01","MC-03","MC-04","MC-05","MC-06","MC-07","MC-08","MC-10","MC-11","MC-12"],
+  "sources": [
+    {"source_id":"RC-BTH-REPARATION","citation":"Australian Human Rights Commission, Bringing Them Home — Reparation recommendations","url":"https://humanrights.gov.au/bringing-them-home/the-report/part-4-reparation/chapter-14-reparation.html","source_date":"1997","use_note":"Sets out the Inquiry's reparation framework including acknowledgement/apology, guarantees against repetition, restitution, rehabilitation and monetary compensation."},
+    {"source_id":"RC-BTH-RECORDS","citation":"Australian Human Rights Commission, Bringing Them Home recommendations on records, family tracing and reunion","url":"https://humanrights.gov.au/bringing-them-home/the-report/part-4-reparation/chapter-15-tracing-and-reunion.html","source_date":"1997","use_note":"Supports records access, family tracing and reunion needs."},
+    {"source_id":"RC-BTH-EFFECTS","citation":"Australian Human Rights Commission, Bringing Them Home — The Effects","url":"https://humanrights.gov.au/bringing-them-home/the-report/part-3-consequences-of-removal/chapter-11-the-effects.html","source_date":"1997","use_note":"Documents family, cultural, psychological and intergenerational harms."},
+    {"source_id":"RC-APOLOGY-2008","citation":"Parliament of Australia, National Apology to the Stolen Generations, 13 February 2008","url":"https://www.aph.gov.au/Visit_Parliament/Art/Stories_and_Histories/National_Apology_to_the_Stolen_Generations","source_date":"2008-02-13","use_note":"Reveal source documenting the later national apology."},
+    {"source_id":"RC-COMMONWEALTH-REDRESS","citation":"National Indigenous Australians Agency, Territories Stolen Generations Redress Scheme","url":"https://www.niaa.gov.au/our-work/closing-gap/territories-stolen-generations-redress-scheme","source_date":"current programme","use_note":"Reveal source documenting later Commonwealth redress for eligible survivors removed in the Northern Territory, ACT and Jervis Bay Territory."}
+  ]
+}

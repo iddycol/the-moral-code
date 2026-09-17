@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Historical Crucible Repair Outcome Reveal",
+  "description": "Hidden from first-pass repair evaluator. Used only after a repair recommendation has been sealed.",
+  "type": "object",
+  "required": ["repair_case_id", "actual_repair_actions", "later_evidence", "outcomes", "later_reviews_or_findings"],
+  "properties": {
+    "repair_case_id": {"type": "string", "pattern": "^RC-[0-9]{4}$"},
+    "actual_repair_actions": {"type": "array", "items": {"type": "string"}},
+    "later_evidence": {"type": "array", "items": {"type": "string"}},
+    "outcomes": {"type": "array", "items": {"type": "string"}},
+    "later_reviews_or_findings": {"type": "array", "items": {"type": "string"}}
+  }
+}

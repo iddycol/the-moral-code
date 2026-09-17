@@ -1,0 +1,44 @@
+{
+  "benchmark_id": "moral-code-benchmark-v0.1",
+  "status": "research_not_certification",
+  "constitution_baseline": "0.1.0",
+  "core": [
+    {"benchmark_case_id":"CORE-01","case_id":"HC-0001","kind":"decision","path":"crucible/historical/cases/HC-0001-tuskegee-1969"},
+    {"benchmark_case_id":"CORE-02","case_id":"HC-0002","kind":"decision","path":"crucible/historical/cases/HC-0002-challenger-launch-1986"},
+    {"benchmark_case_id":"CORE-03","case_id":"HC-0003","kind":"decision","path":"crucible/historical/cases/HC-0003-thalidomide-fda-1960"},
+    {"benchmark_case_id":"CORE-04","case_id":"HC-0101","kind":"decision","path":"crucible/historical/cases/HC-0101-nsw-child-removal-1915"},
+    {"benchmark_case_id":"CORE-05","case_id":"HC-0102","kind":"decision","path":"crucible/historical/cases/HC-0102-blood-citizenship-laws-1935"},
+    {"benchmark_case_id":"CORE-06","case_id":"HC-0103","kind":"decision","path":"crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943"},
+    {"benchmark_case_id":"CORE-07","case_id":"HC-0104","kind":"decision","path":"crucible/historical/cases/HC-0104-second-atomic-use-1945"},
+    {"benchmark_case_id":"CORE-08","case_id":"HC-0107","kind":"decision","path":"crucible/historical/cases/HC-0107-montreal-protocol-1987"},
+    {"benchmark_case_id":"CORE-09","case_id":"HC-0108","kind":"decision","path":"crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962"},
+    {"benchmark_case_id":"CORE-10","case_id":"HC-0109","kind":"decision","path":"crucible/historical/cases/HC-0109-triangle-factory-safety-1911"},
+    {"benchmark_case_id":"CORE-11","case_id":"RC-0102","kind":"repair","path":"crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952"},
+    {"benchmark_case_id":"CORE-12","case_id":"RC-0103","kind":"repair","path":"crucible/historical/repair-cases/RC-0103-south-africa-trc-1995"}
+  ],
+  "extensions": {
+    "ancient_textual": [
+      {"case_id":"HC-0105","kind":"decision","path":"crucible/historical/cases/HC-0105-claudius-britain-invasion-43"},
+      {"case_id":"HC-0106","kind":"decision","path":"crucible/historical/cases/HC-0106-jesus-pilate-textual-case"}
+    ],
+    "live_geopolitics": [
+      {"case_id":"HC-0201","kind":"decision","path":"crucible/historical/cases/HC-0201-russia-ukraine-invasion-2022"},
+      {"case_id":"HC-0202","kind":"decision","path":"crucible/historical/cases/HC-0202-hamas-led-assault-2023"},
+      {"case_id":"HC-0203","kind":"decision","path":"crucible/historical/cases/HC-0203-gaza-complete-siege-2023"},
+      {"case_id":"HC-0204","kind":"decision","path":"crucible/historical/cases/HC-0204-us-iran-epic-fury-2026"}
+    ],
+    "repair_extended": [
+      {"case_id":"RC-0101","kind":"repair","path":"crucible/historical/repair-cases/RC-0101-stolen-generations-repair"}
+    ]
+  },
+  "run_requirements": {
+    "first_pass_packet": "masked_only",
+    "reveal_available_to_evaluator": false,
+    "transparent_packet_available_to_evaluator": false,
+    "minimum_repeats_per_model_version": 3,
+    "aggregate_morality_score": false,
+    "preserve_all_runs": true,
+    "require_constitution_binding": true,
+    "require_packet_digest": true
+  }
+}

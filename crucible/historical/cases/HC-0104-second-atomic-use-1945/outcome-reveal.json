@@ -1,0 +1,21 @@
+{
+  "case_id": "HC-0104",
+  "actual_action": "The standing atomic-use authority was not paused for a fresh top-level decision before the second mission. A B-29 carrying the second atomic bomb departed Tinian before dawn on 9 August 1945. Its primary target, Kokura, was obscured; the crew proceeded to the secondary target, Nagasaki, and dropped the bomb there.",
+  "later_evidence": [
+    "The Nagasaki attack caused mass civilian and military casualties and extensive urban destruction. Precise total deaths remain historically uncertain, but tens of thousands died immediately and additional deaths followed.",
+    "On 9 August, after Hiroshima and Soviet entry, Japan's leadership remained divided over surrender. The Supreme War Council and cabinet did not immediately reach unanimity; later that night the emperor intervened in favour of accepting surrender on a condition concerning the imperial institution.",
+    "On 10 August, with Japanese surrender negotiations underway, President Truman halted further atomic bombing without his express authority.",
+    "A 10 August memorandum concerning preparation of a possible third atomic bomb was annotated by General Marshall that it was not to be released over Japan without express authority from the President.",
+    "Historians continue to disagree over how much Hiroshima, Nagasaki, Soviet entry and other military/diplomatic pressures each contributed to Japan's surrender, and over whether the second atomic attack was necessary."
+  ],
+  "outcomes": [
+    "The second atomic use occurred only three days after Hiroshima and shortly after Soviet entry, before the combined political effect of those developments could be observed for long.",
+    "The operational system treated the July repeated-use directive as sufficient authority for a second strike despite the materially changed evidence environment.",
+    "Within roughly a day after Nagasaki, senior U.S. authority changed the command regime so any further atomic use required explicit presidential approval."
+  ],
+  "later_reviews_or_findings": [
+    "The National Security Archive presents the second-use decision as historically contested: some scholars argue Hiroshima plus Soviet entry might have been sufficient, while others argue a second bomb helped overcome Japanese hard-line resistance.",
+    "The post-Nagasaki requirement for express presidential authority provides an important later institutional contrast to the earlier standing repeated-use order, but it must not be supplied to the first-pass evaluator as an answer key.",
+    "This case is retained to test whether The Moral Code requires explicit reconsideration of stale delegated authority when an irreversible action's evidential context changes materially, while also recognising that delay during an active war can itself cause harm."
+  ]
+}
