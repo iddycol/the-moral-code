@@ -1,0 +1,34 @@
+name: Moral Code Benchmark Validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/historical-crucible-major-cases
+    paths:
+      - "crucible/benchmark/**"
+      - "crucible/historical/**"
+      - ".github/workflows/benchmark-validation.yml"
+  pull_request:
+    paths:
+      - "crucible/benchmark/**"
+      - "crucible/historical/**"
+      - ".github/workflows/benchmark-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate benchmark manifest and case artefacts
+        run: python crucible/benchmark/validate_benchmark.py
