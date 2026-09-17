@@ -1,0 +1,44 @@
+name: Build Scales Live Findings Report
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - implementation/scales-pilot-v0.1
+    paths:
+      - ".github/workflows/build-live-findings.yml"
+      - "engine/scales/reference_runner/build_live_findings.py"
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: implementation/scales-pilot-v0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build report from committed live ledgers
+        working-directory: engine/scales/reference_runner
+        run: python build_live_findings.py
+
+      - name: Publish generated report
+        working-directory: engine/scales/reference_runner
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add LIVE_FINDINGS_V0_1.md
+          if git diff --cached --quiet; then
+            echo "No report change to publish"
+            exit 0
+          fi
+          git commit -m "Publish generated Scales live findings [skip ci]"
+          git push origin HEAD:implementation/scales-pilot-v0.1
