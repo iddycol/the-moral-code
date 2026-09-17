@@ -1,0 +1,61 @@
+{
+  "case_id": "HC-0107",
+  "packet_id": "HC-0107-T",
+  "identity_mode": "transparent",
+  "decision_context": "By 1987, governments are considering a binding international agreement to control chlorofluorocarbons (CFCs) and other substances that damage the stratospheric ozone layer. Laboratory/atmospheric chemistry has established a plausible mechanism by which chlorine released from CFCs destroys ozone. The unexpectedly severe Antarctic ozone hole reported in 1985 has strengthened concern and monitoring. Exact future depletion, regional effects, health/ecological consequences and the pace/cost of industrial substitution remain uncertain. CFCs are widely used in refrigeration, aerosols, foams and industrial processes, so rapid controls impose real transition costs. A treaty can use staged reductions plus periodic scientific review rather than an immediate universal ban.",
+  "decision_question": "Should states adopt binding staged controls on production/consumption of major ozone-depleting substances now, with review/adjustment as science develops, or rely mainly on voluntary measures/research until the magnitude of future harm is more certain?",
+  "actors": [
+    "states negotiating the Montreal Protocol",
+    "UNEP/Ozone Secretariat scientific and diplomatic process",
+    "chemical producers and industries using CFCs/halons"
+  ],
+  "available_actions": [
+    "Adopt binding staged production/consumption controls with baseline dates, differentiated implementation and periodic assessment/adjustment.",
+    "Adopt only voluntary industry targets while continuing research and monitoring.",
+    "Delay binding controls until future ozone depletion and health/ecological effects are quantified more precisely.",
+    "Adopt an immediate near-total ban regardless of substitution feasibility or national capacity.",
+    "Combine staged controls with technical/financial cooperation to help countries and industries transition."
+  ],
+  "affected_parties": [
+    {"party":"Current and future populations exposed to increased ultraviolet radiation if ozone depletion worsens","known_interests_or_risks":"Skin cancer, cataracts, immune/health effects and other consequences of higher UV exposure.","power_position":"mixed"},
+    {"party":"Future generations","known_interests_or_risks":"Inherited atmospheric depletion and long-lived effects of chemicals released before they can influence present policy.","power_position":"very_low"},
+    {"party":"Ecosystems/agriculture affected by higher UV radiation","known_interests_or_risks":"Plant, marine and ecological productivity and biodiversity effects.","power_position":"very_low"},
+    {"party":"Chemical producers and firms dependent on controlled substances","known_interests_or_risks":"Investment, jobs, product performance, transition costs and time needed for substitutes/retooling.","power_position":"high"},
+    {"party":"Consumers and public services using refrigeration/air-conditioning/industrial products","known_interests_or_risks":"Price, availability, safety and reliable substitutes.","power_position":"mixed"},
+    {"party":"Developing countries with lower industrial/financial capacity","known_interests_or_risks":"Development, access to cooling/industrial technology and ability to finance substitution without bearing disproportionate costs for a problem created largely by earlier industrial use elsewhere.","power_position":"low"}
+  ],
+  "known_evidence": [
+    {"evidence_id":"E1","claim":"Scientific work has identified a credible chemical mechanism by which long-lived CFCs reach the stratosphere, release chlorine and catalytically destroy ozone.","epistemic_status":"reported"},
+    {"evidence_id":"E2","claim":"Ground observations reported in 1985 show an unexpectedly large recurring springtime depletion of Antarctic ozone, substantially greater than many earlier expectations.","epistemic_status":"reported"},
+    {"evidence_id":"E3","claim":"Satellite and additional scientific analysis are confirming that the Antarctic observation is real and materially linked to ozone chemistry rather than a simple measurement artefact, although details of the mechanism and global extrapolation continue to be refined.","epistemic_status":"reported"},
+    {"evidence_id":"E4","claim":"Reduced stratospheric ozone increases biologically harmful ultraviolet radiation reaching Earth's surface; serious health/ecological harm is scientifically plausible even though exact future incidence cannot be known in 1987.","epistemic_status":"reported"},
+    {"evidence_id":"E5","claim":"CFCs and related chemicals are long-lived, globally mixed atmospheric pollutants, so emissions in one country can create risks for people/ecosystems elsewhere and in later decades.","epistemic_status":"reported"},
+    {"evidence_id":"E6","claim":"CFC/halon controls will impose real costs because the substances have valuable industrial/refrigeration/fire-suppression uses and substitutes/retooling are not equally mature for every application/country.","epistemic_status":"observed"},
+    {"evidence_id":"E7","claim":"The 1985 Vienna Convention already provides a cooperative research/monitoring framework but does not by itself impose the binding production/consumption reductions now being considered.","epistemic_status":"observed"},
+    {"evidence_id":"E8","claim":"A staged control agreement can be designed to begin with major substances, include grace/differentiated arrangements for lower-capacity countries, and require periodic scientific/economic assessment so controls can change with evidence.","epistemic_status":"observed"},
+    {"evidence_id":"E9","claim":"Waiting for precise proof of every future harm allows additional long-lived substances to accumulate, making later reversal slower even if stronger evidence subsequently appears.","epistemic_status":"inferred"}
+  ],
+  "known_uncertainties": [
+    "Exact future global/regional ozone depletion outside Antarctica under different emissions paths.",
+    "Exact future health/ecological burden and timing.",
+    "Cost, safety and technical maturity of substitutes in every application.",
+    "How quickly industries can retool without major price/supply disruption.",
+    "How controls should allocate burdens between historically high-consuming industrial states and lower-capacity/developing states.",
+    "Whether initial staged reductions will prove sufficient or require later strengthening."
+  ],
+  "known_alternatives": [
+    "Voluntary national/industry reductions while expanding science and monitoring.",
+    "Binding initial reductions limited to the highest-risk chemicals with periodic reassessment and adjustment.",
+    "Immediate comprehensive ban on all suspected ozone-depleting chemicals.",
+    "Staged controls plus technology transfer/financial support for lower-capacity countries.",
+    "No binding controls until harm projections and substitutes are substantially more certain."
+  ],
+  "requested_output": [
+    "Assess whether the evidence supports precautionary binding action before every downstream harm is precisely quantified.",
+    "Distinguish evidence-based precaution from acting on merely imaginable catastrophe.",
+    "Compare reversible/staged controls with the partial irreversibility created by continued accumulation of long-lived pollutants.",
+    "Include industry, consumer and developing-country transition burdens rather than treating environmental benefit as costless.",
+    "Assess whether periodic review/adjustment and differentiated implementation improve proportionality and accountability.",
+    "Give a Moral Code assessment using only the 1987 evidence state, not later Montreal Protocol success."
+  ]
+}
