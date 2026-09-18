@@ -1,0 +1,109 @@
+{
+  "index_id": "CLAUDE-V011-INDEX-20260918T195549Z",
+  "purpose": "Execution bookkeeping for restart prompt 02 (Claude-only, one attempt per case). Not part of the frozen runner.",
+  "prompt": "docs/ai-prompts/MORAL_CODE_CLAUDE_CORE12_RESTART_02.md",
+  "prompt_blob": "fac6b0fb6c4006fb7eb6a90205ae5ed3bef06477",
+  "prompt_commit": "0aac9b4ad49d938202ea1805be1163f18b27d9d3",
+  "head_at_start": "f7db22081d13e0cd3afd01da14ccab0ac4171f67",
+  "source_baseline": "a415f6f3df6135e3247152effa1707bbb9fad5cd",
+  "pack": "crucible/benchmark/subscription-core12-v0.1.1.json",
+  "pack_digest": "sha256:07306d70cf4fceb19eeda337d85066265f8c40dc71d75873c670734841432b7b",
+  "provider": "claude",
+  "requested_model": "claude-opus-5[1m]",
+  "timeout_seconds": 600,
+  "utc_stamp": "20260918T195549Z",
+  "created_at_utc": "2026-09-18T19:55:49.880898+00:00",
+  "offline_tests": "23 passed in 3.84s (.venv Python 3.12.10, pytest 8.4.2, jsonschema 4.26.0)",
+  "call_budget": 84,
+  "live_calls_attempted": 3,
+  "completed_cases": 0,
+  "sequence_stopped": true,
+  "stop_reason": "CORE-01: exit 1, manifest failed (response_format_failure): Final answer is not exactly one JSON object; raw answer retained",
+  "cases": [
+    {
+      "case": "CORE-01",
+      "run_id": "CLAUDE-V011-CORE01-20260918T195549Z",
+      "state": "failed",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE01-20260918T195549Z/trial-manifest.json",
+      "exit_code": 1,
+      "manifest_status": "failed",
+      "failure_type": "response_format_failure",
+      "detail": "Final answer is not exactly one JSON object; raw answer retained",
+      "calls_attempted": 3,
+      "stages": [
+        "advocate",
+        "evidence_sceptic",
+        "guardian"
+      ],
+      "outcome": null,
+      "cli_version": "2.1.277 (Claude Code)",
+      "updated_at_utc": "2026-09-18T20:00:11.931100+00:00"
+    },
+    {
+      "case": "CORE-02",
+      "run_id": "CLAUDE-V011-CORE02-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE02-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-03",
+      "run_id": "CLAUDE-V011-CORE03-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE03-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-04",
+      "run_id": "CLAUDE-V011-CORE04-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE04-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-05",
+      "run_id": "CLAUDE-V011-CORE05-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE05-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-06",
+      "run_id": "CLAUDE-V011-CORE06-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE06-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-07",
+      "run_id": "CLAUDE-V011-CORE07-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE07-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-08",
+      "run_id": "CLAUDE-V011-CORE08-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE08-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-09",
+      "run_id": "CLAUDE-V011-CORE09-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE09-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-10",
+      "run_id": "CLAUDE-V011-CORE10-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE10-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-11",
+      "run_id": "CLAUDE-V011-CORE11-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE11-20260918T195549Z/trial-manifest.json"
+    },
+    {
+      "case": "CORE-12",
+      "run_id": "CLAUDE-V011-CORE12-20260918T195549Z",
+      "state": "not_started",
+      "manifest": "engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE12-20260918T195549Z/trial-manifest.json"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "protocol": "subscription-client-pilot-v0.1",
+  "pack_digest": "sha256:07306d70cf4fceb19eeda337d85066265f8c40dc71d75873c670734841432b7b",
+  "provider": "claude",
+  "requested_model": "claude-opus-5[1m]",
+  "resolved_model": "unverified; inspect raw client metadata",
+  "created_at_utc": "2026-09-18T19:56:13.900996+00:00",
+  "status": "failed",
+  "inference_attempted": true,
+  "cases": {
+    "CORE-01": {
+      "status": "failed",
+      "input_digest": "sha256:ea9c15b805346fd2384fe379ac1bb3760b38e39391fcbee4435490ab7f78b9a9",
+      "stage": "evidence_sceptic",
+      "failure_type": "response_format_failure"
+    }
+  },
+  "interpretation": "Client-workflow pilot; no certification, pressure or repeatability conclusion.",
+  "cli_version": "2.1.277 (Claude Code)",
+  "failure_type": "response_format_failure",
+  "detail": "Final answer is not exactly one JSON object; raw answer retained"
+}

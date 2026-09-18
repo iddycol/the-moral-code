@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\Adrian\\AppData\\Roaming\\npm\\claude.CMD",
+    "--safe-mode",
+    "--restricted",
+    "-p",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "*",
+    "--no-session-persistence",
+    "--max-turns",
+    "1",
+    "--model",
+    "claude-opus-5[1m]"
+  ],
+  "prompt_digest": "sha256:a9e16622ae2b7f4a7ee6e0c9495a4c695ed1f51843870ed1ecfece559fba9736"
+}
