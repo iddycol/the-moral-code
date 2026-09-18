@@ -1,7 +1,9 @@
 """Integrity checks using a fake CLI only; these are not model evidence."""
 import argparse
 import copy
+import hashlib
 import json
+import locale
 from pathlib import Path
 import sys
 
@@ -43,7 +45,7 @@ def fake_cli(tmp_path):
     script = tmp_path / "fake cli.py"
     script.write_text(r'''
 import json, os, pathlib, sys
-text = sys.stdin.read()
+text = sys.stdin.buffer.read().decode("utf-8", errors="strict")
 envelope = json.loads(text[text.index("{"):])
 repair = envelope["task"].startswith("repair_")
 role = envelope.get("role")
@@ -72,20 +74,22 @@ else:
                      implementation_recommendation={"directive":"defer_for_evidence", "reason":"test"})
     else:
         value.update(moral_floor={"breach_found":False,"checks":[]}, principle_assessments=[],
-                     reasoning_summary="TEST FIXTURE ONLY", enforcement_recommendation={"directive":"defer_for_evidence", "reason":"test"})
-response = json.dumps(value)
+                     reasoning_summary="TEST FIXTURE ONLY \u2014 caf\u00e9 \u4e2d\u6587 \U0001f600", enforcement_recommendation={"directive":"defer_for_evidence", "reason":"test"})
+response = json.dumps(value, ensure_ascii=False)
+def emit(event):
+    sys.stdout.buffer.write((json.dumps(event, ensure_ascii=False) + "\n").encode("utf-8"))
 if "--output-last-message" in sys.argv:
     path = sys.argv[sys.argv.index("--output-last-message") + 1]
-    pathlib.Path(path).write_text(response)
-    print(json.dumps({"type":"item.completed", "item":{"type":"agent_message", "text":response}}))
-    print(json.dumps({"type":"turn.completed"}))
+    pathlib.Path(path).write_bytes(response.encode("utf-8"))
+    emit({"type":"item.completed", "item":{"type":"agent_message", "text":response}})
+    emit({"type":"turn.completed"})
 else:
     if os.environ.get("SCALES_TEST_CONTAMINATED"):
         # Valid role JSON must still fail at the real subprocess intake boundary.
-        print(json.dumps({"type":"user", "isSynthetic":True,
-                          "message":{"role":"user", "content":"Unexpected instruction"}}))
-    print(json.dumps({"type":"result", "subtype":"success", "is_error":False,
-                      "num_turns":1, "result":response}))
+        emit({"type":"user", "isSynthetic":True,
+              "message":{"role":"user", "content":"Unexpected instruction"}})
+    emit({"type":"result", "subtype":"success", "is_error":False,
+          "num_turns":1, "result":response})
 ''', encoding="utf-8")
     return str(script)
 
@@ -112,7 +116,7 @@ def test_seven_fresh_calls_and_verified_comparison(pack, tmp_path, monkeypatch, 
     report = trial.compare_trials(pack, *paths, tmp_path / "comparison.json")
     assert report["comparable_pairs"] == 1
     decision = paths[0] / case_id / "decision.json"
-    data = json.loads(decision.read_text())
+    data = json.loads(decision.read_text(encoding="utf-8"))
     data["outcome"] = "unresolved_conflict"
     decision.write_text(json.dumps(data))
     with pytest.raises(ValueError, match="decision digest mismatch"):
@@ -301,3 +305,133 @@ def test_contaminated_fake_claude_retains_evidence_and_stops_all_cases(pack, tmp
     assert not list(run.glob("*/role-assessments"))
     assert not list(run.glob("*/decision.json"))
     assert not list(run.glob("*/raw/reconciliation"))
+
+
+WIRE_TEXT = "caf\u00e9 \u2014 \u201ccurly\u201d \u4e2d\u6587 \U0001f600"
+WIRE_STDERR = (WIRE_TEXT + "\r\n").encode("utf-8") + b"\xff\n"
+
+
+def strict_transport_cli(tmp_path, monkeypatch, mode="success"):
+    """Real child process with byte capture and a locale-independent UTF-8 contract."""
+    script = tmp_path / "strict transport client.py"
+    script.write_text(r'''
+import json, pathlib, sys, time
+script = pathlib.Path(__file__)
+mode = sys.argv[1]
+with script.with_suffix(".calls").open("ab") as calls:
+    calls.write(b"called\n")
+raw = sys.stdin.buffer.read()
+script.with_suffix(".stdin.bin").write_bytes(raw)
+text = raw.decode("utf-8", errors="strict")
+envelope = json.loads(text[text.index("{"):])
+unicode_text = "caf\u00e9 \u2014 \u201ccurly\u201d \u4e2d\u6587 \U0001f600"
+sys.stderr.buffer.write((unicode_text + "\r\n").encode("utf-8") + b"\xff\n")
+sys.stderr.buffer.flush()
+if mode in ("nonzero", "timeout"):
+    sys.stdout.buffer.write((unicode_text + "\r\n").encode("utf-8") + b"\xfe\n")
+    sys.stdout.buffer.flush()
+    if mode == "timeout":
+        time.sleep(30)
+    sys.exit(23)
+response = json.dumps({"echo": envelope, "unicode": unicode_text}, ensure_ascii=False)
+if "--output-last-message" in sys.argv:
+    path = pathlib.Path(sys.argv[sys.argv.index("--output-last-message") + 1])
+    path.write_bytes(b"\xff" if mode == "invalid_response" else response.encode("utf-8"))
+    events = [{"type":"item.completed", "item":{"type":"agent_message", "text":response}},
+              {"type":"turn.completed"}]
+else:
+    events = [{"type":"result", "subtype":"success", "is_error":False,
+               "num_turns":1, "result":response}]
+output = b"\xff" if mode == "invalid_events" else b"".join(
+    (json.dumps(event, ensure_ascii=False) + "\r\n").encode("utf-8") for event in events)
+script.with_suffix(".stdout.bin").write_bytes(output)
+sys.stdout.buffer.write(output)
+''', encoding="utf-8")
+    build_command = trial.cli_command
+    monkeypatch.setattr(trial, "cli_command", lambda *args: [
+        sys.executable, "-X", "utf8=0", str(script), mode, *build_command(*args)[1:]
+    ])
+    return script
+
+
+@pytest.mark.parametrize("provider", ["codex", "claude"])
+@pytest.mark.parametrize("payload", ["historical", "beyond_cp1252"])
+@pytest.mark.parametrize("encoding_default", ["native", "cp1252"])
+def test_invoke_utf8_wire_bytes(tmp_path, monkeypatch, provider, payload, encoding_default):
+    historical = HERE / "subscription-runs/CODEX-V012-CORE01-20260918T204353Z/CORE-01/raw/advocate/envelope.json"
+    envelope = json.loads(historical.read_text(encoding="utf-8"))
+    assert "\u2014" in json.dumps(envelope, ensure_ascii=False)
+    if payload == "beyond_cp1252":
+        # Temporary transport-only fixture; never edit the historical envelope.
+        envelope["transport_test_text"] = WIRE_TEXT
+    native_encoding = trial.subprocess._text_encoding()
+    if encoding_default == "cp1252":
+        # Supplemental portable simulation; subprocess.run and the child stay real.
+        monkeypatch.setattr(trial.subprocess, "_text_encoding", lambda: "cp1252")
+    facts = {"platform": sys.platform, "utf8_mode": sys.flags.utf8_mode,
+             "locale_encoding": locale.getencoding(), "native_default": native_encoding,
+             "tested_default": trial.subprocess._text_encoding(), "mode": encoding_default}
+    (tmp_path / "parent-encoding.json").write_text(json.dumps(facts), encoding="utf-8")
+    if encoding_default == "cp1252":
+        assert facts["tested_default"] == "cp1252"
+    script = strict_transport_cli(tmp_path, monkeypatch)
+    target = tmp_path / "evidence"
+    value = trial.invoke(str(script), provider, "TEST FIXTURE", envelope, target, 10)
+    expected = (trial.PROMPT_PREFIX + json.dumps(envelope, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+    captured = script.with_suffix(".stdin.bin").read_bytes()
+    assert captured == (target / "prompt.txt").read_bytes() == expected
+    assert b"\r\n" not in captured and captured.endswith(b"\n")
+    invocation = json.loads((target / "invocation.json").read_text(encoding="utf-8"))
+    assert invocation["prompt_digest"] == "sha256:" + hashlib.sha256(captured).hexdigest()
+    assert value == {"echo": envelope, "unicode": WIRE_TEXT}
+    assert (target / "stdout.jsonl").read_bytes() == script.with_suffix(".stdout.bin").read_bytes()
+    assert WIRE_TEXT.encode("utf-8") in (target / "stdout.jsonl").read_bytes()
+    assert (target / "stderr.txt").read_bytes() == WIRE_STDERR
+    assert json.loads((target / "response.txt").read_bytes().decode("utf-8")) == value
+    assert script.with_suffix(".calls").read_bytes() == b"called\n"
+
+
+@pytest.mark.parametrize("provider", ["codex", "claude"])
+@pytest.mark.parametrize("mode, category", [("nonzero", "client_or_provider_error"), ("timeout", "client_timeout")])
+def test_transport_failure_retains_bytes_and_stops(pack, tmp_path, monkeypatch, provider, mode, category):
+    script = strict_transport_cli(tmp_path, monkeypatch, mode)
+    monkeypatch.setattr(trial, "preflight", lambda provider: (str(script), "TEST FIXTURE CLI"))
+    args = argparse.Namespace(pack=tmp_path / "pack.json", case="all", provider=provider,
+                              model="TEST FIXTURE", output_root=tmp_path / "runs", run_id=mode, timeout=1)
+    assert trial.run_trial(args) == 1
+    run = args.output_root / args.run_id
+    manifest = json.loads((run / "trial-manifest.json").read_text(encoding="utf-8"))
+    assert manifest["failure_type"] == category
+    assert manifest["cases"]["CORE-01"]["stage"] == "advocate"
+    assert all(row["status"] == "not_started" for key, row in manifest["cases"].items() if key != "CORE-01")
+    raw = run / "CORE-01/raw/advocate"
+    assert (raw / "stdout.jsonl").read_bytes() == (WIRE_TEXT + "\r\n").encode("utf-8") + b"\xfe\n"
+    assert (raw / "stderr.txt").read_bytes() == WIRE_STDERR
+    assert script.with_suffix(".stdin.bin").read_bytes() == (raw / "prompt.txt").read_bytes()
+    if mode == "nonzero":
+        assert json.loads((raw / "exit.json").read_text()) == {"returncode": 23}
+    assert len(list(run.glob("*/raw/*/invocation.json"))) == 1
+    assert script.with_suffix(".calls").read_bytes() == b"called\n"
+    assert not list(run.glob("*/role-assessments")) and not list(run.glob("*/decision.json"))
+    assert not list(run.glob("*/raw/reconciliation"))
+
+
+@pytest.mark.parametrize("provider, mode", [("codex", "invalid_events"), ("claude", "invalid_events"), ("codex", "invalid_response")])
+def test_transport_rejects_invalid_utf8_without_rewriting(tmp_path, monkeypatch, provider, mode):
+    script = strict_transport_cli(tmp_path, monkeypatch, mode)
+    target = tmp_path / "evidence"
+    with pytest.raises(UnicodeDecodeError):
+        trial.invoke(str(script), provider, "TEST FIXTURE", {"test": "ASCII input"}, target, 10)
+    invalid_file = "response.txt" if mode == "invalid_response" else "stdout.jsonl"
+    assert (target / invalid_file).read_bytes() == b"\xff"
+    assert (target / "stderr.txt").read_bytes() == WIRE_STDERR
+
+
+@pytest.mark.parametrize("event_type", ["error", "turn.failed"])
+def test_codex_error_events_still_reject_a_valid_final_file(tmp_path, event_type):
+    response = tmp_path / "response.txt"
+    response.write_bytes(b"{}")
+    with pytest.raises(trial.TrialFailure) as exc:
+        trial.parse_cli_output("codex", json.dumps({"type": event_type}), response)
+    assert exc.value.category == "client_or_provider_error"
+    assert response.read_bytes() == b"{}"
