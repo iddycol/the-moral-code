@@ -1,5 +1,7 @@
 # Session handoff — Codex CORE-01 attempt stopped
 
+**Current action:** [offline Codex UTF-8 repair prompt 05](../docs/ai-prompts/MORAL_CODE_CODEX_UTF8_REPAIR_05.md), launched from Downloads. The [transport review](../docs/ai-reports/2026-09-19-core12-utf8-transport-review-05.md) reproduced the locale-dependent stdin defect using a strict UTF-8 fake child. Repair explicit prompt bytes, add a Windows process-boundary regression, freeze v0.1.3 and publish. Zero live evaluator calls are included; both clients' benchmark trials remain paused until review.
+
 **Latest checkpoint:** the [Codex CORE-01 report](../docs/ai-reports/2026-09-19-core12-codex-core01-04.md) records one attempted evaluator CLI invocation and a stop at the advocate stage: Codex exited 1 because stdin was not valid UTF-8. No evaluator output, accepted role or decision was produced; reconciliation was not reached. Requested model: `gpt-6-astra`; locally advertised availability was verified, but per-call observed model and effective reasoning effort remain unknown. Completed cases and comparable pairs remain zero. The local Windows gate passed all 49 tests before the attempt.
 
 The earlier [Codex client-integrity repair report](../docs/ai-reports/2026-09-18-core12-client-integrity-codex-03.md) records the completed offline detector repair. Restart-02 replay rejects all three streams as contamination; all seven original streams remain parseable, and their reconciliation's separate binding failure remains historical. That repair assignment made zero live evaluator calls.

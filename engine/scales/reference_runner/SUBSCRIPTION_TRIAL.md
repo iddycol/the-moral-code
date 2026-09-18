@@ -1,5 +1,7 @@
 # Subscription trial guide
 
+**Current handoff:** execute [Codex offline UTF-8 repair prompt 05](../../../docs/ai-prompts/MORAL_CODE_CODEX_UTF8_REPAIR_05.md), supported by the [transport review](../../../docs/ai-reports/2026-09-19-core12-utf8-transport-review-05.md). This is a source/test/new-pack task with zero evaluator calls. Live execution remains paused until the repair is reviewed; the v0.1.3 pack does not yet exist.
+
 **Current status:** the [Codex CORE-01 prompt 04 attempt](../../../docs/ai-reports/2026-09-19-core12-codex-core01-04.md) stopped after one evaluator CLI invocation on the unchanged `subscription-core12-v0.1.2.json` pack. The advocate process exited 1 with `Failed to read prompt from stdin: input is not valid UTF-8 (invalid byte at offset 1320).` The runner recorded `client_or_provider_error`. Stdout is empty; no final response, accepted role or decision exists, and the repaired reconciliation contract was not reached. Completed cases remain zero.
 
 [Prompt 04](../../../docs/ai-prompts/MORAL_CODE_CODEX_CORE01_04.md) has been executed and stopped; it is now historical, not a fresh execution instruction. Codex `0.155.0` was signed in through ChatGPT, and its local catalog advertised the explicitly requested `gpt-6-astra`. Per-call observed model and effective reasoning effort remain unknown. The local Windows suite passed all 49 tests before execution. The [execution index](subscription-runs/CODEX-V012-INDEX-20260918T204353Z.json) preserves CORE-02 through CORE-12 as `not_started` and outside scope.

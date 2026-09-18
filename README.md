@@ -16,7 +16,7 @@ The subscription trials have completed zero cases. The [offline client-integrity
 
 The [Codex CORE-01 prompt 04 attempt](docs/ai-reports/2026-09-19-core12-codex-core01-04.md) stopped after one evaluator CLI invocation: Codex rejected stdin as invalid UTF-8 before returning any evaluator output. The requested model was `gpt-6-astra`, advertised in the local client catalog; per-call observed model and effective reasoning effort remain unknown. No role was accepted, and reconciliation was not reached. Prompt 04 has been executed and must not be retried automatically.
 
-The next step is a separately scoped offline investigation and repair of the Windows UTF-8 transport, with a meaningful Windows regression. A frozen source change requires a new pack before a separately authorised fresh trial. Claude remains paused pending supported investigation of its observed intervention. Earlier execution prompts and commands are historical.
+The next step is [offline Codex UTF-8 repair prompt 05](docs/ai-prompts/MORAL_CODE_CODEX_UTF8_REPAIR_05.md). The [transport review](docs/ai-reports/2026-09-19-core12-utf8-transport-review-05.md) reproduced the locale-dependent stdin failure using a strict UTF-8 fake child. The assignment repairs prompt bytes, proves a Windows regression and freezes a new pack, with zero evaluator calls. Claude and further trials remain paused. Earlier execution prompts and commands are historical.
 
 Read `constitution/MORAL_CORE.md`.
 
