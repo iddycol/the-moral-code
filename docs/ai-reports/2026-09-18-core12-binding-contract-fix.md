@@ -1,6 +1,6 @@
 # Core-12 reconciliation binding repair — 18 September 2026
 
-**Verdict: CONTRACT_FIXED_OFFLINE / PUBLICATION_APPROVED / FRESH_LIVE_VALIDATION_PENDING.**
+**Verdict: CONTRACT_FIXED_OFFLINE / PUBLISHED_AND_VERIFIED / WINDOWS_AND_UBUNTU_CI_PASSED / FRESH_LIVE_VALIDATION_PENDING.**
 
 ## Evidence and cause
 
@@ -28,7 +28,7 @@ The revised tests before the fix produced **3 failures and 19 passes**. The proc
 
 After the implementation repair, the same suite produced **22 passes** locally. New checks reject omission or alteration of each binding field, exercise action and Repair through fresh fake subprocesses, retain digest-tamper rejection and confirm envelope construction leaves the pack unchanged. A further committed-pack check guards the actual versioned artifact against source drift. The final suite produced **23 passes** on Linux with Python 3.12, jsonschema 4.26.0 and pytest 8.4.2.
 
-These are fake-client and contract tests, not live model evaluations. Windows execution remains unverified until its CI job or Adrian's local suite passes; the restart prompt requires a green local suite before inference.
+The published repair also passed all **23 tests on Ubuntu and all 23 on Windows** in [Scales Reference Runner run 35387899485](https://github.com/iddycol/the-moral-code/actions/runs/35387899485), at release commit `0aac9b4ad49d938202ea1805be1163f18b27d9d3`. Job logs report 23 passed in 2.62s on Ubuntu and 23 passed in 3.62s on Windows. These are fake-client and contract tests, not live model evaluations. The restart prompt also requires a green local suite before inference.
 
 ## Frozen revision
 
@@ -56,11 +56,13 @@ The executing agent must write `docs/ai-reports/2026-09-18-core12-claude-restart
 - `git diff --check` passed. A scoped diff against `c12b53d9e2419c3e312219c363966101ac62af2e` confirmed the old frozen pack, complete subscription-run history, constitution and historical packets are untouched.
 - Publication was rejected by automatic approval review. The initial normal Git push was blocked; checks then verified the exact public repository, configured push URL, unchanged remote head, fast-forward ancestry, twelve-file change scope, unchanged historical evidence/case facts and no obvious credential patterns. A second attempt used the exact reviewed commit `245f5f16483dee05a3cc69219c6aef3af95facda`, without force or tag publication. Approval review still rejected it because publication of the project files and environment/report metadata to that public destination was not explicitly authorised for this payload.
 - Neither rejected push executed. No alternate write route was attempted while approval was outstanding. Adrian then explicitly approved publication with “yes, push it”. The newly approved normal Git push reached Git but failed because the shell had no GitHub credential helper. The connected GitHub app is the authorised publication route; source commit `a415f6f3df6135e3247152effa1707bbb9fad5cd` was created there and fetched into a clean detached checkout for pack generation.
-- Publication approval is now recorded. Branch readback and Windows/Ubuntu CI receipts will be added after the complete prepared tree is published. No live retry has run here.
+- Published repair: `0aac9b4ad49d938202ea1805be1163f18b27d9d3` on `experiment/core12-live-v0.1`, with source baseline `a415f6f3df6135e3247152effa1707bbb9fad5cd`. Branch readback confirmed the release head. Each of the twelve changed paths was independently fetched at the release SHA and its Git blob SHA matched the prepared local file: **12 of 12 matched**.
+- [Scales Reference Runner run 35387899485](https://github.com/iddycol/the-moral-code/actions/runs/35387899485): Ubuntu job `105739015286` and Windows job `105739015547` both completed successfully, each with 23 tests passed. [Benchmark Binding Validation run 35387899481](https://github.com/iddycol/the-moral-code/actions/runs/35387899481) also completed successfully at the release SHA.
+- This publication receipt changes documentation only; the tested code, pack and downloadable restart prompt remain the exact blobs verified at the release commit. No live retry has run here. The next action is Claude execution of restart prompt 02.
 
 ## Exact publication scope
 
-The proposed repair changes twelve paths:
+The published repair changes twelve paths:
 
 1. `.github/workflows/scales-reference-runner.yml`
 2. `README.md`
