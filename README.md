@@ -12,7 +12,7 @@ It is not a religion, an AI ruler, or a claim to moral infallibility.
 
 For the integration experiment's verified execution status, read [the current session handoff](governance/SESSION_HANDOFF.md). The recovery audit corrects earlier live-testing claims.
 
-The next experiment uses existing subscriptions: [run the corrected Core-12 contract](engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md). The first Claude pass returned seven responses but completed zero cases because of a reconciliation binding-contract defect. A revised frozen pack and a Claude restart prompt address that defect; a fresh completed evaluation remains unverified.
+The subscription trials have completed zero cases. The first Claude attempt exposed a reconciliation binding defect; the restart exposed client-injected instructions and extra turns that the runner did not detect. Live trials are paused while Codex performs the [offline client-integrity repair](docs/ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md). Read the [verified review](docs/ai-reports/2026-09-18-core12-client-integrity-review.md) before using earlier trial instructions.
 
 Read `constitution/MORAL_CORE.md`.
 

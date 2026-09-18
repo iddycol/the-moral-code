@@ -1,5 +1,7 @@
 # Run the first comparison with your existing subscriptions
 
+**Current status, 18 September:** live trials are paused after restart 02. The [independent review](../../../docs/ai-reports/2026-09-18-core12-client-integrity-review.md) confirmed client-injected user instructions and two reported turns on all three calls, which the existing parser did not reject. [Codex prompt 03](../../../docs/ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md) assigns an offline repair and new frozen pack with zero evaluator calls. The commands and earlier restart prompt below document the previous protocol; do not execute them as a new attempt until a new handoff is issued.
+
 The immediate question is simple: **given the same Moral Code and case facts, where do Codex and Claude disagree, and why?** Start with CORE-01. Keep the answers, inspect the disagreement, and only then run the remaining cases. Constitutional adoption remains Adrian's decision.
 
 This route uses locally installed Codex CLI and Claude Code, signed in with ChatGPT and Claude subscriptions. It does not use the retired GitHub Models service or require a new API purchase. This ChatGPT workspace cannot operate your separate Claude account. The commands below run on your own signed-in computer.

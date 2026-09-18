@@ -1,6 +1,6 @@
 # Session handoff — Core-12 recovery, 17 September 2026
 
-**Latest checkpoint, 18 September:** the live reconciliation contract defect is repaired and the new v0.1.1 pack is published on the experiment branch at `0aac9b4ad49d938202ea1805be1163f18b27d9d3`. All twelve changed files matched remote readback; all 23 tests passed on both Windows and Ubuntu, and benchmark binding validation passed. Read the final dated update below and [the repair report](../docs/ai-reports/2026-09-18-core12-binding-contract-fix.md). Use [restart prompt 02](../docs/ai-prompts/MORAL_CODE_CLAUDE_CORE12_RESTART_02.md) for new Claude execution; earlier handoffs and failed evidence remain historical. No fresh live inference has run yet.
+**Latest checkpoint, 18 September:** restart 02 returned three Claude responses but completed zero cases. All three streams contain a synthetic user intervention and report two turns; the old parser admitted two assessments before a trailing-prose failure stopped the third. Both CI jobs passed, but this detection gap was not covered. Read [the independent review](../docs/ai-reports/2026-09-18-core12-client-integrity-review.md) and use [Codex prompt 03](../docs/ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md) for an offline repair and new frozen pack. Live trials are paused. Earlier execution prompts are historical; do not rerun them.
 
 ## Read first
 
@@ -102,3 +102,11 @@ Verified state after run `CLAUDE-V011-CORE01-20260918T195549Z` (branch `experime
 - Comparison completed: no. Codex not invoked; execution kept Claude-only by Adrian's instruction.
 
 Next action: Adrian decides (a) how to isolate the classifier intervention (plain terminal outside Claude Code and auto mode, or client version pin), (b) whether the runner should treat synthetic user events and multi-turn results as contamination, which is a frozen-source change requiring a new pack revision, and (c) whether the format contract needs hardening against trailing prose. Any new attempt uses a new run ID and starts again at `--case CORE-01`. No model comparison conclusion or v0.2 adoption is justified.
+
+## Update — 18 September 2026: independent review and offline Codex repair
+
+The [independent client-integrity review](../docs/ai-reports/2026-09-18-core12-client-integrity-review.md) confirms the published report against all ten raw event streams and reproduces the parser gap offline. Restart-02 Scales CI run `35389709389` has passed on both Windows and Ubuntu.
+
+The next engineering action supersedes the open choices above: reject unsolicited user events and unverifiable/multiple turns before accepting Claude answers, preserve raw evidence, retain strict JSON parsing, and freeze a new pack after focused regressions. The intervention's cause remains unknown. No client downgrade, permission-mode change or live probe is scheduled.
+
+Adrian now has Codex allowance and prefers launching agents from Downloads. [Codex prompt 03](../docs/ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md) assigns the offline implementation, tests, pack and publication; evaluator calls permitted by that prompt: zero. The existing project checkout remains `C:\Work\MoralCode\the-moral-code`. After the corrected pack is reviewed, an independent Codex CORE-01 run is the next candidate. Claude trials remain paused. Completed cases are still zero; old evidence and packs remain immutable.
