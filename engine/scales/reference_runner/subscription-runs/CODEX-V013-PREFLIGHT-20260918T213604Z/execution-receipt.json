@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "2026-09-18T21:36:33.589428+00:00",
+  "ended_at_utc": "2026-09-18T21:42:45.587261+00:00",
+  "elapsed_seconds": 372.0,
+  "returncode": 0,
+  "runner_launch_count": 1,
+  "actual_saved_invocations": 7,
+  "command": [
+    "C:\\Work\\MoralCode\\the-moral-code\\.venv\\Scripts\\python.exe",
+    "engine/scales/reference_runner/subscription_trial.py",
+    "run",
+    "--provider",
+    "codex",
+    "--pack",
+    "crucible/benchmark/subscription-core12-v0.1.3.json",
+    "--model",
+    "gpt-6-astra",
+    "--case",
+    "CORE-01",
+    "--run-id",
+    "CODEX-V013-CORE01-20260918T213604Z",
+    "--timeout",
+    "600"
+  ]
+}

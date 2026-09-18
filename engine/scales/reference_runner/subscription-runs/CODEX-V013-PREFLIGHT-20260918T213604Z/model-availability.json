@@ -1,0 +1,45 @@
+{
+  "source_path": "C:\\Users\\Adrian\\.codex\\models_cache.json",
+  "file_modified_utc": "2026-09-18T21:33:26.803011+00:00",
+  "cache_metadata": {
+    "fetched_at": "2026-09-18T21:33:26.802999100Z",
+    "client_version": "0.155.0"
+  },
+  "selected_model": {
+    "slug": "gpt-6-astra",
+    "display_name": "GPT-6-Astra",
+    "description": "Our most capable model for complex, demanding work.",
+    "visibility": "list",
+    "supported_in_api": true,
+    "default_reasoning_level": "medium",
+    "supported_reasoning_levels": [
+      {
+        "effort": "low",
+        "description": "Fast responses with lighter reasoning"
+      },
+      {
+        "effort": "medium",
+        "description": "Balances speed and reasoning depth for everyday tasks"
+      },
+      {
+        "effort": "high",
+        "description": "Greater reasoning depth for complex problems"
+      },
+      {
+        "effort": "xhigh",
+        "description": "Extra high reasoning depth for complex problems"
+      },
+      {
+        "effort": "max",
+        "description": "Maximum reasoning depth for the hardest problems"
+      },
+      {
+        "effort": "ultra",
+        "description": "Maximum reasoning with automatic task delegation"
+      }
+    ]
+  },
+  "checked_at_utc": "2026-09-18T21:34:19.343416+00:00",
+  "interpretation": "Local cached catalog advertises availability; not proof of per-request server acceptance or observed model.",
+  "extraction_note": "Selected public model fields and cache freshness only; account identity, ETag and the rest of the catalog are omitted. The source cache is unchanged."
+}

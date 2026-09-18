@@ -1,0 +1,212 @@
+{
+  "runner_status": "completed",
+  "evidence_review_status": "pass_with_unverified_model_identity",
+  "completed_case_count": 1,
+  "actual_evaluator_invocations": 7,
+  "requested_model": "gpt-6-astra",
+  "observed_model": "unknown",
+  "effective_reasoning_effort": "unknown",
+  "reconciliation_reached": true,
+  "reconciliation_accepted": true,
+  "input_digest": "sha256:127cef9e78a33503b6e936dd0f5de6d29d90cce7d20fc0f6f8ffa783476bc727",
+  "decision_digest": "sha256:bb300143cbc86abaa086da46bcb16d1b098800a64c94a09f9d020ab9dda2b402",
+  "outcome": "impermissible",
+  "unique_thread_count": 7,
+  "usage_totals": {
+    "input_tokens": 132785,
+    "cached_input_tokens": 17792,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11268,
+    "reasoning_output_tokens": 0
+  },
+  "calls": [
+    {
+      "stage": "advocate",
+      "prompt_bytes": 29369,
+      "prompt_digest": "sha256:c791bb57fe44d5b3715ae1b78f692a5b44c3fdf92a0500edafefa49bc5e64967",
+      "response_file_sha256": "1e991a6e47f70a5cf1cefacc151d8dda79db6979a6390768407196d93503e7e0",
+      "accepted_canonical_digest": "sha256:ef55ab0f18205ba0b9bd95a332b841a5d5b2daf37b173d7f1e9ee4345f52a8de",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 17539,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1447,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "guardian",
+      "prompt_bytes": 29369,
+      "prompt_digest": "sha256:105ccdad87451f6a92e0b62557a0a1021666240880711f0de34996e6fa4e57fb",
+      "response_file_sha256": "e54fbbeea2117b80b2fdb02cb77d9b38f260acfc28c47432ce381ceaf62c4b4d",
+      "accepted_canonical_digest": "sha256:f7a383b6ebf03867b3e48859729dc8de0b7be8f49e219a8e7725bd7e461930a8",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 17536,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1517,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "evidence_sceptic",
+      "prompt_bytes": 29377,
+      "prompt_digest": "sha256:5d23a2c7285f9f69f759b948612673746e7c7821ca50681e5839f256acdadbd6",
+      "response_file_sha256": "414081d949f515ee2ea5926502eadaa6450dac0ebac082953640f7288799b2ff",
+      "accepted_canonical_digest": "sha256:52adf5205e76ef2a5b527a071b4c19cd5b33f992e81602bb46f401ecb71902da",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 17544,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1254,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "power_auditor",
+      "prompt_bytes": 29374,
+      "prompt_digest": "sha256:ae0ca329c886249b75ab0a459c31c0018db96ebf436c331d89929a2822adf82d",
+      "response_file_sha256": "c91c3d28bfcdb5448ff63daa77036a8a4d7587a3850f8821f2aa576829cb5146",
+      "accepted_canonical_digest": "sha256:8e24c65e8422f9e140ebfd2db43c658905b6b8deb2421ca7d520ce7a39a2120c",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 17539,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1611,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "vulnerable_person_defender",
+      "prompt_bytes": 29387,
+      "prompt_digest": "sha256:1209c992009255734fff3597520c51c7d6636495f639c94d0c012714aad24823",
+      "response_file_sha256": "a10ed5ccf455a706162f37fed1f68f4af45957aed6896cb34f88ac0ba62103b3",
+      "accepted_canonical_digest": "sha256:ba19470c560d7efb558520fc0641fa084380c32e0c7ec10fc29b32d4c9d60281",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 17541,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1440,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "future_environment_advocate",
+      "prompt_bytes": 29388,
+      "prompt_digest": "sha256:9b8636a3e3add403236ab41c0dc757d24e3fd7de7d33c77194758f802cecd5b9",
+      "response_file_sha256": "624b54de88b715c2eae34b6d85032abe5ec98f70586f23d91b8348cdedf13fe6",
+      "accepted_canonical_digest": "sha256:33df756a1fd52b78d47e2a6f175202403e09a4694135629136a5108c9dcb3244",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 17539,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1252,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "reconciliation",
+      "prompt_bytes": 78919,
+      "prompt_digest": "sha256:b3d0428d4a8d34756ed9dcb8053ef3ec27cf7840c20d22df73064323e29ac086",
+      "response_file_sha256": "011de37da568b9fa300895c83cccf121b39be95d70ba3601ec0af766bb4f5a46",
+      "accepted_canonical_digest": "sha256:bb300143cbc86abaa086da46bcb16d1b098800a64c94a09f9d020ab9dda2b402",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_fields": {},
+      "usage": {
+        "input_tokens": 27547,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2747,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "limitations": [
+    "CLI metadata does not expose resolved model or effective reasoning effort.",
+    "Usage counters are client-reported, not a bill or independent request accounting.",
+    "Saved prompt bytes are verified; this live run did not add separate child-stdin capture.",
+    "Client-managed context and unreported internal behavior are not observable here."
+  ]
+}

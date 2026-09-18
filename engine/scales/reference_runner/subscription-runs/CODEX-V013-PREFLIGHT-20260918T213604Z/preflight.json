@@ -1,0 +1,78 @@
+{
+  "checked_at_utc": "2026-09-18T21:33:46.017925+00:00",
+  "executable": "C:\\Users\\Adrian\\AppData\\Roaming\\npm\\codex.CMD",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\Work\\MoralCode\\the-moral-code\\.venv\\Scripts\\python.exe",
+  "os": "Windows-11-10.0.26200-SP0",
+  "shell": "PowerShell 7.6.6",
+  "locale_encoding": "cp1252",
+  "utf8_mode": 0,
+  "override_names_present": {
+    "OPENAI_API_KEY": false,
+    "CODEX_API_KEY": false,
+    "OPENAI_BASE_URL": false,
+    "ANTHROPIC_API_KEY": false,
+    "ANTHROPIC_AUTH_TOKEN": false,
+    "ANTHROPIC_BASE_URL": false,
+    "ANTHROPIC_PROFILE": false,
+    "ANTHROPIC_FEDERATION_RULE_ID": false,
+    "CLAUDE_CODE_USE_BEDROCK": false,
+    "CLAUDE_CODE_USE_VERTEX": false,
+    "CLAUDE_CODE_USE_FOUNDRY": false
+  },
+  "pack_digest": "sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced",
+  "source_baseline": "1fc927431541f5196d79d8284ea70cb1de1f9240",
+  "source_hashes_verified": 29,
+  "prompt_byte_comparison": true,
+  "version": {
+    "returncode": 0,
+    "stdout": "codex-cli 0.155.0\n",
+    "stderr": ""
+  },
+  "login-status": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "Logged in using ChatGPT\n"
+  },
+  "runner_preflight": {
+    "executable": "C:\\Users\\Adrian\\AppData\\Roaming\\npm\\codex.CMD",
+    "version": "codex-cli 0.155.0"
+  },
+  "head": "72667ae16d4e0aed0a0bc7a314447492ca6e3d99",
+  "requested_model": "gpt-6-astra",
+  "local_model_advertised": true,
+  "effective_reasoning_effort": "unknown; catalog default medium does not verify child settings",
+  "flags_review": {
+    "installed_exec_help_supports": [
+      "--json",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--sandbox read-only",
+      "--skip-git-repo-check",
+      "-c/--config",
+      "--output-last-message",
+      "--model",
+      "stdin via -"
+    ],
+    "web_search_disabled_reference": "https://learn.chatgpt.com/docs/config-file/config-reference",
+    "cli_reference": "https://learn.chatgpt.com/docs/cli/reference",
+    "model_reference": "https://learn.chatgpt.com/docs/models",
+    "installed_readme": "C:/Users/Adrian/AppData/Roaming/npm/node_modules/@openai/codex/README.md"
+  },
+  "offline_gate": {
+    "command": [
+      "C:\\Work\\MoralCode\\the-moral-code\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8=0",
+      "-m",
+      "pytest",
+      "-q",
+      "engine/scales/reference_runner/tests"
+    ],
+    "passed": 66,
+    "skipped": 0,
+    "seconds": 7.57
+  },
+  "transport_review": "Unchanged invoke constructs explicit UTF-8 bytes once, saves and transmits the same bytes, preserves stdout/stderr in binary handles.",
+  "inspection_note": "Printing general help to the cp1252 console raised UnicodeEncodeError after successful client checks; saved help bytes were intact. Inspection continued with escaped console output, without changing encoding settings or making inference calls."
+}

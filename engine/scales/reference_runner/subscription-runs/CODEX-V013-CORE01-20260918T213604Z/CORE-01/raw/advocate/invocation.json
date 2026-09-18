@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\Adrian\\AppData\\Roaming\\npm\\codex.CMD",
+    "exec",
+    "--json",
+    "--ephemeral",
+    "--ignore-user-config",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "web_search=\"disabled\"",
+    "--output-last-message",
+    "C:\\Work\\MoralCode\\the-moral-code\\engine\\scales\\reference_runner\\subscription-runs\\CODEX-V013-CORE01-20260918T213604Z\\CORE-01\\raw\\advocate\\response.txt",
+    "--model",
+    "gpt-6-astra",
+    "-"
+  ],
+  "prompt_digest": "sha256:c791bb57fe44d5b3715ae1b78f692a5b44c3fdf92a0500edafefa49bc5e64967"
+}
