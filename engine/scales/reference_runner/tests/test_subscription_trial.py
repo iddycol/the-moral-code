@@ -17,6 +17,11 @@ def pack(tmp_path):
     return trial.freeze(tmp_path / "pack.json")
 
 
+def test_committed_pack_matches_the_checked_out_sources():
+    pack = trial.load_pack(trial.PACK)
+    assert set(pack["cases"]) == {f"CORE-{number:02d}" for number in range(1, 13)}
+
+
 def test_frozen_pack_contains_all_twelve_and_excludes_reveals(pack, tmp_path):
     assert len(pack["cases"]) == 12
     assert sum(case["mode"] == "repair" for case in pack["cases"].values()) == 2
@@ -35,8 +40,8 @@ def test_frozen_pack_contains_all_twelve_and_excludes_reveals(pack, tmp_path):
 
 
 def fake_cli(tmp_path):
-    script = tmp_path / "fake-cli"
-    script.write_text("#!" + sys.executable + "\n" + r'''
+    script = tmp_path / "fake cli.py"
+    script.write_text(r'''
 import json, pathlib, sys
 text = sys.stdin.read()
 envelope = json.loads(text[text.index("{"):])
@@ -53,7 +58,11 @@ if is_role:
     else:
         value["recommended_disposition"] = "insufficient_evidence"
 else:
-    value.update(constitution=envelope["constitution_binding"] if repair else envelope["evaluation_request"]["constitution"],
+    supplied = envelope.get("constitution_binding", envelope.get("evaluation_request", {}).get("constitution"))
+    # Model the live failure: emit only the fields declared by the output schema.
+    declared = envelope["output_schema"]["properties"]["constitution"]["properties"]
+    binding = {key: supplied[key] for key in declared if key in supplied}
+    value.update(constitution=binding,
                  role_assessment_refs=envelope["required_role_assessment_refs"], outcome="insufficient_evidence")
     if repair:
         value.update(harm_assessment=[], component_decisions=[], failure_checks=[],
@@ -73,7 +82,6 @@ if "--output-last-message" in sys.argv:
 else:
     print(json.dumps({"type":"result", "subtype":"success", "is_error":False, "result":response}))
 ''', encoding="utf-8")
-    script.chmod(0o755)
     return str(script)
 
 
@@ -81,6 +89,9 @@ else:
 def test_seven_fresh_calls_and_verified_comparison(pack, tmp_path, monkeypatch, case_id):
     cli = fake_cli(tmp_path)
     monkeypatch.setattr(trial, "preflight", lambda provider: (cli, "TEST FIXTURE CLI"))
+    # Use the active Python interpreter on every OS; Windows cannot exec a shebang.
+    build_command = trial.cli_command
+    monkeypatch.setattr(trial, "cli_command", lambda *args: [sys.executable, *build_command(*args)])
     paths = []
     for provider in ("codex", "claude"):
         args = argparse.Namespace(pack=tmp_path / "pack.json", case=case_id, provider=provider,
@@ -101,6 +112,27 @@ def test_seven_fresh_calls_and_verified_comparison(pack, tmp_path, monkeypatch, 
     decision.write_text(json.dumps(data))
     with pytest.raises(ValueError, match="decision digest mismatch"):
         trial.compare_trials(pack, *paths, tmp_path / "corrupt-comparison.json")
+
+
+@pytest.mark.parametrize("case_id", ["CORE-01", "CORE-11"])
+def test_reconciliation_schema_requires_the_complete_explicit_binding(pack, case_id):
+    before = copy.deepcopy(pack)
+    case = pack["cases"][case_id]
+    envelope = trial.envelope_for(pack, case, assessments={})
+    binding = pack["constitution_binding"]
+    schema = envelope["output_schema"]["properties"]["constitution"]
+    assert set(binding) <= set(schema["properties"])
+    assert set(binding) <= set(schema["required"])
+    assert envelope["constitution_binding"] == binding
+    assert schema["const"] == binding
+    validator = trial.Draft202012Validator(schema)
+    validator.validate(binding)
+    for field in binding:
+        omitted = {key: value for key, value in binding.items() if key != field}
+        altered = dict(binding, **{field: "wrong binding"})
+        assert not validator.is_valid(omitted), field
+        assert not validator.is_valid(altered), field
+    assert pack == before, "building an envelope must not mutate the frozen pack"
 
 
 @pytest.mark.parametrize("mode", ["action", "repair"])

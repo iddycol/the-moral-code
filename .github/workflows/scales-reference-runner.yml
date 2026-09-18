@@ -20,8 +20,16 @@ permissions:
 
 jobs:
   validate-scales-pilot:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
+      # The frozen pack verifies bytes; preserve LF in these disposable runners.
+      - name: Preserve repository line endings
+        run: git config --global core.autocrlf false
+
       - name: Checkout
         uses: actions/checkout@v4
 

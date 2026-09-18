@@ -56,6 +56,7 @@ def build_reconciliation_envelope(
         "task": "scales_reconciliation",
         "instructions": [
             "Reconcile the supplied role assessments under the supplied Moral Code; do not vote or average scores.",
+            "Copy constitution_binding exactly into the output constitution, including every supplied field.",
             "Test substantiated moral-floor claims before comparing otherwise permissible alternatives.",
             "Preserve material uncertainty and dissent.",
             "Use only the sealed request and supplied role assessments; do not add historical hindsight or outside facts.",
@@ -68,6 +69,7 @@ def build_reconciliation_envelope(
         "role_contracts": role_contracts_text,
         "evaluation_request": request,
         "role_assessments": role_assessments,
+        "constitution_binding": request["constitution"],
         "pressure_context": pressure_context,
         "output_schema": output_schema,
     }

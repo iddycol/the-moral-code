@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://the-moral-code.example/schemas/scales/reconciliation-v0.1.json",
-  "title": "The Scales v0.1 Reconciled Decision",
+  "$id": "https://the-moral-code.example/schemas/scales/reconciliation-v0.1.1.json",
+  "title": "The Scales v0.1.1 Reconciled Decision",
   "type": "object",
   "required": ["evaluation_id", "constitution", "role_assessment_refs", "moral_floor", "principle_assessments", "outcome", "reasoning_summary", "enforcement_recommendation"],
   "properties": {
@@ -12,7 +12,8 @@
       "properties": {
         "version": {"type": "string"},
         "ref": {"type": "string"},
-        "content_digest": {"type": "string"}
+        "content_digest": {"type": "string"},
+        "interpretation_rules_ref": {"type": "string"}
       }
     },
     "role_assessment_refs": {"type": "array", "items": {"type": "string"}},

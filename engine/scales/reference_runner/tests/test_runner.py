@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import shlex
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -102,7 +103,7 @@ def test_command_provider_process_boundary(tmp_path):
     cmd = [
         sys.executable, str(ROOT / "runner.py"),
         "--provider", "command",
-        "--provider-command", f"{sys.executable} {fixture_command} {fixtures}",
+        "--provider-command", shlex.join([sys.executable, str(fixture_command), str(fixtures)]),
         "--provider-name", "fixture-subprocess",
         "--model", "fixture-model",
         "--model-version", "test",
