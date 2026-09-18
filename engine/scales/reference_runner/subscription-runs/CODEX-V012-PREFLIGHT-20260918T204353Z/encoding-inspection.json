@@ -1,0 +1,19 @@
+{
+  "observed_at_utc": "2026-09-18T20:45:12.664348+00:00",
+  "python_executable": "C:\\Work\\MoralCode\\the-moral-code\\.venv\\Scripts\\python.exe",
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "utf8_mode": 0,
+  "locale_encoding": "cp1252",
+  "subprocess_default_text_encoding": "cp1252",
+  "encoding_environment_names_present": [],
+  "saved_prompt_file_encoding": "UTF-8 (decoded successfully)",
+  "saved_prompt_sha256": "c7aaa0e198d3649e357d50433e138095499f0ccb7f3c3f8b7b6a5e3dbdfdd859",
+  "reconstruction": "Offline saved prompt with Windows newline translation, encoded using the unchanged interpreter locale; no client invocation",
+  "reconstructed_stdin_utf8_check": {
+    "valid_utf8": false,
+    "first_invalid_offset": 1320,
+    "byte_hex": "97",
+    "reason": "invalid start byte"
+  },
+  "actual_stdin_bytes_captured": false
+}

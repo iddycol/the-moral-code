@@ -1,0 +1,106 @@
+{
+  "created_at_utc": "2026-09-18T20:43:53.405214+00:00",
+  "timezone": "Australia/Brisbane (UTC+10)",
+  "repository": "https://github.com/iddycol/the-moral-code.git",
+  "branch": "experiment/core12-live-v0.1",
+  "head": "27f186fb2a3ce700d1a21b7b03d2e488c2ffcff9",
+  "source_baseline": "fe2311ab7d76ea6a0e88933f964429d3fd77a8f6",
+  "pack": "crucible/benchmark/subscription-core12-v0.1.2.json",
+  "pack_digest": "sha256:e3cf63f003952122689f9120899c13aee3c86e93eb14531d5611fa103c6ecfa0",
+  "verified_source_hashes": 29,
+  "prompt_path": "docs/ai-prompts/MORAL_CODE_CODEX_CORE01_04.md",
+  "prompt_blob": "bee56d2f840d4dae4c689214da8b32000c47aef4",
+  "prompt_introducing_commit": "27f186fb2a3ce700d1a21b7b03d2e488c2ffcff9",
+  "requested_model": "gpt-6-astra",
+  "observed_model": "unknown; no stdout events or final response",
+  "effective_reasoning_effort": "unknown; client rejected stdin before emitting evaluator metadata",
+  "planned_run_id": "CODEX-V012-CORE01-20260918T204353Z",
+  "evaluator_invocation_cap": 7,
+  "actual_saved_invocations": 1,
+  "runner_status": "failed",
+  "preflight": {
+    "status": "passed",
+    "evidence_directory": "engine/scales/reference_runner/subscription-runs/CODEX-V012-PREFLIGHT-20260918T204353Z",
+    "client_version": "codex-cli 0.155.0",
+    "auth": "Logged in using ChatGPT",
+    "model_availability": "locally advertised by codex debug models; server acceptance untested",
+    "cache_fetched_at": "2026-09-18T20:42:11.776811200Z",
+    "offline_tests_passed": 49
+  },
+  "cases": {
+    "CORE-01": {
+      "status": "failed",
+      "scope": "selected once",
+      "stage": "advocate",
+      "failure_type": "client_or_provider_error",
+      "saved_invocations": 1,
+      "accepted_roles": 0,
+      "decision_present": false
+    },
+    "CORE-02": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-03": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-04": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-05": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-06": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-07": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-08": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-09": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-10": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-11": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    },
+    "CORE-12": {
+      "status": "not_started",
+      "scope": "outside assignment"
+    }
+  },
+  "prohibited_continuation": "No retries, fallback, CORE-02 through CORE-12, --case all, Claude, or further experiments.",
+  "updated_at_utc": "2026-09-18T20:45:12.669433+00:00",
+  "completed_cases": 0,
+  "runner_manifest": "engine/scales/reference_runner/subscription-runs/CODEX-V012-CORE01-20260918T204353Z/trial-manifest.json",
+  "execution": {
+    "started_at_utc": "2026-09-18T20:44:04.9764245Z",
+    "ended_at_utc": "2026-09-18T20:44:05.8257237Z",
+    "elapsed_seconds": 0.8492992,
+    "exit_code": 1
+  },
+  "evidence_review": {
+    "status": "failed_client_input_encoding",
+    "stage": "advocate",
+    "runner_failure_type": "client_or_provider_error",
+    "stderr_summary": "Codex rejected stdin as invalid UTF-8 at byte offset 1320.",
+    "inference_returned": false,
+    "usage": "unavailable",
+    "reconciliation_reached": false,
+    "reconciliation_accepted": false,
+    "retry_performed": false
+  }
+}
