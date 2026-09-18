@@ -84,4 +84,21 @@ The result proves the offline process-byte contract. It does not prove real clie
 
 ## Publication verification
 
-Local source, pack and complete passing suite are checkpointed. Remote code/pack publication, Windows/Ubuntu CI results and blob readback will be recorded in a documentation-only receipt after verification; this paragraph does not claim they have already passed.
+The complete green repair, pack, report and documentation were pushed normally to `experiment/core12-live-v0.1` as **`e5cb0e7f9382b4e1f381a69393dd80269353ff79`**, after fetching and verifying that the remote still pointed to the prompt-entry commit. No intermediate red integration head was published. The local commit history retains the red, repaired-source, pack and documentation checkpoints.
+
+[Scales CI run 35396229116](https://github.com/iddycol/the-moral-code/actions/runs/35396229116) completed successfully at exactly that published commit:
+
+- [Ubuntu job](https://github.com/iddycol/the-moral-code/actions/runs/35396229116/job/105765569877): **66 passed in 5.09s**, zero skipped.
+- [Windows job](https://github.com/iddycol/the-moral-code/actions/runs/35396229116/job/105765570014): **66 passed in 12.01s**, zero skipped.
+- [Benchmark binding CI run 35396229147](https://github.com/iddycol/the-moral-code/actions/runs/35396229147) also passed at the same commit.
+
+The regression counts were read from the actual job logs. All seven changed files and the unchanged entry prompt were read back through GitHub's contents API at the published commit; decoded remote bytes and Git blob IDs matched the local committed bytes. The remote branch ref also matched `e5cb0e7f9382b4e1f381a69393dd80269353ff79`. Principal verified blobs at that commit:
+
+| File | Git blob |
+| --- | --- |
+| Runner source | `2cfed7c7b7ebd57284f7b5c04c22be4ccce1544c` |
+| Subscription tests | `40680466484ab30873d88f85d732fd3ba160b4f9` |
+| v0.1.3 pack | `ae4747bb3779d06ec69b08979495bd54039691f0` |
+| Report before this receipt | `12cc80616b145f8c62788334de2fd29f0b936058` |
+
+This publication receipt changes only this report and the session handoff. The **CI-tested commit is `e5cb0e7f9382b4e1f381a69393dd80269353ff79`**, distinct from the later documentation-only receipt commit. Source, tests, pack and historical evidence are unchanged by the receipt. No operation remains blocked; stop for review with zero live evaluator calls in this assignment.
