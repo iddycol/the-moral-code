@@ -1,6 +1,6 @@
 # Core-12 client-integrity repair — Codex 03
 
-**Verdict: DETECTOR_REPAIRED_OFFLINE / NEW_PACK_FROZEN / LOCAL_TESTS_PASSED / ZERO_LIVE_EVALUATOR_CALLS.**
+**Verdict: DETECTOR_REPAIRED_OFFLINE / PUBLISHED_AND_VERIFIED / WINDOWS_AND_UBUNTU_CI_PASSED / ZERO_LIVE_EVALUATOR_CALLS.**
 
 Prepared on 19 September 2026 (Australia/Brisbane), under [Codex prompt 03](../ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md). This repairs acceptance of unverifiable Claude client exchanges. It neither explains nor changes the underlying classifier intervention. Claude remains paused; completed live cases remain **zero**.
 
@@ -54,6 +54,8 @@ Command throughout:
 | Tests committed before production change, `7a40fed` | **24 failed, 25 passed**, 10.19 s | Expected acceptance/retention failures; no source-hash or pack failure |
 | Repaired source before new pack generation | **1 failed, 48 passed**, 4.26 s | Only committed-pack test failed: default v0.1.2 file did not yet exist |
 | Complete source and generated pack | **49 passed**, 3.96 s | Full local Windows suite, including committed-pack verification |
+| Published commit `87d2d34`, Windows CI | **49 passed**, 3.37 s | Complete suite at the published code/pack revision |
+| Published commit `87d2d34`, Ubuntu CI | **49 passed**, 2.90 s | Complete suite at the same revision |
 
 The red checkpoint showed missing exceptions for well-formed contaminated answers and malformed turn counts, the wrong format-failure precedence on contaminated trailing prose, Windows newline changes, missing final text after tool rejection, and a fake contaminated run that incorrectly completed all 84 role/reconciliation stages. These were deliberately fake Python subprocesses, never subscription clients. The red state was kept local until a complete green repair was ready for publication.
 
@@ -135,4 +137,14 @@ The next candidate is a **separately scoped Codex CORE-01 trial on v0.1.2**, aft
 
 ## Publication verification
 
-The complete local source/pack checkout passes all 49 tests. Remote publication and both operating-system CI receipts will be recorded here after verification; they are not claimed by this preparation checkpoint.
+Published the complete green repair, pack, report and handoff by ordinary Git push to `experiment/core12-live-v0.1` at **`87d2d348113e64bdf140e2307ce84e186953738e`**. The remote head was verified with `git ls-remote`. No intermediate failing branch head was pushed. The remote had remained at the fetched starting commit, so publication was a normal fast-forward preserving concurrent history.
+
+Read back all seven changed paths plus the unchanged entry prompt through GitHub's contents API at that exact commit: **8/8 blobs and file bytes matched** the local committed objects. This included report blob `2ef3b98067a38ae69ceda503af82d5253ffc21d9`, prompt blob `2334fc058432eb2c3de542f92b2b95925794a4d7`, and the source/pack/test blobs recorded above.
+
+[Scales Reference Runner run 35391448681](https://github.com/iddycol/the-moral-code/actions/runs/35391448681) completed successfully at **`87d2d348113e64bdf140e2307ce84e186953738e`**:
+
+- [Windows job 105750493397](https://github.com/iddycol/the-moral-code/actions/runs/35391448681/job/105750493397): log confirms **49 passed in 3.37 s**.
+- [Ubuntu job 105750493604](https://github.com/iddycol/the-moral-code/actions/runs/35391448681/job/105750493604): log confirms **49 passed in 2.90 s**.
+- [Benchmark Binding Validation run 35391448518](https://github.com/iddycol/the-moral-code/actions/runs/35391448518), job `105750491114`, also passed at the same commit.
+
+This publication receipt updates documentation only. The exact commit tested by CI is `87d2d348113e64bdf140e2307ce84e186953738e`; the receipt does not change its tested source, tests, frozen pack or prompt. No further experiments were launched. The next action remains the separately scoped Codex CORE-01 candidate described above.
