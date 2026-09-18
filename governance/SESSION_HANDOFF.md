@@ -1,6 +1,10 @@
-# Session handoff — Core-12 recovery, 17 September 2026
+# Session handoff — Core-12 client-integrity repair
 
-**Latest checkpoint, 18 September:** restart 02 returned three Claude responses but completed zero cases. All three streams contain a synthetic user intervention and report two turns; the old parser admitted two assessments before a trailing-prose failure stopped the third. Both CI jobs passed, but this detection gap was not covered. Read [the independent review](../docs/ai-reports/2026-09-18-core12-client-integrity-review.md) and use [Codex prompt 03](../docs/ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md) for an offline repair and new frozen pack. Live trials are paused. Earlier execution prompts are historical; do not rerun them.
+**Latest checkpoint:** the [Codex client-integrity repair report](../docs/ai-reports/2026-09-18-core12-client-integrity-codex-03.md) records the completed offline detector repair. The final local suite passes all 49 tests. Restart-02 replay rejects all three streams as contamination; all seven original streams remain parseable, and their reconciliation's separate binding failure remains historical. This assignment made zero live evaluator calls. Completed live cases and comparable pairs remain zero.
+
+The current default pack is `crucible/benchmark/subscription-core12-v0.1.2.json`, frozen from source commit `fe2311ab7d76ea6a0e88933f964429d3fd77a8f6`, with digest `sha256:e3cf63f003952122689f9120899c13aee3c86e93eb14531d5611fa103c6ecfa0`. All 29 source hashes match the committed baseline and all twelve action/Repair reconciliation schemas validate. Case facts, selected actions, Repair packets, constitution, interpretation, prompts and prior evidence remain unchanged.
+
+The next candidate is a separately scoped Codex CORE-01 run on this pack, after verifying a locally available model. No model identifier is selected and no run is launched by this assignment. Codex allowance is available; earlier exhausted-allowance statements are historical. Claude remains paused pending supported investigation of its observed intervention. No automatic retries or client-version/permission-mode experiments are scheduled. Earlier first-run/restart prompts and commands are historical; do not rerun them.
 
 ## Read first
 
@@ -9,6 +13,7 @@
 3. [Core-12 recovery audit](../research/reports/2026-09-17-core12-recovery-audit.md).
 4. [Workflow evidence](../research/reports/evidence/2026-09-17-core12-recovery/workflow-audit.json).
 5. [Benchmark](../crucible/benchmark/BENCHMARK_V0_1.md), [binding profiles](../crucible/benchmark/BINDING_PROFILES_V0_1.md), then the implementation relevant to the next task.
+6. [Client-integrity repair report](../docs/ai-reports/2026-09-18-core12-client-integrity-codex-03.md) and current [subscription trial guide](../engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md).
 
 Use repository evidence over prior conversational status claims.
 
@@ -18,7 +23,7 @@ Use repository evidence over prior conversational status claims.
 
 The recovery started from `6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515`. Read the current branch head before making changes.
 
-## Verified position
+## Historical recovery position — 17 September 2026
 
 - Research packets and stable Core-12 definitions exist.
 - Five broken action selectors are corrected in binding revision v0.1.1.
@@ -31,11 +36,11 @@ The recovery started from `6843dd48f4b9ffc33acbfe2cb0e155cfc41e0515`. Read the c
 
 The previous handoff's successful-live-testing and saved-output claims are superseded by this audit. Three committed file-backed fixture runs remain controls only.
 
-## Next concrete checkpoint
+## Historical proposed checkpoint — superseded, not execution instructions
 
-Adrian has ChatGPT Pro and Claude Pro and chose to continue using those subscriptions. The [subscription trial guide](../engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md) now provides a frozen Core-12 pack, local CLI execution, raw-output preservation, strict result intake and case comparison. Start with CORE-01 once per family; inspect it before launching the full batch.
+At this checkpoint Adrian had ChatGPT Pro and Claude Pro and chose to continue using those subscriptions. The [subscription trial guide](../engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md) provided a frozen Core-12 pack, local CLI execution, raw-output preservation, strict result intake and case comparison. The proposal was to start with CORE-01 once per family and inspect it before launching the full batch. This proposal is superseded by the latest checkpoint above.
 
-Use the downloadable local-agent entry point [MORAL_CODE_FIRST_RUN_02.md](../docs/ai-prompts/MORAL_CODE_FIRST_RUN_02.md), superseding revision 01 for new execution. Adrian launches Codex in the suggested `C:\Work\MoralCode` workspace and instructs it to read the saved prompt. His local work has used Azure DevOps; GitHub access on that computer is unverified. Revision 02 explicitly checks GitHub checkout and publication access, starts browser sign-in only when needed, and preserves the Azure DevOps setup. This chat's GitHub connection is not evidence of local authentication.
+The downloadable local-agent entry point [MORAL_CODE_FIRST_RUN_02.md](../docs/ai-prompts/MORAL_CODE_FIRST_RUN_02.md) then superseded revision 01; both are now historical. It proposed launching Codex in `C:\Work\MoralCode`, checking the checkout and GitHub publication access, and preserving the Azure DevOps setup. At that checkpoint local GitHub access was unverified; this chat's GitHub connection was not evidence of local authentication.
 
 The current ChatGPT workspace has neither CLI installed. The preparation is offline-tested; it is not completed model testing. Execution must happen on a machine with the official CLIs signed in to Adrian's subscriptions. Do not ask for API purchases or credentials in chat, export tokens, or claim this workspace can control the separate Claude account.
 
@@ -58,7 +63,7 @@ Always distinguish:
 
 An Actions success label is not sufficient evidence for any of the later stages.
 
-## Update — 18 September 2026: first live Claude subscription attempt
+## Historical update — 18 September 2026: first live Claude subscription attempt
 
 Read [the Claude-only overnight report](../docs/ai-reports/2026-09-18-core12-claude-only-overnight-01.md) before acting on anything below.
 
@@ -71,9 +76,9 @@ Verified state after run `CLAUDE-CORE12-20260918T124845Z` (branch `experiment/co
 - Comparison completed: no. Codex was not run (allowance exhausted). Zero comparable pairs remain.
 - Offline tests on Windows: 17 passed, 3 failed for platform reasons in the test harness (shebang fake CLI; `shlex.split` on Windows paths). Nothing was changed.
 
-Next checkpoint: Adrian decides the contract fix (schema, envelope key or runner comparison), adds a regression test whose fake responder returns only schema-declared fields, re-freezes the pack at a new baseline if a frozen source changes, then starts a new run ID with `--case CORE-01` before `--case all`. Do not rerun the existing run ID. No model comparison conclusion or v0.2 adoption is justified.
+Then-proposed checkpoint (superseded): decide the contract fix, add a regression test whose fake responder returns only schema-declared fields, re-freeze the pack at a new baseline if a frozen source changes, then start a new run ID with CORE-01. The later entries record what actually happened; this is not current execution authorisation. No model comparison conclusion or v0.2 adoption is justified.
 
-## Update — 18 September 2026: binding contract repaired, new execution pending
+## Historical update — 18 September 2026: binding contract repaired, new execution pending
 
 The [binding repair report](../docs/ai-reports/2026-09-18-core12-binding-contract-fix.md) supersedes the pending technical decision above. The schema declares the interpretation-rules reference; action reconciliations receive an explicit binding object; both subscription reconciliation schemas require the complete exact binding. The runtime equality check remains strict. Generic historical fixture compatibility is preserved.
 
@@ -84,11 +89,11 @@ The [binding repair report](../docs/ai-reports/2026-09-18-core12-binding-contrac
 - The last observed account was Claude Max, model `claude-opus-5[1m]`, overage disabled. The new prompt pins that observed model explicitly and verifies current access.
 - No new live inference occurred during the repair. Completed cases remain zero until a fresh run succeeds.
 
-Next action: execute `docs/ai-prompts/MORAL_CODE_CLAUDE_CORE12_RESTART_02.md` in Claude. It performs one new CORE-01 trial, inspects the evidence, and automatically proceeds through CORE-02 to CORE-12 once each only if the first trial completes. Maximum 84 new evaluator invocations; stop at the first failure and preserve all outputs. Do not use `--case all` after that first case, which would repeat it. The report goes to `docs/ai-reports/2026-09-18-core12-claude-restart-02.md`. Cross-family comparison, repeatability and constitutional adoption remain pending.
+Then-authorised action (executed and now historical): `docs/ai-prompts/MORAL_CODE_CLAUDE_CORE12_RESTART_02.md` allowed one new CORE-01 trial and progression through CORE-02 to CORE-12 only if that trial completed, with a maximum of 84 new evaluator invocations. It stopped after the third invocation, as recorded in `docs/ai-reports/2026-09-18-core12-claude-restart-02.md`; it must not be rerun. Cross-family comparison, repeatability and constitutional adoption remain pending.
 
 Publication checkpoint: the original approval block was resolved by Adrian's explicit “yes, push it”. The shell's normal Git push then lacked credentials, so the connected GitHub app published the authorised payload at `0aac9b4ad49d938202ea1805be1163f18b27d9d3`. Pack generation uses the actual GitHub source commit `a415f6f3df6135e3247152effa1707bbb9fad5cd`. All twelve changed file blobs matched remote readback. Scales CI run `35387899485` passed on Windows and Ubuntu, and benchmark binding run `35387899481` passed. This receipt updates documentation only; the restart prompt, pack and tested source are unchanged.
 
-## Update — 18 September 2026 (UTC): restart 02 executed, stopped at the third call
+## Historical update — 18 September 2026 (UTC): restart 02 executed, stopped at the third call
 
 Read [the restart 02 report](../docs/ai-reports/2026-09-18-core12-claude-restart-02.md) before acting on anything below.
 
@@ -101,12 +106,22 @@ Verified state after run `CLAUDE-V011-CORE01-20260918T195549Z` (branch `experime
 - Evidence persisted: yes, under `engine/scales/reference_runner/subscription-runs/CLAUDE-V011-CORE01-20260918T195549Z/`, unmodified. No retries, no repairs, no reuse of old-pack responses.
 - Comparison completed: no. Codex not invoked; execution kept Claude-only by Adrian's instruction.
 
-Next action: Adrian decides (a) how to isolate the classifier intervention (plain terminal outside Claude Code and auto mode, or client version pin), (b) whether the runner should treat synthetic user events and multi-turn results as contamination, which is a frozen-source change requiring a new pack revision, and (c) whether the format contract needs hardening against trailing prose. Any new attempt uses a new run ID and starts again at `--case CORE-01`. No model comparison conclusion or v0.2 adoption is justified.
+Then-open questions (superseded): how to investigate the classifier intervention, whether synthetic user events and multiple turns should invalidate an exchange, and whether trailing prose required a changed format contract. The subsequent review and repair resolved the parser requirements while preserving exact JSON parsing. The proposed client-version/mode probes were not performed and are not authorised by the current handoff. No model comparison conclusion or v0.2 adoption is justified.
 
-## Update — 18 September 2026: independent review and offline Codex repair
+## Historical update — 18 September 2026: independent review and offline Codex assignment
 
 The [independent client-integrity review](../docs/ai-reports/2026-09-18-core12-client-integrity-review.md) confirms the published report against all ten raw event streams and reproduces the parser gap offline. Restart-02 Scales CI run `35389709389` has passed on both Windows and Ubuntu.
 
-The next engineering action supersedes the open choices above: reject unsolicited user events and unverifiable/multiple turns before accepting Claude answers, preserve raw evidence, retain strict JSON parsing, and freeze a new pack after focused regressions. The intervention's cause remains unknown. No client downgrade, permission-mode change or live probe is scheduled.
+The assigned engineering action superseded the open choices above: reject unsolicited user events and unverifiable/multiple turns before accepting Claude answers, preserve raw evidence, retain strict JSON parsing, and freeze a new pack after focused regressions. The intervention's cause remains unknown. No client downgrade, permission-mode change or live probe was scheduled.
 
 Adrian now has Codex allowance and prefers launching agents from Downloads. [Codex prompt 03](../docs/ai-prompts/MORAL_CODE_CODEX_CLIENT_INTEGRITY_03.md) assigns the offline implementation, tests, pack and publication; evaluator calls permitted by that prompt: zero. The existing project checkout remains `C:\Work\MoralCode\the-moral-code`. After the corrected pack is reviewed, an independent Codex CORE-01 run is the next candidate. Claude trials remain paused. Completed cases are still zero; old evidence and packs remain immutable.
+
+## Current update — offline client-integrity repair completed
+
+The [repair report](../docs/ai-reports/2026-09-18-core12-client-integrity-codex-03.md) records the evidence and publication status. The existing suite began at 23 passing tests; focused regressions demonstrated the gap with 24 failures and 25 passes before production edits. After the source commit, the intermediate suite had 48 passes and the expected missing-new-pack failure. Generating the matching v0.1.2 pack restored the full suite to 49 passes. Independent review found no blocking issue in the repair.
+
+Claude acceptance now rejects structurally identified unsolicited `user` events as `protocol_contamination`, including synthetic events even when a result claims one turn. Successful results require a real integer `num_turns` equal to one: multiple turns are `protocol_contamination`; missing, boolean, string, non-positive or otherwise malformed values are `client_output_error` with precise details. These gates precede final JSON acceptance. Multiple assistant blocks alone do not count as multiple turns. A clean single-turn answer with trailing prose remains `response_format_failure`; no response repair or retry is introduced. The Codex parser keeps its existing protections without borrowing Claude metadata rules.
+
+Rejected exchanges retain raw events and available final text unmodified, without accepted role/decision files. The process-boundary regression verifies that a contaminated first response records the failure stage and stops later roles, reconciliation and cases. Offline replay used temporary paths; historical streams, manifests, indexes and both prior packs remain immutable. This repair detects the observed intervention but does not establish its cause, reveal withheld content, or equate CLI invocations with underlying model requests.
+
+The v0.1.2 source baseline is `fe2311ab7d76ea6a0e88933f964429d3fd77a8f6`; pack digest is `sha256:e3cf63f003952122689f9120899c13aee3c86e93eb14531d5611fa103c6ecfa0`. All 29 source hashes match that commit and all twelve reconciliation schemas preserve the full binding. The next candidate remains separately scoped Codex CORE-01 with a verified locally available model. No model is selected, no evaluator is launched, and Claude remains paused pending supported investigation.
