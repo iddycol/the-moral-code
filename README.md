@@ -14,7 +14,7 @@ For the integration experiment's verified execution status, read [the current se
 
 The subscription trials have completed zero cases. The [offline client-integrity repair](docs/ai-reports/2026-09-18-core12-client-integrity-codex-03.md) now rejects Claude exchanges with unsolicited user events or multiple turns before accepting their answers, and fails closed on missing or malformed turn metadata. The current frozen pack is `subscription-core12-v0.1.2.json`, sourced from `fe2311ab7d76ea6a0e88933f964429d3fd77a8f6`, with digest `sha256:e3cf63f003952122689f9120899c13aee3c86e93eb14531d5611fa103c6ecfa0`.
 
-This repair made zero live evaluator calls. The next candidate is a separately scoped Codex CORE-01 run on the new pack after verifying a locally available model; no model is selected or run by this assignment. Claude remains paused pending supported investigation of the observed intervention. Earlier first-run and restart prompts and commands are historical.
+The repair and its review made zero live evaluator calls. The next step is [Codex CORE-01 prompt 04](docs/ai-prompts/MORAL_CODE_CODEX_CORE01_04.md): verify local access to `gpt-6-astra`, run one case on the unchanged pack with at most seven evaluator invocations, then stop for review. Claude remains paused pending supported investigation of the observed intervention. Earlier first-run and restart prompts and commands are historical.
 
 Read `constitution/MORAL_CORE.md`.
 
