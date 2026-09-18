@@ -16,7 +16,7 @@ The [Codex CORE-01 prompt 06 trial](docs/ai-reports/2026-09-19-core12-codex-core
 
 The unchanged frozen pack is `subscription-core12-v0.1.3.json`, sourced from `1fc927431541f5196d79d8284ea70cb1de1f9240`, with digest `sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced`. The [UTF-8 transport repair](docs/ai-reports/2026-09-19-core12-utf8-transport-codex-05.md) passed [readiness review](docs/ai-reports/2026-09-19-core12-codex-core01-readiness-06.md) before this fresh run, and all 66 local tests passed before inference. The [earlier failed Codex attempt](docs/ai-reports/2026-09-19-core12-codex-core01-04.md), prior packs and historical evidence remain unchanged.
 
-[Prompt 06](docs/ai-prompts/MORAL_CODE_CODEX_CORE01_06.md) has been executed and is now historical. Review the saved result and scope any future work separately. No retry, further case, Claude call or next agent prompt is authorised or scheduled. Claude remains paused; one provider, one case and one pass establish neither repeatability nor cross-model agreement.
+[CORE-01 review](docs/ai-reports/2026-09-19-core12-codex-core01-review-07.md) is complete. [Prompt 07](docs/ai-prompts/MORAL_CODE_CODEX_REMAINING_CORE12_07.md) scopes CORE-02 through CORE-12 on unchanged v0.1.3: at most 77 new evaluator invocations, serially, stopping at the first failure. CORE-01 is not repeated. Claude remains paused.
 
 Read `constitution/MORAL_CORE.md`.
 

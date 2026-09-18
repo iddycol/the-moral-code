@@ -1,6 +1,6 @@
-# Session handoff — Codex CORE-01 completed, awaiting review
+# Session handoff — CORE-01 reviewed; remaining Codex cases scoped
 
-**Current action:** review the [completed Codex CORE-01 prompt 06 result](../docs/ai-reports/2026-09-19-core12-codex-core01-06.md) and scope any future work separately. [Prompt 06](../docs/ai-prompts/MORAL_CODE_CODEX_CORE01_06.md) has been executed and is historical. The single authorised case is complete, and execution stopped after seven evaluator CLI invocations. Do not retry, run CORE-02 or another case, invoke Claude or create a next agent prompt under this handoff. Claude remains paused.
+**Current action:** execute [prompt 07](../docs/ai-prompts/MORAL_CODE_CODEX_REMAINING_CORE12_07.md) for CORE-02 through CORE-12, once each, serially, with at most 77 new evaluator invocations and a stop at the first failure. The [CORE-01 review](../docs/ai-reports/2026-09-19-core12-codex-core01-review-07.md) is complete and supersedes the previous review pause for this bounded scope. CORE-01 remains historical and must not be repeated. Claude remains paused.
 
 **Latest checkpoint:** **one completed client-workflow case**, CORE-01, with six accepted role assessments and one accepted reconciliation. All seven evaluator CLI invocations exited 0. All six roles assessed the selected action as `impermissible`; reconciliation returned `impermissible` and recommended `block`. The supplied evidence supports stopping research-driven treatment non-offering and misleading participation, with voluntary care, independent review and possible permissible research alternatives. The repaired four-field binding and exact role-reference contract was reached and accepted. Inference was attempted and returned; comparable pairs remain zero.
 
