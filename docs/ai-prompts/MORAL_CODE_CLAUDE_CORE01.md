@@ -21,6 +21,12 @@ The coordinating Claude conversation is not an evaluator. Do not write role answ
 - Runner: `engine/scales/reference_runner/subscription_trial.py`
 - Evidence root: `engine/scales/reference_runner/subscription-runs/`
 
+Adrian launches Claude from `C:\Work\MoralCode` and saves this entry prompt there, outside the repository clone. If `C:\Work\MoralCode\the-moral-code` is absent, clone the exact branch there:
+
+```text
+git clone -c core.autocrlf=false --branch experiment/core12-live-v0.1 https://github.com/iddycol/the-moral-code.git the-moral-code
+```
+
 Use a clean checkout descended from the known baseline. Preserve unrelated work. Do not reset, stash, delete or overwrite an existing dirty checkout; use a separate clone or worktree if necessary. Retain repository LF bytes because the frozen pack checks source hashes.
 
 Inspect the remote, branch, status and recent history. Verify that this exact prompt matches the committed file at `docs/ai-prompts/MORAL_CODE_CLAUDE_CORE01.md`; record its blob and introducing commit in the report. If the checkout or prompt differs, stop before inference and report the discrepancy.
