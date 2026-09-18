@@ -55,3 +55,18 @@ Always distinguish:
 - human constitutional adoption.
 
 An Actions success label is not sufficient evidence for any of the later stages.
+
+## Update — 18 September 2026: first live Claude subscription attempt
+
+Read [the Claude-only overnight report](../docs/ai-reports/2026-09-18-core12-claude-only-overnight-01.md) before acting on anything below.
+
+Verified state after run `CLAUDE-CORE12-20260918T124845Z` (branch `experiment/core12-live-v0.1`, pack digest `sha256:0b9d597a…`, client Claude Code 2.1.276, model `claude-opus-5[1m]` from client metadata, claude.ai sign-in, no API key, overage disabled):
+
+- Inference attempted and returned: yes, seven calls, all exit 0, no tool use, no quota or client errors.
+- Full evaluation completed: **no case**. The six CORE-01 role assessments were accepted and persisted. The CORE-01 reconciliation was returned, passes its output schema, names the correct case and role references, but was rejected by the runner's constitutional-binding equality check and the run stopped. CORE-02 to CORE-12 are `not_started`.
+- Cause: the action reconciliation schema declares three `constitution` fields; the runner requires the pack's four-field binding including `interpretation_rules_ref`; the action envelope has no `constitution_binding` key for the model to copy. The fixture test passes only because the fake CLI copies the request object verbatim. This is a harness contract defect, not a model, provider or constitutional finding.
+- Evidence persisted: yes, under `engine/scales/reference_runner/subscription-runs/CLAUDE-CORE12-20260918T124845Z/`.
+- Comparison completed: no. Codex was not run (allowance exhausted). Zero comparable pairs remain.
+- Offline tests on Windows: 17 passed, 3 failed for platform reasons in the test harness (shebang fake CLI; `shlex.split` on Windows paths). Nothing was changed.
+
+Next checkpoint: Adrian decides the contract fix (schema, envelope key or runner comparison), adds a regression test whose fake responder returns only schema-declared fields, re-freezes the pack at a new baseline if a frozen source changes, then starts a new run ID with `--case CORE-01` before `--case all`. Do not rerun the existing run ID. No model comparison conclusion or v0.2 adoption is justified.
