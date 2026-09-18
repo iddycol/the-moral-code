@@ -6,6 +6,8 @@ This route uses locally installed Codex CLI and Claude Code, signed in with Chat
 
 ## First run
 
+**18 September correction:** The first Claude pass returned six role assessments and a reconciliation, but completed zero cases because the action output contract omitted a binding field. The [failure report](../../../docs/ai-reports/2026-09-18-core12-claude-only-overnight-01.md) and original pack/ledger are retained. New runs use `subscription-core12-v0.1.1.json`: both reconciliation envelopes require the complete binding in their actual output schemas. The strict equality check remains. The [Claude restart prompt](../../../docs/ai-prompts/MORAL_CODE_CLAUDE_CORE12_RESTART_02.md) supersedes the earlier overnight prompt for new execution; it checks CORE-01 first, then attempts CORE-02 through CORE-12 once each, up to 84 new evaluator calls.
+
 1. Open a terminal in a checkout of `iddycol/the-moral-code`, branch `experiment/core12-live-v0.1`, and pull its latest committed revision. Do not switch a checkout containing unrelated unfinished work.
 2. Install the current [Codex CLI](https://learn.chatgpt.com/docs/cli/reference) and [Claude Code](https://code.claude.com/docs/en/overview) if needed. Sign in with `codex login` and `claude auth login`, choosing your ChatGPT / claude.ai accounts. Complete any first-launch setup interactively. Do not choose API-key or Console billing.
 3. Set up the existing Python dependencies. These examples use macOS/Linux/WSL:
@@ -34,7 +36,11 @@ Each case takes six role calls plus one reconciliation. Runs use the client's de
 
 ## What is held constant
 
-`crucible/benchmark/subscription-core12-v0.1.json` freezes the v0.1.0 constitution, interpretation rules, v0.1.1 bindings, schemas, role contracts and 12 inputs. CORE-01 through CORE-10 evaluate the selected action; CORE-11/12 retain the separate Repair contract. The pack records source hashes and its own digest. Runtime verifies those hashes before calling a client. Do not edit the pack in place or regenerate it separately for each family.
+`crucible/benchmark/subscription-core12-v0.1.1.json` freezes the v0.1.0 constitution, interpretation rules, v0.1.1 bindings, corrected schemas/envelope builders, role contracts and 12 inputs at source commit `a415f6f3df6135e3247152effa1707bbb9fad5cd`. Its digest is `sha256:07306d70cf4fceb19eeda337d85066265f8c40dc71d75873c670734841432b7b`. CORE-01 through CORE-10 evaluate the selected action; CORE-11/12 retain the separate Repair contract. The pack records source hashes and its own digest. Runtime verifies those hashes before calling a client. Do not edit the pack in place or regenerate it separately for each family.
+
+The original `subscription-core12-v0.1.json` is historical evidence. Its pinned sources are available at commit `c12b53d9e2419c3e312219c363966101ac62af2e`; the new runner intentionally rejects those stale source hashes. Inspect an old run in a separate checkout of that revision. Do not bypass source verification or relabel an old result as a new-pack result.
+
+The reusable action schema now declares `interpretation_rules_ref`, matching the request and Repair schemas. Its generic required list remains compatible with older three-field fixture decisions. For subscription reconciliations, the exact four-field binding becomes both a required-field set and a JSON Schema `const` in the envelope. The schema seen by the evaluator therefore expresses the same binding obligation as the unchanged strict equality check. An explicit `constitution_binding` object supplies the values to copy, without modifying the frozen schema object.
 
 Each role receives only its own envelope, in a new process and temporary working directory. Only the seventh call sees the six accepted assessments, from that family and that case. Neither family sees the other's answers. Both receive the same prompt prefix and role envelopes. Reconciliation inputs necessarily differ when the families' assessments differ.
 
@@ -52,7 +58,7 @@ There are no harness retries, response repairs, overwrites or fallback providers
 
 This compares **subscription client workflows**. Their system prompts, model defaults and managed policies can differ; it is not an identical bare-model API experiment. Neither provider's safety instructions are removed. Codex runs read-only, with web disabled and user config excluded; Claude runs in safe/restricted mode with tools disabled. Existing managed policies still apply. Detected tool activity disqualifies the response. Temporary directories and event inspection are not an operating-system guarantee that no external context could enter a client.
 
-The CLI compatibility and subscription authentication paths have **not been exercised live from this workspace**. Offline process tests use a deliberately fake CLI and do not count as model evidence. If preflight cannot recognise the account's sign-in mode, it stops; do not weaken that check to force a run.
+Claude Code 2.1.276 executed seven evaluator calls on Adrian's Windows computer using claude.ai Max, with model `claude-opus-5[1m]` and overage disabled. No complete evaluation resulted because of the recorded contract defect. The corrected contract still requires a fresh live run. This workspace has not invoked either subscription client. Offline process tests use a deliberately fake CLI and do not count as model evidence. If preflight cannot recognise the account's sign-in mode, it stops; do not weaken that check to force a run.
 
 Once the one-case trial works and its raw evidence has been inspected, `--case all` selects all 12 (up to 84 calls per family), or `--case CORE-11` selects a Repair trial. One pass is a pilot: the existing benchmark requires at least three repeats per model version. Pressure tests and v0.2 adoption are later checkpoints. There is no aggregate morality score, and agreement between models is not proof of correctness.
 

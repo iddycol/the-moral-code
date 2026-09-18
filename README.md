@@ -12,7 +12,7 @@ It is not a religion, an AI ruler, or a claim to moral infallibility.
 
 For the integration experiment's verified execution status, read [the current session handoff](governance/SESSION_HANDOFF.md). The recovery audit corrects earlier live-testing claims.
 
-The next experiment uses existing ChatGPT and Claude subscriptions: [run the first Core-12 case](engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md). The input pack and local runner are prepared; completed model results remain unverified.
+The next experiment uses existing subscriptions: [run the corrected Core-12 contract](engine/scales/reference_runner/SUBSCRIPTION_TRIAL.md). The first Claude pass returned seven responses but completed zero cases because of a reconciliation binding-contract defect. A revised frozen pack and a Claude restart prompt address that defect; a fresh completed evaluation remains unverified.
 
 Read `constitution/MORAL_CORE.md`.
 
