@@ -1,5 +1,7 @@
 # Session handoff — Codex Core-12 complete; review results
 
+**Substantive analysis completed:** [Analysis 09](../docs/ai-reports/2026-09-19-core12-substantive-analysis-09.md) recommends retaining the twelve principles while clarifying uncertainty decisions and conditional safeguards. CORE-12 authorizes no amnesty grant. All 80 action evidence entries lack claim-level source links and have unknown confidence; source manifests exist separately. Next work is a bounded provenance and interpretation revision proposal. These recommendations are not adopted rules; source, packs and live trials remain unchanged.
+
 **Review update:** [Independent completed-baseline review 08](../docs/ai-reports/2026-09-19-core12-completed-review-08.md) passes the offline checks for all 12 cases and 84 successful-run exchanges. Next recommended work is substantive offline analysis of evidence thresholds, conditional safeguards, CORE-12 amnesty and packet provenance. No further live experiment is opened. The execution checkpoint below remains historical evidence.
 
 **Current action: review the [prompt 07 result](../docs/ai-reports/2026-09-19-core12-codex-remaining-07.md).** The remaining eleven cases completed serially in exactly **77 new evaluator CLI invocations**, with all eleven evidence reviews passed. Including historical CORE-01, **12 client-workflow cases are complete**. Prompt 07 has been executed and is historical. Claude and all further experiments remain paused; no next agent prompt was created.
