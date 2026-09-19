@@ -18,7 +18,7 @@ Requested model: `gpt-6-astra`, advertised locally using Codex CLI `0.155.0` and
 
 The unchanged frozen pack is `subscription-core12-v0.1.3.json`, sourced from `1fc927431541f5196d79d8284ea70cb1de1f9240`, with digest `sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced`. All 66 local tests passed before the batch. Frozen sources, packs and historical evidence remain unchanged.
 
-[Prompt 07](docs/ai-prompts/MORAL_CODE_CODEX_REMAINING_CORE12_07.md) has been executed and is historical. **Current action: review the saved results.** Claude and all further trials remain paused; no case is to be repeated under this prompt.
+[Prompt 07](docs/ai-prompts/MORAL_CODE_CODEX_REMAINING_CORE12_07.md) is historical. The [source audit and proposal 10](docs/ai-reports/2026-09-19-core12-provenance-proposal-10.md) identifies four full-input identity disclosures, a future-disaster cue and decision-cutoff/Repair-design limitations. **Next: [Codex prompt 11](docs/ai-prompts/MORAL_CODE_CODEX_BENCHMARK_CORRECTION_11.md), an offline benchmark-correction candidate with zero evaluator calls.** The [interpretation proposal](docs/proposals/CORE12_INTERPRETATION_PROPOSAL_10.md) is not adopted. Claude and all further trials remain paused.
 
 Read `constitution/MORAL_CORE.md`.
 

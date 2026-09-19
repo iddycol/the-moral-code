@@ -1,0 +1,932 @@
+{
+  "audit_id": "CORE12-PROVENANCE-10-SOURCES-07-10",
+  "audit_date": "2026-09-19",
+  "pack_digest": "sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced",
+  "scope": "38 frozen claims CORE-07–CORE-10; source audit only, no source/pack/model changes",
+  "method": "Status measures support actually accessed, not ultimate historical truth. Inference marks analytical/normative propositions. supported does not imply every source is contemporaneously received, independent, complete or certain. See source-access and temporal fields. Claim text copied byte-for-byte from frozen pack.",
+  "counts": {
+    "partially_supported": 12,
+    "inference": 14,
+    "supported": 10,
+    "unverified_access": 2
+  },
+  "sources": {
+    "NAG-ORDER": {
+      "url": "https://nsarchive.gwu.edu/document/28483-document-60e-general-thomas-t-handy-general-carl-spaatz-july-26-1945-top-secret",
+      "locator": "Document 60E; directive paragraphs 1–2; collection documents 60A–E",
+      "date": "1945-07-25/26",
+      "access": "Archive catalogue and collection editorial account read; one-page primary PDF retrieved but image text was not available for direct inspection. Archive title says July26 while collection narrative says signed July25: resolve against scan before exact date assertion.",
+      "kind": "contemporaneous directive in later archive"
+    },
+    "NAG-AUG8": {
+      "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
+      "locator": "Document71; description of Stimson–Truman meeting at10:45AM8August",
+      "date": "1945-08-08",
+      "access": "Archive description read; three-page original PDF retrieved, but scan text not independently legible through this tool. OCR endpoint returned shell only.",
+      "kind": "contemporaneous conference memorandum, catalogue-level verification"
+    },
+    "NAG-SOVIET": {
+      "url": "https://nsarchive.gwu.edu/document/28495-document-69-memorandum-conversation-far-eastern-war-and-general-situation-august-8",
+      "locator": "Document69; description and Harriman Papers box181 provenance",
+      "date": "1945-08-08",
+      "access": "Archive description read; primary PDF retrieved but not directly read. Record receipt times not established.",
+      "kind": "contemporaneous diplomatic memorandum, catalogue-level verification"
+    },
+    "NAG-COLLECTION": {
+      "url": "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2020-08-04/atomic-bomb-end-world-war-ii",
+      "locator": "Documents11,61,63,67B,68,69,71,72A and82; individually specified by claim",
+      "date": "2020 archive publication of1945records",
+      "access": "Collection narrative and archival references read; historical interpretations distinguished from underlying records.",
+      "kind": "primary-record collection with editorial commentary"
+    },
+    "NAG-PLAN": {
+      "url": "https://nsarchive.gwu.edu/document/33329-document-46e-memorandum-groves-army-chief-staff-plan-operations-atomic-fission-bomb",
+      "locator": "Document46E,24July1945",
+      "date": "1945-07-24",
+      "access": "Catalogue identity/date retrieved; underlying full scan not reviewed.",
+      "kind": "primary planning record, metadata only"
+    },
+    "NAG-MISSION": {
+      "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196642/the-mission/",
+      "locator": "Manifest mission fact sheet",
+      "date": "later reconstruction",
+      "access": "Fetch failed; no independent support admitted from this page.",
+      "kind": "official retrospective"
+    },
+    "MP1987": {
+      "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201522/volume-1522-I-26369-English.pdf",
+      "locator": "UNTS1522I26369, original1987 text, printedpp29–35, Articles2,5,6",
+      "date": "1987-09-16",
+      "access": "Original treaty text directly read in UN Treaty Series PDF. This is not the subsequently amended consolidated treaty.",
+      "kind": "primary treaty text"
+    },
+    "VIENNA": {
+      "url": "https://ozone.unep.org/treaties/vienna-convention",
+      "locator": "Secretariat introduction paragraphs1–3",
+      "date": "1985adoption;1988entry into force",
+      "access": "Official introduction read; no full original text audit in this pass.",
+      "kind": "official institutional account"
+    },
+    "MOLINA1974": {
+      "url": "https://www.nature.com/articles/249810a0",
+      "locator": "Nature249,810–812;doi10.1038/249810a0",
+      "date": "1974-06",
+      "access": "Primary article fetch failed; UC eScholarship mirror robot challenge and ADS405. Title/metadata only verified. Do not treat unread abstract/full text as read.",
+      "kind": "primary research, access incomplete"
+    },
+    "FARMAN1985": {
+      "url": "https://www.nature.com/articles/315207a0",
+      "locator": "Nature315,207–210;doi10.1038/315207a0",
+      "date": "1985-05",
+      "access": "Article identity verified but cookie redirect prevented text reading; BAS institutional record also not readable. Contemporary observation summarized in accessible1986author abstract.",
+      "kind": "primary research, access incomplete"
+    },
+    "SOLOMON1986": {
+      "url": "https://experts.illinois.edu/en/publications/on-the-depletion-of-antarctic-ozone/",
+      "locator": "Author institutional publication record and abstract; Nature321,755–758",
+      "date": "1986-06",
+      "access": "Indexed author abstract read: recurring spring Antarctic loss and comparison with1957–73; subsequent open timeout. Full article not read; NASA PDF failed.",
+      "kind": "primary research abstract via author institutional record"
+    },
+    "NASA-HISTORY": {
+      "url": "https://ozonewatch.gsfc.nasa.gov/facts/history_SH.html",
+      "locator": "Manifest history page",
+      "date": "later history",
+      "access": "Fetch timed out; not used as evidence.",
+      "kind": "official retrospective"
+    },
+    "ALEXANDER1962": {
+      "url": "https://www.nephjc.com/news/godpanel",
+      "locator": "Reproduction of Shana Alexander, LIFE9November1962; paragraphs beginning Today Seattle; At this first meeting; Then they drew up; dialogue introduction; concluding practical problems",
+      "date": "1962-11-09;2019transcript reproduction",
+      "access": "Full reproduced text read. Reproducer discloses intermediate Kidney Times/forum chain. Original Google Books issue link opened, but scanned article not independently compared; transcription authenticity remains qualified.",
+      "kind": "contemporaneous journalism reproduced later; dialogue reconstructed from participants memories"
+    },
+    "ALEXANDER-SCAN": {
+      "url": "https://books.google.com/books?dq=life+magazine+nov+1962&id=qUoEAAAAMBAJ&lpg=PA1&pg=PA101",
+      "locator": "LIFE9November1962article beginspp102–104,continueslaterpages",
+      "date": "1962-11-09",
+      "access": "Issue link reached; scan content not independently readable through tool.",
+      "kind": "original periodical scan, access incomplete"
+    },
+    "HARMON": {
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+      "locator": "Factory Investigating Commission1912vol2pp242–249; testimony re27February1911inspection",
+      "date": "1911testimony published1912",
+      "access": "Full testimony transcription read.",
+      "kind": "primary retrospective sworn testimony about pre-fire inspection"
+    },
+    "BEERS": {
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+      "locator": "Factory Investigating Commission testimony17November1911,pp580–582",
+      "date": "1911-11-17",
+      "access": "Full testimony transcription read.",
+      "kind": "primary post-fire inspection testimony"
+    },
+    "LEMLICH": {
+      "url": "https://trianglefire.ilr.cornell.edu/primary/testimonials/ootss_ClaraLemlich.html",
+      "locator": "Life in the Shop, New York Evening Journal28November1909, reprintedin1977collection",
+      "date": "1909-11-28",
+      "access": "Full short primary testimonial read; refers to garment industry generally, not every particular Triangle worker.",
+      "kind": "contemporaneous worker testimony"
+    },
+    "FIRE-COMMISSION": {
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/FireHazardInFactoryBuildings.html",
+      "locator": "Factory Investigating Commission1912reportpp28–34",
+      "date": "1912",
+      "access": "Report excerpt read; differentiates classes of factory buildings. General absence of sprinklers in one class cannot alone prove Triangle-specific absence.",
+      "kind": "primary post-fire investigative report"
+    },
+    "TRIAL": {
+      "url": "https://trianglefire.ilr.cornell.edu/primary/trialRecords/index.html",
+      "locator": "Trial transcript collection index",
+      "date": "1911trial;laterarchive",
+      "access": "Index read; full transcript not reviewed. No finding on criminal knowledge admitted from index.",
+      "kind": "primary legal record index"
+    },
+    "OSHA": {
+      "url": "https://www.osha.gov/aboutosha/40-years/trianglefactoryfire",
+      "locator": "Manifest historical account",
+      "date": "later retrospective",
+      "access": "Fetch failed.",
+      "kind": "official retrospective"
+    },
+    "DOL": {
+      "url": "https://www.dol.gov/general/aboutdol/history/trianglefire",
+      "locator": "Manifest historical account",
+      "date": "later retrospective",
+      "access": "Fetch failed.",
+      "kind": "official retrospective"
+    }
+  },
+  "claims": [
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E1",
+      "exact_claim": "An earlier directive authorised the first attack on specified targets and stated that additional weapons would be delivered against listed targets as soon as made ready.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-ORDER",
+          "url": "https://nsarchive.gwu.edu/document/28483-document-60e-general-thomas-t-handy-general-carl-spaatz-july-26-1945-top-secret",
+          "locator": "Document60E paragraphs1–2;collection60A–E"
+        }
+      ],
+      "paraphrased_support": "Archive describes first use and subsequent deliveries when ready. Direct scan verification remains outstanding.",
+      "decision_time_assessment": "Directive predates cutoff; exact signature date and recipient chain need scan confirmation.",
+      "recommendation": "Retain qualified reported directive; resolve25/26July catalogue discrepancy.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E2",
+      "exact_claim": "The first weapon has now been used against an inhabited city and senior officials have reports showing destruction on an extraordinary city-wide scale.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-AUG8",
+          "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
+          "locator": "Document71 conference description"
+        }
+      ],
+      "paraphrased_support": "Stimson briefed Truman on extensive destruction; the source does not establish a precise casualty estimate.",
+      "decision_time_assessment": "Meeting precedes mission by date; normalize Washington/Tinian times before defining exact knowledge window.",
+      "recommendation": "Change observed to reported intelligence unless evaluator is the direct observer; avoid city-wide quantitative implication.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E3",
+      "exact_claim": "Senior leadership has explicitly discussed the grave responsibility created by the weapon's demonstrated effects.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-AUG8",
+          "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
+          "locator": "Document71 conference description"
+        }
+      ],
+      "paraphrased_support": "Conference account attributes recognition of grave responsibility to Truman.",
+      "decision_time_assessment": "Contemporaneous account, but full memorandum not independently read in this pass.",
+      "recommendation": "Preserve reported status; attach source quality and scan-access limitation.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E4",
+      "exact_claim": "A major new allied belligerent has entered the war against the opponent, adding a new military front and materially changing the opponent's strategic position.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-SOVIET",
+          "url": "https://nsarchive.gwu.edu/document/28495-document-69-memorandum-conversation-far-eastern-war-and-general-situation-august-8",
+          "locator": "Document69 meeting description"
+        }
+      ],
+      "paraphrased_support": "Harriman discussed Soviet entry with Stalin; strategic consequences require inference.",
+      "decision_time_assessment": "Event timing supported; receipt by every selected senior decision-maker before departure is not established.",
+      "recommendation": "Split observed declaration/entry from inferred strategic effect; define actor, cutoff and message receipt.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E5",
+      "exact_claim": "The opponent has not announced surrender by the time the second mission is being prepared.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-COLLECTION",
+          "url": "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2020-08-04/atomic-bomb-end-world-war-ii",
+          "locator": "Documents67B,68,72A; sequencing"
+        }
+      ],
+      "paraphrased_support": "Records place unresolved surrender discussions before the second mission.",
+      "decision_time_assessment": "Internal Japanese diary content was not shown available to US leadership and must not be admitted as its knowledge.",
+      "recommendation": "Retain lack of received surrender announcement as actor-specific fact; avoid importing private Japanese intentions.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E6",
+      "exact_claim": "The second weapon is operationally ready and can be used quickly under the existing directive unless senior authority intervenes.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-ORDER",
+          "url": "https://nsarchive.gwu.edu/document/28483-document-60e-general-thomas-t-handy-general-carl-spaatz-july-26-1945-top-secret",
+          "locator": "Directive continuation;24Julyplanning;missionfact-sheet access failure"
+        },
+        {
+          "source_id": "NAG-PLAN",
+          "url": "https://nsarchive.gwu.edu/document/33329-document-46e-memorandum-groves-army-chief-staff-plan-operations-atomic-fission-bomb",
+          "locator": "Directive continuation;24Julyplanning;missionfact-sheet access failure"
+        },
+        {
+          "source_id": "NAG-MISSION",
+          "url": "https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/196642/the-mission/",
+          "locator": "Directive continuation;24Julyplanning;missionfact-sheet access failure"
+        }
+      ],
+      "paraphrased_support": "Standing authority and follow-on planning are documented; the exact operational stop window is not verified.",
+      "decision_time_assessment": "A future mission does not prove senior officials could transmit an effective pause after receiving Soviet-entry news.",
+      "recommendation": "Specify UTC deadline, responsible command, communications and readiness report; treat interruption feasibility as uncertain.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E7",
+      "exact_claim": "It is uncertain how rapidly the first attack and the new belligerent's entry will affect the opponent's surrender decision; both events are new and their combined effect has had little time to develop.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "NAG-AUG8",
+          "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
+          "locator": "Chronology of8Augustmeetings"
+        },
+        {
+          "source_id": "NAG-SOVIET",
+          "url": "https://nsarchive.gwu.edu/document/28495-document-69-memorandum-conversation-far-eastern-war-and-general-situation-august-8",
+          "locator": "Chronology of8Augustmeetings"
+        }
+      ],
+      "paraphrased_support": "Recent events and unresolved decisions permit uncertainty about combined effects; they do not prove surrender would follow delay.",
+      "decision_time_assessment": "Valid analyst inference only after precise actor/time cutoff established.",
+      "recommendation": "Retain inferred; do not turn little-time-to-develop into demonstrated necessity or uselessness of a pause.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E8",
+      "exact_claim": "Continuing the war also causes severe and accumulating harm through other military operations and preparation for invasion, so delay is not cost-free.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "NAG-COLLECTION",
+          "url": "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2020-08-04/atomic-bomb-end-world-war-ii",
+          "locator": "Document68 Forrestal8Augustletter; earlier combat/targeting records"
+        }
+      ],
+      "paraphrased_support": "Continuing operations and invasion planning are documented; incremental harm of a particular pause is not quantified.",
+      "decision_time_assessment": "General ongoing-war harm was knowable; harm caused specifically by short delay remains counterfactual.",
+      "recommendation": "Split observed ongoing combat from inferred marginal cost of delay; avoid assuming every preparation itself causes severe harm.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E9",
+      "exact_claim": "A second attack on an inhabited military-industrial city foreseeably risks very large civilian casualties similar in kind to the first use, though the precise number is unknown.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "NAG-COLLECTION",
+          "url": "https://nsarchive.gwu.edu/briefing-book/nuclear-vault/2020-08-04/atomic-bomb-end-world-war-ii",
+          "locator": "Document11targeting;Document71destruction briefing"
+        },
+        {
+          "source_id": "NAG-AUG8",
+          "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
+          "locator": "Document11targeting;Document71destruction briefing"
+        }
+      ],
+      "paraphrased_support": "Urban targeting and first-use destruction support foreseeable major civilian risk.",
+      "decision_time_assessment": "Pre-cutoff inference; later Nagasaki death toll or radiation findings excluded.",
+      "recommendation": "Keep inferred; distinguish expected effects, uncertainty and intentional targeting from proved actual casualties.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E10",
+      "exact_claim": "The standing repeated-use order was approved before either the first weapon's actual effects or the new belligerent's entry were known.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "NAG-ORDER",
+          "url": "https://nsarchive.gwu.edu/document/28483-document-60e-general-thomas-t-handy-general-carl-spaatz-july-26-1945-top-secret",
+          "locator": "DirectiveJuly1945versusAugust8events"
+        },
+        {
+          "source_id": "NAG-AUG8",
+          "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
+          "locator": "DirectiveJuly1945versusAugust8events"
+        },
+        {
+          "source_id": "NAG-SOVIET",
+          "url": "https://nsarchive.gwu.edu/document/28495-document-69-memorandum-conversation-far-eastern-war-and-general-situation-august-8",
+          "locator": "DirectiveJuly1945versusAugust8events"
+        }
+      ],
+      "paraphrased_support": "The documented sequence places the standing order before actual first-use reports and Soviet entry.",
+      "decision_time_assessment": "Actual occurrence was later; expected Soviet entry and destructive potential were already considered before the order.",
+      "recommendation": "Say before occurrence/observed effects, not before any knowledge or anticipation of those possibilities.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E1",
+      "exact_claim": "Scientific work identifies a credible chemical mechanism by which the long-lived industrial substances reach the upper atmosphere and catalytically damage the protective layer.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "unverified_access",
+      "sources": [
+        {
+          "source_id": "MOLINA1974",
+          "url": "https://www.nature.com/articles/249810a0",
+          "locator": "Nature249,810–812"
+        }
+      ],
+      "paraphrased_support": "Article identity matches the proposed chemistry, but its text was inaccessible in this audit.",
+      "decision_time_assessment": "1974publication predates1987; contents and decision-maker dissemination not independently checked.",
+      "recommendation": "Obtain readable original before assigning confidence; keep reported, not experimentally conclusive.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E2",
+      "exact_claim": "Recent ground observations show an unexpectedly severe recurring regional depletion of the protective layer.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FARMAN1985",
+          "url": "https://www.nature.com/articles/315207a0",
+          "locator": "Solomon1986abstract citing Farman observations"
+        },
+        {
+          "source_id": "SOLOMON1986",
+          "url": "https://experts.illinois.edu/en/publications/on-the-depletion-of-antarctic-ozone/",
+          "locator": "Solomon1986abstract citing Farman observations"
+        }
+      ],
+      "paraphrased_support": "Author abstract reports recurring Antarctic spring decline against earlier observations.",
+      "decision_time_assessment": "1985observations and1986publication predate cutoff; source is a later-hosted contemporary abstract.",
+      "recommendation": "Retain reported observation; cite accessible primary abstract and distinguish region from global trend.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E3",
+      "exact_claim": "Additional observations/analysis support that the phenomenon is real and linked to the relevant chemistry, while details/global extrapolation remain under refinement.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "SOLOMON1986",
+          "url": "https://experts.illinois.edu/en/publications/on-the-depletion-of-antarctic-ozone/",
+          "locator": "Author abstract and1986Naturearticle identity"
+        }
+      ],
+      "paraphrased_support": "Accessible abstract supports real regional loss; full chemical-attribution argument was not read.",
+      "decision_time_assessment": "1986analysis predates cutoff;1987aircraft results require exact dates before admission.",
+      "recommendation": "Retain uncertainty; verify chemical linkage and observation publication dates before stronger confidence.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E4",
+      "exact_claim": "Damage to the protective layer increases biologically harmful radiation at the surface, creating plausible serious health/ecological risks even though exact future incidence is uncertain.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "MP1987",
+          "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201522/volume-1522-I-26369-English.pdf",
+          "locator": "Original preamble printedpp29–30"
+        }
+      ],
+      "paraphrased_support": "Treaty records anticipated health and environmental harm; it is not direct experimental proof of radiation or future incidence.",
+      "decision_time_assessment": "Contemporary risk recognition supported; precise scientific mechanism needs pre1987assessment source.",
+      "recommendation": "Add original health/environment assessment; preserve plausible risk rather than quantified outcome.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E5",
+      "exact_claim": "The substances are long-lived and globally mixed, so benefits of use can be local/immediate while risks are exported geographically and temporally.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "unverified_access",
+      "sources": [
+        {
+          "source_id": "MOLINA1974",
+          "url": "https://www.nature.com/articles/249810a0",
+          "locator": "Primary chemistry article; unread fulltext"
+        }
+      ],
+      "paraphrased_support": "Long residence and transport claims were not directly verified through accessible primary text here.",
+      "decision_time_assessment": "Potentially pre-cutoff science; no use of later recovery data to establish1987knowledge.",
+      "recommendation": "Retrieve atmospheric lifetime/mixing evidence; separate physical transport from distributional inference.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E6",
+      "exact_claim": "Controls impose genuine industrial/consumer costs because the substances have valuable uses and substitute technologies are unevenly mature.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "MP1987",
+          "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201522/volume-1522-I-26369-English.pdf",
+          "locator": "Preamble;Articles5(2–3),6"
+        }
+      ],
+      "paraphrased_support": "Original agreement recognizes technical/economic considerations and access to alternatives; it does not quantify all costs or maturity.",
+      "decision_time_assessment": "Known negotiation concern at adoption; description of proposed controls is not an observed future cost outcome.",
+      "recommendation": "Use reported/estimated costs with sector-specific contemporaneous evidence; avoid blanket observed label.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E7",
+      "exact_claim": "An existing international framework already supports research/monitoring but does not impose the binding reductions now under consideration.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "VIENNA",
+          "url": "https://ozone.unep.org/treaties/vienna-convention",
+          "locator": "Secretariatintroparagraphs1–3"
+        }
+      ],
+      "paraphrased_support": "Vienna established cooperation without compulsory controls; it was adopted1985 and entered into force1988.",
+      "decision_time_assessment": "An adopted framework existed by1987 although not yet in force.",
+      "recommendation": "Retain with adoption/in-force distinction and direct convention article references in next revision.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E8",
+      "exact_claim": "A staged agreement can target major substances first, differentiate lower-capacity implementation and mandate periodic science/economic assessment so controls can change with evidence.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "MP1987",
+          "url": "https://treaties.un.org/doc/Publication/UNTS/Volume%201522/volume-1522-I-26369-English.pdf",
+          "locator": "OriginalArticles2,5,6printedpp31–35"
+        }
+      ],
+      "paraphrased_support": "Original text contains staged reductions, qualifying-country delays, assistance provisions and periodic assessment.",
+      "decision_time_assessment": "Proposed treaty terms available at adoption; not proof of eventual implementation success.",
+      "recommendation": "Retain; do not import1990Multilateral Fund or later control schedules into1987.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E9",
+      "exact_claim": "Waiting for precise proof allows additional long-lived pollutant accumulation, making later reversal slower if stronger evidence emerges.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "MOLINA1974",
+          "url": "https://www.nature.com/articles/249810a0",
+          "locator": "Inference from claimed persistence; primary scientific access incomplete"
+        }
+      ],
+      "paraphrased_support": "Continued release of persistent pollutants can increase accumulated burden; reversal timing is conditional on the physical premises.",
+      "decision_time_assessment": "Analytical inference, not an observed1987future outcome.",
+      "recommendation": "Retain inferred with explicit premises; verify lifetime evidence rather than use later recovery success.",
+      "masked_fidelity": "CORE-07 frozen binding names United States/Japanese purpose; CORE-08 binding names Montreal Protocol. These are binding leaks, distinct from masked claim fidelity."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E1",
+      "exact_claim": "The treatment can sustain life for selected people with an otherwise fatal chronic condition but requires repeated use of scarce specialised equipment, trained staff and substantial resources.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "OpeningMyersaccount and paragraph beginningTodaySeattle"
+        }
+      ],
+      "paraphrased_support": "Report describes repeated dialysis, nursing support, survival and substantial program resources.",
+      "decision_time_assessment": "Observed program facts available to1962operators; exact cutoff within1962 unspecified.",
+      "recommendation": "Change observed to reported for external evaluator; corroborate original scan.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E2",
+      "exact_claim": "At current capacity there are materially more medically eligible candidates than treatment places; treating everyone immediately is not feasible.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "ParagraphsTodaySeattle;For the present;dialogueopening"
+        }
+      ],
+      "paraphrased_support": "Limited places and more screened candidates are described.",
+      "decision_time_assessment": "Contemporary scarcity supported; exact candidate count varies across the year.",
+      "recommendation": "Specify decision date/capacity snapshot; avoid treating all medically unsuitable patients as eligible demand.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E3",
+      "exact_claim": "Medical screening can identify some factors relevant to expected survival and ability to manage treatment, although predictions are imperfect.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Medical-boardbriefingparagraphs"
+        }
+      ],
+      "paraphrased_support": "Physicians screened suitability, with acknowledged uncertainty and arbitrary exclusions.",
+      "decision_time_assessment": "Medical screening existed; actual criteria also mixed age and family-role judgments.",
+      "recommendation": "Retain narrow claim; add packet context that historical screening was not purely clinical or proven unbiased.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E4",
+      "exact_claim": "Among people who pass medical screening, the lay committee considers broad social information including dependants, occupation, education, income/resources, personal history and perceived future/community contribution.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Selection-factorlist and reconstructedcommittee dialogue"
+        }
+      ],
+      "paraphrased_support": "Reported criteria include dependants, resources, education, occupation, personal history and future potential.",
+      "decision_time_assessment": "Contemporary report of practice; remembered dialogue is not verbatim meeting minutes.",
+      "recommendation": "Keep reported; identify transcript reproduction and reconstructed-discussion limitations.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E5",
+      "exact_claim": "The packet contains no evidence that high income, prestigious occupation, formal education or perceived community status independently improves treatment effectiveness once candidates are medically suitable.",
+      "original_epistemic_status": "unknown",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [],
+      "paraphrased_support": "This is a statement about absence of evidence in the packet, verified locally; it is not a population-level medical claim.",
+      "decision_time_assessment": "Packet fact, independent of historical cutoff; practical affordability can still affect access.",
+      "recommendation": "Keep unknown; do not convert no supplied evidence into proof of no treatment-related relationship.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E6",
+      "exact_claim": "Some non-medical facts, such as dependent children or caregiving responsibilities, can affect third-party harm from a candidate's death without changing the candidate's own prognosis.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Ministerremarks andcommittee discussion ofchildren"
+        }
+      ],
+      "paraphrased_support": "Dependants feature in deliberation; counting third-party harm separately is an analytical distinction.",
+      "decision_time_assessment": "Morally relevant hypothetical reasoning; no quantified1962dependency-loss estimate supplied.",
+      "recommendation": "Keep inferred; no automatic ranking of parents above nonparents.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E7",
+      "exact_claim": "Income, education, occupation and social prestige reflect unequal prior opportunity and may compound disadvantage if used as indicators of deservingness or human value.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [],
+      "paraphrased_support": "Opportunity differences and compounding disadvantage are plausible mechanisms, not case-specific measured effects in supplied sources.",
+      "decision_time_assessment": "No1962causal study identified.",
+      "recommendation": "Separate normative fairness premise from historical evidence; seek counterexamples and contextual distribution data.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E8",
+      "exact_claim": "A lottery or neutral queue among medically similar candidates cannot eliminate scarcity deaths but can avoid asking a committee to rank lives by social value.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [],
+      "paraphrased_support": "A lottery avoids explicit social-value ranking by construction but requires a justified eligible pool and implementation.",
+      "decision_time_assessment": "No evidence supplied that lottery or neutral queue was historically adopted or feasible.",
+      "recommendation": "Do not equate a queue with a lottery; audit prior eligibility and queue access fairness.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E9",
+      "exact_claim": "First-come-first-served can favour people with earlier diagnosis, better information, geographic access or connections and therefore is not automatically impartial.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [],
+      "paraphrased_support": "Earlier access may reflect advantage; this is a conditional mechanism rather than a measured Seattle effect.",
+      "decision_time_assessment": "No1962patient-access dataset verified.",
+      "recommendation": "Retain inferred and qualify can; avoid claiming actual quantified discrimination.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E10",
+      "exact_claim": "Capacity may expand over time through additional equipment, staffing, funding or public policy; allocation rules coexist with a separate obligation to reduce avoidable scarcity where reasonably feasible.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Programtrialpurposeparagraph andfundinghistoryparagraphs"
+        }
+      ],
+      "paraphrased_support": "The trial examined expansion feasibility; immediate expansion was uncertain. A duty to reduce scarcity is normative.",
+      "decision_time_assessment": "1972Medicareoutcomes excluded from1962knowledge.",
+      "recommendation": "Split possibility of expansion from moral obligation; preserve contemporaneous technical limits.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E1",
+      "exact_claim": "The factory is high above ground, holds a large workforce and contains substantial combustible production material.",
+      "original_epistemic_status": "observed",
+      "original_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp244,248;Beerspp580–581"
+        },
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Harmonpp244,248;Beerspp580–581"
+        }
+      ],
+      "paraphrased_support": "Testimony describes upper-floor manufacturing, large workforce and fabric waste.",
+      "decision_time_assessment": "Sources are post-fire testimony about observable pre-fire conditions, not contemporaneous reports actually supplied before fire.",
+      "recommendation": "Use reported/reconstructed unless direct management observation stipulated; retain provenance outside blinded payload.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E2",
+      "exact_claim": "A serious fire can develop quickly and makes evacuation capacity/time life-critical.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Beerspp580–582"
+        }
+      ],
+      "paraphrased_support": "Fire marshal describes rapid spread and insufficient escape; pre-fire foreseeability is a separate inference.",
+      "decision_time_assessment": "Actual disaster speed is outcome information; general combustible-material risk could be anticipated.",
+      "recommendation": "Ground ex-ante risk in materials/layout, not later deaths or observed speed.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E3",
+      "exact_claim": "Theft and unauthorised departure are legitimate management concerns, but they can be addressed without preventing workers from opening emergency exits from inside.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp244–249"
+        }
+      ],
+      "paraphrased_support": "Inspector checked doors unlocked during occupancy; this does not by itself verify every proposed security alternative.",
+      "decision_time_assessment": "Physical possibility plausible at cutoff; specific efficacy/cost not established.",
+      "recommendation": "Separate legitimate objective, safe-egress requirement and alternative feasibility; avoid treating all three as observed facts.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E4",
+      "exact_claim": "Historical records indicate that at least one important exit was subject to locking/control practices; exact individual knowledge of its status at a later disaster moment would be contested and is not assumed here.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp244,249;trialindex"
+        },
+        {
+          "source_id": "TRIAL",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/trialRecords/index.html",
+          "locator": "Harmonpp244,249;trialindex"
+        }
+      ],
+      "paraphrased_support": "Doors had locks but were unlocked during February inspection; constant locking and individual knowledge are not established here.",
+      "decision_time_assessment": "The phrase referring to a later disaster and contested knowledge explicitly reveals post-cutoff events.",
+      "recommendation": "Remove later-disaster/trial cue from masked evidence; retain disputed practice with attributed pre-fire observation and no guilt inference.",
+      "masked_fidelity": "E4 explicitly references later disaster/contested knowledge."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E5",
+      "exact_claim": "The factory lacks automatic sprinkler protection and depends on more limited fire-response arrangements.",
+      "original_epistemic_status": "reported",
+      "original_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        },
+        {
+          "source_id": "FIRE-COMMISSION",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/FireHazardInFactoryBuildings.html",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        },
+        {
+          "source_id": "OSHA",
+          "url": "https://www.osha.gov/aboutosha/40-years/trianglefactoryfire",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        },
+        {
+          "source_id": "DOL",
+          "url": "https://www.dol.gov/general/aboutdol/history/trianglefire",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        }
+      ],
+      "paraphrased_support": "Pails and hose limitations are described; absence of Triangle sprinklers not directly established by inspected passages.",
+      "decision_time_assessment": "Historical physical condition could be knowable; present support remains incomplete.",
+      "recommendation": "Obtain explicit Triangle installation record; avoid applying a generic building-class description as particular proof.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E6",
+      "exact_claim": "When only a small number of evacuation routes serve a large workforce, failure or obstruction of one route can sharply reduce escape capacity.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp246–248;Beersp581"
+        },
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Harmonpp246–248;Beersp581"
+        }
+      ],
+      "paraphrased_support": "Narrow paths and inadequate fire escape support a route-capacity inference.",
+      "decision_time_assessment": "Layout known before fire; actual later failure need not enter evaluator packet.",
+      "recommendation": "Retain inferred; provide measured layout and occupancy for any numerical claim.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E7",
+      "exact_claim": "Workers rely on employment and have little practical power individually to redesign exits, install suppression systems or override management security policy.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "LEMLICH",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/testimonials/ootss_ClaraLemlich.html",
+          "locator": "1909workeraccountparagraphs1–5"
+        }
+      ],
+      "paraphrased_support": "Low pay and managerial control support unequal bargaining context, not every worker’s exact circumstances.",
+      "decision_time_assessment": "Industry testimony predates fire; individual inability to change systems is inferred.",
+      "recommendation": "Retain inferred and qualify generalization; do not erase workers collective organizing agency.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E8",
+      "exact_claim": "Keeping emergency exits openable from inside does not require abandoning theft prevention; non-blocking alternatives exist.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonp244doorinspection"
+        }
+      ],
+      "paraphrased_support": "Unlocked egress was physically possible during inspection; effectiveness of non-blocking theft controls not directly studied.",
+      "decision_time_assessment": "Plausible contemporary option, not verified business-security equivalence.",
+      "recommendation": "Require concrete proposed controls and feasibility evidence; avoid duplicatecounting E3/E8.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E9",
+      "exact_claim": "Safety upgrades impose business costs while catastrophic risk from inadequate protection falls primarily on workers.",
+      "original_epistemic_status": "inferred",
+      "original_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Beersp582;Lemlich1909pay/controlaccount"
+        },
+        {
+          "source_id": "LEMLICH",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/testimonials/ootss_ClaraLemlich.html",
+          "locator": "Beersp582;Lemlich1909pay/controlaccount"
+        }
+      ],
+      "paraphrased_support": "Physical risk and business protection motivate the distributional analysis; no retrofit-cost ledger is supplied.",
+      "decision_time_assessment": "Expected cost/risk distribution is an analytical assessment; realized death toll excluded.",
+      "recommendation": "Separate estimated costs, who bears risk and normative extraction conclusion.",
+      "masked_fidelity": "No explicit proper-name leakage in this claim; case structure remains recognizable."
+    }
+  ]
+}

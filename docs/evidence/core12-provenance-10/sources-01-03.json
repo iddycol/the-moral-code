@@ -1,0 +1,571 @@
+{
+  "audit_id": "core12-provenance-10-sources-01-03",
+  "status": "research_audit_not_adopted",
+  "repository_head": "28a800a4f72e309d4c060882e8755a7066e97c6c",
+  "pack": "crucible/benchmark/subscription-core12-v0.1.3.json",
+  "pack_digest": "sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced",
+  "scope": "All 18 frozen evidence entries in CORE-01–CORE-03; no source or pack modifications",
+  "method": "Exact frozen claims mechanically compared with masked packets; cited external text inspected; historical support is separate from cutoff availability and model confidence. No blanket confidence upgrades. Source reconstruction dates do not themselves make earlier facts inadmissible.",
+  "status_counts": {
+    "supported": 12,
+    "partially_supported": 5,
+    "inference": 1
+  },
+  "sources": [
+    {
+      "source_id": "TUS-CDC-TIMELINE",
+      "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+      "title": "CDC, The Untreated Syphilis Study at Tuskegee Timeline",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "2024-09-04",
+      "access": "read",
+      "locator": "Background and Spotlight paragraphs",
+      "limits": "Modern retrospective page; not the document available to a 1969 panel.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "TUS-CDC-ABOUT",
+      "url": "https://www.cdc.gov/tuskegee/about/index.html",
+      "title": "CDC, About The Untreated Syphilis Study at Tuskegee",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "2024-09-04 as manifest",
+      "access": "read",
+      "locator": "Background; Subjects and participation; FAQ",
+      "limits": "Confirms broad historical facts, not individual clinical status in February 1969.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "TUS-CDC-MUSEUM",
+      "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html",
+      "title": "CDC Museum, Public Health Service Study of Untreated Syphilis at Tuskegee and Macon County",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "undated",
+      "access": "read",
+      "locator": "Opening three paragraphs",
+      "limits": "Short history records questions in 1968; original objection correspondence not inspected.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "TUS-ANNIV-REVIEW",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9872801/",
+      "title": "Martin J. Tobin, Fiftieth Anniversary of Uncovering the Tuskegee Syphilis Study",
+      "source_kind": "secondary historical review",
+      "source_date": "2022-05-15",
+      "access": "blocked_recaptcha",
+      "locator": "No substantive full text retrieved",
+      "limits": "Not used as claim support. Manifest gives 2023, but PubMed identifies 2022 publication.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "TUS-PUBMED-METADATA",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35500908/",
+      "title": "PubMed record for Tobin review",
+      "source_kind": "bibliographic metadata",
+      "source_date": "2022-05-15",
+      "access": "read",
+      "locator": "Citation: Am J Respir Crit Care Med 205(10):1145–1158; DOI 10.1164/rccm.202201-0136SO",
+      "limits": "Used only to correct publication date; abstract does not replace full-text verification.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "TUS-HEW-1973",
+      "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+      "title": "Final Report of the Tuskegee Syphilis Study Ad Hoc Advisory Panel",
+      "source_kind": "primary official investigation; later reconstruction and reproduced earlier records",
+      "source_date": "1973",
+      "access": "read_pdf_text",
+      "locator": "Printed pp. 7–16, 18 and 31; reproduced February 6, 1969 summary at printed pp. 10–11",
+      "limits": "CDC links this hosted copy. February 1969 summary is reproduced retrospectively; 1970 memoranda and 1973 judgments must remain outside the cutoff.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "CH-MCDONALD-NOTES",
+      "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+      "title": "A. J. McDonald account of January 27, reproduced in Rogers Commission hearings",
+      "source_kind": "primary witness account with notes and later addendum",
+      "source_date": "Events 1986-01-27; addendum 1986-02-13; hearing 1986-02-25",
+      "access": "read",
+      "locator": "Volume IV pp. 740–746; numbered note pages 1–14",
+      "limits": "Title describes January 27 events, but document includes February 13 addendum. Do not label the entire text as demonstrably contemporaneous transcription.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "CH-RC-CH5",
+      "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+      "title": "Rogers Commission, Volume I Chapter V",
+      "source_kind": "primary official investigation; later reconstruction",
+      "source_date": "1986",
+      "access": "read",
+      "locator": "Launch-decision testimony and timeline, printed pp. 108–109",
+      "limits": "Supports reconstructed pre-decision sequence; post-recommendation events and accident findings excluded from evaluator evidence.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "FDA-KELSEY",
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+      "title": "FDA historical exhibit: Frances Oldham Kelsey",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "undated current exhibit",
+      "access": "read",
+      "locator": "Paragraphs beginning Six years later and The company continued",
+      "limits": "High-level narrative, not a dated 1960–61 NDA dossier; cannot establish every negative claim about available adverse-event evidence.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "FDA-DRUG-EFFICACY",
+      "url": "https://www.fda.gov/media/74571/download",
+      "title": "FDA, The History of Drug Regulation in the United States, Centennial Edition",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "2006",
+      "access": "read_pdf_text",
+      "locator": "PDF page 6 (one-based), printed page 8, Drug Efficacy—1962 material",
+      "limits": "Manifest calls this a historical exhibit; actual PDF is the 2006 booklet. Outcome material is excluded from cutoff evidence.",
+      "accessed_on": "2026-09-19"
+    },
+    {
+      "source_id": "FDA-CDER-HISTORY",
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+      "title": "FDA, A Brief History of CDER",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "undated current history",
+      "access": "read",
+      "locator": "Frances Kelsey, Thalidomide, and a Global Disaster Narrowly Averted Here",
+      "limits": "Establishes broad chronology, not a precise last pre-discovery review date.",
+      "accessed_on": "2026-09-19"
+    }
+  ],
+  "claims": [
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E1",
+      "claim": "The programme began decades earlier to observe the natural history of the infection and includes an infected group and a control group.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-TIMELINE",
+          "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+          "locator": "Background, first paragraph"
+        }
+      ],
+      "support": "CDC records the 1932 observational study and separate infected and uninfected cohorts.",
+      "decision_time_assessment": "Study design predates February 1969 and would be institutionally available; audited source is retrospective.",
+      "epistemic_status_assessment": "Observed is reasonable for documented design, not direct observation by this auditor.",
+      "masked_fidelity": "Faithful identity removal; infected/control structure retained.",
+      "correction_or_recommendation": "Attach source and locator. Keep evidence of study design separate from judgments about its worth."
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E2",
+      "claim": "Participants were not given informed consent to an untreated-disease experiment and were led to believe they were receiving health care for a broad illness description.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-TIMELINE",
+          "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+          "locator": "Background, paragraphs 1–2"
+        },
+        {
+          "source_id": "TUS-CDC-ABOUT",
+          "url": "https://www.cdc.gov/tuskegee/about/index.html",
+          "locator": "FAQ: Why was the study unethical?"
+        }
+      ],
+      "support": "CDC describes missing informed consent and misleading presentation as treatment.",
+      "decision_time_assessment": "Underlying conduct occurred before cutoff; retrospective finding does not prove every panel member knew every detail.",
+      "epistemic_status_assessment": "Observed should be understood as documented historical conduct; no interview-level consent record inspected.",
+      "masked_fidelity": "Faithful; broad illness description preserves deception while suppressing identifying phrase.",
+      "correction_or_recommendation": "Record historical support separately from evidence of what each decision-maker knew."
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E3",
+      "claim": "A highly effective treatment has been the accepted treatment of choice and widely available for many years, but participants have not routinely been offered it by the study.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-TIMELINE",
+          "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+          "locator": "Spotlight on penicillin"
+        },
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 9–11: Facts and Documentation re Charge I-B"
+        }
+      ],
+      "support": "Penicillin availability and non-offering are documented; individual histories and clinical suitability varied.",
+      "decision_time_assessment": "Treatment knowledge predates 1969. The 1973 review cites earlier treatment literature, but is not itself cutoff evidence.",
+      "epistemic_status_assessment": "Observed broadly supported; highly effective does not mean a guaranteed cure for every survivor.",
+      "masked_fidelity": "Broadly faithful; omitted transparent uncertainty about each survivor’s health and treatment history matters.",
+      "correction_or_recommendation": "Restore patient-specific clinical uncertainty in a candidate packet; distinguish offering assessment/treatment from forced uniform therapy."
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E4",
+      "claim": "An internal adviser has raised ethical objections and asked leadership to reconsider continuation.",
+      "frozen_epistemic_status": "reported",
+      "frozen_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-MUSEUM",
+          "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html",
+          "locator": "Opening narrative, third paragraph"
+        }
+      ],
+      "support": "CDC identifies internal questioning by its public-health adviser in 1968.",
+      "decision_time_assessment": "Objection precedes February 1969; original letters and precise recipients were not inspected.",
+      "epistemic_status_assessment": "Reported is appropriate. Exact wording of a request to leadership remains less directly evidenced.",
+      "masked_fidelity": "Faithful at summary level.",
+      "correction_or_recommendation": "Attach the retrospective source now; obtain original correspondence before asserting exact notice to named decision-makers."
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E5",
+      "claim": "Supporters of continuation argue that the long longitudinal dataset is scientifically unique and cannot be recreated if treatment changes the course of disease.",
+      "frozen_epistemic_status": "reported",
+      "frozen_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10–11, reproduced February 6, 1969 meeting summary"
+        }
+      ],
+      "support": "The summary cites remaining research value and nonrepeatability, without the exact treatment-counterfactual rationale.",
+      "decision_time_assessment": "Reproduced 1969 meeting material is temporally relevant; the 1970 value criticism must not be imported.",
+      "epistemic_status_assessment": "Reported is appropriate for proponents’ rationale. The precise causal embellishment lacks direct support inspected here.",
+      "masked_fidelity": "Masked cannot be recreated is stronger than transparent cannot readily be recreated.",
+      "correction_or_recommendation": "Replace with the narrower documented continuation rationale; label any treatment-counterfactual conclusion as inference."
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E6",
+      "claim": "The untreated infection can cause severe illness, death and transmission; the incremental scientific value of further untreated observation is uncertain.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 18: risk, treatment history and background"
+        },
+        {
+          "source_id": "TUS-CDC-ABOUT",
+          "url": "https://www.cdc.gov/tuskegee/about/index.html",
+          "locator": "Subjects and participation"
+        }
+      ],
+      "support": "Historical disease risks are documented. The compound claim’s marginal-value uncertainty is an analytical characterization.",
+      "decision_time_assessment": "General risks predate cutoff; do not treat later value judgments or all-stage transmission as proven for each 1969 survivor.",
+      "epistemic_status_assessment": "Split observed general disease hazards from inferred/uncertain incremental research value.",
+      "masked_fidelity": "Faithful to the transparent compound claim, but both compress distinct epistemic categories.",
+      "correction_or_recommendation": "Split into atomic claims; qualify stage-specific transmission and individual risk; retain marginal value as an explicit uncertainty."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E1",
+      "claim": "Forecast conditions are substantially colder than any prior comparable successful operational mission.",
+      "frozen_epistemic_status": "predicted",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 1 and 3; printed pp. 740–741"
+        }
+      ],
+      "support": "Forecast conditions fell below the prior flight temperature used in the engineering recommendation.",
+      "decision_time_assessment": "Forecast was circulated before the final recommendation.",
+      "epistemic_status_assessment": "Predicted is correct; distinguish ambient forecast from calculated seal temperature.",
+      "masked_fidelity": "Faithful relative comparison; exact identifying temperatures removed.",
+      "correction_or_recommendation": "Maintain the distinction between environmental forecast and component temperature."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E2",
+      "claim": "Engineering analysis says colder conditions slow a critical joint seal's response and recommends not operating outside the coldest demonstrated flight experience.",
+      "frozen_epistemic_status": "reported",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note page 3; printed p. 741"
+        }
+      ],
+      "support": "Presented charts connected colder conditions with slower sealing and supported the initial no-launch advice.",
+      "decision_time_assessment": "Discussed before the managerial caucus and recommendation.",
+      "epistemic_status_assessment": "Reported engineering analysis is correctly distinguished from a quantified failure probability.",
+      "masked_fidelity": "Faithful.",
+      "correction_or_recommendation": "Attach the contemporaneous-event witness account, with its retrospective-document qualification."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E3",
+      "claim": "The coldest prior comparable mission showed the most severe observed evidence of gas passing the primary seal.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 3 and 5; printed pp. 741–742"
+        }
+      ],
+      "support": "Prior coldest flight had the most pronounced primary-seal bypass evidence in the presented comparison.",
+      "decision_time_assessment": "Prior flight observations were presented before the decision.",
+      "epistemic_status_assessment": "Observed applies to prior inspection findings, not the future launch outcome.",
+      "masked_fidelity": "Faithful; bypass does not necessarily mean total joint failure.",
+      "correction_or_recommendation": "Avoid converting this ordinal comparison into a numerical failure-rate estimate."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E4",
+      "claim": "Management challenges a simple temperature correlation because a warmer mission also showed some seal bypass and a colder ground test did not show the same problem; engineers dispute whether the ground test is representative of flight conditions.",
+      "frozen_epistemic_status": "disputed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 4–5; printed pp. 741–742"
+        }
+      ],
+      "support": "Warmer-flight and ground-test counterexamples were discussed; test preparation limited comparability.",
+      "decision_time_assessment": "Counterarguments and representativeness objection appear before the caucus.",
+      "epistemic_status_assessment": "Disputed is apt for representativeness; existence of cited observations is separately documented.",
+      "masked_fidelity": "Faithful; retains counterevidence absent in a simplistic catastrophe narrative.",
+      "correction_or_recommendation": "Preserve the counterevidence and split observation from disputed interpretation if atomizing claims."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E5",
+      "claim": "The dataset is limited and does not establish a precise probability of failure at the forecast conditions.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 5 and 8–9"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Timeline at approximately 11:00 p.m.; printed pp. 108–109"
+        }
+      ],
+      "support": "The record describes inconclusive temperature evidence; no precise probability is established by the cited discussion.",
+      "decision_time_assessment": "Limited evidence is pre-decision; explicit later complaint about an exact threshold must not supply earlier knowledge.",
+      "epistemic_status_assessment": "Inference/uncertainty fits better than observed for a negative statistical-sufficiency claim.",
+      "masked_fidelity": "Masked text substitutes lack of precise probability for the transparent claim about participants’ disagreement.",
+      "correction_or_recommendation": "Retain as a clearly labelled audit inference or restore the documented discussion; distinguish temperature threshold from probability."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E6",
+      "claim": "Programme managers note that accepting the proposed environmental limit would disrupt the current mission and constrain future schedule targets.",
+      "frozen_epistemic_status": "reported",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note page 4; printed p. 741"
+        }
+      ],
+      "support": "Managers raised current-launch delay and future launch-rate implications of the proposed limit.",
+      "decision_time_assessment": "Recorded before reassessment and final recommendation.",
+      "epistemic_status_assessment": "Reported is appropriate; no inference about secret motive is required.",
+      "masked_fidelity": "Faithful.",
+      "correction_or_recommendation": "Attach locator; separate operational consequences from evidence about physical safety."
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E7",
+      "claim": "A senior contractor representative remains uncomfortable with approval, argues that colder conditions move sealing performance in the wrong direction, and proposes waiting for less extreme conditions.",
+      "frozen_epistemic_status": "reported",
+      "frozen_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 5, 7 and 9; printed pp. 742–744"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Timeline 10:30–11:00 p.m. and 11:15–11:30 p.m.; printed pp. 108–109"
+        }
+      ],
+      "support": "Objection and delay proposal precede recommendation; the explicit discomfort statement follows it.",
+      "decision_time_assessment": "Compound claim crosses the manifest cutoff before final recommendation. Earlier dissent is admissible; later reaction is not.",
+      "epistemic_status_assessment": "Reported is appropriate only after separating the two moments.",
+      "masked_fidelity": "Faithful to transparent text, so the timing problem originates in both packets.",
+      "correction_or_recommendation": "Candidate wording should retain only pre-recommendation dissent/delay; retain later discomfort in the outcome/reconstruction record."
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E1",
+      "claim": "The medicine is already available in many foreign markets.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-KELSEY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+          "locator": "Paragraph beginning Six years later"
+        }
+      ],
+      "support": "FDA identifies widespread foreign marketing before the domestic application review.",
+      "decision_time_assessment": "Existing marketing predates the review; support is retrospective institutional history.",
+      "epistemic_status_assessment": "Observed is reasonable for marketing status, not evidence of adequate safety surveillance.",
+      "masked_fidelity": "Faithful: many replaces dozens without changing the central comparison.",
+      "correction_or_recommendation": "Attach source and avoid treating sales as proof of safety."
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E2",
+      "claim": "The regulatory system requires evidence supporting safety before broad domestic marketing.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-KELSEY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+          "locator": "Paragraph beginning Six years later"
+        }
+      ],
+      "support": "FDA describes a premarketing manufacturer duty to provide safety evidence.",
+      "decision_time_assessment": "Historical duty applies during the review; not a claim about today’s regulation.",
+      "epistemic_status_assessment": "Observed describes the historical regulatory framework; original statute was not independently inspected.",
+      "masked_fidelity": "Faithful summary; omits legal mechanics of an application becoming effective.",
+      "correction_or_recommendation": "Keep as historical framework; cite contemporaneous statute if more exact procedural claims are added."
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E3",
+      "claim": "The medical reviewer considers the present safety evidence inadequate/incomplete and requests scientifically reliable evidence addressing the deficiencies.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-KELSEY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+          "locator": "Paragraphs beginning Six years later and The company continued"
+        },
+        {
+          "source_id": "FDA-DRUG-EFFICACY",
+          "url": "https://www.fda.gov/media/74571/download",
+          "locator": "PDF p. 6, printed p. 8, paragraphs on September 12, 1960 NDA"
+        }
+      ],
+      "support": "FDA attributes continued deferral to inadequate safety evidence and requests for reliable substantiation.",
+      "decision_time_assessment": "Relevant during 1960–61, but a single dated review event has not been fixed.",
+      "epistemic_status_assessment": "Observed establishes the reviewer’s position, not an independent claim-by-claim assessment of the missing dossier.",
+      "masked_fidelity": "Faithful.",
+      "correction_or_recommendation": "Specify a single review date and the material deficiencies before a more detailed evidence challenge."
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E4",
+      "claim": "The manufacturer disputes the need for continued delay and repeatedly supplies material it says demonstrates safety.",
+      "frozen_epistemic_status": "reported",
+      "frozen_confidence": "unknown",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-KELSEY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+          "locator": "Paragraph beginning The company continued"
+        },
+        {
+          "source_id": "FDA-DRUG-EFFICACY",
+          "url": "https://www.fda.gov/media/74571/download",
+          "locator": "PDF p. 6, printed p. 8"
+        }
+      ],
+      "support": "The historical account records repeated submissions and company pressure while review continued.",
+      "decision_time_assessment": "Occurred during the review; exact exchanges need dating for a point-in-time packet.",
+      "epistemic_status_assessment": "Reported appropriately attributes the claimed proof to the applicant.",
+      "masked_fidelity": "Faithful.",
+      "correction_or_recommendation": "Retain attribution; do not imply the applicant’s proof claim was scientifically established."
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E5",
+      "claim": "No specific catastrophic adverse effect is established in the evidence available for this decision; the risk question is genuinely uncertain.",
+      "frozen_epistemic_status": "observed",
+      "frozen_confidence": "unknown",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "FDA-CDER-HISTORY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+          "locator": "Frances Kelsey section, first paragraph"
+        },
+        {
+          "source_id": "FDA-DRUG-EFFICACY",
+          "url": "https://www.fda.gov/media/74571/download",
+          "locator": "PDF p. 6, printed p. 8"
+        }
+      ],
+      "support": "FDA places recognition of the birth-defect association in late 1961; this does not establish absence of every serious adverse signal.",
+      "decision_time_assessment": "Cutoff spans many review events. Before November withdrawal is not equivalent to before association became known.",
+      "epistemic_status_assessment": "An absence-of-evidence statement and packet boundary are not an observed clinical fact.",
+      "masked_fidelity": "Material broadening: transparent text excludes later congenital-risk evidence from this packet; masked text generalizes to any specific catastrophe.",
+      "correction_or_recommendation": "Pin the cutoff to a dated pre-discovery review; state narrowly what this packet establishes, and audit known adverse signals for that date."
+    }
+  ],
+  "cross_case_findings": [
+    {
+      "id": "P10-01",
+      "finding": "CORE-01 E5 overstates nonrepeatability and adds an unverified treatment counterfactual.",
+      "recommendation": "Narrow to the documented 1969 research-value rationale."
+    },
+    {
+      "id": "P10-02",
+      "finding": "CORE-01 E6 merges general disease risks with uncertain marginal scientific value.",
+      "recommendation": "Separate epistemic classes and qualify stage-specific risks."
+    },
+    {
+      "id": "P10-03",
+      "finding": "CORE-02 E7 includes an explicit post-recommendation reaction.",
+      "recommendation": "Retain only prior dissent for the manifest cutoff."
+    },
+    {
+      "id": "P10-04",
+      "finding": "CORE-02 source combines event notes with a later addendum, and E5 changes the transparent epistemic proposition.",
+      "recommendation": "Qualify the source temporal role and label the statistical-sufficiency inference."
+    },
+    {
+      "id": "P10-05",
+      "finding": "CORE-03 E5 materially broadens the transparent packet and the cutoff covers changing evidence.",
+      "recommendation": "Restore the narrow packet-boundary claim and choose a dated decision event."
+    },
+    {
+      "id": "P10-06",
+      "finding": "Tuskegee review source date is 2022, not the manifest’s 2023; its full text was inaccessible.",
+      "recommendation": "Correct bibliography in a candidate revision; rely on inspected primary report for supported claims."
+    }
+  ]
+}

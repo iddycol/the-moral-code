@@ -1,4 +1,6 @@
-# Session handoff — Codex Core-12 complete; review results
+# Session handoff — source audit complete; benchmark corrections identified
+
+**Current checkpoint:** [Provenance audit and proposal 10](../docs/ai-reports/2026-09-19-core12-provenance-proposal-10.md) accounts for all 80 action evidence claims and both Repair cases. Four full evaluator inputs disclose identities; CORE-10 explicitly signals a later disaster; cutoff and Repair-design qualifications need correction. The successful run remains evidence for its supplied inputs, with these limits. [Exact interpretation wording](../docs/proposals/CORE12_INTERPRETATION_PROPOSAL_10.md) is proposed, not adopted. [Codex prompt 11](../docs/ai-prompts/MORAL_CODE_CODEX_BENCHMARK_CORRECTION_11.md) prepares an offline correction candidate on a separate branch with zero evaluator calls; it has not been executed. Live trials and Claude remain paused. Earlier checkpoints below are retained as history.
 
 **Substantive analysis completed:** [Analysis 09](../docs/ai-reports/2026-09-19-core12-substantive-analysis-09.md) recommends retaining the twelve principles while clarifying uncertainty decisions and conditional safeguards. CORE-12 authorizes no amnesty grant. All 80 action evidence entries lack claim-level source links and have unknown confidence; source manifests exist separately. Next work is a bounded provenance and interpretation revision proposal. These recommendations are not adopted rules; source, packs and live trials remain unchanged.
 

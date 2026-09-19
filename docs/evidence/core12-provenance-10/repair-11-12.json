@@ -1,0 +1,769 @@
+{
+  "audit_id": "CORE12-PROVENANCE-10-REPAIR",
+  "date": "2026-09-19",
+  "scope": "All9 frozen established_harms; key context/representation premises; all19 repair options; material victim-control/amnesty omissions",
+  "baseline": "1fc927431541f5196d79d8284ea70cb1de1f9240",
+  "pack_digest": "sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced",
+  "method": "Read exact frozen masked inputs alongside transparent packets/manifests. Verify sources and distinguish direct documentary support from interpretation, incomplete support and unavailable access. Support is not moral approval. No new evaluator calls or changes to frozen files.",
+  "cutoff_findings": [
+    "CORE11 cutoff spans1951–1952 before signature: choose an exact date before using negotiated detail or1952 agreement provisions as evidence.",
+    "CORE12 cutoff says1995 before implementation: choose exact date; July act and October amendment precede some implementation, while1996/2003 changes do not.",
+    "AZAPO1996 and final reports1998–2003 stay reveal-only. They cannot prove that amnesty was morally necessary on1995 evidence.",
+    "Statutory enactment proves a legal design existed; it does not establish resources, compliance, service capacity, effectiveness or moral defensibility."
+  ],
+  "source_registry": {
+    "AD": {
+      "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+      "title": "Bundestag stenographic record, 165th sitting, 27 September 1951",
+      "access": "read PDF text",
+      "date": "1951-09-27",
+      "cutoff": "contemporaneous",
+      "locator": "printed pp. 6697D–6698B; PDF pp.3–4",
+      "note": "Replacement for inaccessible Adenauer manifest URL. Read as the government statement, not proof of every assertion about German public attitudes."
+    },
+    "CH": {
+      "url": "https://www.claimscon.org/about/history/",
+      "title": "Claims Conference History",
+      "access": "read web page",
+      "date": "current retrospective page",
+      "cutoff": "1951 section describes pre-cutoff formation; subsequent payment and welfare outcomes excluded",
+      "locator": "1951 Formation; 1952 Luxembourg Agreements; introduction",
+      "note": "Institutional history supports founding/negotiation and broad losses, not each detailed claim or pre-signature operational feasibility."
+    },
+    "LA": {
+      "url": "https://www.konrad-adenauer.de/quellen/reden/1951-09-27-regierungserklaerung-wiedergutmachung/",
+      "title": "Original LUX-ADENAUER-1951 manifest link",
+      "access": "unverified_access: tool inaccessible",
+      "date": "1951-09-27",
+      "cutoff": "replacement AD available"
+    },
+    "L70": {
+      "url": "https://www.claimscon.org/2022/09/luxembourg-agreements-70/",
+      "title": "Original LUX-CLAIMS-70 manifest link",
+      "access": "unverified_access: tool inaccessible",
+      "date": "2022-09",
+      "cutoff": "retrospective; no use as pre-cutoff outcome evidence"
+    },
+    "LG": {
+      "url": "https://www.bundesregierung.de/breg-en/service/archive/luxembourg-agreement-1952-2132934",
+      "title": "Original LUX-GERMAN-HISTORY manifest link",
+      "access": "unverified_access: fetch failure",
+      "date": "historical reference",
+      "cutoff": "not admitted"
+    },
+    "TO": {
+      "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+      "title": "Original Government Gazette 16579, Act 34 of 1995, 26 July 1995",
+      "access": "downloaded complete PDF using curl; pdftotext inspected relevant sections",
+      "date": "1995-07-26",
+      "cutoff": "contemporaneous design after enactment and before implementation; does not prove operational delivery",
+      "locator": "original sections 1,3,4,11,19,20,25–27,29–34,42",
+      "sha256": "7e02f146e23eed4d3befca3bab1e301cd88a503623338897b6bc0c566aa1c2fd",
+      "note": "Web PDF fetch too large; original retrieved via shell. This audit uses the original Gazette for statutory details, not the amended consolidated text."
+    },
+    "TA": {
+      "url": "https://www.justice.gov.za/trc/legal/act9534.htm",
+      "title": "Original TRC-ACT-1995 manifest link",
+      "access": "unverified_access: tool inaccessible",
+      "date": "1995",
+      "cutoff": "TO is a verified replacement"
+    },
+    "TC": {
+      "url": "https://www.justice.gov.za/legislation/acts/1995-034.pdf",
+      "title": "Consolidated Act 34 of 1995 including later amendments",
+      "access": "read first 331 extracted lines; later repeat fetch timed out",
+      "date": "2025 consolidation",
+      "cutoff": "not safe as a wholesale 1995 snapshot",
+      "locator": "cover amendment list through 2003; s1 notes 1996 amendment; long-title notes October1995 amendment",
+      "note": "Use original TO. A legal design at a dated cutoff must not inherit later amendments silently."
+    },
+    "TG": {
+      "url": "https://www.gov.za/documents/promotion-national-unity-and-reconciliation-act",
+      "title": "Official Act landing page",
+      "access": "read",
+      "date": "current historical entry",
+      "cutoff": "metadata only",
+      "locator": "Commencement; Amendments",
+      "note": "Lists commencement in December1995 and selected provisions April/June1996. Pin an exact design cutoff."
+    },
+    "TR": {
+      "url": "https://www.justice.gov.za/trc/report/",
+      "title": "TRC Final Report archive",
+      "access": "archive index opened, no substantive volume reviewed",
+      "date": "1998–2003",
+      "cutoff": "post-cutoff outcome reveal only",
+      "note": "Cannot certify pre-implementation effectiveness or moral necessity of amnesty."
+    },
+    "TZ": {
+      "url": "https://www.saflii.org/za/cases/ZACC/1996/16.html",
+      "title": "AZAPO judgment",
+      "access": "unverified_access: fetch failed",
+      "date": "1996-07-25",
+      "cutoff": "post-cutoff legal review; excluded from decision premises",
+      "note": "No statement of present legal advice or legal validity is made."
+    }
+  },
+  "claims": [
+    {
+      "core_id": "CORE-11",
+      "field": "established_harms/H1",
+      "claim": "The predecessor regime systematically murdered millions of members of the targeted minority; lives, families and destroyed communities cannot be restored or priced by payment.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "AD p6698; CH 1951"
+        },
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "AD p6698; CH 1951"
+        }
+      ],
+      "paraphrased_support": "Systematic destruction and inability of payment to make victims whole are supported; the quantitative and moral components need separation.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Split quantified murder claim, other losses, and non-equivalence of money; attach a contemporary atrocity finding for the numerical scale."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "established_harms/H2",
+      "claim": "Victims suffered large-scale confiscation/destruction of property, businesses, homes, savings and livelihoods.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "AD p6698 restitution paragraphs; CH introduction"
+        },
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "AD p6698 restitution paragraphs; CH introduction"
+        }
+      ],
+      "paraphrased_support": "Large property destruction and restitution obligations are supported; the itemised asset list is not traced individually.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Retain broad expropriation/destruction; source detailed asset categories separately."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "established_harms/H3",
+      "claim": "Survivors were left with major health, disability, housing, livelihood and resettlement needs after persecution, forced labour, displacement and camps.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "AD p6698 refugee reference; CH modern welfare sections"
+        },
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "AD p6698 refugee reference; CH modern welfare sections"
+        }
+      ],
+      "paraphrased_support": "Refugee displacement is supported. Modern welfare programmes do not establish the complete 1951 health/disability needs list.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Add dated survivor/relief needs evidence; do not substitute 2013–2025 welfare spending for 1951 needs."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "established_harms/H4",
+      "claim": "The state and organisations receiving large numbers of survivors incurred substantial material resettlement/integration costs.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698 closing restitution paragraphs"
+        }
+      ],
+      "paraphrased_support": "Adenauer recognises Israel received many homeless Jewish refugees; quantified or substantial resettlement costs are not established here.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Retrieve the 1951 Israeli claim/memorandum and contemporary budgets; retain a bounded claim meanwhile."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "established_harms/H5",
+      "claim": "Many property/compensation claims cannot be solved by simple return because assets/records/owners/heirs were destroyed or dispersed.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698 restitution paragraphs"
+        }
+      ],
+      "paraphrased_support": "Ownerless Jewish property and partial restitution are acknowledged; all listed causes of claim failure are not demonstrated.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Separate ownerless property from destroyed records/assets; obtain dated claim-administration evidence for the latter."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "established_harms/H1",
+      "claim": "The prior political system and related conflict produced widespread gross human-rights violations including killings, torture, disappearances and severe politically motivated violence.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "preamble; s1 definitions; s3(1)(a); s4(a)"
+        }
+      ],
+      "paraphrased_support": "The statute identifies categories and an investigative mandate, not adjudicated prevalence or all causal attribution.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Attach pre-1995 investigative findings for widespread occurrence and specific actors; label the Act as mandate evidence."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "established_harms/H2",
+      "claim": "Victims and families often lack complete truth about what happened, who was responsible and where missing relatives or records are located.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s3(1)(a),(c); s4(b)"
+        }
+      ],
+      "paraphrased_support": "Truth and locating victims are statutory objectives; frequency and each family-specific deficit are not measured.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Keep the recognised information gap; remove unsupported frequency or add dated victim evidence."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "established_harms/H3",
+      "claim": "Ordinary prosecution faces practical limits including missing evidence, destroyed records, secrecy, time and the negotiated nature of transition.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s4(d); preamble"
+        }
+      ],
+      "paraphrased_support": "Destroyed-article inquiry and transitional aims are explicit; relative prosecutorial capacity is not established.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Move prosecution feasibility to uncertain decision premise, with dated investigative/resource evidence; do not infer amnesty necessity."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "established_harms/H4",
+      "claim": "Blanket impunity would deny accountability and risk normalising severe political violence.",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "preamble; s20"
+        }
+      ],
+      "paraphrased_support": "This is a moral and predictive argument about impunity, not an established past harm.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Move to normative risk/constraint; preserve its contestability rather than label substantially established."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_context/acknowledgement",
+      "claim": "The successor state's leader publicly accepts a moral/material restitution obligation for crimes committed in the country's name while rejecting collective personal guilt of every current citizen.",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698"
+        }
+      ],
+      "paraphrased_support": "Adenauer acknowledged material/moral obligations and distinguished population involvement.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Attribute the statement to Adenauer; do not treat his description of popular non-participation as an independently established fact."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_context/representation",
+      "claim": "A coalition of victim organisations seeks direct restitution and compensation for survivors living both inside and outside that state.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "1951 Formation; introduction"
+        }
+      ],
+      "paraphrased_support": "A coalition of 23 organisations formed in1951 to negotiate claims; authority for every individual survivor is not established.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Separate existence/negotiating aims from individual mandate; representation cannot establish unanimous consent."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_context/opposition",
+      "claim": "Many survivors nevertheless oppose negotiations or payments from the perpetrator state, fearing that money demeans victims or implies that mass murder can be settled financially.",
+      "status": "unverified_access",
+      "sources": [
+        {
+          "source_id": "L70",
+          "url": "https://www.claimscon.org/2022/09/luxembourg-agreements-70/",
+          "locator": "L70 inaccessible; CH1951"
+        },
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "L70 inaccessible; CH1951"
+        }
+      ],
+      "paraphrased_support": "Accessible history states financial repair cannot atone for annihilation but does not establish extent of opposition.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Add contemporaneous debate or survivor-organisational resolutions; preserve dissent as a design concern without unsupported prevalence."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "responsible_actors/present citizens",
+      "claim": "present citizens/taxpayers as individuals",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698"
+        }
+      ],
+      "paraphrased_support": "Absence of inherited guilt does not establish that every then-present citizen lacked individual responsibility.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Use not-responsible-merely-by-membership; retain individually attributable perpetrator/beneficiary responsibility."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_context/negotiated transition",
+      "claim": "The transition was negotiated rather than produced by total military defeat.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "preamble"
+        }
+      ],
+      "paraphrased_support": "The text supplies constitutional reconciliation context, not comparative military history.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Add contemporary negotiating records; preserve the distinction from assumptions about prosecution impossibility."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_context/disclosure",
+      "claim": "Evidence is incomplete and many perpetrators retain knowledge that may never become public through ordinary prosecution.",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s3(1); s4(d); s20"
+        }
+      ],
+      "paraphrased_support": "The statutory strategy seeks disclosure; comparative disclosure yield is not demonstrated.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Separate information-gap facts from the amnesty incentive hypothesis; do not present predicted necessity as established harm."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "affected_parties/victim preferences",
+      "claim": "some may prefer conditional truth/amnesty to permanent secrecy; others reject amnesty",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s11; s19(4)"
+        }
+      ],
+      "paraphrased_support": "Victim participation is provided; the Act does not measure preferences.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Label anticipated plural preferences; obtain dated testimony before asserting actual distribution."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R1",
+      "claim": "Publicly acknowledge successor-state material responsibility while explicitly rejecting inherited personal guilt.",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698"
+        }
+      ],
+      "paraphrased_support": "Acknowledgement already occurred.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Known feasibility is defensible for public acknowledgement, not resulting reconciliation.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Acknowledgement does not require forgiveness."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R2",
+      "claim": "Restore identifiable confiscated property or equivalent value where return is feasible.",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698"
+        }
+      ],
+      "paraphrased_support": "Some identifiable property had already been returned.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Keep possibly feasible; do not generalise to every asset or equivalent payment.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "Claimants choose whether to pursue restitution."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R3",
+      "claim": "Provide large-scale goods/material payments to the survivor-resettlement state for documented resettlement burdens without treating the transfer as the value of murdered lives.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "ADp6698; CH1952"
+        },
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "ADp6698; CH1952"
+        }
+      ],
+      "paraphrased_support": "Negotiation willingness existed; later signature is hindsight for a pre-signature implementation claim.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Downgrade to possibly feasible pending dated finance, logistics and negotiated terms.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Must not extinguish personal claims absent authority."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R4",
+      "claim": "Create a separate direct-victim/claims-coalition mechanism for survivor compensation and relief outside the resettlement state.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "CH",
+          "url": "https://www.claimscon.org/about/history/",
+          "locator": "1951 and1952 sections"
+        }
+      ],
+      "paraphrased_support": "A negotiating organisation existed; later law/administration is not pre-signature delivery proof.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Downgrade known feasible or attach dated administrative authority and financing.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Survivors may accept or refuse payments without losing victim status."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R5",
+      "claim": "Continue evidence-based criminal/civil action against identifiable perpetrators independently of reparations.",
+      "status": "inference",
+      "sources": [],
+      "paraphrased_support": "A proposed accountability track, without case-specific feasibility evidence.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Keep possible and list jurisdiction, evidence, capacity and limitations as unknowns.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "Reparation does not create immunity."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R6",
+      "claim": "Reform restitution/claims law so persecution-caused evidence destruction does not automatically defeat remedy.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "p6698"
+        }
+      ],
+      "paraphrased_support": "Restitution legislation was promised; the specified documentation accommodation is not established.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Treat evidential accommodation as proposed reform; demonstrate legal and administrative implementation separately.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Victim organisations should participate in rules and appeals."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R7",
+      "claim": "Maintain constitutional, educational and institutional safeguards against recurrence.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "AD",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "locator": "pp6697–6698"
+        }
+      ],
+      "paraphrased_support": "Constitutional equality and educational measures existed; durable prevention was not proved.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Distinguish available institutions from effectiveness and sustained capacity.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Public duty; no survivor reconciliation required."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R8",
+      "claim": "Allow voluntary future reconciliation but never make it a condition of material repair.",
+      "status": "inference",
+      "sources": [],
+      "paraphrased_support": "Voluntary reconciliation is a design choice, not a predictable achieved result.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Retain as optional principle; no prediction that reconciliation will occur.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "Victims may reject reconciliation."
+    },
+    {
+      "core_id": "CORE-11",
+      "field": "repair_options/R9",
+      "claim": "Reject formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.",
+      "status": "inference",
+      "sources": [],
+      "paraphrased_support": "Refusal is logically available; its consequences are not established by that fact.",
+      "cutoff_assessment": "Pre-signature support only; later compensation delivery excluded.",
+      "recommended_correction": "Describe as available policy choice rather than demonstrated repair feasibility.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Protects a serious dignity concern but does not resolve material losses or represent every survivor."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R1",
+      "claim": "Independent public truth commission investigating gross violations, receiving victim testimony and publishing findings.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "ss2–4,7,11,29,31,33"
+        }
+      ],
+      "paraphrased_support": "Commission powers are specified; absolute voluntary testimony is not.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Separate statutory establishment from operational readiness and proposed victim-control safeguards.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Victims choose whether/how to testify; privacy/protection available."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R2",
+      "claim": "Individual amnesty only on application, for acts associated with political objectives and only after full disclosure; no blanket status-based amnesty.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "ss18–20, especially20(7)"
+        }
+      ],
+      "paraphrased_support": "Individual application/full disclosure are designed; linked civil-liability effects extend beyond applicants.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Add state/organisation/vicarious civil-liability consequences; legal design does not prove moral legitimacy or delivery.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Victims receive notice/voice; amnesty does not require their forgiveness."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R3",
+      "claim": "Preserve prosecution/civil accountability for people who do not obtain qualifying amnesty and where evidence supports action.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s20(7); ss29–31"
+        }
+      ],
+      "paraphrased_support": "Amnesty has bounded effects; compulsion-derived evidence restrictions also matter.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Preserve prosecution only with lawful admissible evidence; quantify capacity separately.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "Accountability remains individualised and due-process bounded."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R4",
+      "claim": "Provide material reparation to victims/families rather than offering testimony alone.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "ss25–27,42"
+        }
+      ],
+      "paraphrased_support": "Recommendations and a funding route exist, not fixed adequate awards or payment dates.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Keep possibly feasible and specify appropriation, eligibility, amounts, deadlines and enforcement as open.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "No forgiveness condition."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R5",
+      "claim": "Medical, psychological, social and community support for continuing harm.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s1 reparation; ss25–27,42"
+        }
+      ],
+      "paraphrased_support": "Rehabilitation is within the statutory remit; service capacity is not proven.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Downgrade known feasible absent dated budget, staffing and delivery plans.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Participation voluntary."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R6",
+      "claim": "Assist with remains, records, status/property restoration and case-specific restitution where feasible.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s3(1)(c); s1 reparation"
+        }
+      ],
+      "paraphrased_support": "Locating victims and broad restitution are within remit; every proposed restoration is not demonstrated.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Keep possible; assess each remains/property/status remedy and family rights separately.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "Families control sensitive information/remains decisions within lawful constraints."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R7",
+      "claim": "Reform policing, security, courts and public institutions implicated in abuse and add non-recurrence safeguards.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s4(h)"
+        }
+      ],
+      "paraphrased_support": "Institutional reform recommendations are provided, not implemented reform capacity.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Downgrade known feasible; source institution-specific powers/resources.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "Affected communities participate in oversight."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R8",
+      "claim": "Preserve testimony, archives and memorials.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s3(1)(d); s10(3); ss31,33"
+        }
+      ],
+      "paraphrased_support": "Reports/records are required; memorial delivery and absolute non-compulsion are not established.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Separate archive duty, proposed memorials and victim consent safeguards.",
+      "frozen_feasibility": "known_feasible",
+      "frozen_victim_control_note": "No compelled public testimony."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R9",
+      "claim": "Support reconciliation only as a voluntary process emerging from truth, repair and reform.",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "preamble; s3"
+        }
+      ],
+      "paraphrased_support": "Reconciliation is an aim; voluntary social reconciliation cannot be guaranteed.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Treat voluntary participation as proposed safeguard and outcome as uncertain.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "No duty to forgive."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R10",
+      "claim": "Reject amnesty and rely primarily on prosecution/civil claims despite transition/evidentiary constraints.",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "preamble"
+        }
+      ],
+      "paraphrased_support": "The existing constitutional framework contemplated amnesty; rejecting it is a counterfactual option with legal constraints.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "State counterfactual status and need to change existing framework; do not call prosecutions impossible or reduced disclosure certain.",
+      "frozen_feasibility": "possibly_feasible",
+      "frozen_victim_control_note": "May strengthen accountability but reduce disclosure where evidence is weak."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R1/victim_control_note",
+      "claim": "Victims choose whether/how to testify; privacy/protection available.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "ss11(e),29,31,33"
+        }
+      ],
+      "paraphrased_support": "Privacy/protection provisions coexist with compellability.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Mark free choice over all testimony as an added safeguard, not a blanket statutory fact. This can remain a proposed additional safeguard if explicitly labelled as such; it is not evidence that the packet author claimed the enacted Act already guaranteed it."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R8/victim_control_note",
+      "claim": "No compelled public testimony.",
+      "status": "unsupported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "ss29,31,33"
+        }
+      ],
+      "paraphrased_support": "Compulsion and default-public hearings exist; protective closure is discretionary.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Do not certify this as existing design. State the intended safeguard and explain how it modifies powers. This can remain a proposed additional safeguard if explicitly labelled as such; it is not evidence that the packet author claimed the enacted Act already guaranteed it."
+    },
+    {
+      "core_id": "CORE-12",
+      "field": "repair_options/R2/omitted_effect",
+      "claim": "Individual amnesty only on application, for acts associated with political objectives and only after full disclosure; no blanket status-based amnesty.",
+      "status": "partially_supported",
+      "sources": [
+        {
+          "source_id": "TO",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "locator": "s20(7)(a)–(c)"
+        }
+      ],
+      "paraphrased_support": "The description omits civil and vicarious immunity for others and a provision concerning deceased persons.",
+      "cutoff_assessment": "Original July1995 statutory design is admissible to a pre-implementation question; implementation and 1996 judicial review excluded.",
+      "recommended_correction": "Add exact scope of lost claims so victims-rights analysis considers the real bargain, including state/organisation liabilities."
+    }
+  ],
+  "counts": {
+    "partially_supported": 24,
+    "inference": 9,
+    "supported": 3,
+    "unverified_access": 1,
+    "unsupported": 1
+  },
+  "interpretation_limit": "Repair options are proposed choices, not automatically assertions about the enacted historical design. Unsupported means unsupported as a description of that design or as a demonstrated feasibility label. Proposed extra safeguards may remain if marked counterfactual and evaluated as a modified proposal. The audit does not require every normative option to have already occurred."
+}

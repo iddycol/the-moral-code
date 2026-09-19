@@ -1,0 +1,495 @@
+{
+  "scope": "Exact text and coverage validation only; support judgments remain reviewable.",
+  "action_claims": 80,
+  "action_status_counts": {
+    "inference": 21,
+    "partially_supported": 19,
+    "supported": 38,
+    "unverified_access": 2
+  },
+  "repair_harms": 9,
+  "repair_options": 19,
+  "repair_rows_total": 38,
+  "action_index": [
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E4",
+      "status": "partially_supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E5",
+      "status": "partially_supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E6",
+      "status": "partially_supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E4",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E5",
+      "status": "inference",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E6",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E7",
+      "status": "partially_supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E4",
+      "status": "supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E5",
+      "status": "partially_supported",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E4",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E5",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E6",
+      "status": "partially_supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E7",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "evidence_id": "E8",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E4",
+      "status": "inference",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E5",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E6",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E7",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "evidence_id": "E8",
+      "status": "inference",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E2",
+      "status": "partially_supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E4",
+      "status": "inference",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E5",
+      "status": "inference",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E6",
+      "status": "inference",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E7",
+      "status": "inference",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "evidence_id": "E8",
+      "status": "supported",
+      "ledger": "sources-04-06.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E1",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E2",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E3",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E4",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E5",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E6",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E7",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E8",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E9",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "evidence_id": "E10",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E1",
+      "status": "unverified_access",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E3",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E4",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E5",
+      "status": "unverified_access",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E6",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E7",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E8",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "evidence_id": "E9",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E2",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E3",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E4",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E5",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E6",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E7",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E8",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E9",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E10",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E1",
+      "status": "supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E2",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E3",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E4",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E5",
+      "status": "partially_supported",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E6",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E7",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E8",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E9",
+      "status": "inference",
+      "ledger": "sources-07-10.json"
+    }
+  ]
+}
