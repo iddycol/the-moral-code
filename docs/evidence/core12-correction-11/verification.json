@@ -1,0 +1,702 @@
+{
+  "source_commit": "e9b8abe3a4d97f89237a7ff0c66284c62deec91b",
+  "red_test_commit": "800489f49a91c5d1c91e9692b4eeaece7758ba1f",
+  "starting_revision": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+  "prompt_blob": "35a671ad30d59278b0147ad8db05185c0dce6ccf",
+  "prompt_introducing_commit": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+  "benchmark_evaluator_calls": 0,
+  "new_pack_created": false,
+  "interpretation_changes_adopted": false,
+  "tests": {
+    "baseline": "66 passed in8.03s",
+    "focused_red": "5 failed,12 passed in0.40s before source edits",
+    "focused_green": "17 passed in0.47s",
+    "full_local": "1 failed,82 passed in8.31s",
+    "command": "python -X utf8=0 -m pytest -q engine/scales/reference_runner/tests",
+    "failure": "Unmodified test_committed_pack_matches_the_checked_out_sources correctly rejects changed candidate binding-profiles-v0.1.json against unchanged v0.1.3 pack",
+    "skipped": 0,
+    "existing_test_files_unchanged": true,
+    "log_receipts": {
+      "baseline-tests.txt": {
+        "sha256": "940d94c06ad6f9336c92399c5cc4ce52e0673068dff788044bd09c22ecd2ac92",
+        "bytes": 101
+      },
+      "red-tests.txt": {
+        "sha256": "36cb0136722e052fcfb6f17d4c6aec31cfb533bd06d97e135643d782336613e3",
+        "bytes": 12857
+      },
+      "green-boundary-final.txt": {
+        "sha256": "2c13e983871c26ecc34732884717b747a8b95378a653382660aecea81bf72f00",
+        "bytes": 101
+      },
+      "full-candidate-tests.txt": {
+        "sha256": "f88f9d18b0dd90275a9b1d43ce5eb87f54d60066767309fd44c65e5504f55802",
+        "bytes": 1668
+      }
+    }
+  },
+  "validators": {
+    "historical": "16 cases,32 decision packets,16 reveals passed",
+    "benchmark": "12core,7extension passed",
+    "bindings": "10action,2repair passed"
+  },
+  "historical_preservation": {
+    "tracked_start_files": 1159,
+    "unchanged_at_source_commit": 1120,
+    "candidate_changed_tracked_files": [
+      ".github/workflows/scales-reference-runner.yml",
+      "crucible/benchmark/binding-profiles-v0.1.json",
+      "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+      "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "crucible/historical/cases/HC-0002-challenger-launch-1986/outcome-reveal.json",
+      "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "crucible/historical/cases/HC-0003-thalidomide-fda-1960/outcome-reveal.json",
+      "crucible/historical/cases/HC-0101-nsw-child-removal-1915/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0101-nsw-child-removal-1915/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0101-nsw-child-removal-1915/manifest.json",
+      "crucible/historical/cases/HC-0102-blood-citizenship-laws-1935/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0102-blood-citizenship-laws-1935/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943/manifest.json",
+      "crucible/historical/cases/HC-0104-second-atomic-use-1945/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0104-second-atomic-use-1945/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0104-second-atomic-use-1945/manifest.json",
+      "crucible/historical/cases/HC-0107-montreal-protocol-1987/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0107-montreal-protocol-1987/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0107-montreal-protocol-1987/manifest.json",
+      "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/manifest.json",
+      "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/outcome-reveal.json",
+      "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/manifest.json",
+      "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/manifest.json",
+      "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json"
+    ],
+    "protected_pack_and_run_files": 871,
+    "protected_manifest_digest_sha256": "f944900c56dc5abea201abbf56717a901235707d94dc382ff44a7b01510cefbd",
+    "original_pack_digest": "sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced",
+    "original_source_commit": "1fc927431541f5196d79d8284ea70cb1de1f9240",
+    "original_source_hashes_verified": 29,
+    "old_pack_digest_recomputed": true,
+    "new_pack_present": false,
+    "method": "Byte SHA256 comparison against pre-edit snapshot of every1159tracked file;29Git source blobs independently checked at original source revision; unchanged original worktree additionally confirmed clean."
+  },
+  "final_boundary": {
+    "envelopes_built_in_memory": 84,
+    "model_or_provider_calls": 0,
+    "new_frozen_file_written": false,
+    "all_selected_actions_questions_outputs_preserved_in_both_modes": true,
+    "case_results": [
+      {
+        "case_id": "CORE-01",
+        "mode": "action",
+        "input_digest": "sha256:9186a25f6edb892b7f1011c8ea49409c0bd0d34030277a49c9e9fb586ddfb6be",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:71f7811ab67d46f1f4a8cd84fddfb5738f3ae17e5db01cbfd60a302a05c05733",
+          "sha256:7443819906d81bf363c63016c15646b8116aea75a2ef7efd4878b31fd61acea3",
+          "sha256:1035b7139774aab13d8884a04945e6bc74ae0f849891b760da96fcbdb6dbd26c",
+          "sha256:c9c8274cb5e7b13b1482e2691c978d43fc0586f35901100453a244f44c2b6a9e",
+          "sha256:34f4247b2506f7abf648339071354f2e46b60a0cd6d715444ee06d6ff10cecd1",
+          "sha256:e4e5e1f8394a67f7e7cf16c40b2e4999f007d342ffe6b2dd6de091748fca7375",
+          "sha256:3b84709ab80bb5719c04859e7343d52826a765cbbcf7907f3340551e39070425"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Continue observation without routinely offering the established curative treatment to the infected study group.",
+        "evidence_count": 7
+      },
+      {
+        "case_id": "CORE-02",
+        "mode": "action",
+        "input_digest": "sha256:9402eabfa62e00fbfd47ce92687eee2a80d7109a46a13b1c4cdf84ea07e11ef1",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:a7ae436114a35f5ef896c3115ba881467e4c5c3d14db3ddb15d8e62f0567a6b4",
+          "sha256:1a9fcfdd7f10be1950b88a3b45b9b6092491a48bd8e24bf291df88c53f2499bd",
+          "sha256:44757882a3316707ad058207dc25bf1a23f35b5a8e5f695a7f1af79b4b5f497a",
+          "sha256:bc6e67ff017f414a908547717e12280216fa7bfbc17fbfeb851fd1d73e6b6d41",
+          "sha256:7b1547a2cb4eb9281de7d5859380b96dd60abddff5d264a0ac1dc9ba13abc00e",
+          "sha256:fcc4c9112652d9275347f713e36593d526e277710d045d78fb2c2f04e7401b25",
+          "sha256:e9f2bc51a500a825cf80061279a3aa6cefbab2c45fb81495fef90e4298d7025f"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Reverse the recommendation and approve the scheduled mission despite colder conditions.",
+        "evidence_count": 7
+      },
+      {
+        "case_id": "CORE-03",
+        "mode": "action",
+        "input_digest": "sha256:a2c3b3855e5abc04f300931ccae7e1070abe59247bfe1c7d27122edac1dc0d1b",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:2544f37efff72e64cc2d985d83e8a85a730f5e6e6f20b18b144020d55c27af4d",
+          "sha256:b5d9e8f192a5dda5b191aceaab2c02d5eff906cb41cf2b7002499157c8a94833",
+          "sha256:283b4fb36d25769fbe4c7821ee6c9334ae8057773265f923094d2cf478f7f434",
+          "sha256:b6c80cb0d06a7291eaa53c65f1d726cbf7f086b4846f9a4ed439e1206eea7ce5",
+          "sha256:2de2648c111975812bfad2eb36cc9948bd767f3b81e432bde3317064661e7e4f",
+          "sha256:0c24a3188e482ad71860d1605f4a32c6babee383655531ac6c2c35bd0c91ea53",
+          "sha256:c30c9732258dc5f6b458532453833ebb04b398292ff303d4c41a52524197e4b3"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Continue to find the application incomplete and require stronger reliable safety evidence.",
+        "evidence_count": 6
+      },
+      {
+        "case_id": "CORE-04",
+        "mode": "action",
+        "input_digest": "sha256:788ea7b92450a1f57b689fd5b91b35b53abaa6b6d45c00372b4df3ad4db2f38d",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:79497c9695068350e23779492c5127bae3cc0186f1d95523d39662a78235feb6",
+          "sha256:30926ae7bece2c209cbfb0bb7709f3ade6088cd53a3d1fbc4bfdef1fb17f5d04",
+          "sha256:e746b6695a7effe23a9a7fdc86feddee1471f09ae9e98fe6ba27dbabc7264a04",
+          "sha256:b8783a7a83c302410bd49354833e99f4d2627902302400fb9380f4433cd3a99a",
+          "sha256:80ecf6739d89a742f2be1ab057359c2e4c2e72dbeb72752d40259f70d0f4059a",
+          "sha256:846b93a42855cf89f41c9af742c5ba321087fcfc83edfaa759c4f5d15fa661bd",
+          "sha256:dc7ff35b037e788ea0bac5783958939642a49cd63b9cb27b2cf6510cd0733c5a"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Grant the Board the proposed direct welfare-removal power, with parents able to appeal after removal.",
+        "evidence_count": 8
+      },
+      {
+        "case_id": "CORE-05",
+        "mode": "action",
+        "input_digest": "sha256:431e784a670b3b011b437cdf0e7686ecc01487090e410f48f0239e93a983e6b3",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:96eb4e201184d8206ed0a887fd6350b1b3afe70c1be02f07b3c4048c913c1e82",
+          "sha256:b82590d2fd3bff668aaf616bbc92fac7e91c64a8030129b65db02aaf6d5268c0",
+          "sha256:cbf3b8a2e66e46e62d2679268f09a72c8c0e13fbfbd180dfa2b5c696045e89b0",
+          "sha256:c29d711df7159d94f51231e6dc06dc2356753274de0f81d8f0a3c8581c86c02f",
+          "sha256:b5c2171fee72ead95a72b9aea6d864f07594b1e4f7d7b3183617690b1d431495",
+          "sha256:4c6fca6b67414c7911d08ee07b27377f27bb54f2b0bea5aa2cd8b6912b532108",
+          "sha256:603f54ed5cc04e66a00f01dad2a4e380acf4a5734610e34c93581e0e0783e5c0"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Enact the proposed blood-based citizenship and intimate-relationship restrictions.",
+        "evidence_count": 8
+      },
+      {
+        "case_id": "CORE-06",
+        "mode": "action",
+        "input_digest": "sha256:c980142a4f35eccf5bd6b33e5e58cfd026234e5c78a806e66035a1779e2159f9",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:a16ed815622797fd37e2946702ca31e32640da60b847528952d484ba4e62c618",
+          "sha256:ed8e94beda65e6c1db0352ca67450584c61b416aecf75633dae3fc3e4262299d",
+          "sha256:bfa64300606dff8373b6b4ae1d7892fe7b54e32babcb59ca8b590043e079a446",
+          "sha256:4ea650151666050114f349e5183ef3e6b3ef308717c600742298438c91046003",
+          "sha256:58f69522d2338d8d618a16f99bcad7a488d2439763dc367a06b3c8ed4b8ce2c0",
+          "sha256:672c56408bf55fd8444607cec1e5e6e19bc9925e632564065172c15390798f41",
+          "sha256:df9bb830622575f0f46f4a9365c9662b5d95423a536066a997691c71afe43350"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Offer temporary sanctuary to the targeted minority and close relatives who can reach the neutral state during the emergency.",
+        "evidence_count": 8
+      },
+      {
+        "case_id": "CORE-07",
+        "mode": "action",
+        "input_digest": "sha256:162ca867af9b75976995642787adc34cb774db2b4a6bdc9eee46adb43a1c41f2",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:0e4b27e88def3cf4f4a8fd80e9f9d0db2180abd184b7b04edd824231a6fa0d89",
+          "sha256:7014e007a131f41816e930870516e50148e2e431010b909dc81b40be115dc234",
+          "sha256:3b92252ce4d798af40b46c572d51639131a42d93a4b3fde387d7c50c52905b26",
+          "sha256:99815417b4cf58801a4fa2f306d0acf1e66add025d6647f6efc45a1f1a667c31",
+          "sha256:1cb98eac3378eb5a320bcdd0ee66f6c2cc5a93c25dd06b633588d7cdd423eaf9",
+          "sha256:d52a7a9872a05d63eba6323ee9f7091b7835ce3bac7ef6470c42e47187dc9438",
+          "sha256:7fc38f6e063522a566e62e476363dab58b4b8657f270d114844234d3c66664c3"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Allow the standing order to continue and execute the second city attack as soon as operationally ready.",
+        "evidence_count": 10
+      },
+      {
+        "case_id": "CORE-08",
+        "mode": "action",
+        "input_digest": "sha256:fd63632a0f6a3b7d6de9166942abe92a6bc420d34b5bb846050e146e97d3de0a",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:5b8ad84ecba19ec8ceb54ab50ac6e134620200a393ad29e83366147c990ad93e",
+          "sha256:7251e8d311bc788baa20627ec56a717a1c24f800a7f78b96302186d01956e299",
+          "sha256:fa8457dda61dc863a0d5542aafa137f012704db8ab2f48603473ef22f8f2559d",
+          "sha256:33b24574ab7c5813fd8a5ddc76eb3aa44957c592a3fce628806aa4f6b9612a2b",
+          "sha256:909e94c79fc34758ea0df04c18c214d39496fee445031e5bee0e08fa61fa9af9",
+          "sha256:40b9af5b2e406f3998b27c2a6ebf1503e19df8e9b58d8d2518d6f08a83ce4040",
+          "sha256:c5024011c7072dc6ccd97c9a9d6d9821586eca82dd309321d05542db146c8f3e"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Adopt binding staged production/consumption controls with differentiated implementation and periodic review.",
+        "evidence_count": 9
+      },
+      {
+        "case_id": "CORE-09",
+        "mode": "action",
+        "input_digest": "sha256:691256983c62ad955d0dc7440675a5a8e6009b07295a3b51f5989817fb13c807",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:314435948cd267225299cd6ab692faed6f9b685e0c1afc10918e0e462fe00b80",
+          "sha256:72ec4867e89d87629b8279438c04bf8ff66ebc979ce608ca3a2cdc87c611b009",
+          "sha256:3933ddb8fecb268a309d0be73b70d3d6c2f08a7fd058a1eb5021510d49ac8ffc",
+          "sha256:e21477d3a5b19de0255b67c2c318806dac5148f103db33a354040dbfecc390d8",
+          "sha256:512f0adc589ed811575c005ecf51611d776eb337c0f12f61b2595483b81bc55d",
+          "sha256:744ebcb46e52328fb106b599e4f288852dfb50ad92397825eb70cd09949d4662",
+          "sha256:ad5d9cae79ee0347f0d307683b3e297754b74f9a4c9337f6b2367fdff2dcc229"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Select among medically eligible candidates using broad comparative social information such as occupation, income, education, family role, perceived community contribution and personal history.",
+        "evidence_count": 10
+      },
+      {
+        "case_id": "CORE-10",
+        "mode": "action",
+        "input_digest": "sha256:2883e30e49afd5427987891220324dacebabcbdda319c7a80c166fba4f7f9a5d",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:c1f354cbb35cf1a26371faef7815f5f0f733637bd7515d5729b1740af8a5dba6",
+          "sha256:9e873010d39424e7a935b6ec151bcdea79a77933967f550d867e6e048bedc832",
+          "sha256:619299c6c7a86c628d76193d9879f1cc732198e8ef14368d39421fc557ba2500",
+          "sha256:c7cb90ad4a6469d95481b5d015dab0bbb75b60e96a3183497dec3941e6209c1e",
+          "sha256:3564bcb11c89fd6dd15c30c24348d3d2299a2391de71262370b2b269eabea57e",
+          "sha256:73d9162d5d8eb9ed87833dcd21c6ed62c26eca53fddfc736f9389306efbf579d",
+          "sha256:99d93425b5f8e4d4738c21a6c76b0847ecff9eadb805c186917c90221db5bad2"
+        ],
+        "external_provenance_loaded": false,
+        "selected_action": "Maintain current access-control practices, including locking or tightly controlling selected exits during work to prevent theft/unauthorised departure, while relying on existing escape/fire-response arrangements.",
+        "evidence_count": 9
+      },
+      {
+        "case_id": "CORE-11",
+        "mode": "repair",
+        "input_digest": "sha256:eb0cb3c22f4cb71653dbb5265e8dff4d64f0e67892fb5c45caa7aef80ddbe3f1",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:76a866ad32ff3f4e12d849711d4d6eef4045daad6a416d9cdb6181196c3ac8a0",
+          "sha256:24ed8d88f57e814f4984d39d79b30ec6cb8c59b950ebb1dcfd23e0268e611160",
+          "sha256:7a32719565bcead84736317db8a516e0c278d023782a3a6066b3e3d4eebc2412",
+          "sha256:7da6b7da31c40331693a539e8e39591b60550eb24530f3db649975580e6cbfe7",
+          "sha256:bb74cc49949f6df1083a659013d8d9ecf506c632dc351e1d5466d753313af66d",
+          "sha256:717f658011b834f64c22c437ae3a596944cc409039abd922ebcf76a9dc80f15b",
+          "sha256:a7a73eb13a26c09ba71626bd8acbbdbf377c7517634e9a10471f404fda61609f"
+        ],
+        "external_provenance_loaded": false,
+        "known_feasible_option_ids": [
+          "R1",
+          "R9"
+        ]
+      },
+      {
+        "case_id": "CORE-12",
+        "mode": "repair",
+        "input_digest": "sha256:af5e4ba4cf09308f062984950ed41461ef0a447b46ef995385bb38e60f4eab57",
+        "role_and_reconciliation_envelope_digests": [
+          "sha256:557f1bfb7a6888ba786db8779c05f2be94cdcf8a705e164544dbd6eb71ee5cb0",
+          "sha256:16d26c970d18b27366b496c7009c56e9410dcf9e7ba72a31dc06cc9e6d9029ce",
+          "sha256:02998a9091d0adc0dcfe557fce3e8f0d7acbdee340d15b6bffed169c0e637dc1",
+          "sha256:ffe72085781a1721b9b3b2df588814dafe3e39787cb428b1572f480d05128902",
+          "sha256:4795bed20a015d0fbc3030c6bbc7f9417c2d99011e9baee8fb3630d32091b6aa",
+          "sha256:826ff7e48d165f0a462baa3991011c80ebcad7bcd3409155497cb557f19e8e2b",
+          "sha256:d84231f04e950a60acf05f433cdf55193591fb76fcb10a1ce55a10a231170a6c"
+        ],
+        "external_provenance_loaded": false,
+        "known_feasible_option_ids": []
+      }
+    ]
+  },
+  "ci": {
+    "run_id": 35426434229,
+    "url": "https://github.com/iddycol/the-moral-code/actions/runs/35426434229",
+    "jobs": [
+      {
+        "job_id": 105853097750,
+        "name": "validate-scales-pilot (ubuntu-latest)",
+        "conclusion": "failure",
+        "head_sha": "e9b8abe3a4d97f89237a7ff0c66284c62deec91b",
+        "url": "https://github.com/iddycol/the-moral-code/actions/runs/35426434229/job/105853097750",
+        "summary": "2026-09-19T06:23:00.5371537Z 1 failed, 82 passed in 6.00s",
+        "failure": "test_committed_pack_matches_the_checked_out_sources: preserved v0.1.3 source hash mismatch",
+        "started_at": "2026-09-19T06:22:45Z",
+        "completed_at": "2026-09-19T06:23:02Z"
+      },
+      {
+        "job_id": 105853097777,
+        "name": "validate-scales-pilot (windows-latest)",
+        "conclusion": "failure",
+        "head_sha": "e9b8abe3a4d97f89237a7ff0c66284c62deec91b",
+        "url": "https://github.com/iddycol/the-moral-code/actions/runs/35426434229/job/105853097777",
+        "summary": "2026-09-19T06:23:17.7029300Z 1 failed, 82 passed in 9.28s",
+        "failure": "test_committed_pack_matches_the_checked_out_sources: preserved v0.1.3 source hash mismatch",
+        "started_at": "2026-09-19T06:22:45Z",
+        "completed_at": "2026-09-19T06:23:20Z"
+      }
+    ]
+  },
+  "source_remote_readback": {
+    "commit": "e9b8abe3a4d97f89237a7ff0c66284c62deec91b",
+    "baseline": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+    "verified_changed_files": 51,
+    "method": "GitHub REST recursive tree plus fetched blob bytes compared against local committed bytes",
+    "files": [
+      {
+        "path": ".github/workflows/scales-reference-runner.yml",
+        "git_blob": "0beefeff845cc725194d0c7220aa0d82a3dbac6b",
+        "sha256": "c293f3a88392bec96f1682ed2656e2185b8d078b43803e9a06d6a4a0a210bdaf",
+        "bytes": 1228,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/benchmark/binding-profiles-v0.1.json",
+        "git_blob": "f4c2cbcc9ba9ea6edf070fc6ae66dba1457be3df",
+        "sha256": "6de58a24a1d89193038c4dbd55f95580ed666357da4af832bfda81ce8b7eff63",
+        "bytes": 5310,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+        "git_blob": "27a0238bc896d72a79bc3ff85defb7901202b639",
+        "sha256": "cdcc2e0a488566babf3008a3a19ee01e945c852ff44ad2872133cec7ccc3d93c",
+        "bytes": 4614,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+        "git_blob": "68d411f0420fcc3a234c7716c495c47f1d2ab5aa",
+        "sha256": "dc2bb258c484252bca852303a14764f2eee93832db64e5b23291234780a8c6c8",
+        "bytes": 4739,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+        "git_blob": "679b4d3af2bc748d35561e1980bb0aabc725f932",
+        "sha256": "02801ba0517f23a337e013305fd0934bb8e99369389d6bdd8e07a7c617c20267",
+        "bytes": 4222,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-masked.json",
+        "git_blob": "88c26483c3819b4cf9f473b9ac0991873b0f5a9b",
+        "sha256": "f6649a4d0cf38ea1e36a5444bb10a7bbf58083a868f71899742e5967f1aefa3a",
+        "bytes": 5030,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+        "git_blob": "8e9a462d4dbc823f1303cb5a28b5e78dc619e86c",
+        "sha256": "36172ad60910c8c46306feb42d30dca84c51f6ed6a784cc40514a31bba7234fd",
+        "bytes": 5549,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+        "git_blob": "8c1982857b952b43fa51898442d83997ae1b80ee",
+        "sha256": "d850cc5da4655c02c54cfd16983151c30146348eaa72acfa1185b2ff453a950a",
+        "bytes": 3503,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0002-challenger-launch-1986/outcome-reveal.json",
+        "git_blob": "c8a877517b688406447e0380dcc6efecbc1b823f",
+        "sha256": "9221b96a1cad88a673c0da0c37336df83b1d1996d08a06bfb531ac3f148c2211",
+        "bytes": 1623,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+        "git_blob": "5606b535c960edf6f44a8d9cf9ea5ee97aa1922c",
+        "sha256": "d1b954578fda11d626bf04354ad6b2e257d771b2b6285763c8f40712c8700a3e",
+        "bytes": 4219,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+        "git_blob": "65526c6d13895b60a18c9a96465fc84433116fce",
+        "sha256": "a828516e531bf9b3eae1f8dddb2d711bdf2f1fd9c959f5bbf67df78744ec64f4",
+        "bytes": 4689,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+        "git_blob": "8c36b2904638b83acdb2bec3b6ca5e778e112388",
+        "sha256": "c3a9e66deff9758c8986102026852772bf1df4fa63f6f49bf2a72bd4f5ffc9ef",
+        "bytes": 4767,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/outcome-reveal.json",
+        "git_blob": "7755b3c867806042a06eb4ef5370397348085544",
+        "sha256": "a82d0c9d24e412c2d261b6ed6305a34c6768abbe307048f3f3f7cfdd5128d9b0",
+        "bytes": 1749,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0101-nsw-child-removal-1915/decision-packet-masked.json",
+        "git_blob": "05fe5a3e0a11cc88e37b5468549ccc53ac0990e2",
+        "sha256": "71d2f43033363c8cd426cd235018737cd9d93dbd603832de64eb57f4fdad2e23",
+        "bytes": 7526,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0101-nsw-child-removal-1915/decision-packet-transparent.json",
+        "git_blob": "950d83673966b779a932430bfad0a0f99046a20d",
+        "sha256": "f665ec3feea38d99523f7179728f505e8a279365abb4a8e516360772340e7050",
+        "bytes": 9017,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0101-nsw-child-removal-1915/manifest.json",
+        "git_blob": "e8aabc27a65db2f6ee32ccf54d7d38d5ecc8839d",
+        "sha256": "ce3197c28ff6e90ae44d2815d8d2bf9c1b1824a371116de2239b12f65023199e",
+        "bytes": 7567,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0102-blood-citizenship-laws-1935/decision-packet-masked.json",
+        "git_blob": "4317c45f2a50e5beb9d58e2386d5da46f95ab890",
+        "sha256": "7da4c7fdc33e24d1e25eb31483271cc266da6d5f472688ba2a16c317ee1b59c2",
+        "bytes": 6337,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0102-blood-citizenship-laws-1935/decision-packet-transparent.json",
+        "git_blob": "39305d381092ebf4ae3ba6c4cbf774a94dd5cd44",
+        "sha256": "c2861e872ef14af67f96dc1d2486661ed894e360c1bd94b16951935003c7b480",
+        "bytes": 6837,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943/decision-packet-masked.json",
+        "git_blob": "ca993ca6224269f2b4a210a594d70f7fe4a931c0",
+        "sha256": "bf1c060398837c5334a5113d2d599c28eae466ca06e0e706b5ccad0bddfcbf90",
+        "bytes": 6126,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943/decision-packet-transparent.json",
+        "git_blob": "844ccc984368350dc35d75aa7f402e884368e9b1",
+        "sha256": "4bfa49a6ba7a3b38e1e7ac08be4c859821eea3d3bd04476a2c5a60cd1d26ff28",
+        "bytes": 6375,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0103-sweden-danish-jews-asylum-1943/manifest.json",
+        "git_blob": "10ec597c02fd6e2ce3f47bffb253ad636b94c8f3",
+        "sha256": "5a36f0757d024e846f5963388e636a2a90f7d91b47ae2f286f9f47817567ed2e",
+        "bytes": 4585,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0104-second-atomic-use-1945/decision-packet-masked.json",
+        "git_blob": "d1d6201b8a32ac1f43d4ee179813ad6858ca1243",
+        "sha256": "94500a54bc4c8b724aa1e57ea3d60996da7f7d6f001a33453f2d1162e8abcd5d",
+        "bytes": 8178,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0104-second-atomic-use-1945/decision-packet-transparent.json",
+        "git_blob": "726488d0afd401fdf35c9d466405e54690abc617",
+        "sha256": "ba44bfd240b14f8645d8f72dca1e0da6df23a7fdc5c397e21addc60179837705",
+        "bytes": 8610,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0104-second-atomic-use-1945/manifest.json",
+        "git_blob": "c2793513627ea506370287129e41752c41f84415",
+        "sha256": "489c79b4fb296f39d4b202b32e6da31a4f12f55be2c7057924d02efa919afe7f",
+        "bytes": 8003,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0107-montreal-protocol-1987/decision-packet-masked.json",
+        "git_blob": "0a2851dfa247b61d9f6491e54a9ca000ff7a4801",
+        "sha256": "26f2286046313296616e994eea88ac841982e3db746ff30a1fe1e52eb0ae6972",
+        "bytes": 6425,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0107-montreal-protocol-1987/decision-packet-transparent.json",
+        "git_blob": "afd33be97aab245f5b7ae9cf9c03a82cb8ccbecd",
+        "sha256": "8cb7bc48c148bad631d39ad5fa217e6f4a6e62c125b392238acf2a1b97046956",
+        "bytes": 7699,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0107-montreal-protocol-1987/manifest.json",
+        "git_blob": "62797d75815ac429356e24a5cd7c5a5ff9e5a9d8",
+        "sha256": "3f6e2eef0ac192f8112f2e40712f454fde2841ca2132aaffb0bcfcbc3f168807",
+        "bytes": 5915,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-masked.json",
+        "git_blob": "29f971ca095d7216fd03e238358cd544bc37e621",
+        "sha256": "dcc8f6716d86c6efc9994a7379c8be0f2972afb30c7afac9d21cdf95a8e036df",
+        "bytes": 7649,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-transparent.json",
+        "git_blob": "7047f90fcbe4d72e78bb4069d3cb8148b3213cac",
+        "sha256": "5b517525df93deab788606400322fbe272d69b08d813806a3c44df6b53e6a62c",
+        "bytes": 9490,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+        "git_blob": "9bd61ef8661bc5a67a282ab00e5909f376e3637f",
+        "sha256": "566d8ad5cd074b1af32658250ed7efa32a9876ccc41346a50462cf2e4a43c152",
+        "bytes": 6377,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+        "git_blob": "a3126259e78621717526af802940b0fc15bfef9d",
+        "sha256": "a81b4f53e8b50bae64a57262e7689a6786757b08ca6e50e43fb3476732541fe4",
+        "bytes": 7747,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/manifest.json",
+        "git_blob": "d710d5d90a431dc331450b1bbd14cdf449c4a868",
+        "sha256": "7a3294688af19df3cb0a6c41a928fcec5ac24e7caf0294796f99361cc0cdd263",
+        "bytes": 5397,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/outcome-reveal.json",
+        "git_blob": "92d57b603624a77e7eb27dcfbfc11f86fb4ef19d",
+        "sha256": "a8c4536d597f0c079571695cb90ebcc28d676d02bd9ed70f361ff1b940e49fb8",
+        "bytes": 3366,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/manifest.json",
+        "git_blob": "38f2c4e55d6d859efeccd22c7dd0418de412694f",
+        "sha256": "fff5ef9b2f7b0e7be37cb5c8197f01c71e03ea5593f4e4c0a31e74052b287bdb",
+        "bytes": 4971,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+        "git_blob": "9a10106ca699b0147e24f5dac466b5593ce41c84",
+        "sha256": "3e7656c40cca112780f73988c0d81b854c6577218c74cce133f13b851b50b485",
+        "bytes": 11035,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+        "git_blob": "6fcd941d2ed7ebd404bed1ca4994cca1451b3f4b",
+        "sha256": "7618cdabebb2ff092803b18ba0f63769b28722554bcbeb0a1df2f0c29abfc4a5",
+        "bytes": 14141,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/manifest.json",
+        "git_blob": "60d9612a69f94452331b52370a0019c4ad85e5be",
+        "sha256": "d578443f49efe738c8f0ed0c845f27e9b7dad8c487bdb42ea119cc7cb15c20ec",
+        "bytes": 4621,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+        "git_blob": "74df454288c1384aea8d3ad393032b4ff5ef3ba8",
+        "sha256": "977883523d822b2ce94873e7c8e44da66eb1f48be8bf6cd5e00bf4df42d85fb2",
+        "bytes": 12233,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+        "git_blob": "ec58af38c51a1e7c3d9b3cf05183866308b46862",
+        "sha256": "2220e6e86d080c4f8beb139ea0d35c73cb0d91943f8adb4137a6062b5b07d14c",
+        "bytes": 13814,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/README.md",
+        "git_blob": "9e895242750797f085f641186598996cea95fad2",
+        "sha256": "65695f87f586063ffdd152b6000db284ee59a60aed29e987f120d23acc88fe0c",
+        "bytes": 2778,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/admission.json",
+        "git_blob": "b0d94ad3f8172112b2507bf18c95996002aa19fe",
+        "sha256": "8cd737a4bf8af1581d39e766566739e34dca54ff6d5559e1a5d1ccf53ee7ff73",
+        "bytes": 8934,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/claim-index.json",
+        "git_blob": "435509f22aa65a5ca485cd418546b7a3325c14f4",
+        "sha256": "0f2f7f98dbe653fc6370823c69426338faf199c5dd2b97f91e5153487f2df1c6",
+        "bytes": 61439,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/repair-11-12.json",
+        "git_blob": "3952c286daa4f83b5a43bc84e39f2af090a890e8",
+        "sha256": "5e8cbfa2b46f92c31c0a63c5cebc65aafc0f1dac9cf45c6b2aeaf47c722c2199",
+        "bytes": 188157,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/repair-11-12.md",
+        "git_blob": "9577b58db0382d229cc72a501d9767fdfc9d2b43",
+        "sha256": "6d9c37703c9a79af1d4abe4ff203caa073c414d1a034f1d2b362547e556cba07",
+        "bytes": 9731,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/sources-01-03.json",
+        "git_blob": "dbe574b3844973565999d733dfdae7f442506b29",
+        "sha256": "f0f222fb7d2fc97c0f32ebc32f39dfde6f5509742647926bcd2e331a78526b0c",
+        "bytes": 115513,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/sources-01-03.md",
+        "git_blob": "a7f91fd74ea3626142b3e8bf93aceabe6e7faf3d",
+        "sha256": "8d3d7cca258f24c594d6f7dccf014e11fb0daf0196967b127145eb1d7ecd9c5b",
+        "bytes": 61774,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/sources-04-08.json",
+        "git_blob": "a6202b7a099012d226b57ecc1da92b00ebf7a03f",
+        "sha256": "5a253c3e9b7fb0fbf4590e3199cda171ef925e032475eaa4649bb3029a784b87",
+        "bytes": 244334,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/sources-04-08.md",
+        "git_blob": "fb736b00bc3a922f0f44b5ce0f8161356ad83375",
+        "sha256": "fd3ec64e72158406117be425052489087ac6f61464370526f0b32a54aa851ade",
+        "bytes": 23765,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/sources-09-10.json",
+        "git_blob": "f44ce2e2b4193c25014956049090bf4ce2067edd",
+        "sha256": "5b8612e869788155344b7371c51435fd597099fa29541c8d34e7292b79a0282c",
+        "bytes": 58545,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "docs/evidence/core12-correction-11/sources-09-10.md",
+        "git_blob": "ad7474ae29315f645a45d658bb16a9f8ab9ed672",
+        "sha256": "4a998489b2cbea856c8617bb71af0fafa4205abaa3c19e62d4547141f63aaf5b",
+        "bytes": 1592,
+        "remote_bytes_match": true
+      },
+      {
+        "path": "engine/scales/reference_runner/tests/test_core12_candidate_boundary.py",
+        "git_blob": "e5200979c3524d153078f48d2dde124762dada25",
+        "sha256": "811553749dd3fdf1d44d524fa7e22eb0458fbb7d458ec5c1dbc59daf5f8bbf54",
+        "bytes": 4534,
+        "remote_bytes_match": true
+      }
+    ]
+  }
+}

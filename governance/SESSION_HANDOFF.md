@@ -1,4 +1,16 @@
-# Session handoff — source audit complete; benchmark corrections identified
+# Session handoff — correction 11 source candidate published for review
+
+**Current worktree/branch:** `C:\Work\MoralCode\core12-provenance-v0.1.4`, `experiment/core12-provenance-v0.1.4`. Read the [correction 11 report](../docs/ai-reports/2026-09-19-core12-benchmark-correction-codex-11.md) and [admission ledger](../docs/evidence/core12-correction-11/admission.json). The original completed-run checkout remains unchanged and clean. Earlier checkpoints below are historical.
+
+Source/test commit `e9b8abe3a4d97f89237a7ff0c66284c62deec91b` corrects four binding identity leaks, the CORE-10 later-disaster cue, masking/epistemic defects, dated decision points and Repair statutory/feasibility qualifications. All selected actions, questions and requested outputs remain fixed. No interpretation proposal was adopted and zero benchmark evaluator calls were made.
+
+**No runnable v0.1.4 pack.** CORE-06/07/09/10/11/12 retain material admission blockers; CORE-01/02/03/04/05/08 are qualified candidates with explicit source limits. No unsupported claim, receipt time or operational capacity is certified to reach twelve admitted cases. All 871 historical pack/run files and all 29 original frozen-source hashes are preserved.
+
+Baseline 66 tests passed; focused regressions demonstrated 5 failures then 17 passes. Full local and [exact-source Windows/Ubuntu CI](https://github.com/iddycol/the-moral-code/actions/runs/35426434229) each report 82 passed and 1 expected failure, with no skips: the unchanged v0.1.3 pack correctly rejects candidate sources. CI remains red; no valid test was weakened. The source commit and all 51 changed file blobs matched remote readback. This handoff/report/verification receipt are later documentation only, distinct from the tested commit.
+
+**Stop for independent review.** No merge, new pack, trial, Claude restart or next agent prompt. Historical live outcomes below apply only to their original supplied inputs and source revision.
+
+# Historical checkpoint — source audit complete; benchmark corrections identified
 
 **Current checkpoint:** [Provenance audit and proposal 10](../docs/ai-reports/2026-09-19-core12-provenance-proposal-10.md) accounts for all 80 action evidence claims and both Repair cases. Four full evaluator inputs disclose identities; CORE-10 explicitly signals a later disaster; cutoff and Repair-design qualifications need correction. The successful run remains evidence for its supplied inputs, with these limits. [Exact interpretation wording](../docs/proposals/CORE12_INTERPRETATION_PROPOSAL_10.md) is proposed, not adopted. [Codex prompt 11](../docs/ai-prompts/MORAL_CODE_CODEX_BENCHMARK_CORRECTION_11.md) prepares an offline correction candidate on a separate branch with zero evaluator calls; it has not been executed. Live trials and Claude remain paused. Earlier checkpoints below are retained as history.
 
