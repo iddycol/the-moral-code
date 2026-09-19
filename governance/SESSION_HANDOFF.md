@@ -1,4 +1,6 @@
-# Session handoff — correction 11 source candidate published for review
+# Session handoff — paused after independent correction review
+
+**SAFE STOP:** read [SAFE_STOP_2026-09-19.md](SAFE_STOP_2026-09-19.md) and [independent review 12](../docs/ai-reports/2026-09-19-core12-correction-review-safe-stop-12.md). Correction 11 is reviewed as a non-runnable source candidate, with six existing case blockers and low documentation finding CR12-D01. Independent local tests reproduce 82 passed / 1 actual integrity failure; CI remains red. No pack, merge, interpretation adoption, evaluator call or Claude restart is authorized by this checkpoint. Prompt 11 is historical. Resume only when Adrian asks. Earlier implementation checkpoints below are retained as history.
 
 **Current worktree/branch:** `C:\Work\MoralCode\core12-provenance-v0.1.4`, `experiment/core12-provenance-v0.1.4`. Read the [correction 11 report](../docs/ai-reports/2026-09-19-core12-benchmark-correction-codex-11.md) and [admission ledger](../docs/evidence/core12-correction-11/admission.json). The original completed-run checkout remains unchanged and clean. Earlier checkpoints below are historical.
 

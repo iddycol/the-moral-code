@@ -10,6 +10,8 @@ It is not a religion, an AI ruler, or a claim to moral infallibility.
 
 ## Start here
 
+**Paused:** [safe-stop checkpoint](governance/SAFE_STOP_2026-09-19.md). Independent review accepts preservation of the correction candidate with six unresolved admission blockers and one low audit-ledger finding. No runnable v0.1.4 pack; 82 tests pass and the historical-pack integrity check remains failed. No further work should start until Adrian resumes the project.
+
 **Current candidate:** [Correction 11 report](docs/ai-reports/2026-09-19-core12-benchmark-correction-codex-11.md), on `experiment/core12-provenance-v0.1.4`, corrects input leaks and source qualifications with **zero evaluator calls**. Six cases retain material admission blockers, so **no runnable v0.1.4 pack exists**. The 17 new checks pass; full local/Windows/Ubuntu suites each report 82 passed and the one expected unchanged-v0.1.3 source-integrity failure. Read the [exact blockers and provenance](docs/evidence/core12-correction-11/README.md). Stop for independent review; interpretation proposal 10 is not adopted.
 
 The following completed-run results are preserved history from the integration branch. They are not results for these corrected candidate inputs.
