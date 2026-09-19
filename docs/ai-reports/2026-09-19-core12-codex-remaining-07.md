@@ -171,4 +171,23 @@ Post-run verification matched all **168 pre-batch snapshot entries** byte-for-by
 
 Credential-pattern review covered **680 publication files** with no token, private-key, JWT or secret-assignment matches. Manual review of preflight extracts, returned answers and new documentation found no credentials or unrelated private material. No raw evidence transformation or redaction was necessary; original bytes, including raw help whitespace, are retained. Environments, account files and external coordinating helpers are excluded from publication.
 
-The result commit contains only the 676 new batch evidence/index/preflight files, this report and three current documentation files. Source, tests, evaluator prompts, facts, constitution, interpretation, frozen packs and historical evidence remain outside its change scope. Remote readback and CI verification will be recorded in a subsequent documentation receipt, distinguishing the exact tested commit.
+The result commit contains only the 676 new batch evidence/index/preflight files, this report and three current documentation files. Source, tests, evaluator prompts, facts, constitution, interpretation, frozen packs and historical evidence remain outside its change scope. The receipt below records remote readback and CI for the exact result commit; the receipt itself changes documentation only.
+
+### Publication receipt — verified result commit
+
+Result commit **`c4694ab4ccc6668c775ff84dbd461638f0d6609a`** was pushed normally to `origin/experiment/core12-live-v0.1`, without force or merging `main`. Remote branch HEAD matched. Recursive remote tree enumeration matched all **676 new evidence/index/preflight paths**; all **680 changed file paths**, backed by **528 distinct Git blobs**, were read back through the GitHub blob API and matched committed and working-file bytes. This includes every raw prompt, event stream, stderr/exit/response, accepted role, decision, input, manifest, preflight receipt, the batch index, report and three current documents. No account or environment files were published.
+
+[Scales CI run 35422021431](https://github.com/iddycol/the-moral-code/actions/runs/35422021431) passed at exactly that result commit: **66 passed, zero skipped on Windows in 8.98 seconds**, and **66 passed, zero skipped on Ubuntu in 5.52 seconds**. The later documentation receipt is not the CI-tested commit. The local pre-inference suite was run only once; no evaluator calls accompanied publication or CI.
+
+Selected result-commit blob receipts (the result report subsequently receives this documentation-only receipt):
+
+| File | Verified Git blob |
+|---|---|
+| Result report | `5a67fb7cb82628a5b54968f64554e1cd04b20137` |
+| Batch index | `ac47387fdde9e441f1f08fa4c2875e1bdd4e3aa6` |
+| CORE-02 manifest | `4cfc753dbef30ab5cbe4d7319ec8263d72118cae` |
+| CORE-11 Repair decision | `b4ce762e4ab07f8ee9abb8d97959c29b6d368b36` |
+| CORE-12 manifest | `cefdb69a6fef6cc254fa23c6724387698cdd0eb5` |
+| CORE-12 Repair decision | `e6176afa3c8bb24e5035bc08b048add2dc87d93b` |
+
+The publication receipt changes only this report and the session handoff. Frozen source, tests, packs and all trial evidence remain unchanged. **Stop for review: 11 new / 12 total completed cases, 77 new evaluator invocations; observed model and effort remain unknown.** No further experiment or next prompt was created.
