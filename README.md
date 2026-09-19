@@ -10,6 +10,8 @@ It is not a religion, an AI ruler, or a claim to moral infallibility.
 
 ## Start here
 
+**Project paused:** correction 11 was completed on `experiment/core12-provenance-v0.1.4` and independently reviewed. Read the [canonical safe-stop checkpoint](https://github.com/iddycol/the-moral-code/blob/e8b7d8d399dbe21dbaca37480a6cfbf502535ae6/governance/SAFE_STOP_2026-09-19.md). The reviewed candidate has no runnable new pack, six remaining admission blockers and low documentation finding CR12-D01. No evaluator calls, pack freeze, merge, interpretation adoption or Claude restart is scheduled. Prompt 11 is historical; do not execute it again. Resume only when Adrian asks.
+
 For the integration experiment's verified execution status, read [the current session handoff](governance/SESSION_HANDOFF.md). The recovery audit corrects earlier live-testing claims.
 
 The [remaining Codex Core-12 batch](docs/ai-reports/2026-09-19-core12-codex-remaining-07.md) completed **11 new client-workflow cases in exactly 77 evaluator CLI invocations**. With [historical CORE-01](docs/ai-reports/2026-09-19-core12-codex-core01-06.md), **all 12 cases are complete**. Every new case passed evidence review. Nine new action decisions comprise six blocks and three conditional permissions; both Repair packages are conditionally permissible, with CORE-12 requiring revision before amnesty grants. Role disagreement and substantive uncertainties remain in the report.

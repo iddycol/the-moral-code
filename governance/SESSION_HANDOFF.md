@@ -1,4 +1,8 @@
-# Session handoff — source audit complete; benchmark corrections identified
+# Session handoff — project paused; candidate review saved
+
+**Project paused:** correction 11 was completed on `experiment/core12-provenance-v0.1.4` and independently reviewed. Read the [canonical safe-stop checkpoint](https://github.com/iddycol/the-moral-code/blob/e8b7d8d399dbe21dbaca37480a6cfbf502535ae6/governance/SAFE_STOP_2026-09-19.md). The reviewed candidate has no runnable new pack, six remaining admission blockers and low documentation finding CR12-D01. No evaluator calls, pack freeze, merge, interpretation adoption or Claude restart is scheduled. Prompt 11 is historical; do not execute it again. Resume only when Adrian asks.
+
+Earlier checkpoints below are historical.
 
 **Current checkpoint:** [Provenance audit and proposal 10](../docs/ai-reports/2026-09-19-core12-provenance-proposal-10.md) accounts for all 80 action evidence claims and both Repair cases. Four full evaluator inputs disclose identities; CORE-10 explicitly signals a later disaster; cutoff and Repair-design qualifications need correction. The successful run remains evidence for its supplied inputs, with these limits. [Exact interpretation wording](../docs/proposals/CORE12_INTERPRETATION_PROPOSAL_10.md) is proposed, not adopted. [Codex prompt 11](../docs/ai-prompts/MORAL_CODE_CODEX_BENCHMARK_CORRECTION_11.md) prepares an offline correction candidate on a separate branch with zero evaluator calls; it has not been executed. Live trials and Claude remain paused. Earlier checkpoints below are retained as history.
 
