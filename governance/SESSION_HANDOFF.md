@@ -1,5 +1,7 @@
 # Session handoff — Codex Core-12 complete; review results
 
+**Review update:** [Independent completed-baseline review 08](../docs/ai-reports/2026-09-19-core12-completed-review-08.md) passes the offline checks for all 12 cases and 84 successful-run exchanges. Next recommended work is substantive offline analysis of evidence thresholds, conditional safeguards, CORE-12 amnesty and packet provenance. No further live experiment is opened. The execution checkpoint below remains historical evidence.
+
 **Current action: review the [prompt 07 result](../docs/ai-reports/2026-09-19-core12-codex-remaining-07.md).** The remaining eleven cases completed serially in exactly **77 new evaluator CLI invocations**, with all eleven evidence reviews passed. Including historical CORE-01, **12 client-workflow cases are complete**. Prompt 07 has been executed and is historical. Claude and all further experiments remain paused; no next agent prompt was created.
 
 The [new execution index](../engine/scales/reference_runner/subscription-runs/CODEX-V013-REMAINING-INDEX-20260919T030424Z.json) records completed runner and review status separately. Nine new action decisions comprise six blocks and three conditional permissions. CORE-02, CORE-07 and CORE-09 retain disposition-level dissent. Both Repair packages return `package_permissible_with_safeguards`: CORE-11 recommends `proceed_with_package`; CORE-12 recommends `revise_package` before amnesty grants. Schema acceptance and workflow completion do not settle the substantive moral interpretation.
