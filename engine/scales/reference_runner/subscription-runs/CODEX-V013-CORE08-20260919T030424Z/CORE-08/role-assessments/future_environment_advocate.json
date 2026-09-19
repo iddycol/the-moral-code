@@ -1,0 +1,172 @@
+{
+  "evaluation_id": "BENCH-CORE-08-HC-0107-MASKED-V0.1",
+  "role": "future_environment_advocate",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "No moral-floor breach is established by the proposed staged controls. Restrictions and transition burdens still require necessity, proportionality and review.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "The packet reports a credible damage mechanism, observed regional depletion and supporting chemical analysis. Serious ecological harm is plausible; its global extent and future burden remain uncertain.",
+      "basis": "input_evidence",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "Long-lived, globally mixed substances export risks beyond current beneficiaries. The packet's inference that delay increases accumulation supports precaution to preserve future options, without establishing irreversible catastrophe.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E5",
+        "E9"
+      ],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "Controls also impose genuine costs. Staging, differentiated implementation and reassessment provide a supported means of addressing environmental risk while limiting transition burdens.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "The packet does not quantify biodiversity losses, non-human sentient suffering, resource depletion, recovery times or substitute-related environmental effects. These cannot be treated as established harms.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E4",
+        "E6"
+      ],
+      "materiality": "medium"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "Controls address plausible serious health and ecological harm, but their pace must account for valuable uses and uneven substitute maturity.",
+      "evidence_ids": [
+        "E4",
+        "E6",
+        "E8"
+      ],
+      "potential_moral_floor_breach": false
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "concern",
+      "reason": "Binding controls restrict production and consumption choices. Serious external risks support limits, subject to evidence that their scope is necessary.",
+      "evidence_ids": [
+        "E4",
+        "E5",
+        "E6"
+      ]
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "concern",
+      "reason": "The mechanism and observational support warrant action-oriented consideration, but confidence is unspecified and global extrapolation remains unsettled.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Differentiated implementation supports protection of lower-capacity parties; adequate practical support and burden allocation remain unspecified.",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "pass",
+      "reason": "Reducing substances whose immediate benefits export long-lived risks addresses intergenerational and geographic cost shifting.",
+      "evidence_ids": [
+        "E5",
+        "E9"
+      ]
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "pass",
+      "reason": "Staged controls respond to an evidence-supported threat to future populations and ecosystems. Uncertain severity does not erase the long-lived risk or costs of delay.",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E8",
+        "E9"
+      ]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "concern",
+      "reason": "Staging is less intrusive than an immediate comprehensive ban, but comparative effectiveness of voluntary measures and the necessary initial scope remain uncertain.",
+      "evidence_ids": [
+        "E6",
+        "E7",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "concern",
+      "reason": "Periodic assessment supports correction; independent scrutiny, challenge procedures and remedies are not specified.",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "pass",
+      "reason": "Periodic scientific and economic reassessment preserves revision as evidence changes, provided review can meaningfully alter controls.",
+      "evidence_ids": [
+        "E8"
+      ]
+    }
+  ],
+  "information_requests": [
+    "What reduction schedules would materially limit accumulation, and how do binding and voluntary approaches compare?",
+    "What are estimated persistence, recovery times and ecological consequences under alternative control paths?",
+    "Which applications lack safe, affordable substitutes, and what support would make differentiated implementation effective?",
+    "What independent review, participation and challenge mechanisms will govern the controls?"
+  ],
+  "alternatives_or_safeguards": [
+    "Use the targeted initial controls and periodic reassessment described in A6, with scope justified by comparative risk evidence.",
+    "Assess and incorporate financial and technical cooperation under A4/A8; feasibility remains unknown.",
+    "Review atmospheric observations, ecological risks, substitute safety and transition burdens periodically, with authority to strengthen or relax controls.",
+    "Require transparent reasons and independent scrutiny, including representation of future interests and lower-capacity affected parties.",
+    "Consider A1/A5 if evidence shows voluntary measures can provide sufficient timely protection. E7 alone does not establish their inadequacy.",
+    "Avoid A3/A7 without stronger necessity evidence; E6 supports concern about indiscriminate immediate restrictions. A2/A9 must account for the accumulation risk inferred in E9."
+  ],
+  "evidence_that_could_change_view": [
+    "Reliable evidence undermining the proposed chemical mechanism or its connection to observed depletion would weaken the case for controls.",
+    "Evidence of faster accumulation or more severe ecological consequences would support stronger or earlier controls.",
+    "Evidence that voluntary measures achieve comparable timely reductions with fewer burdens would favor them.",
+    "Evidence that the proposed schedule causes serious avoidable deprivation or that substitutes introduce comparable harms would require redesign.",
+    "Evidence that initial reductions are insufficient, or that transition support is ineffective, would require revision."
+  ],
+  "recommended_disposition": "permissible_with_safeguards"
+}

@@ -1,0 +1,212 @@
+{
+  "case": "CORE-02",
+  "mode": "action",
+  "reviewed_at_utc": "2026-09-19T03:12:54.730939+00:00",
+  "runner_status": "completed",
+  "automated_contract_review": "passed",
+  "coordinator_review": "passed",
+  "concerns": [],
+  "requested_model": "gpt-6-astra",
+  "observed_model": "unknown",
+  "effective_reasoning_effort": "unknown",
+  "usage_totals": {
+    "input_tokens": 132644,
+    "cached_input_tokens": 46720,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11205,
+    "reasoning_output_tokens": 27
+  },
+  "calls": [
+    {
+      "stage": "advocate",
+      "prompt_bytes": 29524,
+      "prompt_digest": "sha256:868af58b1d9b9a8884b40c9bfeb16719934af5f1aecc3598e20176ce14f7cf04",
+      "response_file_sha256": "d322b0c7a00c6a25e5d5854c6060a4949f779fe1efb76e01f5d2bdb230a64d83",
+      "accepted_canonical_digest": "sha256:b33d26eaceae00d9e9bfdd865486ba7ae3f8ab5d154ddf8501e8ec56095d6ca4",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17566,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1365,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "guardian",
+      "prompt_bytes": 29524,
+      "prompt_digest": "sha256:74bc2b83e0ffd32dcbcf8a4a961ea1c20cb52e20fcadedb286510d41d0967d2b",
+      "response_file_sha256": "95513d546977410113b92e0a69fa5db663372da45a34e76e85378098e95d31c3",
+      "accepted_canonical_digest": "sha256:62e41df5ffa7c1ca0f12dcd9c2f58fd952796a3fdc5074cdf3d9c0f0e4a41f01",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17573,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1419,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "evidence_sceptic",
+      "prompt_bytes": 29532,
+      "prompt_digest": "sha256:d03e9efa4f6883aa77fb87f5fbbd46088621d6b850c15a35249fe8a29ae42171",
+      "response_file_sha256": "d3228bbb39d2c652d4bbc070440c5b914af85b60c807a1f51af37cdda43fda3c",
+      "accepted_canonical_digest": "sha256:67343b07d5d943140752e781508de4d614eadb99b4de0ae91501fef5eaba7775",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17571,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1376,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "power_auditor",
+      "prompt_bytes": 29529,
+      "prompt_digest": "sha256:f4ac498af7632a42e36f99edec7c683c1cfb8e1692af4bf57cfd0c0a376c1f51",
+      "response_file_sha256": "02cae34264ff5ca03358bc4b8b30733e8958fdf95be3742c2c11ba3584a9c028",
+      "accepted_canonical_digest": "sha256:55d14f575965c357595bdb9f6f31b0f9a95e3f05bc16c9efc0a4b44b823e1a15",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17570,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1495,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "vulnerable_person_defender",
+      "prompt_bytes": 29542,
+      "prompt_digest": "sha256:55c273d4aed7604932e2dbfc64f8014e42a0c797a9f945736fe62e12f077318d",
+      "response_file_sha256": "edd48f030c32d2975548f8c5a572195e241238bf4ecc0be5d20de6373070778f",
+      "accepted_canonical_digest": "sha256:e06d4443d47630d2a1f199cc17d5ff3a031fa3635a1b7fc650690d283a4093d0",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17568,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1473,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "future_environment_advocate",
+      "prompt_bytes": 29543,
+      "prompt_digest": "sha256:a02fc473eefeb1a96d3ada21911d3fade8afec5a258c6d6ef505ca68c4346f8a",
+      "response_file_sha256": "74189346908fa19896d580fa64ff1e3af56cefb9df248ca63b67e670444465e9",
+      "accepted_canonical_digest": "sha256:893b3d436e0ac7615dd2d20b8f2ac89e778f8dd5bb1512be9aa91e3a5548200c",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17572,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1113,
+        "reasoning_output_tokens": 27
+      }
+    },
+    {
+      "stage": "reconciliation",
+      "prompt_bytes": 76719,
+      "prompt_digest": "sha256:575cf69169a40bb463d852bc25013a2a6ff239b378b6cbf4825e4b1fc0326db6",
+      "response_file_sha256": "675743e9484e39b1d7e3017e0476c4d5f419576498d2046f9093236977036693",
+      "accepted_canonical_digest": "sha256:fea3af3c7a3ff78bd35ec6f7702c97ccedd85a890c466a2d6818a68669331b32",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 27224,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2964,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "decision_digest": "sha256:fea3af3c7a3ff78bd35ec6f7702c97ccedd85a890c466a2d6818a68669331b32",
+  "outcome": "impermissible",
+  "limits": [
+    "Saved prompt bytes verified; live stdin not independently tapped.",
+    "Missing model or effort telemetry remains unknown.",
+    "No claim about unreported client/provider internal behavior."
+  ],
+  "coordinator_reviewed_at_utc": "2026-09-19T03:13:34.479965+00:00",
+  "coordinator_note": "Reviewed all returned role findings and reconciliation. Three insufficient_evidence versus three impermissible roles; reconciliation impermissible/block preserves uncertainty without claiming confirmed floor breach or inevitable failure. Contract and event checks pass; no observed model or effort metadata."
+}

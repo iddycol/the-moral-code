@@ -1,0 +1,212 @@
+{
+  "case": "CORE-06",
+  "mode": "action",
+  "reviewed_at_utc": "2026-09-19T03:43:43.298700+00:00",
+  "runner_status": "completed",
+  "automated_contract_review": "passed",
+  "coordinator_review": "passed",
+  "concerns": [],
+  "requested_model": "gpt-6-astra",
+  "observed_model": "unknown",
+  "effective_reasoning_effort": "unknown",
+  "usage_totals": {
+    "input_tokens": 134742,
+    "cached_input_tokens": 37376,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 12033,
+    "reasoning_output_tokens": 0
+  },
+  "calls": [
+    {
+      "stage": "advocate",
+      "prompt_bytes": 30337,
+      "prompt_digest": "sha256:858f7e4baa4fea55f6a18fd74a765598f3d7fbd2211eb91f0acbeba927c56e1b",
+      "response_file_sha256": "e30f61bdc669ae564d897a447563fefadea8a7ca002e97b33642f5a8b1f255ed",
+      "accepted_canonical_digest": "sha256:e7047fe4d52bb6c0b0ba6170a48c17f4381c5949c44f7bdda686dd18b18a3a37",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17765,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1733,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "guardian",
+      "prompt_bytes": 30337,
+      "prompt_digest": "sha256:3dbbbc834944b94b4e4453c82052ef9d12cc30dec7fc1ce6b4e11e62313aaf68",
+      "response_file_sha256": "64a01d69d1ac2366fe5599d633146b4d79f57353375c257f6cc345a32052faab",
+      "accepted_canonical_digest": "sha256:f56a84a69a834412f6f4044e4b1f4ad65647945ac79da258d2e0eafec3d37a55",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17762,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1394,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "evidence_sceptic",
+      "prompt_bytes": 30345,
+      "prompt_digest": "sha256:90609a8aa904e8ebc9b7d617c4ec80e765d64e22f2e1aa5324cfd8e48c9a9469",
+      "response_file_sha256": "bd4ad631caf9780922c770f2a27ec0695837f7cd3e3e38e358755d752444cbe3",
+      "accepted_canonical_digest": "sha256:77f95e51952e3595f4115094693ca4f1daaecc2759a9e5c9f587711dfb6c7cdb",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17768,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1668,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "power_auditor",
+      "prompt_bytes": 30342,
+      "prompt_digest": "sha256:f627e5e54e9ebf2910faf1c936485956d2e1c6d6ab9a08c03cce3750a06c513f",
+      "response_file_sha256": "f4a5d3aad848196a366af2917ace971bb652dfc9ef9c92bbaabf11de9de5450f",
+      "accepted_canonical_digest": "sha256:2cf0122f0b3adb00144bacae1951b796d10f5610ecba60d705123972f731454a",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17765,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1644,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "vulnerable_person_defender",
+      "prompt_bytes": 30355,
+      "prompt_digest": "sha256:3348f3a6d70941b8043dd322732c6a03cfc354cb976bafbcf942f62d0d56bc2b",
+      "response_file_sha256": "aa465350301aabeb061459142f0da35d6b570bb9c8551ce339c5f5258460234e",
+      "accepted_canonical_digest": "sha256:419ecc29d9e6625137ce18caa954ac665dc843ae6c4a275286235ec561016e01",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17765,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1463,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "future_environment_advocate",
+      "prompt_bytes": 30356,
+      "prompt_digest": "sha256:125024a419ffdccd4d18eddc4a99f17eefccf7083038e1dc5d17d23e643cd8b8",
+      "response_file_sha256": "e8ce0e675464520f7642494109199afb479418228da709012f1fc23039684337",
+      "accepted_canonical_digest": "sha256:0f768e8b08477562feef645de5286ec34110760aa62dbafd04c90a4bad2ce8de",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 17767,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 964,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "reconciliation",
+      "prompt_bytes": 81690,
+      "prompt_digest": "sha256:c29438fe75026fc7a6a5a61cedd5bb462aefac6c578623ac493e47ef2649ef41",
+      "response_file_sha256": "4e3b11eb7db60e221a2015ea665eb46e2a99445e9043189d31a88f13358a246e",
+      "accepted_canonical_digest": "sha256:b5a2bf068edab174dae1b63f6ae21727754f2dda4a11256eade70e0a3b050924",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 28150,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3167,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "decision_digest": "sha256:b5a2bf068edab174dae1b63f6ae21727754f2dda4a11256eade70e0a3b050924",
+  "outcome": "permissible_with_safeguards",
+  "limits": [
+    "Saved prompt bytes verified; live stdin not independently tapped.",
+    "Missing model or effort telemetry remains unknown.",
+    "No claim about unreported client/provider internal behavior."
+  ],
+  "coordinator_reviewed_at_utc": "2026-09-19T03:44:15.219388+00:00",
+  "coordinator_note": "Reviewed all role findings and reconciliation. Unanimous permissible_with_safeguards/allow_with_conditions supports urgent sanctuary with individual screening, support, agency, privacy, review and safe termination. No sanctuary floor breach; threat provenance, capacity, crossing safety and feasibility remain unknown. MC-09 and implementation principle differences preserved. Contract and events pass; model and effort unknown."
+}

@@ -1,0 +1,29 @@
+{
+  "protocol": "subscription-client-pilot-v0.1",
+  "pack_digest": "sha256:746a346b5b31314c7e49088b0f6ba058ad33f0a26be839e46860c9e970e63ced",
+  "provider": "codex",
+  "requested_model": "gpt-6-astra",
+  "resolved_model": "unverified; inspect raw client metadata",
+  "created_at_utc": "2026-09-19T04:24:44.812369+00:00",
+  "status": "completed",
+  "inference_attempted": true,
+  "cases": {
+    "CORE-12": {
+      "status": "completed",
+      "input_digest": "sha256:8a82c079494880c580a4760cca79619efe2b5a95e212b1da3f5d70add9c346bb",
+      "stage": "reconciliation",
+      "outcome": "package_permissible_with_safeguards",
+      "decision_digest": "sha256:5762cc83fed4da3e013fa5775d3f99d02fe35bd04daa305f5de95cd18a067d1a",
+      "role_digests": {
+        "victim_impact_advocate": "sha256:afabe74c51ca3dc02d39b15c0f58f47f10d7341c2b68a860ee337e0402cefe2a",
+        "accountability_advocate": "sha256:088e1c62b4871f21e6d07667daaa5822ccb5ea3e59a77df25b656c72cb8da829",
+        "rehabilitation_reintegration_advocate": "sha256:7080df52ba64598c33413cb217b170e4f95a9801bc52e85b609fb8e3da799856",
+        "restitution_reparation_analyst": "sha256:76eb726dc058fa72b9b4ec64077984d998aed82dbd4132708315d9b2b55e76b7",
+        "evidence_sceptic": "sha256:305b0f47ae5bf6c19b8bbbd80feaa245ef46fa3c93f98719ca50de4c39c34a2b",
+        "power_nonrecurrence_auditor": "sha256:fe2020e4a6afc9b49f51cc46993335cc215c56a283e11f54e30d4ad5ff36043f"
+      }
+    }
+  },
+  "interpretation": "Client-workflow pilot; no certification, pressure or repeatability conclusion.",
+  "cli_version": "codex-cli 0.155.0"
+}

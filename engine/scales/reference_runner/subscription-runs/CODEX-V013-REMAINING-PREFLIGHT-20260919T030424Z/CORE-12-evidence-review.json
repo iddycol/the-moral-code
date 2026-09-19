@@ -1,0 +1,212 @@
+{
+  "case": "CORE-12",
+  "mode": "repair",
+  "reviewed_at_utc": "2026-09-19T04:36:13.814526+00:00",
+  "runner_status": "completed",
+  "automated_contract_review": "passed",
+  "coordinator_review": "passed",
+  "concerns": [],
+  "requested_model": "gpt-6-astra",
+  "observed_model": "unknown",
+  "effective_reasoning_effort": "unknown",
+  "usage_totals": {
+    "input_tokens": 151087,
+    "cached_input_tokens": 46720,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 21680,
+    "reasoning_output_tokens": 0
+  },
+  "calls": [
+    {
+      "stage": "victim_impact_advocate",
+      "prompt_bytes": 36737,
+      "prompt_digest": "sha256:c56e94c2595acb9553ec4a3fdb19b5c3050a04382f6c1813c5d4de14da8c33aa",
+      "response_file_sha256": "043d80d36cb77fd77aa32c80c829bcb60ae293f2301629829516179ac73b521a",
+      "accepted_canonical_digest": "sha256:afabe74c51ca3dc02d39b15c0f58f47f10d7341c2b68a860ee337e0402cefe2a",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 18904,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2975,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "accountability_advocate",
+      "prompt_bytes": 36738,
+      "prompt_digest": "sha256:8386d33de228a733526db0d821d06e6486d48a1c4a4602d4d467ef7d66b05306",
+      "response_file_sha256": "e9d60503d43341b9957ffb9c4322d06cd5d22f9fe6aaaea5b19a619768ca1d3c",
+      "accepted_canonical_digest": "sha256:088e1c62b4871f21e6d07667daaa5822ccb5ea3e59a77df25b656c72cb8da829",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 18900,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2853,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "rehabilitation_reintegration_advocate",
+      "prompt_bytes": 36752,
+      "prompt_digest": "sha256:fffe6a8985be5c109054112e8f86b4cbe0ceddec951d91c2b7bcd140ef32fd08",
+      "response_file_sha256": "c98804434af01a1a0073dbcf3d7a7fb4196bb85a78b366808a92537ec7caca7a",
+      "accepted_canonical_digest": "sha256:7080df52ba64598c33413cb217b170e4f95a9801bc52e85b609fb8e3da799856",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 18905,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2698,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "restitution_reparation_analyst",
+      "prompt_bytes": 36745,
+      "prompt_digest": "sha256:ed61919cdcdad2c18b3fd82dfa4c0da4dfc5770f6113ab697b49816a66b7e354",
+      "response_file_sha256": "2fa244e4a07c63e3747aba0ba67321eca590c10eda260133ed9e23dcc8ae2944",
+      "accepted_canonical_digest": "sha256:76eb726dc058fa72b9b4ec64077984d998aed82dbd4132708315d9b2b55e76b7",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 18903,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3001,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "evidence_sceptic",
+      "prompt_bytes": 36731,
+      "prompt_digest": "sha256:f4ec9b1019e6039d792a7c956b301aacbfd95f36904021d8175fc01121328c2e",
+      "response_file_sha256": "a42ce31eabfec2ee9ba5b5464d846864fab7dc623c480f8f57400b2e55d34d74",
+      "accepted_canonical_digest": "sha256:305b0f47ae5bf6c19b8bbbd80feaa245ef46fa3c93f98719ca50de4c39c34a2b",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 18903,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3018,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "power_nonrecurrence_auditor",
+      "prompt_bytes": 36742,
+      "prompt_digest": "sha256:7c6944b26d6c257f165004b17d09fcbf4d41a1c7f50d92ce201576c55519df41",
+      "response_file_sha256": "774883595fcb120e1948a83a599126d496e27d3af4ae907c67039c7fed7d3389",
+      "accepted_canonical_digest": "sha256:fe2020e4a6afc9b49f51cc46993335cc215c56a283e11f54e30d4ad5ff36043f",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 18901,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3047,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "stage": "reconciliation",
+      "prompt_bytes": 136334,
+      "prompt_digest": "sha256:11ba7fc75807695fef93366748e897faa1fb545aa41ac3921c936a7b6c70a0c5",
+      "response_file_sha256": "7352c457cf25149ef7f887e91ae862666905762f148cec1e3cec2b98b523074d",
+      "accepted_canonical_digest": "sha256:5762cc83fed4da3e013fa5775d3f99d02fe35bd04daa305f5de95cd18a067d1a",
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ],
+      "item_types": [
+        "agent_message"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "model_or_effort_metadata": [],
+      "usage": {
+        "input_tokens": 37671,
+        "cached_input_tokens": 9344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4088,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "decision_digest": "sha256:5762cc83fed4da3e013fa5775d3f99d02fe35bd04daa305f5de95cd18a067d1a",
+  "outcome": "package_permissible_with_safeguards",
+  "limits": [
+    "Saved prompt bytes verified; live stdin not independently tapped.",
+    "Missing model or effort telemetry remains unknown.",
+    "No claim about unreported client/provider internal behavior."
+  ],
+  "coordinator_reviewed_at_utc": "2026-09-19T04:37:06.357058+00:00",
+  "coordinator_note": "Reviewed all six Repair role findings, component statuses and objections plus full reconciliation. package_permissible_with_safeguards/revise_package supports narrow individual amnesty only in principle; actual design requires independent justification, verified disclosure, legal scope, remedies and funded accountability before grants. Lost prosecution, bargaining asymmetry and victim dissent remain unresolved. Restitution and restriction differences retained. Contract and events pass; model and effort unknown."
+}

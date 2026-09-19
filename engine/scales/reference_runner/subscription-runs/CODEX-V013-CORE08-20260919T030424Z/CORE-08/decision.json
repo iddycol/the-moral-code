@@ -1,0 +1,279 @@
+{
+  "evaluation_id": "BENCH-CORE-08-HC-0107-MASKED-V0.1",
+  "constitution": {
+    "version": "0.1.0",
+    "ref": "constitution/MORAL_CORE.md@1fc927431541f5196d79d8284ea70cb1de1f9240",
+    "content_digest": "git-blob-sha1:1a83691fea5604ab85a8945e0d1ed8ccd009c7cf",
+    "interpretation_rules_ref": "constitution/INTERPRETATION_RULES.md@1fc927431541f5196d79d8284ea70cb1de1f9240"
+  },
+  "role_assessment_refs": [
+    "role-assessments/advocate.json",
+    "role-assessments/guardian.json",
+    "role-assessments/evidence_sceptic.json",
+    "role-assessments/power_auditor.json",
+    "role-assessments/vulnerable_person_defender.json",
+    "role-assessments/future_environment_advocate.json"
+  ],
+  "evidence_challenges": [
+    {
+      "claim": "The substances create a credible serious atmospheric risk.",
+      "status": "supported",
+      "decision_dependency": "decisive",
+      "note": "E1–E4 support this within the packet. Underlying sources, methods and confidence are unspecified; exact global harm is not established."
+    },
+    {
+      "claim": "Delay increases accumulation and slows later reversal.",
+      "status": "partially_supported",
+      "decision_dependency": "high",
+      "note": "E9 is an inference consistent with E5, not an observed policy comparison or proof of a specific deadline."
+    },
+    {
+      "claim": "Staged controls will achieve sufficient protection.",
+      "status": "partially_supported",
+      "decision_dependency": "high",
+      "note": "E8 supports a design option; E1, E3 and E5 support its causal rationale. Compliance, quantitative effectiveness and sufficient schedules remain unknown."
+    },
+    {
+      "claim": "Voluntary measures cannot provide comparable timely protection.",
+      "status": "unknown",
+      "decision_dependency": "high",
+      "note": "E7 establishes that the existing framework lacks binding reductions, not that voluntary reductions would fail."
+    },
+    {
+      "claim": "Differentiation and periodic assessment ensure fair transition and accountability.",
+      "status": "partially_supported",
+      "decision_dependency": "high",
+      "note": "E6–E8 support their relevance, but adequate assistance, independent review, participation and remedies are unspecified."
+    }
+  ],
+  "moral_floor": {
+    "breach_found": false,
+    "checks": [
+      {
+        "risk": "Collective punishment, persecution or denial of equal standing",
+        "status": "not_present",
+        "reason": "The described controls target hazardous activity for protection; the packet establishes no group guilt or punitive deprivation.",
+        "evidence_ids": [
+          "E4",
+          "E8"
+        ]
+      },
+      {
+        "risk": "Deliberate killing of innocents or treating people as disposable resources",
+        "status": "not_present",
+        "reason": "Neither is established. Genuine transition costs do not themselves establish instrumental sacrifice, but benefits cannot justify such treatment.",
+        "evidence_ids": [
+          "E6",
+          "E8"
+        ]
+      },
+      {
+        "risk": "Moral-floor violations through implementation or enforcement",
+        "status": "uncertain",
+        "reason": "Enforcement and essential-use protections are unspecified. No arbitrary imprisonment or deliberate severe deprivation is evidenced; these remain prohibited implementation outcomes.",
+        "evidence_ids": [
+          "E6",
+          "E8"
+        ]
+      }
+    ]
+  },
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "pass",
+      "reason": "No denial of equal worth is established; transition-dependent people retain equal claims to protection (E6, E8)."
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "Serious plausible harm supports prevention, while substitute limitations and transition disruption require mitigation (E4, E6)."
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "concern",
+      "reason": "Production and consumption restrictions need demonstrated necessity and proportionate scope to address external risks (E4–E6)."
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "uncertain",
+      "reason": "No deception is evidenced, but unknown source quality and confidence prohibit claims of precise forecasts or proven policy success (E1–E9)."
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "concern",
+      "reason": "Capacity differentiation is relevant; fair allocation and protection against preferential exemptions remain unestablished (E6, E8)."
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Both exposed populations and people least able to absorb transition burdens require concrete protection (E4, E6, E8)."
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "concern",
+      "reason": "Controls address exported atmospheric risks, but must not export transition costs disproportionately to weaker parties (E5, E6)."
+    },
+    {
+      "principle_id": "MC-08",
+      "status": "pass",
+      "reason": "The proposal seeks prevention and correction rather than vengeance; implementation must retain that purpose (E8, E9)."
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "pass",
+      "reason": "Plausible serious, persistent harm supports staged precaution without asserting a proven irreversible catastrophe (E4, E5, E9)."
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "concern",
+      "reason": "Staging limits interference, but binding necessity, initial scope and enforcement powers still require justification (E6–E8)."
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "uncertain",
+      "reason": "Periodic assessment alone does not establish independent scrutiny, accessible challenge or effective remedies (E8)."
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "concern",
+      "reason": "Revision is contemplated, but protected dissent and practical ability to challenge and alter controls remain unspecified (E8)."
+    }
+  ],
+  "principle_conflicts": [
+    {
+      "principles": [
+        "MC-02",
+        "MC-09",
+        "MC-03",
+        "MC-10"
+      ],
+      "conflict": "Preventing accumulating atmospheric harm requires considering restrictions on valuable uses and economic choices.",
+      "resolution_or_status": "Permit only justified staged restrictions; compare voluntary effectiveness and reject unnecessary breadth. Precaution supports timely action without emergency or unlimited authority."
+    },
+    {
+      "principles": [
+        "MC-02",
+        "MC-09",
+        "MC-05",
+        "MC-06",
+        "MC-07"
+      ],
+      "conflict": "Environmental protection can impose disproportionate transition burdens on people with limited capacity.",
+      "resolution_or_status": "Require evidence-based differentiation, essential-service protection and adequate support; their practical adequacy remains unresolved."
+    },
+    {
+      "principles": [
+        "MC-04",
+        "MC-09",
+        "MC-11",
+        "MC-12"
+      ],
+      "conflict": "Waiting for precise forecasts risks accumulation, while acting under uncertainty risks unjustified controls.",
+      "resolution_or_status": "Disclose uncertainty and adopt reviewable stages with independent scrutiny and criteria for strengthening, relaxing or withdrawing restrictions."
+    }
+  ],
+  "alternatives_analysis": [
+    {
+      "alternative_id": "A1",
+      "constitutional_note": "Less coercive voluntary targets merit comparison; timely protective sufficiency and feasibility are unknown.",
+      "dominance_note": "Prefer if evidence establishes equivalent timely protection; neither superiority nor failure is established."
+    },
+    {
+      "alternative_id": "A2",
+      "constitutional_note": "Greater certainty could improve calibration, but waiting permits the accumulation inferred in E9.",
+      "dominance_note": "No basis to make precise future harm a prerequisite for all protective action."
+    },
+    {
+      "alternative_id": "A3",
+      "constitutional_note": "An immediate near-total ban regardless of capacity disregards E6 transition constraints.",
+      "dominance_note": "Its additional necessity and proportionality are not established."
+    },
+    {
+      "alternative_id": "A4",
+      "constitutional_note": "Financial and technical cooperation could make staged controls fairer and protect lower-capacity parties.",
+      "dominance_note": "Preferred addition where feasible and adequate; delivery is not established."
+    },
+    {
+      "alternative_id": "A5",
+      "constitutional_note": "Voluntary reductions and monitoring preserve flexibility; research alone does not establish sufficient reductions.",
+      "dominance_note": "Overlaps A1; compare outcomes without assuming insufficiency from E7."
+    },
+    {
+      "alternative_id": "A6",
+      "constitutional_note": "Targeted initial controls with reassessment offer a narrower design consistent with E8.",
+      "dominance_note": "Preferred starting design if chemical selection and protective sufficiency are justified; feasibility remains unknown."
+    },
+    {
+      "alternative_id": "A7",
+      "constitutional_note": "An immediate comprehensive ban requires stronger necessity and transition evidence than supplied.",
+      "dominance_note": "No demonstrated advantage justifies its additional interference over staged controls."
+    },
+    {
+      "alternative_id": "A8",
+      "constitutional_note": "Overlaps A4; support addresses unequal ability to transition.",
+      "dominance_note": "Conditionally preferred alongside staged controls, subject to verified feasibility and adequacy."
+    },
+    {
+      "alternative_id": "A9",
+      "constitutional_note": "Overlaps A2; additional certainty has value but delay carries long-lived accumulation risk.",
+      "dominance_note": "Not preferred solely because forecasts remain imprecise."
+    }
+  ],
+  "outcome": "permissible_with_safeguards",
+  "reasoning_summary": "The moral-floor gate establishes no breach in the described proposal. E1–E5 support a serious protective objective, and E9 supports precaution against accumulating harm, without proving a deadline or optimal schedule. E6 and E8 favor staged, differentiated, revisable controls over an unsupported immediate comprehensive ban. Permission is conditional on necessity, fair transition and accountable implementation; it does not certify unspecified reduction schedules or enforcement powers.",
+  "required_safeguards": [
+    "Before operative restrictions, publish evidence-based substance selection, reduction levels and timelines, including comparison with voluntary measures and the harms of delay.",
+    "Use voluntary measures where they demonstrably provide equivalent timely protection; justify each additional binding restriction.",
+    "Assess substitute safety, affordability, availability and essential uses; provide adequate transition protection through justified schedules and feasible financial or technical support.",
+    "Publish fair burden-allocation and exemption criteria, disclose decision-maker interests and provide accessible affected-party participation.",
+    "Specify limited enforcement authority and necessary compliance data; require proportionality, relevant individual conduct and protection against arbitrary deprivation or collective punishment.",
+    "Establish independent scientific and economic review, accessible challenge, remedies and protected dissent before implementation.",
+    "Set review intervals and triggers for strengthening, narrowing or withdrawing controls; monitor atmospheric effects, compliance, substitute risks and distributional harms."
+  ],
+  "unresolved_dissent": [
+    "No role asserts a substantiated moral-floor failure or recommends rejection. This does not independently establish permissibility.",
+    "The Advocate treats truthful handling of uncertainty as passing MC-04; the Guardian and Evidence Sceptic retain uncertainty about source quality. The reconciliation preserves that uncertainty without alleging deception.",
+    "Some roles mark reciprocity as passing because controls reduce exported risks; the Evidence Sceptic and Vulnerable-Person Defender retain concern about exported transition costs. That concern remains unresolved.",
+    "Design-level support for review does not resolve the Power Auditor's concern that dissent and challenge mechanisms are unspecified."
+  ],
+  "uncertainties": [
+    "Underlying source quality, methods, independence and contemporaneous availability are unverified; all supplied confidence fields are unknown.",
+    "Global and regional depletion, downstream health and ecological burdens, persistence and recovery timing are unquantified.",
+    "Comparative voluntary effectiveness, compliance and sufficient initial reduction schedules remain unknown.",
+    "Substitute safety, maturity, costs and transition disruption vary in unspecified ways; substitute environmental effects are unestablished.",
+    "Fair burdens, adequate support and affected parties' actual views remain unspecified; no declared conflicts does not establish absence of conflicts.",
+    "Urgency, practical reversibility, enforcement scope and independent accountability are unresolved."
+  ],
+  "evidence_that_could_change_result": [
+    "Reliable evidence weakening the mechanism, attribution or serious risk would support narrowing or withdrawing controls.",
+    "Comparable timely protection from voluntary measures would favor less coercive alternatives.",
+    "Faster damage or insufficient reductions would support stronger justified stages.",
+    "Severe transition deprivation or comparable substitute harms would require redesign and could make affected measures impermissible.",
+    "Demonstrably adequate support and independent accountability would resolve major conditions; discriminatory or unchallengeable enforcement would undermine permission."
+  ],
+  "validity": {
+    "review_by": "Before operative restrictions and each subsequent stage; establish explicit periodic review intervals before implementation.",
+    "stop_conditions": [
+      "Do not commence an operative restriction whose scope, necessity or transition protections remain unjustified.",
+      "Suspend or redesign measures that cause serious avoidable deprivation, arbitrary punishment or discriminatory enforcement.",
+      "Pause affected enforcement powers if independent challenge and correction cannot operate."
+    ],
+    "re_evaluate_on": [
+      "Material new scientific or atmospheric evidence.",
+      "Evidence of inadequate reductions or effective voluntary alternatives.",
+      "Material substitute safety, availability, price or essential-service effects.",
+      "Evidence of unequal burdens, failed support, conflicts of interest or abuse of authority."
+    ]
+  },
+  "enforcement_recommendation": {
+    "directive": "allow_with_conditions",
+    "reason": "Conditional adoption of a staged protective framework is justified; the packet does not authorize unspecified coercive powers or establish a sufficient detailed schedule.",
+    "conditions": [
+      "Incorporate the required safeguards into the agreement and implementation arrangements.",
+      "Require independently reviewable necessity, scope and transition assessments before operative restrictions.",
+      "Separately justify sanctions and intrusive verification; preserve challenge, remedies and evidence-based revision."
+    ],
+    "required_authority": "Negotiating states acting through their applicable treaty and domestic authorization procedures, with independent review; this record supplies moral evaluation, not legal authority."
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "evaluation_id": "BENCH-CORE-04-HC-0101-MASKED-V0.1",
+  "role": "future_environment_advocate",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "Moral-floor concern: ancestry-specific removal without prior independent findings, combined with institutional placement for refusing an arranged apprenticeship, risks arbitrary confinement and treating children as instruments of policy. Completed abuses are not established.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "The role applies because control over childhood custody, placement and apprenticeship affects future life choices. Family and cultural continuity may also be affected; the packet does not establish the duration or magnitude of those effects.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E3",
+        "E5",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "A subsequent appeal cannot be assumed to restore lost family time or undo placement effects. Practical appeal access and reversibility remain unestablished.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "Supporters report that court delays obstruct protective intervention. This raises a competing concern about harm from delayed protection, but does not establish immediate danger or the necessity of general Board discretion.",
+      "basis": "input_evidence",
+      "evidence_ids": [
+        "E2",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "No supplied evidence establishes effects on non-human sentient creatures, ecosystems, biodiversity or resource depletion, or an environmental catastrophic pathway. No ecological objection is asserted.",
+      "basis": "missing_information",
+      "evidence_ids": [],
+      "materiality": "low"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "concern",
+      "reason": "Broad custody and compulsory placement powers risk subordinating children's standing to official policy objectives; actual instrumental treatment is not established.",
+      "evidence_ids": [
+        "E3",
+        "E5",
+        "E8"
+      ],
+      "potential_moral_floor_breach": true
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "Protective intervention may prevent harm, while unnecessary separation may cause harm. Reported administrative difficulty does not establish which removals are necessary.",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "fail",
+      "reason": "Official judgments of moral welfare and refusal of an arranged apprenticeship can trigger severe restrictions without a demonstrated serious-harm threshold.",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "potential_moral_floor_breach": true
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "fail",
+      "reason": "Ancestry determines access to weaker removal safeguards than those generally protecting other families; the packet supplies no relevant justification for that unequal protection.",
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "potential_moral_floor_breach": true
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "concern",
+      "reason": "Administrative ease accrues to officials while children and families bear separation and subsequent appeal burdens, potentially extending into their future lives.",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "concern",
+      "reason": "Custody and placement decisions implicate future options and potentially cultural continuity. Long-term effects are unresolved; environmental catastrophe is not evidenced.",
+      "evidence_ids": [
+        "E3",
+        "E5",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "fail",
+      "reason": "General discretionary custody powers exceed the necessity demonstrated by reported delays; narrower protective alternatives have not been shown insufficient.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "concern",
+      "reason": "Post-removal appeal provides a challenge mechanism, but its accessibility and capacity to correct consequences are unknown. The Board initially judges its own grounds for intervention.",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ]
+    }
+  ],
+  "information_requests": [
+    "What individual evidence distinguishes immediate danger from official disapproval, and how often do judicial delays prevent necessary protection?",
+    "What are the duration, review arrangements, reunification prospects and long-term outcomes of institutional and apprenticeship placements?",
+    "Can children and parents practically obtain independent representation, appeal and effective remedies?"
+  ],
+  "alternatives_or_safeguards": [
+    "Assess A1 and A4: retain individual judicial findings and improve proceeding speed; feasibility remains unknown.",
+    "Assess A3 and A6: practical family assistance with ordinary safeguards; feasibility remains unknown.",
+    "Assess A7 for evidenced immediate danger: temporary intervention with prompt independent review and an end when danger is controlled.",
+    "Any broader welfare ground under A2 or A5 should require individual evidence, independent authorization and equal protection across ancestry.",
+    "Require review of continuing necessity, support for family relationships, effective remedies and monitoring of long-term outcomes."
+  ],
+  "evidence_that_could_change_view": [
+    "Comparative evidence that safeguards cause otherwise unavoidable serious harm, and that support or faster judicial procedures cannot sufficiently protect children, could justify narrower emergency authority.",
+    "Evidence of accessible appeals, timely reunification and favorable long-term outcomes could reduce concerns about lasting harm, but would not by itself justify ancestry-based unequal protection.",
+    "A revised proposal requiring equal safeguards, individual evidence and independent oversight would warrant reassessment."
+  ],
+  "recommended_disposition": "impermissible"
+}

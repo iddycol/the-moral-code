@@ -1,0 +1,84 @@
+{
+  "evaluation_id": "BENCH-CORE-06-HC-0103-MASKED-V0.1",
+  "role": "future_environment_advocate",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "Sanctuary presents no evidenced moral-floor breach. It responds to group-based arrest and deportation, which raise persecution and collective-punishment concerns.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": ["E1", "E8"],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "Inference: preserving access to refuge protects endangered people's future agency and options. Refusal or ambiguity risks foreclosing escape; the packet does not establish eventual outcomes after deportation.",
+      "basis": "inference",
+      "evidence_ids": ["E2", "E4", "E6", "E7"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "Reception responsibilities are described as real but bounded, although this is an inference with unknown confidence. Their duration and resource requirements remain unspecified.",
+      "basis": "input_evidence",
+      "evidence_ids": ["E5"],
+      "materiality": "medium"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "No material ecosystem, biodiversity, non-human suffering, resource-depletion or environmental catastrophic pathway is established. These dimensions are not applicable on the supplied record; lasting human option loss remains relevant.",
+      "basis": "missing_information",
+      "evidence_ids": [],
+      "materiality": "medium"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "pass",
+      "reason": "Protection respects the standing of people targeted by identity; no instrumental sacrifice is evidenced in the proposal.",
+      "evidence_ids": ["E1", "E8"],
+      "potential_moral_floor_breach": false
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "pass",
+      "reason": "A reachable protective destination addresses severe threatened harm. Effectiveness is supported by packet inferences, not established outcomes.",
+      "evidence_ids": ["E2", "E3", "E6", "E7"]
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "concern",
+      "reason": "Reception imposes responsibilities on residents and institutions, while refusal exposes endangered people to serious harm. Fair allocation of ongoing support requires attention; bounded costs do not establish grounds for refusal.",
+      "evidence_ids": ["E5", "E7"]
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "pass",
+      "reason": "Preserving escape options supports affected people's futures. No ecological or intergenerational harm is established, and uncertainty alone supplies no catastrophic objection.",
+      "evidence_ids": ["E2", "E6", "E7"]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "pass",
+      "reason": "Offering sanctuary expands protective access. Any accompanying screening or later termination must separately satisfy necessity, proportionality and review.",
+      "evidence_ids": ["E4", "E6"]
+    }
+  ],
+  "information_requests": [
+    "What reception capacity and support resources are available, and for what likely duration?",
+    "What review process will determine whether ending temporary protection would expose people to renewed persecution?"
+  ],
+  "alternatives_or_safeguards": [
+    "Use A4 screening only insofar as it preserves urgent access to safety; its feasibility remains unknown.",
+    "Assess A6 reception coordination to reduce the maritime and administrative risks identified in that alternative; feasibility remains unknown.",
+    "Review support needs and allocate reception burdens fairly as arrivals become known.",
+    "Make termination of temporary sanctuary subject to evidence of safety and meaningful independent challenge."
+  ],
+  "evidence_that_could_change_view": [
+    "Credible evidence of serious lasting harms from admission that cannot be mitigated could change the required safeguards or disposition.",
+    "Evidence that a less restrictive alternative provides equally reliable urgent protection could change the preferred implementation.",
+    "Evidence of material ecological effects would make environmental assessment necessary."
+  ],
+  "recommended_disposition": "permissible_with_safeguards"
+}

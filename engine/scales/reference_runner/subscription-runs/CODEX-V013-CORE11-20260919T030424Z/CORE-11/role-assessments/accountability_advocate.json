@@ -1,0 +1,275 @@
+{
+  "repair_case_id": "RC-0102",
+  "role": "accountability_advocate",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "Support entering a large-scale agreement with separate institutional and individual repair channels, enforceable claims protections and independent accountability. Payment must neither price murdered lives nor settle responsibility for mass murder.",
+      "basis": "constitutional_interpretation",
+      "harm_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5"
+      ],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "H1 and H2 are established; H3–H5 are substantially established. Murdered lives and destroyed families and communities are irreparable. Property losses, deprivation and resettlement burdens remain partly repairable. The packet supplies no disputed harm finding, individualized case evidence or settled compensation amount.",
+      "basis": "packet",
+      "harm_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "The successor state's accepted material obligation is institutional. Public funding does not establish personal guilt of current citizens. Criminal or civil liability of perpetrators and beneficiaries requires evidence of each person's legally relevant conduct and applicable responsibility.",
+      "basis": "packet",
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "The resettlement state may pursue documented institutional costs, but neither it nor the coalition has demonstrated authority to waive every survivor's claims. Survivors inside and outside that state, heirs, unrepresented claimants and payment opponents need effective participation.",
+      "basis": "constitutional_interpretation",
+      "harm_ids": [
+        "H2",
+        "H3",
+        "H4",
+        "H5"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Survivor opposition is a substantive dignity concern. It does not establish unanimous opposition or justify denying willing claimants repair. Acceptance must not signify forgiveness; refusal must not diminish victim status or independent rights.",
+      "basis": "constitutional_interpretation",
+      "harm_ids": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F6",
+      "statement": "Individual continuing danger, prosecution feasibility, rehabilitation prospects and deterrent effects are unknown. The packet supports investigating responsibility, not predetermined convictions, maximum punishment or blanket restrictions.",
+      "basis": "missing_information",
+      "materiality": "high"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "supports_component",
+      "reason": "Acknowledge irreparable loss and protect survivors from being used to purchase diplomatic legitimacy or moral closure."
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "supports_component",
+      "reason": "Urgent material relief addresses H3; punishment must not pursue suffering or humiliation."
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "conflict",
+      "reason": "Collective negotiation can enable repair while overriding dissenters. Limit representative authority and preserve individual choice about payment and reconciliation."
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "supports_component",
+      "reason": "Distinguish established harms from unknown individual liability, compensation amounts and predicted recurrence benefits."
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "supports_component",
+      "reason": "Separate institutional funding duties from personal guilt; apply evidence-based liability and due process without nationality-based punishment."
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "supports_component",
+      "reason": "Prioritize survivors facing urgent health and livelihood needs and those disadvantaged by destroyed evidence."
+    },
+    {
+      "principle_id": "MC-08",
+      "status": "supports_component",
+      "reason": "Combine feasible restitution and compensation with accountability; neither vengeance nor payment-based absolution constitutes repair."
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "supports_component",
+      "reason": "Any restriction requires an individualized lawful basis, necessity, proportionality and review; severity of historical crimes alone does not justify indiscriminate restrictions."
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "supports_component",
+      "reason": "Independent adjudication, reasoned decisions, appeals and audited allocations constrain both the paying state and recipient institutions."
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "supports_component",
+      "reason": "Preserve survivor dissent and permit revision of allocation and eligibility rules without declaring the settlement morally final."
+    }
+  ],
+  "component_assessments": [
+    {
+      "component_type": "truth_acknowledgement",
+      "status": "required",
+      "reason": "Acknowledge crimes and institutional material responsibility, explicitly distinguish personal guilt, and state that money cannot restore murdered people or purchase absolution.",
+      "option_ids": [
+        "R1"
+      ]
+    },
+    {
+      "component_type": "restitution",
+      "status": "recommended",
+      "reason": "Offer claimant-directed return of identifiable property where feasible and equivalent value where return is impossible, with fair adjudication of ownership and heirship.",
+      "option_ids": [
+        "R2"
+      ]
+    },
+    {
+      "component_type": "compensation",
+      "status": "required",
+      "reason": "Combine documented resettlement-cost payments with a separately funded direct-claims mechanism accessible worldwide, including within the resettlement state. Coordinate overlapping material claims transparently without treating state receipts as satisfaction of personal losses. Set amounts and schedules through evidence and capacity review, with urgent interim relief.",
+      "option_ids": [
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "component_type": "accountability",
+      "status": "required",
+      "reason": "Preserve independent criminal investigation and civil proceedings against identifiable responsible actors. Conviction and liability require applicable proof, defense rights and impartial adjudication. Any sanctions must be proportionate; reparation supplies neither immunity nor automatic proof of guilt.",
+      "option_ids": [
+        "R5"
+      ]
+    },
+    {
+      "component_type": "institutional_reform",
+      "status": "required",
+      "reason": "Accept alternative evidence and fair presumptions in material claims where persecution destroyed records; provide claimant assistance and independent appeals. Do not transfer relaxed compensation eligibility standards into presumptions of criminal guilt.",
+      "option_ids": [
+        "R6"
+      ]
+    },
+    {
+      "component_type": "non_recurrence",
+      "status": "recommended",
+      "reason": "Maintain constitutional, educational and institutional safeguards and review their effectiveness. The packet establishes no particular deterrent effect of payment or punishment.",
+      "option_ids": [
+        "R7"
+      ]
+    },
+    {
+      "component_type": "reconciliation",
+      "status": "permissible",
+      "reason": "Allow voluntary reconciliation independently of eligibility, payment acceptance, testimony or acknowledgement of victim status.",
+      "option_ids": [
+        "R8"
+      ]
+    },
+    {
+      "component_type": "restriction",
+      "status": "insufficient_evidence",
+      "reason": "No person-specific danger evidence supports a particular preventive restriction. Any later measure needs a lawful individualized basis and independent review.",
+      "option_ids": []
+    },
+    {
+      "component_type": "amnesty",
+      "status": "not_justified",
+      "reason": "The packet provides no basis for amnesty. Exclude payment-linked immunity; any separate proposal would require scrutiny of legality, scope, necessity, victims' rights and the precedent it creates.",
+      "option_ids": []
+    },
+    {
+      "component_type": "rehabilitation",
+      "status": "permissible",
+      "reason": "Perpetrator rehabilitation may accompany lawful accountability where evidence supports safe participation. Neither severe wrongdoing nor payment determines rehabilitation prospects.",
+      "option_ids": []
+    },
+    {
+      "component_type": "other",
+      "status": "not_justified",
+      "reason": "R9 is not justified as a universal prohibition on negotiations: the impossibility of compensating murder does not remove reparable material obligations. Preserve its dignity objection and each survivor's right to decline.",
+      "option_ids": [
+        "R9"
+      ]
+    }
+  ],
+  "failure_risks": [
+    {
+      "risk": "revenge",
+      "status": "possible",
+      "reason": "Accountability could become indiscriminate or punitive for its own sake; individualized proof and proportionate sanctions are necessary safeguards."
+    },
+    {
+      "risk": "impunity",
+      "status": "serious",
+      "reason": "A comprehensive settlement could be presented as extinguishing prosecution or personal claims. Explicitly preserve independent proceedings and prohibit payment-linked immunity."
+    },
+    {
+      "risk": "forced_forgiveness",
+      "status": "serious",
+      "reason": "Acceptance may be portrayed as reconciliation or moral closure. Agreement terms and public statements must reject that inference."
+    },
+    {
+      "risk": "inherited_or_category_guilt",
+      "status": "possible",
+      "reason": "Public financing could be confused with personal guilt by ancestry or citizenship. State explicitly that funding institutional obligations establishes no such guilt."
+    },
+    {
+      "risk": "symbolic_only_repair",
+      "status": "possible",
+      "reason": "Acknowledgement or rejection of negotiations could leave feasible material remedies undelivered despite H2–H5."
+    },
+    {
+      "risk": "victim_voice_erasure",
+      "status": "serious",
+      "reason": "State and coalition negotiations may marginalize dissenters, unrepresented survivors, heirs and people outside the resettlement state."
+    },
+    {
+      "risk": "unsafe_reintegration",
+      "status": "uncertain",
+      "reason": "No individual risk or rehabilitation evidence is supplied; neither safe reintegration nor indefinite exclusion can be presumed."
+    },
+    {
+      "risk": "other",
+      "status": "serious",
+      "reason": "Delay and rigid documentation requirements may deny meaningful repair before survivors die. Use interim relief, accessible evidence rules and reviewable deadlines."
+    }
+  ],
+  "recommended_components": [
+    "Enter an agreement combining R1–R7, with R8 strictly voluntary and no blanket claim of final moral settlement.",
+    "Specify separate institutional and individual funding channels, worldwide individual eligibility, audited allocations and urgent survivor relief.",
+    "Reserve individual claims unless a claimant validly authorizes a narrowly defined material settlement with informed consent; no such settlement may buy criminal immunity.",
+    "Protect independent investigation and adjudication, defense rights, evidence-based liability and proportionate sanctions.",
+    "Establish independent claims review and appeals with participation by diverse survivors, dissenters, heirs and unrepresented communities.",
+    "Publish delivery schedules and reasons for allocation choices; review fiscal constraints without treating them as cancellation of established obligations."
+  ],
+  "information_requests": [
+    "What draft clauses govern releases, immunity, personal claims and representative authority?",
+    "What individual evidence, applicable law and institutional capacity support criminal and civil proceedings?",
+    "How will survivors inside and outside the resettlement state, heirs and dissenters participate and challenge decisions?",
+    "What documented losses, urgent needs, fiscal capacity and delivery constraints should determine amounts and timing?",
+    "What alternative evidence and heirship procedures will address persecution-caused record destruction?"
+  ],
+  "evidence_that_could_change_view": [
+    "Blanket immunity or unauthorized claim waivers would make the agreement unacceptable without revision.",
+    "Evidence of diversion, exclusion or unrepresentative negotiation would require changes to governance and allocations.",
+    "Individualized evidence of culpability, continuing danger or rehabilitation would change recommendations for particular proceedings and restrictions.",
+    "Reliable cost and capacity evidence could change payment amounts and schedules while preserving the duty to provide material repair.",
+    "Broader survivor participation could change delivery channels and safeguards without establishing universal consent or compulsory reconciliation."
+  ],
+  "unresolved_objections": [
+    "Some survivors regard any negotiation or payment as dishonouring the murdered; procedural safeguards cannot eliminate that moral disagreement.",
+    "The allocation between institutional burdens and individual losses remains unsettled.",
+    "Compensation quantum, duration and representative mandates remain uncertain.",
+    "No agreement can restore murdered lives or make destroyed families and communities whole."
+  ]
+}

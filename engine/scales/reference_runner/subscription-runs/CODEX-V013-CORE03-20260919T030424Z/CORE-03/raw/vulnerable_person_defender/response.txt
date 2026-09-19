@@ -1,0 +1,114 @@
+{
+  "evaluation_id": "BENCH-CORE-03-HC-0003-MASKED-V0.1",
+  "role": "vulnerable_person_defender",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "No moral-floor breach is established by the proposed evidence requirement. Uncertain safety does not establish catastrophic harm, and protective intent does not justify indefinite restriction.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": ["E2", "E3", "E5"],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "The affected-parties record identifies prospective patients as having low power and being unable independently to evaluate latent adverse effects before use. Requiring reliable evidence can protect this informational vulnerability without implying patient incapacity.",
+      "basis": "inference",
+      "evidence_ids": ["E3", "E5"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "Foreign availability and the manufacturer's safety claims do not, on this packet alone, resolve the reviewer's adequacy concerns. Neither the reviewer nor the manufacturer should be treated as conclusive authority.",
+      "basis": "inference",
+      "evidence_ids": ["E1", "E3", "E4"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "The magnitude and urgency of patient benefits lost during delay are missing. Protection from uncertain adverse effects must be assessed alongside possible deprivation of useful treatment.",
+      "basis": "missing_information",
+      "evidence_ids": [],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Patient participation, accessible explanations, challenge mechanisms, alternative treatment access, and support or compensation arrangements are not described. The packet does not establish that these protections are absent or that compensation is owed.",
+      "basis": "missing_information",
+      "evidence_ids": [],
+      "materiality": "high"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "pass",
+      "reason": "Requiring reliable safety evidence is compatible with treating prospective patients as persons whose welfare matters; no instrumental sacrifice is established.",
+      "evidence_ids": ["E2", "E3"],
+      "potential_moral_floor_breach": false
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "uncertain",
+      "reason": "Additional evidence may prevent avoidable injury, but actual safety risks and health costs of delay remain unresolved.",
+      "evidence_ids": ["E3", "E5"]
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "concern",
+      "reason": "Deferring broad marketing limits treatment choice. Patients need meaningful participation and truthful explanations; vulnerability alone cannot justify open-ended paternalism.",
+      "evidence_ids": ["E2", "E3"]
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "concern",
+      "reason": "Explain the specific evidentiary deficiencies while distinguishing unestablished safety from established danger. Neither foreign availability nor disputed submissions settle adequacy.",
+      "evidence_ids": ["E1", "E3", "E4", "E5"]
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Patients' informational disadvantage supports protective review, but their treatment needs, actual views and practical ability to challenge delay are insufficiently documented.",
+      "evidence_ids": ["E3", "E5"]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "concern",
+      "reason": "The packet supports requesting reliable evidence but does not establish proportionate scope or duration. Targeted requests and prompt reassessment are necessary safeguards.",
+      "evidence_ids": ["E3", "E4"]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "concern",
+      "reason": "The contested adequacy judgment needs documented reasons, meaningful challenge and independent review; existing arrangements are unspecified.",
+      "evidence_ids": ["E3", "E4"]
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "concern",
+      "reason": "The regulator must remain open to contrary evidence, including sufficiently reliable foreign usage data, and revise its decision when deficiencies are resolved.",
+      "evidence_ids": ["E1", "E3", "E4"]
+    }
+  ],
+  "information_requests": [
+    "What specific deficiencies remain, why do they matter clinically, and what evidence would resolve them?",
+    "What benefits, treatment alternatives and urgency apply to patients affected by delay?",
+    "How systematic and relevant are the foreign usage data and manufacturer submissions?",
+    "How can patients participate accessibly, challenge continued delay and obtain support where needed?",
+    "What review timetable and independent challenge mechanisms are available?"
+  ],
+  "alternatives_or_safeguards": [
+    "Use A2/A3: request focused safety evidence linked to explicit deficiencies while deferring broad marketing; establish feasibility and avoid duplicative demands.",
+    "Use A4: specify review milestones and reassess promptly when responsive evidence arrives, including evidence of harms from delay.",
+    "Use A5 if adequacy remains disputed: seek independent scientific review with reasons available for challenge.",
+    "Provide accessible explanations of uncertainty and meaningful opportunities for patients and prescribers to present treatment needs and preferences.",
+    "Assess support needs created by delay without presuming patient incapacity or that compensation is automatically required."
+  ],
+  "evidence_that_could_change_view": [
+    "Reliable evidence resolving the stated safety deficiencies would weaken justification for continued deferral.",
+    "Evidence of serious, urgent patient harm from delayed access would require reassessing proportionality and less restrictive sufficient options.",
+    "Evidence of clinically important adverse effects would strengthen the protective justification.",
+    "Evidence that demands are irrelevant, duplicative or insulated from challenge would undermine permissibility."
+  ],
+  "recommended_disposition": "permissible_with_safeguards"
+}

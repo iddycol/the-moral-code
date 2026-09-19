@@ -1,0 +1,250 @@
+{
+  "repair_case_id": "RC-0103",
+  "role": "restitution_reparation_analyst",
+  "role_contract_version": "0.1.0",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "H1 is established; H2–H4 are substantially established. Institutional responsibility is established for implicated former state institutions, while individual responsibility remains attributed and requires evidence or qualifying disclosure. The packet identifies no separately disputed harm claims.",
+      "basis": "packet",
+      "harm_ids": ["H1", "H2", "H3", "H4"],
+      "source_ids": ["repair_packet.established_harms", "repair_packet.responsible_actors"],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "Conditional individual amnesty can be a defensible part of a repair package if it secures verified disclosure under independent review while preserving material remedies and accountability outside its narrow scope. Amnesty itself neither restores losses nor establishes moral closure; political inconvenience alone cannot justify it.",
+      "basis": "constitutional_interpretation",
+      "harm_ids": ["H1", "H2", "H3", "H4"],
+      "source_ids": ["repair_packet.repair_options.R2", "repair_packet.constraints", "MC-01", "MC-08", "MC-11"],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "Repair eligibility should not depend on perpetrator conviction, amnesty application, public testimony or forgiveness. Flexible administrative proof should accommodate state-caused evidence gaps without lowering criminal proof standards.",
+      "basis": "constitutional_interpretation",
+      "harm_ids": ["H1", "H2", "H3"],
+      "source_ids": ["repair_packet.repair_options.R4", "repair_packet.repair_options.R6", "MC-05", "MC-06", "MC-08"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "The successor state has institutional repair duties without inherited personal guilt. Individual awards should address each claimant's losses; collective services should address demonstrated community harm without replacing individual remedies or assigning group guilt.",
+      "basis": "constitutional_interpretation",
+      "harm_ids": ["H1"],
+      "source_ids": ["repair_packet.responsible_actors", "MC-05", "MC-08"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Deaths and lost years cannot be restored, and some injuries and uncertainty may persist. Compensation acknowledges loss and supports recovery; it cannot price a life or make victims whole.",
+      "basis": "inference",
+      "harm_ids": ["H1", "H2"],
+      "source_ids": ["repair_packet.established_harms"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F6",
+      "statement": "Rehabilitation is described as feasible, but compensation and restitution are only possibly feasible. Costs, funding, delivery capacity and claimant numbers are unknown. Practical repair requires funded commitments, urgent interim assistance, published allocation rules and enforceable delivery timelines.",
+      "basis": "missing_information",
+      "harm_ids": ["H1"],
+      "source_ids": ["repair_packet.repair_options.R4", "repair_packet.repair_options.R5", "repair_packet.repair_options.R6", "repair_packet.constraints"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F7",
+      "statement": "Victims disagree about amnesty. The packet does not establish how inaccessible or marginalised claimants, dependants and people unable or unwilling to testify will be represented, or how future generations' interests will enter oversight.",
+      "basis": "missing_information",
+      "harm_ids": ["H1", "H2"],
+      "source_ids": ["repair_packet.affected_parties"],
+      "materiality": "high"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "conflict",
+      "reason": "Peace and disclosure matter, but extracting testimony while withholding feasible repair would instrumentalise victims."
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "supports_component",
+      "reason": "Prompt support, protection and trauma-sensitive procedures reduce continuing suffering."
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "supports_component",
+      "reason": "Victims must control voluntary testimony, treatment and reconciliation; benefits cannot depend on forgiveness."
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "supports_component",
+      "reason": "Independent corroboration and explicit uncertainty are necessary before disclosure earns amnesty or findings identify responsibility."
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "conflict",
+      "reason": "Amnesty risks favouring perpetrators who control evidence. Consistent individual criteria and equitable repair rules are necessary, without collective guilt or false equivalence."
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "supports_component",
+      "reason": "Urgency and vulnerability justify prioritised assistance and accessible claims procedures."
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "concern",
+      "reason": "Society must share repair costs rather than leave victims bearing the material and accountability costs of transition."
+    },
+    {
+      "principle_id": "MC-08",
+      "status": "supports_component",
+      "reason": "Restitution, compensation, rehabilitation and prevention implement repair; neither vengeance nor symbolic closure does."
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "concern",
+      "reason": "Exceptional amnesty requires a demonstrated need, narrow scope and comparison with feasible accountability alternatives."
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "supports_component",
+      "reason": "Independent review, reasoned decisions, appeals and audited delivery must govern both amnesty and reparations."
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "supports_component",
+      "reason": "Victims may reject reconciliation and challenge outcomes; the package must remain open to correction."
+    }
+  ],
+  "component_assessments": [
+    {
+      "component_type": "truth_acknowledgement",
+      "status": "required",
+      "reason": "Investigate independently, corroborate disclosures and publish reasoned findings with privacy protections. Truth addresses H2 but cannot substitute for material repair.",
+      "option_ids": ["R1"]
+    },
+    {
+      "component_type": "amnesty",
+      "status": "permissible",
+      "reason": "Require individual, act-specific applications; a substantiated political nexus rather than political labels; full disclosure tested against records and testimony; independent reasoned decisions; victim notice, representation and challenge; and review or revocation for material deception. Define immunity's scope in advance and preserve victim remedies. Reject blanket immunity, secrecy bargains and immunity for future acts.",
+      "option_ids": ["R2"]
+    },
+    {
+      "component_type": "accountability",
+      "status": "required",
+      "reason": "Resource investigation and evidence-supported prosecution or civil action for non-applicants, rejected applicants and acts outside valid amnesty. Rejection alone does not prove guilt. Clarify civil consequences so amnesty does not extinguish effective repair.",
+      "option_ids": ["R3"]
+    },
+    {
+      "component_type": "compensation",
+      "status": "required",
+      "reason": "Create a funded claims programme with urgent interim payments, transparent criteria reflecting harm and need, flexible proof for missing records, accessible applications and independent appeals. Publish budgets and payment deadlines; phase delivery fairly if necessary without treating unpaid harm as resolved.",
+      "option_ids": ["R4"]
+    },
+    {
+      "component_type": "restitution",
+      "status": "required",
+      "reason": "Search for remains and records, correct legal status and identity records, and restore property or access where supported and feasible. Consult families on sensitive decisions, protect third-party rights and provide alternative remedies when restoration is impossible.",
+      "option_ids": ["R6"]
+    },
+    {
+      "component_type": "rehabilitation",
+      "status": "required",
+      "reason": "Provide voluntary, sustained medical, psychological, social and community support independently of testimony or amnesty outcomes, with confidential access and monitoring of unmet need.",
+      "option_ids": ["R5"]
+    },
+    {
+      "component_type": "protection",
+      "status": "required",
+      "reason": "Offer safe participation, confidential or private testimony, protection against retaliation and support before and after hearings. Declining public participation must not reduce repair eligibility.",
+      "option_ids": ["R1", "R5"]
+    },
+    {
+      "component_type": "institutional_reform",
+      "status": "required",
+      "reason": "Reform implicated institutions with affected-community oversight and independently monitored implementation; future prevention does not discharge present repair duties.",
+      "option_ids": ["R7"]
+    },
+    {
+      "component_type": "memorialisation",
+      "status": "recommended",
+      "reason": "Preserve accurate archives and voluntary testimony with privacy safeguards and diverse victim input. Memorials must supplement feasible material remedies.",
+      "option_ids": ["R8"]
+    },
+    {
+      "component_type": "reconciliation",
+      "status": "permissible",
+      "reason": "Offer voluntary processes without requiring forgiveness, contact with perpetrators, agreement with amnesty or declarations of closure.",
+      "option_ids": ["R9"]
+    },
+    {
+      "component_type": "other",
+      "status": "insufficient_evidence",
+      "reason": "The packet does not establish whether prosecution-led R10 would deliver more effective justice than conditional amnesty. Compare realistic disclosure, accountability and repair prospects before fixing amnesty's scope.",
+      "option_ids": ["R10"]
+    }
+  ],
+  "failure_risks": [
+    {
+      "risk": "revenge",
+      "status": "possible",
+      "reason": "Accountability must establish responsibility and protect against recurrence, with due process and proportionate consequences rather than humiliation or suffering as ends."
+    },
+    {
+      "risk": "impunity",
+      "status": "serious",
+      "reason": "Weak verification, broad political-nexus criteria or an unfunded prosecution route could convert conditional amnesty into practical blanket immunity."
+    },
+    {
+      "risk": "forced_forgiveness",
+      "status": "serious",
+      "reason": "Unity narratives may coerce reconciliation; repair must remain unconditional on forgiveness or support for amnesty."
+    },
+    {
+      "risk": "inherited_or_category_guilt",
+      "status": "possible",
+      "reason": "Institutional duties and collective repair cannot establish personal guilt by former employment, race, citizenship or political affiliation."
+    },
+    {
+      "risk": "symbolic_only_repair",
+      "status": "serious",
+      "reason": "Public testimony and findings may proceed while compensation and restitution remain unfunded recommendations."
+    },
+    {
+      "risk": "victim_voice_erasure",
+      "status": "serious",
+      "reason": "Public witnesses or selected representatives cannot be assumed to express all victims' preferences; accessible participation must include dissent and nonparticipation."
+    },
+    {
+      "risk": "unsafe_reintegration",
+      "status": "possible",
+      "reason": "Disclosure does not establish reduced danger; amnesty must not prevent lawful protection against continuing threats."
+    }
+  ],
+  "recommended_components": [
+    "Establish an independently administered repair programme with protected funding, published deadlines, urgent interim assistance and audited delivery.",
+    "Separate repair eligibility from criminal conviction, public testimony, amnesty participation and forgiveness; accommodate destroyed evidence through fair administrative proof and appeal.",
+    "Deliver case-specific restitution, compensation and voluntary rehabilitation alongside collective services addressing demonstrated community harm.",
+    "Use conditional amnesty only with verified full disclosure, narrow political-nexus criteria, individual review, victim participation and credible accountability when conditions fail.",
+    "Define predictable immunity terms without confidentiality bargains or victim gag conditions; assess actual disclosure gains before expanding the scheme.",
+    "Implement institutional reform and protected archives while keeping reconciliation voluntary and preserving victim disagreement."
+  ],
+  "information_requests": [
+    "What funding, claimant estimates, service capacity and delivery deadlines can support compensation, rehabilitation and restitution?",
+    "What eligibility, proof, appeal and outreach rules will protect claimants affected by destroyed records or barriers to participation?",
+    "What criminal and civil liabilities would amnesty cover, and what enforceable repair entitlement survives it?",
+    "How will full disclosure and political nexus be verified, and who can review or revoke defective grants?",
+    "What do diverse victims, families and affected communities prioritise, including those who reject amnesty or public testimony?"
+  ],
+  "evidence_that_could_change_view": [
+    "Evidence that meaningful prosecution is feasible without comparable losses of truth would weaken the justification for amnesty.",
+    "Corroborated additional disclosures, recovered remains and records, and effective action against failed applicants would strengthen conditional support.",
+    "Systematic deception, selective grants, retaliation or failure to deliver funded repair would undermine the arrangement's legitimacy.",
+    "Reliable cost and needs assessments, together with inclusive victim participation, could change allocation priorities and implementation timing."
+  ],
+  "unresolved_objections": [
+    "The strongest objection is that even verified disclosure and substantial reparation may leave victims of grave violations without deserved adjudication and sanction because perpetrators control information. This burdens victims with a concession benefiting society; their dissent remains morally significant even if the package is defensible.",
+    "The packet does not establish how much additional truth amnesty would secure, how much prosecution is realistically available or what reparations can be delivered. Conditional legitimacy therefore does not establish that this proposed design is already adequate."
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "evaluation_id": "BENCH-CORE-08-HC-0107-MASKED-V0.1",
+  "role": "advocate",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "No moral-floor violation is established by the proposed staged controls. Their permissibility nevertheless depends on proportionate restrictions and protection against serious transition deprivation.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "Preventing serious atmospheric harm is a legitimate protective objective. Reported mechanisms, observations and chemical attribution support intervention despite uncertain global consequences; their supplied confidence is unknown.",
+      "basis": "input_evidence",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "Reducing production and consumption plausibly limits additional accumulation and resulting risk. This causal inference supports controls, but the packet does not establish their quantitative effectiveness or sufficient reduction schedule.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E5",
+        "E9"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "Delay is consequential: the packet infers additional long-lived accumulation and slower later reversal. This supports timely precaution without establishing a specific deadline or emergency authority.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E5",
+        "E9"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Staging, targeting major substances and differentiating implementation provide a stronger proportionality case than an immediate comprehensive ban, given valuable uses and uneven substitute maturity.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F6",
+      "statement": "Existing research and monitoring do not impose binding reductions. Voluntary alternatives could be less coercive, but their effectiveness or insufficiency is not established; binding authority therefore requires explicit justification against them.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E7"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F7",
+      "statement": "Periodic assessment permits adjustment of controls, but does not establish full reversibility of transition costs or atmospheric damage. Independent review, challenge mechanisms and fair burden allocation remain unspecified.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E5",
+        "E6",
+        "E8",
+        "E9"
+      ],
+      "materiality": "high"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "pass",
+      "reason": "The proposed protective controls do not establish treatment of people as disposable instruments; transition burdens must still respect equal worth.",
+      "evidence_ids": [
+        "E4",
+        "E6",
+        "E8"
+      ],
+      "potential_moral_floor_breach": false
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "Preventing plausible serious health and ecological harm supports action, while genuine transition costs require minimisation and monitoring.",
+      "evidence_ids": [
+        "E4",
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "concern",
+      "reason": "Binding production and consumption limits restrict choice. Serious external risks support justified limits, conditional on necessity and minimum intrusion.",
+      "evidence_ids": [
+        "E4",
+        "E5",
+        "E6"
+      ]
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "pass",
+      "reason": "Precaution can rely on the reported mechanism and observations while openly retaining uncertainty about attribution details, future incidence and control effectiveness.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "concern",
+      "reason": "Capacity-based differentiation is relevant to fairness, but the packet does not establish fair allocation of obligations or transition burdens.",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Differentiated implementation supports lower-capacity participants; concrete protections for those least able to absorb transition costs remain necessary.",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "pass",
+      "reason": "Controls address the export of locally generated risks across borders and generations, provided transition costs are also shared fairly.",
+      "evidence_ids": [
+        "E5",
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-08",
+      "status": "pass",
+      "reason": "The proposal aims to prevent continuing harm and adjust conduct rather than punish or seek revenge.",
+      "evidence_ids": [
+        "E8",
+        "E9"
+      ]
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "pass",
+      "reason": "Serious plausible ecological risks, long persistence and slower reversal support precaution before precise future burdens are known.",
+      "evidence_ids": [
+        "E4",
+        "E5",
+        "E9"
+      ]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "concern",
+      "reason": "Staging and reassessment constrain power, but the necessity of binding controls over effective voluntary alternatives and the appropriate initial scope require documented justification.",
+      "evidence_ids": [
+        "E6",
+        "E7",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "uncertain",
+      "reason": "Periodic assessment is supported, but independent scrutiny, challenge and meaningful remedies are unspecified.",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "pass",
+      "reason": "Evidence-based periodic revision preserves correction in principle; implementation must also preserve criticism and competing scientific explanations.",
+      "evidence_ids": [
+        "E8"
+      ]
+    }
+  ],
+  "information_requests": [
+    "What initial substances, reduction levels and timelines are justified by the available evidence?",
+    "Could voluntary targets achieve comparable timely reductions, and what evidence supports that comparison?",
+    "What essential uses, substitute safety issues and supply disruptions require transition protection?",
+    "How will obligations, support, independent review, challenges and remedies be allocated and implemented?"
+  ],
+  "alternatives_or_safeguards": [
+    "Use A6 as an initial design option: targeted binding controls with periodic reassessment; justify scope using risk and substitution evidence.",
+    "Assess A4/A8 financial and technical cooperation to protect lower-capacity states; feasibility is not established in the packet.",
+    "Publish reasons comparing staged controls with A1/A5 voluntary approaches; prefer voluntary measures where evidence establishes equivalent timely protection.",
+    "Avoid A3/A7 immediate comprehensive bans absent evidence that their additional restrictions are necessary and proportionate.",
+    "Monitor health, ecological, supply and distributional effects; revise stages when evidence changes and protect essential services through narrowly justified transition provisions.",
+    "Require transparent evidence, independent review, affected-party participation, challenge procedures and remedies; periodic assessment alone does not establish accountability."
+  ],
+  "evidence_that_could_change_view": [
+    "Reliable evidence undermining the proposed chemical mechanism, attribution or serious risk would weaken the justification for controls.",
+    "Evidence that voluntary measures achieve comparable timely reductions would favour less coercive action.",
+    "Evidence of severe transition deprivation without adequate mitigation would require narrower controls or a revised timetable.",
+    "Evidence of faster damage or insufficient initial reductions would support stronger controls subject to necessity and proportionality.",
+    "Evidence of discriminatory burdens or unchallengeable enforcement would undermine permissibility."
+  ],
+  "recommended_disposition": "permissible_with_safeguards"
+}

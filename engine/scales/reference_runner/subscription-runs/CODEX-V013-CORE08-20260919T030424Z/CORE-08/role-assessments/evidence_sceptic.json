@@ -1,0 +1,203 @@
+{
+  "evaluation_id": "BENCH-CORE-08-HC-0107-MASKED-V0.1",
+  "role": "evidence_sceptic",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "The packet supports a credible mechanism, observed regional depletion and supporting chemical attribution. These support concern but do not establish precise global effects or future disease incidence.",
+      "basis": "input_evidence",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "Sources, dates, methods, measurement uncertainty and independence are missing. All confidence fields are unknown; the reported and observed labels cannot establish evidentiary quality or exclude selection problems. Contemporaneous availability cannot be independently checked.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "E9 is an inference consistent with the persistence described in E5, not an observed comparison of policies. It gives a reason against requiring precise proof before action, but does not establish the optimal schedule or urgency.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E5",
+        "E9"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "E8 describes available policy design features, not demonstrated implementation or effectiveness. The packet does not establish compliance, sufficient reduction levels, or whether voluntary measures could achieve comparable protection.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E7",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Transition costs and uneven substitute maturity are acknowledged. Their magnitude, distribution and implications for essential uses remain unresolved, limiting any claim that a specific control schedule is proportionate.",
+      "basis": "input_evidence",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F6",
+      "statement": "No moral-floor breach is established by the described staged controls. Precaution supports protective action under uncertainty, while necessity, fair transition and accountable revision remain requirements; neither uncertainty nor projected benefits settle these requirements alone.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E4",
+        "E5",
+        "E6",
+        "E8",
+        "E9"
+      ],
+      "materiality": "decisive"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "E4–E5 support preventing serious harm; E6 requires assessing harms from transition. Net protective effectiveness and a proportionate schedule remain unquantified.",
+      "evidence_ids": [
+        "E4",
+        "E5",
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "concern",
+      "reason": "Binding controls restrict choices. The credible risk supports considering restrictions, but their scope must satisfy necessity and minimum intrusion.",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4",
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-04",
+      "status": "uncertain",
+      "reason": "The packet acknowledges uncertainty but supplies no underlying sources. There is no evidence of deception; strong claims of precision, independent corroboration or proven policy success would exceed the evidence.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E8",
+        "E9"
+      ]
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "uncertain",
+      "reason": "Differentiation can address capacity differences, but no burden-allocation criteria establish that its actual implementation would be fair.",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Uneven substitute maturity and implementation capacity require protection against disproportionate transition burdens; differentiation alone does not demonstrate adequate support.",
+      "evidence_ids": [
+        "E6",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "concern",
+      "reason": "E5 identifies exported geographic and temporal risks. Controls address that concern, but E6 leaves the distribution of transition costs unresolved.",
+      "evidence_ids": [
+        "E5",
+        "E6"
+      ]
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "pass",
+      "reason": "Staged preventive action takes plausible serious, persistent future harm into account without requiring exact forecasts. The packet does not establish a quantified catastrophic outcome.",
+      "evidence_ids": [
+        "E4",
+        "E5",
+        "E8",
+        "E9"
+      ]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "uncertain",
+      "reason": "Staging and reassessment constrain power, but comparative effectiveness, enforcement scope and practical reversibility are unspecified.",
+      "evidence_ids": [
+        "E7",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "uncertain",
+      "reason": "Periodic assessment supports review, but independent scrutiny, challenge procedures and remedies are not specified.",
+      "evidence_ids": [
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "pass",
+      "reason": "Evidence-based adjustment preserves revisability in the proposed design; its implementation must allow competing scientific and economic assessments.",
+      "evidence_ids": [
+        "E3",
+        "E8"
+      ]
+    }
+  ],
+  "information_requests": [
+    "Provide dated scientific sources, methods, uncertainty estimates and evidence of independence for E1–E5.",
+    "Provide comparative projections for staged binding controls and voluntary measures, including assumptions about compliance and accumulation.",
+    "Specify initial substances, reduction schedules, enforcement powers and criteria for tightening or relaxing controls.",
+    "Provide application-specific substitute safety, availability and cost evidence, distributional assessments and proposed review procedures."
+  ],
+  "alternatives_or_safeguards": [
+    "Consider A6 as a narrower initial approach, with evidence-based substance selection and scheduled reassessment; its sufficiency remains unproven.",
+    "Assess A4/A8 financial and technical support against documented capacity and transition needs; feasibility is unknown.",
+    "Compare the overlapping voluntary options A1/A5 without assuming either adequacy or failure. Evaluate delay options A2/A9 against E9's accumulation concern.",
+    "Do not infer necessity for immediate comprehensive bans A3/A7 from evidence supporting staged controls.",
+    "Publish evidence, assumptions and uncertainty; require independent review, affected-party challenge and explicit criteria for revising controls.",
+    "Monitor atmospheric outcomes, compliance, substitute safety and transition burdens, with corrective adjustments tied to findings."
+  ],
+  "evidence_that_could_change_view": [
+    "Reliable evidence undermining the mechanism, observations or chemical attribution would weaken the justification for controls.",
+    "Evidence that voluntary measures achieve comparable timely reductions would favor less coercive action.",
+    "Evidence of severe unavoidable transition harms would support changing the scope, timing or support arrangements.",
+    "Evidence of faster damage or inadequate initial reductions would support stronger controls, subject to proportionality.",
+    "Demonstrated inability to independently review or correct controls would weaken conditional permissibility."
+  ],
+  "recommended_disposition": "permissible_with_safeguards"
+}

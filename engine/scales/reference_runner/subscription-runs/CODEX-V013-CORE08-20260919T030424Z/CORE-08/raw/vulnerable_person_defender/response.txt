@@ -1,0 +1,120 @@
+{
+  "evaluation_id": "BENCH-CORE-08-HC-0107-MASKED-V0.1",
+  "role": "vulnerable_person_defender",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "No moral-floor breach is established by the proposed staged controls. Protecting exposed populations does not, however, authorize treating people dependent on affected uses as disposable.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": ["E4", "E6", "E8"],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "Long-lived, globally distributed risks give people unable to influence present production, especially future generations, a substantial claim to protection. Exact harm remains uncertain; the accumulation consequence of delay is an inference in the packet.",
+      "basis": "inference",
+      "evidence_ids": ["E1", "E3", "E4", "E5", "E9"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "Transition costs and uneven substitute maturity are documented. Differentiated implementation can address capacity differences, but the packet does not establish that it adequately protects consumers, public services or lower-capacity states.",
+      "basis": "inference",
+      "evidence_ids": ["E6", "E8"],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "Affected parties' actual views, accessible participation, appeal mechanisms, compensation and practical access to substitute technologies are not established. Low state capacity does not establish individual incapacity or consent.",
+      "basis": "missing_information",
+      "evidence_ids": [],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Staging and reassessment offer a less abrupt protective approach than an immediate comprehensive ban. The packet does not establish whether voluntary alternatives would provide sufficient protection or whether proposed financial and technical support is feasible.",
+      "basis": "inference",
+      "evidence_ids": ["E6", "E7", "E8", "E9"],
+      "materiality": "high"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "pass",
+      "reason": "The proposal establishes no treatment of people as disposable resources; implementation must preserve equal standing for those bearing transition costs.",
+      "evidence_ids": ["E6", "E8"],
+      "potential_moral_floor_breach": false
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "Credible serious health risks support protective action, while uncertain substitute safety and transition disruption require safeguards against unnecessary harm.",
+      "evidence_ids": ["E1", "E3", "E4", "E6", "E8"]
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "concern",
+      "reason": "Binding controls restrict choices to address harm to others. Meaningful participation and proportionate implementation remain necessary; affected people's views are unknown.",
+      "evidence_ids": ["E4", "E5", "E8"]
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "concern",
+      "reason": "Capacity-sensitive implementation is supported, but fair allocation of burdens is unresolved and cannot be inferred from differentiation alone.",
+      "evidence_ids": ["E6", "E8"]
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Protection must encompass both people exposed to atmospheric damage and those least able to absorb transition costs. Adequate support is not established.",
+      "evidence_ids": ["E4", "E5", "E6", "E8"]
+    },
+    {
+      "principle_id": "MC-07",
+      "status": "concern",
+      "reason": "Controls address exported atmospheric risks, but their costs must not simply be transferred to lower-capacity parties.",
+      "evidence_ids": ["E5", "E6", "E8"]
+    },
+    {
+      "principle_id": "MC-09",
+      "status": "pass",
+      "reason": "Staged protection addresses plausible serious long-lived harm inherited by future people; precise downstream incidence need not be known before proportionate precaution.",
+      "evidence_ids": ["E4", "E5", "E8", "E9"]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "concern",
+      "reason": "Staging and review constrain interference, but sufficient control levels and the effectiveness of less coercive alternatives remain uncertain.",
+      "evidence_ids": ["E7", "E8", "E9"]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "uncertain",
+      "reason": "Periodic assessment supports correction but does not establish independent scrutiny, accessible challenge or meaningful remedies.",
+      "evidence_ids": ["E8"]
+    }
+  ],
+  "information_requests": [
+    "What transition burdens and substitute access constraints affect consumers, public services and lower-capacity states?",
+    "What participation, independent review, appeal and remedy mechanisms will affected people have?",
+    "What finance and technical cooperation can be delivered, on what terms, and with what evidence of adequacy?",
+    "What evidence compares voluntary measures and staged binding controls for sufficient protection?"
+  ],
+  "alternatives_or_safeguards": [
+    "Prefer staged controls with financial and technical cooperation as described in A4/A8, subject to verification of feasibility and adequacy.",
+    "Assess the narrower initial scope in A6 against the protective objective; publish reasons for scope and timing.",
+    "Make participation and challenges accessible to affected people, including those with limited resources; do not substitute assumptions for their expressed needs.",
+    "Monitor availability, affordability and safety of substitutes and effects on public services; adjust schedules and provide targeted support where evidence warrants.",
+    "Require independent periodic science and economic review, published reasons, remedies and evidence-based adjustment while accounting for harms of delay."
+  ],
+  "evidence_that_could_change_view": [
+    "Evidence that staged controls cause serious deprivation that feasible support or schedule adjustments cannot prevent would undermine permission for those controls.",
+    "Evidence that voluntary measures provide sufficient timely protection with less interference would favor A1/A5.",
+    "Evidence undermining the reported mechanism or serious risk would weaken the justification for binding restrictions.",
+    "Evidence that initial reductions are insufficient would support stronger controls, subject to necessity, proportionality and protection of vulnerable parties.",
+    "Demonstrated adequate transition support and meaningful participation would resolve major concerns."
+  ],
+  "recommended_disposition": "permissible_with_safeguards"
+}

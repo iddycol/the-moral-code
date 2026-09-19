@@ -1,0 +1,182 @@
+{
+  "evaluation_id": "BENCH-CORE-04-HC-0101-MASKED-V0.1",
+  "role": "power_auditor",
+  "role_contract_version": "0.1",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "statement": "Protecting children is legitimate, but reported procedural difficulty and official disapproval do not establish that general direct-removal authority is necessary. Protective urgency conflicts with family agency and independent scrutiny; the packet does not justify overriding those protections.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E2",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F2",
+      "statement": "The proposal concentrates inquiry, welfare judgment and full custody in the Board without a prior judicial finding. An ancestry-specific population receives weaker safeguards than the ordinary comparator, without evidence justifying that distinction.",
+      "basis": "input_evidence",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "materiality": "decisive"
+    },
+    {
+      "finding_id": "F3",
+      "statement": "A parental appeal provides a possible challenge, but its practical effectiveness is unknown. It cannot establish necessity before removal, and the packet specifies no custody duration, automatic independent review or restoration mechanism.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F4",
+      "statement": "The Board benefits institutionally from removing the evidential constraint on its own policy implementation. This creates an inferred conflict between administrative convenience and impartial assessment, without establishing personal misconduct.",
+      "basis": "inference",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E8"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F5",
+      "statement": "Institutional placement for refusing an arranged apprenticeship extends control beyond immediate protection and raises a moral-floor concern about arbitrary confinement and treating children as instruments. Actual forced labour or abuse is not established.",
+      "basis": "constitutional_interpretation",
+      "evidence_ids": [
+        "E5"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F6",
+      "statement": "Hypothesis: a malicious successor could use the broad moral-welfare ground to remove children for cultural disapproval or resistance to policy. The discretionary threshold and delayed challenge create this abuse pathway; the packet does not establish that such abuse has occurred.",
+      "basis": "hypothesis",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "materiality": "high"
+    },
+    {
+      "finding_id": "F7",
+      "statement": "The packet does not specify surveillance powers, information-access limits, placement oversight or practical reversibility. These gaps prevent a complete assessment of custody-related monitoring and institutional lock-in.",
+      "basis": "missing_information",
+      "evidence_ids": [
+        "E3",
+        "E5"
+      ],
+      "materiality": "medium"
+    }
+  ],
+  "principle_assessments": [
+    {
+      "principle_id": "MC-01",
+      "status": "concern",
+      "reason": "Broad custody and institutional consequences for refusing apprenticeship risk subordinating children to official placement objectives.",
+      "evidence_ids": [
+        "E3",
+        "E5",
+        "E8"
+      ],
+      "potential_moral_floor_breach": true
+    },
+    {
+      "principle_id": "MC-02",
+      "status": "concern",
+      "reason": "Protective benefits are asserted, but necessity and proportionality of removal without prior independent findings are not demonstrated.",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-03",
+      "status": "fail",
+      "reason": "Official belief that removal benefits a child can override family agency without establishing serious unjustified harm; apprenticeship refusal can trigger institutional placement.",
+      "evidence_ids": [
+        "E3",
+        "E5",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-05",
+      "status": "fail",
+      "reason": "Ancestry determines exposure to weaker removal safeguards, with no supplied individual-risk justification for unequal procedural protection.",
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "potential_moral_floor_breach": true
+    },
+    {
+      "principle_id": "MC-06",
+      "status": "concern",
+      "reason": "Children's need for protection does not justify broad official discretion; effective protection for families contesting removal is unestablished.",
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E8"
+      ]
+    },
+    {
+      "principle_id": "MC-10",
+      "status": "fail",
+      "reason": "Full custody on a broad discretionary welfare ground exceeds demonstrated necessity. Less intrusive alternatives have not been shown insufficient, and duration and reversibility are unspecified.",
+      "evidence_ids": [
+        "E2",
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "principle_id": "MC-11",
+      "status": "fail",
+      "reason": "The Board makes the initial consequential judgment itself. A post-removal appeal of unknown practical accessibility does not establish accountability proportionate to this authority.",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ]
+    },
+    {
+      "principle_id": "MC-12",
+      "status": "concern",
+      "reason": "An appeal preserves formal challenge, but institutional placement following refusal of an arranged apprenticeship risks making resistance itself grounds for greater control.",
+      "evidence_ids": [
+        "E4",
+        "E5"
+      ]
+    }
+  ],
+  "information_requests": [
+    "Provide individual-case evidence showing when court delay caused serious preventable harm and why faster proceedings or temporary emergency protection would be insufficient.",
+    "Specify custody limits, independent placement oversight, automatic review, appeal assistance and enforceable restoration or compensation remedies.",
+    "Specify information-gathering powers, access restrictions and retention limits.",
+    "Explain the evidential justification for ancestry-specific safeguards and provide evidence on support-based alternatives."
+  ],
+  "alternatives_or_safeguards": [
+    "Prefer A1 and A4: retain independent findings and improve proceedings where delay is demonstrated; implementation feasibility remains unknown.",
+    "Consider A2/A5 only with individual evidence, a serious-harm threshold, proportionality and equal procedural protection.",
+    "Assess A3/A6 family support against identified welfare needs; effectiveness and feasibility require evidence.",
+    "Consider A7 for evidenced immediate danger only, with minimum necessary temporary intervention and prompt automatic independent review.",
+    "For any revised authority, require recorded reasons, accessible representation and appeal, periodic custody review, independent placement oversight and meaningful remedies. Do not make apprenticeship refusal alone sufficient for confinement."
+  ],
+  "evidence_that_could_change_view": [
+    "Evidence of immediate serious danger and demonstrated inadequacy of less intrusive measures could justify narrowly bounded emergency authority, not the unrestricted proposal.",
+    "A revised proposal providing equal safeguards, individual serious-harm findings, enforceable limits and effective independent review could change the disposition.",
+    "Evidence that appeals are accessible and rapidly restore unjustly removed children would reduce accountability concerns but would not alone cure discriminatory scope or excessive discretion."
+  ],
+  "recommended_disposition": "impermissible"
+}
