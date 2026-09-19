@@ -1,0 +1,158 @@
+{
+  "status": "source_corrected_candidate_not_runnable",
+  "candidate_branch": "experiment/core12-provenance-v0.1.4",
+  "starting_commit": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+  "criteria": [
+    "The selected historical action and responsible actor have a sufficiently precise predecision event boundary; a clock minute is required only when material to receipt or intervention.",
+    "Material factual premises have primary-source support and exact external locators, or are explicitly qualified/unknown without contradicting the question being tested. Complete source dossiers or personal knowledge of every actor are not universally required.",
+    "Source publication, reconstructed earlier conditions and actual actor receipt are distinguished. Operational intervention and known feasibility need support at the applicable cutoff.",
+    "Later outcomes, legal amendments and stronger proposed safeguards are kept distinct from predecision historical design.",
+    "Every evaluator request/envelope respects masking and separation, while retaining selected actions, relevant power relationships and uncertainty.",
+    "Historical packs/trials and existing valid tests remain immutable; an integrity gate may fail when candidate sources intentionally diverge from the preserved historical pack."
+  ],
+  "interpretation_changes_adopted": false,
+  "benchmark_evaluator_calls": 0,
+  "new_pack_created": false,
+  "new_pack_digest": null,
+  "pack_decision": "Do not freeze v0.1.4: unresolved material blockers remain in CORE06,07,09,10,11,12. Qualified cases remain subject to independent review.",
+  "cases": [
+    {
+      "core_id": "CORE-01",
+      "status": "qualified_candidate",
+      "material_blockers": [],
+      "limits": [
+        "The reproduced meeting summary is not a verbatim, timed record of what information each decision actor received; exact notice of consent/treatment practices to each adviser is not established. This limits personal-knowledge claims, not the supplied institutional decision problem."
+      ],
+      "decision_point": "6 February 1969 panel deliberation, before its continuation recommendation",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-02",
+      "status": "qualified_candidate",
+      "material_blockers": [],
+      "limits": [
+        "Receipt of the locally proposed delay by remote contractor managers during their separate caucus is unestablished. Attribution and the explicit evaluator uncertainty prevent that assumption from being asserted."
+      ],
+      "decision_point": "Immediately before final oral recommendation, approximately 23:00 EST (UTC-05:00), 27 January 1986",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-03",
+      "status": "qualified_candidate",
+      "material_blockers": [],
+      "limits": [
+        "Original February 23 letters and the complete contemporaneous NDA dossier are uninspected. The dated FDA chronology supports the affirmative candidate premises; the narrow congenital-risk statement is only a supplied-evidence limit. This prevents exhaustive evidence or universal-negative claims, without blocking the bounded decision problem."
+      ],
+      "decision_point": "Immediately before the February 23, 1961 incomplete-application letter; clock time unestablished",
+      "ledger": "sources-01-03.json"
+    },
+    {
+      "core_id": "CORE-04",
+      "status": "qualified_candidate",
+      "material_blockers": [],
+      "limits": [
+        "Contemporaneous bill/proceedings support the legislative decision; no claim every individual legislator read each source."
+      ],
+      "decision_point": "28 January 1915, immediately before Legislative Assembly third reading",
+      "ledger": "sources-04-08.json"
+    },
+    {
+      "core_id": "CORE-05",
+      "status": "qualified_candidate",
+      "material_blockers": [],
+      "limits": [
+        "The statutory group criterion is a textual inference; later ancestry decrees and persecution outcomes excluded."
+      ],
+      "decision_point": "15 September 1935, before enactment of the two laws",
+      "ledger": "sources-04-08.json"
+    },
+    {
+      "core_id": "CORE-06",
+      "status": "blocked",
+      "material_blockers": [
+        "Exact pre-announcement admission decision, responsible-authority receipt of warnings and reception capacity are unverified."
+      ],
+      "limits": [
+        "Later dispatches and successful escape cannot certify predecision knowledge or capacity."
+      ],
+      "decision_point": "2 October 1943, precise pre-announcement instant unresolved",
+      "ledger": "sources-04-08.json"
+    },
+    {
+      "core_id": "CORE-07",
+      "status": "blocked",
+      "material_blockers": [
+        "No demonstrated senior-authority receipt of confirmed Soviet entry before the departure bound.",
+        "No verified effective stop-order deadline, transmission path or operational capacity after receipt.",
+        "The retained decision question presupposes changed conditions whose combined pre-departure availability is not established."
+      ],
+      "limits": [
+        "New information must not be backdated from later public announcements; no cutoff shifted beyond the selected decision."
+      ],
+      "decision_point": "Before second mission departure, 03:47 Tinian /17:47UTC /13:47 Washington EWT,8-9August1945; actionable instant unresolved",
+      "ledger": "sources-04-08.json"
+    },
+    {
+      "core_id": "CORE-08",
+      "status": "qualified_candidate",
+      "material_blockers": [],
+      "limits": [
+        "Original treaty and pre-cutoff scientific sources support staged adoption; substitute maturity, quantified costs and future effects remain uncertain."
+      ],
+      "decision_point": "16 September 1987, before original treaty adoption",
+      "ledger": "sources-04-08.json"
+    },
+    {
+      "core_id": "CORE-09",
+      "status": "blocked",
+      "material_blockers": [
+        "No exact dated committee decision/capacity snapshot within the broad1962 cutoff; reported dialogue is a recollection, not dated minutes.",
+        "Original LIFE scan/transcription not verified; full medical eligibility dossiers and feasible lottery/queue implementation not established."
+      ],
+      "limits": [
+        "Source candidate only; no exact historical replay certification."
+      ],
+      "ledger": "sources-09-10.json"
+    },
+    {
+      "core_id": "CORE-10",
+      "status": "blocked",
+      "material_blockers": [
+        "No exact pre-fire management policy decision or actor receipt established after the dated27February inspection.",
+        "Routine selected locking/control policy, particular actor knowledge and equipment inventory remain unresolved.",
+        "Costs and effectiveness of non-blocking security/retrofit alternatives not established at a precise cutoff."
+      ],
+      "limits": [
+        "Leak corrected but preserved selected action has an unresolved historical premise; no runnable admission."
+      ],
+      "ledger": "sources-09-10.json"
+    },
+    {
+      "core_id": "CORE-11",
+      "status": "blocked",
+      "material_blockers": [
+        "R11-B1: Detailed1952 health/disability needs and destroyed-record mechanisms remain incompletely sourced; broad material deprivation or heirless property is not proof of each component.",
+        "R11-B2: Public speeches establish claims and political positions; precise resettlement-cost attribution, survivor preference distribution and Cabinet receipt of every contextual claim remain unverified."
+      ],
+      "limits": [
+        "Publish supported corrections with no new runnable pack; further needs/claim-administration evidence and receipt mapping required."
+      ],
+      "decision_point": "1952-09-08, immediately before Cabinet vote on agenda 1–2; exact minute unverified",
+      "ledger": "repair-11-12.json"
+    },
+    {
+      "core_id": "CORE-12",
+      "status": "blocked",
+      "material_blockers": [
+        "R12-B1: No precise pre-adoption decision event and receipt of a matching complete bill/terms were verified. 26 July publication cannot be substituted after enactment for a decision whether to create the arrangement.",
+        "R12-B2: Limited pre-1995 records do not fully support all harm categories/attributions, frequency of missing family truth, or actual victim-preference distribution.",
+        "R12-B3: Operational resources, protection and delivery capacity are not demonstrated by legal remit; all feasibility labels now reflect possibility rather than certification."
+      ],
+      "limits": [
+        "Publish supported source corrections with no new runnable pack; resolve pre-adoption bill/receipt timeline and material capacity/support gaps."
+      ],
+      "decision_point": "Exact pre-adoption legislative review point unresolved; original 1995 before-implementation wording is not a precise event",
+      "ledger": "repair-11-12.json"
+    }
+  ]
+}

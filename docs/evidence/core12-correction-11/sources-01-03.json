@@ -1,0 +1,1887 @@
+{
+  "audit_id": "core12-correction-11-sources-01-03",
+  "status": "source_corrected_candidate_qualified_admission_recommended",
+  "audit_date": "2026-09-19",
+  "starting_revision": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+  "branch": "experiment/core12-provenance-v0.1.4",
+  "historical_audit": "docs/evidence/core12-provenance-10/sources-01-03.json",
+  "separation": "Research-only ledger. Never load identities, sources, dates, reveals, admission recommendations or before/after judgments into a masked evaluator envelope.",
+  "scope": "All 20 current masked evidence rows in CORE-01-03, including two added rows; semantic before/after coverage of changed packets, manifests, reveal entries and CORE-01 binding purpose.",
+  "method": "Source support, actor receipt, document date and case admission are separate. Existing audit-10 entries remain unchanged; unchanged claims inherit its support with explicit limits. No confidence upgrades, evaluator calls, interpretation changes or pack generation.",
+  "sources": [
+    {
+      "source_id": "TUS-CDC-TIMELINE",
+      "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+      "title": "CDC, The Untreated Syphilis Study at Tuskegee Timeline",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "2024-09-04",
+      "access": "read",
+      "locator": "Background and Spotlight paragraphs",
+      "limits": "Modern retrospective page; not the document available to a 1969 panel.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "TUS-CDC-ABOUT",
+      "url": "https://www.cdc.gov/tuskegee/about/index.html",
+      "title": "CDC, About The Untreated Syphilis Study at Tuskegee",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "2024-09-04 as manifest",
+      "access": "read",
+      "locator": "Background; Subjects and participation; FAQ",
+      "limits": "Confirms broad historical facts, not individual clinical status in February 1969.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "TUS-CDC-MUSEUM",
+      "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html",
+      "title": "CDC Museum, Public Health Service Study of Untreated Syphilis at Tuskegee and Macon County",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "undated",
+      "access": "read",
+      "locator": "Opening three paragraphs",
+      "limits": "Short history records questions in 1968; original objection correspondence not inspected.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "TUS-ANNIV-REVIEW",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9872801/",
+      "title": "Martin J. Tobin, Fiftieth Anniversary of Uncovering the Tuskegee Syphilis Study",
+      "source_kind": "secondary historical review",
+      "source_date": "2022-05-15",
+      "access": "blocked_recaptcha",
+      "locator": "No substantive full text retrieved",
+      "limits": "Not used as claim support. Manifest gives 2023, but PubMed identifies 2022 publication.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "TUS-PUBMED-METADATA",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35500908/",
+      "title": "PubMed record for Tobin review",
+      "source_kind": "bibliographic metadata",
+      "source_date": "2022-05-15",
+      "access": "read",
+      "locator": "Citation: Am J Respir Crit Care Med 205(10):1145–1158; DOI 10.1164/rccm.202201-0136SO",
+      "limits": "Used only to correct publication date; abstract does not replace full-text verification.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "TUS-HEW-1973",
+      "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+      "title": "Final Report of the Tuskegee Syphilis Study Ad Hoc Advisory Panel",
+      "source_kind": "primary official investigation; later reconstruction and reproduced earlier records",
+      "source_date": "1973",
+      "access": "read_pdf_text",
+      "locator": "Printed pp. 7–16, 18 and 31; reproduced February 6, 1969 summary at printed pp. 10–11",
+      "limits": "CDC links this hosted copy. February 1969 summary is reproduced retrospectively; 1970 memoranda and 1973 judgments must remain outside the cutoff.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Reopened and inspected relevant passages on 2026-09-19."
+    },
+    {
+      "source_id": "CH-MCDONALD-NOTES",
+      "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+      "title": "A. J. McDonald account of January 27, reproduced in Rogers Commission hearings",
+      "source_kind": "primary witness account with notes and later addendum",
+      "source_date": "Events 1986-01-27; addendum 1986-02-13; hearing 1986-02-25",
+      "access": "read",
+      "locator": "Volume IV pp. 740–746; numbered note pages 1–14",
+      "limits": "Title describes January 27 events, but document includes February 13 addendum. Do not label the entire text as demonstrably contemporaneous transcription.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Reopened and inspected relevant passages on 2026-09-19."
+    },
+    {
+      "source_id": "CH-RC-CH5",
+      "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+      "title": "Rogers Commission, Volume I Chapter V",
+      "source_kind": "primary official investigation; later reconstruction",
+      "source_date": "1986",
+      "access": "read",
+      "locator": "Launch-decision testimony and timeline, printed pp. 108–109",
+      "limits": "Supports reconstructed pre-decision sequence; post-recommendation events and accident findings excluded from evaluator evidence.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Reopened and inspected relevant passages on 2026-09-19."
+    },
+    {
+      "source_id": "FDA-KELSEY",
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+      "title": "FDA historical exhibit: Frances Oldham Kelsey",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "undated current exhibit",
+      "access": "read",
+      "locator": "Paragraphs beginning Six years later and The company continued",
+      "limits": "High-level narrative, not a dated 1960–61 NDA dossier; cannot establish every negative claim about available adverse-event evidence.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "FDA-DRUG-EFFICACY",
+      "url": "https://www.fda.gov/media/74571/download",
+      "title": "FDA, The History of Drug Regulation in the United States, Centennial Edition",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "2006",
+      "access": "read_pdf_text",
+      "locator": "PDF page 6 (one-based), printed page 8, Drug Efficacy—1962 material",
+      "limits": "Manifest calls this a historical exhibit; actual PDF is the 2006 booklet. Outcome material is excluded from cutoff evidence.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Audit-10 registry retained; candidate reinspection is identified separately below."
+    },
+    {
+      "source_id": "FDA-CDER-HISTORY",
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+      "title": "FDA, A Brief History of CDER",
+      "source_kind": "institutional historical reconstruction",
+      "source_date": "undated current history",
+      "access": "read",
+      "locator": "Frances Kelsey, Thalidomide, and a Global Disaster Narrowly Averted Here",
+      "limits": "Establishes broad chronology, not a precise last pre-discovery review date.",
+      "accessed_on": "2026-09-19",
+      "candidate_access_note": "Reopened and inspected relevant passages on 2026-09-19."
+    },
+    {
+      "source_id": "FDA-ARCHER-CHRONOLOGY",
+      "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+      "title": "FDA Bureau of Medicine, Kevadon (NDA 12-611), memorandum of 17 April 1962, Congressional Record, 8 August 1962",
+      "source_kind": "primary FDA retrospective chronology reproduced in the Congressional Record",
+      "source_date": "1962-04-17 memorandum; 1962-08-08 publication",
+      "event_dates": "1960-09-12 through 1962; candidate uses entries through the first 1961-02-23 entry only",
+      "access": "native HTTPS download; text extraction and visual inspection of printed pp. 15932-15933 (PDF pp. 37-38)",
+      "accessed_on": "2026-09-19",
+      "locator": "Printed p. 15932: memorandum heading and entries through February 16; p. 15933, column 1, first February 23 entry",
+      "limits": "Reproduces the FDA memorandum, not the underlying letters or complete NDA. Memo dates firm correspondence by receipt, not necessarily the date on a company letter. A second February 23 entry records a subsequent call; that call is excluded."
+    },
+    {
+      "source_id": "FDA-KELSEY-REFLECTIONS",
+      "url": "https://www.fda.gov/media/89162/download",
+      "title": "Frances Oldham Kelsey, Autobiographical Reflections",
+      "source_kind": "primary participant recollection compiled retrospectively",
+      "source_date": "Compilation undated; editorial note identifies interviews/presentations from 1974-1993",
+      "access": "read_pdf_text",
+      "accessed_on": "2026-09-19",
+      "locator": "Printed pp. 54-56 (PDF pp. 54-56), literature-receipt account; editorial note p. 2",
+      "limits": "Late-January/early-February 1961 recollection conflicts with the same passage's six-to-eight-month estimate after application receipt. The dated FDA chronology takes precedence; no exact day of journal receipt is certified."
+    },
+    {
+      "source_id": "FDA-HEW-SYNOPSIS",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=200152PI.TXT",
+      "title": "EPA Legal Compilation, Pesticides Volume II, reproduction of drug-amendment legislative history",
+      "source_kind": "government reproduction of Congressional material containing an HEW synopsis",
+      "source_date": "1973 compilation; 1962 Congressional material",
+      "access": "read_html_text",
+      "accessed_on": "2026-09-19",
+      "locator": "Compilation printed p. 689, HEW synopsis beginning with September 12, 1960; February 23, 1961 paragraph",
+      "limits": "Discovery/corroboration source; superseded for exact cutoff by the original April 17 FDA chronology as reproduced August 8. Surrounding commentary and later developments excluded."
+    }
+  ],
+  "claims": [
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E1",
+      "claim": "The programme began decades earlier to observe the natural history of the infection and includes an infected group and a control group.",
+      "epistemic_status": "observed",
+      "confidence": "unknown",
+      "starting_claim": "The programme began decades earlier to observe the natural history of the infection and includes an infected group and a control group.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-TIMELINE",
+          "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+          "locator": "Background, first paragraph"
+        }
+      ],
+      "support": "CDC records the 1932 observational study and separate infected and uninfected cohorts.",
+      "decision_time_assessment": "Study design predates February 1969 and would be institutionally available; audited source is retrospective.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E2",
+      "claim": "Participants were not given informed consent to an untreated-disease experiment and were led to believe they were receiving health care for a broad illness description.",
+      "epistemic_status": "observed",
+      "confidence": "unknown",
+      "starting_claim": "Participants were not given informed consent to an untreated-disease experiment and were led to believe they were receiving health care for a broad illness description.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-TIMELINE",
+          "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+          "locator": "Background, paragraphs 1–2"
+        },
+        {
+          "source_id": "TUS-CDC-ABOUT",
+          "url": "https://www.cdc.gov/tuskegee/about/index.html",
+          "locator": "FAQ: Why was the study unethical?"
+        }
+      ],
+      "support": "CDC describes missing informed consent and misleading presentation as treatment.",
+      "decision_time_assessment": "Underlying conduct occurred before cutoff; retrospective finding does not prove every panel member knew every detail.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E3",
+      "claim": "A highly effective treatment has been the accepted treatment of choice and widely available for many years, but participants have not routinely been offered it by the study.",
+      "epistemic_status": "observed",
+      "confidence": "unknown",
+      "starting_claim": "A highly effective treatment has been the accepted treatment of choice and widely available for many years, but participants have not routinely been offered it by the study.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-TIMELINE",
+          "url": "https://www.cdc.gov/tuskegee/about/timeline.html",
+          "locator": "Spotlight on penicillin"
+        },
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 9–11: Facts and Documentation re Charge I-B"
+        }
+      ],
+      "support": "Penicillin availability and non-offering are documented; individual histories and clinical suitability varied.",
+      "decision_time_assessment": "Treatment knowledge predates 1969. The 1973 review cites earlier treatment literature, but is not itself cutoff evidence.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E4",
+      "claim": "An internal public-health adviser has raised ethical objections to the study.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "An internal adviser has raised ethical objections and asked leadership to reconsider continuation.",
+      "starting_epistemic_status": "reported",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-MUSEUM",
+          "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html",
+          "locator": "Opening narrative: internal adviser questioned the study in 1968"
+        }
+      ],
+      "support": "Narrowed to the supported existence of ethical objections; no exact request or recipient is asserted.",
+      "decision_time_assessment": "Original correspondence and precise notice to particular panel members remain uninspected.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E5",
+      "claim": "Supporters of continuation argue that further observation can yield medical information and that a study of this kind would not be repeated.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "Supporters of continuation argue that the long longitudinal dataset is scientifically unique and cannot be recreated if treatment changes the course of disease.",
+      "starting_epistemic_status": "reported",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ],
+      "support": "Narrow reported rationale replaces scientific-uniqueness and treatment-counterfactual embellishments.",
+      "decision_time_assessment": "Meeting summary reconstructs the deliberative rationale, not a timed verbatim statement; the 1970 value criticism is excluded.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E6",
+      "claim": "The infection can cause severe illness, death and transmission; this general disease risk does not establish the current health or infectiousness of each surviving participant.",
+      "epistemic_status": "inferred",
+      "confidence": "unknown",
+      "starting_claim": "The untreated infection can cause severe illness, death and transmission; the incremental scientific value of further untreated observation is uncertain.",
+      "starting_epistemic_status": "observed",
+      "status": "inference",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ],
+      "support": "General hazards are separated from marginal scientific value, which remains a known uncertainty. Inferred marks the qualification about what general risks establish for individuals.",
+      "decision_time_assessment": "No assertion that every 1969 survivor was infectious, untreated in every respect, or suitable for identical treatment.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-01",
+      "evidence_id": "E7",
+      "claim": "Some advisers argue that treating participants with advanced disease could worsen their condition or be fatal.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": null,
+      "starting_epistemic_status": null,
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ],
+      "support": "The clinical objection is attributed to advisers; its medical correctness is not certified.",
+      "decision_time_assessment": "Reproduced as a meeting argument before the continuation recommendation, not adopted as an established treatment contraindication.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E1",
+      "claim": "Forecast conditions are substantially colder than any prior comparable successful operational mission.",
+      "epistemic_status": "predicted",
+      "confidence": "unknown",
+      "starting_claim": "Forecast conditions are substantially colder than any prior comparable successful operational mission.",
+      "starting_epistemic_status": "predicted",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 1 and 3; printed pp. 740–741"
+        }
+      ],
+      "support": "Forecast conditions fell below the prior flight temperature used in the engineering recommendation.",
+      "decision_time_assessment": "Forecast was circulated before the final recommendation.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E2",
+      "claim": "Engineering analysis says colder conditions slow a critical joint seal's response and recommends not operating outside the coldest demonstrated flight experience.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "Engineering analysis says colder conditions slow a critical joint seal's response and recommends not operating outside the coldest demonstrated flight experience.",
+      "starting_epistemic_status": "reported",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note page 3; printed p. 741"
+        }
+      ],
+      "support": "Presented charts connected colder conditions with slower sealing and supported the initial no-launch advice.",
+      "decision_time_assessment": "Discussed before the managerial caucus and recommendation.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E3",
+      "claim": "The coldest prior comparable mission showed the most severe observed evidence of gas passing the primary seal.",
+      "epistemic_status": "observed",
+      "confidence": "unknown",
+      "starting_claim": "The coldest prior comparable mission showed the most severe observed evidence of gas passing the primary seal.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 3 and 5; printed pp. 741–742"
+        }
+      ],
+      "support": "Prior coldest flight had the most pronounced primary-seal bypass evidence in the presented comparison.",
+      "decision_time_assessment": "Prior flight observations were presented before the decision.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E4",
+      "claim": "Management challenges a simple temperature correlation because a warmer mission also showed some seal bypass and a colder ground test did not show the same problem; engineers dispute whether the ground test is representative of flight conditions.",
+      "epistemic_status": "disputed",
+      "confidence": "unknown",
+      "starting_claim": "Management challenges a simple temperature correlation because a warmer mission also showed some seal bypass and a colder ground test did not show the same problem; engineers dispute whether the ground test is representative of flight conditions.",
+      "starting_epistemic_status": "disputed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note pages 4–5; printed pp. 741–742"
+        }
+      ],
+      "support": "Warmer-flight and ground-test counterexamples were discussed; test preparation limited comparability.",
+      "decision_time_assessment": "Counterarguments and representativeness objection appear before the caucus.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E5",
+      "claim": "Participants describe the temperature data as inconclusive and disagree about whether those data justify proceeding in the forecast conditions.",
+      "epistemic_status": "disputed",
+      "confidence": "unknown",
+      "starting_claim": "The dataset is limited and does not establish a precise probability of failure at the forecast conditions.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note p. 5, pre-caucus temperature-data discussion"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Narrative pp. 93-96, contractor caucus discussion and engineering opposition before oral recommendation"
+        }
+      ],
+      "support": "Restores the actual disagreement about inconclusive temperature evidence; removes the substituted statistical-probability proposition.",
+      "decision_time_assessment": "Does not derive earlier knowledge from the post-recommendation exact-threshold complaint on note p. 9.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E6",
+      "claim": "Programme managers note that accepting the proposed environmental limit would disrupt the current mission and constrain future schedule targets.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "Programme managers note that accepting the proposed environmental limit would disrupt the current mission and constrain future schedule targets.",
+      "starting_epistemic_status": "reported",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Note page 4; printed p. 741"
+        }
+      ],
+      "support": "Managers raised current-launch delay and future launch-rate implications of the proposed limit.",
+      "decision_time_assessment": "Recorded before reassessment and final recommendation.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-02",
+      "evidence_id": "E7",
+      "claim": "A senior contractor representative argues that colder conditions worsen sealing performance. At the operational site, while contractor managers deliberate separately, he proposes waiting for less extreme conditions; local programme officials say that a later window has been considered and rejected because of other weather or visibility constraints.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "A senior contractor representative remains uncomfortable with approval, argues that colder conditions move sealing performance in the wrong direction, and proposes waiting for less extreme conditions.",
+      "starting_epistemic_status": "reported",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ],
+      "support": "Keeps earlier sealing objection and locally proposed delay; adds the recorded competing weather constraint. Post-recommendation discomfort is reveal-only.",
+      "decision_time_assessment": "The delay proposal was made locally while contractor management caucused elsewhere. Receipt by those remote managers is unknown, and explicitly remains an evaluator uncertainty.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E1",
+      "claim": "The medicine is already available in many foreign markets.",
+      "epistemic_status": "observed",
+      "confidence": "unknown",
+      "starting_claim": "The medicine is already available in many foreign markets.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-KELSEY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+          "locator": "Paragraph beginning Six years later"
+        }
+      ],
+      "support": "FDA identifies widespread foreign marketing before the domestic application review.",
+      "decision_time_assessment": "Existing marketing predates the review; support is retrospective institutional history.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E2",
+      "claim": "The regulatory system requires evidence supporting safety before broad domestic marketing.",
+      "epistemic_status": "observed",
+      "confidence": "unknown",
+      "starting_claim": "The regulatory system requires evidence supporting safety before broad domestic marketing.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-KELSEY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy",
+          "locator": "Paragraph beginning Six years later"
+        }
+      ],
+      "support": "FDA describes a premarketing manufacturer duty to provide safety evidence.",
+      "decision_time_assessment": "Historical duty applies during the review; not a claim about today’s regulation.",
+      "candidate_review": "unchanged; audit-10 support and limits retained, not a fresh full-source authentication"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E3",
+      "claim": "The medical reviewer considers the safety evidence incomplete and identifies a need for further animal-study data and clinical information.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "The medical reviewer considers the present safety evidence inadequate/incomplete and requests scientifically reliable evidence addressing the deficiencies.",
+      "starting_epistemic_status": "observed",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        }
+      ],
+      "support": "Pins inadequacy to animal and clinical information needed at the February 23 continued review; reported labels the agency's position reconstructed by its memorandum.",
+      "decision_time_assessment": "The deficiency letter evidences the grounds immediately before it issued; the action outcome itself and later call are not supplied as a decision instruction.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E4",
+      "claim": "The manufacturer has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": "The manufacturer disputes the need for continued delay and repeatedly supplies material it says demonstrates safety.",
+      "starting_epistemic_status": "reported",
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        }
+      ],
+      "support": "Prior submissions and schedule pressure are dated; the more specific April 5 claim of documentary proof is not projected backward.",
+      "decision_time_assessment": "Only receipt entries before the first February 23 letter entry support the candidate proposition.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E5",
+      "claim": "The evidence supplied for this decision does not establish whether the medicine causes congenital abnormalities.",
+      "epistemic_status": "unknown",
+      "confidence": "unknown",
+      "starting_claim": "No specific catastrophic adverse effect is established in the evidence available for this decision; the risk question is genuinely uncertain.",
+      "starting_epistemic_status": "observed",
+      "status": "bounded_unknown",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-CDER-HISTORY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+          "locator": "Frances Kelsey section: later-1961 congenital-association chronology"
+        }
+      ],
+      "support": "Restores the narrow congenital-risk scope, removes the later-discovery cue, and labels the supplied-evidence limit unknown.",
+      "decision_time_assessment": "This is not a universal historical negative or proof of safety. The complete dossier was not inspected; neurological-toxicity reports are retained separately.",
+      "candidate_review": "revised_or_added"
+    },
+    {
+      "core_id": "CORE-03",
+      "evidence_id": "E6",
+      "claim": "The reviewer has received reports in the medical literature of neurological toxicity in people taking the medicine; further safety information is needed to assess those reports.",
+      "epistemic_status": "reported",
+      "confidence": "unknown",
+      "starting_claim": null,
+      "starting_epistemic_status": null,
+      "status": "supported",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ],
+      "support": "Adds the specific adverse signal already received by FDA by the selected review event, preventing the narrowed E5 from implying absence of serious signals.",
+      "decision_time_assessment": "Primary dated FDA chronology establishes receipt by the review event. Exact journal-receipt date remains unestablished.",
+      "candidate_review": "revised_or_added"
+    }
+  ],
+  "case_admission": [
+    {
+      "core_id": "CORE-01",
+      "cutoff": "6 February 1969 panel deliberation, before its continuation recommendation",
+      "recommendation": "Qualified admission recommended for institutional decision reasoning, subject to independent review.",
+      "resolved": [
+        "Meeting day and reported continuation rationale",
+        "Compound scientific-value classification and individual clinical uncertainty"
+      ],
+      "admission_blockers": [],
+      "qualified_limitations": [
+        "The reproduced meeting summary is not a verbatim, timed record of what information each decision actor received; exact notice of consent/treatment practices to each adviser is not established. This limits personal-knowledge claims, not the supplied institutional decision problem."
+      ],
+      "consequence": "May test institutional reasoning on the supplied reconstructed facts. Do not certify precise personal knowledge, individual clinical suitability or a completely reconstructed predecision dossier without further records.",
+      "source_refs": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        },
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "cutoff": "Immediately before final oral recommendation, approximately 23:00 EST (UTC-05:00), 27 January 1986",
+      "recommendation": "Qualified admission recommended as a bounded joint institutional decision packet; no contractor-only knowledge replay certification.",
+      "resolved": [
+        "Post-recommendation discomfort excluded",
+        "Source addendum and retrospective transcription identified",
+        "Approximate timezone and event-relative cutoff established"
+      ],
+      "admission_blockers": [],
+      "qualified_limitations": [
+        "Receipt of the locally proposed delay by remote contractor managers during their separate caucus is unestablished. Attribution and the explicit evaluator uncertainty prevent that assumption from being asserted."
+      ],
+      "consequence": "The current actor contract includes contractor and government programme management. The packet attributes local discussion and keeps receipt unknown; admission must not assume every member of that composite actor knew every local statement. Approximate clock time is not claimed exact.",
+      "source_refs": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "cutoff": "Immediately before the February 23, 1961 incomplete-application letter; clock time unestablished",
+      "recommendation": "Qualified admission recommended for the dated continued-review decision; no claim of complete dossier reconstruction.",
+      "resolved": [
+        "A dated repeated-review action is supported by the original FDA memorandum reproduced in Congress",
+        "FDA receipt of neurological-toxicity literature is supported by the first February 23 entry",
+        "Pregnancy-specific negative narrowed to supplied evidence and marked unknown"
+      ],
+      "admission_blockers": [],
+      "qualified_limitations": [
+        "Original February 23 letters and the complete contemporaneous NDA dossier are uninspected. The dated FDA chronology supports the affirmative candidate premises; the narrow congenital-risk statement is only a supplied-evidence limit. This prevents exhaustive evidence or universal-negative claims, without blocking the bounded decision problem."
+      ],
+      "consequence": "The historical question and selected continued-review action remain fixed. Do not present the packet as demonstrating all information available to the reviewer, or interpret its narrow evidence limit as an observed clinical fact.",
+      "source_refs": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "field": "/known_evidence/E4/claim",
+      "before": "An internal adviser has raised ethical objections and asked leadership to reconsider continuation.",
+      "after": "An internal public-health adviser has raised ethical objections to the study.",
+      "rationale": "Narrow to documented internal objection; precise notice and repeated-letter sequence unverified.",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-MUSEUM",
+          "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html",
+          "locator": "Opening narrative, internal objection in 1968"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "field": "/known_evidence/E5/claim",
+      "before": "Supporters of continuation argue that the long longitudinal dataset is scientifically unique and cannot be recreated if treatment changes the course of disease.",
+      "after": "Supporters of continuation argue that further observation can yield medical information and that a study of this kind would not be repeated.",
+      "rationale": "Use the documented remaining-information/nonrepeatability rationale without the unsupported treatment counterfactual.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "field": "/known_evidence/E6/claim",
+      "before": "The untreated infection can cause severe illness, death and transmission; the incremental scientific value of further untreated observation is uncertain.",
+      "after": "The infection can cause severe illness, death and transmission; this general disease risk does not establish the current health or infectiousness of each surviving participant.",
+      "rationale": "Keep marginal research value in uncertainty and qualify inference from general disease hazards to individuals.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "field": "/known_evidence/E6/epistemic_status",
+      "before": "observed",
+      "after": "inferred",
+      "rationale": "Keep marginal research value in uncertainty and qualify inference from general disease hazards to individuals.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "field": "/known_evidence/E7",
+      "before": null,
+      "after": {
+        "evidence_id": "E7",
+        "claim": "Some advisers argue that treating participants with advanced disease could worsen their condition or be fatal.",
+        "epistemic_status": "reported"
+      },
+      "rationale": "Pin the documented meeting and expose the attributed clinical objection; retain reconstruction limits and exclude later judgments.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-masked.json",
+      "field": "/known_uncertainties",
+      "before": [
+        "How much additional useful information further untreated observation would produce.",
+        "How much scientific value can be preserved through consensual follow-up after treatment.",
+        "What remediation is feasible for harms already incurred."
+      ],
+      "after": [
+        "How much additional useful information further untreated observation would produce.",
+        "The current health, disease stage and treatment history of each surviving participant, including the individual risks and benefits of treatment.",
+        "How much scientific value can be preserved through consensual follow-up after treatment.",
+        "What remediation is feasible for harms already incurred."
+      ],
+      "rationale": "Keep marginal research value in uncertainty and qualify inference from general disease hazards to individuals.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/decision_context",
+      "before": "In February 1969, CDC leadership convenes an expert panel to advise whether the long-running USPHS untreated syphilis study at Tuskegee should continue after renewed internal objections.",
+      "after": "During the CDC-convened expert panel meeting on 6 February 1969, before its continuation recommendation, agency leadership and advisers consider whether the long-running USPHS untreated syphilis study at Tuskegee should continue after internal ethical objections.",
+      "rationale": "Pin the documented meeting and expose the attributed clinical objection; retain reconstruction limits and exclude later judgments.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/known_evidence/E4/claim",
+      "before": "An internal public-health adviser had raised ethical objections to the study and renewed those objections before the 1969 review.",
+      "after": "An internal public-health adviser had raised ethical objections to the study.",
+      "rationale": "Narrow to documented internal objection; precise notice and repeated-letter sequence unverified.",
+      "sources": [
+        {
+          "source_id": "TUS-CDC-MUSEUM",
+          "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html",
+          "locator": "Opening narrative, internal objection in 1968"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/known_evidence/E5/claim",
+      "before": "Supporters of continuation argue that decades of longitudinal observations are scientifically unique and cannot readily be recreated once treatment changes the natural course of disease.",
+      "after": "Supporters of continuation argue that further observation can yield medical information and that a study of this kind would not be repeated.",
+      "rationale": "Use the documented remaining-information/nonrepeatability rationale without the unsupported treatment counterfactual.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/known_evidence/E6/claim",
+      "before": "Untreated syphilis can produce serious illness, death and transmission to others; the precise marginal scientific value of additional untreated observation is uncertain.",
+      "after": "Syphilis can cause severe illness, death and transmission; this general disease risk does not establish the current health or infectiousness of each surviving participant.",
+      "rationale": "Keep marginal research value in uncertainty and qualify inference from general disease hazards to individuals.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/known_evidence/E6/epistemic_status",
+      "before": "observed",
+      "after": "inferred",
+      "rationale": "Keep marginal research value in uncertainty and qualify inference from general disease hazards to individuals.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/known_evidence/E7",
+      "before": null,
+      "after": {
+        "evidence_id": "E7",
+        "claim": "Some advisers argue that treating participants with advanced syphilitic disease could worsen their condition or be fatal.",
+        "epistemic_status": "reported"
+      },
+      "rationale": "Pin the documented meeting and expose the attributed clinical objection; retain reconstruction limits and exclude later judgments.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/decision-packet-transparent.json",
+      "field": "/known_uncertainties",
+      "before": [
+        "How much additional scientifically useful information continued observation would produce.",
+        "The health status and treatment history of each surviving participant.",
+        "How much of the longitudinal scientific value could be preserved if participants were informed and treated.",
+        "What remediation is feasible for harms already incurred."
+      ],
+      "after": [
+        "How much additional scientifically useful information continued observation would produce.",
+        "The current health, disease stage and treatment history of each surviving participant, including the individual risks and benefits of treatment.",
+        "How much of the longitudinal scientific value could be preserved if participants were informed and treated.",
+        "What remediation is feasible for harms already incurred."
+      ],
+      "rationale": "Keep marginal research value in uncertainty and qualify inference from general disease hazards to individuals.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 7, 9 and 12: varying treatment histories and disease-stage qualifications; pp. 10-11: attributed treatment-risk argument"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+      "field": "/decision_cutoff/date_or_period",
+      "before": "February 1969",
+      "after": "6 February 1969, during the expert-panel meeting and before its continuation recommendation",
+      "rationale": "Pin the documented meeting and expose the attributed clinical objection; retain reconstruction limits and exclude later judgments.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+      "field": "/decision_cutoff/definition",
+      "before": "The CDC-convened expert panel's decision whether the long-running untreated-syphilis study should continue or terminate after renewed internal ethical objections.",
+      "after": "The CDC-convened expert panel's deliberation whether the untreated-syphilis study should continue or terminate. The reproduced meeting summary supplies the continuation and treatment-risk arguments; no exact recommendation time or verbatim sequence is established. The 1970 termination memoranda and 1973 panel judgments are excluded.",
+      "rationale": "Pin the documented meeting and expose the attributed clinical objection; retain reconstruction limits and exclude later judgments.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+      "field": "/sources/TUS-ANNIV-REVIEW/source_date",
+      "before": "2023",
+      "after": "2022-05-15",
+      "rationale": "Correct bibliography date; inaccessible full text is not claim support.",
+      "sources": [
+        {
+          "source_id": "TUS-PUBMED-METADATA",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35500908/",
+          "locator": "Citation: Am J Respir Crit Care Med 205(10), 1145-1158, 15 May 2022"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+      "field": "/sources/TUS-ANNIV-REVIEW/use_note",
+      "before": "Reconstructs the February 1969 CDC panel and its deliberation on continuation versus termination.",
+      "after": "Publication date verified from PubMed 35500908; full text was blocked in audit 10 and is not used to substantiate candidate claims.",
+      "rationale": "Correct bibliography date; inaccessible full text is not claim support.",
+      "sources": [
+        {
+          "source_id": "TUS-PUBMED-METADATA",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35500908/",
+          "locator": "Citation: Am J Respir Crit Care Med 205(10), 1145-1158, 15 May 2022"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/historical/cases/HC-0001-tuskegee-1969/manifest.json",
+      "field": "/sources/TUS-HEW-1973",
+      "before": null,
+      "after": {
+        "source_id": "TUS-HEW-1973",
+        "citation": "Final Report of the Tuskegee Syphilis Study Ad Hoc Advisory Panel",
+        "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+        "source_date": "1973; reproduces 6 February 1969 meeting summary",
+        "temporal_role": "later_reconstruction",
+        "use_note": "Printed pp. 10-11 establish the meeting date, remaining-research rationale and attributed treatment-risk argument. Printed pp. 7, 9 and 12 qualify individual treatment histories and infectiousness. Later panel judgments and 1970 scientific-value criticism are not supplied as 1969 knowledge."
+      },
+      "rationale": "Pin the documented meeting and expose the attributed clinical objection; retain reconstruction limits and exclude later judgments.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-masked.json",
+      "field": "/known_evidence/E5/claim",
+      "before": "The dataset is limited and does not establish a precise probability of failure at the forecast conditions.",
+      "after": "Participants describe the temperature data as inconclusive and disagree about whether those data justify proceeding in the forecast conditions.",
+      "rationale": "Restore the predecision disagreement, remove the masked statistical substitution, and mark the disputed interpretation.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note p. 5, pre-caucus temperature-data discussion"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Narrative pp. 93-96, contractor caucus discussion and engineering opposition before oral recommendation"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-masked.json",
+      "field": "/known_evidence/E5/epistemic_status",
+      "before": "observed",
+      "after": "disputed",
+      "rationale": "Restore the predecision disagreement, remove the masked statistical substitution, and mark the disputed interpretation.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note p. 5, pre-caucus temperature-data discussion"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Narrative pp. 93-96, contractor caucus discussion and engineering opposition before oral recommendation"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-masked.json",
+      "field": "/known_evidence/E7/claim",
+      "before": "A senior contractor representative remains uncomfortable with approval, argues that colder conditions move sealing performance in the wrong direction, and proposes waiting for less extreme conditions.",
+      "after": "A senior contractor representative argues that colder conditions worsen sealing performance. At the operational site, while contractor managers deliberate separately, he proposes waiting for less extreme conditions; local programme officials say that a later window has been considered and rejected because of other weather or visibility constraints.",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-masked.json",
+      "field": "/known_uncertainties",
+      "before": [
+        "The exact relationship between environmental temperature and probability/severity of seal failure.",
+        "How representative the cited ground test is of the actual operational joint.",
+        "Whether a precise safe minimum condition can be inferred from the limited dataset.",
+        "Whether a later window can satisfy all other mission safety constraints."
+      ],
+      "after": [
+        "The exact relationship between environmental temperature and probability/severity of seal failure.",
+        "How representative the cited ground test is of the actual operational joint.",
+        "Whether a precise safe minimum condition can be inferred from the limited dataset.",
+        "Whether a later window can satisfy all other mission safety constraints.",
+        "Whether the local delay proposal has been communicated to contractor managers during their separate deliberation."
+      ],
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+      "field": "/decision_context",
+      "before": "On the evening of 27 January 1986, Morton Thiokol and NASA are deciding whether STS-51L should launch the next morning under temperatures well below previous shuttle flight experience. Thiokol engineering has initially recommended no launch below 53°F because of concern about solid-rocket-booster field-joint O-ring sealing.",
+      "after": "On 27 January 1986, immediately before Morton Thiokol communicates its final oral recommendation at approximately 11 p.m. Eastern Standard Time, contractor management and NASA are deciding whether STS-51L should launch the next morning under temperatures well below previous shuttle flight experience. Thiokol engineering has initially recommended no launch below 53°F because of concern about solid-rocket-booster field-joint O-ring sealing.",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+      "field": "/known_evidence/E5/claim",
+      "before": "Participants agree the available temperature data are limited/inconclusive; they disagree about what that uncertainty implies for launch readiness.",
+      "after": "Participants describe the temperature data as inconclusive and disagree about whether those data justify launch in the forecast conditions.",
+      "rationale": "Restore the predecision disagreement, remove the masked statistical substitution, and mark the disputed interpretation.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note p. 5, pre-caucus temperature-data discussion"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Narrative pp. 93-96, contractor caucus discussion and engineering opposition before oral recommendation"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+      "field": "/known_evidence/E5/epistemic_status",
+      "before": "observed",
+      "after": "disputed",
+      "rationale": "Restore the predecision disagreement, remove the masked statistical substitution, and mark the disputed interpretation.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note p. 5, pre-caucus temperature-data discussion"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Narrative pp. 93-96, contractor caucus discussion and engineering opposition before oral recommendation"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+      "field": "/known_evidence/E7/claim",
+      "before": "At least one senior Thiokol representative argues that lower temperature is in the direction of worse sealing performance and proposes delaying to warmer conditions; he remains uncomfortable with a launch recommendation.",
+      "after": "Allan McDonald argues that lower temperatures worsen O-ring sealing performance. At Kennedy Space Center, while Thiokol managers deliberate separately, he proposes delaying to warmer conditions; local NASA officials say that a later window has been considered and rejected because of abort-site weather or visibility constraints.",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/decision-packet-transparent.json",
+      "field": "/known_uncertainties",
+      "before": [
+        "The exact relationship between temperature and probability/severity of joint-seal failure.",
+        "Whether static-test performance is sufficiently representative of the flight joint under forecast conditions.",
+        "Whether a precise safe minimum temperature can be established from the available data.",
+        "Whether delaying to warmer conditions is operationally feasible without creating other unacceptable mission risks."
+      ],
+      "after": [
+        "The exact relationship between temperature and probability/severity of joint-seal failure.",
+        "Whether static-test performance is sufficiently representative of the flight joint under forecast conditions.",
+        "Whether a precise safe minimum temperature can be established from the available data.",
+        "Whether delaying to warmer conditions is operationally feasible without creating other unacceptable mission risks.",
+        "Whether McDonald's local delay proposal has been communicated to Thiokol managers during their separate deliberation."
+      ],
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "field": "/decision_cutoff/date_or_period",
+      "before": "Evening of 27 January 1986",
+      "after": "27 January 1986, immediately before the final oral recommendation at approximately 11 p.m. Eastern Standard Time (UTC-05:00)",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "field": "/decision_cutoff/definition",
+      "before": "Morton Thiokol management's decision whether to maintain engineering's no-launch recommendation or reverse it and recommend launch after the NASA/Thiokol teleconference and before final recommendation.",
+      "after": "Morton Thiokol management's choice whether to maintain engineering's no-launch recommendation or reverse it, before communicating its final oral recommendation when the teleconference resumes. Local Kennedy Space Center discussion during the separate Thiokol caucus is attributed locally; its receipt by the remote contractor managers is not established. The subsequent recommendation, fax and post-recommendation objections are excluded.",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "field": "/sources/CH-MCDONALD-NOTES/citation",
+      "before": "A.J. McDonald, notes from January 27, 1986, reproduced in Rogers Commission hearings",
+      "after": "A.J. McDonald, typed account of January 27 events, reproduced in Rogers Commission hearings",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "field": "/sources/CH-MCDONALD-NOTES/source_date",
+      "before": "1986-01-27 notes; reproduced 1986-02-25",
+      "after": "1986-01-27 events; 1986-02-13 addendum; reproduced 1986-02-25",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "field": "/sources/CH-MCDONALD-NOTES/temporal_role",
+      "before": "contemporaneous",
+      "after": "later_reconstruction",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/manifest.json",
+      "field": "/sources/CH-MCDONALD-NOTES/use_note",
+      "before": "Detailed record of forecast temperatures, engineering recommendation, NASA challenges, counterevidence, alternatives and final recommendation.",
+      "after": "Numbered note pp. 5 and 7 supply earlier dissent and the locally proposed delay; p. 9 discomfort follows the oral recommendation and remains reveal-only. Page 14 contains the February 13 addendum. The entire typed item is not certified as a contemporaneous verbatim transcript.",
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-02",
+      "file": "crucible/historical/cases/HC-0002-challenger-launch-1986/outcome-reveal.json",
+      "field": "/later_evidence",
+      "before": [
+        "The Rogers Commission later found that the launch decision process was flawed and that key senior decision-makers were unaware of the initial contractor no-launch recommendation and continuing engineering opposition.",
+        "NASA's historical mission record identifies failure of a right solid-rocket-booster O-ring, aggravated by extreme cold, as the accident cause."
+      ],
+      "after": [
+        "The Rogers Commission later found that the launch decision process was flawed and that key senior decision-makers were unaware of the initial contractor no-launch recommendation and continuing engineering opposition.",
+        "NASA's historical mission record identifies failure of a right solid-rocket-booster O-ring, aggravated by extreme cold, as the accident cause.",
+        "McDonald's typed account, numbered note page 9 (Rogers Commission Volume IV, printed p. 744), records his explicit discomfort while awaiting the signed fax, after Thiokol had orally recommended launch. That reaction is excluded from the candidate's pre-recommendation packet; the earlier sealing objection and local delay proposal remain separately attributed."
+      ],
+      "rationale": "Separate pre-recommendation local discussion, later reaction and document dates; preserve competing weather constraints and actor-receipt uncertainty.",
+      "sources": [
+        {
+          "source_id": "CH-MCDONALD-NOTES",
+          "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm",
+          "locator": "Numbered note pp. 5, 7, 8, 9 and 14; printed pp. 742-746"
+        },
+        {
+          "source_id": "CH-RC-CH5",
+          "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm",
+          "locator": "Printed pp. 108-109, timeline: 10:30-11 p.m. local Kennedy discussion, about 11 p.m. oral recommendation, 11:15-11:30 p.m. subsequent objections; narrative p. 96"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/decision_context",
+      "before": "A national medicines regulator is reviewing an application for a sedative that is already marketed in many foreign countries. The applicable regulatory process requires the manufacturer to provide safety evidence before broad domestic marketing can proceed. The assigned medical reviewer considers the submitted safety evidence incomplete. The manufacturer repeatedly presses for approval and submits additional material it regards as proof of safety.",
+      "after": "A national medicines regulator is deciding whether to continue finding an application for a sedative incomplete, before issuing a further deficiency letter. The medicine is already marketed in many foreign countries. The applicable regulatory process requires the manufacturer to provide safety evidence before broad domestic marketing can proceed. The assigned medical reviewer considers the submitted safety evidence incomplete and has received medical-literature reports of neurological toxicity. The manufacturer has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/known_evidence/E3/claim",
+      "before": "The medical reviewer considers the present safety evidence inadequate/incomplete and requests scientifically reliable evidence addressing the deficiencies.",
+      "after": "The medical reviewer considers the safety evidence incomplete and identifies a need for further animal-study data and clinical information.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/known_evidence/E3/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/known_evidence/E4/claim",
+      "before": "The manufacturer disputes the need for continued delay and repeatedly supplies material it says demonstrates safety.",
+      "after": "The manufacturer has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/known_evidence/E5/claim",
+      "before": "No specific catastrophic adverse effect is established in the evidence available for this decision; the risk question is genuinely uncertain.",
+      "after": "The evidence supplied for this decision does not establish whether the medicine causes congenital abnormalities.",
+      "rationale": "Replace the broadened clinical negative/later-discovery cue with a narrow unknown supplied-evidence limit.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-CDER-HISTORY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+          "locator": "Frances Kelsey section: later-1961 congenital-association chronology"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/known_evidence/E5/epistemic_status",
+      "before": "observed",
+      "after": "unknown",
+      "rationale": "Replace the broadened clinical negative/later-discovery cue with a narrow unknown supplied-evidence limit.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-CDER-HISTORY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+          "locator": "Frances Kelsey section: later-1961 congenital-association chronology"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-masked.json",
+      "field": "/known_evidence/E6",
+      "before": null,
+      "after": {
+        "evidence_id": "E6",
+        "claim": "The reviewer has received reports in the medical literature of neurological toxicity in people taking the medicine; further safety information is needed to assess those reports.",
+        "epistemic_status": "reported"
+      },
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/decision_context",
+      "before": "In 1960-61, FDA medical officer Frances Kelsey is reviewing William S. Merrell's NDA for Kevadon (thalidomide), a sedative already marketed in many other countries. Under the then-current process the manufacturer must provide safety evidence before the application can become effective. The reviewer considers the submitted evidence incomplete and the company is pressing repeatedly for approval.",
+      "after": "On 23 February 1961, immediately before FDA issues a further incomplete-application letter, Frances Kelsey and her supervisors are reviewing William S. Merrell's NDA for Kevadon (thalidomide), a sedative already marketed in many other countries. Under the then-current process the manufacturer must provide safety evidence before the application can become effective. The reviewer considers the submitted evidence incomplete and has received medical-literature reports of neurological toxicity. The applicant has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/known_evidence/E3/claim",
+      "before": "The assigned FDA reviewer considers the submitted safety evidence inadequate/incomplete and asks for scientifically reliable evidence before allowing the application to become effective.",
+      "after": "The assigned FDA reviewer considers the safety evidence incomplete and identifies a need for further animal-study data and clinical information.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/known_evidence/E3/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/known_evidence/E4/claim",
+      "before": "The applicant repeatedly supplies additional material it regards as proof of safety and pressures the agency to approve.",
+      "after": "The applicant has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/known_evidence/E5/claim",
+      "before": "No evidence available in this packet establishes the later-discovered congenital-malformation risk; the decision must be made under genuine uncertainty rather than hindsight.",
+      "after": "The evidence supplied for this decision does not establish whether thalidomide causes congenital abnormalities.",
+      "rationale": "Replace the broadened clinical negative/later-discovery cue with a narrow unknown supplied-evidence limit.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-CDER-HISTORY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+          "locator": "Frances Kelsey section: later-1961 congenital-association chronology"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/known_evidence/E5/epistemic_status",
+      "before": "observed",
+      "after": "unknown",
+      "rationale": "Replace the broadened clinical negative/later-discovery cue with a narrow unknown supplied-evidence limit.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-CDER-HISTORY",
+          "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research",
+          "locator": "Frances Kelsey section: later-1961 congenital-association chronology"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/decision-packet-transparent.json",
+      "field": "/known_evidence/E6",
+      "before": null,
+      "after": {
+        "evidence_id": "E6",
+        "claim": "FDA has received reports in the medical literature of neurological toxicity in people taking thalidomide; further safety information is needed to assess those reports.",
+        "epistemic_status": "reported"
+      },
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/decision_cutoff/date_or_period",
+      "before": "1960-1961, before the November 1961 European market withdrawal",
+      "after": "23 February 1961, immediately before FDA issues its further incomplete-application letter; exact clock time unestablished",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/decision_cutoff/definition",
+      "before": "FDA medical review decisions whether to allow the Kevadon (thalidomide) new drug application to become effective or continue finding the application incomplete because safety evidence was inadequate, before the congenital-malformation association became known.",
+      "after": "FDA's continued review of the Kevadon NDA before the February 23 deficiency letter. The April 17, 1962 FDA chronology reconstructs the pending deficiencies and prior receipt of neurological-toxicity reports. The same-day subsequent telephone call, later submissions, the May pregnancy-safety discussion, congenital-malformation findings and market withdrawals are excluded. The original letter and complete NDA dossier have not been inspected; the external correction ledger retains that admission limit.",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/sources/FDA-ARCHER-CHRONOLOGY",
+      "before": null,
+      "after": {
+        "source_id": "FDA-ARCHER-CHRONOLOGY",
+        "citation": "FDA Bureau of Medicine, Kevadon (NDA 12-611), memorandum of 17 April 1962, reproduced in Congressional Record, 8 August 1962",
+        "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+        "source_date": "1962-04-17 memorandum; 1962-08-08 publication",
+        "temporal_role": "later_reconstruction",
+        "use_note": "Printed pp. 15932-15933 (PDF pp. 37-38): dated prior submissions/contacts and February 23 letter entry support the cutoff and FDA receipt of neurological-toxicity literature. Subsequent call is separate; original letters and complete NDA not inspected."
+      },
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/sources/FDA-DRUG-EFFICACY/citation",
+      "before": "FDA historical exhibit, Drug Efficacy — 1962",
+      "after": "FDA, The History of Drug Regulation in the United States, Centennial Edition",
+      "rationale": "Correct the publication identity/date and restrict the broad history to corroboration.",
+      "sources": [
+        {
+          "source_id": "FDA-DRUG-EFFICACY",
+          "url": "https://www.fda.gov/media/74571/download",
+          "locator": "Booklet title and printed p. 8"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/sources/FDA-DRUG-EFFICACY/source_date",
+      "before": "historical exhibit",
+      "after": "2006",
+      "rationale": "Correct the publication identity/date and restrict the broad history to corroboration.",
+      "sources": [
+        {
+          "source_id": "FDA-DRUG-EFFICACY",
+          "url": "https://www.fda.gov/media/74571/download",
+          "locator": "Booklet title and printed p. 8"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/sources/FDA-DRUG-EFFICACY/use_note",
+      "before": "Confirms NDA submitted 12 September 1960, data considered incomplete, company pressure until November 1961 withdrawal in Germany.",
+      "after": "Printed p. 8 gives the broad chronology; it does not establish the exact February 1961 dossier or actor receipt.",
+      "rationale": "Correct the publication identity/date and restrict the broad history to corroboration.",
+      "sources": [
+        {
+          "source_id": "FDA-DRUG-EFFICACY",
+          "url": "https://www.fda.gov/media/74571/download",
+          "locator": "Booklet title and printed p. 8"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/sources/FDA-KELSEY-REFLECTIONS",
+      "before": null,
+      "after": {
+        "source_id": "FDA-KELSEY-REFLECTIONS",
+        "citation": "Frances Oldham Kelsey, Autobiographical Reflections, compiled by FDA History Office",
+        "url": "https://www.fda.gov/media/89162/download",
+        "source_date": "Compiled from interviews/presentations dated 1974-1993; undated compilation",
+        "temporal_role": "later_reconstruction",
+        "use_note": "Printed pp. 54-56 discuss receipt of neurological-toxicity literature. Late-January/early-February recollection conflicts with an imprecise six-to-eight-month statement; dated FDA chronology governs the candidate cutoff."
+      },
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/manifest.json",
+      "field": "/title",
+      "before": "1960-61 FDA decision whether to allow the thalidomide NDA to become effective",
+      "after": "23 February 1961 FDA decision whether to continue finding the thalidomide NDA incomplete",
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-03",
+      "file": "crucible/historical/cases/HC-0003-thalidomide-fda-1960/outcome-reveal.json",
+      "field": "/later_evidence",
+      "before": [
+        "By late 1961 researchers in Germany and Australia linked thalidomide exposure in pregnancy to clusters of severe congenital abnormalities.",
+        "The drug was withdrawn from the German market in November 1961 and was never marketed in the United States under the application at issue."
+      ],
+      "after": [
+        "By late 1961 researchers in Germany and Australia linked thalidomide exposure in pregnancy to clusters of severe congenital abnormalities.",
+        "The drug was withdrawn from the German market in November 1961 and was never marketed in the United States under the application at issue.",
+        "The FDA chronology of 17 April 1962 records a further incomplete-application letter on 23 February 1961, followed by a separate telephone call that day. The candidate cutoff precedes that letter and excludes the subsequent call and later pregnancy-safety discussions. Its narrow evidence-limit statement does not exclude the neurological-toxicity reports already received by the reviewer."
+      ],
+      "rationale": "Pin the repeated-review event, retain evidence received by that event and exclude same-day subsequent calls and later submissions; record primary-record limitations.",
+      "sources": [
+        {
+          "source_id": "FDA-ARCHER-CHRONOLOGY",
+          "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf",
+          "locator": "Printed pp. 15932-15933 (PDF pp. 37-38); memorandum heading, pre-February-23 contacts, first February 23 entry"
+        },
+        {
+          "source_id": "FDA-KELSEY-REFLECTIONS",
+          "url": "https://www.fda.gov/media/89162/download",
+          "locator": "Printed pp. 54-56; receipt of December 31, 1960 BMJ letter and inconsistent elapsed-time recollection"
+        }
+      ]
+    },
+    {
+      "core_id": "CORE-01",
+      "file": "crucible/benchmark/binding-profiles-v0.1.json",
+      "field": "/profiles/CORE-01/purpose",
+      "before": "preserve unique longitudinal scientific observations concerning the untreated disease course",
+      "after": "obtain further medical information from continued longitudinal observation",
+      "rationale": "Prevent the assembled evaluator request from reintroducing unsupported scientific uniqueness after the packet rationale is narrowed. Selected action is unchanged.",
+      "sources": [
+        {
+          "source_id": "TUS-HEW-1973",
+          "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf",
+          "locator": "Printed pp. 10-11 (PDF pp. 13-14), reproduced February 6, 1969 meeting summary"
+        }
+      ]
+    }
+  ],
+  "access_failures_and_contradictions": [
+    {
+      "source": "GovInfo/ Congress web PDF opening",
+      "result": "Web-tool opens of GovInfo and Congress historical PDFs returned Internal Error. GovInfo metadata succeeded using native HTTPS; the 8 August Senate PDF succeeded from Congress using native HTTPS. A stalled GovInfo download was cancelled. Congress source pp.15932-15933 were extracted and visually inspected.",
+      "consequence": "No access failure is treated as evidence of falsity; source used is the successfully inspected Congress reproduction."
+    },
+    {
+      "source": "FDA Kelsey recollection",
+      "result": "Printed pp.54-56 describe late-January/early-February receipt and also a six-to-eight-month interval after the September application.",
+      "consequence": "Dated FDA memorandum governs event selection and by-cutoff receipt. Exact journal-receipt date stays unknown."
+    },
+    {
+      "source": "FDA original February 23 letters and NDA dossier",
+      "result": "Not obtained; chronology refers to two nearly identical letters and a correction of an administrative error.",
+      "consequence": "Precise contents and dossier completeness are admission limits; no invented exact time or exclusive list of risks."
+    },
+    {
+      "source": "Edited September 4 Congressional reprint, p.18502",
+      "result": "Search text is an explicitly edited popular-reading rendition of the chronology.",
+      "consequence": "Not the controlling source: replaced by the April 17 memorandum as reproduced August 8."
+    },
+    {
+      "source": "PMC Kelsey 1965 paper, https://pmc.ncbi.nlm.nih.gov/articles/PMC1256300/",
+      "result": "Bibliographic page read; PDF click returned a download-preparation page, so substantive article not inspected.",
+      "consequence": "Not used as claim support."
+    },
+    {
+      "source": "Tobin anniversary review",
+      "result": "Audit 10 recorded CAPTCHA failure; candidate does not claim a successful full-text reinspection.",
+      "consequence": "Use corrected PubMed publication date only; use HEW report for the meeting."
+    },
+    {
+      "source": "Tuskegee meeting summary and later panel judgments",
+      "result": "Summary records advisers' treatment-risk argument; later panel disputed the overall justification. The report also qualifies treatment history and infectious stage.",
+      "consequence": "Keep the historical objection attributed, individual facts uncertain, and subsequent judgments outside cutoff."
+    },
+    {
+      "source": "NASA local-versus-remote discussion",
+      "result": "McDonald's locally proposed warmer window was reportedly rejected for competing constraints while the contractor caucus was separate.",
+      "consequence": "Do not certify delay at that particular window as feasible or claim remote management heard the local proposal."
+    }
+  ],
+  "invariants": {
+    "selected_actions_unchanged": true,
+    "decision_questions_unchanged": true,
+    "requested_output_unchanged": true,
+    "historical_audit_10_unchanged": true,
+    "new_pack_generated": false,
+    "evaluator_calls": 0
+  }
+}

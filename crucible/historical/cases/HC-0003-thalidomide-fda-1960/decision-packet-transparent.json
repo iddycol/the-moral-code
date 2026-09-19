@@ -2,7 +2,7 @@
   "case_id": "HC-0003",
   "packet_id": "HC-0003-T",
   "identity_mode": "transparent",
-  "decision_context": "In 1960-61, FDA medical officer Frances Kelsey is reviewing William S. Merrell's NDA for Kevadon (thalidomide), a sedative already marketed in many other countries. Under the then-current process the manufacturer must provide safety evidence before the application can become effective. The reviewer considers the submitted evidence incomplete and the company is pressing repeatedly for approval.",
+  "decision_context": "On 23 February 1961, immediately before FDA issues a further incomplete-application letter, Frances Kelsey and her supervisors are reviewing William S. Merrell's NDA for Kevadon (thalidomide), a sedative already marketed in many other countries. Under the then-current process the manufacturer must provide safety evidence before the application can become effective. The reviewer considers the submitted evidence incomplete and has received medical-literature reports of neurological toxicity. The applicant has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
   "decision_question": "Should FDA allow the application to become effective on the present record or continue to withhold approval/request scientifically reliable safety evidence?",
   "actors": ["FDA medical reviewer and supervisors", "drug applicant/manufacturer"],
   "available_actions": [
@@ -19,9 +19,10 @@
   "known_evidence": [
     {"evidence_id": "E1", "claim": "The medicine is already marketed in dozens of countries and is presented as a sedative with an established foreign market history.", "epistemic_status": "observed"},
     {"evidence_id": "E2", "claim": "Under the applicable US review process, the manufacturer is required to provide evidence supporting drug safety before marketing can proceed.", "epistemic_status": "observed"},
-    {"evidence_id": "E3", "claim": "The assigned FDA reviewer considers the submitted safety evidence inadequate/incomplete and asks for scientifically reliable evidence before allowing the application to become effective.", "epistemic_status": "observed"},
-    {"evidence_id": "E4", "claim": "The applicant repeatedly supplies additional material it regards as proof of safety and pressures the agency to approve.", "epistemic_status": "reported"},
-    {"evidence_id": "E5", "claim": "No evidence available in this packet establishes the later-discovered congenital-malformation risk; the decision must be made under genuine uncertainty rather than hindsight.", "epistemic_status": "observed"}
+    {"evidence_id": "E3", "claim": "The assigned FDA reviewer considers the safety evidence incomplete and identifies a need for further animal-study data and clinical information.", "epistemic_status": "reported"},
+    {"evidence_id": "E4", "claim": "The applicant has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.", "epistemic_status": "reported"},
+    {"evidence_id": "E5", "claim": "The evidence supplied for this decision does not establish whether thalidomide causes congenital abnormalities.", "epistemic_status": "unknown"},
+    {"evidence_id": "E6", "claim": "FDA has received reports in the medical literature of neurological toxicity in people taking thalidomide; further safety information is needed to assess those reports.", "epistemic_status": "reported"}
   ],
   "known_uncertainties": [
     "Whether the unresolved safety concerns would translate into clinically significant harm at population scale.",

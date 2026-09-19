@@ -2,7 +2,7 @@
   "case_id": "HC-0109",
   "packet_id": "HC-0109-T",
   "identity_mode": "transparent",
-  "decision_context": "The Triangle Shirtwaist Company operates a large garment factory on the upper floors of a New York building. The workforce is predominantly young immigrant women working among large quantities of cloth, paper patterns and other combustible material. Management has legitimate concerns about theft, unauthorised departures and production control. Testimony and later records indicate that at least some exit-door access was controlled/locked during work and that the factory lacked modern sprinkler protection. The question is how management should balance property/production controls against emergency escape and fire risk before any catastrophic fire is assumed.",
+  "decision_context": "The Triangle Shirtwaist Company operates a large garment factory on the upper floors of a New York building. The workforce is predominantly young immigrant women working among large quantities of cloth, paper patterns and other combustible material. Management has legitimate concerns about theft, unauthorised departures and production control. An inspection account describes exit doors with locks that were unlocked during the visit. Routine door status, individual knowledge and the completeness of fire protection remain uncertain. The question is how management should balance property/production controls against emergency escape and fire risk before any catastrophic fire is assumed.",
   "decision_question": "Should the factory maintain access-control and low-cost fire-safety arrangements that can obstruct or narrow emergency escape, or redesign security and production controls so all workers have rapid unobstructed emergency egress and stronger fire protections?",
   "actors": [
     "Triangle Shirtwaist Company owners and managers",
@@ -24,14 +24,14 @@
     {"party":"Inspectors/public authorities","known_interests_or_risks":"Enforcing fire/building rules, public trust and responsibility for known high-rise factory hazards.","power_position":"high"}
   ],
   "known_evidence": [
-    {"evidence_id":"E1","claim":"The factory occupies upper floors and employs a large workforce in rooms containing substantial combustible cloth, paper patterns and garment-production material.","epistemic_status":"observed"},
+    {"evidence_id":"E1","claim":"The factory occupies upper floors and employs a large workforce in rooms containing substantial combustible cloth, paper patterns and garment-production material.","epistemic_status":"reported"},
     {"evidence_id":"E2","claim":"Fire in such a high-rise factory can develop quickly and makes evacuation capacity/time a life-critical safety factor.","epistemic_status":"inferred"},
-    {"evidence_id":"E3","claim":"Management has legitimate interests in controlling theft and unauthorised departure, but those objectives can be pursued through methods other than preventing workers from opening an emergency exit from inside.","epistemic_status":"inferred"},
-    {"evidence_id":"E4","claim":"Historical testimony/records indicate that the Washington Place stairway door was subject to locking/control practices and was found locked/unavailable to escaping workers during the later fire; whether the owners personally knew its exact status at that moment later became contested at trial.","epistemic_status":"reported"},
-    {"evidence_id":"E5","claim":"The factory did not have an automatic sprinkler system and relied on more limited fire-response arrangements.","epistemic_status":"reported"},
+    {"evidence_id":"E3","claim":"Theft and unauthorised departure are management concerns. Guards or checks that leave emergency exits openable are proposed alternatives; their effectiveness and cost have not been established for this factory.","epistemic_status":"inferred"},
+    {"evidence_id":"E4","claim":"An inspector reports that stairway exit doors had locks but were unlocked when inspected during work. This observation does not establish routine locking practices, the status of every exit on other shifts, or what any particular manager knew.","epistemic_status":"reported"},
+    {"evidence_id":"E5","claim":"The supplied account identifies fire pails and a hose among the factory protections. It does not establish a complete installation inventory or routine readiness of this equipment.","epistemic_status":"reported"},
     {"evidence_id":"E6","claim":"An external fire escape and a limited number of stairs/elevators provide evacuation routes, but failure/obstruction of one route can substantially reduce available capacity for a large workforce.","epistemic_status":"inferred"},
     {"evidence_id":"E7","claim":"Workers are economically dependent on employment and individually have limited practical power to redesign exits, install sprinklers or override management security rules.","epistemic_status":"inferred"},
-    {"evidence_id":"E8","claim":"Keeping emergency exits readily openable from inside does not require abandoning theft prevention entirely; guards, checks and other controls can pursue property/security objectives without trapping workers.","epistemic_status":"inferred"},
+    {"evidence_id":"E8","claim":"Keeping exits openable and using non-blocking security controls are physically distinct measures. Whether particular guards or checks would meet security needs at an acceptable cost remains uncertain.","epistemic_status":"inferred"},
     {"evidence_id":"E9","claim":"Fire drills, unobstructed exits and stronger fire protection impose financial/operational costs, but those costs are borne primarily by the firm while catastrophic injury/death risk from inadequate precautions falls primarily on workers.","epistemic_status":"inferred"}
   ],
   "known_uncertainties": [
@@ -39,7 +39,8 @@
     "The cost and technical feasibility of every proposed sprinkler/building modification in the existing building.",
     "The precise day-to-day door-locking practice and who authorises or knows each exit's status during every shift.",
     "How effectively guards/checks could control theft without obstructing evacuation.",
-    "Whether existing building/fire rules legally require every proposed improvement; moral adequacy is not identical to minimum legal compliance."
+    "Whether existing building/fire rules legally require every proposed improvement; moral adequacy is not identical to minimum legal compliance.",
+    "Whether automatic sprinkler protection is installed; the supplied installation evidence does not settle this. The selected action describes a locking/control policy whose routine operation is not established by the single inspection."
   ],
   "known_alternatives": [
     "Unlocked outward/openable emergency egress combined with non-blocking theft/attendance controls.",

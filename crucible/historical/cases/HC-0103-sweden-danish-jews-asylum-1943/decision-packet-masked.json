@@ -49,8 +49,8 @@
     },
     {
       "evidence_id": "E2",
-      "claim": "Many members of the minority are going into hiding and need a destination outside the occupier's control if they are to evade arrest.",
-      "epistemic_status": "observed"
+      "claim": "Many members of the targeted minority are reported to be going into hiding.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E3",
@@ -60,21 +60,21 @@
     {
       "evidence_id": "E4",
       "claim": "The neutral state controls whether refugees reaching its territory are admitted and protected or refused entry.",
-      "epistemic_status": "observed"
+      "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E5",
-      "claim": "Admission would create real but bounded administrative, accommodation and wartime-security responsibilities.",
+      "claim": "Admission would create administrative, accommodation and wartime-security responsibilities; the available reception capacity and duration of those responsibilities are uncertain.",
       "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E6",
-      "claim": "A communicated willingness to admit refugees would materially increase the feasibility of escape by giving rescuers and endangered families a known safe destination.",
+      "claim": "A communicated willingness to admit refugees could assist escape planning by giving rescuers and endangered families a destination willing to receive them.",
       "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E7",
-      "claim": "Refusing admission or leaving entry materially uncertain risks closing the most accessible neutral refuge available during the imminent roundup.",
+      "claim": "Refusing admission or leaving entry materially uncertain risks closing a nearby practicable neutral refuge for people facing the roundup and deportation operation.",
       "epistemic_status": "inferred"
     },
     {
@@ -88,7 +88,8 @@
     "How the occupying power will respond diplomatically or operationally.",
     "How long refuge will be required.",
     "The precise treatment people will face after deportation, although forced arrest and deportation themselves create immediate severe loss of liberty and safety.",
-    "The resources required for reception and support."
+    "The resources required for reception and support.",
+    "Reception capacity, the precise stage of the roundup, and which warnings have reached the admission authorities at the instant of decision are not established by this packet."
   ],
   "known_alternatives": [
     "Offer temporary emergency sanctuary with security screening that does not defeat urgent access to safety.",

@@ -2,7 +2,7 @@
   "case_id": "HC-0003",
   "packet_id": "HC-0003-M",
   "identity_mode": "masked",
-  "decision_context": "A national medicines regulator is reviewing an application for a sedative that is already marketed in many foreign countries. The applicable regulatory process requires the manufacturer to provide safety evidence before broad domestic marketing can proceed. The assigned medical reviewer considers the submitted safety evidence incomplete. The manufacturer repeatedly presses for approval and submits additional material it regards as proof of safety.",
+  "decision_context": "A national medicines regulator is deciding whether to continue finding an application for a sedative incomplete, before issuing a further deficiency letter. The medicine is already marketed in many foreign countries. The applicable regulatory process requires the manufacturer to provide safety evidence before broad domestic marketing can proceed. The assigned medical reviewer considers the submitted safety evidence incomplete and has received medical-literature reports of neurological toxicity. The manufacturer has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.",
   "decision_question": "Should the regulator allow broad marketing on the present record or continue to defer approval pending stronger scientifically reliable safety evidence?",
   "actors": ["national medicines regulator", "drug applicant/manufacturer"],
   "available_actions": [
@@ -19,9 +19,10 @@
   "known_evidence": [
     {"evidence_id": "E1", "claim": "The medicine is already available in many foreign markets.", "epistemic_status": "observed"},
     {"evidence_id": "E2", "claim": "The regulatory system requires evidence supporting safety before broad domestic marketing.", "epistemic_status": "observed"},
-    {"evidence_id": "E3", "claim": "The medical reviewer considers the present safety evidence inadequate/incomplete and requests scientifically reliable evidence addressing the deficiencies.", "epistemic_status": "observed"},
-    {"evidence_id": "E4", "claim": "The manufacturer disputes the need for continued delay and repeatedly supplies material it says demonstrates safety.", "epistemic_status": "reported"},
-    {"evidence_id": "E5", "claim": "No specific catastrophic adverse effect is established in the evidence available for this decision; the risk question is genuinely uncertain.", "epistemic_status": "observed"}
+    {"evidence_id": "E3", "claim": "The medical reviewer considers the safety evidence incomplete and identifies a need for further animal-study data and clinical information.", "epistemic_status": "reported"},
+    {"evidence_id": "E4", "claim": "The manufacturer has repeatedly submitted additional material and pressed for clearance to meet its marketing schedule.", "epistemic_status": "reported"},
+    {"evidence_id": "E5", "claim": "The evidence supplied for this decision does not establish whether the medicine causes congenital abnormalities.", "epistemic_status": "unknown"},
+    {"evidence_id": "E6", "claim": "The reviewer has received reports in the medical literature of neurological toxicity in people taking the medicine; further safety information is needed to assess those reports.", "epistemic_status": "reported"}
   ],
   "known_uncertainties": [
     "Whether unresolved safety concerns would cause clinically important harm at population scale.",

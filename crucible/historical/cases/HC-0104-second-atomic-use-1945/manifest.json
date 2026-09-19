@@ -3,8 +3,8 @@
   "title": "1945 decision whether to re-authorize or pause a second atomic city attack after Hiroshima and Soviet entry",
   "case_class": "changed_evidence_stale_authority",
   "decision_cutoff": {
-    "date_or_period": "8-9 August 1945, before the second atomic mission departs",
-    "definition": "The decision whether senior U.S. civilian/military authority should allow the standing July atomic-use order to execute a second city attack immediately, or pause for explicit reassessment after Hiroshima's destruction and the Soviet declaration/entry into the war materially changed the strategic evidence state."
+    "date_or_period": "Before 03:47 Tinian time on 9 August 1945 (17:47 UTC / 13:47 Washington Eastern War Time on 8 August); precise actionable instant unresolved",
+    "definition": "Senior U.S. civilian/military authority considering whether to allow the standing repeated-use directive to proceed before the second mission departs. Stimson supplied Hiroshima damage reports to Truman during a meeting whose body places it about11:15-noon Washington time on8August. The inspected Soviet-entry records do not establish responsible-authority receipt before the departure bound, nor a usable command-and-communications stop window. This case is not admitted as a verified combined-shock historical replay."
   },
   "pretraining_leakage_risk": "very_high",
   "packets": [
@@ -63,7 +63,7 @@
       "url": "https://nsarchive.gwu.edu/document/28425-document-71-memorandum-conference-president-august-8-1945-1045-am",
       "source_date": "1945-08-08",
       "temporal_role": "contemporaneous_primary_record",
-      "use_note": "Shows senior U.S. awareness after Hiroshima of the scale/responsibility of the first attack and discussion of ways to expedite surrender."
+      "use_note": "Primary scanp1: title10:45AM; body says arrival about11:15 and exit aboutnoon. Damage reports and photographs were shown to Truman. No inference of Soviet-entry receipt follows from this meeting."
     },
     {
       "source_id": "NAG-SOVIET-ENTRY",
@@ -71,7 +71,7 @@
       "url": "https://nsarchive.gwu.edu/document/28495-document-69-memorandum-conversation-far-eastern-war-and-general-situation-august-8",
       "source_date": "1945-08-08",
       "temporal_role": "contemporaneous_primary_record",
-      "use_note": "Documents Soviet entry and contemporaneous discussion of the atomic bombing's impact before the second atomic attack."
+      "use_note": "Primary scanp1 records Harriman, Kennan, Stalin and Molotov in Moscow and Soviet military reports; it does not record a Washington receipt time. Kept for research, not proof of predeparture U.S. senior-authority knowledge."
     },
     {
       "source_id": "NAG-MISSION",
@@ -88,6 +88,38 @@
       "source_date": "2025-08-05",
       "temporal_role": "later_archive_publication_of_contemporaneous_records",
       "use_note": "Shows that Japan had not surrendered after Hiroshima and that hard-line resistance remained significant. Internal Japanese information not demonstrably available to U.S. decision-makers is not used as pre-decision U.S. evidence."
+    },
+    {
+      "source_id": "NAG-ORDER",
+      "citation": "Handy to Spaatz, atomic-use directive, primary scan",
+      "url": "https://nsarchive.gwu.edu/sites/default/files/documents/rdl5gv-i24g8/60e.pdf",
+      "source_date": "1945-07-25",
+      "temporal_role": "contemporaneous_primary_record",
+      "use_note": "Scan dated25July; catalogue says26July. Paragraph2 authorises follow-on bombs; paragraph4 names Secretary of War and Chief of Staff approval."
+    },
+    {
+      "source_id": "NAG-GREW",
+      "citation": "Grew memorandum of conversation, FRUS1945volVI doc402",
+      "url": "https://history.state.gov/historicaldocuments/frus1945v06/d402",
+      "source_date": "1945-08-08",
+      "temporal_role": "contemporaneous_primary_record_cutoff_check",
+      "use_note": "Informal notice at14:50Washington; later than reconstructed13:47departure bound. Does not prove no earlier channel."
+    },
+    {
+      "source_id": "NAG-TRUMAN",
+      "citation": "Truman news conference, Official Reporter note",
+      "url": "https://www.trumanlibrary.gov/library/public-papers/94/presidents-news-conference",
+      "source_date": "1945-08-08",
+      "temporal_role": "contemporaneous_primary_record_cutoff_check",
+      "use_note": "15:00Washington announcement proves knowledge by then, not earlier receipt before departure."
+    },
+    {
+      "source_id": "NAG-DEPARTURE",
+      "citation": "National Park Service, atomic bombing timeline",
+      "url": "https://home.nps.gov/articles/000/the-atomic-bombings-of-hiroshima-and-nagasaki.htm",
+      "source_date": "2025-12-31 webpage",
+      "temporal_role": "later_institutional_reconstruction",
+      "use_note": "Departure entry0347Tinian, one hour ahead of Japan. Converted toUTC17:47 andWashington13:47,8August. Primary mission log and effective stop-order deadline unverified; later attack outcomes excluded."
     }
   ]
 }

@@ -52,17 +52,17 @@
     {
       "evidence_id": "E1",
       "claim": "Chronic haemodialysis can sustain life for selected people with otherwise fatal irreversible kidney failure, but treatment requires repeated use of scarce specialised equipment, trained staff and substantial ongoing resources.",
-      "epistemic_status": "observed"
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E2",
       "claim": "At the Seattle centre's early capacity, there are materially more medically eligible candidates than available chronic-dialysis places; treating everyone immediately is not feasible.",
-      "epistemic_status": "observed"
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E3",
       "claim": "Medical screening can identify some factors relevant to whether a candidate is likely to survive and physically/psychologically manage the demanding treatment, although medical prediction remains imperfect.",
-      "epistemic_status": "observed"
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E4",
@@ -106,7 +106,8 @@
     "How strongly family/dependant consequences should count when equal-standing candidates compete for one lifesaving place.",
     "Whether lottery, waiting time or another neutral tie-breaker best handles candidates with similar medical claims.",
     "How rapidly additional capacity can realistically be funded and staffed.",
-    "Whether community willingness to fund the programme depends on considering social/family factors, and whether that preference is morally legitimate."
+    "Whether community willingness to fund the programme depends on considering social/family factors, and whether that preference is morally legitimate.",
+    "The eligibility process itself includes age and family-role judgments; medical screening is not established here as purely clinical or free of contested exclusions."
   ],
   "known_alternatives": [
     "Use medical benefit/urgency criteria only, followed by random lottery among medically equivalent candidates.",

@@ -1,0 +1,3252 @@
+{
+  "audit_id": "CORE12-CORRECTION-11-REPAIR",
+  "date": "2026-09-19",
+  "research_only": true,
+  "evaluator_calls": 0,
+  "starting_commit": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+  "historical_baseline": "1fc927431541f5196d79d8284ea70cb1de1f9240",
+  "prior_audit": "../core12-provenance-10/repair-11-12.json",
+  "scope": "Exact candidate before/after changes; all 38 prior audit claims and all 19 repair options reviewed; all 11 original known_feasible labels examined.",
+  "interpretation_changes_adopted": false,
+  "source_registry": {
+    "AD": {
+      "title": "Bundestag 165th sitting",
+      "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+      "event_date": "1951-09-27",
+      "publication_date": "1951-09-27",
+      "type": "contemporaneous primary parliamentary transcript",
+      "access": "Web PDF text read",
+      "locator": "Printed pp. 6697D–6698B; PDF pp.3–4",
+      "limitations": "Government statement establishes acknowledgement and claims of partial restitution; not independent proof of popular nonparticipation or sustained non-recurrence."
+    },
+    "CAB": {
+      "title": "Federal Cabinet, 245th meeting, agenda items 1–2",
+      "url": "https://kabinettsprotokolle.bundesarchiv.de/resources/pdf/f5d973f9-77b5-4137-aca5-b6cd4b0a71e5.pdf",
+      "event_date": "1952-09-08",
+      "publication_date": "Later Bundesarchiv edition of primary minutes; edition webpage date not equated with event",
+      "type": "archival primary minutes with editorial annotations",
+      "access": "Web PDF first access succeeded; repeat timed out; direct download and PyMuPDF text read succeeded",
+      "sha256": "ac9ec4f95b1591f3c197f6f75a70315505ddfb6d10c060140ca6f9d2871095ea",
+      "locator": "PDF pp.1–7: meeting and participants p.1; receipt pp.2–3, notes 4–5; two protocols p.3; fiscal dispute pp.5–7; vote p.7",
+      "limitations": "Vote and subsequent implementation excluded. Later editorial notes are not contemporaneous actor knowledge. Note49 records a later dispute over wording of the financing condition, so no undisputed final condition is projected before the vote."
+    },
+    "KN": {
+      "title": "Knesset sessions 38–40, 7–9 January 1952, document 18 in The Reparations Controversy, edited by Yaakov Sharett",
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/94/06/2020719406/2020719406.pdf",
+      "event_date": "1952-01-07",
+      "publication_date": "2011 English edition; Hebrew anthology 2007",
+      "type": "primary speeches in later abridged English translation by Yoram and Yaakov Sharett",
+      "access": "Web PDF timed out twice; direct download and PyMuPDF text read succeeded",
+      "sha256": "a14dc4b3e1ba1003cd7d61b03edc3fcbec9e54a6b900f807d71a6a5a520c153e",
+      "locator": "Preface PDF p.5 explicitly discloses abridgement; Ben-Gurion printed pp.161–164/PDF 171–174; Begin pp.178–187/PDF 188–197; Lavon p.193/PDF203",
+      "limitations": "Speeches prove positions and contemporaneous claims, not independently audited resettlement costs, a representative survivor survey, or Cabinet receipt. Original Hebrew record not authenticated in this task."
+    },
+    "TO": {
+      "title": "Original Promotion of National Unity and Reconciliation Act 34 of 1995, Government Gazette 16579",
+      "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+      "event_date": "1995-07-19 assent",
+      "publication_date": "1995-07-26",
+      "type": "official original English statute",
+      "access": "Web PDF refused as too large (11,994,684 bytes); direct download succeeded, relevant sections read with PyMuPDF; hash matches audit 10",
+      "sha256": "7e02f146e23eed4d3befca3bab1e301cd88a503623338897b6bc0c566aa1c2fd",
+      "locator": "Cover; printed p.2 assent; ss19–20 pp.18–24; ss25–27 pp.26–28; ss29–35 pp.28–36; ss42,46 pp.42–46",
+      "limitations": "Pins enactment design only. It is not evidence of operational capacity, adequate reparation, or receipt at an unresolved pre-adoption decision point. Later consolidations and amendments excluded."
+    },
+    "TG": {
+      "title": "Official Act landing page",
+      "url": "https://www.gov.za/documents/promotion-national-unity-and-reconciliation-act",
+      "event_date": "Commencement stages in 1995–1996",
+      "publication_date": "Current historical metadata",
+      "type": "official statutory metadata",
+      "access": "Read web page",
+      "locator": "Commencement and Amendments sections",
+      "limitations": "Used to show why before implementation is ambiguous: staged commencement in December 1995 and April/June 1996. These later dates are not admitted as decision premises."
+    },
+    "UN23": {
+      "title": "UN Ad Hoc Working Group of Experts on southern Africa, E/CN.4/1995/23",
+      "url": "https://hrlibrary.law.umn.edu/commission/country51/23.htm",
+      "event_date": "August 1994 mission; report adopted December 1994",
+      "publication_date": "1995-01-13",
+      "type": "primary UN report reproduced in University of Minnesota mirror",
+      "access": "Mirror read; official docs.un.org endpoint inaccessible",
+      "locator": "Paras20,38–40,48–51",
+      "limitations": "Distinguishes minister statements, witness allegations and findings; not complete proof of every historical harm/category or actor attribution. Exact legislative actor receipt and official-copy authentication remain unresolved."
+    },
+    "GOLD": {
+      "title": "Goldstone Commission Final Report",
+      "url": "https://transitionaljusticedata.org/public_files/reportTCID176.pdf",
+      "event_date": "1994-10-27",
+      "publication_date": "1994-10-27; later repository reproduction",
+      "type": "primary commission report in research repository",
+      "access": "Web PDF text read",
+      "locator": "Cover and letter to President PDF pp.1–2; ss3.3–3.4.1 PDF pp.4–5; ss4.1–4.2 PDF p.7",
+      "limitations": "Existing proceedings are evidence against general prosecution impossibility, not proof of successful convictions or capacity for all cases. Witness-protection need is a recommendation, not delivered protection."
+    },
+    "CH": {
+      "title": "Claims Conference institutional history",
+      "url": "https://www.claimscon.org/about/history/",
+      "event_date": "Formation 1951; negotiations 1952",
+      "publication_date": "Current retrospective page",
+      "type": "institutional reconstruction",
+      "access": "Read web page",
+      "locator": "1951 and1952 sections",
+      "limitations": "Formation and negotiation context only; later programme success and welfare spending do not prove pre-signature delivery or detailed 1952 health needs."
+    },
+    "FRUS297": {
+      "title": "Secretary of State memorandum of conversation",
+      "url": "https://history.state.gov/historicaldocuments/frus1951v05/d297",
+      "event_date": "1951-03-22",
+      "publication_date": "Later FRUS edition",
+      "type": "primary diplomatic memorandum",
+      "access": "Read web page",
+      "locator": "FRUS 1951 volume V, document 297, printed pp.606–607, items 1–2",
+      "limitations": "Records Israeli grant/reparations requests and several different spending pressures. Cannot treat the whole requested amount as verified survivor-only costs or establish Cabinet receipt."
+    },
+    "FRUS398": {
+      "title": "US Secretary of State to Ambassador Eban",
+      "url": "https://history.state.gov/historicaldocuments/frus1951v05/d398",
+      "event_date": "1951-07-05",
+      "publication_date": "Later FRUS edition",
+      "type": "primary diplomatic note",
+      "access": "Read web page",
+      "locator": "FRUS 1951 volume V, document 398, pp.749–750, paragraphs(a)–(b)",
+      "limitations": "Broad postwar destitution, infirmity, resettlement and heirless-property context; insufficient for all specific packet needs/record-destruction mechanisms or Cabinet receipt."
+    }
+  },
+  "admission_recommendations": {
+    "CORE-11": {
+      "status": "blocked",
+      "decision_point": "1952-09-08, immediately before Cabinet vote on agenda 1–2; exact minute unverified",
+      "resolved": [
+        "Primary minutes identify documents before Cabinet and pre-vote briefings.",
+        "Public acknowledgement and publicly expressed opposition have pre-cutoff documentary support.",
+        "Fiscal disagreement preserved; approval, signature, ratification and delivery separated."
+      ],
+      "blockers": [
+        {
+          "id": "R11-B1",
+          "fields": [
+            "established_harms/H3",
+            "established_harms/H5",
+            "constraints/3"
+          ],
+          "reason": "Detailed1952 health/disability needs and destroyed-record mechanisms remain incompletely sourced; broad material deprivation or heirless property is not proof of each component.",
+          "consequence": "Cannot certify all packet premises as historically established at this decision point."
+        },
+        {
+          "id": "R11-B2",
+          "fields": [
+            "repair_context",
+            "established_harms/H4",
+            "affected_parties"
+          ],
+          "reason": "Public speeches establish claims and political positions; precise resettlement-cost attribution, survivor preference distribution and Cabinet receipt of every contextual claim remain unverified.",
+          "consequence": "Question remains usable as a qualified repair-design candidate, not a fully admitted historical replay."
+        }
+      ],
+      "recommendation": "Publish supported corrections with no new runnable pack; further needs/claim-administration evidence and receipt mapping required."
+    },
+    "CORE-12": {
+      "status": "blocked",
+      "decision_point": "Exact pre-adoption legislative review point unresolved; original 1995 before-implementation wording is not a precise event",
+      "resolved": [
+        "Original Act version and hash pinned to Gazette 16579; assent 19 July and publication 26 July distinguished.",
+        "Civil-remedy effects, compulsion, conditional hearing rights and recommendation/funding processes sourced.",
+        "Practical prosecution limits separated from established harms;1994 proceedings contradict blanket impossibility."
+      ],
+      "blockers": [
+        {
+          "id": "R12-B1",
+          "fields": [
+            "manifest/decision_cutoff"
+          ],
+          "reason": "No precise pre-adoption decision event and receipt of a matching complete bill/terms were verified. 26 July publication cannot be substituted after enactment for a decision whether to create the arrangement.",
+          "consequence": "Statutory corrections are supported design reconstruction but not certified temporally admissible inputs."
+        },
+        {
+          "id": "R12-B2",
+          "fields": [
+            "established_harms/H1",
+            "established_harms/H2",
+            "affected_parties"
+          ],
+          "reason": "Limited pre-1995 records do not fully support all harm categories/attributions, frequency of missing family truth, or actual victim-preference distribution.",
+          "consequence": "Retain visible source limits rather than use1998–2003 reports as earlier knowledge."
+        },
+        {
+          "id": "R12-B3",
+          "fields": [
+            "repair_options/R1",
+            "repair_options/R2",
+            "repair_options/R4",
+            "repair_options/R5",
+            "repair_options/R6",
+            "repair_options/R7",
+            "repair_options/R8"
+          ],
+          "reason": "Operational resources, protection and delivery capacity are not demonstrated by legal remit; all feasibility labels now reflect possibility rather than certification.",
+          "consequence": "No known-feasible operational repair package or adequate replacement remedy is certified at a settled cutoff."
+        }
+      ],
+      "recommendation": "Publish supported source corrections with no new runnable pack; resolve pre-adoption bill/receipt timeline and material capacity/support gaps."
+    }
+  },
+  "failed_or_limited_access": [
+    {
+      "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+      "result": "Web PDF fetch too large; direct shell download succeeded; original hash verified."
+    },
+    {
+      "url": "https://kabinettsprotokolle.bundesarchiv.de/resources/pdf/f5d973f9-77b5-4137-aca5-b6cd4b0a71e5.pdf",
+      "result": "First web PDF fetch succeeded; later web request timed out; direct download succeeded."
+    },
+    {
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/94/06/2020719406/2020719406.pdf",
+      "result": "Web PDF timeouts; direct download succeeded; translation and abridgement expressly recorded."
+    },
+    {
+      "url": "https://docs.un.org/en/E/CN.4/1995/23",
+      "result": "Tool inaccessible; primary report read through university mirror, not treated as original-copy authentication."
+    },
+    {
+      "url": "https://digitallibrary.un.org/record/167816/files/E_CN.4_1995_24-EN.pdf",
+      "result": "Internal error; separate report24 not relied upon."
+    },
+    {
+      "url": "https://www.justice.gov.za/trc/legal/act9534.htm",
+      "result": "Tool inaccessible; replaced with official original Gazette."
+    },
+    {
+      "url": "https://www.justice.gov.za/legislation/acts/1995-034.pdf",
+      "result": "Timed out in this research; audit 10 already identifies later amendments. Consolidation excluded; no fresh full-text verification claimed."
+    }
+  ],
+  "contradictory_evidence": [
+    {
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "PDF pp.5–7"
+        }
+      ],
+      "finding": "Finance Minister says first payment lacks budget coverage; Chancellor says savings can fund it. Candidate preserves the dispute."
+    },
+    {
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "PDF p.7 note 49"
+        }
+      ],
+      "finding": "Later correspondence disputes wording of the financing condition. This retrospective disagreement is audit-only, not a pre-vote fact."
+    },
+    {
+      "source_refs": [
+        {
+          "source_id": "GOLD",
+          "locator": "ss3.3–3.4.1"
+        }
+      ],
+      "finding": "Existing criminal prosecutions and civil suits predate1995; practical limits cannot be inflated into universal impossibility."
+    },
+    {
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss20(7),29,31,33"
+        }
+      ],
+      "finding": "Individual application does not mean only applicants lose civil remedies; protective provisions coexist with compulsion."
+    },
+    {
+      "source_refs": [
+        {
+          "source_id": "KN",
+          "locator": "Ben-Gurion pp.161–164; Begin pp.178–187"
+        }
+      ],
+      "finding": "Opposing political positions coexist; neither speech establishes a uniform survivor preference or independently verifies every factual assertion."
+    }
+  ],
+  "changes": [
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_context",
+      "before": "A successor democratic state is confronting material claims arising from a predecessor regime's systematic persecution, mass murder and expropriation of a targeted minority. A newly established state has absorbed large numbers of survivors/refugees and bears substantial resettlement costs. A coalition of victim organisations seeks direct restitution and compensation for survivors living both inside and outside that state. The successor state's leader publicly accepts a moral/material restitution obligation for crimes committed in the country's name while rejecting collective personal guilt of every current citizen. Many survivors nevertheless oppose negotiations or payments from the perpetrator state, fearing that money demeans victims or implies that mass murder can be settled financially.",
+      "after": "A successor democratic state is confronting material claims arising from a predecessor regime's systematic persecution, mass murder and expropriation of a targeted minority. A newly established state has absorbed large numbers of survivors/refugees and bears substantial resettlement costs. A coalition of victim organisations seeks direct restitution and compensation for survivors living both inside and outside that state. The successor state's leader publicly accepts a moral/material restitution obligation for crimes committed in the country's name while rejecting collective personal guilt of every current citizen. Opposition to negotiations or payments has been expressed publicly, including the concern that money demeans victims or implies that mass murder can be settled financially; the proportion of survivors holding each view is not established here. The review point is immediately before the successor government approves the negotiated agreement. Its finance minister disputes whether the first payment is funded, while its leader argues that existing budget capacity can cover it; approval, ratification and delivery are separate steps.",
+      "source_refs": [
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        }
+      ],
+      "rationale": "Replace unsourced survivor prevalence with evidenced public opposition; identify the pre-vote stage and preserve contemporary disagreement about finance without importing signature or delivered payments.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "responsible_actors/2",
+      "before": {
+        "actor": "present citizens/taxpayers as individuals",
+        "responsibility_status": "not_personally_responsible",
+        "responsibility_note": "Funding public reparation does not create inherited personal criminal guilt."
+      },
+      "after": {
+        "actor": "present citizens/taxpayers solely in their capacity as citizens",
+        "responsibility_status": "not_personally_responsible",
+        "responsibility_note": "Funding public reparation does not create inherited personal criminal guilt. Any separately established individual involvement remains subject to evidence-based attribution."
+      },
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "No inherited personal guilt does not mean every then-living citizen was uninvolved; retain separate individual attribution.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_options/R3/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_options/R4/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_options/R6/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_options/R7/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_options/R9/description",
+      "before": "Reject formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.",
+      "after": "Decline the proposed agreement or further formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        }
+      ],
+      "rationale": "At the selected pre-approval point negotiations have already occurred. Withholding approval is available; it is not evidence of an effective repair programme.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "repair_options/R9/victim_control_note",
+      "before": "Protects a serious dignity concern but does not resolve material losses or represent every survivor.",
+      "after": "Protects a serious dignity concern but does not resolve material losses or represent every survivor. Feasibility refers only to the available choice to withhold approval, not to successful material repair.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        }
+      ],
+      "rationale": "At the selected pre-approval point negotiations have already occurred. Withholding approval is available; it is not evidence of an effective repair programme.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "uncertainties/5",
+      "before": null,
+      "after": "Financing, ratification, administrative capacity and delivery schedules for the proposed payments and direct-claim mechanisms; negotiating terms do not certify delivered repair.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Keep unsupported claim detail and operational delivery unresolved; subsequent programme outcomes are excluded.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-masked.json",
+      "field": "uncertainties/6",
+      "before": null,
+      "after": "The extent and distribution of survivor opposition, detailed health/disability needs, and the mechanisms by which destroyed records frustrate individual claims require additional dated evidence.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Keep unsupported claim detail and operational delivery unresolved; subsequent programme outcomes are excluded.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_context",
+      "before": "By 1951-1952, the Federal Republic of Germany is a successor German state confronting material claims arising from Nazi persecution, expropriation and the Holocaust. Israel has absorbed large numbers of Jewish survivors and refugees and argues that resettlement created immense material burdens. The Conference on Jewish Material Claims Against Germany represents a broad coalition of Jewish organisations seeking direct restitution and compensation for survivors outside Israel. Chancellor Konrad Adenauer publicly acknowledges a German obligation of moral and material restitution for crimes committed in Germany's name while rejecting the idea that every German is personally guilty. At the same time, many survivors and Israelis strongly oppose negotiating with Germany or accepting money for Holocaust losses, fearing that payment could demean victims or imply that mass murder has been settled by money.",
+      "after": "At the Federal Cabinet review on 8 September 1952, before approval and signature, the Federal Republic of Germany is a successor German state confronting material claims arising from Nazi persecution, expropriation and the Holocaust. Israel has absorbed large numbers of Jewish survivors and refugees and argues that resettlement created immense material burdens. The Conference on Jewish Material Claims Against Germany represents a broad coalition of Jewish organisations seeking direct restitution and compensation for survivors outside Israel. Chancellor Konrad Adenauer publicly acknowledges a German obligation of moral and material restitution for crimes committed in Germany's name while rejecting the idea that every German is personally guilty. Public opposition to negotiations and payments includes Menachem Begin’s Knesset argument on 7 January 1952 that agreement would demean the victims; these speeches do not establish the proportion of survivors holding each view. Before the Cabinet vote, Finance Minister Schäffer disputes whether the first payment is funded, while Adenauer argues that existing budget capacity can cover it; approval, ratification and delivery are separate steps.",
+      "source_refs": [
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        }
+      ],
+      "rationale": "Replace unsourced survivor prevalence with evidenced public opposition; identify the pre-vote stage and preserve contemporary disagreement about finance without importing signature or delivered payments.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "responsible_actors/2",
+      "before": {
+        "actor": "Present West German citizens as individuals",
+        "responsibility_status": "not_personally_responsible",
+        "responsibility_note": "Taxation/public expenditure supporting reparation does not make every contemporary citizen personally guilty of Nazi crimes."
+      },
+      "after": {
+        "actor": "Present West German citizens solely in their capacity as citizens",
+        "responsibility_status": "not_personally_responsible",
+        "responsibility_note": "Taxation/public expenditure supporting reparation does not make every contemporary citizen personally guilty of Nazi crimes. Any separately established individual involvement remains subject to evidence-based attribution."
+      },
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "No inherited personal guilt does not mean every then-living citizen was uninvolved; retain separate individual attribution.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_options/R3/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_options/R4/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_options/R6/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_options/R7/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Negotiating documents and existing institutions establish available design elements, not funded delivery or sustained administrative capacity for the whole option.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_options/R9/description",
+      "before": "Reject formal reparations/negotiation on the ground that material payments cannot compensate genocide and risk dishonouring victims.",
+      "after": "Decline the proposed agreement or further reparations negotiations on the ground that material payments cannot compensate genocide and risk dishonouring victims.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        }
+      ],
+      "rationale": "At the selected pre-approval point negotiations have already occurred. Withholding approval is available; it is not evidence of an effective repair programme.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "repair_options/R9/victim_control_note",
+      "before": "This position protects an important dignity concern but leaves material restitution/resettlement burdens unresolved and cannot be assumed to represent every survivor.",
+      "after": "This position protects an important dignity concern but leaves material restitution/resettlement burdens unresolved and cannot be assumed to represent every survivor. Feasibility refers only to the available choice to withhold approval, not to successful material repair.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        }
+      ],
+      "rationale": "At the selected pre-approval point negotiations have already occurred. Withholding approval is available; it is not evidence of an effective repair programme.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "uncertainties/5",
+      "before": null,
+      "after": "Financing, ratification, administrative capacity and delivery schedules for the proposed payments and direct-claim mechanisms; negotiating terms do not certify delivered repair.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Keep unsupported claim detail and operational delivery unresolved; subsequent programme outcomes are excluded.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/repair-packet-transparent.json",
+      "field": "uncertainties/6",
+      "before": null,
+      "after": "The extent and distribution of survivor opposition, detailed health/disability needs, and the mechanisms by which destroyed records frustrate individual claims require additional dated evidence.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Document 18, Knesset debate 7 January 1952; Ben-Gurion pp. 161–164; Begin pp. 178–187; PDF pp. 171–174,188–197"
+        },
+        {
+          "source_id": "AD",
+          "locator": "Bundestag 165th sitting, 27 September 1951, printed pp. 6697D–6698B (PDF pp. 3–4)"
+        }
+      ],
+      "rationale": "Keep unsupported claim detail and operational delivery unresolved; subsequent programme outcomes are excluded.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_context",
+      "before": "A country is emerging from an authoritarian racial system into democratic government after decades of state repression, political killings, torture, disappearances and violence by state and non-state actors. The transition was negotiated rather than produced by total military defeat. Evidence is incomplete and many perpetrators retain knowledge that may never become public through ordinary prosecution. Victims want truth, accountability and repair, while the new democracy must reduce recurrence and avoid renewed political violence. A proposed commission would receive public victim testimony, investigate gross violations, recommend reparations and allow individuals to apply for amnesty for politically motivated acts only if they make full disclosure.",
+      "after": "A country is emerging from an authoritarian racial system into democratic government after decades of state repression, political killings, torture, disappearances and violence by state and non-state actors. The transition was negotiated rather than produced by total military defeat. Evidence is incomplete. The claim that amnesty will elicit information unavailable through ordinary prosecution is an incentive hypothesis whose size and necessity are uncertain. Victims want truth, accountability and repair, while the new democracy must reduce recurrence and avoid renewed political violence. The commission design under review would investigate gross violations, receive testimony, recommend reparations and consider individual applications for amnesty for qualifying politically associated acts on full disclosure. It would also extinguish the applicant’s criminal and civil liability and specified state, organisational and vicarious civil liabilities; civil remedies can therefore be lost even against nonapplicants. The design provides recommendation, regulation and funding processes for reparation, without establishing that adequate payments or rehabilitation services are secured. Victim choice over all testimony is a proposed additional safeguard; the historical design permits compelled evidence and ordinarily public hearings with protective exceptions.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        }
+      ],
+      "rationale": "Make material remedy losses and the design/delivery distinction visible; separate proposed noncompulsion and uncertain disclosure incentives from historical statutory facts.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "established_harms/H3",
+      "before": {
+        "harm_id": "H3",
+        "description": "Ordinary prosecution faces practical limits including missing evidence, destroyed records, secrecy, time and the negotiated nature of transition.",
+        "status": "substantially_established"
+      },
+      "after": null,
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Move a prosecution-feasibility premise (H3) to uncertainties and a normative/predictive impunity concern (H4) to continuing_risks; neither is an established past harm.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "established_harms/H4",
+      "before": {
+        "harm_id": "H4",
+        "description": "Blanket impunity would deny accountability and risk normalising severe political violence.",
+        "status": "substantially_established"
+      },
+      "after": null,
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Move a prosecution-feasibility premise (H3) to uncertainties and a normative/predictive impunity concern (H4) to continuing_risks; neither is an established past harm.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "uncertainties/6",
+      "before": null,
+      "after": "The extent to which missing evidence, destroyed records, secrecy, time and the negotiated transition limit ordinary prosecution is uncertain. Some criminal prosecutions and civil claims have already been initiated; that does not establish capacity for all cases.",
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Retain possible practical limits without calling prosecution generally impossible or deriving necessity of amnesty from later outcomes.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "continuing_risks/6",
+      "before": null,
+      "after": "Blanket impunity could deny accountability and normalise severe political violence; this is a normative and predictive concern, not an established past harm.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Relocate the former H4 to its actual epistemic category without prescribing an answer.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R1/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R2/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R5/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R7/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R8/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R1/victim_control_note",
+      "before": "Victims choose whether/how to testify; privacy/protection available.",
+      "after": "Proposed additional safeguard: victims choose whether/how to testify. The historical design permits compelled evidence; privacy, closure and protection provisions do not create an absolute right to decline testimony.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Mark the stronger voluntary-testimony condition as an option modifying the historical design, rather than an enacted guarantee.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R2/description",
+      "before": "Individual amnesty only on application, for acts associated with political objectives and only after full disclosure; no blanket status-based amnesty.",
+      "after": "Grant amnesty on individual application where the statutory requirements, political objective and full disclosure are satisfied. For the covered act the applicant is immune from criminal and civil liability; the state, bodies and organisations also lose civil liability, and no person remains vicariously liable. Other persons’ criminal liability is unaffected. For covered-period acts by a deceased person, civil or vicarious liability is excluded unless the act could not have qualified for amnesty.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss19(3)–(4),20(1),(5); printed pp. 18–22 (PDF pp. 10–12)"
+        }
+      ],
+      "rationale": "Expose the full civil-remedy scope, deceased-person rule and limits of individualisation; preserve other persons’ criminal liability and qualify blanket notice/voice wording.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R2/victim_control_note",
+      "before": "Victims receive notice/voice; amnesty does not require their forgiveness.",
+      "after": "The historical design provides notice and participation when an amnesty hearing is required, with specified decisions possible without a hearing. Victim consent or forgiveness is not a statutory criterion for a qualifying grant.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss19(3)–(4),20(1),(5); printed pp. 18–22 (PDF pp. 10–12)"
+        }
+      ],
+      "rationale": "Expose the full civil-remedy scope, deceased-person rule and limits of individualisation; preserve other persons’ criminal liability and qualify blanket notice/voice wording.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R3/description",
+      "before": "Preserve prosecution/civil accountability for people who do not obtain qualifying amnesty and where evidence supports action.",
+      "after": "Pursue remaining prosecution and civil claims only where not barred by applicable immunity and supported by lawfully admissible evidence. A nonapplicant may still benefit from the civil-liability exclusions described in the amnesty option.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "s31(1)–(4); printed pp. 30–32 (PDF pp. 16–17)"
+        }
+      ],
+      "rationale": "Nonreceipt of individual amnesty does not preserve every civil claim. Record compelled-evidence restrictions without implying that all prosecutions are barred.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R3/victim_control_note",
+      "before": "Accountability remains individualised and due-process bounded.",
+      "after": "Accountability remains individualised and due-process bounded. Compelled incriminating answers and directly or indirectly derived evidence are inadmissible against that person in criminal proceedings, subject to the statutory perjury and related exceptions.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "s31(1)–(4); printed pp. 30–32 (PDF pp. 16–17)"
+        }
+      ],
+      "rationale": "Nonreceipt of individual amnesty does not preserve every civil claim. Record compelled-evidence restrictions without implying that all prosecutions are barred.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R4/description",
+      "before": "Provide material reparation to victims/families rather than offering testimony alone.",
+      "after": "Provide material reparation to victims/families. The historical design routes applications and recommendations through the commission, President and Parliament, with regulations and authority to establish a fund for appropriations or contributions; this does not establish secured amounts, payment dates or adequate delivery.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        }
+      ],
+      "rationale": "Separate the proposal to provide repair from the statutory recommendation, regulation and funding process.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R7/victim_control_note",
+      "before": "Affected communities participate in oversight.",
+      "after": "Affected-community participation in oversight is a proposed safeguard. The historical design authorises recommendations for institutional reform; institution-specific powers, resources and execution remain to be established.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s4(h), printed p. 8 (PDF p. 5)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        }
+      ],
+      "rationale": "Recommendation authority is not evidence that reform and community oversight are already deliverable.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R8/victim_control_note",
+      "before": "No compelled public testimony.",
+      "after": "Proposed additional safeguard: no compelled victim participation in public testimony or memorialisation. The historical design permits compelled evidence and ordinarily public hearings, subject to protective exceptions; recordkeeping duties do not establish memorial delivery.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss3(1)(d),10(3),44; printed pp. 6,12,44 (PDF pp. 4,7,23)"
+        }
+      ],
+      "rationale": "Harmonise masked/transparent meaning and distinguish proposed consent protection from actual hearing powers and archive duties.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R9/victim_control_note",
+      "before": "No duty to forgive.",
+      "after": "No duty to forgive. Voluntary participation is a proposed safeguard; reconciliation cannot be guaranteed.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble and s3, printed pp. 2,6 (PDF pp. 2,4)"
+        }
+      ],
+      "rationale": "Label an existing optional safeguard and avoid certifying the social outcome.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R10/description",
+      "before": "Reject amnesty and rely primarily on prosecution/civil claims despite transition/evidentiary constraints.",
+      "after": "Reject amnesty and rely primarily on prosecution/civil claims despite transition/evidentiary constraints. This counterfactual would require changing the existing constitutional commitment to amnesty.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble, printed p. 2 (PDF p. 2)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        }
+      ],
+      "rationale": "Rejecting all amnesty is a counterfactual legal-design option, not an unconstrained executive choice or proof of reduced disclosure.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R10/victim_control_note",
+      "before": "May strengthen accountability but reduce disclosure where evidence is weak.",
+      "after": "Prosecution capacity, disclosure effects and the legal changes needed for this alternative remain uncertain.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble, printed p. 2 (PDF p. 2)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        }
+      ],
+      "rationale": "Rejecting all amnesty is a counterfactual legal-design option, not an unconstrained executive choice or proof of reduced disclosure.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "uncertainties/7",
+      "before": null,
+      "after": "Actual appropriations, benefit eligibility, payment amounts and deadlines, rehabilitation staffing, witness protection and institutional implementation capacity at the decision point.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        }
+      ],
+      "rationale": "Keep delivery and actual preference distribution unknown; proposed safeguards do not resolve historical operational evidence gaps.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "uncertainties/8",
+      "before": null,
+      "after": "The distribution of victims’ preferences over truth, amnesty and punishment is not established by the statutory participation provisions.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        }
+      ],
+      "rationale": "Keep delivery and actual preference distribution unknown; proposed safeguards do not resolve historical operational evidence gaps.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_context",
+      "before": "South Africa is emerging from apartheid into democratic government after decades of state repression, political violence, torture, killings, disappearances and abuses by state and non-state actors. A negotiated transition has occurred without a military defeat of the former regime. Evidence, records and responsibility are incomplete; many victims want truth and accountability; former officials and combatants retain knowledge and influence; and the new democracy must reduce recurrence while avoiding a transition back into political violence. The proposed 1995 framework would create a Truth and Reconciliation Commission, public victim testimony and reparation mechanisms, while allowing individuals to obtain amnesty for qualifying politically motivated acts only if they apply and make full disclosure.",
+      "after": "South Africa is emerging from apartheid into democratic government after decades of state repression, political violence, torture, killings, disappearances and abuses by state and non-state actors. A negotiated transition has occurred without a military defeat of the former regime. Evidence, records and responsibility are incomplete; many victims want truth and accountability; former officials and combatants retain knowledge and influence; and the new democracy must reduce recurrence while avoiding a transition back into political violence. The design reconstructed from the original July 1995 Act would create a Truth and Reconciliation Commission, testimony and reparation mechanisms, while requiring amnesty for qualifying individual applications satisfying the statutory political-objective and full-disclosure criteria. Its effects include the applicant’s criminal and civil liability and specified state, organisational and vicarious civil liabilities. Recommendation, regulation and funding processes do not establish secured delivery of adequate reparation. Universal victim choice over testimony is an additional proposed safeguard: the original design permits compelled evidence and ordinarily public hearings with protective exceptions. The claim that amnesty is necessary to obtain otherwise unavailable information remains an incentive hypothesis.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        }
+      ],
+      "rationale": "Make material remedy losses and the design/delivery distinction visible; separate proposed noncompulsion and uncertain disclosure incentives from historical statutory facts.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "established_harms/H3",
+      "before": {
+        "harm_id": "H3",
+        "description": "Ordinary prosecution alone faces practical limits including missing evidence, destroyed records, secrecy, passage of time and the negotiated character of the political transition.",
+        "status": "substantially_established",
+        "source_ids": [
+          "TRC-ACT-1995"
+        ]
+      },
+      "after": null,
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Move a prosecution-feasibility premise (H3) to uncertainties and a normative/predictive impunity concern (H4) to continuing_risks; neither is an established past harm.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "established_harms/H4",
+      "before": {
+        "harm_id": "H4",
+        "description": "Blanket impunity would deny accountability and risk communicating that grave political violence can be erased by a change of government.",
+        "status": "substantially_established",
+        "source_ids": [
+          "TRC-ACT-1995"
+        ]
+      },
+      "after": null,
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Move a prosecution-feasibility premise (H3) to uncertainties and a normative/predictive impunity concern (H4) to continuing_risks; neither is an established past harm.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "uncertainties/6",
+      "before": null,
+      "after": "The extent to which missing evidence, destroyed records, secrecy, passage of time and the negotiated transition limit ordinary prosecution is uncertain. The 1994 Goldstone report records existing criminal prosecutions and civil claims; this does not establish capacity for all cases.",
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Retain possible practical limits without calling prosecution generally impossible or deriving necessity of amnesty from later outcomes.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "continuing_risks/6",
+      "before": null,
+      "after": "Blanket impunity could deny accountability and communicate that grave political violence can be erased by a change of government; this is a normative and predictive concern, not an established past harm.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Relocate the former H4 to its actual epistemic category without prescribing an answer.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R1/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R2/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R5/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R7/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R8/feasibility",
+      "before": "known_feasible",
+      "after": "possibly_feasible",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Statutory powers and recommendations demonstrate a design, not operational readiness, adequate protection, service capacity or sustained delivery.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R1/victim_control_note",
+      "before": "Victims choose whether/how to testify; privacy/protection should be available where needed.",
+      "after": "Proposed additional safeguard: victims choose whether/how to testify. The historical design permits compelled evidence; privacy, closure and protection provisions do not create an absolute right to decline testimony.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        }
+      ],
+      "rationale": "Mark the stronger voluntary-testimony condition as an option modifying the historical design, rather than an enacted guarantee.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R2/description",
+      "before": "Allow individual amnesty only on application, for acts associated with a political objective and only after full disclosure of relevant facts; no blanket status-based amnesty.",
+      "after": "Grant amnesty on individual application where the statutory requirements, political objective and full disclosure are satisfied. For the covered act the applicant is immune from criminal and civil liability; the state, bodies and organisations also lose civil liability, and no person remains vicariously liable. Other persons’ criminal liability is unaffected. For covered-period acts by a deceased person, civil or vicarious liability is excluded unless the act could not have qualified for amnesty.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss19(3)–(4),20(1),(5); printed pp. 18–22 (PDF pp. 10–12)"
+        }
+      ],
+      "rationale": "Expose the full civil-remedy scope, deceased-person rule and limits of individualisation; preserve other persons’ criminal liability and qualify blanket notice/voice wording.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R2/victim_control_note",
+      "before": "Victims should receive notice/voice, but individual amnesty cannot depend solely on a victim being willing to forgive.",
+      "after": "The historical design provides notice and participation when an amnesty hearing is required, with specified decisions possible without a hearing. Victim consent or forgiveness is not a statutory criterion for a qualifying grant.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss19(3)–(4),20(1),(5); printed pp. 18–22 (PDF pp. 10–12)"
+        }
+      ],
+      "rationale": "Expose the full civil-remedy scope, deceased-person rule and limits of individualisation; preserve other persons’ criminal liability and qualify blanket notice/voice wording.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R3/description",
+      "before": "Preserve prosecution/civil accountability for persons who do not obtain qualifying amnesty and where evidence supports proceedings.",
+      "after": "Pursue remaining prosecution and civil claims only where not barred by applicable immunity and supported by lawfully admissible evidence. A nonapplicant may still benefit from the civil-liability exclusions described in the amnesty option.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "s31(1)–(4); printed pp. 30–32 (PDF pp. 16–17)"
+        }
+      ],
+      "rationale": "Nonreceipt of individual amnesty does not preserve every civil claim. Record compelled-evidence restrictions without implying that all prosecutions are barred.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R3/victim_control_note",
+      "before": "Accountability remains individualised and due-process bounded.",
+      "after": "Accountability remains individualised and due-process bounded. Compelled incriminating answers and directly or indirectly derived evidence are inadmissible against that person in criminal proceedings, subject to the statutory perjury and related exceptions.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(1)–(3),(7)(a)–(c), printed pp. 20–22 (PDF pp. 11–12)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "s31(1)–(4); printed pp. 30–32 (PDF pp. 16–17)"
+        }
+      ],
+      "rationale": "Nonreceipt of individual amnesty does not preserve every civil claim. Record compelled-evidence restrictions without implying that all prosecutions are barred.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R4/description",
+      "before": "Provide material reparation to victims/families rather than making truth testimony the only benefit they receive.",
+      "after": "Provide material reparation to victims/families. The historical design routes applications and recommendations through the commission, President and Parliament, with regulations and authority to establish a fund for appropriations or contributions; this does not establish secured amounts, payment dates or adequate delivery.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        }
+      ],
+      "rationale": "Separate the proposal to provide repair from the statutory recommendation, regulation and funding process.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R7/victim_control_note",
+      "before": "Affected communities should participate in reform oversight.",
+      "after": "Affected-community participation in oversight is a proposed safeguard. The historical design authorises recommendations for institutional reform; institution-specific powers, resources and execution remain to be established.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s4(h), printed p. 8 (PDF p. 5)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        }
+      ],
+      "rationale": "Recommendation authority is not evidence that reform and community oversight are already deliverable.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R8/victim_control_note",
+      "before": "No victim should be compelled into public memorialisation.",
+      "after": "Proposed additional safeguard: no compelled victim participation in public testimony or memorialisation. The historical design permits compelled evidence and ordinarily public hearings, subject to protective exceptions; recordkeeping duties do not establish memorial delivery.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss3(1)(d),10(3),44; printed pp. 6,12,44 (PDF pp. 4,7,23)"
+        }
+      ],
+      "rationale": "Harmonise masked/transparent meaning and distinguish proposed consent protection from actual hearing powers and archive duties.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R9/victim_control_note",
+      "before": "No requirement that individual victims forgive perpetrators.",
+      "after": "No requirement that individual victims forgive perpetrators. Voluntary participation is a proposed safeguard; reconciliation cannot be guaranteed.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble and s3, printed pp. 2,6 (PDF pp. 2,4)"
+        }
+      ],
+      "rationale": "Label an existing optional safeguard and avoid certifying the social outcome.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R10/description",
+      "before": "Reject amnesty and rely primarily on ordinary prosecutions/civil claims despite transition/evidentiary constraints.",
+      "after": "Reject amnesty and rely primarily on ordinary prosecutions/civil claims despite transition/evidentiary constraints. This counterfactual would require changing the existing constitutional commitment to amnesty.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble, printed p. 2 (PDF p. 2)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        }
+      ],
+      "rationale": "Rejecting all amnesty is a counterfactual legal-design option, not an unconstrained executive choice or proof of reduced disclosure.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R10/victim_control_note",
+      "before": "May satisfy strong accountability claims but risks less disclosure and unequal/partial prosecution if evidence is unavailable.",
+      "after": "Prosecution capacity, disclosure effects and the legal changes needed for this alternative remain uncertain.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble, printed p. 2 (PDF p. 2)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "Final report, 27 October 1994, ss3.3–3.4.1 (PDF pp. 4–5), ss4.1–4.2 (PDF p. 7)"
+        }
+      ],
+      "rationale": "Rejecting all amnesty is a counterfactual legal-design option, not an unconstrained executive choice or proof of reduced disclosure.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "uncertainties/7",
+      "before": null,
+      "after": "Actual appropriations, benefit eligibility, payment amounts and deadlines, rehabilitation staffing, witness protection and institutional implementation capacity at the decision point.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        }
+      ],
+      "rationale": "Keep delivery and actual preference distribution unknown; proposed safeguards do not resolve historical operational evidence gaps.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "uncertainties/8",
+      "before": null,
+      "after": "The distribution of victims’ preferences over truth, amnesty and punishment is not established by the statutory participation provisions.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42,46; printed pp. 26–28,42–46 (PDF pp. 14–15,22–24)"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss29(1)(c),31,33–35; printed pp. 28–36 (PDF pp. 15–19)"
+        },
+        {
+          "source_id": "UN23",
+          "locator": "E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51"
+        }
+      ],
+      "rationale": "Keep delivery and actual preference distribution unknown; proposed safeguards do not resolve historical operational evidence gaps.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "sources/0",
+      "before": {
+        "source_id": "TRC-ACT-1995",
+        "citation": "South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995",
+        "url": "https://www.justice.gov.za/trc/legal/act9534.htm"
+      },
+      "after": {
+        "source_id": "TRC-ACT-1995",
+        "citation": "South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995, original Government Gazette 16579, 26 July 1995 (assented to 19 July 1995)",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf"
+      },
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Replace version-ambiguous legacy HTML with the original Gazette, excluding subsequent amendments.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/manifest.json",
+      "field": "decision_cutoff",
+      "before": {
+        "date_or_period": "1951-1952 before signature of the Luxembourg Agreements",
+        "definition": "The Federal Republic of Germany, State of Israel and Conference on Jewish Material Claims Against Germany deciding whether and how a successor German state should provide large-scale material restitution/compensation after Nazi persecution and mass murder."
+      },
+      "after": {
+        "date_or_period": "1952-09-08, immediately before the Federal Cabinet vote on agenda items 1–2 of its 245th meeting",
+        "definition": "Pre-approval review of the negotiated German-Israeli agreement and Claims Conference protocols, after the recorded briefings and debate but before the Cabinet resolution; signature, ratification and delivery remain outside the cutoff. The meeting ran 09:30–12:35 local time; the vote minute is not established.",
+        "precision_status": "event_pinned",
+        "evidence_receipt": "The minutes identify the documents before the Cabinet and the oral briefings. This establishes receipt of those materials by the Cabinet, not receipt of every contextual claim in the packet."
+      },
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "245th cabinet meeting, 8 September 1952, agenda 1–2, PDF pp. 2–7; documents actually before cabinet at p. 2 and notes 4–5; funding dispute pp. 5–7"
+        }
+      ],
+      "rationale": "Replace a two-year range with a documented pre-vote event and actor-receipt evidence. No later approval, signature or delivery is treated as a premise.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/manifest.json",
+      "field": "sources/0",
+      "before": {
+        "source_id": "TRC-ACT-1995",
+        "citation": "South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995",
+        "url": "https://www.justice.gov.za/trc/legal/act9534.htm",
+        "source_date": "1995",
+        "use_note": "Primary statutory design: truth commission, amnesty criteria, victims and reparation/rehabilitation structures."
+      },
+      "after": {
+        "source_id": "TRC-ACT-1995",
+        "citation": "South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995, original Government Gazette 16579, 26 July 1995",
+        "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+        "source_date": "1995-07-26; assented to 1995-07-19",
+        "use_note": "Original English Gazette text only, SHA-256 7e02f146e23eed4d3befca3bab1e301cd88a503623338897b6bc0c566aa1c2fd. Reconstructs enacted design; does not establish pre-adoption receipt or operational delivery. Later amendments, AZAPO and implementation stay reveal-only."
+      },
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Original statute version pinned; consolidated amendments are excluded.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/manifest.json",
+      "field": "decision_cutoff",
+      "before": {
+        "date_or_period": "1995 before implementation of the Promotion of National Unity and Reconciliation Act",
+        "definition": "South Africa's democratic transition decision whether to create a truth commission offering individual conditional amnesty for politically motivated acts on full disclosure, while documenting gross human-rights violations and creating reparation/rehabilitation mechanisms."
+      },
+      "after": {
+        "date_or_period": "1995 before implementation of the Promotion of National Unity and Reconciliation Act",
+        "definition": "South Africa's democratic transition decision whether to create a truth commission offering individual conditional amnesty for politically motivated acts on full disclosure, while documenting gross human-rights violations and creating reparation/rehabilitation mechanisms.",
+        "precision_status": "unresolved",
+        "research_note": "Original adoption/design question retained. Exact pre-adoption legislative review event and receipt of the complete terms have not been verified. The original Act was assented to on 19 July 1995 and published on 26 July; publication is a version anchor, not a replacement decision cutoff. Do not shift this question to a later implementation review to admit the statute."
+      },
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Original Act 34 of 1995, Gazette 16579, 26 July 1995; sections 2–4, 7, 18–20, 25–27, 29–35, 42, 46"
+        }
+      ],
+      "rationale": "Pin the historical version while explicitly refusing to certify an unresolved pre-adoption cutoff or silently move the decision after enactment.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R5/victim_control_note",
+      "before": "Participation voluntary.",
+      "after": "Proposed safeguard: participation voluntary.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss1,3(1)(c),11,25–27; statutory reparation remit does not establish this additional control guarantee"
+        }
+      ],
+      "rationale": "Label the existing option safeguard as proposed; do not certify universal voluntary service participation or family control of information/remains as a statutory guarantee.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-masked.json",
+      "field": "repair_options/R6/victim_control_note",
+      "before": "Families control sensitive information/remains decisions within lawful constraints.",
+      "after": "Proposed safeguard: families control sensitive information/remains decisions within lawful constraints.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss1,3(1)(c),11,25–27; statutory reparation remit does not establish this additional control guarantee"
+        }
+      ],
+      "rationale": "Label the existing option safeguard as proposed; do not certify universal voluntary service participation or family control of information/remains as a statutory guarantee.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Neutral factual wording only; identifying provenance remains outside the masked packet."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R5/victim_control_note",
+      "before": "Participation voluntary and victim-centred.",
+      "after": "Proposed safeguard: participation voluntary and victim-centred.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss1,3(1)(c),11,25–27; statutory reparation remit does not establish this additional control guarantee"
+        }
+      ],
+      "rationale": "Label the existing option safeguard as proposed; do not certify universal voluntary service participation or family control of information/remains as a statutory guarantee.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/repair-packet-transparent.json",
+      "field": "repair_options/R6/victim_control_note",
+      "before": "Families control sensitive information and remains-related decisions within lawful constraints.",
+      "after": "Proposed safeguard: families control sensitive information and remains-related decisions within lawful constraints.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss1,3(1)(c),11,25–27; statutory reparation remit does not establish this additional control guarantee"
+        }
+      ],
+      "rationale": "Label the existing option safeguard as proposed; do not certify universal voluntary service participation or family control of information/remains as a statutory guarantee.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/manifest.json",
+      "field": "sources",
+      "before": [
+        {
+          "source_id": "LUX-ADENAUER-1951",
+          "citation": "Konrad Adenauer, Bundestag statement on German responsibility and restitution, 27 September 1951",
+          "url": "https://www.konrad-adenauer.de/quellen/reden/1951-09-27-regierungserklaerung-wiedergutmachung/",
+          "source_date": "1951-09-27",
+          "use_note": "Contemporaneous West German acknowledgement of crimes committed in Germany's name and commitment to material restitution, while rejecting collective personal guilt of all Germans."
+        },
+        {
+          "source_id": "LUX-CLAIMS-HISTORY",
+          "citation": "Conference on Jewish Material Claims Against Germany, History of the Claims Conference / Luxembourg Agreements",
+          "url": "https://www.claimscon.org/about/history/",
+          "source_date": "current historical reference",
+          "use_note": "Documents negotiations, survivor representation and the compensation/restitution framework."
+        },
+        {
+          "source_id": "LUX-CLAIMS-70",
+          "citation": "Claims Conference, 70th Anniversary of the Luxembourg Agreements",
+          "url": "https://www.claimscon.org/2022/09/luxembourg-agreements-70/",
+          "source_date": "2022-09",
+          "use_note": "Summarises the agreements' structure, opposition and long-run compensation significance."
+        },
+        {
+          "source_id": "LUX-GERMAN-HISTORY",
+          "citation": "German Federal Government / historical materials on the Luxembourg Agreement and Wiedergutmachung",
+          "url": "https://www.bundesregierung.de/breg-en/service/archive/luxembourg-agreement-1952-2132934",
+          "source_date": "historical reference",
+          "use_note": "Successor-state perspective on reparations and agreement implementation."
+        }
+      ],
+      "after": [
+        {
+          "source_id": "LUX-ADENAUER-1951",
+          "citation": "Konrad Adenauer, Bundestag statement on German responsibility and restitution, 27 September 1951",
+          "url": "https://www.konrad-adenauer.de/quellen/reden/1951-09-27-regierungserklaerung-wiedergutmachung/",
+          "source_date": "1951-09-27",
+          "use_note": "Contemporaneous West German acknowledgement of crimes committed in Germany's name and commitment to material restitution, while rejecting collective personal guilt of all Germans."
+        },
+        {
+          "source_id": "LUX-CLAIMS-HISTORY",
+          "citation": "Conference on Jewish Material Claims Against Germany, History of the Claims Conference / Luxembourg Agreements",
+          "url": "https://www.claimscon.org/about/history/",
+          "source_date": "current historical reference",
+          "use_note": "Documents negotiations, survivor representation and the compensation/restitution framework."
+        },
+        {
+          "source_id": "LUX-CLAIMS-70",
+          "citation": "Claims Conference, 70th Anniversary of the Luxembourg Agreements",
+          "url": "https://www.claimscon.org/2022/09/luxembourg-agreements-70/",
+          "source_date": "2022-09",
+          "use_note": "Summarises the agreements' structure, opposition and long-run compensation significance."
+        },
+        {
+          "source_id": "LUX-GERMAN-HISTORY",
+          "citation": "German Federal Government / historical materials on the Luxembourg Agreement and Wiedergutmachung",
+          "url": "https://www.bundesregierung.de/breg-en/service/archive/luxembourg-agreement-1952-2132934",
+          "source_date": "historical reference",
+          "use_note": "Successor-state perspective on reparations and agreement implementation."
+        },
+        {
+          "source_id": "LUX-CABINET-1952-09-08",
+          "citation": "Federal Cabinet, 245th meeting, 8 September 1952, agenda items 1–2",
+          "url": "https://kabinettsprotokolle.bundesarchiv.de/resources/pdf/f5d973f9-77b5-4137-aca5-b6cd4b0a71e5.pdf",
+          "source_date": "1952-09-08 (primary minutes in later archival edition)",
+          "use_note": "PDF pp. 2–7: received negotiating materials and pre-vote funding disagreement; final vote and retrospective editorial notes excluded from decision premises."
+        },
+        {
+          "source_id": "LUX-BUNDESTAG-1951",
+          "citation": "Bundestag, 165th sitting, 27 September 1951, pp. 6697D–6698B",
+          "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+          "source_date": "1951-09-27",
+          "use_note": "Direct primary replacement for legacy Adenauer URL; acknowledgement and partial restitution, not a general finding of citizen innocence."
+        },
+        {
+          "source_id": "LUX-KNESSET-1952",
+          "citation": "Knesset debate, 7 January 1952, document 18 in Yaakov Sharett (ed.), The Reparations Controversy (2011), pp. 161–164,178–187",
+          "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/94/06/2020719406/2020719406.pdf",
+          "source_date": "1952-01-07 (2011 abridged English translation)",
+          "use_note": "Primary speeches reconstructed through an explicitly abridged translation: resettlement claim and opposition positions, not measured survivor prevalence or independently audited costs."
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "Registry entries below and case admission findings"
+        }
+      ],
+      "rationale": "Research-only primary locators/version pins and explicit admission status; never loaded into masked evaluator material.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0102-luxembourg-reparations-1952/manifest.json",
+      "field": "correction_11_admission",
+      "before": null,
+      "after": {
+        "status": "blocked",
+        "ledger": "../../../../docs/evidence/core12-correction-11/repair-11-12.json",
+        "reason": "Pre-vote event is pinned, but detailed needs, destroyed-record mechanisms and contextual receipt remain incompletely supported; no complete historical admission certificate."
+      },
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "Registry entries below and case admission findings"
+        }
+      ],
+      "rationale": "Research-only primary locators/version pins and explicit admission status; never loaded into masked evaluator material.",
+      "core_id": "CORE-11",
+      "temporal_assessment": "CAB establishes receipt for its listed documents and briefings before the vote. Earlier public statements reconstruct positions; actual receipt of every packet context item remains unverified.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/manifest.json",
+      "field": "sources",
+      "before": [
+        {
+          "source_id": "TRC-ACT-1995",
+          "citation": "South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995",
+          "url": "https://www.justice.gov.za/trc/legal/act9534.htm",
+          "source_date": "1995",
+          "use_note": "Primary statutory design: truth commission, amnesty criteria, victims and reparation/rehabilitation structures."
+        },
+        {
+          "source_id": "TRC-FINAL-REPORT",
+          "citation": "Truth and Reconciliation Commission of South Africa, Final Report",
+          "url": "https://www.justice.gov.za/trc/report/",
+          "source_date": "1998-2003",
+          "use_note": "Reveal source on implementation, findings, amnesty, victim testimony and reparation recommendations."
+        },
+        {
+          "source_id": "TRC-AZAPO",
+          "citation": "AZAPO and Others v President of the Republic of South Africa and Others, Constitutional Court, 1996",
+          "url": "https://www.saflii.org/za/cases/ZACC/1996/16.html",
+          "source_date": "1996-07-25",
+          "use_note": "Reveal/legal-review source upholding the amnesty framework while discussing transition, truth and reparations."
+        },
+        {
+          "source_id": "TRC-GOV-HISTORY",
+          "citation": "South African Government / Department of Justice materials on Truth and Reconciliation Commission",
+          "url": "https://www.justice.gov.za/trc/",
+          "source_date": "historical archive",
+          "use_note": "Official archive of TRC structure, proceedings and records."
+        }
+      ],
+      "after": [
+        {
+          "source_id": "TRC-ACT-1995",
+          "citation": "South Africa, Promotion of National Unity and Reconciliation Act 34 of 1995, original Government Gazette 16579, 26 July 1995",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/act34of1995.pdf",
+          "source_date": "1995-07-26; assented to 1995-07-19",
+          "use_note": "Original English Gazette text only, SHA-256 7e02f146e23eed4d3befca3bab1e301cd88a503623338897b6bc0c566aa1c2fd. Reconstructs enacted design; does not establish pre-adoption receipt or operational delivery. Later amendments, AZAPO and implementation stay reveal-only."
+        },
+        {
+          "source_id": "TRC-FINAL-REPORT",
+          "citation": "Truth and Reconciliation Commission of South Africa, Final Report",
+          "url": "https://www.justice.gov.za/trc/report/",
+          "source_date": "1998-2003",
+          "use_note": "Reveal source on implementation, findings, amnesty, victim testimony and reparation recommendations."
+        },
+        {
+          "source_id": "TRC-AZAPO",
+          "citation": "AZAPO and Others v President of the Republic of South Africa and Others, Constitutional Court, 1996",
+          "url": "https://www.saflii.org/za/cases/ZACC/1996/16.html",
+          "source_date": "1996-07-25",
+          "use_note": "Reveal/legal-review source upholding the amnesty framework while discussing transition, truth and reparations."
+        },
+        {
+          "source_id": "TRC-GOV-HISTORY",
+          "citation": "South African Government / Department of Justice materials on Truth and Reconciliation Commission",
+          "url": "https://www.justice.gov.za/trc/",
+          "source_date": "historical archive",
+          "use_note": "Official archive of TRC structure, proceedings and records."
+        },
+        {
+          "source_id": "TRC-UN-1995-23",
+          "citation": "UN Ad Hoc Working Group of Experts, E/CN.4/1995/23, 13 January 1995, paras. 20,38–40,48–51",
+          "url": "https://hrlibrary.law.umn.edu/commission/country51/23.htm",
+          "source_date": "1995-01-13; mission August 1994",
+          "use_note": "Primary report in university mirror; transition statements, testimony and resource constraints, with allegations distinguished from findings. Official UN endpoint inaccessible; individual decision-maker receipt unresolved."
+        },
+        {
+          "source_id": "TRC-GOLDSTONE-1994",
+          "citation": "Goldstone Commission Final Report, 27 October 1994, ss3.3–3.4.1,4.1–4.2",
+          "url": "https://transitionaljusticedata.org/public_files/reportTCID176.pdf",
+          "source_date": "1994-10-27",
+          "use_note": "Primary report reproduced in research repository. Existing prosecutions/civil claims and witness-protection needs; no later trial outcomes or general prosecution-capacity conclusion."
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Registry entries below and case admission findings"
+        }
+      ],
+      "rationale": "Research-only primary locators/version pins and explicit admission status; never loaded into masked evaluator material.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    },
+    {
+      "file": "crucible/historical/repair-cases/RC-0103-south-africa-trc-1995/manifest.json",
+      "field": "correction_11_admission",
+      "before": null,
+      "after": {
+        "status": "blocked",
+        "ledger": "../../../../docs/evidence/core12-correction-11/repair-11-12.json",
+        "reason": "Exact pre-adoption cutoff/receipt and several harm, preference and operational capacity premises remain unresolved; statutory version pinning is not temporal admission."
+      },
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "Registry entries below and case admission findings"
+        }
+      ],
+      "rationale": "Research-only primary locators/version pins and explicit admission status; never loaded into masked evaluator material.",
+      "core_id": "CORE-12",
+      "temporal_assessment": "Original statutory design is verified, but exact pre-adoption cutoff and receipt remain unresolved. No source is certified for an earlier instant solely because its publication date is known.",
+      "masking_assessment": "Research/transparent material; not a masked identity claim."
+    }
+  ],
+  "prior_claim_review": [
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "established_harms/H1",
+      "baseline_claim": "The predecessor regime systematically murdered millions of members of the targeted minority; lives, families and destroyed communities cannot be restored or priced by payment.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "established_harms/H2",
+      "baseline_claim": "Victims suffered large-scale confiscation/destruction of property, businesses, homes, savings and livelihoods.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "established_harms/H3",
+      "baseline_claim": "Survivors were left with major health, disability, housing, livelihood and resettlement needs after persecution, forced labour, displacement and camps.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "KN",
+          "locator": "Ben-Gurion pp.162–163; Lavon p.193"
+        },
+        {
+          "source_id": "FRUS398",
+          "locator": "p.749, paragraph (a)"
+        }
+      ],
+      "finding": "Contemporaneous broad material need and calls for healing/housing support; the full health/disability needs list and its magnitude remain incompletely supported.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "established_harms/H4",
+      "baseline_claim": "The state and organisations receiving large numbers of survivors incurred substantial material resettlement/integration costs.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "KN",
+          "locator": "Ben-Gurion p.163"
+        },
+        {
+          "source_id": "FRUS297",
+          "locator": "pp.606–607, items 1–2"
+        }
+      ],
+      "finding": "Substantial absorption burdens were contemporaneously claimed; precise costs and attribution to Holocaust survivors rather than other immigrants are not independently audited here.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "established_harms/H5",
+      "baseline_claim": "Many property/compensation claims cannot be solved by simple return because assets/records/owners/heirs were destroyed or dispersed.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "p.6698 restitution paragraphs"
+        },
+        {
+          "source_id": "FRUS398",
+          "locator": "p.749, paragraph (b)"
+        }
+      ],
+      "finding": "Ownerless property/partial return is supported; all destroyed-record/asset/heir mechanisms and their prevalence remain unverified.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "established_harms/H1",
+      "baseline_claim": "The prior political system and related conflict produced widespread gross human-rights violations including killings, torture, disappearances and severe politically motivated violence.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "paras20,48–50"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "ss3.3–3.4.1"
+        },
+        {
+          "source_id": "TO",
+          "locator": "ss1,3–4"
+        }
+      ],
+      "finding": "Additional pre-1995 records support serious violence/torture claims. Complete scope, disappearances and actor-specific attribution are not established by the Act or these limited excerpts alone.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "established_harms/H2",
+      "baseline_claim": "Victims and families often lack complete truth about what happened, who was responsible and where missing relatives or records are located.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Act recognises locating victims and establishing truth as objectives; frequency of incomplete family knowledge remains unmeasured.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "established_harms/H3",
+      "baseline_claim": "Ordinary prosecution faces practical limits including missing evidence, destroyed records, secrecy, time and the negotiated nature of transition.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "uncertain_feasibility_premise",
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "paras20,38–40,50–51"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "ss3.3–3.4.1"
+        }
+      ],
+      "finding": "Moved from established harm; existing prosecutions and civil claims prevent a blanket impossibility inference, while resources and case-specific feasibility remain uncertain.",
+      "admission": "not_certified",
+      "candidate_field": "uncertainties/6"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "established_harms/H4",
+      "baseline_claim": "Blanket impunity would deny accountability and risk normalising severe political violence.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "normative_predictive_risk",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Moved out of historical established harms without suppressing the concern.",
+      "admission": "not_certified",
+      "candidate_field": "continuing_risks/6"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_context/acknowledgement",
+      "baseline_claim": "The successor state's leader publicly accepts a moral/material restitution obligation for crimes committed in the country's name while rejecting collective personal guilt of every current citizen.",
+      "prior_support_status": "supported",
+      "candidate_support_status": "supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_context/representation",
+      "baseline_claim": "A coalition of victim organisations seeks direct restitution and compensation for survivors living both inside and outside that state.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_context/opposition",
+      "baseline_claim": "Many survivors nevertheless oppose negotiations or payments from the perpetrator state, fearing that money demeans victims or implies that mass murder can be settled financially.",
+      "prior_support_status": "unverified_access",
+      "candidate_support_status": "supported_as_publicly_expressed_position",
+      "source_refs": [
+        {
+          "source_id": "KN",
+          "locator": "Begin, pp.178–187"
+        }
+      ],
+      "finding": "Public opposition is now sourced; prevalence among survivors remains unmeasured and is no longer asserted in context.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "responsible_actors/present citizens",
+      "baseline_claim": "present citizens/taxpayers as individuals",
+      "prior_support_status": "inference",
+      "candidate_support_status": "normative_membership_distinction",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Narrowed to citizens solely as citizens. No finding that every living citizen lacked individual responsibility.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_context/negotiated transition",
+      "baseline_claim": "The transition was negotiated rather than produced by total military defeat.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "supported_as_contemporaneous_minister_statement",
+      "source_refs": [
+        {
+          "source_id": "UN23",
+          "locator": "para38"
+        }
+      ],
+      "finding": "Justice Minister explicitly described a negotiated settlement without revolutionary victory or defeat in August 1994. Does not prove prosecution impossibility.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_context/disclosure",
+      "baseline_claim": "Evidence is incomplete and many perpetrators retain knowledge that may never become public through ordinary prosecution.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "incentive_hypothesis",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss3–4,20"
+        },
+        {
+          "source_id": "GOLD",
+          "locator": "ss3.3–3.4.1"
+        }
+      ],
+      "finding": "Candidate explicitly labels comparative disclosure/necessity as uncertain; no later disclosures admitted.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "affected_parties/victim preferences",
+      "baseline_claim": "some may prefer conditional truth/amnesty to permanent secrecy; others reject amnesty",
+      "prior_support_status": "inference",
+      "candidate_support_status": "inference",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R1",
+      "baseline_claim": "Publicly acknowledge successor-state material responsibility while explicitly rejecting inherited personal guilt.",
+      "prior_support_status": "supported",
+      "candidate_support_status": "supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R2",
+      "baseline_claim": "Restore identifiable confiscated property or equivalent value where return is feasible.",
+      "prior_support_status": "supported",
+      "candidate_support_status": "supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R3",
+      "baseline_claim": "Provide large-scale goods/material payments to the survivor-resettlement state for documented resettlement burdens without treating the transfer as the value of murdered lives.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R4",
+      "baseline_claim": "Create a separate direct-victim/claims-coalition mechanism for survivor compensation and relief outside the resettlement state.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R5",
+      "baseline_claim": "Continue evidence-based criminal/civil action against identifiable perpetrators independently of reparations.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "inference",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R6",
+      "baseline_claim": "Reform restitution/claims law so persecution-caused evidence destruction does not automatically defeat remedy.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R7",
+      "baseline_claim": "Maintain constitutional, educational and institutional safeguards against recurrence.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R8",
+      "baseline_claim": "Allow voluntary future reconciliation but never make it a condition of material repair.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "inference",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-11",
+      "baseline_field": "repair_options/R9",
+      "baseline_claim": "Reject formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "inference",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "pp. 6697–6698"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "agenda 1–2, PDF pp.2–7"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R1",
+      "baseline_claim": "Independent public truth commission investigating gross violations, receiving victim testimony and publishing findings.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R2",
+      "baseline_claim": "Individual amnesty only on application, for acts associated with political objectives and only after full disclosure; no blanket status-based amnesty.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R3",
+      "baseline_claim": "Preserve prosecution/civil accountability for people who do not obtain qualifying amnesty and where evidence supports action.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R4",
+      "baseline_claim": "Provide material reparation to victims/families rather than offering testimony alone.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R5",
+      "baseline_claim": "Medical, psychological, social and community support for continuing harm.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R6",
+      "baseline_claim": "Assist with remains, records, status/property restoration and case-specific restitution where feasible.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R7",
+      "baseline_claim": "Reform policing, security, courts and public institutions implicated in abuse and add non-recurrence safeguards.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R8",
+      "baseline_claim": "Preserve testimony, archives and memorials.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "partially_supported",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R9",
+      "baseline_claim": "Support reconciliation only as a voluntary process emerging from truth, repair and reform.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "inference",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R10",
+      "baseline_claim": "Reject amnesty and rely primarily on prosecution/civil claims despite transition/evidentiary constraints.",
+      "prior_support_status": "inference",
+      "candidate_support_status": "inference",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "sections listed in corresponding change/option review"
+        }
+      ],
+      "finding": "Audit10 qualification retained; candidate wording changes are separately recorded exactly.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R1/victim_control_note",
+      "baseline_claim": "Victims choose whether/how to testify; privacy/protection available.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "proposed_extra_safeguard",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss29,31,33–35"
+        }
+      ],
+      "finding": "Explicitly proposed noncompulsion protection; original statutory powers are not misdescribed as providing an absolute choice.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R8/victim_control_note",
+      "baseline_claim": "No compelled public testimony.",
+      "prior_support_status": "unsupported",
+      "candidate_support_status": "proposed_extra_safeguard",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss29,31,33–35"
+        }
+      ],
+      "finding": "Explicitly proposed noncompulsion protection; original statutory powers are not misdescribed as providing an absolute choice.",
+      "admission": "not_certified"
+    },
+    {
+      "core_id": "CORE-12",
+      "baseline_field": "repair_options/R2/omitted_effect",
+      "baseline_claim": "Individual amnesty only on application, for acts associated with political objectives and only after full disclosure; no blanket status-based amnesty.",
+      "prior_support_status": "partially_supported",
+      "candidate_support_status": "supported_statutory_design",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s20(7)(a)–(c), p.22"
+        }
+      ],
+      "finding": "Candidate includes applicant civil/criminal effect, state/organisation/vicarious civil effects, other-person criminal-liability preservation and deceased-person civil-liability rule.",
+      "admission": "not_certified"
+    }
+  ],
+  "repair_option_review": [
+    {
+      "core_id": "CORE-11",
+      "option_id": "R1",
+      "before": {
+        "option_id": "R1",
+        "type": "truth_acknowledgement",
+        "description": "Publicly acknowledge successor-state material responsibility while explicitly rejecting inherited personal guilt.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Acknowledgement does not require forgiveness."
+      },
+      "after": {
+        "option_id": "R1",
+        "type": "truth_acknowledgement",
+        "description": "Publicly acknowledge successor-state material responsibility while explicitly rejecting inherited personal guilt.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Acknowledgement does not require forgiveness."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Demonstrated acknowledgement before the cutoff, not a promise of reconciliation.",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Printed pp. 6697D–6698B; PDF pp.3–4"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R2",
+      "before": {
+        "option_id": "R2",
+        "type": "restitution",
+        "description": "Restore identifiable confiscated property or equivalent value where return is feasible.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Claimants choose whether to pursue restitution."
+      },
+      "after": {
+        "option_id": "R2",
+        "type": "restitution",
+        "description": "Restore identifiable confiscated property or equivalent value where return is feasible.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Claimants choose whether to pursue restitution."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Partial identifiable-property return was reported; equivalent value, ownership and every asset remain case-specific.",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Printed pp. 6697D–6698B; PDF pp.3–4"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R3",
+      "before": {
+        "option_id": "R3",
+        "type": "compensation",
+        "description": "Provide large-scale goods/material payments to the survivor-resettlement state for documented resettlement burdens without treating the transfer as the value of murdered lives.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Must not extinguish personal claims absent authority."
+      },
+      "after": {
+        "option_id": "R3",
+        "type": "compensation",
+        "description": "Provide large-scale goods/material payments to the survivor-resettlement state for documented resettlement burdens without treating the transfer as the value of murdered lives.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Must not extinguish personal claims absent authority."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Negotiated goods/payment design was before Cabinet; first-tranche funding was disputed. Later delivery cannot certify feasibility.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "PDF pp.1–7: meeting and participants p.1; receipt pp.2–3, notes 4–5; two protocols p.3; fiscal dispute pp.5–7; vote p.7"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R4",
+      "before": {
+        "option_id": "R4",
+        "type": "compensation",
+        "description": "Create a separate direct-victim/claims-coalition mechanism for survivor compensation and relief outside the resettlement state.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Survivors may accept or refuse payments without losing victim status."
+      },
+      "after": {
+        "option_id": "R4",
+        "type": "compensation",
+        "description": "Create a separate direct-victim/claims-coalition mechanism for survivor compensation and relief outside the resettlement state.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Survivors may accept or refuse payments without losing victim status."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Coalition and two protocols existed; financing, administration, coverage and survivor mandate are not fully established.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "PDF pp.1–7: meeting and participants p.1; receipt pp.2–3, notes 4–5; two protocols p.3; fiscal dispute pp.5–7; vote p.7"
+        },
+        {
+          "source_id": "CH",
+          "locator": "1951 and1952 sections"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R5",
+      "before": {
+        "option_id": "R5",
+        "type": "accountability",
+        "description": "Continue evidence-based criminal/civil action against identifiable perpetrators independently of reparations.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Reparation does not create immunity."
+      },
+      "after": {
+        "option_id": "R5",
+        "type": "accountability",
+        "description": "Continue evidence-based criminal/civil action against identifiable perpetrators independently of reparations.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Reparation does not create immunity."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Individual accountability is a proposed track; jurisdiction, lawful evidence and resources remain case-specific.",
+      "source_refs": [
+        {
+          "source_id": "FRUS398",
+          "locator": "FRUS 1951 volume V, document 398, pp.749–750, paragraphs(a)–(b)"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R6",
+      "before": {
+        "option_id": "R6",
+        "type": "institutional_reform",
+        "description": "Reform restitution/claims law so persecution-caused evidence destruction does not automatically defeat remedy.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Victim organisations should participate in rules and appeals."
+      },
+      "after": {
+        "option_id": "R6",
+        "type": "institutional_reform",
+        "description": "Reform restitution/claims law so persecution-caused evidence destruction does not automatically defeat remedy.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Victim organisations should participate in rules and appeals."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Legislative reform was contemplated; the specific documentary accommodation and administrative capacity are not demonstrated.",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Printed pp. 6697D–6698B; PDF pp.3–4"
+        },
+        {
+          "source_id": "CAB",
+          "locator": "PDF pp.1–7: meeting and participants p.1; receipt pp.2–3, notes 4–5; two protocols p.3; fiscal dispute pp.5–7; vote p.7"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R7",
+      "before": {
+        "option_id": "R7",
+        "type": "non_recurrence",
+        "description": "Maintain constitutional, educational and institutional safeguards against recurrence.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Public duty; no survivor reconciliation required."
+      },
+      "after": {
+        "option_id": "R7",
+        "type": "non_recurrence",
+        "description": "Maintain constitutional, educational and institutional safeguards against recurrence.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Public duty; no survivor reconciliation required."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Existing constitutional safeguards are documented; sustained education, institutions and effectiveness are not thereby established.",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Printed pp. 6697D–6698B; PDF pp.3–4"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R8",
+      "before": {
+        "option_id": "R8",
+        "type": "reconciliation",
+        "description": "Allow voluntary future reconciliation but never make it a condition of material repair.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Victims may reject reconciliation."
+      },
+      "after": {
+        "option_id": "R8",
+        "type": "reconciliation",
+        "description": "Allow voluntary future reconciliation but never make it a condition of material repair.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Victims may reject reconciliation."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Optional safeguard, not a prediction of achieved reconciliation.",
+      "source_refs": [
+        {
+          "source_id": "AD",
+          "locator": "Printed pp. 6697D–6698B; PDF pp.3–4"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-11",
+      "option_id": "R9",
+      "before": {
+        "option_id": "R9",
+        "type": "other",
+        "description": "Reject formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Protects a serious dignity concern but does not resolve material losses or represent every survivor."
+      },
+      "after": {
+        "option_id": "R9",
+        "type": "other",
+        "description": "Decline the proposed agreement or further formal reparation negotiations because financial settlement cannot compensate mass murder and may dishonour victims.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Protects a serious dignity concern but does not resolve material losses or represent every survivor. Feasibility refers only to the available choice to withhold approval, not to successful material repair."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Cabinet could withhold approval at a real vote; known feasibility is limited to that choice, not effective material repair. Negotiations had already taken place.",
+      "source_refs": [
+        {
+          "source_id": "CAB",
+          "locator": "PDF pp.1–7: meeting and participants p.1; receipt pp.2–3, notes 4–5; two protocols p.3; fiscal dispute pp.5–7; vote p.7"
+        },
+        {
+          "source_id": "KN",
+          "locator": "Preface PDF p.5 explicitly discloses abridgement; Ben-Gurion printed pp.161–164/PDF 171–174; Begin pp.178–187/PDF 188–197; Lavon p.193/PDF203"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R1",
+      "before": {
+        "option_id": "R1",
+        "type": "truth_acknowledgement",
+        "description": "Independent public truth commission investigating gross violations, receiving victim testimony and publishing findings.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Victims choose whether/how to testify; privacy/protection available."
+      },
+      "after": {
+        "option_id": "R1",
+        "type": "truth_acknowledgement",
+        "description": "Independent public truth commission investigating gross violations, receiving victim testimony and publishing findings.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Proposed additional safeguard: victims choose whether/how to testify. The historical design permits compelled evidence; privacy, closure and protection provisions do not create an absolute right to decline testimony."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Authority/design exists; operational independence, staffing and protection are not certified. Voluntary testimony is an added safeguard.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss2–4,7,29,31,33–35,46"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R2",
+      "before": {
+        "option_id": "R2",
+        "type": "amnesty",
+        "description": "Individual amnesty only on application, for acts associated with political objectives and only after full disclosure; no blanket status-based amnesty.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Victims receive notice/voice; amnesty does not require their forgiveness."
+      },
+      "after": {
+        "option_id": "R2",
+        "type": "amnesty",
+        "description": "Grant amnesty on individual application where the statutory requirements, political objective and full disclosure are satisfied. For the covered act the applicant is immune from criminal and civil liability; the state, bodies and organisations also lose civil liability, and no person remains vicariously liable. Other persons’ criminal liability is unaffected. For covered-period acts by a deceased person, civil or vicarious liability is excluded unless the act could not have qualified for amnesty.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "The historical design provides notice and participation when an amnesty hearing is required, with specified decisions possible without a hearing. Victim consent or forgiveness is not a statutory criterion for a qualifying grant."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Original legal mechanism and full liability effects are documented; functioning review capacity and precise pre-adoption receipt remain unresolved.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss18–20,46"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R3",
+      "before": {
+        "option_id": "R3",
+        "type": "accountability",
+        "description": "Preserve prosecution/civil accountability for people who do not obtain qualifying amnesty and where evidence supports action.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Accountability remains individualised and due-process bounded."
+      },
+      "after": {
+        "option_id": "R3",
+        "type": "accountability",
+        "description": "Pursue remaining prosecution and civil claims only where not barred by applicable immunity and supported by lawfully admissible evidence. A nonapplicant may still benefit from the civil-liability exclusions described in the amnesty option.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Accountability remains individualised and due-process bounded. Compelled incriminating answers and directly or indirectly derived evidence are inadmissible against that person in criminal proceedings, subject to the statutory perjury and related exceptions."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Other persons’ criminal liability is preserved but civil exclusions and compelled-evidence restrictions constrain claims; actual capacity is not generalised.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss20(7),31"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R4",
+      "before": {
+        "option_id": "R4",
+        "type": "compensation",
+        "description": "Provide material reparation to victims/families rather than offering testimony alone.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "No forgiveness condition."
+      },
+      "after": {
+        "option_id": "R4",
+        "type": "compensation",
+        "description": "Provide material reparation to victims/families. The historical design routes applications and recommendations through the commission, President and Parliament, with regulations and authority to establish a fund for appropriations or contributions; this does not establish secured amounts, payment dates or adequate delivery.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "No forgiveness condition."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Recommendation/regulation/funding routes do not secure adequate amounts, dates or delivery.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss25–27,42"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R5",
+      "before": {
+        "option_id": "R5",
+        "type": "rehabilitation",
+        "description": "Medical, psychological, social and community support for continuing harm.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Participation voluntary."
+      },
+      "after": {
+        "option_id": "R5",
+        "type": "rehabilitation",
+        "description": "Medical, psychological, social and community support for continuing harm.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Proposed safeguard: participation voluntary."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Rehabilitation within remit is not staffed/funded service delivery; voluntary participation is a proposed safeguard, not a certified statutory guarantee.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s1 reparation; ss25–27,42"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R6",
+      "before": {
+        "option_id": "R6",
+        "type": "restitution",
+        "description": "Assist with remains, records, status/property restoration and case-specific restitution where feasible.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Families control sensitive information/remains decisions within lawful constraints."
+      },
+      "after": {
+        "option_id": "R6",
+        "type": "restitution",
+        "description": "Assist with remains, records, status/property restoration and case-specific restitution where feasible.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Proposed safeguard: families control sensitive information/remains decisions within lawful constraints."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Locating victims and broad reparation remit do not establish every remains/property/status remedy; family control is a proposed safeguard, not a certified statutory entitlement.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss1,3(1)(c),25–27"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R7",
+      "before": {
+        "option_id": "R7",
+        "type": "institutional_reform",
+        "description": "Reform policing, security, courts and public institutions implicated in abuse and add non-recurrence safeguards.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "Affected communities participate in oversight."
+      },
+      "after": {
+        "option_id": "R7",
+        "type": "institutional_reform",
+        "description": "Reform policing, security, courts and public institutions implicated in abuse and add non-recurrence safeguards.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Affected-community participation in oversight is a proposed safeguard. The historical design authorises recommendations for institutional reform; institution-specific powers, resources and execution remain to be established."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Reform recommendation powers do not prove implementation powers/resources or community oversight.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "s4(h)"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R8",
+      "before": {
+        "option_id": "R8",
+        "type": "memorialisation",
+        "description": "Preserve testimony, archives and memorials.",
+        "feasibility": "known_feasible",
+        "victim_control_note": "No compelled public testimony."
+      },
+      "after": {
+        "option_id": "R8",
+        "type": "memorialisation",
+        "description": "Preserve testimony, archives and memorials.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Proposed additional safeguard: no compelled victim participation in public testimony or memorialisation. The historical design permits compelled evidence and ordinarily public hearings, subject to protective exceptions; recordkeeping duties do not establish memorial delivery."
+      },
+      "review_of_known_feasible": true,
+      "finding": "Recordkeeping/report duties do not prove memorial delivery or absolute noncompulsion.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "ss3(1)(d),10(3),31,33,44"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R9",
+      "before": {
+        "option_id": "R9",
+        "type": "reconciliation",
+        "description": "Support reconciliation only as a voluntary process emerging from truth, repair and reform.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "No duty to forgive."
+      },
+      "after": {
+        "option_id": "R9",
+        "type": "reconciliation",
+        "description": "Support reconciliation only as a voluntary process emerging from truth, repair and reform.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "No duty to forgive. Voluntary participation is a proposed safeguard; reconciliation cannot be guaranteed."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Reconciliation is an aim; voluntary participation is a proposed safeguard and the social result is uncertain.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble; s3"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    },
+    {
+      "core_id": "CORE-12",
+      "option_id": "R10",
+      "before": {
+        "option_id": "R10",
+        "type": "other",
+        "description": "Reject amnesty and rely primarily on prosecution/civil claims despite transition/evidentiary constraints.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "May strengthen accountability but reduce disclosure where evidence is weak."
+      },
+      "after": {
+        "option_id": "R10",
+        "type": "other",
+        "description": "Reject amnesty and rely primarily on prosecution/civil claims despite transition/evidentiary constraints. This counterfactual would require changing the existing constitutional commitment to amnesty.",
+        "feasibility": "possibly_feasible",
+        "victim_control_note": "Prosecution capacity, disclosure effects and the legal changes needed for this alternative remain uncertain."
+      },
+      "review_of_known_feasible": false,
+      "finding": "Rejecting all amnesty requires change to the existing constitutional framework; prosecution and disclosure consequences remain uncertain.",
+      "source_refs": [
+        {
+          "source_id": "TO",
+          "locator": "preamble; ss20,31"
+        }
+      ],
+      "temporal_limit": "No post-cutoff delivered outcomes used; admission remains limited as recorded per case."
+    }
+  ],
+  "coverage": {
+    "prior_claims": 38,
+    "original_established_harms": 9,
+    "repair_options": 19,
+    "original_known_feasible": 11,
+    "candidate_known_feasible": 2,
+    "exact_change_rows": 78
+  },
+  "preservation": "Old audit 10, frozen packs, trials and reveal files unchanged by this subtask. No bibliography, URLs or dated source titles inserted into masked packets; repair questions and requested_output arrays remain byte-equivalent JSON strings/values to the starting source."
+}

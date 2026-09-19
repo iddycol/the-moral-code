@@ -2,7 +2,7 @@
   "case_id": "HC-0101",
   "packet_id": "HC-0101-M",
   "identity_mode": "masked",
-  "decision_context": "A regional parliament in a settler society is considering expanding the powers of a government Protection Board over children belonging to a legally defined Indigenous population. Existing law permits involuntary child removal after an independent court finds neglect. The Board says that requirement obstructs its protection, training and placement policy and seeks direct custody/removal power based on its own welfare inquiry.",
+  "decision_context": "A regional parliament in a settler society is considering expanding the powers of a government Protection Board over children belonging to a legally defined Indigenous population. For the Board's existing route of removing children on neglect grounds, the Board must establish neglect through a court process. The Board says that requirement obstructs its protection, training and placement policy and seeks direct custody/removal power based on its own welfare inquiry.",
   "decision_question": "Should Parliament give the Protection Board power to assume full control and custody of a child in the ancestry-defined Indigenous population whenever, after its own inquiry, it considers removal to be in the child's moral or physical welfare, without first proving neglect to a court?",
   "actors": [
     "regional parliament",
@@ -70,8 +70,8 @@
     },
     {
       "evidence_id": "E6",
-      "claim": "Families outside the special Indigenous legal regime are generally subject to ordinary child-welfare processes requiring court findings such as neglect, destitution or uncontrollability before involuntary state removal.",
-      "epistemic_status": "observed"
+      "claim": "Under the ordinary neglected-or-uncontrollable-child process, a child may be apprehended and brought before a court, which decides whether to release the child or commit the child to an institution or another person's care. This does not establish that every child-welfare intervention requires a prior court hearing.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E7",

@@ -4,7 +4,7 @@
   "case_class": "economic_extraction_workplace_safety",
   "decision_cutoff": {
     "date_or_period": "Before the Triangle Shirtwaist factory fire of 25 March 1911",
-    "definition": "The factory owners/managers' ongoing workplace-safety and access-control decision whether exit doors and other fire protections should be configured primarily for worker/theft control and low operating cost, or whether unobstructed emergency egress and stronger fire precautions should take priority."
+    "definition": "The factory owners/managers' ongoing workplace-safety and access-control decision whether exit doors and other fire protections should be configured primarily for worker/theft control and low operating cost, or whether unobstructed emergency egress and stronger fire precautions should take priority. The candidate remains inadmissible as an exact replay: the 27 February 1911 inspection is dated, but a particular subsequent management policy decision, its time and each actor's receipt have not been identified. The cutoff is not moved to the fire or testimony dates."
   },
   "pretraining_leakage_risk": "very_high",
   "packets": [
@@ -25,6 +25,22 @@
     {"source_id":"TRIANGLE-CORNELL","citation":"Cornell University ILR School, Kheel Center — Remembering the 1911 Triangle Factory Fire","url":"https://trianglefire.ilr.cornell.edu/","source_date":"historical archive","temporal_role":"later_archive_reconstruction","use_note":"Primary-document/archive collection concerning factory conditions, testimony, trial and reform."},
     {"source_id":"TRIANGLE-OSHA","citation":"U.S. Department of Labor / OSHA historical materials on the Triangle Shirtwaist Factory fire","url":"https://www.osha.gov/aboutosha/40-years/trianglefactoryfire","source_date":"historical reference","temporal_role":"later_reconstruction","use_note":"Summarises locked/blocked egress, inadequate fire protection and the fire's role in workplace-safety reform."},
     {"source_id":"TRIANGLE-DOL","citation":"U.S. Department of Labor, Triangle Shirtwaist Factory Fire historical account","url":"https://www.dol.gov/general/aboutdol/history/trianglefire","source_date":"historical reference","temporal_role":"later_reconstruction","use_note":"Federal labour-history account of the fire, working conditions and later safety reforms."},
-    {"source_id":"TRIANGLE-TRIAL","citation":"Cornell Kheel Center, People v. Harris and Blanck trial materials","url":"https://trianglefire.ilr.cornell.edu/primary/trialRecords/","source_date":"1911 trial records / archive","temporal_role":"later_case_record","use_note":"Used in reveal to preserve the important distinction between unsafe conditions and proof of the owners' personal criminal knowledge of the locked door at the fire's moment."}
+    {"source_id":"TRIANGLE-TRIAL","citation":"Cornell Kheel Center, People v. Harris and Blanck trial materials","url":"https://trianglefire.ilr.cornell.edu/primary/trialRecords/","source_date":"1911 trial records / archive","temporal_role":"later_case_record","use_note":"Used in reveal to preserve the important distinction between unsafe conditions and proof of the owners' personal criminal knowledge of the locked door at the fire's moment."},
+    {
+      "source_id": "TRIANGLE-HARMON",
+      "citation": "G. I. Harmon testimony, New York Factory Investigating Commission, Preliminary Report (1912), vol. 2, pp. 242-249",
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+      "source_date": "1911-10-10 hearing; 1912 publication",
+      "temporal_role": "later_reconstruction",
+      "use_note": "pp.243-244 date the 27 February 1911 inspection and unlocked doors; pp.246-249 qualify layout, locking and knowledge. Publication is not pre-fire actor receipt."
+    },
+    {
+      "source_id": "TRIANGLE-BEERS",
+      "citation": "William L. Beers testimony, 17 November 1911, Preliminary Report (1912), vol. 2, pp. 580-582",
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+      "source_date": "1911-11-17; 1912 publication",
+      "temporal_role": "later_reconstruction",
+      "use_note": "p.581 identifies pails/hose; this excerpt does not establish a complete sprinkler inventory or routine readiness. Actual fire performance stays outside the packet."
+    }
   ]
 }

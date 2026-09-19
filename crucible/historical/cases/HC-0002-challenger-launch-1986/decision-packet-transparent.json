@@ -2,7 +2,7 @@
   "case_id": "HC-0002",
   "packet_id": "HC-0002-T",
   "identity_mode": "transparent",
-  "decision_context": "On the evening of 27 January 1986, Morton Thiokol and NASA are deciding whether STS-51L should launch the next morning under temperatures well below previous shuttle flight experience. Thiokol engineering has initially recommended no launch below 53°F because of concern about solid-rocket-booster field-joint O-ring sealing.",
+  "decision_context": "On 27 January 1986, immediately before Morton Thiokol communicates its final oral recommendation at approximately 11 p.m. Eastern Standard Time, contractor management and NASA are deciding whether STS-51L should launch the next morning under temperatures well below previous shuttle flight experience. Thiokol engineering has initially recommended no launch below 53°F because of concern about solid-rocket-booster field-joint O-ring sealing.",
   "decision_question": "Should Morton Thiokol maintain its engineering no-launch recommendation, recommend launch, or require delay/further review?",
   "actors": ["Morton Thiokol engineering", "Morton Thiokol management", "NASA Marshall solid-rocket-booster project management"],
   "available_actions": [
@@ -22,15 +22,16 @@
     {"evidence_id": "E2", "claim": "Thiokol engineering reports that lower temperature slows the O-ring sealing response and initially recommends no launch below 53°F, the coldest prior relevant flight experience.", "epistemic_status": "reported"},
     {"evidence_id": "E3", "claim": "The coldest prior flight had shown the worst observed primary O-ring blow-by, supporting concern about cold performance.", "epistemic_status": "observed"},
     {"evidence_id": "E4", "claim": "NASA challenges a simple temperature correlation: another flight at a warmer temperature had also shown blow-by, and a colder static motor test showed no observed blow-by/erosion.", "epistemic_status": "observed", "confidence_note": "The relevance of the static test is disputed because its preparation differed from flight conditions."},
-    {"evidence_id": "E5", "claim": "Participants agree the available temperature data are limited/inconclusive; they disagree about what that uncertainty implies for launch readiness.", "epistemic_status": "observed"},
+    {"evidence_id": "E5", "claim": "Participants describe the temperature data as inconclusive and disagree about whether those data justify launch in the forecast conditions.", "epistemic_status": "disputed"},
     {"evidence_id": "E6", "claim": "NASA managers raise operational consequences of accepting a 53°F constraint, including effects on launch frequency and future operations.", "epistemic_status": "reported"},
-    {"evidence_id": "E7", "claim": "At least one senior Thiokol representative argues that lower temperature is in the direction of worse sealing performance and proposes delaying to warmer conditions; he remains uncomfortable with a launch recommendation.", "epistemic_status": "reported"}
+    {"evidence_id": "E7", "claim": "Allan McDonald argues that lower temperatures worsen O-ring sealing performance. At Kennedy Space Center, while Thiokol managers deliberate separately, he proposes delaying to warmer conditions; local NASA officials say that a later window has been considered and rejected because of abort-site weather or visibility constraints.", "epistemic_status": "reported"}
   ],
   "known_uncertainties": [
     "The exact relationship between temperature and probability/severity of joint-seal failure.",
     "Whether static-test performance is sufficiently representative of the flight joint under forecast conditions.",
     "Whether a precise safe minimum temperature can be established from the available data.",
-    "Whether delaying to warmer conditions is operationally feasible without creating other unacceptable mission risks."
+    "Whether delaying to warmer conditions is operationally feasible without creating other unacceptable mission risks.",
+    "Whether McDonald's local delay proposal has been communicated to Thiokol managers during their separate deliberation."
   ],
   "known_alternatives": [
     "Delay until temperature is within demonstrated flight experience.",

@@ -3,19 +3,90 @@
   "title": "1952 Luxembourg Agreement — German material reparations after the Holocaust",
   "case_class": "successor_state_restitution_survivor_plurality",
   "decision_cutoff": {
-    "date_or_period": "1951-1952 before signature of the Luxembourg Agreements",
-    "definition": "The Federal Republic of Germany, State of Israel and Conference on Jewish Material Claims Against Germany deciding whether and how a successor German state should provide large-scale material restitution/compensation after Nazi persecution and mass murder."
+    "date_or_period": "1952-09-08, immediately before the Federal Cabinet vote on agenda items 1–2 of its 245th meeting",
+    "definition": "Pre-approval review of the negotiated German-Israeli agreement and Claims Conference protocols, after the recorded briefings and debate but before the Cabinet resolution; signature, ratification and delivery remain outside the cutoff. The meeting ran 09:30–12:35 local time; the vote minute is not established.",
+    "precision_status": "event_pinned",
+    "evidence_receipt": "The minutes identify the documents before the Cabinet and the oral briefings. This establishes receipt of those materials by the Cabinet, not receipt of every contextual claim in the packet."
   },
   "packets": [
-    {"packet_id":"RC-0102-T","file":"repair-packet-transparent.json","identity_mode":"transparent"},
-    {"packet_id":"RC-0102-M","file":"repair-packet-masked.json","identity_mode":"masked"}
+    {
+      "packet_id": "RC-0102-T",
+      "file": "repair-packet-transparent.json",
+      "identity_mode": "transparent"
+    },
+    {
+      "packet_id": "RC-0102-M",
+      "file": "repair-packet-masked.json",
+      "identity_mode": "masked"
+    }
   ],
   "outcome_reveal_file": "outcome-reveal.json",
-  "relevant_principles": ["MC-01","MC-03","MC-04","MC-05","MC-06","MC-07","MC-08","MC-10","MC-11","MC-12"],
+  "relevant_principles": [
+    "MC-01",
+    "MC-03",
+    "MC-04",
+    "MC-05",
+    "MC-06",
+    "MC-07",
+    "MC-08",
+    "MC-10",
+    "MC-11",
+    "MC-12"
+  ],
   "sources": [
-    {"source_id":"LUX-ADENAUER-1951","citation":"Konrad Adenauer, Bundestag statement on German responsibility and restitution, 27 September 1951","url":"https://www.konrad-adenauer.de/quellen/reden/1951-09-27-regierungserklaerung-wiedergutmachung/","source_date":"1951-09-27","use_note":"Contemporaneous West German acknowledgement of crimes committed in Germany's name and commitment to material restitution, while rejecting collective personal guilt of all Germans."},
-    {"source_id":"LUX-CLAIMS-HISTORY","citation":"Conference on Jewish Material Claims Against Germany, History of the Claims Conference / Luxembourg Agreements","url":"https://www.claimscon.org/about/history/","source_date":"current historical reference","use_note":"Documents negotiations, survivor representation and the compensation/restitution framework."},
-    {"source_id":"LUX-CLAIMS-70","citation":"Claims Conference, 70th Anniversary of the Luxembourg Agreements","url":"https://www.claimscon.org/2022/09/luxembourg-agreements-70/","source_date":"2022-09","use_note":"Summarises the agreements' structure, opposition and long-run compensation significance."},
-    {"source_id":"LUX-GERMAN-HISTORY","citation":"German Federal Government / historical materials on the Luxembourg Agreement and Wiedergutmachung","url":"https://www.bundesregierung.de/breg-en/service/archive/luxembourg-agreement-1952-2132934","source_date":"historical reference","use_note":"Successor-state perspective on reparations and agreement implementation."}
-  ]
+    {
+      "source_id": "LUX-ADENAUER-1951",
+      "citation": "Konrad Adenauer, Bundestag statement on German responsibility and restitution, 27 September 1951",
+      "url": "https://www.konrad-adenauer.de/quellen/reden/1951-09-27-regierungserklaerung-wiedergutmachung/",
+      "source_date": "1951-09-27",
+      "use_note": "Contemporaneous West German acknowledgement of crimes committed in Germany's name and commitment to material restitution, while rejecting collective personal guilt of all Germans."
+    },
+    {
+      "source_id": "LUX-CLAIMS-HISTORY",
+      "citation": "Conference on Jewish Material Claims Against Germany, History of the Claims Conference / Luxembourg Agreements",
+      "url": "https://www.claimscon.org/about/history/",
+      "source_date": "current historical reference",
+      "use_note": "Documents negotiations, survivor representation and the compensation/restitution framework."
+    },
+    {
+      "source_id": "LUX-CLAIMS-70",
+      "citation": "Claims Conference, 70th Anniversary of the Luxembourg Agreements",
+      "url": "https://www.claimscon.org/2022/09/luxembourg-agreements-70/",
+      "source_date": "2022-09",
+      "use_note": "Summarises the agreements' structure, opposition and long-run compensation significance."
+    },
+    {
+      "source_id": "LUX-GERMAN-HISTORY",
+      "citation": "German Federal Government / historical materials on the Luxembourg Agreement and Wiedergutmachung",
+      "url": "https://www.bundesregierung.de/breg-en/service/archive/luxembourg-agreement-1952-2132934",
+      "source_date": "historical reference",
+      "use_note": "Successor-state perspective on reparations and agreement implementation."
+    },
+    {
+      "source_id": "LUX-CABINET-1952-09-08",
+      "citation": "Federal Cabinet, 245th meeting, 8 September 1952, agenda items 1–2",
+      "url": "https://kabinettsprotokolle.bundesarchiv.de/resources/pdf/f5d973f9-77b5-4137-aca5-b6cd4b0a71e5.pdf",
+      "source_date": "1952-09-08 (primary minutes in later archival edition)",
+      "use_note": "PDF pp. 2–7: received negotiating materials and pre-vote funding disagreement; final vote and retrospective editorial notes excluded from decision premises."
+    },
+    {
+      "source_id": "LUX-BUNDESTAG-1951",
+      "citation": "Bundestag, 165th sitting, 27 September 1951, pp. 6697D–6698B",
+      "url": "https://dserver.bundestag.de/btp/01/01165.pdf",
+      "source_date": "1951-09-27",
+      "use_note": "Direct primary replacement for legacy Adenauer URL; acknowledgement and partial restitution, not a general finding of citizen innocence."
+    },
+    {
+      "source_id": "LUX-KNESSET-1952",
+      "citation": "Knesset debate, 7 January 1952, document 18 in Yaakov Sharett (ed.), The Reparations Controversy (2011), pp. 161–164,178–187",
+      "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/94/06/2020719406/2020719406.pdf",
+      "source_date": "1952-01-07 (2011 abridged English translation)",
+      "use_note": "Primary speeches reconstructed through an explicitly abridged translation: resettlement claim and opposition positions, not measured survivor prevalence or independently audited costs."
+    }
+  ],
+  "correction_11_admission": {
+    "status": "blocked",
+    "ledger": "../../../../docs/evidence/core12-correction-11/repair-11-12.json",
+    "reason": "Pre-vote event is pinned, but detailed needs, destroyed-record mechanisms and contextual receipt remain incompletely supported; no complete historical admission certificate."
+  }
 }

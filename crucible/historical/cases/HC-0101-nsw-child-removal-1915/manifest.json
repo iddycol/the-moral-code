@@ -3,8 +3,8 @@
   "title": "1915 NSW decision to remove the prior court-neglect prerequisite for Aboriginal child removal",
   "case_class": "paternalism_category_power",
   "decision_cutoff": {
-    "date_or_period": "January 1915",
-    "definition": "The New South Wales Parliament's decision whether to enact the proposed Aborigines Protection amendment giving the Aborigines Protection Board direct custody/removal power over Aboriginal children on its own welfare determination rather than requiring a prior court finding of neglect."
+    "date_or_period": "28 January 1915, immediately before the Legislative Assembly third reading",
+    "definition": "The New South Wales Legislative Assembly's decision whether to pass the Aborigines Protection Amending Bill at third reading, after the 27 January second-reading debate and committee stage but before the 28 January passage. The 25 November 1914 Council-passed bill already supplies the relevant custody and apprenticeship provisions; the January amendment changes its short-title year. The actor is the legislature deciding whether to confer Board power, not a Board officer deciding an individual removal."
   },
   "pretraining_leakage_risk": "medium",
   "packets": [
@@ -48,7 +48,7 @@
       "url": "https://legislation.nsw.gov.au/view/pdf/asmade/act-1915-2",
       "source_date": "1915-02-15",
       "temporal_role": "contemporaneous_law",
-      "use_note": "Primary legislative text creating section 13A and altering apprenticeship powers."
+      "use_note": "Enacted text for cross-check only. The predecision provisions are verified in the 25 November 1914 bill version; February assent does not itself establish January availability."
     },
     {
       "source_id": "SG-BTH-NSW-APPENDIX",
@@ -60,15 +60,15 @@
     },
     {
       "source_id": "SG-BTH-NSW-HISTORY",
-      "citation": "Australian Human Rights Commission, Bringing Them Home, Chapter 8: History — New South Wales and the ACT",
+      "citation": "Australian Human Rights Commission, Bringing Them Home educational overview 8: History - New South Wales and the ACT",
       "url": "https://humanrights.gov.au/resource-hub/by-resource-type/publications/aboriginal-and-torres-strait-islander-peoples/bringing-them-home-8-history-new-south-wales-and-australian-capital-territory",
-      "source_date": "1997",
+      "source_date": "December 2012 webpage; based on the 1997 report",
       "temporal_role": "later_reconstruction",
       "use_note": "Reconstructs why the Board sought wider powers, the prior court requirement, the 1915 change and contemporary parliamentary opposition."
     },
     {
       "source_id": "SG-BTH-CH3",
-      "citation": "Australian Human Rights Commission, Bringing Them Home, Chapter 3: First Nations conflict with European settlement",
+      "citation": "Australian Human Rights Commission, Bringing Them Home, Chapter 3: New South Wales and the ACT",
       "url": "https://humanrights.gov.au/resource-hub/by-resource-type/bringing-them-home-reports/bringing-them-home-chapter-3",
       "source_date": "1997",
       "temporal_role": "later_reconstruction_with_contemporaneous_quotes",
@@ -89,6 +89,30 @@
       "source_date": "1997",
       "temporal_role": "outcome_only",
       "use_note": "Outcome/reveal source documenting later evidence of family, cultural, psychological and intergenerational harms. Must not be supplied to the pre-decision evaluator."
+    },
+    {
+      "source_id": "NSW-BILL",
+      "citation": "NSW Parliament, Aborigines Protection Amending Bill, official bill versions",
+      "url": "https://files.parliament.nsw.gov.au/fileapi/ParlFiles/GetArtifact?serverRelativeUrl=%2Fhistoricbills%2Ffiles%2F9732%2FVarious+Versions+1.pdf",
+      "source_date": "1914-11-25; 1915-01-28 amendment",
+      "temporal_role": "contemporaneous_primary_bill",
+      "use_note": "Read PDFpp15-17 clauses2-4 andpp9,11; legislative receipt25November1914 and January year amendment."
+    },
+    {
+      "source_id": "NSW-VOTES",
+      "citation": "NSW Legislative Assembly, Votes and Proceedings,28January1915",
+      "url": "https://files.parliament.nsw.gov.au/fileapi/ParlFiles/GetArtifact?serverRelativeUrl=%2Fhansard%2Fdocuments%2FHHP%2FPre1991%2FVotes%2FVotes%2FVotes%20-%2023rd%20Parliament%201914-15.pdf",
+      "source_date": "1915-01-28",
+      "temporal_role": "contemporaneous_primary_proceedings",
+      "use_note": "Printedp149/PDFp133 item2 records third reading; used to locate the immediately preceding decision, not to give outcome to evaluator."
+    },
+    {
+      "source_id": "NSW-RESEARCH",
+      "citation": "NSW Parliamentary Library Research Service, Indigenous Issues in NSW, Background Paper2/04",
+      "url": "https://files.parliament.nsw.gov.au/fileapi/ParlFiles/GetArtifact?serverRelativeUrl=%2Fresearchpapers%2FDocuments%2Findigenous-issues-in-nsw%2Fbg02-04.pdf",
+      "source_date": "2004",
+      "temporal_role": "later_reconstruction_with_dated_primary_extracts",
+      "use_note": "Printedp53/PDFp61 dates Cann and McGarry extracts to27January1915 Hansardp1951ff; original full Hansard not directly inspected."
     }
   ]
 }

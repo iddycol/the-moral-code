@@ -80,8 +80,8 @@
     },
     {
       "evidence_id": "E8",
-      "claim": "No individualised evidential test is supplied connecting minority status, ancestry or a consensual intimate relationship to a concrete harmful act ordinarily relevant to loss of citizenship or civil rights.",
-      "epistemic_status": "observed"
+      "claim": "The proposed laws use group or ancestry classification for the specified exclusions and restrictions without requiring a separate finding that the affected person committed a harmful act.",
+      "epistemic_status": "inferred"
     }
   ],
   "known_uncertainties": [

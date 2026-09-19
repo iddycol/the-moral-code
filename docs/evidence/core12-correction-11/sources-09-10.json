@@ -1,0 +1,915 @@
+{
+  "audit_id": "core12-correction-11-sources-09-10-and-bindings",
+  "date": "2026-09-19",
+  "baseline_commit": "d79480aea10ff2990f86c27e0f12b752b5fa57db",
+  "evaluator_calls": 0,
+  "sources": [
+    {
+      "source_id": "MASKING-RULE",
+      "path": "crucible/historical/README.md",
+      "locator": "Model-pretraining leakage; Anti-leakage rule",
+      "access": "read in full"
+    },
+    {
+      "source_id": "AUDIT10",
+      "path": "docs/evidence/core12-provenance-10/sources-07-10.json",
+      "locator": "CORE-09 and CORE-10 claim rows; binding defects in audit report10",
+      "access": "read; findings reassessed"
+    },
+    {
+      "source_id": "HARMON",
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+      "publication": "1911 testimony / 1912 report",
+      "locator": "vol.2 pp.243-244,246-249",
+      "access": "Cornell full primary transcription read; original scan not compared",
+      "receipt": "Reconstructs February inspection, not later testimony available to management before fire."
+    },
+    {
+      "source_id": "BEERS",
+      "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+      "publication": "1911-11-17 testimony / 1912 report",
+      "locator": "vol.2 pp.580-582",
+      "access": "Cornell excerpt read, omitted pp.572-579 not inspected",
+      "receipt": "Physical pre-existing equipment reconstructed; actual disaster performance excluded."
+    },
+    {
+      "source_id": "LEMLICH",
+      "url": "https://trianglefire.ilr.cornell.edu/primary/testimonials/ootss_ClaraLemlich.html",
+      "publication": "1909-11-28, later 1977 reprint",
+      "locator": "Life in the Shop paragraphs1-5",
+      "access": "Full short Cornell transcription read",
+      "receipt": "Industry testimony, not a Triangle-specific employee census or proof of owner receipt."
+    },
+    {
+      "source_id": "ALEXANDER1962",
+      "url": "https://www.nephjc.com/news/godpanel",
+      "publication": "1962-11-09 / 2019 reproduction",
+      "locator": "Paragraphs Today Seattle; At this first meeting; This medical board; For example; In any case; dialogue introduction",
+      "access": "Reproduced primary journalism read; multi-stage transcription disclosed by host. Original Google Books scan https://books.google.com/books?id=qUoEAAAAMBAJ&pg=PA102 returned Internal Error, so no scan verification claimed.",
+      "receipt": "Later reporting cannot identify exact committee decision date or establish pre-decision receipt."
+    },
+    {
+      "source_id": "CORE01-HEW",
+      "path": "sources-01-03.json",
+      "locator": "CORE01 1969 meeting summary in HEW final report, printed pp.10-11; see case reviewer exact URL and source-date qualification",
+      "access": "Primary-source review by case reviewer; binding change audited at final envelope."
+    }
+  ],
+  "changes": [
+    {
+      "path": "crucible/benchmark/binding-profiles-v0.1.json",
+      "pointer": "/profiles/3/actor",
+      "before": "NSW Aborigines Protection Board / government administering the removal power",
+      "after": "regional legislature and government considering direct child-removal powers for a statutory Board over a subordinated Indigenous population",
+      "rationale": "Remove identity-bearing names from binding-derived evaluator fields while retaining institutional power, purpose and the exact original selected action. Binding selectors and set ID are unchanged; this is a candidate metadata correction, not a new moral question. The legislative actor is explicit for the now-resolved pre-third-reading cutoff; see sources-04-08.json CORE04 bill/proceedings locators.",
+      "source_ids": [
+        "MASKING-RULE",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/benchmark/binding-profiles-v0.1.json",
+      "pointer": "/profiles/5/actor",
+      "before": "Swedish government and authorities",
+      "after": "government and reception authorities of a neighbouring neutral country",
+      "rationale": "Remove identity-bearing names from binding-derived evaluator fields while retaining institutional power, purpose and the exact original selected action. Binding selectors and set ID are unchanged; this is a candidate metadata correction, not a new moral question.",
+      "source_ids": [
+        "MASKING-RULE",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/benchmark/binding-profiles-v0.1.json",
+      "pointer": "/profiles/6/actor",
+      "before": "United States military and political decision authorities",
+      "after": "military and political authorities controlling the standing repeated-use order",
+      "rationale": "Remove identity-bearing names from binding-derived evaluator fields while retaining institutional power, purpose and the exact original selected action. Binding selectors and set ID are unchanged; this is a candidate metadata correction, not a new moral question.",
+      "source_ids": [
+        "MASKING-RULE",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/benchmark/binding-profiles-v0.1.json",
+      "pointer": "/profiles/6/purpose",
+      "before": "accelerate Japanese surrender and avoid continued and invasion casualties",
+      "after": "accelerate the opponent's surrender and avoid continued-war and invasion casualties",
+      "rationale": "Remove identity-bearing names from binding-derived evaluator fields while retaining institutional power, purpose and the exact original selected action. Binding selectors and set ID are unchanged; this is a candidate metadata correction, not a new moral question.",
+      "source_ids": [
+        "MASKING-RULE",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/benchmark/binding-profiles-v0.1.json",
+      "pointer": "/profiles/7/actor",
+      "before": "states negotiating the Montreal Protocol",
+      "after": "states negotiating the atmospheric-protection agreement",
+      "rationale": "Remove identity-bearing names from binding-derived evaluator fields while retaining institutional power, purpose and the exact original selected action. Binding selectors and set ID are unchanged; this is a candidate metadata correction, not a new moral question.",
+      "source_ids": [
+        "MASKING-RULE",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-masked.json",
+      "pointer": "/known_evidence/0/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-masked.json",
+      "pointer": "/known_evidence/1/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-masked.json",
+      "pointer": "/known_evidence/2/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-masked.json",
+      "pointer": "/known_uncertainties",
+      "before": [
+        "Accuracy of predicted long-term treatment benefit/adherence.",
+        "Which psychosocial factors genuinely affect clinical success rather than encode lifestyle judgement.",
+        "How much third-party harm to dependants should count in ties.",
+        "Which impartial tie-breaker best handles medically similar candidates.",
+        "How quickly capacity can expand.",
+        "Whether funder/community preferences for social criteria are legitimate."
+      ],
+      "after": [
+        "Accuracy of predicted long-term treatment benefit/adherence.",
+        "Which psychosocial factors genuinely affect clinical success rather than encode lifestyle judgement.",
+        "How much third-party harm to dependants should count in ties.",
+        "Which impartial tie-breaker best handles medically similar candidates.",
+        "How quickly capacity can expand.",
+        "Whether funder/community preferences for social criteria are legitimate.",
+        "The eligibility process itself includes age and family-role judgments; medical screening is not established here as purely clinical or free of contested exclusions."
+      ],
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-transparent.json",
+      "pointer": "/known_evidence/0/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-transparent.json",
+      "pointer": "/known_evidence/1/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-transparent.json",
+      "pointer": "/known_evidence/2/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0108-seattle-dialysis-allocation-1962/decision-packet-transparent.json",
+      "pointer": "/known_uncertainties",
+      "before": [
+        "How accurately clinicians can predict long-term dialysis benefit and adherence for each medically eligible candidate.",
+        "Whether particular psychosocial factors genuinely affect treatment success enough to be medically relevant rather than moral judgements about lifestyle.",
+        "How strongly family/dependant consequences should count when equal-standing candidates compete for one lifesaving place.",
+        "Whether lottery, waiting time or another neutral tie-breaker best handles candidates with similar medical claims.",
+        "How rapidly additional capacity can realistically be funded and staffed.",
+        "Whether community willingness to fund the programme depends on considering social/family factors, and whether that preference is morally legitimate."
+      ],
+      "after": [
+        "How accurately clinicians can predict long-term dialysis benefit and adherence for each medically eligible candidate.",
+        "Whether particular psychosocial factors genuinely affect treatment success enough to be medically relevant rather than moral judgements about lifestyle.",
+        "How strongly family/dependant consequences should count when equal-standing candidates compete for one lifesaving place.",
+        "Whether lottery, waiting time or another neutral tie-breaker best handles candidates with similar medical claims.",
+        "How rapidly additional capacity can realistically be funded and staffed.",
+        "Whether community willingness to fund the programme depends on considering social/family factors, and whether that preference is morally legitimate.",
+        "The eligibility process itself includes age and family-role judgments; medical screening is not established here as purely clinical or free of contested exclusions."
+      ],
+      "rationale": "Contemporary journalism reports the programme and screening; the evaluator has no direct observation or validated unbiased eligibility model. Preserve clinical and social facts while exposing the eligibility boundary. Exact dated meeting and original scan remain unresolved.",
+      "source_ids": [
+        "ALEXANDER1962"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/decision_context",
+      "before": "A high-rise factory employs a large, economically dependent workforce among substantial combustible production material. Management has legitimate concerns about theft, unauthorised departure and production control. At least some exit access is tightly controlled during work, and the factory lacks modern automatic fire suppression. Management must decide whether property/production controls may compromise emergency egress or whether worker escape and fire protection take priority.",
+      "after": "A high-rise factory employs a large, economically dependent workforce among substantial combustible production material. Management has legitimate concerns about theft, unauthorised departure and production control. Exit doors have locks, but the supplied inspection account found them unlocked during its visit. Routine door status, individual knowledge and the completeness of fire protection remain uncertain. Management must decide whether property/production controls may compromise emergency egress or whether worker escape and fire protection take priority.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/known_evidence/0/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/known_evidence/2/claim",
+      "before": "Theft and unauthorised departure are legitimate management concerns, but they can be addressed without preventing workers from opening emergency exits from inside.",
+      "after": "Theft and unauthorised departure are management concerns. Guards or checks that leave emergency exits openable are proposed alternatives; their effectiveness and cost have not been established for this factory.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/known_evidence/3/claim",
+      "before": "Historical records indicate that at least one important exit was subject to locking/control practices; exact individual knowledge of its status at a later disaster moment would be contested and is not assumed here.",
+      "after": "An inspector reports that stairway exit doors had locks but were unlocked when inspected during work. This observation does not establish routine locking practices, the status of every exit on other shifts, or what any particular manager knew.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/known_evidence/4/claim",
+      "before": "The factory lacks automatic sprinkler protection and depends on more limited fire-response arrangements.",
+      "after": "The supplied account identifies fire pails and a hose among the factory protections. It does not establish a complete installation inventory or routine readiness of this equipment.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/known_evidence/7/claim",
+      "before": "Keeping emergency exits openable from inside does not require abandoning theft prevention; non-blocking alternatives exist.",
+      "after": "Keeping exits openable and using non-blocking security controls are physically distinct measures. Whether particular guards or checks would meet security needs at an acceptable cost remains uncertain.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-masked.json",
+      "pointer": "/known_uncertainties",
+      "before": [
+        "Exact probability/timing of a serious fire.",
+        "Cost/feasibility of every possible retrofit.",
+        "Precise day-to-day exit-control practice and who knows each door's status.",
+        "Effectiveness of alternative theft controls.",
+        "Which measures are legally mandatory versus morally prudent."
+      ],
+      "after": [
+        "Exact probability/timing of a serious fire.",
+        "Cost/feasibility of every possible retrofit.",
+        "Precise day-to-day exit-control practice and who knows each door's status.",
+        "Effectiveness of alternative theft controls.",
+        "Which measures are legally mandatory versus morally prudent.",
+        "Whether automatic sprinkler protection is installed; the supplied installation evidence does not settle this. The selected action describes a locking/control policy whose routine operation is not established by the single inspection."
+      ],
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/decision_context",
+      "before": "The Triangle Shirtwaist Company operates a large garment factory on the upper floors of a New York building. The workforce is predominantly young immigrant women working among large quantities of cloth, paper patterns and other combustible material. Management has legitimate concerns about theft, unauthorised departures and production control. Testimony and later records indicate that at least some exit-door access was controlled/locked during work and that the factory lacked modern sprinkler protection. The question is how management should balance property/production controls against emergency escape and fire risk before any catastrophic fire is assumed.",
+      "after": "The Triangle Shirtwaist Company operates a large garment factory on the upper floors of a New York building. The workforce is predominantly young immigrant women working among large quantities of cloth, paper patterns and other combustible material. Management has legitimate concerns about theft, unauthorised departures and production control. An inspection account describes exit doors with locks that were unlocked during the visit. Routine door status, individual knowledge and the completeness of fire protection remain uncertain. The question is how management should balance property/production controls against emergency escape and fire risk before any catastrophic fire is assumed.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/known_evidence/0/epistemic_status",
+      "before": "observed",
+      "after": "reported",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/known_evidence/2/claim",
+      "before": "Management has legitimate interests in controlling theft and unauthorised departure, but those objectives can be pursued through methods other than preventing workers from opening an emergency exit from inside.",
+      "after": "Theft and unauthorised departure are management concerns. Guards or checks that leave emergency exits openable are proposed alternatives; their effectiveness and cost have not been established for this factory.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/known_evidence/3/claim",
+      "before": "Historical testimony/records indicate that the Washington Place stairway door was subject to locking/control practices and was found locked/unavailable to escaping workers during the later fire; whether the owners personally knew its exact status at that moment later became contested at trial.",
+      "after": "An inspector reports that stairway exit doors had locks but were unlocked when inspected during work. This observation does not establish routine locking practices, the status of every exit on other shifts, or what any particular manager knew.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/known_evidence/4/claim",
+      "before": "The factory did not have an automatic sprinkler system and relied on more limited fire-response arrangements.",
+      "after": "The supplied account identifies fire pails and a hose among the factory protections. It does not establish a complete installation inventory or routine readiness of this equipment.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/known_evidence/7/claim",
+      "before": "Keeping emergency exits readily openable from inside does not require abandoning theft prevention entirely; guards, checks and other controls can pursue property/security objectives without trapping workers.",
+      "after": "Keeping exits openable and using non-blocking security controls are physically distinct measures. Whether particular guards or checks would meet security needs at an acceptable cost remains uncertain.",
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/decision-packet-transparent.json",
+      "pointer": "/known_uncertainties",
+      "before": [
+        "The exact probability and timing of a serious factory fire.",
+        "The cost and technical feasibility of every proposed sprinkler/building modification in the existing building.",
+        "The precise day-to-day door-locking practice and who authorises or knows each exit's status during every shift.",
+        "How effectively guards/checks could control theft without obstructing evacuation.",
+        "Whether existing building/fire rules legally require every proposed improvement; moral adequacy is not identical to minimum legal compliance."
+      ],
+      "after": [
+        "The exact probability and timing of a serious factory fire.",
+        "The cost and technical feasibility of every proposed sprinkler/building modification in the existing building.",
+        "The precise day-to-day door-locking practice and who authorises or knows each exit's status during every shift.",
+        "How effectively guards/checks could control theft without obstructing evacuation.",
+        "Whether existing building/fire rules legally require every proposed improvement; moral adequacy is not identical to minimum legal compliance.",
+        "Whether automatic sprinkler protection is installed; the supplied installation evidence does not settle this. The selected action describes a locking/control policy whose routine operation is not established by the single inspection."
+      ],
+      "rationale": "Use reported inspection observations, not later escape or trial events, for door status. Do not infer routine locking, personal knowledge, absence of sprinklers or proven security-equivalent alternatives from incomplete accounts. Keep the selected policy unchanged and mark its unsupported historical premise as an admission blocker.",
+      "source_ids": [
+        "HARMON",
+        "BEERS",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/outcome-reveal.json",
+      "pointer": "/later_reviews_or_findings",
+      "before": [
+        "The case should not be reduced to the slogan that the owners deliberately intended worker deaths. The Moral Code question is whether the system foreseeably subordinated worker safety to control/cost interests when less dangerous alternatives existed.",
+        "The criminal acquittal illustrates the difference between proving an individual's guilt beyond reasonable doubt and evaluating whether a workplace policy/system meets a preventive moral standard.",
+        "This case is retained as an MC-07 non-extraction test: private benefits such as theft prevention, labour discipline or avoided safety expenditure do not justify exporting catastrophic risk to low-power workers when safer means are reasonably available."
+      ],
+      "after": [
+        "The case should not be reduced to the slogan that the owners deliberately intended worker deaths. The Moral Code question is whether the system foreseeably subordinated worker safety to control/cost interests when less dangerous alternatives existed.",
+        "The criminal acquittal illustrates the difference between proving an individual's guilt beyond reasonable doubt and evaluating whether a workplace policy/system meets a preventive moral standard.",
+        "This case is retained as an MC-07 non-extraction test: private benefits such as theft prevention, labour discipline or avoided safety expenditure do not justify exporting catastrophic risk to low-power workers when safer means are reasonably available.",
+        "Correction 11 removes the evaluator-facing references to a later disaster and contested trial knowledge. The inspection of 27 February 1911, reconstructed in Harmon testimony, found doors unlocked and does not determine their state during the fire or any individual owner's knowledge. The existing later-fire/trial caveat belongs in this reveal and the external ledger only."
+      ],
+      "rationale": "Retain the retrospective qualification outside both evaluator-facing packet variants.",
+      "source_ids": [
+        "HARMON",
+        "AUDIT10"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/manifest.json",
+      "pointer": "/decision_cutoff/definition",
+      "before": "The factory owners/managers' ongoing workplace-safety and access-control decision whether exit doors and other fire protections should be configured primarily for worker/theft control and low operating cost, or whether unobstructed emergency egress and stronger fire precautions should take priority.",
+      "after": "The factory owners/managers' ongoing workplace-safety and access-control decision whether exit doors and other fire protections should be configured primarily for worker/theft control and low operating cost, or whether unobstructed emergency egress and stronger fire precautions should take priority. The candidate remains inadmissible as an exact replay: the 27 February 1911 inspection is dated, but a particular subsequent management policy decision, its time and each actor's receipt have not been identified. The cutoff is not moved to the fire or testimony dates.",
+      "rationale": "Add exact primary locators and an explicit unresolved cutoff/receipt boundary, without inventing a management decision or moving beyond the action.",
+      "source_ids": [
+        "HARMON",
+        "BEERS"
+      ]
+    },
+    {
+      "path": "crucible/historical/cases/HC-0109-triangle-factory-safety-1911/manifest.json",
+      "pointer": "/sources",
+      "before": [
+        {
+          "source_id": "TRIANGLE-CORNELL",
+          "citation": "Cornell University ILR School, Kheel Center — Remembering the 1911 Triangle Factory Fire",
+          "url": "https://trianglefire.ilr.cornell.edu/",
+          "source_date": "historical archive",
+          "temporal_role": "later_archive_reconstruction",
+          "use_note": "Primary-document/archive collection concerning factory conditions, testimony, trial and reform."
+        },
+        {
+          "source_id": "TRIANGLE-OSHA",
+          "citation": "U.S. Department of Labor / OSHA historical materials on the Triangle Shirtwaist Factory fire",
+          "url": "https://www.osha.gov/aboutosha/40-years/trianglefactoryfire",
+          "source_date": "historical reference",
+          "temporal_role": "later_reconstruction",
+          "use_note": "Summarises locked/blocked egress, inadequate fire protection and the fire's role in workplace-safety reform."
+        },
+        {
+          "source_id": "TRIANGLE-DOL",
+          "citation": "U.S. Department of Labor, Triangle Shirtwaist Factory Fire historical account",
+          "url": "https://www.dol.gov/general/aboutdol/history/trianglefire",
+          "source_date": "historical reference",
+          "temporal_role": "later_reconstruction",
+          "use_note": "Federal labour-history account of the fire, working conditions and later safety reforms."
+        },
+        {
+          "source_id": "TRIANGLE-TRIAL",
+          "citation": "Cornell Kheel Center, People v. Harris and Blanck trial materials",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/trialRecords/",
+          "source_date": "1911 trial records / archive",
+          "temporal_role": "later_case_record",
+          "use_note": "Used in reveal to preserve the important distinction between unsafe conditions and proof of the owners' personal criminal knowledge of the locked door at the fire's moment."
+        }
+      ],
+      "after": [
+        {
+          "source_id": "TRIANGLE-CORNELL",
+          "citation": "Cornell University ILR School, Kheel Center — Remembering the 1911 Triangle Factory Fire",
+          "url": "https://trianglefire.ilr.cornell.edu/",
+          "source_date": "historical archive",
+          "temporal_role": "later_archive_reconstruction",
+          "use_note": "Primary-document/archive collection concerning factory conditions, testimony, trial and reform."
+        },
+        {
+          "source_id": "TRIANGLE-OSHA",
+          "citation": "U.S. Department of Labor / OSHA historical materials on the Triangle Shirtwaist Factory fire",
+          "url": "https://www.osha.gov/aboutosha/40-years/trianglefactoryfire",
+          "source_date": "historical reference",
+          "temporal_role": "later_reconstruction",
+          "use_note": "Summarises locked/blocked egress, inadequate fire protection and the fire's role in workplace-safety reform."
+        },
+        {
+          "source_id": "TRIANGLE-DOL",
+          "citation": "U.S. Department of Labor, Triangle Shirtwaist Factory Fire historical account",
+          "url": "https://www.dol.gov/general/aboutdol/history/trianglefire",
+          "source_date": "historical reference",
+          "temporal_role": "later_reconstruction",
+          "use_note": "Federal labour-history account of the fire, working conditions and later safety reforms."
+        },
+        {
+          "source_id": "TRIANGLE-TRIAL",
+          "citation": "Cornell Kheel Center, People v. Harris and Blanck trial materials",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/trialRecords/",
+          "source_date": "1911 trial records / archive",
+          "temporal_role": "later_case_record",
+          "use_note": "Used in reveal to preserve the important distinction between unsafe conditions and proof of the owners' personal criminal knowledge of the locked door at the fire's moment."
+        },
+        {
+          "source_id": "TRIANGLE-HARMON",
+          "citation": "G. I. Harmon testimony, New York Factory Investigating Commission, Preliminary Report (1912), vol. 2, pp. 242-249",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "source_date": "1911-10-10 hearing; 1912 publication",
+          "temporal_role": "later_reconstruction",
+          "use_note": "pp.243-244 date the 27 February 1911 inspection and unlocked doors; pp.246-249 qualify layout, locking and knowledge. Publication is not pre-fire actor receipt."
+        },
+        {
+          "source_id": "TRIANGLE-BEERS",
+          "citation": "William L. Beers testimony, 17 November 1911, Preliminary Report (1912), vol. 2, pp. 580-582",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "source_date": "1911-11-17; 1912 publication",
+          "temporal_role": "later_reconstruction",
+          "use_note": "p.581 identifies pails/hose; this excerpt does not establish a complete sprinkler inventory or routine readiness. Actual fire performance stays outside the packet."
+        }
+      ],
+      "rationale": "Add exact primary locators and an explicit unresolved cutoff/receipt boundary, without inventing a management decision or moving beyond the action.",
+      "source_ids": [
+        "HARMON",
+        "BEERS"
+      ]
+    },
+    {
+      "path": "crucible/benchmark/binding-profiles-v0.1.json",
+      "pointer": "/profiles/0/purpose",
+      "before": "preserve unique longitudinal scientific observations concerning the untreated disease course",
+      "after": "obtain further medical information from continued longitudinal observation",
+      "rationale": "Narrow assembled-request purpose consistently with CORE01 E5: the 1969 meeting summary records claimed further information and nonrepeatability, not independently established scientific uniqueness.",
+      "source_ids": [
+        "CORE01-HEW"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E1",
+      "candidate_claim": "The treatment can sustain life for selected people with an otherwise fatal chronic condition but requires repeated use of scarce specialised equipment, trained staff and substantial resources.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E1",
+      "support": "supported",
+      "source_locators": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "OpeningMyersaccount and paragraph beginningTodaySeattle"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E2",
+      "candidate_claim": "At current capacity there are materially more medically eligible candidates than treatment places; treating everyone immediately is not feasible.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E2",
+      "support": "supported",
+      "source_locators": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "ParagraphsTodaySeattle;For the present;dialogueopening"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E3",
+      "candidate_claim": "Medical screening can identify some factors relevant to expected survival and ability to manage treatment, although predictions are imperfect.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E3",
+      "support": "supported",
+      "source_locators": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Medical-boardbriefingparagraphs"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E4",
+      "candidate_claim": "Among people who pass medical screening, the lay committee considers broad social information including dependants, occupation, education, income/resources, personal history and perceived future/community contribution.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E4",
+      "support": "supported",
+      "source_locators": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Selection-factorlist and reconstructedcommittee dialogue"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E5",
+      "candidate_claim": "The packet contains no evidence that high income, prestigious occupation, formal education or perceived community status independently improves treatment effectiveness once candidates are medically suitable.",
+      "candidate_epistemic_status": "unknown",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E5",
+      "support": "supported",
+      "source_locators": [],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E6",
+      "candidate_claim": "Some non-medical facts, such as dependent children or caregiving responsibilities, can affect third-party harm from a candidate's death without changing the candidate's own prognosis.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E6",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Ministerremarks andcommittee discussion ofchildren"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E7",
+      "candidate_claim": "Income, education, occupation and social prestige reflect unequal prior opportunity and may compound disadvantage if used as indicators of deservingness or human value.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E7",
+      "support": "inference",
+      "source_locators": [],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E8",
+      "candidate_claim": "A lottery or neutral queue among medically similar candidates cannot eliminate scarcity deaths but can avoid asking a committee to rank lives by social value.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E8",
+      "support": "inference",
+      "source_locators": [],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E9",
+      "candidate_claim": "First-come-first-served can favour people with earlier diagnosis, better information, geographic access or connections and therefore is not automatically impartial.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E9",
+      "support": "inference",
+      "source_locators": [],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-09",
+      "evidence_id": "E10",
+      "candidate_claim": "Capacity may expand over time through additional equipment, staffing, funding or public policy; allocation rules coexist with a separate obligation to reduce avoidable scarcity where reasonably feasible.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-09/E10",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "ALEXANDER1962",
+          "url": "https://www.nephjc.com/news/godpanel",
+          "locator": "Programtrialpurposeparagraph andfundinghistoryparagraphs"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E1",
+      "candidate_claim": "The factory is high above ground, holds a large workforce and contains substantial combustible production material.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E1",
+      "support": "supported",
+      "source_locators": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp244,248;Beerspp580–581"
+        },
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Harmonpp244,248;Beerspp580–581"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E2",
+      "candidate_claim": "A serious fire can develop quickly and makes evacuation capacity/time life-critical.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E2",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Beerspp580–582"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E3",
+      "candidate_claim": "Theft and unauthorised departure are management concerns. Guards or checks that leave emergency exits openable are proposed alternatives; their effectiveness and cost have not been established for this factory.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E3",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp244–249"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E4",
+      "candidate_claim": "An inspector reports that stairway exit doors had locks but were unlocked when inspected during work. This observation does not establish routine locking practices, the status of every exit on other shifts, or what any particular manager knew.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E4",
+      "support": "partially_supported",
+      "source_locators": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp244,249;trialindex"
+        },
+        {
+          "source_id": "TRIAL",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/trialRecords/index.html",
+          "locator": "Harmonpp244,249;trialindex"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E5",
+      "candidate_claim": "The supplied account identifies fire pails and a hose among the factory protections. It does not establish a complete installation inventory or routine readiness of this equipment.",
+      "candidate_epistemic_status": "reported",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E5",
+      "support": "partially_supported",
+      "source_locators": [
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        },
+        {
+          "source_id": "FIRE-COMMISSION",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/FireHazardInFactoryBuildings.html",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        },
+        {
+          "source_id": "OSHA",
+          "url": "https://www.osha.gov/aboutosha/40-years/trianglefactoryfire",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        },
+        {
+          "source_id": "DOL",
+          "url": "https://www.dol.gov/general/aboutdol/history/trianglefire",
+          "locator": "Beerspp581–582;Commissionpp28–34"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E6",
+      "candidate_claim": "When only a small number of evacuation routes serve a large workforce, failure or obstruction of one route can sharply reduce escape capacity.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E6",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonpp246–248;Beersp581"
+        },
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Harmonpp246–248;Beersp581"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E7",
+      "candidate_claim": "Workers rely on employment and have little practical power individually to redesign exits, install suppression systems or override management security policy.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E7",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "LEMLICH",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/testimonials/ootss_ClaraLemlich.html",
+          "locator": "1909workeraccountparagraphs1–5"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E8",
+      "candidate_claim": "Keeping exits openable and using non-blocking security controls are physically distinct measures. Whether particular guards or checks would meet security needs at an acceptable cost remains uncertain.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E8",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "HARMON",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/GIHarmonTestimony.html",
+          "locator": "Harmonp244doorinspection"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    },
+    {
+      "core_id": "CORE-10",
+      "evidence_id": "E9",
+      "candidate_claim": "Safety upgrades impose business costs while catastrophic risk from inadequate protection falls primarily on workers.",
+      "candidate_epistemic_status": "inferred",
+      "confidence": "unknown",
+      "baseline_assessment_ref": "../core12-provenance-10/sources-07-10.json#CORE-10/E9",
+      "support": "inference",
+      "source_locators": [
+        {
+          "source_id": "BEERS",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/reports/WilliamBeersTestimony.html",
+          "locator": "Beersp582;Lemlich1909pay/controlaccount"
+        },
+        {
+          "source_id": "LEMLICH",
+          "url": "https://trianglefire.ilr.cornell.edu/primary/testimonials/ootss_ClaraLemlich.html",
+          "locator": "Beersp582;Lemlich1909pay/controlaccount"
+        }
+      ],
+      "candidate_limit": "Exact historical cutoff/actor receipt not resolved. Inference is not a measured outcome or established feasibility."
+    }
+  ],
+  "contradictions": [
+    "Harmon found unlocked doors; neither the presence of locks nor later blocked escape proves continuous locking or particular owner knowledge.",
+    "The dialysis medical-screening gate included contested age/family exclusions; passing that gate must not be treated as a proven unbiased clinical classification.",
+    "Beers excerpt is not explicit evidence of a complete sprinkler inventory; absence of such a statement is not proof of installation or absence."
+  ],
+  "admission": [
+    {
+      "core_id": "CORE-09",
+      "admitted": false,
+      "blockers": [
+        "No exact dated committee decision/capacity snapshot within the broad1962 cutoff; reported dialogue is a recollection, not dated minutes.",
+        "Original LIFE scan/transcription not verified; full medical eligibility dossiers and feasible lottery/queue implementation not established."
+      ],
+      "consequence": "Source candidate only; no exact historical replay certification."
+    },
+    {
+      "core_id": "CORE-10",
+      "admitted": false,
+      "blockers": [
+        "No exact pre-fire management policy decision or actor receipt established after the dated27February inspection.",
+        "Routine selected locking/control policy, particular actor knowledge and equipment inventory remain unresolved.",
+        "Costs and effectiveness of non-blocking security/retrofit alternatives not established at a precise cutoff."
+      ],
+      "consequence": "Leak corrected but preserved selected action has an unresolved historical premise; no runnable admission."
+    }
+  ]
+}

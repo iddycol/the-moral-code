@@ -71,8 +71,7 @@ def test_binding_identity_does_not_reappear_in_any_evaluator_envelope(candidate,
 
 def test_factory_evidence_does_not_announce_a_later_disaster(candidate):
     for envelope in envelopes(candidate, "CORE-10"):
-        evidence = envelope["evaluation_request"]["evidence"]
-        assert not re.search(r"later disaster|subsequent disaster", json.dumps(evidence), re.IGNORECASE)
+        assert not re.search(r"later disaster|subsequent disaster", json.dumps(envelope), re.IGNORECASE)
 
 
 @pytest.mark.parametrize("case_id", [f"CORE-{i:02d}" for i in range(1, 13)])

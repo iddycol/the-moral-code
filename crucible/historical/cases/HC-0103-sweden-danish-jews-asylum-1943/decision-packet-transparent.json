@@ -50,8 +50,8 @@
     },
     {
       "evidence_id": "E2",
-      "claim": "Many Danish Jews are going into hiding and need a destination outside German-controlled territory if they are to evade arrest.",
-      "epistemic_status": "observed"
+      "claim": "Many Danish Jews are reported to be going into hiding.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E3",
@@ -61,21 +61,21 @@
     {
       "evidence_id": "E4",
       "claim": "Sweden retains sovereign control over whether refugees reaching its territory are admitted and protected or refused entry.",
-      "epistemic_status": "observed"
+      "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E5",
-      "claim": "Admission would create real but bounded administrative, accommodation and wartime-security responsibilities for Sweden.",
+      "claim": "Admission would create administrative, accommodation and wartime-security responsibilities; the available reception capacity and duration of those responsibilities are uncertain.",
       "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E6",
-      "claim": "A public or communicated Swedish willingness to admit the refugees would materially increase the feasibility of escape by giving Danish rescuers and endangered families a known safe destination.",
+      "claim": "A communicated willingness to admit refugees could assist escape planning by giving rescuers and endangered families a destination willing to receive them.",
       "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E7",
-      "claim": "Refusing admission or leaving entry materially uncertain risks closing the most accessible neutral refuge available to this endangered population during the imminent roundup.",
+      "claim": "Refusing admission or leaving entry materially uncertain risks closing a nearby practicable neutral refuge for people facing the roundup and deportation operation.",
       "epistemic_status": "inferred"
     },
     {
@@ -89,7 +89,8 @@
     "How Germany will respond diplomatically or operationally to an explicit Swedish asylum policy.",
     "The duration of refuge required before return or other durable arrangements become possible.",
     "The precise treatment people will face after deportation, although forced arrest and deportation themselves create serious and immediate loss of liberty and safety.",
-    "The resources required to house and support refugees during the emergency."
+    "The resources required to house and support refugees during the emergency.",
+    "Reception capacity, the precise stage of the roundup, and which warnings have reached the admission authorities at the instant of decision are not established by this packet."
   ],
   "known_alternatives": [
     "Offer temporary emergency sanctuary while retaining ordinary security screening that does not defeat urgent access to safety.",

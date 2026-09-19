@@ -7,6 +7,7 @@ on:
       - design/scales-v0.1
       - research/provenance-tranche-1
       - experiment/core12-live-v0.1
+      - experiment/core12-provenance-v0.1.4
       - main
   pull_request:
     paths:

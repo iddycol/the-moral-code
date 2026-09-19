@@ -1,10 +1,10 @@
 {
   "case_id": "HC-0003",
-  "title": "1960-61 FDA decision whether to allow the thalidomide NDA to become effective",
+  "title": "23 February 1961 FDA decision whether to continue finding the thalidomide NDA incomplete",
   "case_class": "defensible_under_uncertainty",
   "decision_cutoff": {
-    "date_or_period": "1960-1961, before the November 1961 European market withdrawal",
-    "definition": "FDA medical review decisions whether to allow the Kevadon (thalidomide) new drug application to become effective or continue finding the application incomplete because safety evidence was inadequate, before the congenital-malformation association became known."
+    "date_or_period": "23 February 1961, immediately before FDA issues its further incomplete-application letter; exact clock time unestablished",
+    "definition": "FDA's continued review of the Kevadon NDA before the February 23 deficiency letter. The April 17, 1962 FDA chronology reconstructs the pending deficiencies and prior receipt of neurological-toxicity reports. The same-day subsequent telephone call, later submissions, the May pregnancy-safety discussion, congenital-malformation findings and market withdrawals are excluded. The original letter and complete NDA dossier have not been inspected; the external correction ledger retains that admission limit."
   },
   "pretraining_leakage_risk": "high",
   "packets": [
@@ -22,7 +22,9 @@
   ],
   "sources": [
     {"source_id": "FDA-KELSEY", "citation": "FDA, Frances Oldham Kelsey: Medical reviewer famous for averting a public health tragedy", "url": "https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy", "source_date": "current historical exhibit", "temporal_role": "later_reconstruction", "use_note": "Confirms safety-evidence duty, international availability, company pressure, Kelsey's insistence on reliable evidence and later outcome."},
-    {"source_id": "FDA-DRUG-EFFICACY", "citation": "FDA historical exhibit, Drug Efficacy — 1962", "url": "https://www.fda.gov/media/74571/download", "source_date": "historical exhibit", "temporal_role": "later_reconstruction", "use_note": "Confirms NDA submitted 12 September 1960, data considered incomplete, company pressure until November 1961 withdrawal in Germany."},
-    {"source_id": "FDA-CDER-HISTORY", "citation": "FDA, A Brief History of the Center for Drug Evaluation and Research", "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research", "source_date": "current historical page", "temporal_role": "later_reconstruction", "use_note": "Confirms application did not become effective because of insufficient safety data and later global outcome."}
+    {"source_id": "FDA-DRUG-EFFICACY", "citation": "FDA, The History of Drug Regulation in the United States, Centennial Edition", "url": "https://www.fda.gov/media/74571/download", "source_date": "2006", "temporal_role": "later_reconstruction", "use_note": "Printed p. 8 gives the broad chronology; it does not establish the exact February 1961 dossier or actor receipt."},
+    {"source_id": "FDA-CDER-HISTORY", "citation": "FDA, A Brief History of the Center for Drug Evaluation and Research", "url": "https://www.fda.gov/about-fda/fda-history-exhibits/brief-history-center-drug-evaluation-and-research", "source_date": "current historical page", "temporal_role": "later_reconstruction", "use_note": "Confirms application did not become effective because of insufficient safety data and later global outcome."},
+    {"source_id": "FDA-ARCHER-CHRONOLOGY", "citation": "FDA Bureau of Medicine, Kevadon (NDA 12-611), memorandum of 17 April 1962, reproduced in Congressional Record, 8 August 1962", "url": "https://www.congress.gov/87/crecb/1962/08/08/GPO-CRECB-1962-pt12-3-2.pdf", "source_date": "1962-04-17 memorandum; 1962-08-08 publication", "temporal_role": "later_reconstruction", "use_note": "Printed pp. 15932-15933 (PDF pp. 37-38): dated prior submissions/contacts and February 23 letter entry support the cutoff and FDA receipt of neurological-toxicity literature. Subsequent call is separate; original letters and complete NDA not inspected."},
+    {"source_id": "FDA-KELSEY-REFLECTIONS", "citation": "Frances Oldham Kelsey, Autobiographical Reflections, compiled by FDA History Office", "url": "https://www.fda.gov/media/89162/download", "source_date": "Compiled from interviews/presentations dated 1974-1993; undated compilation", "temporal_role": "later_reconstruction", "use_note": "Printed pp. 54-56 discuss receipt of neurological-toxicity literature. Late-January/early-February recollection conflicts with an imprecise six-to-eight-month statement; dated FDA chronology governs the candidate cutoff."}
   ]
 }

@@ -2,7 +2,7 @@
   "case_id": "HC-0104",
   "packet_id": "HC-0104-M",
   "identity_mode": "masked",
-  "decision_context": "A state at war has used a newly developed weapon of unprecedented destructive power against an inhabited military-industrial city under a standing order that also authorises additional uses as weapons become ready. Within days, senior leaders receive reports of extraordinary destruction from the first use and a major new allied belligerent enters the war against the opponent. The opponent has not yet announced surrender. A second weapon is ready for an imminent mission under the existing order.",
+  "decision_context": "A state at war has used a newly developed weapon of unprecedented destructive power against an inhabited military-industrial city under a standing order authorising additional uses as weapons become ready. Senior leaders have received reports of extraordinary destruction from the first use. Entry of a major new allied belligerent is strategically relevant, but receipt of confirmation by these leaders before the second mission departs is not established. The opponent has not announced surrender. A second mission is being prepared under the existing order; the time available to transmit an effective pause is uncertain.",
   "decision_question": "Should senior authority allow the standing repeated-use order to execute a second inhabited-city attack immediately, or require fresh review/delay because the first use and the new belligerent's entry have materially changed the evidence state?",
   "actors": [
     "senior civilian leadership",
@@ -56,8 +56,8 @@
     },
     {
       "evidence_id": "E2",
-      "claim": "The first weapon has now been used against an inhabited city and senior officials have reports showing destruction on an extraordinary city-wide scale.",
-      "epistemic_status": "observed"
+      "claim": "The first weapon has now been used against an inhabited city and senior officials have reports showing extensive destruction of the city.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E3",
@@ -66,8 +66,8 @@
     },
     {
       "evidence_id": "E4",
-      "claim": "A major new allied belligerent has entered the war against the opponent, adding a new military front and materially changing the opponent's strategic position.",
-      "epistemic_status": "observed"
+      "claim": "Whether the responsible senior decision-makers have received confirmation of the new allied belligerent's declaration of war or opening of a new front before the imminent mission departs is not established.",
+      "epistemic_status": "unknown"
     },
     {
       "evidence_id": "E5",
@@ -76,18 +76,18 @@
     },
     {
       "evidence_id": "E6",
-      "claim": "The second weapon is operationally ready and can be used quickly under the existing directive unless senior authority intervenes.",
-      "epistemic_status": "observed"
+      "claim": "A second mission is being prepared under the standing directive. The packet does not establish when the responsible senior authority receives a readiness report or how much time remains to transmit and implement an effective pause.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E7",
-      "claim": "It is uncertain how rapidly the first attack and the new belligerent's entry will affect the opponent's surrender decision; both events are new and their combined effect has had little time to develop.",
+      "claim": "It is uncertain how rapidly the first attack will affect surrender. If confirmed entry of the new belligerent becomes available to the responsible authority, its additional effect also requires reassessment without assuming that surrender will follow a pause.",
       "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E8",
-      "claim": "Continuing the war also causes severe and accumulating harm through other military operations and preparation for invasion, so delay is not cost-free.",
-      "epistemic_status": "observed"
+      "claim": "A pause in this mission would not itself end the ongoing war. Its additional harm depends on how it affects other operations and the timing of surrender; the packet does not quantify that effect.",
+      "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E9",
@@ -96,7 +96,7 @@
     },
     {
       "evidence_id": "E10",
-      "claim": "The standing repeated-use order was approved before either the first weapon's actual effects or the new belligerent's entry were known.",
+      "claim": "The standing repeated-use directive predates the first attack and reports of its actual effects. This does not mean that the weapon's destructive potential or possible entry of another belligerent was previously unanticipated.",
       "epistemic_status": "observed"
     }
   ],
@@ -106,7 +106,8 @@
     "Whether a renewed warning or changed terms would accelerate capitulation.",
     "The precise civilian and military casualties from the next attack.",
     "Whether opponent hard-liners can withstand further delay without surrender.",
-    "The long-term strategic effect of repeated use under standing authority."
+    "The long-term strategic effect of repeated use under standing authority.",
+    "The actor-specific receipt of new-belligerent news, the last effective stop-order time, and the communication route to operational command before departure remain unverified."
   ],
   "known_alternatives": [
     "Pause only long enough for explicit senior review while other military pressure continues.",

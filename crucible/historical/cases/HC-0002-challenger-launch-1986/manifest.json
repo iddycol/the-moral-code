@@ -3,8 +3,8 @@
   "title": "1986 contractor recommendation whether to launch STS-51L in unusually cold conditions",
   "case_class": "hindsight_sensitive",
   "decision_cutoff": {
-    "date_or_period": "Evening of 27 January 1986",
-    "definition": "Morton Thiokol management's decision whether to maintain engineering's no-launch recommendation or reverse it and recommend launch after the NASA/Thiokol teleconference and before final recommendation."
+    "date_or_period": "27 January 1986, immediately before the final oral recommendation at approximately 11 p.m. Eastern Standard Time (UTC-05:00)",
+    "definition": "Morton Thiokol management's choice whether to maintain engineering's no-launch recommendation or reverse it, before communicating its final oral recommendation when the teleconference resumes. Local Kennedy Space Center discussion during the separate Thiokol caucus is attributed locally; its receipt by the remote contractor managers is not established. The subsequent recommendation, fax and post-recommendation objections are excluded."
   },
   "pretraining_leakage_risk": "high",
   "packets": [
@@ -23,7 +23,7 @@
   ],
   "sources": [
     {"source_id": "CH-RC-CH5", "citation": "Presidential Commission on the Space Shuttle Challenger Accident, Chapter V: The Contributing Cause of the Accident", "url": "https://www.nasa.gov/history/rogersrep/v1ch5.htm", "source_date": "1986", "temporal_role": "later_reconstruction", "use_note": "Reconstructs launch decision process and Commission findings from testimony and documents."},
-    {"source_id": "CH-MCDONALD-NOTES", "citation": "A.J. McDonald, notes from January 27, 1986, reproduced in Rogers Commission hearings", "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm", "source_date": "1986-01-27 notes; reproduced 1986-02-25", "temporal_role": "contemporaneous", "use_note": "Detailed record of forecast temperatures, engineering recommendation, NASA challenges, counterevidence, alternatives and final recommendation."},
+    {"source_id": "CH-MCDONALD-NOTES", "citation": "A.J. McDonald, typed account of January 27 events, reproduced in Rogers Commission hearings", "url": "https://www.nasa.gov/history/rogersrep/v4p740.htm", "source_date": "1986-01-27 events; 1986-02-13 addendum; reproduced 1986-02-25", "temporal_role": "later_reconstruction", "use_note": "Numbered note pp. 5 and 7 supply earlier dissent and the locally proposed delay; p. 9 discomfort follows the oral recommendation and remains reveal-only. Page 14 contains the February 13 addendum. The entire typed item is not certified as a contemporaneous verbatim transcript."},
     {"source_id": "CH-NASA-MISSION", "citation": "NASA, STS-51L mission history", "url": "https://www.nasa.gov/mission/sts-51l/", "source_date": "current historical page", "temporal_role": "outcome_only", "use_note": "Outcome and later-determined physical cause."}
   ]
 }

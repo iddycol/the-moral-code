@@ -3,8 +3,8 @@
   "title": "1969 decision whether to continue the USPHS untreated syphilis study at Tuskegee",
   "case_class": "clear_moral_failure",
   "decision_cutoff": {
-    "date_or_period": "February 1969",
-    "definition": "The CDC-convened expert panel's decision whether the long-running untreated-syphilis study should continue or terminate after renewed internal ethical objections."
+    "date_or_period": "6 February 1969, during the expert-panel meeting and before its continuation recommendation",
+    "definition": "The CDC-convened expert panel's deliberation whether the untreated-syphilis study should continue or terminate. The reproduced meeting summary supplies the continuation and treatment-risk arguments; no exact recommendation time or verbatim sequence is established. The 1970 termination memoranda and 1973 panel judgments are excluded."
   },
   "pretraining_leakage_risk": "high",
   "packets": [
@@ -25,6 +25,7 @@
     {"source_id": "TUS-CDC-TIMELINE", "citation": "CDC, The Untreated Syphilis Study at Tuskegee Timeline", "url": "https://www.cdc.gov/tuskegee/about/timeline.html", "source_date": "2024-09-04", "temporal_role": "later_reconstruction", "use_note": "Confirms study design, absence of informed consent, penicillin availability and later 1972 termination finding."},
     {"source_id": "TUS-CDC-ABOUT", "citation": "CDC, About The Untreated Syphilis Study at Tuskegee", "url": "https://www.cdc.gov/tuskegee/about/index.html", "source_date": "2024-09-04", "temporal_role": "later_reconstruction", "use_note": "Confirms no informed consent and withholding of available treatment."},
     {"source_id": "TUS-CDC-MUSEUM", "citation": "David J. Sencer CDC Museum, Public Health Service Study of Untreated Syphilis at Tuskegee and Macon County", "url": "https://www.cdc.gov/museum/online/story-of-cdc/tuskegee/index.html", "source_date": "undated current page", "temporal_role": "later_reconstruction", "use_note": "Confirms penicillin acceptance and internal questioning beginning in 1968."},
-    {"source_id": "TUS-ANNIV-REVIEW", "citation": "Fiftieth Anniversary of Uncovering the Tuskegee Syphilis Study: The Story and Timeless Lessons", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9872801/", "source_date": "2023", "temporal_role": "later_reconstruction", "use_note": "Reconstructs the February 1969 CDC panel and its deliberation on continuation versus termination."}
+    {"source_id": "TUS-ANNIV-REVIEW", "citation": "Fiftieth Anniversary of Uncovering the Tuskegee Syphilis Study: The Story and Timeless Lessons", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9872801/", "source_date": "2022-05-15", "temporal_role": "later_reconstruction", "use_note": "Publication date verified from PubMed 35500908; full text was blocked in audit 10 and is not used to substantiate candidate claims."},
+    {"source_id": "TUS-HEW-1973", "citation": "Final Report of the Tuskegee Syphilis Study Ad Hoc Advisory Panel", "url": "https://biotech.law.lsu.edu/cphl/history/reports/tuskegee/complete%20report.pdf", "source_date": "1973; reproduces 6 February 1969 meeting summary", "temporal_role": "later_reconstruction", "use_note": "Printed pp. 10-11 establish the meeting date, remaining-research rationale and attributed treatment-risk argument. Printed pp. 7, 9 and 12 qualify individual treatment histories and infectiousness. Later panel judgments and 1970 scientific-value criticism are not supplied as 1969 knowledge."}
   ]
 }

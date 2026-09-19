@@ -25,9 +25,9 @@
     {"party":"People with low income/status, limited education or weak social networks","known_interests_or_risks":"Risk that prior disadvantage is converted into lower priority for lifesaving treatment despite similar medical benefit.","power_position":"very_low"}
   ],
   "known_evidence": [
-    {"evidence_id":"E1","claim":"The treatment can sustain life for selected people with an otherwise fatal chronic condition but requires repeated use of scarce specialised equipment, trained staff and substantial resources.","epistemic_status":"observed"},
-    {"evidence_id":"E2","claim":"At current capacity there are materially more medically eligible candidates than treatment places; treating everyone immediately is not feasible.","epistemic_status":"observed"},
-    {"evidence_id":"E3","claim":"Medical screening can identify some factors relevant to expected survival and ability to manage treatment, although predictions are imperfect.","epistemic_status":"observed"},
+    {"evidence_id":"E1","claim":"The treatment can sustain life for selected people with an otherwise fatal chronic condition but requires repeated use of scarce specialised equipment, trained staff and substantial resources.","epistemic_status":"reported"},
+    {"evidence_id":"E2","claim":"At current capacity there are materially more medically eligible candidates than treatment places; treating everyone immediately is not feasible.","epistemic_status":"reported"},
+    {"evidence_id":"E3","claim":"Medical screening can identify some factors relevant to expected survival and ability to manage treatment, although predictions are imperfect.","epistemic_status":"reported"},
     {"evidence_id":"E4","claim":"Among people who pass medical screening, the lay committee considers broad social information including dependants, occupation, education, income/resources, personal history and perceived future/community contribution.","epistemic_status":"reported"},
     {"evidence_id":"E5","claim":"The packet contains no evidence that high income, prestigious occupation, formal education or perceived community status independently improves treatment effectiveness once candidates are medically suitable.","epistemic_status":"unknown"},
     {"evidence_id":"E6","claim":"Some non-medical facts, such as dependent children or caregiving responsibilities, can affect third-party harm from a candidate's death without changing the candidate's own prognosis.","epistemic_status":"inferred"},
@@ -42,7 +42,8 @@
     "How much third-party harm to dependants should count in ties.",
     "Which impartial tie-breaker best handles medically similar candidates.",
     "How quickly capacity can expand.",
-    "Whether funder/community preferences for social criteria are legitimate."
+    "Whether funder/community preferences for social criteria are legitimate.",
+    "The eligibility process itself includes age and family-role judgments; medical screening is not established here as purely clinical or free of contested exclusions."
   ],
   "known_alternatives": [
     "Medical benefit/urgency criteria followed by random lottery among medically equivalent candidates.",

@@ -2,7 +2,7 @@
   "case_id": "HC-0104",
   "packet_id": "HC-0104-T",
   "identity_mode": "transparent",
-  "decision_context": "The United States has used an atomic bomb on Hiroshima on 6 August 1945 under a July directive that also authorizes additional atomic bombs against listed Japanese targets as soon as they are made ready. By 8-9 August, senior U.S. officials have received reports showing extraordinary destruction at Hiroshima, and the Soviet Union has entered the war against Japan. Japan has not yet announced surrender. A second atomic bomb is ready for an imminent mission under the standing order.",
+  "decision_context": "The United States has used an atomic bomb on Hiroshima on 6 August 1945 under the 25 July directive authorising additional bombs against listed targets as they become ready. On 8 August, Stimson briefs Truman on reports of extraordinary destruction. Soviet entry is strategically relevant, but receipt of confirmation by the responsible U.S. leaders before the second mission departs is not established. Japan has not announced surrender. A second mission is being prepared under the standing order; the time available to transmit an effective pause is uncertain.",
   "decision_question": "Should senior U.S. authority allow the standing atomic-use order to execute a second inhabited-city attack immediately, or require fresh review/delay because Hiroshima and Soviet entry have materially changed the strategic evidence state?",
   "actors": [
     "United States President and Secretary of War",
@@ -56,8 +56,8 @@
     },
     {
       "evidence_id": "E2",
-      "claim": "The first atomic bomb was used on Hiroshima on 6 August and senior U.S. officials now have reports showing destruction on an extraordinary city-wide scale.",
-      "epistemic_status": "observed"
+      "claim": "The first atomic bomb was used on Hiroshima on 6 August and senior U.S. officials now have reports showing extensive destruction of the city.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E3",
@@ -66,8 +66,8 @@
     },
     {
       "evidence_id": "E4",
-      "claim": "The Soviet Union has declared war on Japan and begun entering the conflict, removing Japan's remaining hope that Moscow might serve as a neutral intermediary and adding a new major military front.",
-      "epistemic_status": "observed"
+      "claim": "Whether the responsible senior decision-makers have received confirmation of the new allied belligerent's declaration of war or opening of a new front before the imminent mission departs is not established.",
+      "epistemic_status": "unknown"
     },
     {
       "evidence_id": "E5",
@@ -76,18 +76,18 @@
     },
     {
       "evidence_id": "E6",
-      "claim": "The second atomic weapon is operationally ready and can be used quickly under the existing directive without a new political authorisation unless senior authority intervenes.",
-      "epistemic_status": "observed"
+      "claim": "A second mission is being prepared under the standing directive. The packet does not establish when the responsible senior authority receives a readiness report or how much time remains to transmit and implement an effective pause.",
+      "epistemic_status": "reported"
     },
     {
       "evidence_id": "E7",
-      "claim": "Before the second attack, it is uncertain how rapidly Hiroshima's destruction and Soviet entry will affect Japan's internal surrender decision; both events are new and their combined political effect has had little time to develop.",
+      "claim": "It is uncertain how rapidly the first attack will affect surrender. If confirmed entry of the new belligerent becomes available to the responsible authority, its additional effect also requires reassessment without assuming that surrender will follow a pause.",
       "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E8",
-      "claim": "Continuing the war also causes severe and accumulating harm through conventional bombing, blockade, fighting and preparations for invasion; delay is therefore not morally cost-free.",
-      "epistemic_status": "observed"
+      "claim": "A pause in this mission would not itself end the ongoing war. Its additional harm depends on how it affects other operations and the timing of surrender; the packet does not quantify that effect.",
+      "epistemic_status": "inferred"
     },
     {
       "evidence_id": "E9",
@@ -96,7 +96,7 @@
     },
     {
       "evidence_id": "E10",
-      "claim": "The standing order was approved before either Hiroshima's actual effects or Soviet entry into the war were known, so the factual environment underlying repeated-use authority has materially changed.",
+      "claim": "The standing repeated-use directive predates the first attack and reports of its actual effects. This does not mean that the weapon's destructive potential or possible entry of another belligerent was previously unanticipated.",
       "epistemic_status": "observed"
     }
   ],
@@ -106,7 +106,8 @@
     "Whether a renewed warning or changed surrender terms would accelerate capitulation.",
     "The precise civilian and military casualties from the next atomic attack.",
     "Whether Japanese hard-liners would treat one atomic attack as exceptional or withstand further delay without surrender.",
-    "The long-term strategic effect of normalising multiple atomic attacks under a standing operational order."
+    "The long-term strategic effect of normalising multiple atomic attacks under a standing operational order.",
+    "The actor-specific receipt of new-belligerent news, the last effective stop-order time, and the communication route to operational command before departure remain unverified."
   ],
   "known_alternatives": [
     "Pause only long enough for explicit senior review while conventional military pressure continues.",

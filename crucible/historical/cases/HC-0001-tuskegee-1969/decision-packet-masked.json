@@ -21,12 +21,14 @@
     {"evidence_id": "E1", "claim": "The programme began decades earlier to observe the natural history of the infection and includes an infected group and a control group.", "epistemic_status": "observed"},
     {"evidence_id": "E2", "claim": "Participants were not given informed consent to an untreated-disease experiment and were led to believe they were receiving health care for a broad illness description.", "epistemic_status": "observed"},
     {"evidence_id": "E3", "claim": "A highly effective treatment has been the accepted treatment of choice and widely available for many years, but participants have not routinely been offered it by the study.", "epistemic_status": "observed"},
-    {"evidence_id": "E4", "claim": "An internal adviser has raised ethical objections and asked leadership to reconsider continuation.", "epistemic_status": "reported"},
-    {"evidence_id": "E5", "claim": "Supporters of continuation argue that the long longitudinal dataset is scientifically unique and cannot be recreated if treatment changes the course of disease.", "epistemic_status": "reported"},
-    {"evidence_id": "E6", "claim": "The untreated infection can cause severe illness, death and transmission; the incremental scientific value of further untreated observation is uncertain.", "epistemic_status": "observed"}
+    {"evidence_id": "E4", "claim": "An internal public-health adviser has raised ethical objections to the study.", "epistemic_status": "reported"},
+    {"evidence_id": "E5", "claim": "Supporters of continuation argue that further observation can yield medical information and that a study of this kind would not be repeated.", "epistemic_status": "reported"},
+    {"evidence_id": "E6", "claim": "The infection can cause severe illness, death and transmission; this general disease risk does not establish the current health or infectiousness of each surviving participant.", "epistemic_status": "inferred"},
+    {"evidence_id": "E7", "claim": "Some advisers argue that treating participants with advanced disease could worsen their condition or be fatal.", "epistemic_status": "reported"}
   ],
   "known_uncertainties": [
     "How much additional useful information further untreated observation would produce.",
+    "The current health, disease stage and treatment history of each surviving participant, including the individual risks and benefits of treatment.",
     "How much scientific value can be preserved through consensual follow-up after treatment.",
     "What remediation is feasible for harms already incurred."
   ],

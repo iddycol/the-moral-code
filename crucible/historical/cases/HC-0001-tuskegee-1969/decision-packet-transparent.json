@@ -2,7 +2,7 @@
   "case_id": "HC-0001",
   "packet_id": "HC-0001-T",
   "identity_mode": "transparent",
-  "decision_context": "In February 1969, CDC leadership convenes an expert panel to advise whether the long-running USPHS untreated syphilis study at Tuskegee should continue after renewed internal objections.",
+  "decision_context": "During the CDC-convened expert panel meeting on 6 February 1969, before its continuation recommendation, agency leadership and advisers consider whether the long-running USPHS untreated syphilis study at Tuskegee should continue after internal ethical objections.",
   "decision_question": "Should the study continue substantially as designed, be modified, or terminate now?",
   "actors": ["CDC leadership", "external and internal medical experts advising the agency"],
   "available_actions": [
@@ -21,13 +21,14 @@
     {"evidence_id": "E1", "claim": "The study began in 1932 to observe the natural history of untreated syphilis and enrolled hundreds of Black men, most in the syphilitic study group and a control group.", "epistemic_status": "observed"},
     {"evidence_id": "E2", "claim": "Participants did not provide informed consent to an untreated-syphilis experiment and were told they were receiving care for 'bad blood'.", "epistemic_status": "observed"},
     {"evidence_id": "E3", "claim": "Penicillin had been the treatment of choice for syphilis since the 1940s and had been widely available for years, but study participants were not routinely offered it as treatment.", "epistemic_status": "observed"},
-    {"evidence_id": "E4", "claim": "An internal public-health adviser had raised ethical objections to the study and renewed those objections before the 1969 review.", "epistemic_status": "reported"},
-    {"evidence_id": "E5", "claim": "Supporters of continuation argue that decades of longitudinal observations are scientifically unique and cannot readily be recreated once treatment changes the natural course of disease.", "epistemic_status": "reported"},
-    {"evidence_id": "E6", "claim": "Untreated syphilis can produce serious illness, death and transmission to others; the precise marginal scientific value of additional untreated observation is uncertain.", "epistemic_status": "observed"}
+    {"evidence_id": "E4", "claim": "An internal public-health adviser had raised ethical objections to the study.", "epistemic_status": "reported"},
+    {"evidence_id": "E5", "claim": "Supporters of continuation argue that further observation can yield medical information and that a study of this kind would not be repeated.", "epistemic_status": "reported"},
+    {"evidence_id": "E6", "claim": "Syphilis can cause severe illness, death and transmission; this general disease risk does not establish the current health or infectiousness of each surviving participant.", "epistemic_status": "inferred"},
+    {"evidence_id": "E7", "claim": "Some advisers argue that treating participants with advanced syphilitic disease could worsen their condition or be fatal.", "epistemic_status": "reported"}
   ],
   "known_uncertainties": [
     "How much additional scientifically useful information continued observation would produce.",
-    "The health status and treatment history of each surviving participant.",
+    "The current health, disease stage and treatment history of each surviving participant, including the individual risks and benefits of treatment.",
     "How much of the longitudinal scientific value could be preserved if participants were informed and treated.",
     "What remediation is feasible for harms already incurred."
   ],

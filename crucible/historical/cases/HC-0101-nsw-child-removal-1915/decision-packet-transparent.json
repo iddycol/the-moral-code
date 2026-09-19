@@ -2,7 +2,7 @@
   "case_id": "HC-0101",
   "packet_id": "HC-0101-T",
   "identity_mode": "transparent",
-  "decision_context": "The New South Wales Parliament is considering an amendment to the Aborigines Protection Act. Under the existing 1909 framework, the Aborigines Protection Board can seek removal of an Aboriginal child without parental consent when a court finds the child neglected. The Board says this requirement obstructs its child-separation and apprenticeship policy and seeks direct removal power based on its own welfare inquiry.",
+  "decision_context": "The New South Wales Parliament is considering an amendment to the Aborigines Protection Act. Under the existing 1909 framework, the Aborigines Protection Board must establish neglect through a court process when using its neglect-based route to remove an Aboriginal child without parental consent. The Board says this requirement obstructs its child-separation and apprenticeship policy and seeks direct removal power based on its own welfare inquiry.",
   "decision_question": "Should Parliament give the Aborigines Protection Board power to assume full control and custody of an Aboriginal child whenever, after its own due inquiry, it is satisfied that removal is in the child's moral or physical welfare, without first proving neglect to a court?",
   "actors": [
     "New South Wales Parliament",
@@ -75,9 +75,9 @@
     },
     {
       "evidence_id": "E6",
-      "claim": "Ordinary child-welfare law for non-Indigenous families generally requires a court-based finding such as neglect, destitution or uncontrollability before involuntary state removal, so the proposed Board power creates a materially different procedure based on Aboriginal legal classification.",
-      "epistemic_status": "observed",
-      "confidence_note": "Later legal reconstruction of the contemporaneous comparative framework; relevant to equality of procedural protection."
+      "claim": "Under the Neglected Children and Juvenile Offenders Act 1905, a neglected or uncontrollable child may be apprehended and brought before a court, which decides whether to release the child or commit the child to an institution or another person's care. This does not establish that every child-welfare intervention requires a prior court hearing.",
+      "epistemic_status": "reported",
+      "confidence_note": "Official inquiry reconstruction of the 1905 court-disposition route; not a claim of uniform safeguards across all child-welfare powers."
     },
     {
       "evidence_id": "E7",

@@ -22,15 +22,16 @@
     {"evidence_id": "E2", "claim": "Engineering analysis says colder conditions slow a critical joint seal's response and recommends not operating outside the coldest demonstrated flight experience.", "epistemic_status": "reported"},
     {"evidence_id": "E3", "claim": "The coldest prior comparable mission showed the most severe observed evidence of gas passing the primary seal.", "epistemic_status": "observed"},
     {"evidence_id": "E4", "claim": "Management challenges a simple temperature correlation because a warmer mission also showed some seal bypass and a colder ground test did not show the same problem; engineers dispute whether the ground test is representative of flight conditions.", "epistemic_status": "disputed"},
-    {"evidence_id": "E5", "claim": "The dataset is limited and does not establish a precise probability of failure at the forecast conditions.", "epistemic_status": "observed"},
+    {"evidence_id": "E5", "claim": "Participants describe the temperature data as inconclusive and disagree about whether those data justify proceeding in the forecast conditions.", "epistemic_status": "disputed"},
     {"evidence_id": "E6", "claim": "Programme managers note that accepting the proposed environmental limit would disrupt the current mission and constrain future schedule targets.", "epistemic_status": "reported"},
-    {"evidence_id": "E7", "claim": "A senior contractor representative remains uncomfortable with approval, argues that colder conditions move sealing performance in the wrong direction, and proposes waiting for less extreme conditions.", "epistemic_status": "reported"}
+    {"evidence_id": "E7", "claim": "A senior contractor representative argues that colder conditions worsen sealing performance. At the operational site, while contractor managers deliberate separately, he proposes waiting for less extreme conditions; local programme officials say that a later window has been considered and rejected because of other weather or visibility constraints.", "epistemic_status": "reported"}
   ],
   "known_uncertainties": [
     "The exact relationship between environmental temperature and probability/severity of seal failure.",
     "How representative the cited ground test is of the actual operational joint.",
     "Whether a precise safe minimum condition can be inferred from the limited dataset.",
-    "Whether a later window can satisfy all other mission safety constraints."
+    "Whether a later window can satisfy all other mission safety constraints.",
+    "Whether the local delay proposal has been communicated to contractor managers during their separate deliberation."
   ],
   "known_alternatives": [
     "Delay until conditions return to demonstrated operational experience.",

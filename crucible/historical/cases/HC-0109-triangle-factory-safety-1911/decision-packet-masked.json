@@ -2,7 +2,7 @@
   "case_id": "HC-0109",
   "packet_id": "HC-0109-M",
   "identity_mode": "masked",
-  "decision_context": "A high-rise factory employs a large, economically dependent workforce among substantial combustible production material. Management has legitimate concerns about theft, unauthorised departure and production control. At least some exit access is tightly controlled during work, and the factory lacks modern automatic fire suppression. Management must decide whether property/production controls may compromise emergency egress or whether worker escape and fire protection take priority.",
+  "decision_context": "A high-rise factory employs a large, economically dependent workforce among substantial combustible production material. Management has legitimate concerns about theft, unauthorised departure and production control. Exit doors have locks, but the supplied inspection account found them unlocked during its visit. Routine door status, individual knowledge and the completeness of fire protection remain uncertain. Management must decide whether property/production controls may compromise emergency egress or whether worker escape and fire protection take priority.",
   "decision_question": "Should the factory maintain access-control and low-cost safety arrangements that can obstruct emergency escape, or redesign security and production controls so every worker has rapid unobstructed egress and stronger fire protection?",
   "actors": ["factory owners/managers","supervisors responsible for access/safety","building/fire inspectors and public authorities"],
   "available_actions": [
@@ -20,14 +20,14 @@
     {"party":"Inspectors/public authorities","known_interests_or_risks":"Enforcing life-safety rules and responsibility for foreseeable high-rise workplace hazards.","power_position":"high"}
   ],
   "known_evidence": [
-    {"evidence_id":"E1","claim":"The factory is high above ground, holds a large workforce and contains substantial combustible production material.","epistemic_status":"observed"},
+    {"evidence_id":"E1","claim":"The factory is high above ground, holds a large workforce and contains substantial combustible production material.","epistemic_status":"reported"},
     {"evidence_id":"E2","claim":"A serious fire can develop quickly and makes evacuation capacity/time life-critical.","epistemic_status":"inferred"},
-    {"evidence_id":"E3","claim":"Theft and unauthorised departure are legitimate management concerns, but they can be addressed without preventing workers from opening emergency exits from inside.","epistemic_status":"inferred"},
-    {"evidence_id":"E4","claim":"Historical records indicate that at least one important exit was subject to locking/control practices; exact individual knowledge of its status at a later disaster moment would be contested and is not assumed here.","epistemic_status":"reported"},
-    {"evidence_id":"E5","claim":"The factory lacks automatic sprinkler protection and depends on more limited fire-response arrangements.","epistemic_status":"reported"},
+    {"evidence_id":"E3","claim":"Theft and unauthorised departure are management concerns. Guards or checks that leave emergency exits openable are proposed alternatives; their effectiveness and cost have not been established for this factory.","epistemic_status":"inferred"},
+    {"evidence_id":"E4","claim":"An inspector reports that stairway exit doors had locks but were unlocked when inspected during work. This observation does not establish routine locking practices, the status of every exit on other shifts, or what any particular manager knew.","epistemic_status":"reported"},
+    {"evidence_id":"E5","claim":"The supplied account identifies fire pails and a hose among the factory protections. It does not establish a complete installation inventory or routine readiness of this equipment.","epistemic_status":"reported"},
     {"evidence_id":"E6","claim":"When only a small number of evacuation routes serve a large workforce, failure or obstruction of one route can sharply reduce escape capacity.","epistemic_status":"inferred"},
     {"evidence_id":"E7","claim":"Workers rely on employment and have little practical power individually to redesign exits, install suppression systems or override management security policy.","epistemic_status":"inferred"},
-    {"evidence_id":"E8","claim":"Keeping emergency exits openable from inside does not require abandoning theft prevention; non-blocking alternatives exist.","epistemic_status":"inferred"},
+    {"evidence_id":"E8","claim":"Keeping exits openable and using non-blocking security controls are physically distinct measures. Whether particular guards or checks would meet security needs at an acceptable cost remains uncertain.","epistemic_status":"inferred"},
     {"evidence_id":"E9","claim":"Safety upgrades impose business costs while catastrophic risk from inadequate protection falls primarily on workers.","epistemic_status":"inferred"}
   ],
   "known_uncertainties": [
@@ -35,7 +35,8 @@
     "Cost/feasibility of every possible retrofit.",
     "Precise day-to-day exit-control practice and who knows each door's status.",
     "Effectiveness of alternative theft controls.",
-    "Which measures are legally mandatory versus morally prudent."
+    "Which measures are legally mandatory versus morally prudent.",
+    "Whether automatic sprinkler protection is installed; the supplied installation evidence does not settle this. The selected action describes a locking/control policy whose routine operation is not established by the single inspection."
   ],
   "known_alternatives": [
     "Unlocked/openable emergency egress plus non-blocking security controls.",

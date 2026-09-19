@@ -4,7 +4,7 @@
   "case_class": "positive_control_protection_refuge",
   "decision_cutoff": {
     "date_or_period": "2 October 1943",
-    "definition": "Sweden's decision whether to admit Danish Jews and close relatives fleeing an imminent German arrest/deportation operation in occupied Denmark."
+    "definition": "The proposed Swedish decision to communicate admission of Danish Jews and close relatives during the 1-2 October arrest/deportation operation. The exact pre-announcement instant, prior admission instructions, ministerial receipt of warnings and reception capacity have not been verified; 2 October remains a dated reconstruction rather than a certified actor-specific cutoff."
   },
   "pretraining_leakage_risk": "high",
   "packets": [
@@ -71,6 +71,14 @@
       "source_date": "current historical reference",
       "temporal_role": "later_reconstruction",
       "use_note": "Places Danish rescue within wider wartime rescue constraints and confirms September 28 warning and maritime escape."
+    },
+    {
+      "source_id": "DEN-JOHNSON",
+      "citation": "Johnson to Secretary of State,telegram3196,FRUS1943volI doc364",
+      "url": "https://history.state.gov//historicaldocuments/frus1943v01/d364",
+      "source_date": "1943-10-04",
+      "temporal_role": "post_cutoff_primary_record_for_research_only",
+      "use_note": "References Swedish démarches of30September and2October; the latter telegram is not printed. Does not establish the precise predecision cutoff or capacities. Post-cutoff refugee totals excluded."
     }
   ]
 }
